@@ -1,2 +1,59 @@
 .idea/
 mutagen.yml.lock
+
+# Ignore configuration files that may contain sensitive information
+/app/web/sites/*/*settings*.php
+/app/web/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/app/web/sites/*/files
+/app/web/sites/*/public
+/app/web/sites/*/private
+/app/web/sites/*/files-public
+/app/web/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/app/web/sites/*/translations
+/app/web/sites/*/tmp
+/app/web/sites/*/cache
+
+# Ignore testing related files
+/app/web/sites/simpletest
+
+# Ignore drupal core (if not versioning drupal sources)
+/app/web/core
+/app/vendor
+/app/web/modules/README.txt
+/app/web/profiles/README.txt
+/app/web/themes/README.txt
+/app/web/sites/README.txt
+/app/web/sites/example.sites.php
+/app/web/sites/example.settings.local.php
+/app/web/sites/development.services.yml
+/app/web/.csslintrc
+/app/web/.eslintignore
+/app/web/.eslintrc.json
+/app/web/.htaccess
+/app/web/example.gitignore
+/app/web/INSTALL.txt
+/app/web/LICENSE.txt
+/app/web/README.txt
+/app/web/update.php
+/app/web/web.config
+
+# Custom
+
+/.idea
+/tmp
+/app/tmp
+/app/web/modules/contrib
+/app/web/themes/contrib
+/app/private_files
+
+/app/drush/local/*
+!/app/drush/local/example.drush.yml
+/app/settings/*
+!/app/settings/example
+!/app/settings/settings.trusted-hosts.php
+!/app/settings/settings.kubernetes.php
+!/app/settings/settings.proxy.php
