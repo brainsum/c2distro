@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Button component
+ *
+ * Button types.
+ *
+ * @package: interactive
+ */
+
+.bordered-button {
+  @include bordered-button;
+}
+
+.region-header {
+  .social-block {
+    .social-icon {
+      margin-left: .8rem;
+    }
+    .bordered-button {
+      margin-left: 2.8rem;
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
+  }
+}
+
+.donate-button {
+  background-color: $color-turquoise;
+  color: $color-white;
+}

@@ -1,0 +1,25 @@
+
+@mixin basePadding {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@mixin width-1105 {
+  max-width: 113.5rem;
+  @include basePadding;
+}
+
+@mixin width-655 {
+  max-width: 68.5rem;
+  @include basePadding;
+}
+
+@mixin width-855 {
+  max-width: 88.5rem;
+  @include basePadding;
+}
+
+@mixin width-960 {
+  max-width: 99rem;
+  @include basePadding;
+}

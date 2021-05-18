@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Breakpoint Settings
+ *
+ * Foundation for Sites 6 Media Queries
+ * @see documentation, usage: https://foundation.zurb.com/sites/docs/media-queries.html
+ *
+ * - Define breakpoint variables as Sass map
+ * - Provide a breakpoint variable for print media
+ * - Provide breakpoint classes for Foundation for Sites 6 XY Grid
+ *
+ * We have to use here only px, it will be converted to em by
+ * Foundation's utility.
+ */
+
+$breakpoints: (
+  small: 0,
+  mobile: 376px, // 23.438em
+  medium: 768px, // 48.000em
+  tablet: 1024px, // 64.000em
+  desktop: 1280px, // 80.000em
+  large: 1440px, // 90.000em
+  xxlarge: 1920px, // 120.000em
+);
+$print-breakpoint: desktop;
+// for css class names
+$breakpoint-classes: (small mobile tablet desktop xxlarge);

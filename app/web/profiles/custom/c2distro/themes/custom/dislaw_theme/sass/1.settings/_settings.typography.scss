@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Typography Settings
+ *
+ * - Import Webfonts
+ * - Define Font-families
+ * - Define Typography-related global variables
+ */
+
+// Font family settings
+$font-family--system:
+  -apple-system,
+  system-ui,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
+$font-family--body  : 'Montserrat', $font-family--system;
+
+$font-open: 'Open Sans', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+// Font sizes
+$global-font-size   : 1.6rem;
+
+// Line height
+$global-lineheight  : 2.4rem;
+
+@mixin font-open-18 {
+  font-family: $font-open;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}

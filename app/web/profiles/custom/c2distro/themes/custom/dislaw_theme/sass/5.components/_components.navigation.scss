@@ -1,0 +1,384 @@
+/**
+ * @file
+ * Navigation component
+ *
+ * Main navigation menu of site.
+ *
+ * @package: navigation
+ */
+
+#block-dislaw-theme-primary-local-tasks {
+  @include width-1105;
+}
+
+.social-block {
+  @include flex;
+  @include align-items(center);
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .tiktok img,
+  .youtube img {
+    height: 1.6rem;
+    width: auto;
+    margin-top: .3rem;
+    margin-left: .3rem;
+  }
+  .bordered-button {
+    padding: 1.4rem 5.1rem;
+  }
+
+  @include breakpoint(medium down) {
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      @include flex-direction(column);
+      justify-content: center;
+      .social-block-icons {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  @include breakpoint(tablet) {
+    &.mobile {
+      display: none;
+    }
+  }
+}
+
+.mobile-icons {
+  @include flex;
+  @include flex-direction(row);
+  @include align-items(center);
+  @include breakpoint(tablet) {
+    display: none;
+  }
+  .site-search {
+    svg {
+      margin-top: .6rem;
+      margin-right: 1.5rem;
+      fill: rgba($color-blue-darkest, .65);
+    }
+  }
+}
+
+#block-dislaw-theme-main-menu {
+  @include breakpoint(medium down) {
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include transition(right, .2s);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    padding-top: 7.8rem;
+    background-color: $color-white;
+    width: 100%;
+    .bordered-button {
+      @include align-self(center);
+      padding: 1.4rem 5.1rem;
+    }
+    .close-menu {
+      position: absolute;
+      top: 5rem;
+      right: 1.5rem;
+    }
+    &.open {
+      right: 0;
+    }
+  }
+  @include breakpoint(tablet) {
+    .close-menu,
+    .bordered-button {
+      display: none;
+    }
+  }
+}
+
+
+.menu--main {
+  >.menu {
+    @include flex;
+    @include flex-direction(column);
+    position: relative;
+    @include breakpoint(medium down) {
+      @include align-items(center);
+    }
+    @include breakpoint(tablet) {
+      @include flex-direction(row);
+    }
+    >a {
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
+
+    >.menu-item {
+      @include breakpoint(medium down) {
+        margin-bottom: 5.5rem;
+      }
+      @include breakpoint(tablet) {
+        @include flex-grow(0);
+        margin-right: .2rem;
+        a,
+        span {
+          text-align: center;
+        }
+      }
+      a,
+      span {
+        @include transition(color, .2s);
+        &:hover {
+          color: $color-turquoise;
+        }
+      }
+      >span,
+      >a {
+        font-weight: 700;
+        line-height: 1.3rem;
+        display: block;
+        cursor: pointer;
+        @include breakpoint(medium down) {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+        @include breakpoint(tablet) {
+          text-transform: uppercase;
+          padding: 2.2rem 3rem;
+          background-color: $color-white;
+        }
+/*        &.is-active {
+          color: $color-turquoise;
+          @include breakpoint(tablet) {
+            color: $color-white;
+            background-color: $color-blue-darkest;
+          }
+        }*/
+      }
+/*      &--active-trail {
+        color: $color-turquoise;
+        @include breakpoint(tablet) {
+          color: $color-white;
+          background-color: $color-blue-darkest;
+        }
+        >span {
+          color: $color-turquoise;
+          @include breakpoint(tablet) {
+            color: $color-white;
+            background-color: $color-blue-darkest;
+          }
+        }
+      }*/
+    }
+
+    .menu-item--expanded {
+      position: relative;
+      >.menu {
+        display: none;
+        background-color: $color-white;
+        padding: 1.5rem;
+        @include breakpoint(tablet) {
+          @include translate(-50%, 0);
+          position: absolute;
+          top: 5.9rem;
+          left: 50%;
+        }
+        .menu-item {
+          @include breakpoint(medium down) {
+            text-align: center;
+          }
+          &--active-trail {
+            a {
+              color: $color-turquoise;
+            }
+            @include breakpoint(tablet) {
+              span:hover {
+                color: $color-white;
+              }
+              a {
+                font-weight: 700;
+              }
+            }
+          }
+          a {
+            white-space: nowrap;
+            line-height: 3.4rem;
+          }
+        }
+      }
+      &.opened {
+        >.menu {
+          display: block;
+        }
+      }
+      &.menu-item--active-trail > span:hover {
+        @include breakpoint(tablet) {
+          color: $color-white;
+        }
+      }
+    }
+  }
+  .site-search {
+    @include transition(background-color, .2s);
+    display: block;
+    padding: 1.1rem 1.1rem 0 1.1rem;
+    z-index: 1;
+    cursor: pointer;
+    @include breakpoint(medium down) {
+      display: none;
+    }
+    svg {
+      @include transition(fill, .2s);
+      fill: $color-blue-darkest;
+    }
+    &.active,
+    &:hover {
+      background-color: $color-turquoise;
+      svg {
+        fill: $color-white;
+      }
+    }
+  }
+  .close-search {
+    display: block;
+    padding: 1.1rem 1.1rem 0 1.1rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    svg {
+      fill: rgba($color-blue-darkest, 0);
+    }
+    &.active {
+      z-index: 99;
+      top: 6rem;
+      cursor: pointer;
+      svg {
+        @include transition(fill, .2s);
+        fill: rgba($color-blue-darkest, .3);
+      }
+    }
+    &:hover {
+      svg {
+        fill: rgba($color-blue-darkest, .6);
+      }
+    }
+  }
+}
+
+.menu--footer {
+  .menu {
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    max-width: 39.5rem;
+    @include breakpoint(medium) {
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+    }
+    .menu-item {
+      max-width: 13.6rem;
+      width: 100%;
+      margin-bottom: .5rem;
+      &:nth-child(5) {
+        @include breakpoint(mobile down) {
+          margin-bottom: 5.3rem;
+        }
+      }
+      a {
+        @include link-hover;
+        font-family: $font-open;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+.block-about-branches {
+  .block-inner {
+    .menu {
+      @include flex;
+      @include justify-content(center);
+      @include flex-direction(column);
+      @include breakpoint(tablet) {
+        @include flex-direction(row);
+      }
+      .menu-item {
+        margin: 0 0 4.4rem;
+        width: 100%;
+        text-align: center;
+        @include breakpoint(tablet) {
+          max-width: 20%;
+          margin: 0 1.2rem;
+        }
+        a {
+          @include flex;
+          @include flex-direction(column);
+          @include justify-content(center);
+          @include transition(all, .2s);
+          font-weight: 700;
+          &:hover {
+            color: $color-turquoise;
+          }
+          .icon-holder {
+            height: 7.5rem;
+            margin-bottom: 1rem;
+            img {
+              width: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.fixed {
+  padding-top: 11.6rem;
+  .block-country-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba($color-blue-darkest, .3);
+  }
+}
+
+#block-dislaw-theme-breadcrumbs {
+  .block-inner {
+    @include width-1105;
+  }
+  .breadcrumb {
+    margin-top: 3rem;
+    ol {
+      @include flex;
+      @include flex-wrap(wrap);
+      list-style: none;
+      li {
+        margin-right: 1rem;
+        a {
+          @include transition(color, .2s);
+          &:hover {
+            color: $color-turquoise;
+          }
+        }
+        &:after {
+          content: '/';
+          margin-left: .5rem;
+        }
+        &:last-child {
+          margin-right: 0;
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

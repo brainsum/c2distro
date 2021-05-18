@@ -1,0 +1,80 @@
+/**
+ * @file
+ * Typography Tool
+ *
+ * Inline typography related mixins.
+ */
+
+/**
+ * Font Antialiasing
+ *
+ * Makes font thickness to look the same in Firefox and Webkit.
+ *
+ * @example
+ *   h1 {
+ *     @include font-smooth;
+ *   }
+ */
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin bordered-button {
+  @include flex;
+  @include align-items(center);
+  @include justify-content(center);
+  @include transition(all, .2s);
+  border: .2rem solid $color-turquoise;
+  font-family: $font-montserrat !important;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0 2.1rem;
+  text-decoration: none !important;
+  background-color: transparent;
+  min-height: 4.8rem;
+  @include breakpoint(medium) {
+    padding: 0 5.1rem;
+  }
+  &:hover {
+    border-color: $color-blue-darkest;
+    background-color: $color-blue-darkest;
+    color: $color-white;
+  }
+}
+
+@mixin bordered-button--small {
+  border: .2rem solid $color-turquoise;
+  font-family: $font-montserrat !important;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: .8rem 2rem;
+  text-decoration: none !important;
+  @include breakpoint(medium) {
+    padding: .8rem 3.5rem;
+  }
+  &:hover {
+    border-color: $color-blue-darkest;
+    background-color: $color-blue-darkest;
+    color: $color-white;
+  }
+}
+
+@mixin block-title {
+  font-family: $font-montserrat !important;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-blue-darkest;
+  padding: .2rem 0;
+  margin-top: -2.3rem;
+  margin-left: 2rem;
+  box-shadow: 2.6rem 0 0 $color-blue-darkest, -1.9rem 0 0 $color-blue-darkest;
+  box-decoration-break: clone;
+  line-height: 5rem;
+  @include breakpoint(tablet) {
+    font-size: 3.6rem;
+  }
+}
+

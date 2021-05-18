@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Color Settings
+ *
+ * - Define color variables
+ */
+
+// color definitions
+$color-white            : #ffffff;
+// $color-blue-light       : #d9f4fb;
+$color-blue-light       : #d0d0d0;
+$color-blue             : #a0d2f4;
+$color-blue-dark        : #3d5e8e;
+$color-blue-darkest     : #011e41;
+$color-turquoise        : #26c9de; // original color
+$color-yellow           : #ff8200;
+$color-yellow-light     : #ffb25b;
+// $color-turquoise        : $color-yellow;
+$color-grey-light       : #efefef;
+$color-grey             : #e8e8e8;
+$color-grey-dark        : #dadada;
+$color-red              : #d24744;
+
+
+// colors by functions
+$color-brand            : $color-red;
+$color-primary          : $color-blue-darkest;
+$color-secondary        : $color-turquoise;
+$body-font-color        : $color-blue-darkest;

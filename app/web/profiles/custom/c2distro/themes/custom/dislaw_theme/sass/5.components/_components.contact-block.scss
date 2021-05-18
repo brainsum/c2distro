@@ -1,0 +1,13 @@
+
+.contact-block {
+  .block-inner {
+    @include width-1105;
+    position: relative;
+    padding: 9rem 0;
+    text-align: center;
+    @include breakpoint(tablet) {
+      padding: 9rem 0 15rem;
+    }
+  }
+}
+

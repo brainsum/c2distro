@@ -1,0 +1,281 @@
+// style of news, events, case study page
+
+.view-general-site-search,
+.page-node-type-news {
+  .block-page-title-block,
+  .node {
+    background-color: $color-white;
+  }
+  .block-page-title-block, {
+    padding-top: 4rem;
+    padding-bottom: 6.6rem;
+    margin-top: 2rem;
+  }
+  .info-section,
+  .content-section {
+    @include width-1105;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+  }
+  .info-section {
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+    font-family: $font-open;
+    font-weight: 700;
+    .field {
+      &:after {
+        content: '|';
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      &:last-child:after {
+        content: '';
+      }
+      &.field--name-field-start-date {
+        &:after {
+          content: '-';
+          margin-left: .4rem;
+        }
+      }
+    }
+  }
+  .content-section {
+    &--content {
+      width: 100%;
+      font-family: $font-open;
+      line-height: 3rem;
+      margin-bottom: 6rem;
+      @include breakpoint(medium) {
+        max-width: 66.5rem;
+        width: 60%;
+      }
+      .field--name-field-media-image {
+        margin-bottom: 5rem;
+      }
+      .field--name-field-lead,
+      .field--name-body {
+        @include breakpoint(medium) {
+          padding: 0 3rem;
+        }
+      }
+      .field--name-field-lead {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        line-height: 2.8rem;
+      }
+      .field--name-body {
+        font-size: 1.8rem;
+/*        a {
+          color: $color-turquoise;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }*/
+      }
+      .lightgallery-wrapper {
+        margin-top: 5rem;
+        .lightgallery {
+          @include flex;
+          @include flex-direction(row);
+          @include flex-wrap(wrap);
+          li {
+            max-width: 25%;
+            margin-bottom: 1rem;
+            padding: 0 .5rem;
+            list-style: none;
+            a {
+              position: relative;
+              display: block;
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: $color-turquoise;
+                opacity: 0;
+              }
+              &:hover:after {
+                opacity: .3;
+              }
+            }
+            &:first-child {
+              max-width: none;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+      .field--name-field-media-oembed-video {
+        margin-top: 5rem;
+        iframe {
+          width: 100%;
+          min-height: 40rem;
+        }
+      }
+    }
+    &--sidebar{
+      width: 100%;
+      @include breakpoint(medium) {
+        padding-left: 1.7rem;
+        width: 40%;
+        max-width: 44rem;
+      }
+      .sidebar-block {
+        width: 100%;
+        padding: 3rem 3.5rem 5.4rem 3.5rem;
+        background-color: $color-blue-light;
+        margin-bottom: 4rem;
+        overflow: hidden;
+        .field--name-field-title-related-links,
+        .field--name-field-title-related-documents {
+          font-weight: 700;
+          margin-bottom: 2.3rem;
+        }
+        .field--name-field-news-attachment,
+        .field--name-field-related-links,
+        .field--name-field-related-documents {
+          .field__item {
+            margin-bottom: 2.4rem;
+            a {
+              @include link-hover;
+            }
+          }
+        }
+      }
+      .files--holder {
+        margin-bottom: 4rem;
+        .field--name-field-news-attachment {
+          a {
+            @include bordered-button;
+          }
+        }
+      }
+    }
+  }
+  .field--name-field-related-news-and-events {
+    background-color: $color-blue-light;
+    margin-top: 10rem;
+    .field-label--holder {
+      @include width-1105;
+      position: relative;
+      .field__label {
+        @include block-title;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .field-items-holder {
+      @include width-1105;
+      >.field__items {
+        @include flex;
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+        @include flex-wrap(wrap);
+        margin: 0 -1.5rem;
+        padding: 8rem 0 4rem;
+        >.field__item {
+          max-width: 35.6rem;
+          margin: 0 1rem 3rem;
+          border: 1px solid transparent;
+          min-height: 47rem;
+          @include breakpoint(tablet) {
+            max-width: calc(25% - 3rem);
+            margin: 0 1.5rem 3rem;
+          }
+          article {
+            @include flex;
+            @include flex-direction(column);
+            @include justify-content(flex-start);
+            height: 100%;
+          }
+          .field--name-field-image {
+            margin-bottom: 2.6rem;
+            @include breakpoint(tablet) {
+              margin-bottom: 1.3rem;
+            }
+          }
+          .info-line {
+            @include flex;
+            .field--name-field-date + .field--name-field-type {
+              &:before {
+                content: "|";
+                margin: 0 .3rem;
+                font-weight: 400;
+              }
+            }
+          }
+          .item-title {
+            margin-bottom: auto;
+          }
+          .field--name-title,
+          .field--name-field-short-title {
+            @include transition(color, .2s);
+            max-height: 9.6rem;
+            margin-bottom: 1.6rem;
+            overflow: hidden;
+            display: block;
+            font-weight: 700;
+            padding: 0 2.3rem;
+            &:hover {
+              color: $color-turquoise;
+            }
+          }
+
+          .country-line {
+            .field--name-field-city:before {
+              content: '';
+              display: inline-block;
+              background-image: url('../images/dist/icons/map-marker.svg');
+              background-repeat: no-repeat;
+              width: 1.5rem;
+              height: 1.7rem;
+              margin-bottom: -.2rem;
+              margin-right: .5rem;
+            }
+          }
+          .node-readmore {
+            @include transition(all, .2s);
+            border-bottom: 1rem solid $color-white;
+            padding: 0 2.3rem;
+            a {
+              @include transition(all, .2s);
+              margin-top: auto;
+              padding-bottom: 2rem;
+              font-style: italic;
+              font-weight: 700;
+              display: block;
+              margin-bottom: -1rem;
+              &:hover {
+                color: $color-turquoise;
+              }
+            }
+            &:hover {
+              border-color: $color-turquoise;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.page-node-type-page {
+  .field--name-body,
+  .field--name-field-lead {
+    @include width-655;
+    @include font-open-18;
+    padding-bottom: 5.5rem;
+  }
+  .field--name-field-lead {
+    font-weight: 700;
+  }
+}
+

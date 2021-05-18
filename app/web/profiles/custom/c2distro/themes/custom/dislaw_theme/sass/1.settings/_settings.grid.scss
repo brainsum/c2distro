@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid Settings
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Define some global Foundation 6 settings what required for XY Grid
+ * - Define breakpoint variables
+ */
+
+/**
+ * Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
+ *
+ * @type Keyword
+ */
+$global-text-direction: ltr !default;
+
+/**
+ * Enables flexbox for components that support it.
+ *
+ * @type Boolean
+ */
+$global-flexbox: true !default;
+
+// Internal variables used for text direction
+$global-left: if($global-text-direction == rtl, right, left);
+$global-right: if($global-text-direction == rtl, left, right);
+
+// Internal variable that contains the flex justifying options
+$-zf-flex-justify: -zf-flex-justify($global-text-direction);
+
+// XY Grid Settings
+$global-width: 90rem;
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+// Not the best, but because we use different body font size than 16px (10px),
+// we need multiple the desired value to get that.
+$grid-margin-gutters: (
+  small: 1rem * 2,
+  medium: 1.5rem * 2
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
+

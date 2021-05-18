@@ -1,0 +1,67 @@
+/**
+ * @file
+ * Typography component
+ *
+ * General typography theming.
+ *
+ * @package: typography
+ */
+
+.block-page-title-block {
+  padding-bottom: 6rem;
+  margin-top: 6rem;
+  .block-inner {
+    max-width: 113.5rem;
+    margin: 0 auto;
+    h1.page-title {
+      font-size: 4rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+}
+.page-node-type-page {
+  .block-page-title-block {
+
+    .block-inner {
+      @include width-855;
+    }
+    .page-title {
+      text-align: center;
+    }
+  }
+}
+
+.block-holder {
+  .block-inner {
+    position: relative;
+    .title-holder {
+      @include width-1105;
+      z-index: 10;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -25px;
+      span {
+        @include block-title;
+      }
+    }
+  }
+}
+
+.field--label-inline {
+  @include flex;
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include breakpoint(medium) {
+    @include flex-direction(row);
+  }
+  font-family: $font-open;
+  .field__label {
+    font-weight: 700;
+    &:after {
+      content: ': ';
+    }
+  }
+}

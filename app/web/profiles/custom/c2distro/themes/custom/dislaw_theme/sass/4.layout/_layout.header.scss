@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Site Header
+ *
+ * Header is not a component, it's a layout section. Therefore all header
+ * related styles, rules come here except what has an independent component, ie.
+ * Navigation component.
+ */
+
+@include breakpoint(mobile down) {
+  #toolbar-administration {
+    #admin-toolbar-search-tab {
+      display: none;
+    }
+  }
+}
+
+header {
+  @include breakpoint(medium down) {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+}
+
+.region-header,
+.region-navigation {
+  @include width-1105;
+  position: relative;
+  z-index: 30;
+}
+
+.region-navigation {
+  padding: 0;
+}
+
+.region-header {
+  @include flex;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include align-items(center);
+  background-color: $color-white;
+  height: 5.6rem;
+  margin: 0 auto;
+  padding-right: 1.5rem;
+  @include breakpoint(tablet) {
+    height: 8.7rem;
+    margin: 3rem auto 2rem;
+    padding-left: 1.4rem;
+    padding-right: 5.7rem;
+  }
+  #block-dislaw-theme-site-branding {
+    a { display: block; }
+    img {
+      width: 9.5rem;
+      @include breakpoint(tablet) {
+        width: 15rem;
+      }
+    }
+  }
+}

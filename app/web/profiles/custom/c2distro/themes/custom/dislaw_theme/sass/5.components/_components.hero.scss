@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Hero component
+ */
+
+#block-hpheroen {
+  max-width: 192rem;
+  position: relative;
+  overflow: hidden;
+  @include breakpoint(medium) {
+    margin-bottom: 4.5rem;
+  }
+  @include breakpoint(tablet) {
+    height: 83.5rem;
+    margin: -20.5rem auto 17.5rem;
+  }
+  .field--name-field-background {
+    height: 24.5rem;
+    overflow: hidden;
+    @include breakpoint(tablet) {
+      height: auto;
+    }
+    picture {
+      display: block;
+      img {
+        @include translate(-50%, 0);
+        margin-left: 50%;
+        max-width: none;
+        @include breakpoint(mobile) {
+          max-width: 100%;
+        }
+        @include breakpoint(tablet) {
+          max-width: none;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .hero-text {
+    max-width: 110.5rem;
+    margin: 4.5rem auto 9rem;
+    padding: 0 .8rem;
+    @include breakpoint(medium) {
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 6rem;
+    }
+    @include breakpoint(tablet) {
+      bottom: 20.9rem;
+      padding-left: 3.3rem;
+    }
+    .field--name-field-title,
+    .field--name-field-description {
+      max-width: 45.5rem;
+    }
+    .field--name-field-title {
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2.3rem;
+      @include breakpoint(medium) {
+        color: $color-white;
+      }
+    }
+    .field--name-field-description {
+      font-family: $font-open;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      margin-left: 1.3rem;
+      span {
+        background-color: $color-white;
+        padding: .5rem 0;
+        box-shadow: 1.3rem 0 0 $color-white, -1.3rem 0 0 $color-white;
+        box-decoration-break: clone;
+      }
+    }
+  }
+}

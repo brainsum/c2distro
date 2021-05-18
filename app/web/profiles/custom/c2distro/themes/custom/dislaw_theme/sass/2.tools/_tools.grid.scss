@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Import Foundation for Site 6 required vendor libraries
+ * - Import Foundation for Sites 6 Util Library
+ * - Import Foundation for Sites 6 XY Grid
+ */
+
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/missing-dependencies";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/true";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/contain";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/purge";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/remove";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/replace";
+@import "../../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/to-list";
+@import "../../node_modules/foundation-sites/scss/util/util";
+@import "../../node_modules/foundation-sites/scss/xy-grid/xy-grid";

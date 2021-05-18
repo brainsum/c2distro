@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Site Footer
+ *
+ * Footer is not a component, it's a layout section. Therefore all footer
+ * related styles, rules come here except what has an independent component, ie.
+ * Scroll to Top button.
+ */
+
+.section-holder {
+  &.white {
+    background-color: $color-white;
+  }
+}
+
+#block-dislaw-theme-content {
+  max-width: 113.5rem;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.path-node,
+.path-contact,
+.page-node-type-page, // todo use mose specific to DRM database landingpage
+.path-disaster-law-database,
+.path-drm-index-search,
+.path-media,
+.path-dmi,
+.path-news-events,
+.path-user,
+.path-search,
+.path-frontpage,
+.page-node-type-news {
+  #block-dislaw-theme-content {
+    max-width: none;
+    margin: unset;
+    padding-bottom: unset;
+  }
+}

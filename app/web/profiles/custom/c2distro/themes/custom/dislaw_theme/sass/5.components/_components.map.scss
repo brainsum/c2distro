@@ -1,0 +1,48 @@
+
+.block-country-map {
+  margin-bottom: 1rem;
+  @include breakpoint(tablet) {
+    margin-bottom: -5.5rem;
+    position: relative;
+  }
+  .block-inner {
+    max-width: 128rem;
+    margin: 0 auto;
+  }
+  #map {
+    height: 38rem;
+    @include breakpoint(tablet) {
+      height: 60rem;
+    }
+  }
+}
+#map {
+  button.gm-ui-hover-effect {
+    display: none !important;
+  }
+  .iw-modal__heading {
+    font-weight: 700;
+  }
+  a.iw-modal__to-contact {
+    @include transition(all, .2s);
+    border: 0.2rem solid $color-turquoise;
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: .5rem 1.5rem;
+    margin-top: 2.5rem;
+    font-weight: 700;
+    &:hover {
+      border-color: $color-blue-darkest;
+      background-color: $color-blue-darkest;
+      color: $color-white;
+    }
+  }
+  .gm-style .gm-style-iw {
+    font-weight: 400;
+  }
+  .gm-style .gm-style-iw-c {
+    border-radius: 0;
+    max-width: 210px !important;
+  }
+}
+

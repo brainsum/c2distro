@@ -1,0 +1,311 @@
+
+.file {
+  background-image: none !important;
+  padding-left: 0;
+}
+
+.view-display-id-boca_page {
+  .view-header {
+    padding: 0 1.5rem;
+  }
+  .view-content {
+    @include width-855;
+    .group-title-line {
+      @include flex;
+      border-bottom: .3rem solid $color-grey-dark;
+      font-weight: 700;
+      margin-top: 5rem;
+      .field-title {
+        width: 50%;
+        @include breakpoint(medium) {
+          width: 20%;
+        }
+      }
+      .field-body {
+        margin-right: auto;
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+      .field-documents {
+        width: 50%;
+        @include breakpoint(medium) {
+          width: 20%;
+          align-self: flex-end;
+        }
+      }
+    }
+    .view-grouping {
+      @include flex;
+      align-items: center;
+      padding: 3rem 0;
+      border-bottom: .1rem solid $color-grey-dark;
+      &:last-child {
+        border-bottom: none;
+      }
+      .views-field {
+        padding-right: 3rem;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      .view-grouping-header {
+        @include transition(color, .2s);
+        width: 50%;
+        font-weight: 700;
+        @include breakpoint(medium) {
+          width: 20%;
+        }
+        a:hover {
+          color: $color-turquoise
+        }
+      }
+      .view-grouping-content {
+        @include flex;
+        align-items: center;
+        width: 50%;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+      .views-field-body {
+        margin-right: auto;
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+      .views-field-field-documents {
+        @include transition(color, .2s);
+        width: 50%;
+        @include breakpoint(medium) {
+          width: 20%;
+          align-self: flex-end;
+        }
+        a {
+          margin-bottom: 5px;
+          display: inline-block;
+          &:hover {
+            color: $color-turquoise
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.page-node-type-page {
+  #js-full-text-search--holder { display: none; }
+  #block-disasterlawdatabasesearchmenu {
+    padding: 5rem 0 4rem;
+    .block-inner {
+      @include width-655;
+      .menu {
+        @include flex-wrap(wrap);
+        li {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.path-disaster-law-database {
+  #js-full-text-search--holder {
+    padding: 0 0 4rem;
+    .block-inner {
+      @include width-655;
+      label {
+        display: none;
+      }
+      .form--inline {
+        @include flex;
+        span.button {
+          @include bordered-button;
+          cursor: pointer;
+          min-height: 4.4rem;
+          height: 4.4rem;
+        }
+      }
+    }
+  }
+}
+
+.view-disaster-law-database {
+  background-color: #dddddd;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  .view-header {
+    @include width-1105;
+    padding-bottom: 3rem;
+  }
+  .view-content--inner {
+    @include flex;
+    @include width-1105;
+    @include flex-direction(column);
+    @include breakpoint(medium) {
+      @include flex-direction(row);
+    }
+    &__left {
+      max-width: 26.5rem;
+      width: 100%;
+      margin: 0 auto 10rem;
+      @include breakpoint(medium) {
+        margin: 0;
+      }
+      .bef-exposed-form {
+        .form-type-textfield {
+          display: none;
+        }
+      }
+      form > div {
+        @include flex;
+        @include flex-direction(column);
+      }
+      .title-holder {
+        display: none;
+      }
+      .block-inner {
+        padding: 0;
+      }
+      .form-item {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        label {
+          margin-bottom: .2rem;
+          display: block;
+          font-weight: 700;
+          font-size: 1.4rem;
+          opacity: .9;
+        }
+        input, select {
+          background-color: $color-grey-light;
+          max-width: 100%;
+          width: 100%;
+          border: 0;
+          padding: 0.9rem 1.1rem;
+        }
+      }
+      .form-actions {
+        @include flex;
+        @include flex-direction(column-reverse);
+        .form-submit {
+          @include bordered-button;
+          background-color: transparent;
+          padding: 0 5.1rem;
+        }
+        input[data-drupal-selector="edit-reset"] {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    &__right {
+      @include breakpoint(medium) {
+        padding-left: 6rem;
+      }
+      .view-empty {
+        text-align: center;
+        @include breakpoint(medium) {
+          text-align: left;
+        }
+      }
+      .view-content {
+        .views-row {
+          @include flex;
+          @include flex-direction(row);
+          margin-bottom: 3rem;
+          .views-field-thumbnail {
+            width: 18.3rem;
+            height: 25rem;
+            margin-right: 2rem;
+            background-color: $color-white;
+            .field-content {
+              @include flex;
+              @include justify-content(center);
+              @include align-items(center);
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .right-side {
+            width: calc(100% - 20.3rem);
+          }
+          .views-field-name,
+          .views-label {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-document {
+  #block-dislaw-theme-content {
+    background-color: $color-white;
+    padding: 6rem 0;
+    .block-inner {
+      @include width-855;
+      article > a {
+        @include transition(color, .2s);
+        margin-bottom: 4rem;
+        display: inline-block;
+        &:hover {
+          color: $color-turquoise
+        }
+      }
+      .field {
+        margin-bottom: 2.4rem;
+        .field__label {
+          min-width: 25rem;
+          font-weight: 700;
+        }
+        .field__item,
+        .field__items,
+        .item-list {
+          a {
+            text-decoration: underline;
+            &.top-element {
+              font-weight: 700;
+            }
+            &.child-element {
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+      .field--type-image {
+        max-width: 41.2rem;
+        margin: 0 auto 6rem;
+        border: 0.1rem solid #efefef;
+        padding: 0.5rem;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .field--name-field-date {
+        text-align: center;
+      }
+      .field--name-field-documents {
+        margin-bottom: 0;
+        .field__item {
+          @include flex;
+          @include justify-content(center);
+          text-align: center;
+        }
+        a {
+          @include bordered-button;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+      .field--name-field-media,
+      .field--name-field-media-file {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+//
+// Use this classes in block config to add styles to blocks:
+// background-color--blue, background-color--white, background-color--silver
+// padding--high, padding--medium padding--low
+// width--wide, width--narrow
+// content--center
+
+.block-holder {
+  &.width--narrow {
+    .block-inner {
+      @include width-655;
+    }
+  }
+  &.width--wide {
+    .block-inner {
+      @include width-1105;
+    }
+  }
+  &.background-color {
+    &--white { background-color: $color-white; }
+    &--silver { background-color: $color-grey; }
+    &--blue { background-color: $color-blue-light; }
+  }
+  &.padding {
+    &--huge .block-inner { padding: 7rem 0; }
+    &--high .block-inner { padding: 5rem 0; }
+    &--normal .block-inner { padding: 3rem 0; }
+    &--low .block-inner { padding: 1rem 0; }
+    @include breakpoint(medium) {
+      &--huge .block-inner { padding: 15rem 0; }
+      &--high .block-inner { padding: 10rem 0; }
+      &--normal .block-inner { padding: 6rem 0; }
+      &--low .block-inner { padding: 2rem 0; }
+    }
+  }
+  &.font--opensans {
+    font-family: $font-open;
+  }
+  &.font-size--18 {
+    font-size: 1.8rem;
+  }
+  &.content {
+    &--center .block-inner { text-align: center; }
+  }
+  >.block-inner {
+    position: relative;
+    >.field--name-field-title {
+      @include block-title;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    >.field--name-field-description {
+      @include width-655;
+      & + .field--name-field-link {
+        margin-top: 4rem;
+      }
+    }
+    >.field--name-field-link {
+      @include flex;
+      @include justify-content(center);
+      a {
+        @include bordered-button;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F5333F;}
+	.st1{fill:none;stroke:#011E41;stroke-width:16;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#F5333F;stroke-width:16;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#031F40;stroke-width:16;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#011E41;stroke-width:15.3956;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path class="st1" d="M267.1,266.8l1.2-0.4c49.5-14.5,88-53.4,102-103l3.3-11.9c4.7-16.8-10.8-32.2-27.6-27.4l-13.1,3.8
+			c-49.6,14.2-88.3,52.9-102.5,102.5l0,0c-1,3.3-1.3,6.6-1.1,9.7c0.4,8.5,4.6,16.2,10.9,21.3C247.3,267.1,257,269.7,267.1,266.8z"/>
+		<path class="st1" d="M232.3,264l-1.2-0.4c-49.5-14.5-88-53.4-102-103l-3.3-11.9c-4.7-16.8,10.8-32.2,27.6-27.4l13.1,3.8
+			c34.8,10,64.3,32.1,83.7,61.6"/>
+		<path class="st1" d="M230.4,230.3c-6.5,24.4-10,50-10,76.5c0,15.5,1.2,30.7,3.5,45.5"/>
+		<path class="st1" d="M248.9,263.1c-3.5,15.9-5.4,32.4-5.4,49.4c0,13.7,1.2,27.1,3.6,40.1"/>
+	</g>
+	<path class="st1" d="M367.9,134c-30.8,26.8-108.7,70.1-127.7,127.4"/>
+	<path class="st1" d="M132.3,134c22.1,19.2,68.3,46.9,99.7,82.1"/>
+	<line class="st1" x1="182.1" y1="131.1" x2="188.1" y2="174.4"/>
+	<line class="st1" x1="220.2" y1="154.8" x2="225.2" y2="206.8"/>
+	<line class="st1" x1="133.8" y1="176.2" x2="190.5" y2="176.9"/>
+	<line class="st1" x1="155.3" y1="212.2" x2="229.7" y2="212.2"/>
+	<line class="st1" x1="308.4" y1="136.9" x2="302.4" y2="185.8"/>
+	<line class="st1" x1="261.3" y1="173.4" x2="262.1" y2="223.2"/>
+	<line class="st1" x1="359.1" y1="185.8" x2="302.4" y2="185.8"/>
+	<line class="st1" x1="334.6" y1="223.7" x2="260.2" y2="222.7"/>
+	<polyline class="st1" points="246.2,322.3 288.2,284 354.7,293 410.2,270.2 365.7,317.3 293.5,317.3 252.2,354.3 166.9,352.9 
+		135.9,387.3 64.8,387.3 108.3,364.4 164.3,327.9 220.4,326.8 	"/>
+	<polyline class="st1" points="153,372 216.3,384 237.5,432 293.1,445.9 	"/>
+	<line class="st1" x1="135.4" y1="438.9" x2="228.3" y2="414.6"/>
+	<polyline class="st1" points="315.5,320.4 309.4,384 342.4,426.7 	"/>
+	<line class="st1" x1="248.9" y1="354.3" x2="309.6" y2="382"/>
+	<line class="st1" x1="87" y1="305.4" x2="164.3" y2="327.9"/>
+	<line class="st1" x1="185.1" y1="288" x2="201.9" y2="327.2"/>
+</g>
+<path class="st2" d="M370.1,84.7c-33-26-74.7-41.5-120-41.5c-45.3,0-87,15.5-120,41.5"/>
+</svg>

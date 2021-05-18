@@ -1,0 +1,37 @@
+/**
+ * @file
+ * Search component
+ *
+ * Site search, a special form component.
+ *
+ * @package: interactive
+ * @see more 5.components/components.form
+ */
+
+.view-general-site-search {
+  background-color: $color-white;
+  .content-section--content {
+    .views-row {
+      padding: 3rem 0;
+      border-bottom: .1rem solid $color-grey-light;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .views-field-title {
+      font-weight: 700;
+    }
+  }
+  .content-section--sidebar {
+    margin-top: 3rem;
+  }
+  .pager {
+    padding-top: 5rem;
+  }
+}
+.path-search {
+  a.advanced-search {
+    display: none !important;
+  }
+}
+

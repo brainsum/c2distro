@@ -1,0 +1,160 @@
+.separator-pipe {
+  margin: 0 .3rem;
+}
+.views-element-container {
+  >.block-inner {
+    @include width-1105;
+  }
+  .four-column .view-content {
+    @include flex;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include breakpoint(tablet) {
+      @include justify-content(flex-start);
+    }
+    article {
+      height: 100%;
+    }
+    .node__content {
+      @include flex;
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      width: 100%;
+      background-color: $color-white;
+      border: .1rem solid $color-grey-light;
+      min-height: 47rem;
+      .field--type-image {
+        justify-self: flex-start;
+        margin-bottom: 1.3rem;
+        position: relative;
+        display: block;
+      }
+      .field--name-field-date,
+      .node-readmore,
+      .views-field-title {
+        padding: 0 2.3rem;
+      }
+      .field--name-field-date {
+        margin-bottom: 1.5rem;
+      }
+      .content-title {
+        font-weight: 700;
+        padding: 0 2.7rem;
+        margin-bottom: auto;
+        a {
+          @include transition(all, .2s);
+          max-height: 9.6rem;
+          margin-bottom: 1.6rem;
+          overflow: hidden;
+          display: block;
+          font-weight: 700;
+          &:hover {
+            color: $color-turquoise;
+          }
+        }
+      }
+      .node-readmore {
+        @include transition(all, .2s);
+        border-bottom: 1rem solid $color-white;
+        a {
+          @include transition(all, .2s);
+          margin-top: auto;
+          padding-bottom: 2rem;
+          font-style: italic;
+          display: block;
+          margin-bottom: -1rem;
+          &:hover {
+            color: $color-turquoise;
+          }
+        }
+        &:hover {
+          border-color: $color-turquoise;
+        }
+      }
+    }
+  }
+
+  .four-column .view-content {
+    padding-top: 3.5rem;
+    @include breakpoint(tablet) {
+      padding-top: 10rem;
+      margin: 0 -1.5rem;
+    }
+    .views-row {
+      max-width: 25.4rem;
+      margin: 0 1rem 3rem;
+      @include breakpoint(tablet) {
+        max-width: calc(25% - 3rem);
+        margin: 0 1.5rem 3rem;
+      }
+    }
+  }
+  .three-column .view-content,
+  &.three-column .view-content {
+    padding-top: 3.5rem;
+    @include breakpoint(tablet) {
+      @include justify-content(space-between);
+      padding-top: 10rem;
+      margin: 0 -1.5rem;
+    }
+    .views-row {
+      max-width: 35.6rem;
+      margin: 0 1rem 3rem;
+      @include breakpoint(tablet) {
+        width: calc(33% - 3rem);
+        max-width: 30.7rem;
+        margin: 0 1.5rem;
+      }
+    }
+  }
+  .four-column .view-footer,
+  .view-news-events .view-footer,
+  .view-rcrc-documents .view-footer,
+  .view-rcrc-documents-search-index .view-footer {
+    @include flex;
+    @include justify-content(center);
+    text-align: center;
+    padding: 3.3rem 0 20rem;
+    @include breakpoint(tablet) {
+      padding: 10.7rem 0 10.5rem;
+    }
+    a {
+      @include bordered-button;
+    }
+  }
+  .view-rcrc-documents .view-footer {
+    @include breakpoint(tablet) {
+      padding: 7.7rem 0 10.5rem;
+    }
+  }
+}
+
+#block-views-block-rcrc-documents-publications {
+  .view-footer {
+    padding: 3.3rem 0 11.5rem;
+    @include breakpoint(tablet) {
+      padding: 10.7rem 0 10.5rem;
+    }
+  }
+}
+
+.media--view-mode-card {
+  .info-line {
+    >.field {
+      position: relative;
+      padding-right: 1.2rem;
+      &:after {
+        content: '|';
+        position: absolute;
+        top: 0;
+        right: .4rem;
+      }
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+}
+
+
