@@ -1,0 +1,68 @@
+# Theme's name for admin UI, change for your project, like Diginomica Theme
+name: "IFRC-C2D theme"
+type: theme
+# Short description text for admin UI, change for your project
+description: "Drupal 8 coding standards ready theme powered by Gulp 4 based on Classy."
+core: 8.x
+core_version_requirement: ^8 || ^9
+# website logo, begin with Drupal 8.6 you can use SVG or PNG format too
+logo: logo.png
+# screenshot cover image for admin UI (588x438): take a screenshot about home page
+screenshot: screenshot.png
+package: brainsum
+# Defines the base theme, change it for your needs
+base theme: classy
+# Defines libraries group in which we can add css/js.
+libraries:
+  - c2d_theme/global-styling
+# Regions, change it for your needs (don't forget change page template too)
+libraries-override:
+  core/picturefill: false
+stylesheets-remove:
+  - '@stable/css/system/components/align.module.css'
+  - '@stable/css/system/components/ajax-progress.module.css'
+  - '@stable/css/system/components/autocomplete-loading.module.css'
+  - '@stable/css/system/components/fieldgroup.module.css'
+  - '@stable/css/system/components/item-list.module.css'
+  - '@stable/css/system/components/container-inline.module.css'
+  - '@stable/css/system/components/details.module.css'
+  - '@stable/css/system/components/js.module.css'
+  - '@stable/css/system/components/progress.module.css'
+  - '@stable/css/system/components/position-container.module.css'
+  - '@stable/css/system/components/sticky-header.module.css'
+  - '@stable/css/system/components/tabledrag.module.css'
+  - '@stable/css/system/components/tablesort.module.css'
+  - '@stable/css/system/components/tree-child.module.css'
+  - '@stable/css/views/views.module.css'
+  - '@stable/css/system/components/system-status-report-general-info.css'
+  - '@stable/css/system/components/system-status-report-counters.css'
+  - '@stable/css/system/components/system-status-counter.css'
+  - '@classy/css/components/action-links.css'
+  - '@classy/css/components/breadcrumb.css'
+  - '@classy/css/components/button.css'
+  - '@classy/css/components/collapse-processed.css'
+  - '@classy/css/components/container-inline.css'
+  - '@classy/css/components/details.css'
+  - '@classy/css/components/exposed-filters.css'
+  - '@classy/css/components/field.css'
+  - '@classy/css/components/form.css'
+  - '@classy/css/components/inline-form.css'
+  - '@classy/css/components/icons.css'
+  - '@classy/css/components/item-list.css'
+  - '@classy/css/components/link.css'
+  - '@classy/css/components/links.css'
+  - '@classy/css/components/more-link.css'
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/tabledrag.css'
+  - '@classy/css/components/tableselect.css'
+  - '@classy/css/components/tablesort.css'
+  - '@classy/css/components/ui-dialog.css'
+regions:
+  top_bar: Top Bar
+  header: Header
+  navigation: Navigation
+  featured: Featured
+  top: Top
+  content: Content
+  bottom: Bottom
+  footer: Footer

@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+
+  <div{{ attributes.addClass(classes) }}>
+    <div class="region-footer--left-side">
+      {% if content %}
+        {{ content }}
+      {% endif %}
+      <a href="mailto:naomi.akamatsu@ifrc.org">{{'Contact us'|t }}</a>
+    </div>
+    <div class="region-footer--right-side">
+{#      <span class="footer-title">
+        Follow us on Social Media:
+      </span>
+      <div class="social-block">
+               <a href="https://twitter.com/Disaster_Law" class="social-icon" aria-label="twitter link" target="_blank"><img src="/themes/custom/c2d_theme/images/dist/icons/twitter.svg" alt="twitter icon"></a>
+       <a href="https://instagram.com/ifrc" class="social-icon" aria-label="instagram link" target="_blank"><img src="/themes/custom/c2d_theme/images/dist/icons/instagram.svg" alt="instagram icon"></a>
+        <a href="https://facebook.com/ifrc" class="social-icon" aria-label="facebook link" target="_blank"><img src="/themes/custom/c2d_theme/images/dist/icons/facebook.svg" alt="facebook icon"></a>
+        <a href="https://tiktok.com/@ifrc" class="social-icon tiktok" aria-label="tiktok link" target="_blank"><img src="/themes/custom/c2d_theme/images/dist/icons/tiktok-brands.svg" alt="tiktok icon"></a>
+        <a href="https://youtube.com/ifrc" class="social-icon youtube" aria-label="youtube link" target="_blank"><img src="/themes/custom/c2d_theme/images/dist/icons/youtube-brands.svg" alt="youtube icon"></a>
+      </div>
+      <a href="https://nsbd.ifrc.org" class="ifrc-link">nsbd.ifrc.org</a>#}
+    </div>
+
+  </div>
+

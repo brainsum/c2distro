@@ -1,0 +1,779 @@
+
+.paragraph {
+  font-family: $font-open;
+  // style options
+  &.background-color {
+    &--white { background-color: $color-white; }
+    &--grey { background-color: $color-grey; }
+  }
+/*  &.padding {
+    &--high { padding: 10rem 0; }
+    &--normal { padding: 6rem 0; }
+    &--low { padding: 2rem 0; }
+  }*/
+  // general styles
+  .field--name-field-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--text-media,
+.paragraph--type--link-boxes,
+.paragraph--type--popup-wrapper,
+.paragraph--type--view,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--small-boxes,
+.paragraph--type--quotes,
+.paragraph--type--media {
+  padding: 6rem 0;
+}
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--popup-wrapper,
+.paragraph--type--media {
+  >.paragraph--inner {
+    @include width-655;
+  }
+}
+
+.paragraph--type--quotes {
+  >.paragraph--inner {
+    @include width-855;
+  }
+}
+
+.paragraph--type--media-document,
+.paragraph--type--view,
+.paragraph--type--partners,
+.paragraph--type--link-boxes,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--small-boxes {
+  >.paragraph--inner {
+    @include width-1105;
+  }
+}
+
+.paragraph {
+  >.paragraph--inner {
+    .field--name-field-text,
+    .field--name-field-plaintext {
+      @include font-open-18;
+    }
+  }
+}
+
+.paragraph--type--quotes {
+  .paragraph--inner {
+    &>.field__items {
+      @include flex;
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+      &>.field__item {
+        width: 100%;
+        margin-bottom: 3.5rem;
+        @include breakpoint(medium) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.paragraph--type--quote-paragraph {
+  padding: 0 1.8rem;
+  height: 100%;
+  .paragraph--inner {
+    @include transition(background-color, .2s);
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 9rem 5.5rem 5rem;
+    box-shadow: 0 1rem 5rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    height: 100%;
+    &:hover {
+      background-color: $color-white;
+    }
+    &:before {
+      content: '';
+      width: 3rem;
+      height: 3rem;
+      display: block;
+      position: absolute;
+      opacity: 0.5;
+      top: 4rem;
+      left: 1.5rem;
+      background-image: url("/themes/custom/c2d_theme/images/dist/svg/quote-open.svg");
+    }
+    .field--name-field-text {
+      position: relative;
+    }
+    .more-btn {
+      position: relative;
+      &:after {
+        content: url(/themes/custom/c2d_theme/images/dist/icons/arrow-right.svg);
+        position: absolute;
+        left: 100%;
+        top: .1rem;
+        padding-left: .5rem;
+      }
+    }
+  }
+  &.open {
+    .popup-text--wrapper {
+      display: block;
+    }
+  }
+}
+
+.paragraph--type--media {
+  .paragraph--inner {
+    .field--type-image {
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .field--name-field-media-oembed-video {
+      iframe {
+        margin: 0 auto;
+        display: block;
+        min-height: 40rem;
+        width: 100%;
+      }
+    }
+
+    .field--name-field-text {
+      font-size: 1.4rem;
+      background-color: darken($color-grey-light, 5%);
+      padding: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+
+.paragraph--type--text-media {
+  .paragraph--inner {
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include width-1105;
+    @include breakpoint(medium) {
+      @include flex-direction(row);
+      .left,
+      .right {
+        width: 50%;
+      }
+    }
+  }
+  .right {
+    .text-formatted p a {
+      color: $color-turquoise;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &.paragraph--view-mode--invers {
+    .right {
+      @include flex-order(-1);
+      @include breakpoint(medium) {
+        @include flex-order(2);
+      }
+    }
+    .left {
+      @include breakpoint(medium) {
+        padding-right: 5.5rem;
+      }
+    }
+  }
+  &.paragraph--view-mode--default {
+    .right {
+      @include breakpoint(medium) {
+        padding-left: 5.5rem;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    min-height: 30rem;
+  }
+  .field--name-field-media {
+    margin-bottom: 3rem;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+  .field--name-field-link {
+    margin-top: 4rem;
+    a {
+      @include font-open-18;
+      text-decoration: underline;
+      position: relative;
+      padding-left: 3rem;
+      &:before {
+        content: url("/themes/custom/c2d_theme/images/dist/icons/arrow-right.svg");
+        position: absolute;
+        left: 0;
+        top: .2rem;
+        padding-right: 15px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.paragraph--type--cta {
+  text-align: center;
+  .field--name-field-title,
+  .field--name-field-text {
+    &+ .field--name-field-link {
+      margin-top: 4rem;
+    }
+  }
+  .field--name-field-link {
+    @include flex;
+    @include justify-content(center);
+    a {
+      @include bordered-button;
+    }
+  }
+}
+
+.paragraph--type--partners {
+  &.padding {
+    &--high { padding: 10rem 0 4rem; }
+    &--normal { padding: 6rem 0 0; }
+    &--low { padding: 2rem 0 0; }
+  }
+  .field--name-field-title,
+  .field--name-field-text {
+    @include width-655;
+  }
+  .field--name-field-title {
+    margin-bottom: 6.5rem;
+    text-align: center;
+  }
+  .field--name-field-text {
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+  .field--name-field-paragraphs {
+    @include flex;
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin: 0 -1.5rem;
+    @include breakpoint(tablet) {
+      @include justify-content(space-between);
+    }
+    >.field__item {
+      max-width: 35.6rem;
+      margin: 0 1.5rem 3rem;
+      width: 100%;
+      @include breakpoint(tablet) {
+        width: calc(33% - 3rem);
+        max-width: 30.7rem;
+        margin: 0 1.5rem 6rem;
+      }
+      .paragraph--type--partner {
+        max-width: 31.5rem;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+
+        .partner-top {
+          @include flex;
+          @include justify-content(center);
+          margin-bottom: 1.5rem;
+          a {
+            @include transition(background-color, .2s);
+            @include flex;
+            @include justify-content(center);
+            align-items: center;
+            border: 2px solid $color-turquoise;
+            height: 20rem;
+            border-radius: 17rem;
+            overflow: hidden;
+            width: 20rem;
+            &:hover {
+              background-color: $color-white;
+            }
+          }
+        }
+
+        .partner-title a {
+          @include transition(color, .2s);
+          font-weight: 700;
+          display: block;
+          &:hover {
+            color: $color-turquoise;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.paragraph--type--small-boxes {
+  padding-top: 0;
+  >.paragraph--inner {
+    position: relative;
+    padding-top: 10rem;
+    >.field--name-field-title {
+      @include block-title;
+      line-height: 3.5rem;
+      margin-top: -1.7rem;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 1.5rem;
+    }
+    .field--name-field-paragraphs {
+      @include flex;
+      @include flex-wrap(wrap);
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include breakpoint(medium) {
+        @include flex-direction(row);
+      }
+      margin: 0 -.7rem;
+      >.field__item {
+        width: 100%;
+        padding: 0 .7rem;
+        margin-bottom: 1.4rem;
+        @include breakpoint(medium) {
+          width: 33%;
+        }
+      }
+    }
+  }
+  .paragraph--type--small-box {
+    background-color: $color-white;
+    border: .1rem solid $color-grey-light;
+    .paragraph--inner {
+      position: relative;
+      span,
+      a {
+        @include transition(color, .2s);
+        @include flex;
+        @include justify-content(center);
+        @include align-items(center);
+        padding: 2rem;
+        width: 100%;
+        height: 11.3rem;
+        font-family: $font-montserrat;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 2rem;
+        @include breakpoint(medium) {
+          @include justify-content(flex-start);
+        }
+      }
+      a:hover {
+        color: $color-turquoise;
+      }
+    }
+  }
+}
+
+.paragraph--type--accordion {
+  > .paragraph--inner > .field--name-field-text {
+    margin-bottom: 3rem;
+  }
+  .paragraph--type--item {
+    border-bottom: 1px solid rgba($color-blue-darkest, .4);
+    margin-bottom: 3rem;
+    .field--name-field-title {
+      font-size: 1.8rem;
+      position: relative;
+      cursor: pointer;
+      padding-right: 4rem;
+      &:after {
+        @include transition(all, .2s);
+        content: url("/themes/custom/c2d_theme/images/dist/icons/chevron-down.svg");
+        width: 3.2rem;
+        height: 3.2rem;
+        position: absolute;
+        right: -6px;
+        top: -3px;
+      }
+    }
+    &.empty {
+      .field--name-field-title {
+        cursor: default;
+        &::after {
+          content: '';
+        }
+      }
+    }
+    .open .field--name-field-title:after {
+      @include rotate(180);
+    }
+    .field--name-field-text {
+      @include transition(all, .2s);
+      height: 0;
+      overflow: hidden;
+    }
+    .paragraph--inner.open .field--name-field-text {
+      height: auto;
+      overflow: auto;
+      padding-bottom: 2.5rem;
+    }
+  }
+  .field__item:last-child {
+    .paragraph--type--item {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.paragraph--type--link-boxes {
+  >.paragraph--inner {
+    >.field__items {
+      @include flex;
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      >.field__item {
+        width: 100%;
+        margin: 0 auto;
+        background-color: $color-grey;
+        font-size: 1.4rem;
+        @include breakpoint(medium) {
+          width: 40%;
+        }
+      }
+    }
+    .view,
+    .paragraph--type--link-box {
+      padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+      text-align: center;
+      .paragraph--inner {
+        position: relative;
+      }
+      .view-header h3,
+      .field--name-field-title {
+        font-family: $font-montserrat;
+        font-size: 2rem;
+        font-weight: 700;
+        // padding-right: 5rem;
+        margin-bottom: 4rem;
+      }
+      .field--name-field-media {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        img {
+          display: block;
+          margin-left: auto;
+        }
+      }
+      .view-content,
+      .field__items {
+        .views-row,
+        .field__item {
+          margin-bottom: 2.8rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 1.4rem;
+            line-height: 3rem;
+          }
+        }
+        & + .field__items {
+          margin-top: 2.8rem;
+        }
+      }
+      .view-footer,
+      .field--name-field-links {
+        a {
+          text-decoration: underline;
+        }
+      }
+      .view-footer {
+        margin-top: 3.5rem;
+      }
+    }
+  }
+}
+
+.paragraph--type--media-document {
+  font-family: $font-montserrat;
+  .paragraph--inner {
+    position: relative;
+    padding-top: 3rem;
+  }
+  .field--name-field-title {
+    @include block-title;
+    padding: 0;
+    position: absolute;
+    top: -6rem;
+  }
+  .field--name-field-media-entities {
+    @include flex;
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin: 0 -1.5rem;
+    >.field__item {
+      max-width: 23.4rem;
+      margin: 0 1rem 3rem;
+      width: 100%;
+      @include breakpoint(tablet) {
+        max-width: calc(25% - 3rem);
+        margin: 0 1.5rem 3rem;
+      }
+      .media {
+        @include flex;
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        background-color: $color-white;
+        border: .1rem solid $color-grey-light;
+        height: 100%;
+        min-height: 47rem;
+        .field--type-image {
+          margin-bottom: 1.3rem;
+          position: relative;
+        }
+        .field--name-field-date {
+          padding: 0 2.3rem;
+          margin-bottom: 1.6rem;
+        }
+        .field--name-name,
+        .field--name-field-short-title {
+          max-height: 9.5rem;
+          margin-bottom: 1.6rem;
+          overflow: hidden;
+        }
+        .readmore-btn,
+        .field--name-name,
+        .field--name-field-short-title {
+          padding: 0 2.7rem;
+          a {
+            @include transition(all, .2s);
+            font-weight: 700;
+            display: block;
+            &:hover {
+              color: $color-turquoise;
+            }
+          }
+        }
+        .readmore-btn {
+          @include transition(all, .2s);
+          border-bottom: 1rem solid $color-white;
+          justify-self: flex-end;
+          margin-top: auto;
+          &:hover {
+            border-color: $color-turquoise;
+          }
+          a {
+            font-style: italic;
+            padding-bottom: 2rem;
+            margin-bottom: -1rem;
+          }
+        }
+      }
+    }
+  }
+  .field--name-field-link {
+    @include flex;
+    @include justify-content(center);
+    padding-top: 3rem;
+    a {
+      @include bordered-button;
+    }
+  }
+}
+
+.paragraph--type--tab-group-wrapper {
+  padding-top: 5rem;
+  .tab-group--content__wrapper {
+    position: relative;
+    .tab-group--content {
+      display: none;
+      &.is-active {
+        display: block;
+      }
+
+      .paragraph--type--text-media {
+        @include breakpoint(medium) {
+          .left {
+            width: 25%;
+          }
+          .right {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.paragraph--type--view {
+  font-family: $font-montserrat;
+  padding-top: 0;
+  .block-views {
+    .title-holder {
+      padding: 0 !important;
+    }
+  }
+  .view-footer {
+    padding-bottom: 0 !important;
+  }
+  .view-header {
+    @include block-title;
+    display: inline-block;
+  }
+}
+
+.block-about-branches {
+  nav {
+    padding-top: 10rem;
+  }
+}
+
+.paragraph--type--timeline-wrapper,
+.paragraph--type--popup-wrapper {
+  >.paragraph--inner {
+    >.field--name-field-description {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.popup-text--wrapper {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(.3rem);
+  z-index: 999;
+  .field--type-string-long {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 15px 12px 4px rgb(0 0 0 / 15%);
+    padding: 5rem;
+    width: 100%;
+    z-index: 1001;
+    @include breakpoint(medium) {
+      max-width: 30vw;
+    }
+    .popup-text--close {
+      position: absolute;
+      top: 1.3rem;
+      right: 1.3rem;
+      background-color: #333333;
+      border-radius: 50%;
+      width: 2.9rem;
+      height: 2.9rem;
+      text-align: center;
+      padding-top: .2rem;
+      cursor: pointer;
+      @include breakpoint(medium) {
+        top: -1.3rem;
+        right: -1.3rem;
+      }
+    }
+  }
+  &.open {
+    display: block;
+  }
+}
+
+.paragraph--type--popup-text {
+  .field--name-field-title {
+    font-size: 1.8rem;
+  }
+  .paragraph--inner.open {
+    .popup-text--wrapper {
+      display: block;
+    }
+  }
+  &.has-popup {
+    @include transition(all, .2s);
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.paragraph--type--timeline {
+  padding: 0 3rem 10rem;
+  position: relative;
+  .paragraph--inner {
+    @include flex;
+    @include justify-content(space-between);
+    border-bottom: .2rem solid $color-turquoise;
+    padding-bottom: .4rem;
+    .field--name-field-left-title,
+    .field--name-field-middle-title,
+    .field--name-field-right-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      position: relative;
+      &:after {
+        content: '';
+        width: .6rem;
+        height: .6rem;
+        border-radius: .3rem;
+        background-color: $color-blue-darkest;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -.8rem;
+      }
+    }
+    .field--name-field-left-title {
+      margin-left: 2rem;
+    }
+    .field--name-field-right-title {
+      margin-right: 2rem;
+    }
+  }
+  .field--name-field-timeline-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+    top: 15px;
+    background-color: #efefef;
+    padding: 0 10px;
+  }
+  &.left-popup .field--name-field-left-title,
+  &.middle-popup .field--name-field-middle-title,
+  &.right-popup .field--name-field-right-title {
+    @include transition(color, .2s);
+    cursor: pointer;
+    &:hover {
+      color: $color-turquoise;
+    }
+  }
+}
