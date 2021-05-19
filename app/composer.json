@@ -1,11 +1,11 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 9 projects with Composer",
+    "name": "brainsum/c2d-project",
+    "description": "Project template for IFRC C2 distro",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "",
+            "name": "pmester",
             "role": ""
         }
     ],
