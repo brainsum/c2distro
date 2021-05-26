@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.document
+id: paragraph.document
+target_entity_type_id: paragraph
+target_bundle: document
+default_langcode: site_default
+language_alterable: true

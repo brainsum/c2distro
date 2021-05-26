@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: item
+label: Item
+icon_uuid: null
+icon_default: null
+description: 'Simple title+text item, e.g. accordion item.'
+behavior_plugins: {  }

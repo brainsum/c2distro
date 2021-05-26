@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the profilename install profile.
+ */
+
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use \Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function c2distro_install() {
+  // First, do everything in standard profile.
+  // include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  // standard_install();
+
+  // Create a menu link.
+  MenuLinkContent::create([
+    'title' => 'Hello World!!! :)',
+    'link' => ['uri' => 'internal:/node/2'],
+    'menu_name' => 'main',
+    'weight' => 10,
+  ])->save();
+
+  // Create a basic page node.
+  // Create node object with attached file.
+  $node = Node::create([
+    'type'        => 'page',
+    'title'       => 'Homepage',
+    'body' => 'Test body helloworld text.'
+  ]);
+  $node->save();
+
+  // Can add code in here to make nodes, terms, etc.
+}
