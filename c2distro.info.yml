@@ -1,6 +1,6 @@
-name: 'C2 distro ifrc profile'
+name: 'C2 distro profile'
 type: profile
-description: 'Distribution for quickly starting a new ifrc distribution.'
+description: 'Distribution for quickly starting a new c2d system with Drupal.'
 
 core_version_requirement: ^9.1
 php: 7.3
@@ -26,14 +26,13 @@ install:
   - drupal:views_ui
   - drupal:datetime
   - drupal:datetime_range
-  # Contrib.
   - drupal:menu_ui
   - drupal:field_ui
-  # - drupal:default_content
+  - drupal:media_library
+  # Contrib.
+  - drupal:admin_toolbar
   - drupal:paragraphs
   - drupal:classy_paragraphs
-  - drupal:media_library
-  - drupal:admin_toolbar
   - drupal:inline_form_errors
   - drupal:responsive_image
   - drupal:adminimal_admin_toolbar
@@ -50,7 +49,6 @@ install:
   - drupal:metatag
   - drupal:metatag_open_graph
   # Custom
-  # - default_content_test
 # Required dependencies.
 dependencies:
   # Core.

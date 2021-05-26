@@ -1,6 +1,6 @@
 {
     "name": "brainsum/c2distro",
-    "description": "Distribution for quickly starting a new IFRC project system with Drupal",
+    "description": "Distribution for quickly starting a new c2distro project system with Drupal",
     "type": "drupal-profile",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -25,7 +25,20 @@
         }
     },
     "require": {
+        "drupal/block_field": "^1.0@RC",
+        "drupal/classy_paragraphs": "^1.0@beta",
+        "drupal/ctools": "^3.6",
         "drupal/easy_breadcrumb": "^1.15",
-        "drupal/search_api": "^1.19.0"
+        "drupal/field_group": "^3.1",
+        "drupal/metatag": "^1.16",
+        "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
+        "drupal/search_api": "^1.19.0",
+        "drupal/structure_sync": "^2.0",
+        "drupal/svg_image": "^1.14",
+        "drupal/transliterate_filenames": "^1.5",
+        "drupal/token": "^1.9",
+        "drupal/warmer": "^2.0",
+        "drupal/warmer_entity": "^2.0"
     }
 }
