@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_boxes.field_background_color
+    - field.field.paragraph.link_boxes.field_paragraphs
+    - paragraphs.paragraphs_type.link_boxes
+  module:
+    - entity_reference_revisions
+id: paragraph.link_boxes.default
+targetEntityType: paragraph
+bundle: link_boxes
+mode: default
+content:
+  field_background_color:
+    type: entity_reference_entity_id
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraphs:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }
