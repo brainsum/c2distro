@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: popup_wrapper
+label: 'Popup wrapper'
+icon_uuid: null
+icon_default: null
+description: 'Wrapper element for popup_text paragraph type.'
+behavior_plugins: {  }

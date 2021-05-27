@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.popup_text
+    - paragraphs.paragraphs_type.popup_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.popup_wrapper.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: popup_wrapper
+label: 'Popup elements'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      popup_text: popup_text
+    target_bundles_drag_drop:
+      accordion:
+        weight: 12
+        enabled: false
+      document:
+        weight: 13
+        enabled: false
+      item:
+        weight: 14
+        enabled: false
+      link_box:
+        weight: 15
+        enabled: false
+      link_boxes:
+        weight: 16
+        enabled: false
+      media:
+        weight: 17
+        enabled: false
+      partner:
+        weight: 18
+        enabled: false
+      partners:
+        weight: 19
+        enabled: false
+      popup_text:
+        enabled: true
+        weight: 20
+      popup_wrapper:
+        weight: 11
+        enabled: false
+field_type: entity_reference_revisions

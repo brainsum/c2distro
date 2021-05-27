@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: popup_text
+label: 'Popup text'
+icon_uuid: null
+icon_default: null
+description: 'Hover&clickable popup text paragraph type.'
+behavior_plugins: {  }

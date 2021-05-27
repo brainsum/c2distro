@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: partners
+label: Partners
+icon_uuid: null
+icon_default: null
+description: 'Partner wrapper.'
+behavior_plugins: {  }

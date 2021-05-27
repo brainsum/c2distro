@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.popup_wrapper.field_background_color
+    - field.field.paragraph.popup_wrapper.field_description
+    - field.field.paragraph.popup_wrapper.field_paragraphs
+    - field.field.paragraph.popup_wrapper.field_title
+    - paragraphs.paragraphs_type.popup_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.popup_wrapper.default
+targetEntityType: paragraph
+bundle: popup_wrapper
+mode: default
+content:
+  field_background_color:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_paragraphs:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

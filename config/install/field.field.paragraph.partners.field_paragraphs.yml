@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.partner
+    - paragraphs.paragraphs_type.partners
+  module:
+    - entity_reference_revisions
+id: paragraph.partners.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: partners
+label: Partner
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      partner: partner
+    target_bundles_drag_drop:
+      accordion:
+        weight: 10
+        enabled: false
+      document:
+        weight: 11
+        enabled: false
+      item:
+        weight: 12
+        enabled: false
+      link_box:
+        weight: 13
+        enabled: false
+      link_boxes:
+        weight: 14
+        enabled: false
+      media:
+        weight: 15
+        enabled: false
+      partner:
+        enabled: true
+        weight: 16
+      partners:
+        weight: 9
+        enabled: false
+field_type: entity_reference_revisions
