@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.timeline_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.timeline_wrapper.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: timeline_wrapper
+label: Timeline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      timeline: timeline
+    target_bundles_drag_drop:
+      accordion:
+        weight: 20
+        enabled: false
+      document:
+        weight: 21
+        enabled: false
+      item:
+        weight: 22
+        enabled: false
+      link_box:
+        weight: 23
+        enabled: false
+      link_boxes:
+        weight: 24
+        enabled: false
+      media:
+        weight: 25
+        enabled: false
+      partner:
+        weight: 26
+        enabled: false
+      partners:
+        weight: 27
+        enabled: false
+      popup_text:
+        weight: 28
+        enabled: false
+      popup_wrapper:
+        weight: 29
+        enabled: false
+      quote_paragraph:
+        weight: 30
+        enabled: false
+      quotes:
+        weight: 31
+        enabled: false
+      small_box:
+        weight: 32
+        enabled: false
+      small_boxes:
+        weight: 33
+        enabled: false
+      text:
+        weight: 34
+        enabled: false
+      text_media:
+        weight: 35
+        enabled: false
+      timeline:
+        enabled: true
+        weight: 36
+      timeline_wrapper:
+        weight: 19
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.small_box.field_link
+    - paragraphs.paragraphs_type.small_box
+  module:
+    - link
+id: paragraph.small_box.default
+targetEntityType: paragraph
+bundle: small_box
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

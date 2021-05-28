@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: timeline_wrapper
+label: 'Timeline wrapper'
+icon_uuid: null
+icon_default: null
+description: 'Wrapper for timeline paragraph.'
+behavior_plugins: {  }

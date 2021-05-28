@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: text_media
+label: 'Text + media'
+icon_uuid: null
+icon_default: null
+description: 'Text and image, text and video.'
+behavior_plugins: {  }

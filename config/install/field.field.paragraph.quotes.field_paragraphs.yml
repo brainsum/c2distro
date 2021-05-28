@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.quote_paragraph
+    - paragraphs.paragraphs_type.quotes
+  module:
+    - entity_reference_revisions
+id: paragraph.quotes.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: quotes
+label: Quote
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      quote_paragraph: quote_paragraph
+    target_bundles_drag_drop:
+      accordion:
+        weight: 14
+        enabled: false
+      document:
+        weight: 15
+        enabled: false
+      item:
+        weight: 16
+        enabled: false
+      link_box:
+        weight: 17
+        enabled: false
+      link_boxes:
+        weight: 18
+        enabled: false
+      media:
+        weight: 19
+        enabled: false
+      partner:
+        weight: 20
+        enabled: false
+      partners:
+        weight: 21
+        enabled: false
+      popup_text:
+        weight: 22
+        enabled: false
+      popup_wrapper:
+        weight: 23
+        enabled: false
+      quote_paragraph:
+        enabled: true
+        weight: 24
+      quotes:
+        weight: 13
+        enabled: false
+field_type: entity_reference_revisions
