@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.link_boxes.field_paragraphs
     - paragraphs.paragraphs_type.link_boxes
   module:
-    - entity_reference_revisions
+    - paragraphs
 id: paragraph.link_boxes.default
 targetEntityType: paragraph
 bundle: link_boxes
@@ -14,23 +14,21 @@ mode: default
 content:
   field_background_color:
     weight: 0
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_paragraphs:
     weight: 1
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
 hidden:
   created: true
