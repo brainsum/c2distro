@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.link_boxes
     - paragraphs.paragraphs_type.small_boxes
+    - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_media
   module:
     - entity_reference_revisions
@@ -28,6 +29,7 @@ settings:
       accordion: accordion
       link_boxes: link_boxes
       small_boxes: small_boxes
+      text: text
       text_media: text_media
     target_bundles_drag_drop:
       accordion:
@@ -73,8 +75,8 @@ settings:
         enabled: true
         weight: 33
       text:
+        enabled: true
         weight: 34
-        enabled: false
       text_media:
         enabled: true
         weight: 35
