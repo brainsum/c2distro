@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 496c7cab-5443-4e08-b872-7bcce5af6db0
+  bundle: remote_video
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'We are the International Federation'
+  created:
+    -
+      value: 1625499376
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_oembed_video:
+    -
+      value: 'https://www.youtube.com/watch?v=GmfydmGJZ8w'

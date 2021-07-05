@@ -1,0 +1,523 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c5372e7d-6a0f-4ee7-9246-0393ed3acf4e
+  bundle: page
+  default_langcode: en
+  depends:
+    3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
+    496c7cab-5443-4e08-b872-7bcce5af6db0: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Home page'
+  created:
+    -
+      value: 1625490519
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 97739ed7-5554-40aa-90bf-da3949fde621
+          bundle: text_media
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625499664
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: white
+          field_media:
+            -
+              entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
+          field_text:
+            -
+              value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet commodo nisl, non suscipit augue. Nulla porta finibus nisl ac pulvinar.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed."
+              format: plain_text
+          field_title:
+            -
+              value: 'Title of the text and media paragraph'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: eec4a98b-cd09-4a48-98b9-1edbe50991c6
+          bundle: small_boxes
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625502490
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: grey
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 282cfc94-db93-4074-8615-22fdd24d8407
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502490
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'What is a Branch?'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: aab784ce-3e52-487d-b241-4a36efb61096
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502510
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'Why do Branches develop themselves?'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: de109424-3b6f-41e7-83a8-c94edabf555d
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502581
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'How do Branches develop themselves?'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 199a3d71-1c7a-46ca-921e-db51fc0bb83a
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502600
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'A sample Branch Development process'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 88bf7e40-38e0-45c7-aaf1-bc9520c901d9
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502616
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'What type of Branch models are there?'
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 72a32b4d-4ab1-4f45-aa83-194cffd27891
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625502623
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'See more  »'
+                      options: {  }
+          field_title:
+            -
+              value: 'About Branches'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8ab81e6f-d0ba-4d91-9b99-ee2a546ac9f9
+          bundle: accordion
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625492123
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: white
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cc0023db-6b69-497a-afd2-c218c8b60ff8
+                  bundle: item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625492123
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_text:
+                    -
+                      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                      format: plain_text
+                  field_title:
+                    -
+                      value: 'Item #1'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 13a85c79-8c05-46b2-a2d9-c35ea360f9cf
+                  bundle: item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625492152
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_text:
+                    -
+                      value: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.'
+                      format: plain_text
+                  field_title:
+                    -
+                      value: 'Item #2'
+          field_text:
+            -
+              value: 'Lorerm ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor'
+              format: plain_text
+          field_title:
+            -
+              value: 'Accordion title'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: eeae356e-4c1d-435a-97cc-d622af37a41f
+          bundle: link_boxes
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625492259
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: white
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cf5ca153-8a12-466b-b060-ea99e6f8abb2
+                  bundle: link_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625492082
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_links:
+                    -
+                      uri: 'internal:/'
+                      title: 'home page'
+                      options: {  }
+                  field_title:
+                    -
+                      value: 'Link box'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cf5ca153-8a12-466b-b060-ea99e6f8abb3
+                  bundle: link_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625492082
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_links:
+                    -
+                      uri: 'internal:/'
+                      title: 'home page'
+                      options: {  }
+                  field_title:
+                    -
+                      value: 'Link box'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8e65f231-116a-48c2-872a-1741997f3bd6
+          bundle: text_media
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625492333
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: grey
+          field_media:
+            -
+              entity: 496c7cab-5443-4e08-b872-7bcce5af6db0
+          field_text:
+            -
+              value: 'The world’s largest humanitarian network has 190 National Red Cross and Red Crescent Societies and around 17 million volunteers. Together, we are the International Federation of Red Cross and Red Crescent Societies (IFRC).'
+              format: plain_text
+          field_title:
+            -
+              value: 'We are the International Federation'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3cc2be2b-6aa4-42e6-b445-4196af084b79
+          bundle: text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625513228
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: white
+          field_text:
+            -
+              value: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.'
+              format: plain_text
+          field_title:
+            -
+              value: 'Title of the text box'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2f56ad11-ce04-43b3-ae4d-551167e012f8
+          bundle: small_boxes
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1625512936
+          behavior_settings:
+            -
+              value: {  }
+          field_background_color:
+            -
+              target_id: grey
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 344ea536-fe12-43c3-a7f1-ab174af8cbf6
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625512936
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: BOCA
+                      options: {  }
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4ece0878-496e-4959-9ee0-6c7311411015
+                  bundle: small_box
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1625512984
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_link:
+                    -
+                      uri: 'internal:/'
+                      title: 'Click here to futrther connect, discuss and share!'
+                      options: {  }
+          field_title:
+            -
+              value: Tools

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: eb8f5fde-737a-442e-bcc8-b8f3f347ad2a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Dr2RKCM0brzOM1fDdZuqEIweXdOeCFiHkdJqsJ25ehU.jpg
+  uri:
+    -
+      value: 'public://oembed_thumbnails/Dr2RKCM0brzOM1fDdZuqEIweXdOeCFiHkdJqsJ25ehU.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 22210
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1625502192

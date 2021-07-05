@@ -1,11 +1,10 @@
 <?php
 /**
  * @file
- * Install, update and uninstall functions for the profilename install profile.
+ * Install, update and uninstall functions for the c2distro install profile.
  */
 
 use Drupal\menu_link_content\Entity\MenuLinkContent;
-use \Drupal\node\Entity\Node;
 
 /**
  * Implements hook_install().
@@ -15,26 +14,16 @@ use \Drupal\node\Entity\Node;
  * @see system_install()
  */
 function c2distro_install() {
-  // First, do everything in standard profile.
-  // include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
-  // standard_install();
+  // Enable the demo content module. This can't be specified as a dependency
+  // in the c2distro.info.yml file, as it requires configuration provided by
+  // the profile (fields etc.).
+  \Drupal::service('module_installer')->install(['c2distro_default_content'], TRUE);
 
   // Create a menu link.
   MenuLinkContent::create([
-    'title' => 'Hello World!!! :)',
-    'link' => ['uri' => 'internal:/node/2'],
+    'title' => 'Home page',
+    'link' => ['uri' => 'internal:/node/1'],
     'menu_name' => 'main',
     'weight' => 10,
   ])->save();
-
-  // Create a basic page node.
-  // Create node object with attached file.
-  $node = Node::create([
-    'type'        => 'page',
-    'title'       => 'Homepage',
-    'body' => 'Test body helloworld text.'
-  ]);
-  $node->save();
-
-  // Can add code in here to make nodes, terms, etc.
 }

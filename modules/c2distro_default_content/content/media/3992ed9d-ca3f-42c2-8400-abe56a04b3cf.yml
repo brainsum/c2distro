@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
+  bundle: image
+  default_langcode: en
+  depends:
+    a7f65f1b-3dfb-49f4-8fea-7b6c3ccfd64e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: photo-1.jpg
+  created:
+    -
+      value: 1625502403
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: a7f65f1b-3dfb-49f4-8fea-7b6c3ccfd64e
+      alt: 'Forecast-Based Action (FbA) by the DREF'
+      title: ''
+      width: 480
+      height: 320
