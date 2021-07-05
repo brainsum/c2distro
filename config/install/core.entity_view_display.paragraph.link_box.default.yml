@@ -13,8 +13,8 @@ bundle: link_box
 mode: default
 content:
   field_links:
-    weight: 0
-    label: inline
+    weight: 1
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -24,5 +24,12 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-hidden:
-  field_title: true
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
