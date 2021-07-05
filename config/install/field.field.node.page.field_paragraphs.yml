@@ -5,6 +5,9 @@ dependencies:
     - field.storage.node.field_paragraphs
     - node.type.page
     - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.link_boxes
+    - paragraphs.paragraphs_type.small_boxes
+    - paragraphs.paragraphs_type.text_media
   module:
     - entity_reference_revisions
 id: node.page.field_paragraphs
@@ -23,6 +26,9 @@ settings:
     negate: 0
     target_bundles:
       accordion: accordion
+      link_boxes: link_boxes
+      small_boxes: small_boxes
+      text_media: text_media
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -32,5 +38,53 @@ settings:
         enabled: false
       item:
         weight: 4
+        enabled: false
+      link_box:
+        weight: 23
+        enabled: false
+      link_boxes:
+        enabled: true
+        weight: 24
+      media:
+        weight: 25
+        enabled: false
+      partner:
+        weight: 26
+        enabled: false
+      partners:
+        weight: 27
+        enabled: false
+      popup_text:
+        weight: 28
+        enabled: false
+      popup_wrapper:
+        weight: 29
+        enabled: false
+      quote_paragraph:
+        weight: 31
+        enabled: false
+      quotes:
+        weight: 30
+        enabled: false
+      small_box:
+        weight: 32
+        enabled: false
+      small_boxes:
+        enabled: true
+        weight: 33
+      text:
+        weight: 34
+        enabled: false
+      text_media:
+        enabled: true
+        weight: 35
+      timeline:
+        weight: 36
+        enabled: false
+      timeline_wrapper:
+        weight: 37
+        enabled: false
+      view:
+        weight: 38
         enabled: false
 field_type: entity_reference_revisions
