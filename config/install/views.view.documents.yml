@@ -265,6 +265,27 @@ display:
         - url.query_args
         - user.permissions
       tags: {  }
+  lister_block:
+    display_plugin: block
+    id: lister_block
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 4
+          offset: 0
+      defaults:
+        pager: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user.permissions
+      tags: {  }
   lister_page:
     display_plugin: page
     id: lister_page
