@@ -1,4 +1,3 @@
-uuid: 883aa0c0-c6ec-4973-b07c-d15c3cb055f8
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - c2d_theme
-_core:
-  default_config_hash: hocGTfwnM-I6yspHO3Kr-waOme64pQXr2VBzOU0Zec0
 id: mainnavigation
 theme: c2d_theme
 region: navigation
