@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.text_media.field_background_color
     - field.field.paragraph.text_media.field_link
     - field.field.paragraph.text_media.field_media
+    - field.field.paragraph.text_media.field_style
     - field.field.paragraph.text_media.field_text
     - field.field.paragraph.text_media.field_title
     - paragraphs.paragraphs_type.text_media
@@ -100,4 +101,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_style: true

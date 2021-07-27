@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.quotes.field_background_color
     - field.field.paragraph.quotes.field_paragraphs
+    - field.field.paragraph.quotes.field_style
     - paragraphs.paragraphs_type.quotes
   module:
     - entity_reference_revisions
@@ -29,4 +30,5 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
-hidden: {  }
+hidden:
+  field_style: true
