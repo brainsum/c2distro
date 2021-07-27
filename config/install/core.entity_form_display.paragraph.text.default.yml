@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_background_color
+    - field.field.paragraph.text.field_style
     - field.field.paragraph.text.field_text
     - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
@@ -15,6 +16,12 @@ mode: default
 content:
   field_background_color:
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.media.field_background_color
     - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_style
     - field.field.paragraph.media.field_text
     - field.field.paragraph.media.field_title
     - paragraphs.paragraphs_type.media
@@ -44,4 +45,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_style: true

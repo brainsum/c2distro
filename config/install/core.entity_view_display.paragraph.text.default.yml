@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_background_color
+    - field.field.paragraph.text.field_style
     - field.field.paragraph.text.field_text
     - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
@@ -35,4 +36,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_style: true

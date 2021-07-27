@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.small_boxes.field_background_color
     - field.field.paragraph.small_boxes.field_paragraphs
+    - field.field.paragraph.small_boxes.field_style
     - field.field.paragraph.small_boxes.field_title
     - paragraphs.paragraphs_type.small_boxes
   module:
@@ -37,4 +38,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_style: true

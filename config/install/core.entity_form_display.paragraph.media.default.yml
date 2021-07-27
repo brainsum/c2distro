@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.media.field_background_color
     - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_style
     - field.field.paragraph.media.field_text
     - field.field.paragraph.media.field_title
     - paragraphs.paragraphs_type.media
@@ -33,6 +34,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_text:
     weight: 1

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.view.field_background_color
+    - field.field.paragraph.view.field_style
     - field.field.paragraph.view.field_view_list
     - paragraphs.paragraphs_type.view
   module:
@@ -26,4 +27,5 @@ content:
     third_party_settings: {  }
     type: block_field
     region: content
-hidden: {  }
+hidden:
+  field_style: true

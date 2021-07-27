@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.quote_paragraph.field_background_color
+    - field.field.paragraph.quote_paragraph.field_style
     - field.field.paragraph.quote_paragraph.field_text
     - field.field.paragraph.quote_paragraph.field_title
     - paragraphs.paragraphs_type.quote_paragraph
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_background_color: true
+  field_style: true
