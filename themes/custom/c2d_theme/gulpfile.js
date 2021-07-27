@@ -80,6 +80,24 @@ function sassCompileTask(done) {
   done();
 }
 
+function sassCompileTaskProd(done) {
+  gulp
+    .src(config.paths.styles.src)
+    .pipe(sassGlob())
+    .pipe(sass({
+      fiber: Fiber,
+      outputStyle: 'expanded',
+      precision: 10
+    }))
+    .on('error', sass.logError)
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest(config.paths.styles.dest))
+    .pipe(browserSync.stream());
+  done();
+}
+
 /**
  * SASS:Linting Task
  *
@@ -169,7 +187,9 @@ compileTask = gulp.parallel(sassCompileTask, scriptsTask);
 exports.default = gulp.series(sassCompileTask, browserSyncTask);
 exports.lint = gulp.parallel(sassLintTask, scriptsTask);
 exports.sass = sassCompileTask;
+exports.sassprod = sassCompileTaskProd;
 exports.sassLint = sassLintTask;
 exports.scripts = scriptsTask;
 exports.watch = browserSyncTask;
 exports.critical = gulp.series(sassCompileTask, criticalTask);
+
