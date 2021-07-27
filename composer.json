@@ -1,6 +1,6 @@
 {
     "name": "brainsum/c2distro",
-    "description": "Distribution for quickly starting a new IFRC project system with Drupal",
+    "description": "Distribution for quickly starting a new C2 project system with Drupal",
     "type": "drupal-profile",
     "license": "GPL-2.0-or-later",
     "authors": [
