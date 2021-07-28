@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_media.field_background_color
     - field.field.paragraph.text_media.field_link
     - field.field.paragraph.text_media.field_media
     - field.field.paragraph.text_media.field_style
@@ -58,13 +57,6 @@ targetEntityType: paragraph
 bundle: text_media
 mode: default
 content:
-  field_background_color:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: entity_reference_entity_id
-    region: content
   field_link:
     weight: 7
     label: hidden

@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.small_boxes.field_background_color
     - field.field.paragraph.small_boxes.field_paragraphs
     - field.field.paragraph.small_boxes.field_style
     - field.field.paragraph.small_boxes.field_title
@@ -14,13 +13,6 @@ targetEntityType: paragraph
 bundle: small_boxes
 mode: default
 content:
-  field_background_color:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: entity_reference_entity_id
-    region: content
   field_paragraphs:
     weight: 1
     label: hidden

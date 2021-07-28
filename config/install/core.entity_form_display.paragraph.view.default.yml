@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.view.field_background_color
     - field.field.paragraph.view.field_style
     - field.field.paragraph.view.field_view_list
     - paragraphs.paragraphs_type.view
@@ -13,12 +12,6 @@ targetEntityType: paragraph
 bundle: view
 mode: default
 content:
-  field_background_color:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_style:
     weight: 1
     settings: {  }

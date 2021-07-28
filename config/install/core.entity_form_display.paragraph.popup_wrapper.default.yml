@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.popup_wrapper.field_background_color
     - field.field.paragraph.popup_wrapper.field_description
     - field.field.paragraph.popup_wrapper.field_paragraphs
     - field.field.paragraph.popup_wrapper.field_style
@@ -15,12 +14,6 @@ targetEntityType: paragraph
 bundle: popup_wrapper
 mode: default
 content:
-  field_background_color:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_description:
     weight: 1
     settings:
