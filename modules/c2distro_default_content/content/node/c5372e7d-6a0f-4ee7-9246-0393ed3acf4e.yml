@@ -37,6 +37,12 @@ default:
       alias: ''
       langcode: en
       pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
   field_paragraphs:
     -
       entity:
@@ -56,12 +62,15 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: white
+              value: true
           field_media:
             -
               entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
+          field_style:
+            -
+              target_id: white
           field_text:
             -
               value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet commodo nisl, non suscipit augue. Nulla porta finibus nisl ac pulvinar.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed."
@@ -87,9 +96,9 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: grey
+              value: true
           field_paragraphs:
             -
               entity:
@@ -229,6 +238,9 @@ default:
                       uri: 'internal:/'
                       title: 'See more  »'
                       options: {  }
+          field_style:
+            -
+              target_id: grey
           field_title:
             -
               value: 'About Branches'
@@ -250,9 +262,9 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: white
+              value: true
           field_paragraphs:
             -
               entity:
@@ -304,6 +316,9 @@ default:
                   field_title:
                     -
                       value: 'Item #2'
+          field_style:
+            -
+              target_id: white
           field_text:
             -
               value: 'Lorerm ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor'
@@ -329,9 +344,9 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: white
+              value: true
           field_paragraphs:
             -
               entity:
@@ -351,9 +366,6 @@ default:
                   behavior_settings:
                     -
                       value: {  }
-                  revision_translation_affected:
-                    -
-                      value: true
                   field_links:
                     -
                       uri: 'internal:/'
@@ -380,9 +392,6 @@ default:
                   behavior_settings:
                     -
                       value: {  }
-                  revision_translation_affected:
-                    -
-                      value: true
                   field_links:
                     -
                       uri: 'internal:/'
@@ -391,6 +400,9 @@ default:
                   field_title:
                     -
                       value: 'Link box'
+          field_style:
+            -
+              target_id: white
     -
       entity:
         _meta:
@@ -409,12 +421,15 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: grey
+              value: true
           field_media:
             -
               entity: 496c7cab-5443-4e08-b872-7bcce5af6db0
+          field_style:
+            -
+              target_id: grey
           field_text:
             -
               value: 'The world’s largest humanitarian network has 190 National Red Cross and Red Crescent Societies and around 17 million volunteers. Together, we are the International Federation of Red Cross and Red Crescent Societies (IFRC).'
@@ -440,7 +455,10 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
+            -
+              value: true
+          field_style:
             -
               target_id: white
           field_text:
@@ -468,9 +486,9 @@ default:
           behavior_settings:
             -
               value: {  }
-          field_background_color:
+          revision_translation_affected:
             -
-              target_id: grey
+              value: true
           field_paragraphs:
             -
               entity:
@@ -518,6 +536,9 @@ default:
                       uri: 'internal:/'
                       title: 'Click here to futrther connect, discuss and share!'
                       options: {  }
+          field_style:
+            -
+              target_id: grey
           field_title:
             -
               value: Tools
