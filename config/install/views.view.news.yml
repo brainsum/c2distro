@@ -434,11 +434,17 @@ display:
       defaults:
         fields: false
         pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 3
           offset: 0
+      use_more: true
+      use_more_always: false
+      use_more_text: 'More news'
     cache_metadata:
       max-age: -1
       contexts:
