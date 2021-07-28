@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.link_boxes.field_background_color
     - field.field.paragraph.link_boxes.field_paragraphs
     - field.field.paragraph.link_boxes.field_style
     - paragraphs.paragraphs_type.link_boxes
@@ -13,13 +12,6 @@ targetEntityType: paragraph
 bundle: link_boxes
 mode: default
 content:
-  field_background_color:
-    type: entity_reference_entity_id
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_paragraphs:
     weight: 0
     label: hidden

@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.quotes.field_background_color
     - field.field.paragraph.quotes.field_paragraphs
     - field.field.paragraph.quotes.field_style
     - paragraphs.paragraphs_type.quotes
@@ -13,14 +12,6 @@ targetEntityType: paragraph
 bundle: quotes
 mode: default
 content:
-  field_background_color:
-    weight: 1
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_paragraphs:
     weight: 0
     label: hidden

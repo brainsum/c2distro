@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.field_background_color
     - field.field.paragraph.accordion.field_paragraphs
     - field.field.paragraph.accordion.field_style
     - field.field.paragraph.accordion.field_text
@@ -16,13 +15,6 @@ targetEntityType: paragraph
 bundle: accordion
 mode: default
 content:
-  field_background_color:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: entity_reference_entity_id
-    region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
     weight: 2
