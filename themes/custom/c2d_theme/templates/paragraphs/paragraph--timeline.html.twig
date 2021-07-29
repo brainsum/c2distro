@@ -57,7 +57,7 @@
   <div{{ attributes.addClass(classes).setAttribute('data-paragraph-id', paragraph.id.value) }}>
     <div class="paragraph--inner">
       {% block content %}
-        {{ content|without('field_timeline_text', 'field_background_color') }}
+        {{ content|without('field_timeline_text', 'field_style') }}
       {% endblock %}
     </div>
     {{ content.field_timeline_text }}

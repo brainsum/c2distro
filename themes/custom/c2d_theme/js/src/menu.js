@@ -6,7 +6,7 @@
       if ($(context).is(document)) {
         let hamburgerIcon = $(context).find('.hamburger');
         let closeMenuIcon = $(context).find('.close-menu');
-        let mainMenu = $(context).find('#block-dislaw-theme-main-menu');
+        let mainMenu = $(context).find('#block-mainnavigation');
         hamburgerIcon.on('click', function () {
           mainMenu.addClass('open');
         });

@@ -1,0 +1,36 @@
+#block-tabs nav.tabs {
+  max-width: 113.5rem;
+  margin: 20px auto 10px;
+}
+
+.block-page-title-block .block-inner h1.page-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: left;
+}
+
+article .node__content {
+  max-width: 113.5rem;
+  margin: 0 auto;
+}
+
+.field.field--name-field-lead.field--type-string-long {
+  font-weight: 600;
+  margin: 40px 0;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 3rem;
+}
+
+.field.field--name-body {
+  padding: 0 0 40px 0;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 3rem;
+}
+
+.created-time {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}

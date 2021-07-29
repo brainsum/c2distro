@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_preprocess_page() for PAGE document templates.
+ */
+function c2d_theme_preprocess_page(array &$variables) {
+
+  $current_route = \Drupal::routeMatch();
+
+  $route_name = $current_route->getRouteName();
+  if ($route_name == 'view.news.lister_page') {
+    $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
+  }
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    $typeName = $node->bundle();
+    if ($typeName == 'page') {
+      $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.page';
+    }
+    if ($typeName == 'news') {
+      $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.news';
+    }
+  }
+
+}

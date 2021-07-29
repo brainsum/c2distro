@@ -39,3 +39,18 @@ quote:
     js/src/quote.js: {}
   dependecies:
     - core/jquery
+entity.node.canonical.page:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.entity.node.canonical.page.css: {}
+view.news.lister_page:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.view.news.lister_page.css: {}
+entity.node.canonical.news:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.entity.node.canonical.news.css: {}
