@@ -5,4 +5,13 @@ id: manager
 label: Manager
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create news content'
+  - 'create page content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'view the administration theme'
