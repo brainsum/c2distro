@@ -5,6 +5,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_lead
     - node.type.news
+    - system.menu.main
   module:
     - node
     - user
@@ -464,6 +465,15 @@ display:
       path: news
       defaults:
         pager: true
+      menu:
+        type: normal
+        title: News
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 10
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
