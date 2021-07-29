@@ -1,0 +1,5 @@
+services:
+  c2distro.route.subscriber:
+    class: Drupal\c2distro\Routing\C2dRouteSubscriber
+    tags:
+      - { name: event_subscriber }
