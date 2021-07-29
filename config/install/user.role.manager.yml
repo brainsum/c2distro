@@ -6,12 +6,9 @@ label: Manager
 weight: -8
 is_admin: null
 permissions:
-  - 'access content overview'
+  - 'access taxonomy overview'
   - 'access toolbar'
-  - 'create news content'
-  - 'create page content'
-  - 'delete any news content'
-  - 'delete any page content'
-  - 'edit any news content'
-  - 'edit any page content'
+  - 'create terms in tags'
+  - 'delete terms in tags'
+  - 'edit terms in tags'
   - 'view the administration theme'
