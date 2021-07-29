@@ -5,4 +5,13 @@ id: editor
 label: Editor
 weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create news content'
+  - 'create page content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'view the administration theme'
