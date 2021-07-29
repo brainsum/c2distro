@@ -27,6 +27,7 @@ permissions:
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any remote_video media'
+  - 'translate editable entities'
   - 'update any media'
   - 'view own unpublished content'
   - 'view the administration theme'
