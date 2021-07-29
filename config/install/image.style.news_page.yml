@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: news_page
+label: 'News page'
+effects:
+  d32ab897-5649-4809-bd71-c2c51d5ac429:
+    uuid: d32ab897-5649-4809-bd71-c2c51d5ac429
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: null
+      upscale: false

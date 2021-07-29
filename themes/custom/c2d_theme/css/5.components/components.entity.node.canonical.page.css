@@ -1,0 +1,13 @@
+.White {
+  background-color: white;
+}
+
+.Grey {
+  background-color: #efefef;
+}
+
+.view.view-news.view-id-news.view-display-id-lister_page .views-row #block-tabs {
+  max-width: 113.5rem;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+}

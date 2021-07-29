@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: news_image
+label: 'News image'
+effects:
+  53816792-7080-4808-8397-4ff0e8b9882a:
+    uuid: 53816792-7080-4808-8397-4ff0e8b9882a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 200
+      anchor: center-center

@@ -46,14 +46,14 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    content.field_background_color[0] ? 'background-color--' ~ content.field_background_color[0]['#plain_text']|lower,
+    content.field_style[0] ? 'background-color--' ~ content.field_style[0]['#plain_text']|lower,
 ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes).setAttribute('data-paragraph-id', paragraph.id.value) }}>
+  <div {{ attributes.addClass(classes).setAttribute('data-paragraph-id', paragraph.id.value) }}>
     <div class="paragraph--inner">
       {% block content %}
-        {{ content|without('field_background_color') }}
+        {{ content|without('field_style') }}
       {% endblock %}
     </div>
   </div>
