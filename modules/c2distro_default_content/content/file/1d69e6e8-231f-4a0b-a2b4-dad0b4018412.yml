@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1d69e6e8-231f-4a0b-a2b4-dad0b4018412
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: news_photo_4.jpg
+  uri:
+    -
+      value: 'public://2021-07/news_photo_4.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 80163
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627569542

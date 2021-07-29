@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6b70b79f-5cf7-464e-966b-2eb3e919403c
+  bundle: image
+  default_langcode: en
+  depends:
+    b337dadb-e9f8-40df-ac7c-f2471ec18bbf: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: news_photo_3.jpg
+  created:
+    -
+      value: 1627569457
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: b337dadb-e9f8-40df-ac7c-f2471ec18bbf
+      alt: 'photo 3'
+      title: ''
+      width: 1280
+      height: 640
