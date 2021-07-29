@@ -13,7 +13,7 @@ bundle: text_media
 label: Media
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
