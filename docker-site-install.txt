@@ -8,9 +8,12 @@ cd c2distro
 cp example.env .env
 bash startup.sh
 
+in container:
+  composer install
+
 outside from container:
-  rm -rf web/profiles/contrib/c2distro/
-  cd web/profiles/contrib
+  rm -rf app/web/profiles/contrib/c2distro/
+  cd app/web/profiles/contrib
   git clone git@github.com:brainsum/c2distro.git
   cd c2distro
   git checkout 1.0.x
