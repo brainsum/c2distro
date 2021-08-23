@@ -49,6 +49,7 @@ install:
   - drupal:metatag
   - drupal:metatag_open_graph
   - drupal:redirect
+  - drupal:calendar
   # Custom
 # Required dependencies.
 dependencies:
@@ -70,6 +71,8 @@ dependencies:
   - drupal:user
   - drupal:views
   # Contrib
+  - drupal:calendar_datetime
+  - drupal:views_templates
 
 themes:
   - bartik
