@@ -20,9 +20,13 @@ function c2distro_install() {
   \Drupal::service('module_installer')->install(['c2distro_default_content'], TRUE);
 
   // Create a menu link.
+  $home_page = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
+    'title' => 'Home page',
+  ]);
+  $home_page = reset($home_page);
   MenuLinkContent::create([
     'title' => 'Home page',
-    'link' => ['uri' => 'internal:/node/1'],
+    'link' => ['uri' => 'internal:/node/' . $home_page->id()],
     'menu_name' => 'main',
     'weight' => 10,
   ])->save();
