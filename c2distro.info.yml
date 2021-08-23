@@ -71,8 +71,6 @@ dependencies:
   - drupal:user
   - drupal:views
   # Contrib
-  - drupal:calendar_datetime
-  - drupal:views_templates
 
 themes:
   - bartik
