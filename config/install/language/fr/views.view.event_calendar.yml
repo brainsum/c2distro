@@ -1,0 +1,48 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          separator: ', '
+        field_event_date:
+          separator: ', '
+  page_day:
+    display_title: Jour
+    display_options:
+      menu:
+        title: Jour
+      arguments:
+        field_event_date_value_full_date:
+          exception:
+            title: Tout
+  page_month:
+    display_title: Mois
+    display_options:
+      menu:
+        title: Mois
+      arguments:
+        field_event_date_value_year_month:
+          exception:
+            title: Tout
+  page_week:
+    display_options:
+      arguments:
+        field_event_date_value_year_week:
+          exception:
+            title: Tout
+  page_year:
+    display_title: Année
+    display_options:
+      arguments:
+        field_event_date_value_year:
+          exception:
+            title: Tout
+      menu:
+        title: Année
