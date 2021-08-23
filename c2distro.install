@@ -30,4 +30,13 @@ function c2distro_install() {
     'menu_name' => 'main',
     'weight' => 10,
   ])->save();
+
+  // Create a Calendar menu link.
+  MenuLinkContent::create([
+    'title' => 'Calendar',
+    'link' => ['uri' => 'internal:/calendar'],
+    'menu_name' => 'main',
+    'weight' => 100,
+  ])->save();
+
 }
