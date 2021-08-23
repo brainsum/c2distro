@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - node.type.event
-id: node.event.promote
-field_name: promote
+id: node.event.sticky
+field_name: sticky
 entity_type: node
 bundle: event
-label: 'Promoted to front page'
+label: 'Sticky at top of lists'
 description: ''
 required: false
 translatable: false
