@@ -39,4 +39,12 @@ function c2distro_install() {
     'weight' => 100,
   ])->save();
 
+  // Create a Contact us footer menu link.
+  MenuLinkContent::create([
+    'title' => 'Contact us',
+    'link' => ['uri' => 'mailto:contact@example.com'],
+    'menu_name' => 'footer',
+    'weight' => 100,
+  ])->save();
+
 }
