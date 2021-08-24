@@ -2,18 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.tab_group.field_icon
     - field.field.paragraph.tab_group.field_paragraphs
     - field.field.paragraph.tab_group.field_title
     - paragraphs.paragraphs_type.tab_group
   module:
+    - media_library
     - paragraphs
 id: paragraph.tab_group.default
 targetEntityType: paragraph
 bundle: tab_group
 mode: default
 content:
-  field_paragraphs:
+  field_icon:
+    type: media_library_widget
     weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraphs:
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs

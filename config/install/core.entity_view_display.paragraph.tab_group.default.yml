@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.tab_group.field_icon
     - field.field.paragraph.tab_group.field_paragraphs
     - field.field.paragraph.tab_group.field_title
     - paragraphs.paragraphs_type.tab_group
@@ -22,4 +23,5 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
 hidden:
+  field_icon: true
   field_title: true
