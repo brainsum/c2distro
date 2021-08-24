@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.tab_content
+    - paragraphs.paragraphs_type.tab_group
+  module:
+    - entity_reference_revisions
+id: paragraph.tab_group.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: tab_group
+label: 'Tab group'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab_content: tab_content
+    target_bundles_drag_drop:
+      accordion:
+        weight: 23
+        enabled: false
+      document:
+        weight: 24
+        enabled: false
+      item:
+        weight: 25
+        enabled: false
+      link_box:
+        weight: 26
+        enabled: false
+      link_boxes:
+        weight: 27
+        enabled: false
+      media:
+        weight: 28
+        enabled: false
+      partner:
+        weight: 29
+        enabled: false
+      partners:
+        weight: 30
+        enabled: false
+      popup_text:
+        weight: 31
+        enabled: false
+      popup_wrapper:
+        weight: 32
+        enabled: false
+      quote_paragraph:
+        weight: 33
+        enabled: false
+      quotes:
+        weight: 34
+        enabled: false
+      small_box:
+        weight: 35
+        enabled: false
+      small_boxes:
+        weight: 36
+        enabled: false
+      tab_content:
+        enabled: true
+        weight: 37
+      tab_group:
+        weight: 22
+        enabled: false
+      text:
+        weight: 38
+        enabled: false
+      text_media:
+        weight: 39
+        enabled: false
+      timeline:
+        weight: 40
+        enabled: false
+      timeline_wrapper:
+        weight: 41
+        enabled: false
+      view:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions
