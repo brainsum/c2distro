@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: tab_group_wrapper
+label: 'Tab group wrapper'
+icon_uuid: null
+icon_default: null
+description: 'Wrapper for Tab group items.'
+behavior_plugins: {  }
