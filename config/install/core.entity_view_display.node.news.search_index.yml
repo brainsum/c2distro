@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.body
+    - field.field.node.news.field_image
+    - field.field.node.news.field_lead
+    - node.type.news
+  module:
+    - user
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  field_lead:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  body: true
+  field_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
