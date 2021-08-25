@@ -14,7 +14,7 @@ dependencies:
     - node
     - search_api
 id: index
-name: Index
+name: 'General search'
 description: ''
 read_only: false
 field_settings:
