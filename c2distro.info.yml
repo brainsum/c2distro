@@ -50,6 +50,8 @@ install:
   - drupal:metatag_open_graph
   - drupal:redirect
   - drupal:calendar
+  - drupal:search_api
+  - drupal:search_api_db
   # Custom
 # Required dependencies.
 dependencies:
