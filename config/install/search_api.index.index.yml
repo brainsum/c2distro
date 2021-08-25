@@ -1,0 +1,113 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - field.storage.media.field_media_image
+    - field.storage.node.body
+    - field.storage.node.field_lead
+    - field.storage.node.field_tags
+    - search_api.server.database_server
+  module:
+    - media
+    - taxonomy
+    - node
+    - search_api
+id: index
+name: Index
+description: ''
+read_only: false
+field_settings:
+  media_document_description:
+    label: 'Document » Description'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_file:description'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+  media_image_alt:
+    label: 'Image » Alternative text'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_image:alt'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+  media_image_title:
+    label: 'Image » Title'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_image:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+  media_name:
+    label: Name
+    datasource_id: 'entity:media'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - media
+  node_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  node_lead:
+    label: Lead
+    datasource_id: 'entity:node'
+    property_path: field_lead
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_lead
+  node_tag_name:
+    label: 'tags » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  node_title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: database_server
