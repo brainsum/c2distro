@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_image
+    - field.field.node.event.field_lead
     - node.type.event
   module:
     - datetime_range
@@ -18,7 +19,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -40,6 +41,13 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_lead:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
 hidden:
   langcode: true
