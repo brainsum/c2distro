@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.lister_page
+label: 'Lister page'
+targetEntityType: node
+cache: true

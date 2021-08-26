@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lister_page
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_image
+    - field.field.node.event.field_lead
+    - node.type.event
+  module:
+    - datetime_range
+    - user
+id: node.event.lister_page
+targetEntityType: node
+bundle: event
+mode: lister_page
+content:
+  field_event_date:
+    weight: 1
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_lead:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  search_api_excerpt: true
