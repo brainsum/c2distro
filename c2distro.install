@@ -31,6 +31,12 @@ function c2distro_install() {
     'weight' => 10,
   ])->save();
 
+  // Set the default front page.
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('page.front', '/node/' . $home_page->id())
+    ->save();
+
   // Create the Events menu item with Events and Calendar sub-menu links.
   $menu_link_content = MenuLinkContent::create([
     'title' => 'Events',
