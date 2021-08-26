@@ -31,12 +31,29 @@ function c2distro_install() {
     'weight' => 10,
   ])->save();
 
-  // Create a Calendar menu link.
+  // Create the Events menu item with Events and Calendar sub-menu links.
+  $menu_link_content = MenuLinkContent::create([
+    'title' => 'Events',
+    'link' => ['uri' => 'route:<nolink>'],
+    'menu_name' => 'main',
+    'expanded' => TRUE,
+    'weight' => 40,
+  ]);
+  $menu_link_content->save();
+  $mid = $menu_link_content->getPluginId();
+  MenuLinkContent::create([
+    'title' => 'Events',
+    'link' => ['uri' => 'internal:/events'],
+    'menu_name' => 'main',
+    'parent' => $mid,
+    'weight' => 10,
+  ])->save();
   MenuLinkContent::create([
     'title' => 'Calendar',
     'link' => ['uri' => 'internal:/calendar'],
     'menu_name' => 'main',
-    'weight' => 100,
+    'parent' => $mid,
+    'weight' => 20,
   ])->save();
 
   // Create a Contact us footer menu link.
