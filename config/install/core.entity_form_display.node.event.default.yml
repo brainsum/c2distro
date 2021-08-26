@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_image
     - field.field.node.event.field_lead
+    - field.field.node.event.field_tags
     - node.type.event
   module:
     - datetime_range
@@ -53,6 +54,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_tags:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select
