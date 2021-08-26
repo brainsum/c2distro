@@ -6,6 +6,8 @@ _meta:
   default_langcode: en
   depends:
     3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
+    b925168b-b2aa-4554-bdf4-8bd0c4d851f0: taxonomy_term
+    2761e3b2-30a4-433e-a253-77d9d021a1ee: taxonomy_term
 default:
   revision_uid:
     -
@@ -54,3 +56,11 @@ default:
   field_image:
     -
       entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
+  field_lead:
+    -
+      value: 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.'
+  field_tags:
+    -
+      entity: b925168b-b2aa-4554-bdf4-8bd0c4d851f0
+    -
+      entity: 2761e3b2-30a4-433e-a253-77d9d021a1ee
