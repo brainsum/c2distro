@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.lister_page
     - core.entity_view_mode.node.teaser
     - node.type.event
-    - system.menu.main
   module:
     - node
     - user
@@ -229,7 +228,7 @@ display:
       display_extenders: {  }
       path: events
       menu:
-        type: normal
+        type: none
         title: Events
         description: ''
         expanded: false
