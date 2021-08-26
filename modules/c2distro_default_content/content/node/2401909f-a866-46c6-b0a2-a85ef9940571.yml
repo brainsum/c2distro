@@ -6,6 +6,8 @@ _meta:
   default_langcode: en
   depends:
     3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
+    5794defd-14cb-43f2-b497-4ae5bc39c099: taxonomy_term
+    2761e3b2-30a4-433e-a253-77d9d021a1ee: taxonomy_term
 default:
   revision_uid:
     -
@@ -54,3 +56,11 @@ default:
   field_image:
     -
       entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
+  field_lead:
+    -
+      value: 'Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.'
+  field_tags:
+    -
+      entity: 5794defd-14cb-43f2-b497-4ae5bc39c099
+    -
+      entity: 2761e3b2-30a4-433e-a253-77d9d021a1ee
