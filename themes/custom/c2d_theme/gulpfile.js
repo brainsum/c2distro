@@ -5,12 +5,15 @@
  */
 var autoprefixer         = require('autoprefixer');
 var browserSync         = require('browser-sync').create();
-var Fiber               = require('fibers');
 var gulp                = require('gulp');
 var postcss             = require('gulp-postcss');
 var sassGlob = require('gulp-sass-glob');
-var sass                = require('gulp-sass');
+var sass                = require('gulp-sass')(require('sass'));
 var sourcemaps          = require('gulp-sourcemaps');
+var stylelint          = require('gulp-stylelint');
+var sorting = require('postcss-sorting');
+var stripCssComments = require('gulp-strip-css-comments');
+var removeEmptyLines = require('gulp-remove-empty-lines');
 
 /**
  * Gulp config
@@ -24,14 +27,10 @@ var config = {
     scripts: {
       src: './js/src/*.js',
       dest: './js/dist/'
-    },
-    images: {
-      src: './images/src/*',
-      dest: './images/dist'
     }
   },
   browserSync: {
-    proxy: 'http://dislaw.docker.localhost:8000/',
+    proxy: 'http://c2distro.docker.localhost:8000',
     autoOpen: false,
     browsers: [
       'Google Chrome'
@@ -64,13 +63,13 @@ function sassCompileTask(done) {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(sassGlob())
     .pipe(sass({
-      fiber: Fiber,
       outputStyle: 'expanded',
       precision: 10
     }))
     .on('error', sass.logError)
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      sorting(),
     ]))
     .pipe(sourcemaps.write({ includeContent: false }))
     .pipe(sourcemaps.init({ loadMaps: true }))
@@ -85,16 +84,20 @@ function sassCompileTaskProd(done) {
     .src(config.paths.styles.src)
     .pipe(sassGlob())
     .pipe(sass({
-      fiber: Fiber,
-      outputStyle: 'expanded',
+      outputStyle: 'compressed',
       precision: 10
     }))
     .on('error', sass.logError)
+    .pipe(stripCssComments({
+      preserve: true,
+      whitespace: true,
+    }))
+    .pipe(removeEmptyLines())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      sorting(),
     ]))
     .pipe(gulp.dest(config.paths.styles.dest))
-    .pipe(browserSync.stream());
   done();
 }
 
@@ -109,14 +112,16 @@ function sassLintTask(done) {
   gulp
     .src(config.paths.styles.src)
     .pipe(stylelint({
-      fix: true,
       reporters: [
         {
           formatter: 'verbose',
           console: true
         }
-      ]
-    }));
+      ],
+      debug: true,
+      failAfterError: false,
+      fix: true
+    }))
   done();
 }
 

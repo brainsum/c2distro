@@ -1,19 +1,6 @@
 @charset "UTF-8";
 /**
  * @file
- * SMACSS: layout
- *
- * Design-patterns, and macro arrangement of a web page,
- * including any grid systems.
- *
- * ITCSS: objects
- */
-/**
- * Imports
- * First import our custom variables and mixins
- */
-/**
- * @file
  * Sass index file
  *
  * The main importer and organizer sass file.
@@ -461,191 +448,73 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-/**
- * Layout
- *
- * Class-based selectors which define undecorated design patterns,
- * for example media object known from OOCSS. They provide structure to your
- * content, do not contain any cosmetic CSS and they should never been directly
- * overwritten.
- * This is the first layer in which we find class-based selectors. These are
- * concerned with styling non-cosmetic design patterns, or 'objects'. Objects
- * can range from something as simple as a .wrapper element, to layout systems,
- * through to things.
- */
-/**
- * @file
- * Site Footer
- *
- * Footer is not a component, it's a layout section. Therefore all footer
- * related styles, rules come here except what has an independent component, ie.
- * Scroll to Top button.
- */
-.section-holder.white {
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+  /*  &.padding {
+      &--high { padding: 10rem 0; }
+      &--normal { padding: 6rem 0; }
+      &--low { padding: 2rem 0; }
+    } */
+}
+.paragraph.background-color--white {
   background-color: #ffffff;
 }
-
-#block-dislaw-theme-content {
-  max-width: 113.5rem;
-  margin: 0 auto;
-  padding-bottom: 30px;
+.paragraph.background-color--grey {
+  background-color: #e8e8e8;
 }
-
-.path-node #block-dislaw-theme-content,
-.path-contact #block-dislaw-theme-content,
-.page-node-type-page #block-dislaw-theme-content,
-.path-disaster-law-database #block-dislaw-theme-content,
-.path-drm-index-search #block-dislaw-theme-content,
-.path-media #block-dislaw-theme-content,
-.path-dmi #block-dislaw-theme-content,
-.path-news-events #block-dislaw-theme-content,
-.path-user #block-dislaw-theme-content,
-.path-search #block-dislaw-theme-content,
-.path-frontpage #block-dislaw-theme-content,
-.page-node-type-news #block-dislaw-theme-content {
-  max-width: none;
-  margin: unset;
-  padding-bottom: unset;
-}
-
-/**
- * @file
- * Site Footer
- *
- * Footer is not a component, it's a layout section. Therefore all footer
- * related styles, rules come here except what has an independent component, ie.
- * Scroll to Top button.
- */
-footer {
-  background-color: #dadada;
-  padding: 4rem 3rem 9rem;
-}
-@media print, screen and (min-width: 64em) {
-  footer {
-    padding: 6.2rem 0 9rem;
-  }
-}
-
-.region-footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 113.5rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region-footer {
-    flex-direction: row;
-    -font-box-pack: justify;
-    justify-content: space-between;
-  }
-}
-@media print, screen and (max-width: 79.99875em) {
-  .region-footer .region-footer--left-side {
-    margin-bottom: 2.7rem;
-  }
-}
-.region-footer .region-footer--right-side {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-}
-.region-footer .region-footer--right-side a {
-  transition: color, 0.2s;
-}
-.region-footer .region-footer--right-side a:hover {
-  color: #26c9de;
-}
-.region-footer .region-footer--right-side .footer-title {
-  margin-bottom: 1.4rem;
-  display: inline-block;
+.paragraph .field--name-field-title {
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
-@media print, screen and (min-width: 48em) {
-  .region-footer .region-footer--right-side .footer-title {
-    margin-bottom: 3.5rem;
-  }
-}
-.region-footer .region-footer--right-side .social-block {
-  margin-bottom: 7.4rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region-footer .region-footer--right-side .social-block {
-    margin-bottom: 3.8rem;
-  }
-}
-.region-footer .region-footer--right-side .social-block a {
-  transition: color, 0.2s;
-  margin-right: 1.6rem;
-}
-.region-footer .region-footer--right-side .social-block a:hover {
-  color: #26c9de;
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--text-media,
+.paragraph--type--link-boxes,
+.paragraph--type--popup-wrapper,
+.paragraph--type--view,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--small-boxes,
+.paragraph--type--quotes,
+.paragraph--type--media {
+  padding: 6rem 0;
 }
 
-/**
- * @file
- * Site Header
- *
- * Header is not a component, it's a layout section. Therefore all header
- * related styles, rules come here except what has an independent component, ie.
- * Navigation component.
- */
-@media print, screen and (max-width: 47.99875em) {
-  #toolbar-administration #admin-toolbar-search-tab {
-    display: none;
-  }
-}
-@media print, screen and (max-width: 63.99875em) {
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-  }
+.paragraph--type--text > .paragraph--inner,
+.paragraph--type--cta > .paragraph--inner,
+.paragraph--type--accordion > .paragraph--inner,
+.paragraph--type--popup-wrapper > .paragraph--inner,
+.paragraph--type--media > .paragraph--inner {
+  max-width: 68.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.region-header,
-.region-navigation {
+.paragraph--type--quotes > .paragraph--inner {
+  max-width: 88.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.paragraph--type--media-document > .paragraph--inner,
+.paragraph--type--view > .paragraph--inner,
+.paragraph--type--partners > .paragraph--inner,
+.paragraph--type--link-boxes > .paragraph--inner,
+.paragraph--type--timeline-wrapper > .paragraph--inner,
+.paragraph--type--small-boxes > .paragraph--inner {
   max-width: 113.5rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  position: relative;
-  z-index: 30;
 }
 
-.region-navigation {
-  padding: 0;
+.paragraph > .paragraph--inner .field--name-field-text,
+.paragraph > .paragraph--inner .field--name-field-plaintext {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
 }
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjUuY29tcG9uZW50cy9jb21wb25lbnRzLnBhcmFncmFwaHMtYmFzZS5jc3MiLCJfaW5kZXguc2NzcyIsIjEuc2V0dGluZ3MvX3NldHRpbmdzLmFsbC5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuYnJlYWtwb2ludHMuc2NzcyIsIjEuc2V0dGluZ3MvX3NldHRpbmdzLmNvbG9ycy5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuZ3JpZC5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MudHlwb2dyYXBoeS5zY3NzIiwiMi50b29scy9fdG9vbHMuYWxsLnNjc3MiLCIyLnRvb2xzL190b29scy5jbGVhcmZpeC5zY3NzIiwiMi50b29scy9fdG9vbHMuZm9ybS5zY3NzIiwiMi50b29scy9fdG9vbHMuZ3JpZC5zY3NzIiwiMi50b29scy9fdG9vbHMubWl4aW5zLnNjc3MiLCIyLnRvb2xzL190b29scy5zdHJldGNoZWQtbGluay5zY3NzIiwiMi50b29scy9fdG9vbHMudGV4dC5zY3NzIiwiMi50b29scy9fdG9vbHMudHJpYW5nbGUuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnR5cG9ncmFwaHkuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnZhcmlhYmxlLnNjc3MiLCIyLnRvb2xzL190b29scy52aXNpYmlsaXR5LnNjc3MiLCI1LmNvbXBvbmVudHMvY29tcG9uZW50cy5wYXJhZ3JhcGhzLWJhc2Uuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmxheW91dC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FoQjs7Ozs7O0VBQUE7QUFRQTs7Ozs7Ozs7O0VBQUE7QUNSQTs7Ozs7Ozs7OztFQUFBO0FDQUE7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7OztFQUFBO0FDQUE7Ozs7Ozs7Ozs7RUFBQTtBQVlBOzs7O0VBQUE7QUFPQTs7OztFQUFBO0FDbkJBOzs7Ozs7O0VBQUE7QUxxQkE7Ozs7O0VBQUE7QU1yQkE7Ozs7Ozs7RUFBQTtBQVNBOztFQUFBO0FDVEE7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QUNBQTs7Ozs7RUFBQTtBQU9BOzs7Ozs7Ozs7RUFBQTtBQWdDQTs7Ozs7Ozs7OztFQUFBO0FDdkNBOzs7Ozs7Ozs7OztFQUFBO0FDRUE7OztFQUFBO0FBUUE7Ozs7RUFBQTtBQTBDRTtFQUVFLFlBQUE7RUFDQSxjQUFBO0FYMEdKO0FXeEdFO0VBQ0UsV0FBQTtBWDBHSjs7QVd5REE7Ozs7Ozs7OztFQUFBO0FBb0NBOzs7Ozs7O0VBQUE7QUF1QkE7Ozs7O0VBQUE7QUFXQTs7Ozs7Ozs7RUFBQTtBQWNBOzs7RUFBQTtBQW9CQTs7O0VBQUE7QUFZQTs7O0VBQUE7QUFhQTs7O0VBQUE7QUFhQTs7O0VBQUE7QUFZQTs7O0VBQUE7QUFXQTs7OztFQUFBO0FBdUNBOzs7RUFBQTtBQTRCQTs7O0VBQUE7QUF1QkE7OztFQUFBO0FBd0JBOztFQUFBO0FDcGZBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7Ozs7OztFQUFBO0FBVUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQW9DQTs7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FBd0JBOzs7Ozs7Ozs7Ozs7O0VBQUE7QUFxQkE7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQzNGQTs7Ozs7Ozs7Ozs7OztFQUFBO0FBZUE7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FDZkE7Ozs7O0VBQUE7QUFPQTs7Ozs7Ozs7O0VBQUE7QUNQQTs7Ozs7O0VBQUE7QUFRQTs7Ozs7Ozs7O0VBQUE7QUNSQTs7Ozs7Ozs7RUFBQTtBQVVBOzs7Ozs7Ozs7Ozs7OztFQUFBO0FBeUJBOzs7Ozs7Ozs7Ozs7OztFQUFBO0FDaENBO0VBQ0Usb0NacUJVO0VZVFY7Ozs7T0FBQTtBbEJ5YkY7QWtCbGNJO0VBQ0UseUJBQUE7QWxCb2NOO0FrQmpjSTtFQUNFLHlCZE9vQjtBSjRiMUI7QWtCemJFO0VBQ0UscUJBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0FsQjJiSjs7QWtCdmJBOzs7Ozs7Ozs7OztFQVdFLGVBQUE7QWxCMGJGOztBa0JsYkU7Ozs7O0VDcENBLGtCQUFBO0VBVkEsY0FBQTtFQUNBLGlCQUFBO0FuQnllRjs7QWtCdGJFO0VDckNBLGtCQUFBO0VBZkEsY0FBQTtFQUNBLGlCQUFBO0FuQitlRjs7QWtCamJFOzs7Ozs7RUMxREEsbUJBQUE7RUFMQSxjQUFBO0VBQ0EsaUJBQUE7QW5CMGZGOztBa0JyYkk7O0VackNGLG9DQVZVO0VBV1YsaUJBQUE7RUFDQSxpQkFBQTtBTitkRiIsImZpbGUiOiI1LmNvbXBvbmVudHMvY29tcG9uZW50cy5wYXJhZ3JhcGhzLWJhc2UuY3NzIn0= */
 
-.region-header {
-  display: flex;
-  flex-direction: row;
-  -font-box-pack: justify;
-  justify-content: space-between;
-  -mox-box-align: center;
-  align-items: center;
-  background-color: #ffffff;
-  height: 5.6rem;
-  margin: 0 auto;
-  padding-right: 1.5rem;
-}
-@media print, screen and (min-width: 64em) {
-  .region-header {
-    height: 8.7rem;
-    margin: 3rem auto 2rem;
-    padding-left: 1.4rem;
-    padding-right: 5.7rem;
-  }
-}
-.region-header #block-dislaw-theme-site-branding a {
-  display: block;
-}
-.region-header #block-dislaw-theme-site-branding img {
-  width: 9.5rem;
-}
-@media print, screen and (min-width: 64em) {
-  .region-header #block-dislaw-theme-site-branding img {
-    width: 15rem;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC5jc3MiLCJsYXlvdXQuc2NzcyIsIl9pbmRleC5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuYWxsLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5icmVha3BvaW50cy5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuY29sb3JzLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5ncmlkLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy50eXBvZ3JhcGh5LnNjc3MiLCIyLnRvb2xzL190b29scy5hbGwuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmNsZWFyZml4LnNjc3MiLCIyLnRvb2xzL190b29scy5mb3JtLnNjc3MiLCIyLnRvb2xzL190b29scy5ncmlkLnNjc3MiLCIyLnRvb2xzL190b29scy5taXhpbnMuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnN0cmV0Y2hlZC1saW5rLnNjc3MiLCIyLnRvb2xzL190b29scy50ZXh0LnNjc3MiLCIyLnRvb2xzL190b29scy50cmlhbmdsZS5zY3NzIiwiMi50b29scy9fdG9vbHMudHlwb2dyYXBoeS5zY3NzIiwiMi50b29scy9fdG9vbHMudmFyaWFibGUuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnZpc2liaWxpdHkuc2NzcyIsIjQubGF5b3V0L19sYXlvdXQuY29udGVudC5zY3NzIiwiNC5sYXlvdXQvX2xheW91dC5mb290ZXIuc2NzcyIsIi4uL25vZGVfbW9kdWxlcy9mb3VuZGF0aW9uLXNpdGVzL3Njc3MvdXRpbC9fYnJlYWtwb2ludC5zY3NzIiwiMi50b29scy9fdG9vbHMubGF5b3V0LnNjc3MiLCI0LmxheW91dC9fbGF5b3V0LmhlYWRlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FoQjs7Ozs7Ozs7RUFBQTtBQVVBOzs7RUFBQTtBQ1ZBOzs7Ozs7RUFBQTtBQVFBOzs7Ozs7Ozs7RUFBQTtBQ1JBOzs7Ozs7Ozs7O0VBQUE7QUNBQTs7Ozs7Ozs7Ozs7OztFQUFBO0FDQUE7Ozs7O0VBQUE7QUNBQTs7Ozs7Ozs7OztFQUFBO0FBWUE7Ozs7RUFBQTtBQU9BOzs7O0VBQUE7QUNuQkE7Ozs7Ozs7RUFBQTtBTHFCQTs7Ozs7RUFBQTtBTXJCQTs7Ozs7OztFQUFBO0FBU0E7O0VBQUE7QUNUQTs7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7OztFQUFBO0FBT0E7Ozs7Ozs7OztFQUFBO0FBZ0NBOzs7Ozs7Ozs7O0VBQUE7QUN2Q0E7Ozs7Ozs7Ozs7O0VBQUE7QUNFQTs7O0VBQUE7QUFRQTs7OztFQUFBO0FBMENFO0VBRUUsWUFBQTtFQUNBLGNBQUE7QVp1SEo7QVlySEU7RUFDRSxXQUFBO0FadUhKOztBWTRDQTs7Ozs7Ozs7O0VBQUE7QUFvQ0E7Ozs7Ozs7RUFBQTtBQXVCQTs7Ozs7RUFBQTtBQVdBOzs7Ozs7OztFQUFBO0FBY0E7OztFQUFBO0FBb0JBOzs7RUFBQTtBQVlBOzs7RUFBQTtBQWFBOzs7RUFBQTtBQWFBOzs7RUFBQTtBQVlBOzs7RUFBQTtBQVdBOzs7O0VBQUE7QUF1Q0E7OztFQUFBO0FBNEJBOzs7RUFBQTtBQXVCQTs7O0VBQUE7QUF3QkE7O0VBQUE7QUNwZkE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FDQUE7Ozs7Ozs7O0VBQUE7QUFVQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FBb0NBOzs7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QUF3QkE7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQXFCQTs7Ozs7Ozs7Ozs7OztFQUFBO0FDM0ZBOzs7Ozs7Ozs7Ozs7O0VBQUE7QUFlQTs7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QUNmQTs7Ozs7RUFBQTtBQU9BOzs7Ozs7Ozs7RUFBQTtBQ1BBOzs7Ozs7RUFBQTtBQVFBOzs7Ozs7Ozs7RUFBQTtBQ1JBOzs7Ozs7OztFQUFBO0FBVUE7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QUF5QkE7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QWpCbkJBOzs7Ozs7Ozs7OztFQUFBO0FrQmhCQTs7Ozs7OztFQUFBO0FBVUU7RUFDRSx5QmRIc0I7QUw2ZDFCOztBbUJ0ZEE7RUFDRSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxvQkFBQTtBbkJ5ZEY7O0FtQjFjRTs7Ozs7Ozs7Ozs7O0VBQ0UsZUFBQTtFQUNBLGFBQUE7RUFDQSxxQkFBQTtBbkJ3ZEo7O0FvQjVmQTs7Ozs7OztFQUFBO0FBUUE7RUFDRSx5QmZXd0I7RWVWeEIsdUJBQUE7QXBCK2ZGO0FxQnZWUTtFRDFLUjtJQUlJLHNCQUFBO0VwQmlnQkY7QUFDRjs7QW9CN2ZBO0VSZ01FLGFBQUE7RUE2RkEsc0JRM1J3QjtFRVp4QixtQkFBQTtFQUxBLGNBQUE7RUFDQSxpQkFBQTtBdEJ1aEJGO0FxQnhXUTtFRGpLUjtJUjZSRSxtQlF4UjBCO0lSaVl4Qix1QkFBQTtJQWVGLDhCUS9ZMkI7RXBCNGdCM0I7QUFDRjtBcUJsWFE7RUR6Sk47SUFFSSxxQkFBQTtFcEI2Z0JKO0FBQ0Y7QW9CM2dCRTtFQUNFLG9DYk5RO0VhT1IsaUJBQUE7QXBCNmdCSjtBb0I1Z0JJO0VSd0VGLHVCRVFBO0FkbWNGO0FjbGNFO0VBQ0UsY1RyR3NCO0FMeWlCMUI7QW9CbmhCSTtFQUNFLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtBcEJxaEJOO0FxQjFZUTtFRDlJSjtJQUtJLHFCQUFBO0VwQnVoQk47QUFDRjtBb0JyaEJJO0VBQ0UscUJBQUE7QXBCdWhCTjtBcUJsWlE7RUR0SUo7SUFHSSxxQkFBQTtFcEJ5aEJOO0FBQ0Y7QW9CeGhCTTtFUndESix1QkVRQTtFTTlETSxvQkFBQTtBcEI4aEJSO0FjL2RFO0VBQ0UsY1RyR3NCO0FMc2tCMUI7O0F1QnBsQkE7Ozs7Ozs7RUFBQTtBRmtMUTtFRXZLSjtJQUNFLGFBQUE7RXZCcWxCSjtBQUNGO0FxQmhiUTtFRWpLUjtJQUVJLGdCQUFBO0lBQ0EsTUFBQTtJQUNBLFdBQUE7RXZCbWxCRjtBQUNGOztBdUJobEJBOztFRGxCRSxtQkFBQTtFQUxBLGNBQUE7RUFDQSxpQkFBQTtFQ3lCQSxrQkFBQTtFQUNBLFdBQUE7QXZCcWxCRjs7QXVCbGxCQTtFQUNFLFVBQUE7QXZCcWxCRjs7QXVCbGxCQTtFWDZLRSxhQUFBO0VBNkZBLG1CV3hRd0I7RVhpWHRCLHVCQUFBO0VBZUYsOEJXL1h5QjtFWHNadkIsc0JXclptQjtFWDBackIsbUJXMVpxQjtFQUNyQix5QmxCakN3QjtFa0JrQ3hCLGNBQUE7RUFDQSxjQUFBO0VBQ0EscUJBQUE7QXZCaW1CRjtBcUIzZFE7RUU5SVI7SUFVSSxjQUFBO0lBQ0Esc0JBQUE7SUFDQSxvQkFBQTtJQUNBLHFCQUFBO0V2Qm1tQkY7QUFDRjtBdUJqbUJJO0VBQUksY0FBQTtBdkJvbUJSO0F1Qm5tQkk7RUFDRSxhQUFBO0F2QnFtQk47QXFCemVRO0VFN0hKO0lBR0ksWUFBQTtFdkJ1bUJOO0FBQ0YiLCJmaWxlIjoibGF5b3V0LmNzcyJ9 */
-
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=components.paragraphs-base.css.map */
