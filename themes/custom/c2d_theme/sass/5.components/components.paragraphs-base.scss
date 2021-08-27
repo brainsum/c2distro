@@ -1,0 +1,78 @@
+
+@import '../index';
+
+.paragraph {
+  font-family: $font-open;
+  // style options
+  &.background-color {
+    &--white {
+      background-color: $color-white;
+    }
+
+    &--grey {
+      background-color: $color-grey;
+    }
+  }
+
+  /*  &.padding {
+      &--high { padding: 10rem 0; }
+      &--normal { padding: 6rem 0; }
+      &--low { padding: 2rem 0; }
+    } */
+  // general styles
+  .field--name-field-title {
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+}
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--text-media,
+.paragraph--type--link-boxes,
+.paragraph--type--popup-wrapper,
+.paragraph--type--view,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--small-boxes,
+.paragraph--type--quotes,
+.paragraph--type--media {
+  padding: 6rem 0;
+}
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--popup-wrapper,
+.paragraph--type--media {
+  > .paragraph--inner {
+    @include width-655;
+  }
+}
+
+.paragraph--type--quotes {
+  > .paragraph--inner {
+    @include width-855;
+  }
+}
+
+.paragraph--type--media-document,
+.paragraph--type--view,
+.paragraph--type--partners,
+.paragraph--type--link-boxes,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--small-boxes {
+  > .paragraph--inner {
+    @include width-1105;
+  }
+}
+
+.paragraph {
+  > .paragraph--inner {
+    .field--name-field-text,
+    .field--name-field-plaintext {
+      @include font-open-18;
+    }
+  }
+}

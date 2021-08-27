@@ -15,11 +15,27 @@ global-styling:
   dependencies:
     - core/jquery
     - core/drupal
-accordion:
+paragraphs-base:
   version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraphs-base.css: {}
+paragraph-text-media:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraph-text-media.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+paragraph-accordion:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraph-accordion.css: { }
   js:
     js/src/accordion.js: {}
   dependecies:
+    - c2d_theme/paragraphs-base
     - core/jquery
 popup:
   version: 1.0

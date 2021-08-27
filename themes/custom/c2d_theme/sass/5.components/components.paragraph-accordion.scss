@@ -1,0 +1,65 @@
+@import '../index';
+
+.paragraph--type--accordion {
+  > .paragraph--inner > .field--name-field-text {
+    margin-bottom: 3rem;
+  }
+
+  .paragraph--type--item {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba($color-blue-darkest, 0.4);
+
+    .field--name-field-title {
+      position: relative;
+      padding-right: 4rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+
+      &:after {
+        @include transition(all, 0.2s);
+
+        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/chevron-down.svg");
+        position: absolute;
+        top: -3px;
+        right: -6px;
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+
+    &.empty {
+      .field--name-field-title {
+        cursor: default;
+
+        &::after {
+          content: '';
+        }
+      }
+    }
+
+    .open .field--name-field-title:after {
+      @include rotate(180);
+    }
+
+    .field--name-field-text {
+      @include transition(all, 0.2s);
+
+      height: 0;
+      overflow: hidden;
+    }
+
+    .paragraph--inner.open .field--name-field-text {
+      height: auto;
+      padding-bottom: 2.5rem;
+      overflow: auto;
+    }
+  }
+
+  .field__item:last-child {
+    .paragraph--type--item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+
+@import '../index';
+
+.paragraph--type--text-media {
+  .paragraph--inner {
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include width-1105;
+
+    @include breakpoint(medium) {
+      @include flex-direction(row);
+      .left,
+      .right {
+        width: 50%;
+      }
+    }
+  }
+
+  .right {
+    .text-formatted p a {
+      color: $color-turquoise;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.paragraph--view-mode--invers {
+    .right {
+      @include flex-order(-1);
+
+      @include breakpoint(medium) {
+        @include flex-order(2);
+      }
+    }
+
+    .left {
+      @include breakpoint(medium) {
+        padding-right: 5.5rem;
+      }
+    }
+  }
+
+  &.paragraph--view-mode--default {
+    .right {
+      @include breakpoint(medium) {
+        padding-left: 5.5rem;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 30rem;
+  }
+
+  .field--name-field-media {
+    margin-bottom: 3rem;
+
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  .field--name-field-link {
+    margin-top: 4rem;
+
+    a {
+      @include font-open-18;
+
+      position: relative;
+      padding-left: 3rem;
+      text-decoration: underline;
+
+      &:before {
+        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/arrow-right.svg");
+        position: absolute;
+        top: 0.2rem;
+        left: 0;
+        padding-right: 15px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
