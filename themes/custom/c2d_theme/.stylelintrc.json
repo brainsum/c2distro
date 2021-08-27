@@ -1,7 +1,10 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-property-sort-order-smacss"],
   "plugins": [
-    "stylelint-scss"
+    "stylelint-scss",
+    "stylelint-order"
   ],
   "rules": {
     "comment-empty-line-before": null,
@@ -23,7 +26,7 @@
     "rule-empty-line-before": null,
     "selector-pseudo-element-colon-notation": null,
     "shorthand-property-no-redundant-values": null,
-    "unit-whitelist": [
+    "unit-allowed-list": [
       "deg",
       "em",
       "ex",
