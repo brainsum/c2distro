@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_highlighted
+    - media.type.document
+id: media.document.field_highlighted
+field_name: field_highlighted
+entity_type: media
+bundle: document
+label: Highlighted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
