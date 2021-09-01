@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.lister_page
+label: 'Lister page'
+targetEntityType: media
+cache: true
