@@ -48,7 +48,10 @@ scripts # run scripts task; no watch, BrowserSync in this way
 
 If sass process throw "/" error install this:
 https://sass-lang.com/documentation/breaking-changes/slash-div
-and use automatic migration method in foundation-sites unit folder.
+and use automatic migration method in node_modules/foundation-sites/scss/util.
+
+$ npm install -g sass-migrator
+$ sass-migrator division **/*.scss
 
 In Gulp.js there is some extra tasks too. **Before you can run a BrowserSync
 task (ex. `start` one), you need to edit `proxy` setting in the `browserSync`
