@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5fc393bf-6ad1-44c1-87fc-73ffff7c2b4a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: iasc-minimum-standards-on-duty-of-care-in-the-context-of-covid-19-.pdf
+  uri:
+    -
+      value: 'public://media/document/2021-09/iasc-minimum-standards-on-duty-of-care-in-the-context-of-covid-19-.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 134091
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630483696
