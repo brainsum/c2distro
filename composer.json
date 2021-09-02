@@ -32,6 +32,8 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/field_group": "^3.1",
+        "drupal/media_thumbnails_pdf": "^1.0@alpha",
+        "drupal/media_thumbnails": "^1.0@alpha",
         "drupal/metatag": "^1.16",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
@@ -43,5 +45,12 @@
         "drupal/transliterate_filenames": "^1.5",
         "drupal/warmer": "^2.0",
         "drupal/warmer_entity": "^2.0"
+    },
+    "extra": {
+        "patches": {
+            "drupal/media_thumbnails": {
+                "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch"
+            }
+        }
     }
 }
