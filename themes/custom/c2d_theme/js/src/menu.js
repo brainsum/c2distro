@@ -8,7 +8,6 @@
         let closeMenuIcon = $(context).find('.close-menu');
         let mainMenu = $(context).find('#block-mainnavigation');
         let expandableItem = $(context).find('.menu-item--expanded span');
-        console.log(expandableItem);
         hamburgerIcon.on('click', function () {
           mainMenu.addClass('open');
         });
@@ -17,7 +16,6 @@
         });
         expandableItem.on('click', function (e) {
           let itemParent = $(e.target).parent();
-          console.log(itemParent);
           // closeSearch();
           if (itemParent.hasClass('opened')) {
             itemParent.removeClass('opened');
