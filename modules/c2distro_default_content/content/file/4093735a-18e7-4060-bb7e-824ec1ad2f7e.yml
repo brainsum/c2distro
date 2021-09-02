@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4093735a-18e7-4060-bb7e-824ec1ad2f7e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 20210627_reap_framework.pdf
+  uri:
+    -
+      value: 'public://media/document/2021-09/20210627_reap_framework.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 6938388
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630484921
