@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Main file for the C2distro module.
+ *
+ * @ingroup c2distro
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\media\MediaInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function c2distro_core_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'media') {
+    // Allow uploading or removing the thumbnail image.
+    $fields['thumbnail']->setDisplayConfigurable('form', TRUE);
+    $settings = $fields['thumbnail']->getSettings();
+    // Add folder for media thumbnails.
+    $settings['file_directory'] = 'media_thumbnails/' . $settings['file_directory'];
+    $fields['thumbnail']->setSettings($settings);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Generate media thumbnail if there is plugin and actual thumbnail is general.
+ */
+function c2distro_core_media_presave(MediaInterface $entity) {
+  /** @var \Drupal\media_thumbnails\Plugin\MediaThumbnailManager $manager */
+  $manager = Drupal::service('plugin.manager.media_thumbnail');
+  if ($entity->bundle() === 'document' && $manager->hasPlugin($entity)) {
+    if (!$entity->isNew()) {
+      if (isset($entity->thumbnail->getValue()[0]['target_id'])) {
+        $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
+        if (strstr($file->getFileUri(), 'public://media-icons/generic/')) {
+          $manager->updateThumbnail($entity);
+
+          // Re-add the thumbnail if pdf generation failed.
+          if (empty($entity->thumbnail->getValue())) {
+            $entity->set('thumbnail', $file);
+          }
+        }
+      }
+    }
+    else {
+      $entity->thumbnail[0]->width = NULL;
+      $entity->thumbnail[0]->height = NULL;
+    }
+  }
+}
