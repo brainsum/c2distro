@@ -17,9 +17,9 @@ mode: media_library
 content:
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   field_body: true
@@ -32,4 +32,5 @@ hidden:
   name: true
   path: true
   status: true
+  thumbnail: true
   uid: true
