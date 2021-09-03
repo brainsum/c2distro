@@ -1,0 +1,7 @@
+name: C2distro Core
+description: 'C2distro features.'
+type: module
+package: C2distro
+core_version_requirement: ^8.7.7 || ^9
+dependencies:
+  - core:media

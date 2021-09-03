@@ -19,6 +19,9 @@ function c2distro_install() {
   // the profile (fields etc.).
   \Drupal::service('module_installer')->install(['c2distro_default_content'], TRUE);
 
+  // Enable the c2distro module.
+  \Drupal::service('module_installer')->install(['c2distro_core'], TRUE);
+
   // Create a menu link.
   $home_page = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
     'title' => 'Home page',
