@@ -21,10 +21,16 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
   name: true
   path: true
   status: true
+  thumbnail: true
   uid: true
