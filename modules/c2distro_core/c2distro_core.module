@@ -53,3 +53,18 @@ function c2distro_core_media_presave(MediaInterface $entity) {
     }
   }
 }
+
+/**
+ * Implements hook_ENTITY_TYPE_insert() for tour entities.
+ *
+ * Set media thumbnail's alt.
+ */
+function c2distro_core_media_insert($entity) {
+  if ($entity->bundle() === 'document') {
+    if (isset($entity->thumbnail->getValue()[0]['target_id']) && empty($entity->thumbnail->alt)) {
+      $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
+      $entity->thumbnail->alt = str_replace('.jpg', '', $file->getFilename());
+      $entity->save();
+    }
+  }
+}
