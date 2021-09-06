@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 505e88c1-78a5-4f5c-bf26-46a43ae1a952
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: reap.pdf.jpg
+  uri:
+    -
+      value: 'public://media/document/2021-09/reap.pdf_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 22159
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630923904

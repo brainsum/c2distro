@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 80b2616c-91c5-4cbf-a283-3040538c6b41
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: g1931348.pdf.jpg
+  uri:
+    -
+      value: 'public://media/document/2021-09/g1931348.pdf_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 53668
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630923904
