@@ -9,7 +9,7 @@ id: media.document.field_tags
 field_name: field_tags
 entity_type: media
 bundle: document
-label: Tags
+label: 'Tags of document'
 description: ''
 required: false
 translatable: false
