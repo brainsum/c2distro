@@ -2,15 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.media.field_category
     - field.storage.media.field_media_file
     - field.storage.media.field_media_image
+    - field.storage.media.field_lead
+    - field.storage.media.field_tags
     - field.storage.node.body
     - field.storage.node.field_lead
     - field.storage.node.field_tags
     - search_api.server.database_server
   module:
-    - media
     - taxonomy
+    - media
     - node
     - search_api
 id: index
@@ -18,6 +21,32 @@ name: 'General search'
 description: ''
 read_only: false
 field_settings:
+  media_bundle:
+    label: 'Media type'
+    datasource_id: 'entity:media'
+    property_path: bundle
+    type: string
+    dependencies:
+      module:
+        - media
+  media_category:
+    label: Category
+    datasource_id: 'entity:media'
+    property_path: field_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_category
+  media_category_name:
+    label: 'Category » Taxonomy term » Name'
+    datasource_id: 'entity:media'
+    property_path: 'field_category:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_category
+      module:
+        - taxonomy
   media_document_description:
     label: 'Document » Description'
     datasource_id: 'entity:media'
@@ -42,6 +71,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_media_image
+  media_lead:
+    label: Lead
+    datasource_id: 'entity:media'
+    property_path: field_lead
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_lead
   media_name:
     label: Name
     datasource_id: 'entity:media'
@@ -50,6 +87,24 @@ field_settings:
     dependencies:
       module:
         - media
+  media_tag_name:
+    label: 'Tags » Taxonomy term » Name'
+    datasource_id: 'entity:media'
+    property_path: 'field_tags:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_tags
+      module:
+        - taxonomy
+  media_tags:
+    label: Tags
+    datasource_id: 'entity:media'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_tags
   node_body:
     label: Body
     datasource_id: 'entity:node'
