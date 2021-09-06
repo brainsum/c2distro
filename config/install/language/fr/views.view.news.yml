@@ -21,9 +21,15 @@ display:
             items_per_page_options_all_label: '- Tout -'
             offset_label: Décalage
       fields:
-        title:
+        nid:
           separator: ', '
         field_image:
+          separator: ', '
+        type:
+          separator: ', '
+        created:
+          separator: ', '
+        title:
           separator: ', '
         field_lead:
           separator: ', '
