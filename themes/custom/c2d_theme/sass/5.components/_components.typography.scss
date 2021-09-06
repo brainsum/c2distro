@@ -11,12 +11,17 @@
   padding-bottom: 6rem;
   margin-top: 6rem;
   .block-inner {
-    max-width: 113.5rem;
+    max-width: 119.2rem;
     margin: 0 auto;
     h1.page-title {
       font-size: 4rem;
       line-height: 4rem;
-      text-align: center;
+      text-align: left;
+      font-family: Montserrat;
+      font-size: 40px;
+      color: $color-blue-gray;
+      text-decoration: none solid $color-blue-gray;
+      line-height: 40px;
     }
   }
 }

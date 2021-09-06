@@ -27,7 +27,10 @@ nav.navigation.menu--main {
     right: 0;
     bottom: 0;
     transition: .5s;
-    // overflow: hidden;
+    overflow: hidden;
+    @include breakpoint(tablet){ 
+        overflow: unset;
+    }
 }
 nav.navigation.menu--main.open {
     left: 0;

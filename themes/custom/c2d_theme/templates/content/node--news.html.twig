@@ -70,6 +70,7 @@
  *   in different view modes.
  */
 #}
+
 {%
   set classes = [
     'node',
@@ -102,7 +103,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="created-time">{{ date }}</div>
+    <div class="created-time">{{ date }} | <span class="content-type">{{ node.bundle }}</span></div>
     {{ content }}
   </div>
 
