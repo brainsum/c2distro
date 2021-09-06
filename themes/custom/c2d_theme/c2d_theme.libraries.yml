@@ -62,6 +62,8 @@ entity.node.canonical.page:
       css/5.components/components.entity.node.canonical.page.css: {}
 view.news.lister_page:
   version: 1.0
+  js:
+    js/src/custom/view.news.lister_page.js: {}
   css:
     theme:
       css/5.components/components.view.news.lister_page.css: {}

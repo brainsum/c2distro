@@ -1,36 +1,56 @@
+@import '../index';
+
 #block-tabs nav.tabs {
   max-width: 113.5rem;
   margin: 20px auto 10px;
 }
-
-.block-page-title-block .block-inner h1.page-title {
-  text-align: left;
-  font-size: 4rem;
-  line-height: 4rem;
+.block-page-title-block {
+  padding-top: 5.9rem !important;
+  padding-bottom: 0 !important;
+}
+.block-page-title-block .block-inner {
+  max-width: 823px;
+  margin: 0 auto;
+  h1.page-title {
+    text-align: left;
+    font-size: 4rem;
+    color: $color-blue-darkest2;
+    font-family: Montserrat;
+    color: #12284c;
+    line-height: 4.9rem;
+  }
 }
 
 article .node__content {
-  max-width: 113.5rem;
+  max-width: 82.3rem;
   margin: 0 auto;
+  .created-time {
+    padding: 4rem;
+    color: $color-blue-darkest2;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 18px;
+    .content-type {
+        color: $color-turquoise-light;
+    }
+  }
+  .field.field--name-field-lead.field--type-string-long {
+    max-width: 67.7rem;
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 0 40px;
+  }
+  
+  .field.field--name-body {
+    max-width: 650px;
+    padding: 0 0 40px 0;
+    font-size: 18px;
+    line-height: 3rem;
+    padding: 0 4rem 4rem;
+  }
+  
 }
 
-.field.field--name-field-lead.field--type-string-long {
-  max-width: 650px;
-  margin: 40px 0;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 3rem;
-}
-
-.field.field--name-body {
-  max-width: 650px;
-  padding: 0 0 40px 0;
-  font-size: 18px;
-  line-height: 3rem;
-}
-
-.created-time {
-  padding-bottom: 20px;
-  font-size: 18px;
-  font-weight: 600;
-}
