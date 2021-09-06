@@ -8,10 +8,12 @@ dependencies:
     - field.field.media.document.field_lead
     - field.field.media.document.field_media_file
     - field.field.media.document.field_tags
+    - image.style.thumbnail
     - media.type.document
   module:
     - file
     - path
+    - svg_image
     - text
 id: media.document.default
 targetEntityType: media
