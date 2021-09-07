@@ -19,5 +19,8 @@ default_value_callback: ''
 settings:
   selection: blocks
   selection_settings:
-    plugin_ids: {  }
+    plugin_ids:
+      'views_block:documents-lister_block': 'views_block:documents-lister_block'
+      'views_block:events-lister_block': 'views_block:events-lister_block'
+      'views_block:news-lister_block': 'views_block:news-lister_block'
 field_type: block_field
