@@ -11,69 +11,69 @@ distribution:
 # Soft dependencies; these may be uninstalled.
 install:
   # Core.
-  - drupal:breakpoint
-  - drupal:config
-  - drupal:dblog
-  - drupal:dynamic_page_cache
-  - drupal:language
-  - drupal:page_cache
-  - drupal:rest
-  - drupal:toolbar
-  - drupal:update
-  - drupal:config_translation
-  - drupal:content_translation
-  - drupal:locale
-  - drupal:views_ui
-  - drupal:datetime
-  - drupal:datetime_range
-  - drupal:menu_ui
-  - drupal:field_ui
-  - drupal:media_library
+  - breakpoint
+  - config
+  - dblog
+  - dynamic_page_cache
+  - language
+  - page_cache
+  - rest
+  - toolbar
+  - update
+  - config_translation
+  - content_translation
+  - locale
+  - views_ui
+  - datetime
+  - datetime_range
+  - menu_ui
+  - field_ui
+  - media_library
   # Contrib.
-  - drupal:admin_toolbar
-  - drupal:paragraphs
-  - drupal:classy_paragraphs
-  - drupal:inline_form_errors
-  - drupal:responsive_image
-  - drupal:adminimal_admin_toolbar
-  - drupal:ctools
-  - drupal:field_group
-  - drupal:block_field
-  - drupal:svg_image
-  - drupal:easy_breadcrumb
-  - drupal:warmer_entity
-  - drupal:pathauto
-  - drupal:token
-  - drupal:transliterate_filenames
-  - drupal:warmer
-  - drupal:metatag
-  - drupal:metatag_open_graph
-  - drupal:redirect
-  - drupal:calendar
-  - drupal:search_api
-  - drupal:search_api_db
-  - drupal:media_thumbnails_pdf
+  - admin_toolbar
+  - paragraphs
+  - classy_paragraphs
+  - inline_form_errors
+  - responsive_image
+  - adminimal_admin_toolbar
+  - ctools
+  - field_group
+  - block_field
+  - svg_image
+  - easy_breadcrumb
+  - warmer_entity
+  - pathauto
+  - token
+  - transliterate_filenames
+  - warmer
+  - metatag
+  - metatag_open_graph
+  - redirect
+  - calendar
+  - search_api
+  - search_api_db
+  - media_thumbnails_pdf
   # Custom
   - c2distro_core
 # Required dependencies.
 dependencies:
   # Core.
-  - drupal:basic_auth
-  - drupal:block
-  - drupal:ckeditor
-  - drupal:editor
-  - drupal:field
-  - drupal:file
-  - drupal:filter
-  - drupal:image
-  - drupal:jsonapi
-  - drupal:media
-  - drupal:path
-  - drupal:serialization
-  - drupal:taxonomy
-  - drupal:text
-  - drupal:user
-  - drupal:views
+  - basic_auth
+  - block
+  - ckeditor
+  - editor
+  - field
+  - file
+  - filter
+  - image
+  - jsonapi
+  - media
+  - path
+  - serialization
+  - taxonomy
+  - text
+  - user
+  - views
   # Contrib
 
 themes:
