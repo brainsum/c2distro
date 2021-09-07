@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.small_boxes
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_media
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: node.page.field_paragraphs
@@ -31,6 +32,7 @@ settings:
       small_boxes: small_boxes
       text: text
       text_media: text_media
+      view: view
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -74,6 +76,15 @@ settings:
       small_boxes:
         enabled: true
         weight: 33
+      tab_content:
+        weight: 37
+        enabled: false
+      tab_group:
+        weight: 38
+        enabled: false
+      tab_group_wrapper:
+        weight: 39
+        enabled: false
       text:
         enabled: true
         weight: 34
@@ -87,6 +98,6 @@ settings:
         weight: 37
         enabled: false
       view:
+        enabled: true
         weight: 38
-        enabled: false
 field_type: entity_reference_revisions
