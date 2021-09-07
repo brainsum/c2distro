@@ -648,9 +648,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           content_translation_source:
             -
               value: und
@@ -688,9 +685,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           content_translation_source:
             -
               value: und
@@ -705,6 +699,46 @@ default:
               plugin_id: 'views_block:events-lister_block'
               settings:
                 id: 'views_block:events-lister_block'
+                label: ''
+                provider: views
+                label_display: visible
+                views_label: ''
+                items_per_page: none
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4b516797-f7c1-41ad-ae3e-7db4cd1fa0e8
+          bundle: view
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1631014705
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_style:
+            -
+              target_id: white
+          field_view_list:
+            -
+              plugin_id: 'views_block:documents-lister_block'
+              settings:
+                id: 'views_block:documents-lister_block'
                 label: ''
                 provider: views
                 label_display: visible
