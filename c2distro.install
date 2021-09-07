@@ -14,9 +14,6 @@ use Drupal\menu_link_content\Entity\MenuLinkContent;
  * @see system_install()
  */
 function c2distro_install() {
-  // Enable the c2distro_core module.
-  \Drupal::service('module_installer')->install(['c2distro_core'], TRUE);
-
   // Enable the demo content module. This can't be specified as a dependency
   // in the c2distro.info.yml file, as it requires configuration provided by
   // the profile (fields etc.).

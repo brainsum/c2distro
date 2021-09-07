@@ -54,6 +54,7 @@ install:
   - drupal:search_api_db
   - drupal:media_thumbnails_pdf
   # Custom
+  - c2distro_core
 # Required dependencies.
 dependencies:
   # Core.
