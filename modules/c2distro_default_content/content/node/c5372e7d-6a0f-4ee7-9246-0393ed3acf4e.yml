@@ -32,11 +32,6 @@ default:
   revision_translation_affected:
     -
       value: true
-  path:
-    -
-      alias: ''
-      langcode: en
-      pathauto: 0
   content_translation_source:
     -
       value: und
@@ -62,9 +57,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_media:
             -
               entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
@@ -96,9 +94,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_paragraphs:
             -
               entity:
@@ -118,6 +119,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -141,6 +148,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -164,6 +177,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -187,6 +206,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -210,6 +235,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -233,6 +264,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -262,9 +299,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_paragraphs:
             -
               entity:
@@ -284,6 +324,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_text:
                     -
                       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
@@ -309,6 +355,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_text:
                     -
                       value: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.'
@@ -344,9 +396,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_paragraphs:
             -
               entity:
@@ -366,6 +421,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_links:
                     -
                       uri: 'internal:/'
@@ -392,6 +453,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_links:
                     -
                       uri: 'internal:/'
@@ -421,9 +488,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_media:
             -
               entity: 496c7cab-5443-4e08-b872-7bcce5af6db0
@@ -455,9 +525,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_style:
             -
               target_id: white
@@ -486,9 +559,12 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
+          content_translation_source:
             -
-              value: true
+              value: und
+          content_translation_outdated:
+            -
+              value: false
           field_paragraphs:
             -
               entity:
@@ -508,6 +584,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -531,6 +613,12 @@ default:
                   behavior_settings:
                     -
                       value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
                   field_link:
                     -
                       uri: 'internal:/'
@@ -542,3 +630,83 @@ default:
           field_title:
             -
               value: Tools
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: dc954e52-bb25-466e-a850-94c24a213320
+          bundle: view
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1631004339
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_style:
+            -
+              target_id: white
+          field_view_list:
+            -
+              plugin_id: 'views_block:news-lister_block'
+              settings:
+                id: 'views_block:news-lister_block'
+                label: ''
+                provider: views
+                label_display: visible
+                views_label: ''
+                items_per_page: none
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6c20a35f-b1ed-4733-80a5-5bbf15744445
+          bundle: view
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1631004380
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_style:
+            -
+              target_id: grey
+          field_view_list:
+            -
+              plugin_id: 'views_block:events-lister_block'
+              settings:
+                id: 'views_block:events-lister_block'
+                label: ''
+                provider: views
+                label_display: visible
+                views_label: ''
+                items_per_page: none
