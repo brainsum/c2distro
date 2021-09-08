@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.media.field_category
     - media.type.document
-    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
 id: media.document.field_category
 field_name: field_category
 entity_type: media
@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      categories: categories
+      category: category
     sort:
       field: name
       direction: asc

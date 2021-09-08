@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.media.lister_page
     - image.style.thumbnail
     - media.type.document
-    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
     - taxonomy.vocabulary.tags
   module:
     - media
@@ -561,7 +561,7 @@ display:
           reduce_duplicates: false
           type: select
           limit: true
-          vid: categories
+          vid: category
           hierarchy: true
           error_message: true
           plugin_id: taxonomy_index_tid
