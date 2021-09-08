@@ -29,6 +29,7 @@ install:
   - menu_ui
   - field_ui
   - media_library
+  - block_content
   # Contrib.
   - admin_toolbar
   - paragraphs
