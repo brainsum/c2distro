@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e86a7434-16e0-4960-ac2c-864aec95a1dc
+  bundle: image
+  default_langcode: en
+  depends:
+    3150af19-eaf1-4109-90a5-3711a1c6a0e4: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Hp hero'
+  created:
+    -
+      value: 1631112649
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: 3150af19-eaf1-4109-90a5-3711a1c6a0e4
+      alt: 'hp hero'
+      title: ''
+      width: 4874
+      height: 3249

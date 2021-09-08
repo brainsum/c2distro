@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 19284f87-8ad9-4c7d-bac2-01ec669b41f1
+  bundle: hero
+  default_langcode: en
+  depends:
+    e86a7434-16e0-4960-ac2c-864aec95a1dc: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'HP Hero'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1631112707
+  field_background:
+    -
+      entity: e86a7434-16e0-4960-ac2c-864aec95a1dc
+  field_description:
+    -
+      value: 'Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  field_link:
+    -
+      uri: 'https://www.drupal.org/'
+      title: 'Lorem ipsum'
+      options: {  }
+  field_title:
+    -
+      value: C2distro
