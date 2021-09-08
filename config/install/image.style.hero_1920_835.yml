@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_1920_835
+label: 'Hero (1920*835)'
+effects:
+  6dd2b33c-617d-4268-ba73-0760abdb1ebf:
+    uuid: 6dd2b33c-617d-4268-ba73-0760abdb1ebf
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 835
+      anchor: center-bottom

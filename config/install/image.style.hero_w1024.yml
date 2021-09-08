@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_w1024
+label: 'Hero (w1024)'
+effects:
+  591cda7c-5e5a-4515-95c3-25bd3ea28f6e:
+    uuid: 591cda7c-5e5a-4515-95c3-25bd3ea28f6e
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: null
+      upscale: false

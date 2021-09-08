@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_375_245
+label: 'Hero (375*245)'
+effects:
+  ce08471c-fa63-4875-816a-e64ac6b1a181:
+    uuid: ce08471c-fa63-4875-816a-e64ac6b1a181
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 245
+      anchor: center-bottom
