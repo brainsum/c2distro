@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_1024_248
+label: 'Hero (1024*248)'
+effects:
+  9f2ab85f-a8bf-4016-bee3-13b7d5199207:
+    uuid: 9f2ab85f-a8bf-4016-bee3-13b7d5199207
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 248
+      anchor: center-center
