@@ -4,7 +4,7 @@ dependencies:
   config:
     - search_api.index.index
     - system.menu.main
-    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.category
     - taxonomy.vocabulary.tags
   module:
     - search_api
@@ -394,7 +394,7 @@ display:
           reduce_duplicates: false
           type: select
           limit: true
-          vid: categories
+          vid: category
           hierarchy: true
           error_message: true
           plugin_id: search_api_term
