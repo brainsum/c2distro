@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:19284f87-8ad9-4c7d-bac2-01ec669b41f1'
+  module:
+    - block_content
+    - system
+  theme:
+    - c2d_theme
+id: hphero
+theme: c2d_theme
+region: top
+weight: 0
+provider: null
+plugin: 'block_content:19284f87-8ad9-4c7d-bac2-01ec669b41f1'
+settings:
+  id: 'block_content:19284f87-8ad9-4c7d-bac2-01ec669b41f1'
+  label: 'HP Hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
