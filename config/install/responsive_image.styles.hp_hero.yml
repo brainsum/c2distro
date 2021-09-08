@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.hero_1920_835
-    - image.style.hero_375_245
-    - image.style.hero_w1024
+    - image.style.hero_1024_248
+    - image.style.hero_1594_386
+    - image.style.hero_375_90
   theme:
     - c2d_theme
 id: hp_hero
@@ -14,16 +14,16 @@ image_style_mappings:
     breakpoint_id: c2d_theme.tablet
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: hero_1920_835
+    image_mapping: hero_1594_386
   -
     breakpoint_id: c2d_theme.mobile
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: hero_w1024
+    image_mapping: hero_1024_248
   -
     breakpoint_id: c2d_theme.small
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: hero_375_245
+    image_mapping: hero_375_90
 breakpoint_group: c2d_theme
 fallback_image_style: '_original image_'
