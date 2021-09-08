@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero_1920_835
+    - image.style.hero_375_245
+    - image.style.hero_w1024
+  theme:
+    - c2d_theme
+id: hp_hero
+label: 'HP hero'
+image_style_mappings:
+  -
+    breakpoint_id: c2d_theme.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_1920_835
+  -
+    breakpoint_id: c2d_theme.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_w1024
+  -
+    breakpoint_id: c2d_theme.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_375_245
+breakpoint_group: c2d_theme
+fallback_image_style: '_original image_'
