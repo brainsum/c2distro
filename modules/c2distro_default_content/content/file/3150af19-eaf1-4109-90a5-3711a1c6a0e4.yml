@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3150af19-eaf1-4109-90a5-3711a1c6a0e4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hp_hero.jpg
+  uri:
+    -
+      value: 'public://2021-09/hp_hero.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2094717
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631112660
