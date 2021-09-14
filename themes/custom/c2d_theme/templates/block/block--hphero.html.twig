@@ -32,14 +32,15 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {{ title_suffix }}
   {% block content %}
     {{ content.field_background }}
     <div class="hero-text">
-      {{ content|without('field_background') }}
+      <div class="hero-text-container">
+        {{ content|without('field_background') }}
+      </div>
     </div>
   {% endblock %}
 </div>
