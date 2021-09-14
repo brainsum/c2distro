@@ -30,7 +30,7 @@ function c2d_theme_preprocess_page(array &$variables) {
  */
 function c2d_theme_preprocess_block(&$variables) {
   $blockId = $variables['elements']['#id'] ?? '';
-  if ($blockId == 'hphero' ) {
+  if ($blockId === 'hphero' ) {
     $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
   }
 
