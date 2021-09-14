@@ -1,0 +1,35 @@
+#block-hphero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -12rem;
+
+    .hero-text {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        max-width: 60rem;
+        margin: 6rem auto 0;
+        text-align: center;
+        color: white;
+
+        .field--name-field-title {
+            font-family: Montserrat;
+            font-size: 40px;
+            color: #ffffff;
+            text-decoration: none solid rgb(255, 255, 255);
+            line-height: 40px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

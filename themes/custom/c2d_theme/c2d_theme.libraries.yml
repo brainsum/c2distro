@@ -72,3 +72,7 @@ entity.node.canonical.news:
   css:
     theme:
       css/5.components/components.entity.node.canonical.news.css: {}
+hphero.block:
+  css:
+    theme:
+      css/5.components/components.hphero.block.css: {}
