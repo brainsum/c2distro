@@ -6,9 +6,17 @@
  *
  * @package: interactive
  */
-
+.flex-centered {
+  display: flex;
+  -mox-box-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .bordered-button {
   @include bordered-button;
+}
+.bordered-button-blue {
+  @include bordered-button-blue;
 }
 
 .region-header {

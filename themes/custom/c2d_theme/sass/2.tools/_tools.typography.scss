@@ -20,7 +20,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 @mixin bordered-button {
   @include flex;
   @include align-items(center);
@@ -40,6 +39,29 @@
   &:hover {
     border-color: $color-blue-darkest;
     background-color: $color-blue-darkest;
+    color: $color-white;
+  }
+}
+
+@mixin bordered-button-blue {
+  @include flex;
+  @include align-items(center);
+  @include justify-content(center);
+  @include transition(all, .2s);
+  border: .2rem solid $color-turquoise;
+  font-family: $font-montserrat !important;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  padding: 0 2.1rem;
+  text-decoration: none !important;
+  background-color: transparent;
+  min-height: 4.8rem;
+  @include breakpoint(medium) {
+    padding: 0 5.1rem;
+  }
+  &:hover {
+    background-color: $color-turquoise;
     color: $color-white;
   }
 }
