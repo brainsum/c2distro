@@ -474,6 +474,18 @@ display:
           content: '@total results found'
           plugin_id: result
       sorts:
+        media_highlighted:
+          id: media_highlighted
+          table: search_api_index_index
+          field: media_highlighted
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: search_api
         media_created:
           id: media_created
           table: search_api_index_index
