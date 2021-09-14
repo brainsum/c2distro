@@ -39,7 +39,13 @@
     {{ content.field_background }}
     <div class="hero-text">
       <div class="hero-text-container">
-        {{ content|without('field_background') }}
+        <h3 class="hero-text-container-title">{{ content.field_title.0 }}</h3>
+        <p class="hero-text-container-description">{{ content.field_description.0['#context']['value'] }}</p>
+        {% if content.field_link %}
+        <div class="flex-centered">
+          <a href="{{ content.field_link.0['#url'] }}" class="bordered-button-blue">{{ content.field_link.0['#title'] }}</a>
+        </div>
+        {% endif %}
       </div>
     </div>
   {% endblock %}
