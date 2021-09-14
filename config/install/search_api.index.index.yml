@@ -9,10 +9,12 @@ dependencies:
   config:
     - field.storage.media.field_category
     - field.storage.media.field_media_file
+    - field.storage.media.field_highlighted
     - field.storage.media.field_media_image
     - field.storage.media.field_lead
     - field.storage.media.field_tags
     - field.storage.node.body
+    - field.storage.node.field_highlighted
     - field.storage.node.field_lead
     - field.storage.node.field_tags
     - search_api.server.database_server
@@ -63,6 +65,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_media_file
+  media_highlighted:
+    label: Highlighted
+    datasource_id: 'entity:media'
+    property_path: field_highlighted
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.media.field_highlighted
   media_image_alt:
     label: 'Image » Alternative text'
     datasource_id: 'entity:media'
@@ -121,6 +131,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  node_highlighted:
+    label: Highlighted
+    datasource_id: 'entity:node'
+    property_path: field_highlighted
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_highlighted
   node_lead:
     label: Lead
     datasource_id: 'entity:node'
