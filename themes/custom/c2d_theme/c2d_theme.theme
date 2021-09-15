@@ -33,5 +33,7 @@ function c2d_theme_preprocess_block(&$variables) {
   if ($blockId === 'hphero' ) {
     $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
   }
-
+  if ($blockId === 'footerblockcontent' ) {
+    $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
+  }
 }
