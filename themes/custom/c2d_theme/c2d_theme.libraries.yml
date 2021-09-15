@@ -76,3 +76,7 @@ hphero.block:
   css:
     theme:
       css/5.components/components.hphero.block.css: {}
+footerblockcontent.block:
+  css:
+    theme:
+      css/5.components/components.footerblockcontent.block.css: {}
