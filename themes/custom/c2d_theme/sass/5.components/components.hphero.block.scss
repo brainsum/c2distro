@@ -1,10 +1,48 @@
+@import "../_index";
+
 .region.region-top {
     position: relative;
-    top: -12rem;
+    top: 0;
+    @include breakpoint(medium) {
+        top: -12rem;
+    }
     #block-hphero {
         display: flex;
         justify-content: center;
-    
+        height: 66.7rem;
+        width: 100%;
+        @include breakpoint(medium) {
+            height: auto;
+            width: auto;
+        }
+
+        article.media.media--type-image.media--view-mode-hp-hero {
+            height: 66.7rem;
+            @include breakpoint(medium) {
+                height: auto;
+            }
+            .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
+                height: 66.7rem;
+                @include breakpoint(medium) {
+                    height: auto;
+                }
+                picture {
+                    height: 66.7rem;
+                    @include breakpoint(medium) {
+                        height: auto;
+                    }
+                    img {
+                        object-fit: cover;
+                        height: 66.7rem;
+                        @include breakpoint(medium) {
+                            object-fit: initial;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
         .hero-text {
             position: absolute;
             display: flex;
@@ -16,13 +54,17 @@
             bottom: 0;
             background-color: transparent;
             max-width: 60rem;
-            margin: 6rem auto 0;
+            margin: 0 auto;
             text-align: center;
             color: white;
+            padding: 0 20px;
+            @include breakpoint(medium) {
+                margin: 6rem auto 0;
+            }
     
             .hero-text-container-title {
                 font-family: Montserrat;
-                font-size: 40px;
+                font-size: 36px;
                 color: #ffffff;
                 text-decoration: none solid rgb(255, 255, 255);
                 line-height: 40px;
@@ -31,6 +73,9 @@
                 text-transform: uppercase;
                 letter-spacing: 0.1rem;
                 margin-bottom: 1rem;
+                @include breakpoint(medium) {
+                    font-size: 40px;
+                }
             }
             .hero-text-container-description {
                 font-family: Open Sans;
