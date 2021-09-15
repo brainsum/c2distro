@@ -1,0 +1,20 @@
+c2distro_default_content.the_team:
+  title: The team
+  description: The team
+  menu_name: main
+  route_name: <nolink>
+  weight: 15
+
+c2distro_default_content.what_we_do:
+  title: What we do
+  description: What we do
+  menu_name: main
+  route_name: <nolink>
+  weight: 16
+
+c2distro_default_content.get_involved:
+  title: Get involved
+  description: Get involved
+  menu_name: main
+  route_name: <nolink>
+  weight: 50
