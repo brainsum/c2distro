@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-name: hero_1594_386
-label: 'Hero (1594*386)'
+name: hero_large
+label: 'Hero large (1594*472)'
 effects:
   cf0a95fa-04a3-47c4-923b-9600cf8717c3:
     uuid: cf0a95fa-04a3-47c4-923b-9600cf8717c3
@@ -10,5 +10,5 @@ effects:
     weight: 1
     data:
       width: 1594
-      height: 386
+      height: 472
       anchor: center-center
