@@ -38,9 +38,11 @@ display:
     display_title: Bloc
     display_options:
       fields:
-        title:
-          separator: ', '
         field_image:
+          separator: ', '
+        created:
+          separator: ', '
+        title:
           separator: ', '
   lister_page:
     display_title: Page
