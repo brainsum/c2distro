@@ -846,6 +846,7 @@ display:
         use_more: false
         use_more_always: false
         use_more_text: false
+        title: false
       pager:
         type: some
         options:
@@ -854,6 +855,7 @@ display:
       use_more: true
       use_more_always: false
       use_more_text: 'View more'
+      title: 'Related news'
     cache_metadata:
       max-age: -1
       contexts:
