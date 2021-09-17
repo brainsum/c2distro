@@ -103,7 +103,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="created-time">{{ date }} | <span class="content-type">{{ node.bundle }}</span></div>
+    <div class="created-time">{{ node.getCreatedTime|format_date('document')  }} </div>
     {{ content }}
   </div>
 
