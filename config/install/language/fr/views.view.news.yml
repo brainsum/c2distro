@@ -12,8 +12,8 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
             first: '« Premier'
             last: 'Dernier »'
           expose:
