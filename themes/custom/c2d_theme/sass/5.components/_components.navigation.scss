@@ -117,12 +117,15 @@
     }
 
     >.menu-item {
+      width: auto;
       @include breakpoint(medium down) {
-        margin-bottom: 5.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
       }
       @include breakpoint(tablet) {
         @include flex-grow(0);
         margin-right: .2rem;
+        flex: 1 1 0;
         a,
         span {
           text-align: center;
@@ -132,7 +135,12 @@
       span {
         @include transition(color, .2s);
         &:hover {
-          color: $color-turquoise;
+          //color: white;
+          //background-color: $color-blue-gray;
+          @include breakpoint(medium) {
+            color: white;
+            background-color: $color-blue-gray;
+          }
         }
       }
       >span,
@@ -141,9 +149,16 @@
         line-height: 1.3rem;
         display: block;
         cursor: pointer;
+        padding: 1.5rem 0;
         @include breakpoint(medium down) {
           font-size: 1.8rem;
           text-align: center;
+        }
+        background-color: white;
+        @include breakpoint(medium) {
+          color: $color-blue-gray;
+          background-color: white;
+          padding: 0;
         }
         @include breakpoint(tablet) {
           text-transform: uppercase;
@@ -158,33 +173,71 @@
           }
         }*/
       }
-/*      &--active-trail {
-        color: $color-turquoise;
+      &.menu-item--active-trail {
+        color: white;
+        background-color: $color-blue-gray;
         @include breakpoint(tablet) {
-          color: $color-white;
-          background-color: $color-blue-darkest;
+          color: white;
+          background-color: $color-blue-gray;
         }
-        >span {
-          color: $color-turquoise;
+        >span,
+        >a {
+          color: $color-blue-gray;
+          background-color: white;
           @include breakpoint(tablet) {
-            color: $color-white;
-            background-color: $color-blue-darkest;
+            color: white;
+            background-color: $color-blue-gray;
+          }
+          @include breakpoint(medium) {
+            color: white;
+            background-color: $color-blue-gray;
           }
         }
-      }*/
+      }
     }
 
     .menu-item--expanded {
       position: relative;
+      span {
+        &:after {
+          content: "\203A";
+          padding: 0 1rem;
+          transform: rotate(90deg);
+          display: inline-block;
+          transition: .5s;
+          @include breakpoint(medium) {
+            content: "";
+          }
+        }
+      }
+      &.opened {
+        background-color: $color-blue-gray;
+        span {
+          &:after {
+            content: "\203A";
+            padding: 0 1rem;
+            transform: rotate(270deg);
+            display: inline-block;
+            transition: .5s;
+            @include breakpoint(medium) {
+              content: "";
+            }
+  
+          }
+        }
+      }
       >.menu {
+        color: white;
+        background-color: $color-blue-gray;
         display: none;
-        background-color: $color-white;
-        padding: 1.5rem;
+        padding: 0 1.5rem 1rem;
+        transition: 0.2s;
         @include breakpoint(tablet) {
           @include translate(-50%, 0);
           position: absolute;
-          top: 5.9rem;
+          top: 5.65rem;
           left: 50%;
+          padding: 1.5rem;
         }
         .menu-item {
           @include breakpoint(medium down) {
@@ -192,13 +245,14 @@
           }
           &--active-trail {
             a {
-              color: $color-turquoise;
+              color: white;
             }
             @include breakpoint(tablet) {
               span:hover {
-                color: $color-white;
+                color: white;
               }
               a {
+                color: white;
                 font-weight: 700;
               }
             }
@@ -206,12 +260,21 @@
           a {
             white-space: nowrap;
             line-height: 3.4rem;
+            color: white;
+          }
+        }
+      }
+      &:hover {
+        >.menu {
+          @include breakpoint(medium) {
+            display: block;
           }
         }
       }
       &.opened {
         >.menu {
           display: block;
+          transition: 0.2s;
         }
       }
       &.menu-item--active-trail > span:hover {
@@ -266,6 +329,11 @@
       }
     }
   }
+}
+li.menu-item.menu-item--expanded.opened span {
+  background-color: $color-blue-gray;
+  color: white;
+  transition: 0s;
 }
 
 .menu--footer {
