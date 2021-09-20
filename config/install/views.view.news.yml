@@ -53,13 +53,13 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 16
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Previous'
+            next: 'Next ›'
             first: '« First'
             last: 'Last »'
           expose:
@@ -290,7 +290,7 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: '{{ created }} | <span class="content-type">{{ type }}</span>'
             make_link: false
             path: ''
@@ -331,7 +331,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: custom
+            date_format: document
             custom_date_format: d-M-Y
             timezone: ''
           group_column: value
