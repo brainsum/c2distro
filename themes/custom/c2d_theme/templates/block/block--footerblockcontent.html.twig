@@ -65,10 +65,19 @@
 <div class="footer-block-footer">
     <div class="footer-block-footer-content">
         <div class="footer-block-footer-content-item">
-            <p>© 2021 - International Federation of Red Cross and Red Crescent Societies | <a href="{{ path('user.login') }}">{{ 'Login'|t }}</a></p>
+
+            {% if logged_in %}
+               {% set loginUrl = '/user/' ~ user.id %}
+               {% set loginText = 'My Account' %}
+            {% else %}
+                {% set loginUrl = path('user.login') %}
+               {% set loginText = 'Login' %}
+            {% endif %}
+
+            <p>© 2021 - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
         </div>
         <div class="footer-block-footer-content-item">
-            <p>Legal Disclaimer  |  Fraud Notice</p>
+            <p><a href="#">Legal Disclaimer</a> |  <a href="#">Fraud Notice</a></p>
         </div>
     </div>
 </div>
