@@ -27,13 +27,13 @@
 #}
 <div class="footer-block">
     <div class="footer-block-body">
-        {% if content.field_title1.0['#context']['value'] %}
+        {% if content.field_title1.0['#context']['value'] is not empty %}
             <div class="footer-block-body-item">
                 <h4 class="footer-title">{{ content.field_title1.0['#context']['value'] }}</h4>
                 <p class="footer-body">{{ content.field_body.0['#text'] }}</p>
             </div>
         {% endif %}
-        {% if content.field_title2.0['#context']['value'] %}
+        {% if content.field_title2.0['#context']['value'] is not empty %}
             <div class="footer-block-body-item">
                 <h4 class="footer-title">{{ content.field_title2.0['#context']['value'] }}</h4>
                 <ul>
@@ -50,15 +50,17 @@
                 </ul>
             </div>
         {% endif %}
-        {% if content.field_title3.0['#context']['value'] %}
+        {% if content.field_title3.0['#context']['value'] is not empty %}
             <div class="footer-block-body-item">
                 <h4 class="footer-title">{{ content.field_title3.0['#context']['value'] }}</h4>
-                {% if content.field_link.0['#title'] %}
-                    {% set linktitle = content.field_link.0['#title'] %}
-                {% else %}
-                    {% set linktitle = content.field_link.0['#url'] %}
+                {% if content.field_link.0['#url'] %}
+                    {% if content.field_link.0['#title'] %}
+                        {% set linktitle = content.field_link.0['#title'] %}
+                    {% else %}
+                        {% set linktitle = content.field_link.0['#url'] %}
+                    {% endif %}
+                    <a class="bordered-button-blue" href="{{ content.field_link.0['#url'] }}">{{ linktitle }}</a>
                 {% endif %}
-                <a class="bordered-button-blue" href="{{ content.field_link.0['#url'] }}">{{ linktitle }}</a>
             </div>
         {% endif %}
 </div>
