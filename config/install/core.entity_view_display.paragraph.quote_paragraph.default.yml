@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.quote_paragraph.field_style
+    - field.field.paragraph.quote_paragraph.field_background_style
     - field.field.paragraph.quote_paragraph.field_text
     - field.field.paragraph.quote_paragraph.field_title
     - paragraphs.paragraphs_type.quote_paragraph
@@ -29,5 +29,5 @@ content:
     type: string
     region: content
 hidden:
-  field_style: true
+  field_background_style: true
   search_api_excerpt: true

@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.timeline_wrapper.field_background_style
     - field.field.paragraph.timeline_wrapper.field_description
     - field.field.paragraph.timeline_wrapper.field_paragraphs
-    - field.field.paragraph.timeline_wrapper.field_style
     - field.field.paragraph.timeline_wrapper.field_title
     - paragraphs.paragraphs_type.timeline_wrapper
   module:
@@ -14,6 +14,12 @@ targetEntityType: paragraph
 bundle: timeline_wrapper
 mode: default
 content:
+  field_background_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_description:
     weight: 1
     settings:
@@ -40,12 +46,6 @@ content:
     third_party_settings: {  }
     type: paragraphs
     region: content
-  field_style:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_title:
     weight: 0
     settings:
@@ -53,6 +53,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true

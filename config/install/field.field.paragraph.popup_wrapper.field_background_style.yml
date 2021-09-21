@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_style
-    - paragraphs.paragraphs_type.text_media
-id: paragraph.text_media.field_style
-field_name: field_style
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.popup_wrapper
+id: paragraph.popup_wrapper.field_background_style
+field_name: field_background_style
 entity_type: paragraph
-bundle: text_media
-label: Style
+bundle: popup_wrapper
+label: Background style
 description: ''
 required: true
 translatable: false

@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_style
-    - paragraphs.paragraphs_type.small_boxes
-id: paragraph.small_boxes.field_style
-field_name: field_style
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.timeline_wrapper
+id: paragraph.timeline_wrapper.field_background_style
+field_name: field_background_style
 entity_type: paragraph
-bundle: small_boxes
-label: Style
+bundle: timeline_wrapper
+label: Background style
 description: ''
 required: true
 translatable: false

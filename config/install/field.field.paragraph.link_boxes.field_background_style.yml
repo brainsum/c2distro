@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_style
-    - paragraphs.paragraphs_type.view
-id: paragraph.view.field_style
-field_name: field_style
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.link_boxes
+id: paragraph.link_boxes.field_background_style
+field_name: field_background_style
 entity_type: paragraph
-bundle: view
-label: Style
+bundle: link_boxes
+label: Background style
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
