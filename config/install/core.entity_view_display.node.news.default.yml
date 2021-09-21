@@ -21,13 +21,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
     type: media_thumbnail
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: news_page
@@ -35,20 +35,25 @@ content:
     third_party_settings: {  }
     region: content
   field_lead:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_tags:
-    weight: 3
-    label: inline
+    weight: 4
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  rrssb:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_highlighted: true
   langcode: true

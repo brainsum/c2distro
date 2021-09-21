@@ -1,0 +1,13 @@
+.share-button {
+  cursor: pointer;
+}
+
+.rrssb {
+  visibility: hidden;
+}
+.rrssb.rrssb-show {
+  visibility: visible;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjUuY29tcG9uZW50cy9jb21wb25lbnRzLmN1c3RvbV9zaGFyZV9idXR0b24uc2NzcyIsIjUuY29tcG9uZW50cy9jb21wb25lbnRzLmN1c3RvbV9zaGFyZV9idXR0b24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBQTtBQ0NKOztBRENBO0VBQ0ksa0JBQUE7QUNFSjtBRERJO0VBQ0ksbUJBQUE7QUNHUiIsImZpbGUiOiI1LmNvbXBvbmVudHMvY29tcG9uZW50cy5jdXN0b21fc2hhcmVfYnV0dG9uLmNzcyJ9 */
+
+/*# sourceMappingURL=components.custom_share_button.css.map */

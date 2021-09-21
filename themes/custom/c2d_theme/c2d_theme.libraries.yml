@@ -80,3 +80,9 @@ footerblockcontent.block:
   css:
     theme:
       css/5.components/components.footerblockcontent.block.css: {}
+custom_share_button:
+  js:
+    js/src/custom/custom_share_button.js: {}
+  css:
+    theme:
+      css/5.components/components.custom_share_button.css: {}

@@ -1,0 +1,100 @@
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+follow: 0
+chosen:
+  delicious:
+    weight: 0
+    label: ''
+    enabled: false
+  email:
+    weight: -20
+    label: ''
+    enabled: false
+  facebook:
+    enabled: true
+    username: ''
+    weight: -19
+    label: ''
+  github:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+  hackernews:
+    weight: 0
+    label: ''
+    enabled: false
+  instagram:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+  join:
+    weight: 0
+    label: ''
+    enabled: false
+  linkedin:
+    username: ''
+    weight: -18
+    label: ''
+    enabled: false
+  pinterest:
+    username: ''
+    weight: -15
+    label: ''
+    enabled: false
+  phone:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+  pocket:
+    weight: 0
+    label: ''
+    enabled: false
+  print:
+    weight: 0
+    label: ''
+    enabled: false
+  reddit:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+  tumblr:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+  twitter:
+    enabled: true
+    username: ''
+    weight: -17
+    label: ''
+  vk:
+    weight: 0
+    label: ''
+    enabled: false
+  whatsapp:
+    weight: 0
+    label: ''
+    enabled: false
+  youtube:
+    username: ''
+    weight: 0
+    label: ''
+    enabled: false
+appearance:
+  size: null
+  shrink: null
+  regrow: null
+  minRows: null
+  maxRows: null
+  prefixReserve: null
+  prefixHide: null
+  alignRight: false
+prefix: ''
+image_tokens: ''

@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-
+{{ attach_library('c2d_theme/custom_share_button') }}
 {%
   set classes = [
     'node',
@@ -103,7 +103,10 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="created-time">{{ node.getCreatedTime|format_date('document')  }} </div>
+    <div class="content-header">
+      <img src="/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/share.svg" alt="share" class="share-button">
+      <div class="created-time">{{ node.getCreatedTime|format_date('document')  }} </div>
+    </div>
     {{ content }}
   </div>
 
