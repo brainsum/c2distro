@@ -13,19 +13,24 @@ h1.page-title {
     font-size: 4rem;
     line-height: 4rem;
     text-align: left;
+    margin-left: 24px;
+    @include breakpoint(medium) {
+        margin-left: 0;
+    }
 }
 
 .view.view-news.view-id-news.view-display-id-lister_page {
     .view-content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin: 10px 0;
+        justify-content: flex-start;
+        max-width: 124.2rem;
+        margin: 0 auto;
     
         .views-row {
             width: 262px;
             background-color: white;
-            margin: 24px 24px 72px 24px;
+            margin: 0 24px 72px 24px;
             transition: .5s;
             &:hover {
                 box-shadow: 0 0 15px lightgray;

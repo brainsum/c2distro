@@ -1,0 +1,9 @@
+.share-button {
+    cursor: pointer;
+}
+.rrssb {
+    visibility: hidden;
+    &.rrssb-show {
+        visibility: visible;
+    }
+}
