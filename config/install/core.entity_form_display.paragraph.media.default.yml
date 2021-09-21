@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.media.field_background_style
     - field.field.paragraph.media.field_media
-    - field.field.paragraph.media.field_style
     - field.field.paragraph.media.field_text
     - field.field.paragraph.media.field_title
     - paragraphs.paragraphs_type.media
@@ -14,6 +14,12 @@ targetEntityType: paragraph
 bundle: media
 mode: default
 content:
+  field_background_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_media:
     weight: 2
     settings:
@@ -23,12 +29,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_style:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_text:
     weight: 1
@@ -45,6 +45,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true

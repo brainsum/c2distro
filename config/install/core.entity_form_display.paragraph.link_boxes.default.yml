@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.link_boxes.field_background_style
     - field.field.paragraph.link_boxes.field_paragraphs
-    - field.field.paragraph.link_boxes.field_style
     - paragraphs.paragraphs_type.link_boxes
   module:
     - paragraphs
@@ -12,6 +12,12 @@ targetEntityType: paragraph
 bundle: link_boxes
 mode: default
 content:
+  field_background_style:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_paragraphs:
     weight: 1
     settings:
@@ -24,11 +30,10 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
-  field_style:
-    weight: 2
+  translation:
+    weight: 10
     settings: {  }
     third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true

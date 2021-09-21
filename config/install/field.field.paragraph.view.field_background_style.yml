@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_style
-    - paragraphs.paragraphs_type.quotes
-id: paragraph.quotes.field_style
-field_name: field_style
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.field_background_style
+field_name: field_background_style
 entity_type: paragraph
-bundle: quotes
-label: Style
+bundle: view
+label: Background style
 description: ''
 required: true
 translatable: false

@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.media.field_background_style
     - field.field.paragraph.media.field_media
-    - field.field.paragraph.media.field_style
     - field.field.paragraph.media.field_text
     - field.field.paragraph.media.field_title
     - paragraphs.paragraphs_type.media
@@ -38,5 +38,5 @@ content:
     type: string
     region: content
 hidden:
-  field_style: true
+  field_background_style: true
   search_api_excerpt: true

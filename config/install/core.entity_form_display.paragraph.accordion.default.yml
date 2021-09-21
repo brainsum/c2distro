@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.accordion.field_background_style
     - field.field.paragraph.accordion.field_paragraphs
-    - field.field.paragraph.accordion.field_style
     - field.field.paragraph.accordion.field_text
     - field.field.paragraph.accordion.field_title
     - paragraphs.paragraphs_type.accordion
@@ -15,6 +15,12 @@ targetEntityType: paragraph
 bundle: accordion
 mode: default
 content:
+  field_background_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_paragraphs:
     type: entity_reference_paragraphs
     weight: 3
@@ -26,12 +32,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_style:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_text:
     weight: 2
@@ -48,6 +48,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true

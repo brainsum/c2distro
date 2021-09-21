@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.view.field_style
+    - field.field.paragraph.view.field_background_style
     - field.field.paragraph.view.field_view_list
     - paragraphs.paragraphs_type.view
   module:
@@ -12,7 +12,7 @@ targetEntityType: paragraph
 bundle: view
 mode: default
 content:
-  field_style:
+  field_background_style:
     weight: 1
     settings: {  }
     third_party_settings: {  }
@@ -26,6 +26,11 @@ content:
       configuration_form: full
     third_party_settings: {  }
     type: block_field_default
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true

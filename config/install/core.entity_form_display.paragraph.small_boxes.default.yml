@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.small_boxes.field_background_style
     - field.field.paragraph.small_boxes.field_paragraphs
-    - field.field.paragraph.small_boxes.field_style
     - field.field.paragraph.small_boxes.field_title
     - paragraphs.paragraphs_type.small_boxes
   module:
@@ -13,6 +13,12 @@ targetEntityType: paragraph
 bundle: small_boxes
 mode: default
 content:
+  field_background_style:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_paragraphs:
     weight: 2
     settings:
@@ -25,12 +31,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
-  field_style:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_title:
     weight: 1
     settings:
@@ -38,6 +38,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true

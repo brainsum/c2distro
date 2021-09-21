@@ -4,8 +4,8 @@ dependencies:
   module:
     - classy_paragraphs
     - paragraphs
-id: paragraph.field_style
-field_name: field_style
+id: paragraph.field_background_style
+field_name: field_background_style
 entity_type: paragraph
 type: entity_reference
 settings:

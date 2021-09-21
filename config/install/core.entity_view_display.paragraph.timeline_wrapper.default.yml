@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.timeline_wrapper.field_background_style
     - field.field.paragraph.timeline_wrapper.field_description
     - field.field.paragraph.timeline_wrapper.field_paragraphs
-    - field.field.paragraph.timeline_wrapper.field_style
     - field.field.paragraph.timeline_wrapper.field_title
     - paragraphs.paragraphs_type.timeline_wrapper
   module:
@@ -39,5 +39,5 @@ content:
     type: string
     region: content
 hidden:
-  field_style: true
+  field_background_style: true
   search_api_excerpt: true
