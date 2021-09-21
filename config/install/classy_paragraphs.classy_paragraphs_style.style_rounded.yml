@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: style_rounded
+label: Rounded
+classes: style--rounded
