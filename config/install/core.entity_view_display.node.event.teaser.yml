@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_highlighted
     - field.field.node.event.field_image
     - field.field.node.event.field_lead
+    - field.field.node.event.field_location
     - field.field.node.event.field_tags
     - node.type.event
   module:
@@ -47,6 +48,7 @@ content:
 hidden:
   body: true
   field_highlighted: true
+  field_location: true
   field_tags: true
   langcode: true
   links: true
