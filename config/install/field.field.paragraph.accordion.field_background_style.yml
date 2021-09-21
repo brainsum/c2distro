@@ -8,15 +8,19 @@ id: paragraph.accordion.field_background_style
 field_name: field_background_style
 entity_type: paragraph
 bundle: accordion
-label: Background style
+label: 'Background style'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:classy_paragraphs_style'
+  handler: classy_paragraphs
   handler_settings:
-    target_bundles: null
-    auto_create: false
+    filter:
+      type: starts_with
+      starts_with: background
+    sort:
+      field: label
+      direction: ASC
 field_type: entity_reference
