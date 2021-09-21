@@ -51,6 +51,9 @@
         "patches": {
             "drupal/media_thumbnails": {
                 "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch"
+            },
+            "drupal/classy_paragraphs": {
+                "Choose and order selectable styles": "https://www.drupal.org/files/issues/2021-02-23/choose_and_order-2830403-44.patch"
             }
         }
     }
