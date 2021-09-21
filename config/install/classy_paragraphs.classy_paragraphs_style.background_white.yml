@@ -1,6 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-id: white
+id: background_white
 label: White
-classes: 'White background'
+classes: background-color--blue

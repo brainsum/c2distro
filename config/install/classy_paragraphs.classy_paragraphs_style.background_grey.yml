@@ -1,6 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-id: grey
+id: background_grey
 label: Grey
-classes: Grey
+classes: background-color--grey
