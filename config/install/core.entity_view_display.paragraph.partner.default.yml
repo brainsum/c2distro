@@ -2,18 +2,34 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.partner.field_image
     - field.field.paragraph.partner.field_link
+    - field.field.paragraph.partner.field_name
     - field.field.paragraph.partner.field_title
     - paragraphs.paragraphs_type.partner
   module:
     - link
+    - svg_image
 id: paragraph.partner.default
 targetEntityType: paragraph
 bundle: partner
 mode: default
 content:
-  field_link:
+  field_image:
     weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
@@ -22,10 +38,18 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link_separate
+    type: link
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
