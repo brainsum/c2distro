@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tags_of_document
+  module:
+    - facets
+    - system
+  theme:
+    - c2d_theme
+id: tagsofdocument
+theme: c2d_theme
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:tags_of_document'
+settings:
+  id: 'facet_block:tags_of_document'
+  label: 'Tags of document'
+  provider: facets
+  label_display: visible
+  block_id: tagsofdocument
+visibility:
+  request_path:
+    id: request_path
+    pages: /documents
+    negate: false
