@@ -6,6 +6,7 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.link_boxes
+    - paragraphs.paragraphs_type.partners
     - paragraphs.paragraphs_type.small_boxes
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_media
@@ -29,6 +30,7 @@ settings:
     target_bundles:
       accordion: accordion
       link_boxes: link_boxes
+      partners: partners
       small_boxes: small_boxes
       text: text
       text_media: text_media
@@ -56,8 +58,8 @@ settings:
         weight: 26
         enabled: false
       partners:
+        enabled: true
         weight: 27
-        enabled: false
       popup_text:
         weight: 28
         enabled: false
