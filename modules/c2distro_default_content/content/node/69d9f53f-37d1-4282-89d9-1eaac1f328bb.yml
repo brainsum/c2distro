@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     fe9210f5-5d08-429a-9bc6-3819d22cd6f7: media
+    5794defd-14cb-43f2-b497-4ae5bc39c099: taxonomy_term
 default:
   revision_uid:
     -
@@ -56,3 +57,6 @@ default:
   field_lead:
     -
       value: 'Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+  field_tags:
+    -
+      entity: 5794defd-14cb-43f2-b497-4ae5bc39c099
