@@ -2,32 +2,57 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.partner.field_image
     - field.field.paragraph.partner.field_link
+    - field.field.paragraph.partner.field_name
     - field.field.paragraph.partner.field_title
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.partner
   module:
     - link
+    - svg_image
 id: paragraph.partner.default
 targetEntityType: paragraph
 bundle: partner
 mode: default
 content:
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_link:
-    weight: 1
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  field_title:
-    weight: 0
+  field_name:
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
