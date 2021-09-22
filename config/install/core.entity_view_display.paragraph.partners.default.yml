@@ -2,7 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.partners.field_background_style
     - field.field.paragraph.partners.field_paragraphs
+    - field.field.paragraph.partners.field_style
     - field.field.paragraph.partners.field_text
     - field.field.paragraph.partners.field_title
     - paragraphs.paragraphs_type.partners
@@ -24,14 +26,14 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   field_text:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_title:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
@@ -39,4 +41,6 @@ content:
     type: string
     region: content
 hidden:
+  field_background_style: true
+  field_style: true
   search_api_excerpt: true
