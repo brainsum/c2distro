@@ -51,15 +51,15 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-
-        <div class="partner-top">
-            <a href="{{ content.field_link[0]['#url_title'] }}">
-                {{ content.field_title[0]['#context'].value }}
-            </a>
-        </div>
-        <div class="partner-title">
-            <a href="{{ content.field_link[0]['#url_title'] }}">{{ content.field_link[0]['#title'] }}</a>
-        </div>
+      {{ content }}
+{#        <div class="partner-top">#}
+{#          <a href="{{ content.field_link[0]['#url_title'] }}">#}
+{#              {{ content.field_title[0]['#context'].value }}#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="partner-title">#}
+{#            <a href="{{ content.field_link[0]['#url_title'] }}">{{ content.field_link[0]['#title'] }}</a>#}
+{#        </div>#}
     {% endblock %}
   </div>
 {% endblock paragraph %}
