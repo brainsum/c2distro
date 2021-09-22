@@ -45,7 +45,9 @@
         "drupal/token": "^1.9",
         "drupal/transliterate_filenames": "^1.5",
         "drupal/warmer": "^2.0",
-        "drupal/warmer_entity": "^2.0"
+        "drupal/warmer_entity": "^2.0",
+        "drupal/facets": "^1.8",
+        "drupal/core_views_facets": "^1.2"
     },
     "extra": {
         "patches": {
@@ -54,6 +56,9 @@
             },
             "drupal/classy_paragraphs": {
                 "Choose and order selectable styles": "https://www.drupal.org/files/issues/2021-02-23/choose_and_order-2830403-44.patch"
+            },
+            "drupal/facets": {
+                "BooleanItemProcessor assumes SearchApiFacetSourceInterface" : "https://www.drupal.org/files/issues/2021-09-09/NastyBooleanItemProcessor-3226284-3.patch"
             }
         }
     }

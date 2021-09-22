@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: core_views_exposed_filter__documents__lister_page
+name: 'core_views_exposed_filter:documents__lister_page'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

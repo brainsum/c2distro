@@ -53,6 +53,8 @@ install:
   - calendar
   - search_api
   - search_api_db
+  - facets
+  - core_views_facets
   - media_thumbnails_pdf
   - rrssb
   # Custom

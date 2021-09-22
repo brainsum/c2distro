@@ -645,6 +645,7 @@ display:
         options:
           relationship: none
           view_mode: lister_page
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
