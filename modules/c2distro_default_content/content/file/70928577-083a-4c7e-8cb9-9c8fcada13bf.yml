@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 70928577-083a-4c7e-8cb9-9c8fcada13bf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: demo_partner_4.jpg
+  uri:
+    -
+      value: 'public://partner/2021-09/demo_partner_4.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 625389
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1632300620

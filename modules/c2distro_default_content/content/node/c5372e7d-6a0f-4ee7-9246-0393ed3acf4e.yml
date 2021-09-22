@@ -7,6 +7,12 @@ _meta:
   depends:
     3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
     496c7cab-5443-4e08-b872-7bcce5af6db0: media
+    2efe01f2-105b-479f-bd8c-4573aa9cb8d7: file
+    1a2bee29-8093-4794-94ac-8be69f19dc57: file
+    c5007f1e-60c7-4e42-916d-f2b8a80890e4: file
+    70928577-083a-4c7e-8cb9-9c8fcada13bf: file
+    bb6062cd-0452-453d-a1a7-3e687281d081: file
+    3d79af9a-cb8b-4ff7-97e4-164bd8286366: file
 default:
   revision_uid:
     -
@@ -38,6 +44,14 @@ default:
   content_translation_outdated:
     -
       value: false
+  body:
+    -
+      value: "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.\r\n\r\nNulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.\r\n\r\nDonec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh."
+      format: plain_text
+      summary: ''
+  field_lead:
+    -
+      value: 'Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. '
   field_paragraphs:
     -
       entity:
@@ -63,12 +77,12 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_white
           field_media:
             -
               entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
-          field_style:
-            -
-              target_id: white
           field_text:
             -
               value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet commodo nisl, non suscipit augue. Nulla porta finibus nisl ac pulvinar.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed."
@@ -100,6 +114,9 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_grey
           field_paragraphs:
             -
               entity:
@@ -275,9 +292,6 @@ default:
                       uri: 'internal:/'
                       title: 'See more  »'
                       options: {  }
-          field_style:
-            -
-              target_id: grey
           field_title:
             -
               value: 'About Branches'
@@ -305,6 +319,9 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_white
           field_paragraphs:
             -
               entity:
@@ -368,9 +385,6 @@ default:
                   field_title:
                     -
                       value: 'Item #2'
-          field_style:
-            -
-              target_id: white
           field_text:
             -
               value: 'Lorerm ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor'
@@ -402,6 +416,9 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_white
           field_paragraphs:
             -
               entity:
@@ -467,9 +484,6 @@ default:
                   field_title:
                     -
                       value: 'Link box'
-          field_style:
-            -
-              target_id: white
     -
       entity:
         _meta:
@@ -494,12 +508,12 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_grey
           field_media:
             -
               entity: 496c7cab-5443-4e08-b872-7bcce5af6db0
-          field_style:
-            -
-              target_id: grey
           field_text:
             -
               value: 'The world’s largest humanitarian network has 190 National Red Cross and Red Crescent Societies and around 17 million volunteers. Together, we are the International Federation of Red Cross and Red Crescent Societies (IFRC).'
@@ -531,9 +545,9 @@ default:
           content_translation_outdated:
             -
               value: false
-          field_style:
+          field_background_style:
             -
-              target_id: white
+              target_id: background_white
           field_text:
             -
               value: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.'
@@ -565,6 +579,9 @@ default:
           content_translation_outdated:
             -
               value: false
+          field_background_style:
+            -
+              target_id: background_grey
           field_paragraphs:
             -
               entity:
@@ -624,9 +641,6 @@ default:
                       uri: 'internal:/'
                       title: 'Click here to futrther connect, discuss and share!'
                       options: {  }
-          field_style:
-            -
-              target_id: grey
           field_title:
             -
               value: Tools
@@ -654,9 +668,9 @@ default:
           content_translation_outdated:
             -
               value: false
-          field_style:
+          field_background_style:
             -
-              target_id: white
+              target_id: background_white
           field_view_list:
             -
               plugin_id: 'views_block:news-lister_block'
@@ -691,9 +705,9 @@ default:
           content_translation_outdated:
             -
               value: false
-          field_style:
+          field_background_style:
             -
-              target_id: grey
+              target_id: background_grey
           field_view_list:
             -
               plugin_id: 'views_block:events-lister_block'
@@ -722,18 +736,15 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           content_translation_source:
             -
               value: und
           content_translation_outdated:
             -
               value: false
-          field_style:
+          field_background_style:
             -
-              target_id: white
+              target_id: background_white
           field_view_list:
             -
               plugin_id: 'views_block:documents-lister_block'
@@ -744,3 +755,293 @@ default:
                 label_display: visible
                 views_label: ''
                 items_per_page: none
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b92c1d97-03c9-41c9-a80a-fef9e9284980
+          bundle: partners
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1632300158
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_background_style:
+            -
+              target_id: background_white
+          field_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c347b275-be64-4e75-9007-12dc9ae5c9df
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632300158
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: 2efe01f2-105b-479f-bd8c-4573aa9cb8d7
+                      alt: 'Donec Rutrum'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:donec.rutrum@test.com'
+                      title: donec.rutrum@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Donec Rutrum'
+                  field_title:
+                    -
+                      value: 'Senior Officer'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 819edba8-4db2-4c53-8464-d3b198e578d9
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632300418
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: 1a2bee29-8093-4794-94ac-8be69f19dc57
+                      alt: 'Vivamus Magna'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:vivamus.magna@test.com'
+                      title: vivamus.magna@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Vivamus Magna'
+                  field_title:
+                    -
+                      value: 'Senior Officer'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cf4a951a-1ae8-4b90-927a-cb3df719c6e0
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632300535
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: c5007f1e-60c7-4e42-916d-f2b8a80890e4
+                      alt: 'Proin Eget'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:proin.eget@test.com'
+                      title: proin.eget@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Proin Eget'
+                  field_title:
+                    -
+                      value: Officer
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 547536c8-665c-419e-894c-5a997c3b3735
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632300607
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: 70928577-083a-4c7e-8cb9-9c8fcada13bf
+                      alt: 'Curabitur Aliquet'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:curabitur.aliquet@test.com'
+                      title: curabitur.aliquet@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Curabitur Aliquet'
+                  field_title:
+                    -
+                      value: Officer
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ae35f27b-a3e8-4519-836d-b8c90c8bd20b
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632300706
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: bb6062cd-0452-453d-a1a7-3e687281d081
+                      alt: 'Donec Velit'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:donec.velit@test.com'
+                      title: donec.velit@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Donec Velit'
+                  field_title:
+                    -
+                      value: Officer
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 465c0e35-3069-4d76-992f-0814d6cc5c3f
+                  bundle: partner
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1632301099
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_image:
+                    -
+                      entity: 3d79af9a-cb8b-4ff7-97e4-164bd8286366
+                      alt: 'Quisque Velit'
+                      title: ''
+                      width: 1024
+                      height: 1024
+                  field_link:
+                    -
+                      uri: 'mailto:quisque.velit@test.com'
+                      title: quisque.velit@test.com
+                      options: {  }
+                  field_name:
+                    -
+                      value: 'Quisque Velit'
+                  field_title:
+                    -
+                      value: Officer
+          field_style:
+            -
+              target_id: style_rounded
+          field_text:
+            -
+              value: 'Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.'
+              format: plain_text
+          field_title:
+            -
+              value: 'Meet the team'
