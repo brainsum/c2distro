@@ -8,7 +8,7 @@ id: paragraph.partners.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: partners
-label: Subtitle
+label: Title
 description: ''
 required: false
 translatable: true
