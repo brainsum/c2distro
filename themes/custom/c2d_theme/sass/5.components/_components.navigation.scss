@@ -106,6 +106,8 @@
     position: relative;
     @include breakpoint(medium down) {
       @include align-items(center);
+      overflow: scroll;
+      height: 100vh;
     }
     @include breakpoint(tablet) {
       @include flex-direction(row);
@@ -126,9 +128,20 @@
         @include flex-grow(0);
         margin-right: .2rem;
         flex: 1 1 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a,
         span {
           text-align: center;
+        }
+        &:hover {
+          &, span, a {
+            background-color: $color-blue-gray;
+            color: white;
+            transition: .2s;
+          }
         }
       }
       a,
@@ -138,6 +151,7 @@
           //color: white;
           //background-color: $color-blue-gray;
           @include breakpoint(medium) {
+            transition: .2s;
             color: white;
             background-color: $color-blue-gray;
           }
@@ -150,6 +164,7 @@
         display: block;
         cursor: pointer;
         padding: 1.5rem 0;
+        line-height: 2rem;
         @include breakpoint(medium down) {
           font-size: 1.8rem;
           text-align: center;
@@ -164,6 +179,11 @@
           text-transform: uppercase;
           padding: 2.2rem 3rem;
           background-color: $color-white;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
         }
 /*        &.is-active {
           color: $color-turquoise;
@@ -182,12 +202,10 @@
         }
         >span,
         >a {
-          color: $color-blue-gray;
-          background-color: white;
-          @include breakpoint(tablet) {
-            color: white;
-            background-color: $color-blue-gray;
-          }
+          //color: $color-blue-gray;
+          //background-color: white;
+          color: white;
+          background-color: $color-blue-gray;
           @include breakpoint(medium) {
             color: white;
             background-color: $color-blue-gray;
@@ -206,12 +224,12 @@
           display: inline-block;
           transition: .5s;
           @include breakpoint(medium) {
-            content: "";
+            display: none;
           }
         }
       }
       &.opened {
-        background-color: $color-blue-gray;
+        // background-color: $color-blue-gray;
         span {
           &:after {
             content: "\203A";
@@ -220,7 +238,7 @@
             display: inline-block;
             transition: .5s;
             @include breakpoint(medium) {
-              content: "";
+              display: none;
             }
   
           }
@@ -257,17 +275,27 @@
               }
             }
           }
+          &:last-child a {
+            padding: 0;
+          }
           a {
-            white-space: nowrap;
-            line-height: 3.4rem;
+            white-space: pre-wrap;
+            line-height: 2rem;
             color: white;
+            display: inline-block;
+            text-align: center;
+            padding: 0 0 1rem 0;
+            @include breakpoint(medium) {
+              text-align: left;
+            }
           }
         }
       }
       &:hover {
         >.menu {
+          width: 100%;
           @include breakpoint(medium) {
-            display: block;
+            display: block !important;
           }
         }
       }
@@ -275,6 +303,10 @@
         >.menu {
           display: block;
           transition: 0.2s;
+          width: 100%;
+          @include breakpoint(medium) {
+            display: none;
+          }
         }
       }
       &.menu-item--active-trail > span:hover {
@@ -334,6 +366,10 @@ li.menu-item.menu-item--expanded.opened span {
   background-color: $color-blue-gray;
   color: white;
   transition: 0s;
+  @include breakpoint(medium) {
+    background-color: white;
+    color: $color-blue-gray;
+  }
 }
 
 .menu--footer {
