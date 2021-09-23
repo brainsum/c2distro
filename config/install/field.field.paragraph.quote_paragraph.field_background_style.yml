@@ -19,7 +19,7 @@ settings:
   handler_settings:
     filter:
       type: starts_with
-      starts_with: background
+      starts_with: background_
     sort:
       field: label
       direction: ASC
