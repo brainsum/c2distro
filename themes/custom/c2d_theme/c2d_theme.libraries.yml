@@ -20,6 +20,13 @@ paragraphs-base:
   css:
     theme:
       css/5.components/components.paragraphs-base.css: {}
+paragraph-text:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraph-text.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 paragraph-text-media:
   version: 1.0
   css:
