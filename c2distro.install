@@ -76,6 +76,9 @@ function c2distro_install() {
   
   // Place the Footer custom content block.
   _c2distro_place_the_footer_block_content();
+
+  // Place the Selector cards block to the Resources page.
+  _c2distro_place_selector_cards_block();
 }
 
 /**
@@ -108,5 +111,29 @@ function _c2distro_place_the_footer_block_content() {
     'weight' => 0,
   ];
   $block = Block::create($values);
+  $block->save();
+}
+
+/**
+ * Place the Selector cards block to the Resources page.
+ */
+function _c2distro_place_selector_cards_block() {
+  $resources_page = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
+    'title' => 'Resources',
+  ]);
+  $resources_page = reset($resources_page);
+  $values = [
+    'id' => 'views_block__selector_cards_selector_cards_block',
+    'plugin' => 'views_block:selector_cards-selector_cards_block',
+    'region' => 'bottom',
+    'theme' => 'c2d_theme',
+    'weight' => 0,
+    'settings' => [
+      'label_display' => FALSE,
+    ],
+  ];
+  $block = Block::create($values);
+  $visibility['request_path']['pages'] = '/node/' . $resources_page->id();
+  $block->setVisibilityConfig('request_path', $visibility['request_path']);
   $block->save();
 }
