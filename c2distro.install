@@ -73,7 +73,7 @@ function c2distro_install() {
 
   // Place the HP hero custom content block.
   _c2distro_place_the_hp_hero_block();
-  
+
   // Place the Footer custom content block.
   _c2distro_place_the_footer_block_content();
 
@@ -101,7 +101,6 @@ function _c2distro_place_the_hp_hero_block() {
 /**
  * Place the Footer custom content block.
  */
-
 function _c2distro_place_the_footer_block_content() {
   $values = [
     'id' => 'footerblockcontent',
