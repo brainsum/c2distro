@@ -1,24 +1,17 @@
 @import '../index';
 
-#block-tabs nav.tabs {
-  max-width: 113.5rem;
-  margin: 20px auto 10px;
+.region.region-content {
+  background-color: white;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  @include breakpoint(medium) {
+    padding: 0;
+  }
 }
-.block-page-title-block {
-  padding-top: 5.9rem !important;
-  padding-bottom: 0 !important;
-}
+
 .block-page-title-block .block-inner {
   max-width: 823px;
   margin: 0 auto;
-  h1.page-title {
-    text-align: left;
-    font-size: 4rem;
-    color: $color-blue-darkest2;
-    font-family: Montserrat;
-    color: #12284c;
-    line-height: 4.9rem;
-  }
 }
 
 article .node__content {
@@ -29,15 +22,16 @@ article .node__content {
     display: flex;
     align-items: center;
     .share-button {
-      padding-right: 4rem;
+      margin-right: 4rem;
     }
     .created-time {
-      
-      color: $color-blue-darkest2;
-      font-family: Montserrat;
-      font-size: 1.4rem;
-      font-weight: 600;
+      color: $color-blue-gray;
+      font-size: 1.8rem;
+      font-weight: 700;
       font-size: 18px;
+      font-family: Open Sans;
+      text-decoration: none solid rgb(18, 40, 76);
+      line-height: 30px;
       .content-type {
           color: $color-turquoise-light;
       }

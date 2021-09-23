@@ -1,19 +1,15 @@
 // style of news, events, case study page
 
+#block-tabs nav.tabs {
+  max-width: 113.5rem;
+  margin: 20px auto 10px;
+}
+
 .view-general-site-search,
 .page-node-type-news {
-  .block-page-title-block,
   .node {
     background-color: $color-white;
-    padding: 0 2rem;
-    @include breakpoint(medium) {
-      padding: 0;
-    }
-  }
-  .block-page-title-block {
-    padding-top: 4rem;
-    padding-bottom: 6.6rem;
-    margin-top: 2rem;
+    padding: 0;
   }
   .info-section,
   .content-section {

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: document_thumbnail
+label: 'Document thumbnail'
+effects:
+  76b6776b-9bd2-4c89-95d4-0964d73bfc7f:
+    uuid: 76b6776b-9bd2-4c89-95d4-0964d73bfc7f
+    id: image_scale
+    weight: 1
+    data:
+      width: 253
+      height: null
+      upscale: true

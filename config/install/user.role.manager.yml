@@ -11,4 +11,5 @@ permissions:
   - 'create terms in tags'
   - 'delete terms in tags'
   - 'edit terms in tags'
+  - 'use text format simple'
   - 'view the administration theme'
