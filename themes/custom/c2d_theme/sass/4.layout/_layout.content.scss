@@ -7,6 +7,11 @@
  * Scroll to Top button.
  */
 
+.layout-content {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
 .section-holder {
   &.white {
     background-color: $color-white;

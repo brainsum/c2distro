@@ -1,0 +1,24 @@
+@import '../index';
+
+.block-page-title-block {
+    padding: 4rem 0 0 0;
+    max-width: 119.2rem;
+    margin: 0 auto;
+    .block-inner {
+        h1.page-title {
+            text-align: left;
+            font-size: 3rem;
+            color: $color-blue-gray;
+            font-family: Montserrat;
+            color: #12284c;
+            line-height: 3rem;
+            text-decoration: none solid $color-blue-gray;
+            @include breakpoint(medium) {
+                margin-left: 0;
+                font-size: 4rem;
+                line-height: 4.9rem;
+            }
+        }
+    }
+}
+  

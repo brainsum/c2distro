@@ -6,12 +6,18 @@
 function c2d_theme_preprocess_page(array &$variables) {
 
   $current_route = \Drupal::routeMatch();
-
   $route_name = $current_route->getRouteName();
-  
-  // entity.media.canonical
+
   if ($route_name == 'view.news.lister_page') {
     $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
+  }
+
+  $media = \Drupal::routeMatch()->getParameter('media');
+  if ($media) {
+    $typeName = $media->bundle();
+    if ($typeName == 'document') {
+      $variables['#attached']['library'][] = 'c2d_theme/entity.media.canonical.document';
+    }
   }
 
   $node = \Drupal::routeMatch()->getParameter('node');
@@ -38,4 +44,13 @@ function c2d_theme_preprocess_block(&$variables) {
   if ($blockId === 'footerblockcontent' ) {
     $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
   }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function c2d_theme_preprocess(&$vars, $hook) {
+
+  $vars['share_url'] = \Drupal::request()->getSchemeAndHttpHost() . \Drupal::request()->getPathInfo();
+
 }

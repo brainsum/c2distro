@@ -1,0 +1,122 @@
+@import '../index';
+
+.region.region-content {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    @include breakpoint(medium) {
+      padding: 0;
+    }
+}
+
+article .media__content {
+  max-width: 119.2rem;
+  margin: 0 auto;
+
+  .content-header {
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    .share-button {
+      margin-right: 4rem;
+    }
+    .content-header-text {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .created-time {
+        color: $color-blue-gray;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: Open Sans;
+        text-decoration: none solid rgb(18, 40, 76);
+        line-height: 30px;
+        width: 100%;
+        @include breakpoint(medium) {
+          width: auto;
+        }
+      }
+      .created-time-pipe {
+        display: none;
+        @include breakpoint(medium) {
+          display: block;
+          padding: 0 1rem;
+        }
+      }
+      .category-link {
+        a {
+          font-family: Open Sans;
+          font-size: 18px;
+          color: $color-turquoise;
+          text-decoration: none solid $color-turquoise;
+          line-height: 30px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .content-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    .content-body-img {
+      width: 100%;
+      @include breakpoint(medium) {
+        width: auto;
+      }
+      img {
+        width: 100%;
+        @include breakpoint(medium) {
+          width: auto;
+        }
+  
+      }
+    }
+    .content-body-text {
+      max-width: calc(119.2rem - 25.3rem);
+      padding-left: 0;
+      @include breakpoint(medium) {
+        padding-left: 4rem;
+      }
+      a.text-black {
+        color: $color-blue-gray;
+      }
+    }
+    .field.field--name-field-tags {
+      padding: 4rem 4rem 4rem 0;
+      .field__label {
+        font-weight: 700;
+      }
+    }
+    .content-body-text--field-media-file {
+      max-width: 20rem;
+      a:hover {
+        color: white;
+      }
+    }
+    .field--name-field-custom-text {
+      /* lorem@ipsum.com */
+      font-family: Open Sans;
+      font-size: 1.6rem;
+      color: $color-blue-gray;;
+      line-height: 30px;
+      padding: 4rem 0;
+      strong {
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        font-family: Open Sans;
+        font-size: 1.6rem;
+        color: $color-blue-gray;;
+        text-decoration: underline solid rgb(15, 29, 64);
+        line-height: 30px;
+  
+      }
+    }
+  }
+}

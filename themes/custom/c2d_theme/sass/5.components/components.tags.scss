@@ -1,0 +1,27 @@
+@import '../index';
+
+.field.field--name-field-tags {
+    padding: 0 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(medium) {
+        padding: 4rem;
+    }
+    .field__label {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .field__items {
+        display: flex;
+        flex-wrap: wrap;
+        .field__item {
+            margin-bottom: 3rem;
+            a {
+                padding: 1.5rem 3rem;
+                background-color: $color-grey-light;
+                margin-right: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

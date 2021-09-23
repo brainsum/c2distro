@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    <div{{ content_attributes.addClass('media__content') }}>
+      <div class="content-header">
+        {% include '@c2d_theme/custom/share-button.twig' %}
+        <div class="content-header-text">
+          <div class="created-time">{{ content.created }}</div>
+          <div class="created-time-pipe">|</div>
+          <div class="category-link"><a href="/resources?text=&category={{ content.field_category.0['#taxonomy_term'].tid.0.value }}">{{ content.field_category.0['#taxonomy_term'].name.0.value }}</a></div>
+        </div>
+      </div>
+      <div class="content-body">
+        <div class="content-body-img">
+          {{ content.thumbnail }}
+        </div>
+        <div class="content-body-text">
+          <div class="content-body-text--field-lead">{{ content.field_lead }}</div>
+          <div class="content-body-text--field-body">{{ content.field_body }}</div>
+          <div class="content-body-text--field-tags">{{ content.field_tags }}</div>
+          <div class="content-body-text--field-media-file"><a href="{{ content.field_media_file.0['#markup'] }}" class="text-black bordered-button-blue">{{ 'Download'|t }}</a></div>
+          <div class="content-body-text--field-custom-text">{{ content.field_custom_text }}</div>
+        </div>
+      </div>
+    </div>
+
+  {% endif %}
+
+</article>

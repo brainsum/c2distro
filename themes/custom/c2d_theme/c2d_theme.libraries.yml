@@ -67,11 +67,14 @@ view.news.lister_page:
   css:
     theme:
       css/5.components/components.view.news.lister_page.css: {}
+      css/5.components/components.h1.page_title.css: {}
 entity.node.canonical.news:
   version: 1.0
   css:
     theme:
       css/5.components/components.entity.node.canonical.news.css: {}
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.tags.scss: {}
 hphero.block:
   css:
     theme:
@@ -80,9 +83,21 @@ footerblockcontent.block:
   css:
     theme:
       css/5.components/components.footerblockcontent.block.css: {}
-custom_share_button:
-  js:
-    js/src/custom/custom_share_button.js: {}
+#custom_share_button:
+  #js:
+    #js/src/custom/custom_share_button.js: {}
+  #css:
+    #theme:
+      #css/5.components/components.custom_share_button.css: {}
+entity.media.canonical.document:
   css:
     theme:
-      css/5.components/components.custom_share_button.css: {}
+      css/5.components/components.entity.media.canonical.document.css: {}
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.tags.css: {}
+share_button_from_ifrc:
+  js:
+    js/src/custom/share_button_from_ifrc.js: {}
+  css:
+    theme:
+      css/5.components/components.share_button_from_ifrc.css: {}

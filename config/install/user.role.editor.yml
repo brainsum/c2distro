@@ -35,5 +35,6 @@ permissions:
   - 'edit any remote_video media'
   - 'translate editable entities'
   - 'update any media'
+  - 'use text format simple'
   - 'view own unpublished content'
   - 'view the administration theme'

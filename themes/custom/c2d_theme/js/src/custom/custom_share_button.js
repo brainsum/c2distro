@@ -2,9 +2,12 @@
   Drupal.behaviors.sharebutton = {
     attach: function (context) {
       if ($(context).is(document)) {
-          $('.share-button').on('click', function(){
-              $('.rrssb').toggleClass('rrssb-show');
-          })
+        console.log('clcik-log');
+        $('.share-button img').on('click', function(){
+          console.log('clcik');
+          $('.rrssb').toggleClass('rrssb-show');
+        })
+
       }
     }
   };
