@@ -34,6 +34,13 @@ paragraph-text-media:
       css/5.components/components.paragraph-text-media.css: {}
   dependencies:
     - c2d_theme/paragraphs-base
+paragraph-partners:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraph-partners.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 paragraph-accordion:
   version: 1.0
   css:
