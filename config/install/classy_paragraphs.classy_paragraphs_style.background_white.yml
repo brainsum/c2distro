@@ -3,4 +3,4 @@ status: true
 dependencies: {  }
 id: background_white
 label: White
-classes: background-color--blue
+classes: background-color--white
