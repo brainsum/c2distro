@@ -22,7 +22,7 @@
   }
 
   .field--name-field-text {
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
   }
 
   .field--name-field-paragraphs {
@@ -33,18 +33,18 @@
     margin: 0 -1.5rem;
 
     @include breakpoint(tablet) {
-      @include justify-content(space-between);
+      @include justify-content(flex-start);
     }
 
     > .field__item {
       width: 100%;
       max-width: 35.6rem;
-      margin: 0 1.5rem 3rem;
+      padding: 0 1.5rem 6rem;
 
       @include breakpoint(tablet) {
-        width: calc(33% - 3rem);
-        max-width: 30.7rem;
-        margin: 0 1.5rem 6rem;
+        width: 25%;
+        max-width: none;
+        padding: 0 1.5rem 12rem;
       }
 
       .paragraph--type--partner {
@@ -87,7 +87,55 @@
             color: $color-turquoise;
           }
         }
+
+        .field--name-field-image {
+          padding: 0 2.85rem;
+          margin-bottom: 3rem;
+
+          img {
+            max-width: 20rem;
+          }
+        }
+
+        .field--name-field-name,
+        .field--name-field-title,
+        .field--name-field-link {
+          font-size: 1.8rem;
+          line-height: 1.33;
+          margin-bottom: 2rem;
+        }
+
+        .field--name-field-name {
+          font-weight: 700;
+        }
+
+        .field--name-field-title {
+          font-weight: 400;
+        }
+
+        .field--name-field-link {
+          a {
+            transition: all 0.2s;
+
+            &:link,
+            &:visited {
+              color: $color-secondary;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: $color-primary;
+            }
+          }
+        }
       }
+    }
+  }
+
+  &.style--rounded {
+    .field--name-field-image img {
+      border-radius: 50%;
     }
   }
 }
