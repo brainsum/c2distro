@@ -23,3 +23,12 @@ display:
             offset_label: Décalage
   page:
     display_title: Page
+  resources:
+    display_options:
+      sorts:
+        media_highlighted:
+          expose:
+            label: 'Mis en évidence'
+        media_created:
+          expose:
+            label: 'Écrit le'
