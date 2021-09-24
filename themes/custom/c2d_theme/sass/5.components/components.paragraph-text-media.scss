@@ -39,6 +39,7 @@
 
     .left {
       @include breakpoint(medium) {
+        padding-top: 2.5em;
         padding-right: 5.5rem;
       }
     }
@@ -47,7 +48,8 @@
   &.paragraph--view-mode--default {
     .right {
       @include breakpoint(medium) {
-        padding-left: 5.5rem;
+        padding-top: 2.5em;
+        padding-left: 12.5%;
       }
     }
   }
@@ -62,6 +64,10 @@
 
     @include breakpoint(medium) {
       margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
