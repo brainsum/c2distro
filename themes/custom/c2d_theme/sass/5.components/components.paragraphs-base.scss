@@ -48,7 +48,11 @@
 .paragraph--type--popup-wrapper,
 .paragraph--type--media {
   > .paragraph--inner {
-    @include width-655;
+    @include width-690;
+
+    @include breakpoint(medium) {
+      width: 50%;
+    }
   }
 }
 
