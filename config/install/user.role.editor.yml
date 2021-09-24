@@ -17,7 +17,6 @@ permissions:
   - 'create news content'
   - 'create page content'
   - 'create remote_video media'
-  - 'create terms in tags'
   - 'delete any document media'
   - 'delete any event content'
   - 'delete any icon media'

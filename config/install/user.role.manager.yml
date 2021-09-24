@@ -8,7 +8,13 @@ is_admin: null
 permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'create terms in category'
+  - 'create terms in location'
   - 'create terms in tags'
+  - 'delete terms in category'
+  - 'delete terms in location'
   - 'delete terms in tags'
+  - 'edit terms in category'
+  - 'edit terms in location'
   - 'edit terms in tags'
   - 'view the administration theme'
