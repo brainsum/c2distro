@@ -16,9 +16,19 @@ targetEntityType: media
 bundle: document
 mode: search_index
 content:
+  created:
+    type: timestamp
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      date_format: document
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
   field_lead:
     type: basic_string
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings: {  }
@@ -32,7 +42,6 @@ content:
       link_to_entity: true
     third_party_settings: {  }
 hidden:
-  created: true
   field_body: true
   field_category: true
   field_custom_text: true
