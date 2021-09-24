@@ -78,11 +78,15 @@ article .media__content {
       max-width: calc(119.2rem - 25.3rem);
       padding-left: 0;
       padding-bottom: 8rem;
+      font-family: Open Sans;
+      font-size: 18px;
       @include breakpoint(medium) {
         padding-left: 4rem;
       }
       a.text-black {
         color: $color-blue-gray;
+        font-family: Open Sans;
+        font-size: 1.8rem;
       }
     }
     .field.field--name-field-tags {
@@ -93,6 +97,8 @@ article .media__content {
     }
     .content-body-text--field-media-file {
       max-width: 20rem;
+      font-family: Open Sans;
+      font-size: 1.8rem;
       a:hover {
         color: white;
       }
@@ -100,19 +106,23 @@ article .media__content {
     .field--name-field-custom-text {
       /* lorem@ipsum.com */
       font-family: Open Sans;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: $color-blue-gray;;
       line-height: 30px;
       padding: 4rem 0;
       strong {
         font-weight: 700;
+        font-family: Open Sans;
+        font-size: 1.8rem;
       }
       p {
         margin: 0;
+        font-family: Open Sans;
+        font-size: 1.8rem;
       }
       a {
         font-family: Open Sans;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: $color-blue-gray;;
         text-decoration: underline solid rgb(15, 29, 64);
         line-height: 30px;
