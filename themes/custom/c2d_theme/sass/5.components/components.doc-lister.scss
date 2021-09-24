@@ -45,6 +45,7 @@
       font-size: 30px;
       color: #000000;
       font-weight: bold;
+      line-height: 32px;
     }
     .subtitle {
       font-weight: bold;
@@ -120,4 +121,10 @@
   .pager__item--first {
     letter-spacing: 1px;
   }
+}
+
+.view-empty {
+  font-size: 18px;
+  padding: 15px 0 49px 0;
+  font-family: 'Open Sans';
 }

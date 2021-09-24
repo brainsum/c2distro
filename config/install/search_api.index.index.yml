@@ -18,6 +18,8 @@ dependencies:
     - field.storage.node.field_lead
     - field.storage.node.field_tags
     - search_api.server.database_server
+_core:
+  default_config_hash: vHUG_OxBMq1QXDNAsYKQjSnBslsrPSygkoLrRqncG4o
 id: index
 name: 'General search'
 description: ''
@@ -183,6 +185,24 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - media_bundle
+      - media_category_name
+      - media_document_description
+      - media_image_alt
+      - media_image_title
+      - media_lead
+      - media_name
+      - media_tag_name
+      - node_body
+      - node_lead
+      - node_tag_name
+      - node_title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   language_with_fallback: {  }
   rendered_item: {  }
 tracker_settings:
