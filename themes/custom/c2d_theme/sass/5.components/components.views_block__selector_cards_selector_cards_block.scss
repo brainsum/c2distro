@@ -12,6 +12,12 @@
             flex-wrap: wrap;
             .views-col {
                 width: 100%;
+                &:nth-child(odd) {
+                    background-color: $color-grey-backbgorund;
+                }
+                &:nth-child(even) {
+                    background-color: white;
+                }
                 @include breakpoint(medium) {
                     width: 50%;
                     transition: 0.4s;
@@ -22,10 +28,13 @@
                 a {
                     cursor: pointer;
                     display: block;
-                    padding: 6rem 10rem;
+                    padding: 4rem 2rem;
                     align-items: center;
                     justify-content: flex-start;
                     flex-wrap: wrap;
+                    @include breakpoint(medium) {
+                        padding: 6rem 10rem;
+                    }
                     &.selector-card {
                         h4 {
                             color: $color-blue-darkest2;
@@ -46,7 +55,6 @@
             }
         }
         .views-row:nth-child(odd) .views-col:nth-child(odd) {
-            background-color: $color-grey-backbgorund;
             @include breakpoint(medium) {
                 background-color: $color-grey-backbgorund;
                 border: solid 3px $color-grey-backbgorund;
@@ -65,7 +73,6 @@
             }
         }
         .views-row:nth-child(even) .views-col:nth-child(odd) {
-            background-color: $color-grey-backbgorund;
             @include breakpoint(medium) {
                 background-color: white;
                 border: solid 3px white;
