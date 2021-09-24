@@ -1,0 +1,84 @@
+@import '../index';
+
+.block-inner {
+    max-width: 139rem !important;
+    padding: 0 !important;
+}
+.view-content {
+    width: 100%;
+    .views-view-grid {
+        .views-row {
+            display: flex;
+            flex-wrap: wrap;
+            .views-col {
+                width: 100%;
+                @include breakpoint(medium) {
+                    width: 50%;
+                    transition: 0.4s;
+                }
+                &:hover {
+                    border-color: $color-turquoise !important;
+                }
+                a {
+                    cursor: pointer;
+                    display: block;
+                    padding: 6rem 10rem;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    &.selector-card {
+                        h4 {
+                            color: $color-blue-darkest2;
+                            font-family: Montserrat;
+                            font-size: 3rem;
+                            line-height: 150%;
+                            width: 100%;
+                        }
+                        p {
+                            color: $color-blue-darkest2;
+                            font-family: Open Sans;
+                            font-size: 1.8rem;
+                            line-height: 150%;
+                        }
+
+                    }
+                }
+            }
+        }
+        .views-row:nth-child(odd) .views-col:nth-child(odd) {
+            background-color: $color-grey-backbgorund;
+            @include breakpoint(medium) {
+                background-color: $color-grey-backbgorund;
+                border: solid 3px $color-grey-backbgorund;
+            }
+        }
+        .views-row:nth-child(even) .views-col:nth-child(even) {
+            @include breakpoint(medium) {
+                background-color: $color-grey-backbgorund;
+                border: solid 3px $color-grey-backbgorund;
+            }
+        }
+        .views-row:nth-child(odd) .views-col:nth-child(even) {
+            @include breakpoint(medium) {
+                background-color: white;
+                border: solid 3px white;
+            }
+        }
+        .views-row:nth-child(even) .views-col:nth-child(odd) {
+            background-color: $color-grey-backbgorund;
+            @include breakpoint(medium) {
+                background-color: white;
+                border: solid 3px white;
+            }
+        }
+
+    }
+}
+.view-footer {
+    padding: 8rem 2rem;
+    a {
+        max-width: 20rem;
+        color: $color-blue-darkest2;
+        margin: 0 auto;
+    }
+}

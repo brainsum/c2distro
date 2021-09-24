@@ -51,11 +51,16 @@ display:
         options:
           offset: 0
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          columns: 2
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
         options:
