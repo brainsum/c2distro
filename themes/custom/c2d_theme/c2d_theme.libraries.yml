@@ -107,6 +107,14 @@ share_button_from_ifrc:
   css:
     theme:
       css/5.components/components.share_button_from_ifrc.css: {}
+resources:
+  css:
+    theme:
+      css/5.components/components.facets.css: {}
+documents:
+  css:
+    theme:
+      css/5.components/components.doc-lister.css: {}
 views_block__selector_cards_selector_cards_block:
   css:
     theme:

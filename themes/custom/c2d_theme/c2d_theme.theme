@@ -45,6 +45,9 @@ function c2d_theme_preprocess_block(&$variables) {
   if ($blockId === 'footerblockcontent' ) {
     $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
   }
+  if($variables['derivative_plugin_id'] == 'search-resources') {
+    $variables['#cache']['max-age'] = 0;
+  }
   if ($blockId === 'views_block__selector_cards_selector_cards_block' ) {
     $variables['#attached']['library'][] = 'c2d_theme/views_block__selector_cards_selector_cards_block';
   }

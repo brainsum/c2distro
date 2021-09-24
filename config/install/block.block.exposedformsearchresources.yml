@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.tags_of_document
+    - views.view.search
   module:
-    - facets
     - system
+    - views
   theme:
     - c2d_theme
-id: tagsofdocument
+id: exposedformsearchresources
 theme: c2d_theme
 region: content
 weight: 0
 provider: null
-plugin: 'facet_block:tags_of_document'
+plugin: 'views_exposed_filter_block:search-resources'
 settings:
-  id: 'facet_block:tags_of_document'
-  label: 'Tags of document'
-  provider: facets
+  id: 'views_exposed_filter_block:search-resources'
+  label: ''
+  provider: views
   label_display: '0'
-  block_id: tagsofdocument
+  views_label: ''
 visibility:
   request_path:
     id: request_path
