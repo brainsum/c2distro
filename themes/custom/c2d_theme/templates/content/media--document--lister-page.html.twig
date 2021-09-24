@@ -24,7 +24,12 @@
 <article{{ attributes.addClass(classes) }}>
   {{ title_suffix.contextual_links }}
   {% if content %}
-    <div class="media-wrapper">
+  {% if content.field_highlighted.0['#markup'] == 'On' %}
+    {% set highClass = 'highlighted' %}
+  {% else %}
+    {% set highClass = '' %}
+  {% endif %}
+    <div class="media-wrapper {{ highClass }}">
       <div class="left thumbnail">
         {{ content.thumbnail }}
       </div>
