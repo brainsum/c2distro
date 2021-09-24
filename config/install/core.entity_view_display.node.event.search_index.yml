@@ -23,9 +23,9 @@ content:
     weight: 0
     label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: document
+      separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
