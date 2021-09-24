@@ -13,8 +13,8 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
             first: '« Premier'
             last: 'Dernier »'
           expose:
@@ -25,6 +25,10 @@ display:
     display_title: Page
   resources:
     display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Rechercher
       sorts:
         media_highlighted:
           expose:
