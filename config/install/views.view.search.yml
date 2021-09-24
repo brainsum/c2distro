@@ -48,13 +48,13 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 15
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Previous'
+            next: 'Next ›'
             first: '« First'
             last: 'Last »'
           expose:
@@ -65,7 +65,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
+          quantity: 2
       style:
         type: default
       row:
@@ -228,7 +228,7 @@ display:
     display_options:
       display_extenders: {  }
       path: resources
-      title: Resources
+      title: 'Learning toolbox'
       defaults:
         title: false
         style: false
@@ -238,6 +238,7 @@ display:
         header: false
         sorts: false
         cache: false
+        empty: false
       style:
         type: default
         options: {  }
@@ -269,7 +270,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: ''
+            label: Search
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -449,6 +450,19 @@ display:
           plugin_id: search_api
       cache:
         type: none
+      exposed_block: true
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'No results found'
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:

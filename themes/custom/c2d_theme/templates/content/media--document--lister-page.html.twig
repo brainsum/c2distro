@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    <div class="media-wrapper">
+      <div class="left thumbnail">
+        {{ content.thumbnail }}
+      </div>
+      <div class="right">
+        <div class="title">
+          {{ content.name }}
+        </div>
+        <div class="subtitle">
+          {% set catID = content.field_category.0['#options'].entity.id %}
+          {% set catUrl = path('view.search.resources', {'category': catID}) %}
+          {% set catTitle = content.field_category.0['#options'].entity.name.value %}
+          <span class="created"> {{ content.created }} {% if content.field_category %}|{% endif %} </span>
+          <span class="category">
+            <a href="{{ catUrl }}" class="category-link">{{ catTitle }}</a>
+          </span>
+        </div>
+        {% set text = content.field_lead.0['#context'].value %}
+        {{ text|length > 200 ? text|slice(0, 300) ~ '...' : text }}
+        {{ content.field_tags }}
+
+        <a href="{{ path('entity.media.canonical', {'media': media.id}) }}" class="read-more"> {{ 'Read more'|t }} </a>
+      </div>
+    </div>
+  {% endif %}
+</article>

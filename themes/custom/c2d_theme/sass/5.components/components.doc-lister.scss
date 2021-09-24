@@ -1,0 +1,121 @@
+@import "../index";
+@import "../3.base/_base.css-settings";
+@import "../3.base/base.typography";
+@import "../1.settings/settings.all";
+
+.view-header {
+  margin-bottom: 60px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: $color-blue-darkest2;
+}
+.media-wrapper {
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 5px #26c9de;
+  }
+
+  clear: both;
+  width: 100%;
+  max-height: 362px;
+  background-color: white;
+  padding: 41px 62px;
+  margin-bottom: 30px;
+  display: flex;
+  .left {
+    display: inline-grid;
+    max-width: 210px;
+    margin-right: 47px;
+  
+    .field--name-thumbnail {
+      max-width: 206px;
+      max-height: 289px;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .right {
+    display: inline-grid;
+    .title {
+      width: 1010px;
+      font-family: 'Montserrat';
+      font-size: 30px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .created {
+        .field--type-created {
+          float: left;
+        }
+        display: inline-block;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        color: #757575;
+        text-decoration: none solid rgb(117, 117, 117);
+
+      }
+      .category {
+        display: inline-block;
+        a {
+          font-family: 'Open Sans';
+          color: $color-turquoise;
+          font-size: 18px;
+          text-decoration: none solid rgb(38, 201, 222);
+        }
+      }
+    }
+    .field--name-field-lead {
+      font-family: 'Open Sans';
+      font-size: 18px;
+      color: #0f1d40;
+      margin-bottom: 10px;
+    }
+    .field--name-field-tags {
+      .field__label {
+        font-family: 'Open Sans';
+        font-size: 18px;
+        color: #0f1d40;
+        text-decoration: none solid rgb(15, 29, 64);
+      }
+      .field__items {
+        margin-left: 5px;
+      }
+      .field__item {
+        display: inline-block;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        color: #0f1d40;
+        text-decoration: underline solid rgb(15, 29, 64);
+      }
+    }
+    .read-more {
+      font-family: 'Open Sans';
+      font-size: 18px;
+      color: #26c9de;
+      text-decoration: none solid rgb(38, 201, 222);
+      font-style: italic;
+      margin-top: 26px;
+    }
+  }
+}
+.pager {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: #0f1d40;
+  text-decoration: none solid rgb(15, 29, 64);
+  letter-spacing: 10px;
+
+  .pager__item--next,
+  .pager__item--previous,
+  .pager__item--last,
+  .pager__item--first {
+    letter-spacing: 1px;
+  }
+}
