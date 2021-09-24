@@ -77,6 +77,7 @@ article .media__content {
     .content-body-text {
       max-width: calc(119.2rem - 25.3rem);
       padding-left: 0;
+      padding-bottom: 8rem;
       @include breakpoint(medium) {
         padding-left: 4rem;
       }
