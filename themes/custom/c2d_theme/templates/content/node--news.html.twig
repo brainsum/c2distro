@@ -81,6 +81,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
+
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
@@ -104,7 +105,9 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="content-header">
-      {% include '@c2d_theme/custom/share-button.twig' %}
+      {% if view_mode == 'full' %}
+        {% include '@c2d_theme/custom/share-button.twig' %}
+      {% endif %}
       <div class="created-time">{{ node.getCreatedTime|format_date('document')  }} </div>
     </div>
     {{ content }}
