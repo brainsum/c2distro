@@ -1,8 +1,12 @@
 @import '../index';
 
+.block-page-title-block {
+    margin-top: 6rem;
+}
 .block-inner {
     max-width: 139rem !important;
     padding: 0 !important;
+    margin-top: 6rem;
 }
 .view-content {
     width: 100%;
@@ -88,4 +92,7 @@
         color: $color-blue-darkest2;
         margin: 0 auto;
     }
+}
+.page-node-type-page .field--name-body, .page-node-type-page .field--name-field-lead {
+    padding-bottom: 0;
 }
