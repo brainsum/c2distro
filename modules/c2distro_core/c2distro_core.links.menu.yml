@@ -1,0 +1,5 @@
+c2distro_core.block_content:
+  title: 'Block content'
+  route_name: view.block_content.page_1
+  parent: system.admin_content
+  weight: 5

@@ -6,6 +6,7 @@ label: Manager
 weight: -8
 is_admin: null
 permissions:
+  - 'access content overview'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'create terms in category'
@@ -17,5 +18,7 @@ permissions:
   - 'edit terms in category'
   - 'edit terms in location'
   - 'edit terms in tags'
+  - 'update any hero block content'
   - 'use text format simple'
+  - 'view restricted block content'
   - 'view the administration theme'
