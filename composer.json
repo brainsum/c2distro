@@ -26,6 +26,7 @@
     },
     "require": {
         "drupal/block_field": "^1.0@RC",
+        "drupal/block_content_permissions": "^1.10",
         "drupal/calendar": "^1.0@alpha",
         "drupal/classy_paragraphs": "^1.0@beta",
         "drupal/ctools": "^3.6",
