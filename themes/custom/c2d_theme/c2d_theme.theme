@@ -61,3 +61,10 @@ function c2d_theme_preprocess(&$vars, $hook) {
   $vars['share_url'] = \Drupal::request()->getSchemeAndHttpHost() . \Drupal::request()->getPathInfo();
 
 }
+
+/**
+ * Implements template_preprocess_paragraph().
+ */
+function c2d_theme_preprocess_paragraph__cta(&$variables) {
+  $variables['#attached']['library'][] = 'c2d_theme/paragraph_cta';
+}

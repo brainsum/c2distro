@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/**
+ * @file
+ * Sass index file
+ *
+ * The main importer and organizer sass file.
+ *
+ */
+/**
+ * Settings
+ *
+ * Setting files contain **global** configurations that are shared by more than
+ * one modules.
+ * Settings that are connected to one and only module are a part of the module
+ * itself.
+ * Local configurations should be contained into the modules (objects,
+ * components, etc.) that are related to.
+ */
+/**
+ * @file
+ * Settings
+ *
+ * Setting files contain **global** configurations that are shared by more than
+ * one modules. Settings that are connected to one and only module are a part
+ * of the module itself.
+ * Local configurations should be contained into the modules (objects,
+ * components, etc.) that are related to.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * @file
+ * Breakpoint Settings
+ *
+ * Foundation for Sites 6 Media Queries
+ * @see documentation, usage: https://foundation.zurb.com/sites/docs/media-queries.html
+ *
+ * - Define breakpoint variables as Sass map
+ * - Provide a breakpoint variable for print media
+ * - Provide breakpoint classes for Foundation for Sites 6 XY Grid
+ *
+ * We have to use here only px, it will be converted to em by
+ * Foundation's utility.
+ */
+/**
+ * @file
+ * Color Settings
+ *
+ * - Define color variables
+ */
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid Settings
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Define some global Foundation 6 settings what required for XY Grid
+ * - Define breakpoint variables
+ */
+/**
+ * Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
+ *
+ * @type Keyword
+ */
+/**
+ * Enables flexbox for components that support it.
+ *
+ * @type Boolean
+ */
+/**
+ * @file
+ * Typography Settings
+ *
+ * - Import Webfonts
+ * - Define Font-families
+ * - Define Typography-related global variables
+ */
+/**
+ * Tools
+ *
+ * Globally used mixins and functions.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * @file
+ * Tools
+ *
+ * Tools are sets of globally used sass mixins and functions. Mixins that are
+ * connected to one and only module are a part of the module itself.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * Mixin tools
+ */
+/**
+ * @file
+ * Clearfix Tool
+ *
+ * The clearfix utility is used on elements that need to automatically clear
+ * their child elements.
+ *
+ * Use it wherever you need it.
+ *
+ *
+ * @example
+ *   .o-grid {
+ *     @include clearfix;
+ *   }
+ */
+/**
+ * @file
+ * Form Tool
+ *
+ * Form related mixins and functions.
+ */
+/**
+ * Placeholder mixin
+ *
+ * With it you can theming input placeholders easily for any browsers.
+ *
+ * @example
+ *  @include input-placeholder {
+ *    color: grey;
+ *  }
+ */
+/**
+ * Webkit autofill mixin
+ *
+ * With it you can theming autofilled inputs easily.
+ * You must declare the font color, other rules optionally.
+ *
+ * @example
+ *  @include autofill($color-primary) {
+ *    background: lighten($color-primary, 30%);
+ *  }
+ */
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Import Foundation for Site 6 required vendor libraries
+ * - Import Foundation for Sites 6 Util Library
+ * - Import Foundation for Sites 6 XY Grid
+ */
+/**
+ * @file
+ *** FOUNDATION FOR SITES AND CUSTOM MIXINS
+ */
+/**
+ * @group Foundation for Sites mixins
+ * Mixins placeholder file
+ * @todo These are mostly from Foundation and should be removed and used straight from Foundation.
+ */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * Horizontally or vertically aligns the items within a flex container.
+ *
+ * @param {Keyword} $x [null] - Horizontal alignment to use. Can be `left`,
+ * `right`, `center`, `justify`, or `spaced`. Or, set it to `null`
+ * (the default) to not set horizontal alignment.
+ * @param {Keyword} $y [null] - Vertical alignment to use. Can be `top`,
+ * `bottom`, `middle`, or `stretch`. Or, set it to `null` (the default) to not
+ * set vertical alignment.
+ */
+/**
+ * Vertically align a single column within a flex row. Apply this mixin to a
+ * flex column.
+ *
+ * @param {Keyword} $y [null] - Vertical alignment to use. Can be `top`,
+ * `bottom`, `middle`, or `stretch`. Or, set it to `null` (the default) to not
+ * set vertical alignment.
+ */
+/**
+ * Changes the source order of a flex child. Children with lower numbers appear
+ * first in the layout.
+ *
+ * @param {Number} $order [0] - Order number to apply.
+ */
+/**
+ * Change flex-direction
+ *
+ * @param {Keyword} $direction [row] - Flex direction to use. Can be
+ * - row (default): same as text direction
+ * - row-reverse: opposite to text direction
+ * - column: same as row but top to bottom
+ * - column-reverse: same as row-reverse top to bottom
+ */
+/**
+ * @include flex-wrap(nowrap | wrap | wrap-reverse);
+ * Default: nowrap
+ */
+/**
+ * @include flex-flow(values);
+ * Default: row nowrap
+ */
+/**
+ * @include order(int);
+ * Default: 0
+ */
+/**
+ * @include flex-grow(int);
+ * Default: 1
+ */
+/**
+ * @include flex-shrink(int);
+ * Default: 0
+ */
+/**
+ * @include flex-basis(int);
+ * Default: auto
+ */
+/**
+ * @include justify-content(flex-start | flex-end | center | space-between
+ * | space-around);
+ * Default: flex-start
+ */
+/**
+ * @include align-items(flex-start | flex-end | center | baseline | stretch);
+ * Default: stretch
+ */
+/**
+ * @include align-self(auto | flex-start | flex-end | center | baseline | stretch);
+ * Default: auto
+ */
+/**
+ * @include align-content(flex-start | flex-end | center | space-between | space-around | stretch);
+ * Default: stretch
+ */
+/**
+ * @group theming mixins
+ */
+/**
+ * @file
+ * Stretched-lnk Tool ***
+ ******************************************************************************
+ *
+ * Make any HTML element or a component clickable by "stretching" a nested link
+ * via css.
+ *
+ * Borrowed from Bootstrap 4
+ * @link https://getbootstrap.com/docs/4.3/utilities/stretched-link
+ *
+ * Include `stretched-link` mixin to a link (`<a>` element) to make its
+ * containing block clickable via a `::after` pseudo element.
+ * In most cases, this means that an element with `position: relative;` that
+ * contains a link with included `stretched-link` mixin is clickable.
+ *
+ * @example
+ *   .o-media {
+ *     position: relative;
+ *
+ *     &__link {
+ *       @include stretched-link;
+ *     }
+ *   }
+ *
+ * You can use it as utility class too:
+ * @see 6.utilities/_utilities.stretched-link.scss
+ */
+/**
+ * @file
+ * Text Tool
+ ******************************************************************************
+ *
+ * Text block related tools
+ *
+ * @see 6.utilities/_utilities.text.scss for BEM based class named version
+ */
+/**
+ * Text-align Mixin
+ *
+ * @parameter {string} $align - Align value ex.: left.
+ * @parameter {string} $last - Optional, align value for justify aligned last line.
+ *
+ *
+ * Examples
+ *
+ * Simple text align.
+ *
+ * @example
+ *   .c-button {
+ *     @include text-align(center);
+ *   }
+ *
+ * Align last line of a justify text.
+ *
+ * @example
+ *   .section__lead {
+ *     @include text-align(justify, left);
+ *   }
+ */
+/**
+ * Text Overflow behaviors
+ *
+ * Text Ellipsis
+ *
+ * Overflow behavior: display an ellipsis to represent clipped text.
+ * Only works on single line text!
+ *
+ * Borrowed from Spectre.css
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__lead {
+ *     @include text-ellipsis;
+ *   }
+ */
+/**
+ * Text Clip
+ *
+ * Overflow behavior: truncate the text.
+ *
+ * Borrowed from Spectre.css
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__lead {
+ *     @include text-clip;
+ *   }
+ */
+/**
+ * Text Break
+ *
+ * Text may be broken at arbitrary points.
+ *
+ * Borrowed from Spectre.css
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__body {
+ *     @include text-break;
+ *   }
+ */
+/**
+ * @file
+ * CSS Triangle Tool
+ *
+ * Generates a triangle pointing in a specified direction.
+ *
+ * Borrowed from bourbon
+ * @link https://www.bourbon.io/docs/latest#triangle
+ * *
+ * @example
+ *   .button__arrow {
+ *     @include make-triangle(right, 1.5rem, 1rem, $color-secondary);
+ *   }
+ */
+/**
+ * Make Triangle mixin
+ *
+ * @parameter {string} $direction
+ *   The direction the triangle should point. Accepts `up`, `up-right`,
+ *   `right`, `down-right`, `down`, `down-left`, `left` or `up-left`.
+ *
+ * @parameter {number (with unit)} $width
+ *   Width of the triangle.
+ *
+ * @parameter {number (with unit)} $height
+ *   Height of the triangle.
+ *
+ * @parameter {color} $color
+ *   Color of the triangle.
+ */
+/**
+ * @file
+ * Typography Tool
+ *
+ * Inline typography related mixins.
+ */
+/**
+ * Font Antialiasing
+ *
+ * Makes font thickness to look the same in Firefox and Webkit.
+ *
+ * @example
+ *   h1 {
+ *     @include font-smooth;
+ *   }
+ */
+/**
+ * @file
+ * CSS Custom Variable Tool
+ ******************************************************************************
+ *
+ * To write CSS variables faster in SCSS.
+ */
+/**
+ * v() function
+ *
+ * @example
+ *  :root {
+ *    --primary: #000;
+ *  }
+ *
+ *  color: v(primary);
+ */
+/**
+ * @file
+ * Visibility Tool
+ *
+ * Control the visibility, without modifying the display, of elements with
+ * visibility utilities.
+ *
+ * @see 6.utilities/_utilities.visibility.scss for BEM based class named version
+ */
+/**
+ * Visually Hidden
+ *
+ * Use visually-hidden mixin to hide elements on all devices except screen
+ * readers.
+ *
+ * borrowed from iota.css
+ * @author Dimitris Psaropoulos <info@harby.me>
+ * @link https://www.iotacss.com/docs/utilities/display
+ *
+ * @example
+ *   .page__title {
+ *     @include visually-hidden;
+ *   }
+ */
+/**
+ * Focusable Visually hidden
+ *
+ * Use in conjunction with `visually-hidden` to only display content when it's focused.
+ * Useful for "Skip to main content" links.
+ * @see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+ *
+ * borrowed from HTML5 Boilerplate
+ *
+ * @example
+ *   .skip-navigation {
+ *      @include visually-hidden;
+ *      @include visually-hidden--focusable;
+ *   }
+ */
+.paragraph--type--cta {
+  padding: 4rem 0;
+  max-width: 83.5rem;
+  margin: 0 auto;
+}
+.paragraph--type--cta .field--name-field-title {
+  font-family: Montserrat;
+  font-size: 4rem;
+  color: #011e41;
+  -webkit-text-decoration: none solid #011e41;
+          text-decoration: none solid #011e41;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.paragraph--type--cta .field--name-field-text {
+  margin-bottom: 4rem;
+}
+.paragraph--type--cta .field--name-field-text p {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #011e41;
+  -webkit-text-decoration: none solid #011e41;
+          text-decoration: none solid #011e41;
+  line-height: 30px;
+  text-align: center;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjUuY29tcG9uZW50cy9jb21wb25lbnRzLnBhcmFncmFwaF9jdGEuY3NzIiwiX2luZGV4LnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5hbGwuc2NzcyIsIjEuc2V0dGluZ3MvX3NldHRpbmdzLmJyZWFrcG9pbnRzLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5jb2xvcnMuc2NzcyIsIjEuc2V0dGluZ3MvX3NldHRpbmdzLmdyaWQuc2NzcyIsIjEuc2V0dGluZ3MvX3NldHRpbmdzLnR5cG9ncmFwaHkuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmFsbC5zY3NzIiwiMi50b29scy9fdG9vbHMuY2xlYXJmaXguc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmZvcm0uc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmdyaWQuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLm1peGlucy5zY3NzIiwiMi50b29scy9fdG9vbHMuc3RyZXRjaGVkLWxpbmsuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnRleHQuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnRyaWFuZ2xlLnNjc3MiLCIyLnRvb2xzL190b29scy50eXBvZ3JhcGh5LnNjc3MiLCIyLnRvb2xzL190b29scy52YXJpYWJsZS5zY3NzIiwiMi50b29scy9fdG9vbHMudmlzaWJpbGl0eS5zY3NzIiwiNS5jb21wb25lbnRzL2NvbXBvbmVudHMucGFyYWdyYXBoX2N0YS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FoQjs7Ozs7O0VBQUE7QUFRQTs7Ozs7Ozs7O0VBQUE7QUNSQTs7Ozs7Ozs7OztFQUFBO0FDQUE7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7OztFQUFBO0FDQUE7Ozs7Ozs7Ozs7RUFBQTtBQVlBOzs7O0VBQUE7QUFPQTs7OztFQUFBO0FDbkJBOzs7Ozs7O0VBQUE7QUxxQkE7Ozs7O0VBQUE7QU1yQkE7Ozs7Ozs7RUFBQTtBQVNBOztFQUFBO0FDVEE7Ozs7Ozs7Ozs7Ozs7O0VBQUE7QUNBQTs7Ozs7RUFBQTtBQU9BOzs7Ozs7Ozs7RUFBQTtBQWdDQTs7Ozs7Ozs7OztFQUFBO0FDdkNBOzs7Ozs7Ozs7OztFQUFBO0FDRUE7OztFQUFBO0FBUUE7Ozs7RUFBQTtBQTBDRTtFQUVFLFlBQUE7RUFDQSxjQUFBO0FYMEdKO0FXeEdFO0VBQ0UsV0FBQTtBWDBHSjs7QVd5REE7Ozs7Ozs7OztFQUFBO0FBb0NBOzs7Ozs7O0VBQUE7QUF1QkE7Ozs7O0VBQUE7QUFXQTs7Ozs7Ozs7RUFBQTtBQWNBOzs7RUFBQTtBQW9CQTs7O0VBQUE7QUFZQTs7O0VBQUE7QUFhQTs7O0VBQUE7QUFhQTs7O0VBQUE7QUFZQTs7O0VBQUE7QUFXQTs7OztFQUFBO0FBdUNBOzs7RUFBQTtBQTRCQTs7O0VBQUE7QUF1QkE7OztFQUFBO0FBd0JBOztFQUFBO0FDcGZBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7Ozs7OztFQUFBO0FBVUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQW9DQTs7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FBd0JBOzs7Ozs7Ozs7Ozs7O0VBQUE7QUFxQkE7Ozs7Ozs7Ozs7Ozs7RUFBQTtBQzNGQTs7Ozs7Ozs7Ozs7OztFQUFBO0FBZUE7Ozs7Ozs7Ozs7Ozs7OztFQUFBO0FDZkE7Ozs7O0VBQUE7QUFPQTs7Ozs7Ozs7O0VBQUE7QUNQQTs7Ozs7O0VBQUE7QUFRQTs7Ozs7Ozs7O0VBQUE7QUNSQTs7Ozs7Ozs7RUFBQTtBQVVBOzs7Ozs7Ozs7Ozs7OztFQUFBO0FBeUJBOzs7Ozs7Ozs7Ozs7OztFQUFBO0FDakNBO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtBbEJpY0o7QWtCaGNJO0VBQ0ksdUJBQUE7RUFDQSxlQUFBO0VBQ0EsY2RLa0I7RWNKbEIsMkNBQUE7VUFBQSxtQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtBbEJrY1I7QWtCaGNJO0VBQ0ksbUJBQUE7QWxCa2NSO0FrQmpjUTtFQUNJLHNCQUFBO0VBQ0EsZUFBQTtFQUNBLGNkTmM7RWNPZCwyQ0FBQTtVQUFBLG1DQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBbEJtY1oiLCJmaWxlIjoiNS5jb21wb25lbnRzL2NvbXBvbmVudHMucGFyYWdyYXBoX2N0YS5jc3MifQ== */
+
+/*# sourceMappingURL=components.paragraph_cta.css.map */

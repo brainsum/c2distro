@@ -119,3 +119,7 @@ views_block__selector_cards_selector_cards_block:
   css:
     theme:
       css/5.components/components.views_block__selector_cards_selector_cards_block.css: {}
+paragraph_cta:
+  css:
+    theme:
+      css/5.components/components.paragraph_cta.css: {}
