@@ -11,7 +11,7 @@ dependencies:
 id: tagsofdocument
 theme: c2d_theme
 region: content
-weight: -1
+weight: 2
 provider: null
 plugin: 'facet_block:tags_of_document'
 settings:
