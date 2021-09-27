@@ -89,8 +89,12 @@ article .media__content {
         font-size: 1.8rem;
       }
     }
+    .content-body-text--field-body {
+      margin-bottom: 4rem;
+    }
     .field.field--name-field-tags {
-      padding: 4rem 4rem 4rem 0;
+      padding: 0 4rem 4rem 0;
+      margin-top: 4rem;
       .field__label {
         font-weight: 700;
       }
