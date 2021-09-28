@@ -1,0 +1,14 @@
+diff --git a/core/modules/media/src/Entity/Media.php b/core/modules/media/src/Entity/Media.php
+index 6649cccfd0..28f8a0278b 100644
+--- a/core/modules/media/src/Entity/Media.php
++++ b/core/modules/media/src/Entity/Media.php
+@@ -159,7 +159,8 @@ protected function updateThumbnail($from_queue = FALSE) {
+     $media_source = $this->getSource();
+     $plugin_definition = $media_source->getPluginDefinition();
+ 
+-    $this->thumbnail->alt = '';
++    // Keep manually entered alt.
++    // $this->thumbnail->alt = '';
+     if (!empty($plugin_definition['thumbnail_alt_metadata_attribute'])) {
+       $this->thumbnail->alt = $media_source->getMetadata($this, $plugin_definition['thumbnail_alt_metadata_attribute']);
+     }
