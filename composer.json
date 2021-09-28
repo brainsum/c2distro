@@ -52,11 +52,11 @@
     "extra": {
         "patches": {
             "drupal/core": {
-                "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
+                "Keep manually inserted alt": "patches/media-keep-manually-inserted-alt.patch"
             },
             "drupal/media_thumbnails": {
                 "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch",
-                "Keep manually inserted thumbnails": "web/profiles/contrib/c2distro/patches/media_thumbnails-keep-manually-inserted-thumbnails.patch"
+                "Keep manually inserted thumbnails": "patches/media_thumbnails-keep-manually-inserted-thumbnails.patch"
             },
             "drupal/classy_paragraphs": {
                 "Choose and order selectable styles": "https://www.drupal.org/files/issues/2021-02-23/choose_and_order-2830403-44.patch"
