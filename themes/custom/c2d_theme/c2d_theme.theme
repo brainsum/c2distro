@@ -26,7 +26,7 @@ function c2d_theme_preprocess_page(array &$variables) {
     if ($typeName == 'page') {
       $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.page';
     }
-    if ($typeName == 'news') {
+    if (($typeName == 'news') || ($typeName == 'event')) {
       $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.news';
     }
   }
