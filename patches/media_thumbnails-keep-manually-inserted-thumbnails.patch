@@ -1,0 +1,29 @@
+diff --git a/media_thumbnails.module b/media_thumbnails.module
+index d5eafe1..89153b4 100644
+--- a/media_thumbnails.module
++++ b/media_thumbnails.module
+@@ -7,6 +7,7 @@
+ 
+ use Drupal\Core\Routing\RouteMatchInterface;
+ use Drupal\media\MediaInterface;
++use Drupal\file\Entity\File;
+ 
+ /**
+  * Implements hook_help().
+@@ -30,7 +31,15 @@ function media_thumbnails_media_presave(MediaInterface $entity) {
+   $manager = \Drupal::service('plugin.manager.media_thumbnail');
+   if ($manager->hasPlugin($entity)) {
+     if ($entity->isNew()) {
+-      $manager->createThumbnail($entity);
++      if (isset($entity->thumbnail->getValue()[0]['target_id'])) {
++        $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
++        if (strstr($file->getFileUri(), 'public://media-icons/generic/')) {
++          $manager->createThumbnail($entity);
++        }
++      }
++      else {
++        $manager->createThumbnail($entity);
++      }
+     }
+     else {
+       $manager->updateThumbnail($entity);

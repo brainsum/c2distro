@@ -68,3 +68,12 @@ function c2distro_core_media_insert($entity) {
     }
   }
 }
+
+/**
+ * Implements hook_media_source_info_alter().
+ *
+ * Replace the class for file plugin for keeping manually entered thumbnails.
+ */
+function c2distro_core_media_source_info_alter(array &$sources) {
+  $sources['file']['class'] = 'Drupal\c2distro_core\Plugin\media\Source\File';
+}
