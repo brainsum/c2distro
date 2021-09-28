@@ -44,6 +44,9 @@ function c2distro_core_media_presave(MediaInterface $entity) {
           if (empty($entity->thumbnail->getValue())) {
             $entity->set('thumbnail', $file);
           }
+
+          // Set thumbnail alt.
+          _c2distro_core_set_thumbnail_alt($entity);
         }
       }
     }
@@ -61,11 +64,19 @@ function c2distro_core_media_presave(MediaInterface $entity) {
  */
 function c2distro_core_media_insert($entity) {
   if ($entity->bundle() === 'document') {
-    if (isset($entity->thumbnail->getValue()[0]['target_id']) && empty($entity->thumbnail->alt)) {
-      $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
-      $entity->thumbnail->alt = str_replace('.jpg', '', $file->getFilename());
-      $entity->save();
-    }
+    _c2distro_core_set_thumbnail_alt($entity);
+    $entity->save();
+  }
+}
+
+
+/**
+ * Set media thumbnail's alt from the thumbnail's file name.
+ */
+Function _c2distro_core_set_thumbnail_alt($entity) {
+  if (isset($entity->thumbnail->getValue()[0]['target_id']) && empty($entity->thumbnail->alt)) {
+    $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
+    $entity->thumbnail->alt = str_replace('.jpg', '', $file->getFilename());
   }
 }
 
