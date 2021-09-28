@@ -2,11 +2,8 @@
 
 namespace Drupal\c2distro_core\Plugin\media\Source;
 
-use Drupal\file\FileInterface;
+use Drupal\media\Plugin\media\Source\File as CoreMediaSourceFile;
 use Drupal\media\MediaInterface;
-use Drupal\media\MediaTypeInterface;
-use Drupal\media\MediaSourceBase;
-//use Drupal\file\Entity\File;
 
 /**
  * File entity media source.
@@ -21,39 +18,7 @@ use Drupal\media\MediaSourceBase;
  *   default_thumbnail_filename = "generic.png"
  * )
  */
-class File extends MediaSourceBase {
-
-  /**
-   * Key for "Name" metadata attribute.
-   *
-   * @var string
-   */
-  const METADATA_ATTRIBUTE_NAME = 'name';
-
-  /**
-   * Key for "MIME type" metadata attribute.
-   *
-   * @var string
-   */
-  const METADATA_ATTRIBUTE_MIME = 'mimetype';
-
-  /**
-   * Key for "File size" metadata attribute.
-   *
-   * @var string
-   */
-  const METADATA_ATTRIBUTE_SIZE = 'filesize';
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getMetadataAttributes() {
-    return [
-      static::METADATA_ATTRIBUTE_NAME => $this->t('Name'),
-      static::METADATA_ATTRIBUTE_MIME => $this->t('MIME type'),
-      static::METADATA_ATTRIBUTE_SIZE => $this->t('File size'),
-    ];
-  }
+class File extends CoreMediaSourceFile {
 
   /**
    * {@inheritdoc}
@@ -65,67 +30,17 @@ class File extends MediaSourceBase {
     if (!$file) {
       return parent::getMetadata($media, $attribute_name);
     }
-    switch ($attribute_name) {
-      case static::METADATA_ATTRIBUTE_NAME:
-      case 'default_name':
-        return $file->getFilename();
 
-      case static::METADATA_ATTRIBUTE_MIME:
-        return $file->getMimeType();
-
-      case static::METADATA_ATTRIBUTE_SIZE:
-        return $file->getSize();
-
-      case 'thumbnail_uri':
-        if (empty($media->thumbnail->target_id)) {
-          return $this->getThumbnail($file) ?: parent::getMetadata($media, $attribute_name);
-        }
-        return \Drupal\file\Entity\File::load($media->thumbnail->target_id)->getFileUri();
-
-      default:
-        return parent::getMetadata($media, $attribute_name);
-    }
-  }
-
-  /**
-   * Gets the thumbnail image URI based on a file entity.
-   *
-   * @param \Drupal\file\FileInterface $file
-   *   A file entity.
-   *
-   * @return string
-   *   File URI of the thumbnail image or NULL if there is no specific icon.
-   */
-  protected function getThumbnail(FileInterface $file) {
-    $icon_base = $this->configFactory->get('media.settings')->get('icon_base_uri');
-
-    // We try to automatically use the most specific icon present in the
-    // $icon_base directory, based on the MIME type. For instance, if an
-    // icon file named "pdf.png" is present, it will be used if the file
-    // matches this MIME type.
-    $mimetype = $file->getMimeType();
-    $mimetype = explode('/', $mimetype);
-
-    $icon_names = [
-      $mimetype[0] . '--' . $mimetype[1],
-      $mimetype[1],
-      $mimetype[0],
-    ];
-    foreach ($icon_names as $icon_name) {
-      $thumbnail = $icon_base . '/' . $icon_name . '.png';
-      if (is_file($thumbnail)) {
-        return $thumbnail;
+    if ($attribute_name === 'thumbnail_uri') {
+      if (empty($media->thumbnail->target_id)) {
+        return $this->getThumbnail($file) ?: parent::getMetadata($media, $attribute_name);
       }
+      return $this->entityTypeManager->getStorage('file')->load($media->thumbnail->target_id)->getFileUri();
+
     }
-
-    return NULL;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function createSourceField(MediaTypeInterface $type) {
-    return parent::createSourceField($type)->set('settings', ['file_extensions' => 'txt doc docx pdf']);
+    else {
+      return parent::getMetadata($media, $attribute_name);
+    }
   }
 
 }
