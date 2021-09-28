@@ -8,7 +8,7 @@ function c2d_theme_preprocess_page(array &$variables) {
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
 
-  if ($route_name == 'view.news.lister_page') {
+  if (($route_name == 'view.news.lister_page') || ($route_name == 'view.news.page_1')) {
     $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
   }
 
