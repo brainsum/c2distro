@@ -36,6 +36,22 @@ article .node__content {
           color: $color-turquoise-light;
       }
     }
+    .location {
+      display: flex;
+      padding-left: 4rem;
+      color: $color-blue-gray;
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: Open Sans;
+      text-decoration: none solid rgb(18, 40, 76);
+      line-height: 30px;
+      img {
+        padding-right: 1rem;
+        height: 16px;
+        align-self: center;
+      }
+    }
   }
   .field.field--name-field-lead.field--type-string-long {
     margin: 5rem 0 0 0;
@@ -79,4 +95,3 @@ article .node__content {
   }
   
 }
-

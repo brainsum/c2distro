@@ -64,7 +64,7 @@ content:
     region: content
   field_tags:
     weight: 5
-    label: inline
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
