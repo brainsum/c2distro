@@ -5,7 +5,7 @@
     content: unset !important;
 }
 .views-element-container {
-    padding-top: 8rem;
+    padding-top: 4rem;
 }
 h1.page-title {
     padding: 0 2rem;
@@ -13,7 +13,8 @@ h1.page-title {
         padding: 0;
     }
 }
-.view.view-news.view-id-news.view-display-id-lister_page {
+.view.view-news.view-id-news.view-display-id-lister_page,
+.view.view-news.view-id-news.view-display-id-page_1 {
     .view-content {
         display: flex;
         flex-wrap: wrap;
@@ -33,8 +34,9 @@ h1.page-title {
                 box-shadow: 0 0 15px lightgray;
             }
 
-            .views-field.views-field-created {
-                padding: 10px 20px;
+            .views-field.views-field-created,
+            .views-field.views-field-field-event-date {
+                padding: 2rem 2rem 0 2rem;
                 color: $color-blue-darkest2;
                 font-family: Montserrat;
                 font-size: 14px;
@@ -45,13 +47,29 @@ h1.page-title {
                 }
             }
 
+            .views-field.views-field-field-location {
+                padding: 10px 20px 0 20px;
+                color: $color-blue-darkest2;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                height: 4rem;
+                a:before {
+                    content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
+                    height: 10px;
+                    width: 10px;
+                    display: inline-block;
+                    padding-right: 1rem;
+                }
+            }
+
             .views-field.views-field-title {
-                padding: 10px 20px;
-                height: 120px;
+                padding: 20px 20px 4rem;
                 color: $color-blue-darkest2;
                 font-family: Montserrat;
                 font-size: 18px;
                 font-weight: 600;
+                height: 15rem;
                 a {
                     transition: .3s;
                     &:hover {

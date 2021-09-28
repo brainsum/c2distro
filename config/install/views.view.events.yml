@@ -238,7 +238,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: events
+      path: events-old
       menu:
         type: none
         title: Events
