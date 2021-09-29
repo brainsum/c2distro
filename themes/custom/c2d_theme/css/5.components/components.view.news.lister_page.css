@@ -464,7 +464,7 @@ h1.page-title {
 
 .view.view-news.view-id-news.view-display-id-lister_page .view-header .second-title,
 .view.view-news.view-id-news.view-display-id-page_1 .view-header .second-title,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-header .second-title {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-header .second-title {
   padding: 0 0 4rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
@@ -477,14 +477,14 @@ h1.page-title {
 @media print, screen and (min-width: 48em) {
   .view.view-news.view-id-news.view-display-id-lister_page .view-header .second-title,
 .view.view-news.view-id-news.view-display-id-page_1 .view-header .second-title,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-header .second-title {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-header .second-title {
     font-size: 4rem;
     padding: 0;
   }
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content {
   padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -495,13 +495,13 @@ h1.page-title {
 @media print, screen and (min-width: 48em) {
   .view.view-news.view-id-news.view-display-id-lister_page .view-content,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content {
     justify-content: flex-start;
   }
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row {
   width: 262px;
   background-color: white;
   margin: 0 24px 72px 24px;
@@ -509,15 +509,15 @@ h1.page-title {
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row:hover,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row:hover,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row:hover {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row:hover {
   box-shadow: 0 0 15px lightgray;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-created,
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-field-event-date,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-created,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-field-event-date,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-created,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-field-event-date {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-created,
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-field-event-date {
   padding: 2rem 2rem 0 2rem;
   color: #0f1d40;
   font-family: Montserrat;
@@ -528,14 +528,14 @@ h1.page-title {
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-field-event-date .content-type,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-created .content-type,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-field-event-date .content-type,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-created .content-type,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-field-event-date .content-type {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-created .content-type,
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-field-event-date .content-type {
   color: #26c9de;
   text-transform: capitalize;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-field-location,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-field-location,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-field-location {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-field-location {
   padding: 10px 20px 0 20px;
   color: #0f1d40;
   font-family: Montserrat;
@@ -545,7 +545,7 @@ h1.page-title {
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-field-location a:before,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-field-location a:before,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-field-location a:before {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-field-location a:before {
   content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
   height: 10px;
   width: 10px;
@@ -554,7 +554,7 @@ h1.page-title {
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-title,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-title,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-title {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-title {
   padding: 20px 20px 4rem;
   color: #0f1d40;
   font-family: Montserrat;
@@ -564,23 +564,23 @@ h1.page-title {
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-title a,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-title a,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-title a {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-title a {
   transition: 0.3s;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-title a:hover,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-title a:hover,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-title a:hover {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-title a:hover {
   color: #26c9de;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-view-node,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-view-node,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-view-node {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-view-node {
   padding: 0 20px 20px;
   transition: 0.5s;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-view-node a,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-view-node a,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-view-node a {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;
   color: #0f1d40;
   font-family: Montserrat;
@@ -590,19 +590,19 @@ h1.page-title {
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-content .views-row .views-field.views-field-view-node a:hover,
 .view.view-news.view-id-news.view-display-id-page_1 .view-content .views-row .views-field.views-field-view-node a:hover,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-content .views-row .views-field.views-field-view-node a:hover {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-content .views-row .views-field.views-field-view-node a:hover {
   color: #26c9de;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-empty,
 .view.view-news.view-id-news.view-display-id-page_1 .view-empty,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-empty {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-empty {
   padding: 2rem 0 8rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .view-empty .no-results,
 .view.view-news.view-id-news.view-display-id-page_1 .view-empty .no-results,
-.view.view-news.view-id-news.view-display-id-attachment_1_past_events .view-empty .no-results {
+.view.view-news.view-id-news.view-display-id-attachment_past_events .view-empty .no-results {
   color: #0f1d40;
   font-family: Montserrat;
   font-size: 16px;
