@@ -39,7 +39,9 @@
         </div>
         <div class="content-body-text">
           <div class="content-body-text--field-lead">{{ content.field_lead }}</div>
-          <div class="content-body-text--field-body">{{ content.field_body }}</div>
+          {% if content.field_body.0['#text'] is not empty %}
+            <div class="content-body-text--field-body">{{ content.field_body }}</div>
+          {% endif %}
           <div class="content-body-text--field-tags">{{ content.field_tags }}</div>
           <div class="content-body-text--field-media-file"><a href="{{ content.field_media_file.0['#markup'] }}" class="text-black bordered-button-blue">{{ 'Download'|t }}</a></div>
           <div class="content-body-text--field-custom-text">{{ content.field_custom_text }}</div>
