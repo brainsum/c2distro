@@ -1,3 +1,4 @@
+uuid: f074ba3e-c698-4b7f-a4db-a22d6320d5a2
 langcode: en
 status: true
 dependencies:
@@ -16,6 +17,8 @@ dependencies:
     - media
     - node
     - user
+_core:
+  default_config_hash: u2h2BUj80Y9FTpokmForHjXrNVgBDor51WJ4y2cBSGU
 id: news
 label: News
 module: views
@@ -607,10 +610,10 @@ display:
       tags:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_lead'
-  attachment_1:
+  attachment_1_past_events:
     display_plugin: attachment
-    id: attachment_1
-    display_title: Attachment
+    id: attachment_1_past_events
+    display_title: Attachment past events
     position: 4
     display_options:
       display_extenders: {  }

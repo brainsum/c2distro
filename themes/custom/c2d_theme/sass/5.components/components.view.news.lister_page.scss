@@ -4,9 +4,7 @@
 .views-field-field-image:before {
     content: unset !important;
 }
-.views-element-container {
-    padding-top: 4rem;
-}
+
 h1.page-title {
     padding: 0 2rem;
     @include breakpoint(medium) {
@@ -14,19 +12,26 @@ h1.page-title {
     }
 }
 .view.view-news.view-id-news.view-display-id-lister_page,
-.view.view-news.view-id-news.view-display-id-page_1 {
+.view.view-news.view-id-news.view-display-id-page_1,
+.view.view-news.view-id-news.view-display-id-attachment_1_past_events {
     .view-header {
         .second-title {
             padding: 0 0 4rem 0;
             max-width: 119.2rem;
             margin: 0 auto;
-            font-size: 4rem;
+            font-size: 3rem;
             line-height: 4.9rem;
             font-family: Montserrat;
             color: $color-blue-darkest2;
+            padding: 0 2rem;
+            @include breakpoint(medium) {
+                font-size: 4rem;
+                padding: 0;
+            }
         }
     }
     .view-content {
+        padding-top: 4rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
