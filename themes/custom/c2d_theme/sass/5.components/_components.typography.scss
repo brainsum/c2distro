@@ -9,12 +9,18 @@
 
 .page-node-type-page {
   .block-page-title-block {
+    margin-top: 5rem;
+
+    @include breakpoint(medium) {
+      margin-top: 6rem;
+    }
 
     .block-inner {
       @include width-855;
     }
     .page-title {
       text-align: center;
+      line-height: 1.225;
     }
   }
 }
