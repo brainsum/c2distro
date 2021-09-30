@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Functions to support theming in the c2d_theme theme.
+ */
+
+/**
  * Implements hook_preprocess_page() for PAGE document templates.
  */
 function c2d_theme_preprocess_page(array &$variables) {
@@ -39,16 +44,16 @@ function c2d_theme_preprocess_page(array &$variables) {
 function c2d_theme_preprocess_block(&$variables) {
 
   $blockId = $variables['elements']['#id'] ?? '';
-  if ($blockId === 'hphero' ) {
+  if ($blockId === 'hphero') {
     $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
   }
-  if ($blockId === 'footerblockcontent' ) {
+  if ($blockId === 'footerblockcontent') {
     $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
   }
-  if($variables['derivative_plugin_id'] == 'search-resources') {
+  if ($variables['derivative_plugin_id'] == 'search-resources') {
     $variables['#cache']['max-age'] = 0;
   }
-  if ($blockId === 'views_block__selector_cards_selector_cards_block' ) {
+  if ($blockId === 'views_block__selector_cards_selector_cards_block') {
     $variables['#attached']['library'][] = 'c2d_theme/views_block__selector_cards_selector_cards_block';
   }
 }
