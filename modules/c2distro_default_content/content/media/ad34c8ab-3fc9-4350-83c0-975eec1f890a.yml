@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ad34c8ab-3fc9-4350-83c0-975eec1f890a
+  bundle: image
+  default_langcode: en
+  depends:
+    9939d9c3-af9b-49f7-94dd-209a0cf35492: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: demo_event_3.jpg
+  created:
+    -
+      value: 1632996248
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_media_image:
+    -
+      entity: 9939d9c3-af9b-49f7-94dd-209a0cf35492
+      alt: 'event 3'
+      title: ''
+      width: 3008
+      height: 2000
