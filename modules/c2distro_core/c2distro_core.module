@@ -69,11 +69,10 @@ function c2distro_core_media_insert($entity) {
   }
 }
 
-
 /**
  * Set media thumbnail's alt from the thumbnail's file name.
  */
-Function _c2distro_core_set_thumbnail_alt($entity) {
+function _c2distro_core_set_thumbnail_alt($entity) {
   if (isset($entity->thumbnail->getValue()[0]['target_id']) && empty($entity->thumbnail->alt)) {
     $file = File::load($entity->thumbnail->getValue()[0]['target_id']);
     $entity->thumbnail->alt = str_replace('.jpg', '', $file->getFilename());

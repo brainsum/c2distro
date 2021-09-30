@@ -1,10 +1,11 @@
 <?php
+
 /**
  * @file
  * Install, update and uninstall functions for the c2distro install profile.
  */
 
-use \Drupal\block\Entity\Block;
+use Drupal\block\Entity\Block;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 
 /**
