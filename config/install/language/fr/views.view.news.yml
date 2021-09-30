@@ -46,3 +46,20 @@ display:
           separator: ', '
   lister_page:
     display_title: Page
+  page_1:
+    display_options:
+      fields:
+        nid:
+          separator: ', '
+        field_image:
+          separator: ', '
+        type:
+          separator: ', '
+        field_event_date:
+          separator: ', '
+        field_location:
+          separator: ', '
+        title:
+          separator: ', '
+        field_lead:
+          separator: ', '

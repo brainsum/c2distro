@@ -607,10 +607,10 @@ display:
       tags:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_lead'
-  attachment_past_events:
+  attachment_1_past_events:
     display_plugin: attachment
-    id: attachment_past_events
-    display_title: Attachment past events
+    id: attachment_1_past_events
+    display_title: 'Attachment past events'
     position: 4
     display_options:
       display_extenders: {  }
@@ -720,6 +720,7 @@ display:
         filter_groups: false
         fields: false
         header: false
+        css_class: false
       filter_groups:
         operator: AND
         groups:
@@ -1243,6 +1244,7 @@ display:
           tokenize: false
           content: '<h3 class="second-title">Events from the past</h3>'
           plugin_id: text_custom
+      css_class: lister-page
     cache_metadata:
       max-age: -1
       contexts:
@@ -1528,6 +1530,7 @@ display:
       path: news
       defaults:
         pager: true
+        css_class: false
       menu:
         type: normal
         title: News
@@ -1537,6 +1540,7 @@ display:
         weight: 30
         context: '0'
         menu_name: main
+      css_class: lister-page
     cache_metadata:
       max-age: -1
       contexts:
@@ -1563,6 +1567,7 @@ display:
         filter_groups: false
         fields: false
         empty: false
+        css_class: false
       menu:
         type: none
         title: News
@@ -2195,6 +2200,7 @@ display:
           tokenize: false
           content: '<p class="no-results">There are no upcoming events.</p>'
           plugin_id: text_custom
+      css_class: lister-page
     cache_metadata:
       max-age: -1
       contexts:
