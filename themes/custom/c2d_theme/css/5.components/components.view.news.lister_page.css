@@ -462,7 +462,7 @@ h1.page-title {
   }
 }
 
-.lister-page .view-header .second-title {
+.view.lister-page .view-header .second-title {
   padding: 0 0 4rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
@@ -473,12 +473,12 @@ h1.page-title {
   padding: 0 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  .lister-page .view-header .second-title {
+  .view.lister-page .view-header .second-title {
     font-size: 4rem;
     padding: 0;
   }
 }
-.lister-page .view-content {
+.view.lister-page .view-content {
   padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -487,33 +487,33 @@ h1.page-title {
   margin: 0 auto;
 }
 @media print, screen and (min-width: 48em) {
-  .lister-page .view-content {
+  .view.lister-page .view-content {
     justify-content: flex-start;
   }
 }
-.lister-page .view-content .views-row {
+.view.lister-page .view-content .views-row {
   width: 262px;
   background-color: white;
   margin: 0 24px 72px 24px;
   transition: 0.5s;
 }
-.lister-page .view-content .views-row:hover {
+.view.lister-page .view-content .views-row:hover {
   box-shadow: 0 0 15px lightgray;
 }
-.lister-page .view-content .views-row .views-field.views-field-created,
-.lister-page .view-content .views-row .views-field.views-field-field-event-date {
+.view.lister-page .view-content .views-row .views-field.views-field-created,
+.view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
   padding: 2rem 2rem 0 2rem;
   color: #0f1d40;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
 }
-.lister-page .view-content .views-row .views-field.views-field-created .content-type,
-.lister-page .view-content .views-row .views-field.views-field-field-event-date .content-type {
+.view.lister-page .view-content .views-row .views-field.views-field-created .content-type,
+.view.lister-page .view-content .views-row .views-field.views-field-field-event-date .content-type {
   color: #26c9de;
   text-transform: capitalize;
 }
-.lister-page .view-content .views-row .views-field.views-field-field-location {
+.view.lister-page .view-content .views-row .views-field.views-field-field-location {
   padding: 10px 20px 0 20px;
   color: #0f1d40;
   font-family: Montserrat;
@@ -521,14 +521,14 @@ h1.page-title {
   font-weight: 600;
   height: 4rem;
 }
-.lister-page .view-content .views-row .views-field.views-field-field-location a:before {
+.view.lister-page .view-content .views-row .views-field.views-field-field-location a:before {
   content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
   height: 10px;
   width: 10px;
   display: inline-block;
   padding-right: 1rem;
 }
-.lister-page .view-content .views-row .views-field.views-field-title {
+.view.lister-page .view-content .views-row .views-field.views-field-title {
   padding: 20px 20px 4rem;
   color: #0f1d40;
   font-family: Montserrat;
@@ -536,17 +536,17 @@ h1.page-title {
   font-weight: 600;
   height: 15rem;
 }
-.lister-page .view-content .views-row .views-field.views-field-title a {
+.view.lister-page .view-content .views-row .views-field.views-field-title a {
   transition: 0.3s;
 }
-.lister-page .view-content .views-row .views-field.views-field-title a:hover {
+.view.lister-page .view-content .views-row .views-field.views-field-title a:hover {
   color: #26c9de;
 }
-.lister-page .view-content .views-row .views-field.views-field-view-node {
+.view.lister-page .view-content .views-row .views-field.views-field-view-node {
   padding: 0 20px 20px;
   transition: 0.5s;
 }
-.lister-page .view-content .views-row .views-field.views-field-view-node a {
+.view.lister-page .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;
   color: #0f1d40;
   font-family: Montserrat;
@@ -554,15 +554,15 @@ h1.page-title {
   font-weight: 600;
   font-style: italic;
 }
-.lister-page .view-content .views-row .views-field.views-field-view-node a:hover {
+.view.lister-page .view-content .views-row .views-field.views-field-view-node a:hover {
   color: #26c9de;
 }
-.lister-page .view-empty {
+.view.lister-page .view-empty {
   padding: 2rem 0 8rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
 }
-.lister-page .view-empty .no-results {
+.view.lister-page .view-empty .no-results {
   color: #0f1d40;
   font-family: Montserrat;
   font-size: 16px;
