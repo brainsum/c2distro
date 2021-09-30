@@ -1,0 +1,76 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ef6af47a-ef02-47c5-b4e1-b01b7fec3a9f
+  bundle: event
+  default_langcode: en
+  depends:
+    ad34c8ab-3fc9-4350-83c0-975eec1f890a: media
+    ed7e9fba-ff03-41a8-82fd-315f8b50aa68: taxonomy_term
+    5794defd-14cb-43f2-b497-4ae5bc39c099: taxonomy_term
+    b925168b-b2aa-4554-bdf4-8bd0c4d851f0: taxonomy_term
+    2761e3b2-30a4-433e-a253-77d9d021a1ee: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Vivamus suscipit tortor eget felis porttitor volutpat'
+  created:
+    -
+      value: 1632996633
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>\r\n\r\n<p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      format: simple
+      summary: ''
+  field_event_date:
+    -
+      value: '2021-10-25T08:00:00'
+      end_value: '2021-10-26T08:00:00'
+  field_highlighted:
+    -
+      value: false
+  field_image:
+    -
+      entity: ad34c8ab-3fc9-4350-83c0-975eec1f890a
+  field_lead:
+    -
+      value: 'Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.'
+  field_location:
+    -
+      entity: ed7e9fba-ff03-41a8-82fd-315f8b50aa68
+  field_tags:
+    -
+      entity: 5794defd-14cb-43f2-b497-4ae5bc39c099
+    -
+      entity: b925168b-b2aa-4554-bdf4-8bd0c4d851f0
+    -
+      entity: 2761e3b2-30a4-433e-a253-77d9d021a1ee

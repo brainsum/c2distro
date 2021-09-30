@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6ac04b3e-7423-451f-b7e0-a110e824be8c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: demo_event_1.jpg
+  uri:
+    -
+      value: 'public://2021-09/demo_event_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 5483555
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1632996172
