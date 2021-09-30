@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
+    d792ee8b-e38b-437e-ab57-69714dd3c489: taxonomy_term
     5794defd-14cb-43f2-b497-4ae5bc39c099: taxonomy_term
     2761e3b2-30a4-433e-a253-77d9d021a1ee: taxonomy_term
 default:
@@ -53,12 +54,18 @@ default:
     -
       value: '2021-08-30T22:00:00'
       end_value: '2021-08-30T23:00:00'
+  field_highlighted:
+    -
+      value: false
   field_image:
     -
       entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
   field_lead:
     -
       value: 'Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.'
+  field_location:
+    -
+      entity: d792ee8b-e38b-437e-ab57-69714dd3c489
   field_tags:
     -
       entity: 5794defd-14cb-43f2-b497-4ae5bc39c099

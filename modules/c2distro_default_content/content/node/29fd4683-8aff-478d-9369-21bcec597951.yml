@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     3992ed9d-ca3f-42c2-8400-abe56a04b3cf: media
+    ed7e9fba-ff03-41a8-82fd-315f8b50aa68: taxonomy_term
     b925168b-b2aa-4554-bdf4-8bd0c4d851f0: taxonomy_term
     2761e3b2-30a4-433e-a253-77d9d021a1ee: taxonomy_term
 default:
@@ -53,12 +54,18 @@ default:
     -
       value: '2021-09-15T20:00:00'
       end_value: '2021-09-15T22:00:00'
+  field_highlighted:
+    -
+      value: false
   field_image:
     -
       entity: 3992ed9d-ca3f-42c2-8400-abe56a04b3cf
   field_lead:
     -
       value: 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.'
+  field_location:
+    -
+      entity: ed7e9fba-ff03-41a8-82fd-315f8b50aa68
   field_tags:
     -
       entity: b925168b-b2aa-4554-bdf4-8bd0c4d851f0
