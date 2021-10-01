@@ -127,3 +127,7 @@ paragraph_cta:
   css:
     theme:
       css/5.components/components.paragraph_cta.css: {}
+pager:
+  css:
+    theme:
+      css/5.components/components.pager.css: {}
