@@ -21,11 +21,77 @@
 .views-exposed-form {
   .view-search & {
     @include width-1390;
+
+    @include breakpoint(large) {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .form--inline {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @include breakpoint(mobile) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .form-item-text {
+      width: 100%;
+
+      @include breakpoint(mobile) {
+        max-width: 40rem;
+      }
+
+      @include breakpoint(tablet) {
+        width: 50%;
+      }
+
+      @include breakpoint(large) {
+        width: 30%;
+      }
+    }
+
+    .form-text {
+      height: auto;
+      padding: 1.35rem 1em;
+      border: 1px solid $color-grey-dark;
+      background: #fff;
+    }
+
+    .form-actions {
+      width: 100%;
+      margin-top: 3rem;
+
+      @include breakpoint(mobile) {
+        width: auto;
+        margin-top: 0;
+        margin-left: 1.3rem;
+      }
+    }
+
+    input.form-submit {
+      @include breakpoint(mobile down) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.view-filters {
+  .view-search & {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
   }
 }
 
 .view-content {
   .view-search & {
     @include width-1390;
+
+    @include breakpoint(large) {
+      padding: 0 !important;
+    }
   }
 }
