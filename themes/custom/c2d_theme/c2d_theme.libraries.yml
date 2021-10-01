@@ -111,6 +111,10 @@ resources:
   css:
     theme:
       css/5.components/components.facets.css: {}
+search:
+  css:
+    theme:
+      css/5.components/components.search.css: {}
 documents:
   css:
     theme:
