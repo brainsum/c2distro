@@ -10,21 +10,13 @@
 
 @import '../index';
 
-.path-search {
-  .block-page-title-block {
-    .block-inner {
-      @include width-1390;
-    }
-  }
-}
-
 .views-exposed-form {
   .view-search & {
     @include width-1390;
 
     @include breakpoint(large) {
-      padding-right: 0 !important;
-      padding-left: 0 !important;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .form--inline {
@@ -90,8 +82,80 @@
   .view-search & {
     @include width-1390;
 
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+
     @include breakpoint(large) {
-      padding: 0 !important;
+      padding: 0;
     }
+  }
+}
+
+.node {
+  .view-search & {
+    padding: 3rem;
+    color: $color-blue-darkest2;
+    background: #fff;
+
+    @include breakpoint(mobile) {
+      padding: 3rem 5rem;
+    }
+
+    @include breakpoint(medium) {
+      padding: 5rem 10rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      font-weight: 700;
+
+      @include breakpoint(medium) {
+        font-size: 3rem;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+
+    .content-header {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+    }
+
+    .content-header,
+    .field--name-field-location {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .created-time-pipe {
+      margin: 0 0.25em;
+    }
+
+    .field--name-field-location {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 0.7rem;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .field--name-field-lead {
+      margin-top: 1.5rem;
+      font-family: $font-open;
+    }
+  }
+}
+
+.views-row {
+  .view-search & {
+    padding: 2rem 0;
   }
 }
