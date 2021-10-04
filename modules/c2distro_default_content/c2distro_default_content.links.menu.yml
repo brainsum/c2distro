@@ -2,7 +2,7 @@ c2distro_default_content.the_team:
   title: The team
   description: The team
   menu_name: main
-  route_name: <nolink>
+  url: 'internal:/meet-team'
   weight: 15
 
 c2distro_default_content.what_we_do:
