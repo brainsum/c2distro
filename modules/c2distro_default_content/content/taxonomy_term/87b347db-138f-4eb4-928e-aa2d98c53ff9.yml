@@ -26,9 +26,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /category/toolkit
       langcode: en
-      pathauto: 0
+      pathauto: 1
   content_translation_source:
     -
       value: und
