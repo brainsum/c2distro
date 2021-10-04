@@ -23,6 +23,14 @@ display:
             offset_label: Décalage
   page:
     display_title: Page
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rechercher
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
   resources:
     display_options:
       filters:
