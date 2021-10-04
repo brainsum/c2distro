@@ -87,3 +87,11 @@ function _c2distro_core_set_thumbnail_alt($entity) {
 function c2distro_core_media_source_info_alter(array &$sources) {
   $sources['file']['class'] = 'Drupal\c2distro_core\Plugin\media\Source\File';
 }
+
+function c2distro_core_block_content_update(Drupal\Core\Entity\EntityInterface $entity) {
+
+  if ($entity->type->target_id == 'hero') {
+    $tags = ['block_content:2', 'config:block.block.hphero'];
+    \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
+  }
+}
