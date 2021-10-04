@@ -34,6 +34,23 @@ display:
         field_lead:
           separator: ', '
       use_more_text: plus
+  attachment_1_past_events:
+    display_options:
+      fields:
+        nid:
+          separator: ', '
+        field_image:
+          separator: ', '
+        type:
+          separator: ', '
+        field_event_date:
+          separator: ', '
+        field_location:
+          separator: ', '
+        title:
+          separator: ', '
+        field_lead:
+          separator: ', '
   lister_block:
     display_title: Bloc
     display_options:
