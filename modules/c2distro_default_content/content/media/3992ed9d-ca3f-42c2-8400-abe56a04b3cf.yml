@@ -7,6 +7,9 @@ _meta:
   depends:
     a7f65f1b-3dfb-49f4-8fea-7b6c3ccfd64e: file
 default:
+  revision_user:
+    -
+      target_id: 1
   status:
     -
       value: true
@@ -19,14 +22,11 @@ default:
   created:
     -
       value: 1625502403
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
-      alias: ''
+      alias: /image/photo-1jpg
       langcode: en
-      pathauto: 0
+      pathauto: 1
   content_translation_source:
     -
       value: und

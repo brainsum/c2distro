@@ -30,9 +30,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /resources/iasc-minimum-standards-duty-care-context-covid-19
       langcode: en
-      pathauto: 0
+      pathauto: 1
   content_translation_source:
     -
       value: und

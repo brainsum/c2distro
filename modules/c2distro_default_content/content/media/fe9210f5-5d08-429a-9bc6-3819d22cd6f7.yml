@@ -7,6 +7,9 @@ _meta:
   depends:
     52ded74f-7f41-4042-bc79-c940d0a58fe2: file
 default:
+  revision_user:
+    -
+      target_id: 1
   status:
     -
       value: true
@@ -19,14 +22,11 @@ default:
   created:
     -
       value: 1627569229
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
-      alias: ''
+      alias: /image/newsphoto1jpg
       langcode: en
-      pathauto: 0
+      pathauto: 1
   content_translation_source:
     -
       value: und
