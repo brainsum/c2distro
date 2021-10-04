@@ -95,7 +95,7 @@ function c2distro_core_media_source_info_alter(array &$sources) {
  * Invalidate cache tags after hero block content type has modified.
  */
 function c2distro_core_block_content_update(EntityInterface $entity) {
-  if ($entity->bundle() == 'hero') {
+  if ($entity->bundle() === 'hero') {
     // @todo Check which content_block used on HP-Hero Block.
     $tags = ['config:block.block.hphero'];
     \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
