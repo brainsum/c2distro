@@ -30,9 +30,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /resources/convention-rights-persons-disabilities
       langcode: en
-      pathauto: 0
+      pathauto: 1
   content_translation_source:
     -
       value: und
