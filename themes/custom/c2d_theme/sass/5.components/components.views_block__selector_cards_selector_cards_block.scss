@@ -3,7 +3,7 @@
 .block-page-title-block {
     margin-top: 6rem;
     .block-inner {
-        max-width: 139rem !important;
+        max-width: 139.5rem !important;
         padding: 0 !important;
         margin-top: 6rem;
     }
@@ -11,6 +11,8 @@
 .block-views-blockselector-cards-selector-cards-block {
     .block-inner {
         margin-top: 6rem;
+        max-width: 139.5rem;
+        padding: 0;
     }
     .view-content {
         width: 100%;
@@ -27,7 +29,8 @@
                         background-color: white;
                     }
                     @include breakpoint(medium) {
-                        width: 50%;
+                        // width: 50%;
+                        max-width: 695px !important;
                         transition: 0.4s;
                     }
                     &:hover {
@@ -36,26 +39,37 @@
                     a {
                         cursor: pointer;
                         display: block;
-                        padding: 4rem 2rem;
+                        padding: 0;
                         align-items: center;
                         justify-content: flex-start;
                         flex-wrap: wrap;
                         @include breakpoint(medium) {
-                            padding: 6rem 10rem;
+                            padding: 0;
                         }
                         &.selector-card {
                             h4 {
                                 color: $color-blue-darkest2;
                                 font-family: Montserrat;
                                 font-size: 3rem;
-                                line-height: 150%;
-                                width: 100%;
+                                margin: 6.7rem 2rem 1.2rem;
+                                text-decoration: none solid rgb(18, 40, 76);
+                                line-height: 4rem;
+                                @include breakpoint(medium) {
+                                    margin: 7rem 4rem 1.2rem;
+                                }
                             }
                             p {
                                 color: $color-blue-darkest2;
                                 font-family: Open Sans;
                                 font-size: 1.8rem;
-                                line-height: 150%;
+                                text-decoration: none solid rgb(18, 40, 76);
+                                line-height: 3rem;
+                                margin: 0 2rem 4.9rem;
+                                max-width: 33.5rem;
+                                @include breakpoint(medium) {
+                                    margin: 0 4rem 4.6rem;
+                                    max-width: 51.5rem;
+                                }
                             }
 
                         }
@@ -90,11 +104,19 @@
         }
     }
     .view-footer {
-        padding: 8rem 2rem;
+        padding: 6rem 2rem;
         a {
-            max-width: 20rem;
+            max-width: 22rem;
             color: $color-blue-darkest2;
             margin: 0 auto;
+            font-family: Montserrat;
+            font-size: 1.7rem;
+            text-decoration: none solid rgb(18, 40, 76);
+            line-height: 20px;
+            text-transform: capitalize;
+            text-align: center;
+            height: 5rem;
+            border: solid 2px $color-turquoise !important;
         }
     }
 }
