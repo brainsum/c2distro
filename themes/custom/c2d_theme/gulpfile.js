@@ -71,9 +71,7 @@ function sassCompileTask(done) {
       autoprefixer(),
       sorting(),
     ]))
-    .pipe(sourcemaps.write({ includeContent: false }))
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write('./'))
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(config.paths.styles.dest))
     .pipe(browserSync.stream());
   done();
