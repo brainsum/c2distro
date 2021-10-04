@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - media
+id: media_url_document
+label: 'media URL - Document'
+type: 'canonical_entities:media'
+pattern: 'resources/[media:name]'
+selection_criteria:
+  ee68bf8d-874f-4bdc-82e2-1d8e8d64dcfc:
+    id: 'entity_bundle:media'
+    bundles:
+      document: document
+    negate: false
+    context_mapping:
+      media: media
+    uuid: ee68bf8d-874f-4bdc-82e2-1d8e8d64dcfc
+selection_logic: and
+weight: -5
+relationships: {  }
