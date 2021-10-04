@@ -95,7 +95,7 @@ function c2distro_core_media_source_info_alter(array &$sources) {
  */
 function c2distro_core_block_content_update(Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->type->target_id == 'hero') {
-    $tags = ['block_content:2', 'config:block.block.hphero'];
+    $tags = ['config:block.block.hphero'];
     \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
   }
 }
