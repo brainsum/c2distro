@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_upload_label
+  module:
+    - markup
+id: contact_message.contact_us.field_upload_label
+field_name: field_upload_label
+entity_type: contact_message
+bundle: contact_us
+label: 'Upload a document'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p>Upload a document</p>\r\n"
+    format: simple
+field_type: markup

@@ -13,8 +13,10 @@ dependencies:
     - field.field.contact_message.contact_us.field_phone_number
     - field.field.contact_message.contact_us.field_terms_and_conditions
     - field.field.contact_message.contact_us.field_title
+    - field.field.contact_message.contact_us.field_upload_label
   module:
     - file
+    - markup
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us
@@ -34,7 +36,7 @@ content:
     type: options_select
     region: content
   field_contact_reason:
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -48,7 +50,7 @@ content:
     type: string_textarea
     region: content
   field_email:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -56,7 +58,7 @@ content:
     type: email_default
     region: content
   field_name:
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -71,7 +73,7 @@ content:
     type: boolean_checkbox
     region: content
   field_phone_number:
-    weight: 3
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -79,7 +81,7 @@ content:
     type: string_textfield
     region: content
   field_terms_and_conditions:
-    weight: 12
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
@@ -93,9 +95,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_upload_label:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: markup
+    region: content
   message:
     type: string_textarea
-    weight: 11
+    weight: 10
     settings:
       rows: 12
       placeholder: ''
