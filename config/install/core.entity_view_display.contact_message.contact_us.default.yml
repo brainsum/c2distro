@@ -13,8 +13,10 @@ dependencies:
     - field.field.contact_message.contact_us.field_phone_number
     - field.field.contact_message.contact_us.field_terms_and_conditions
     - field.field.contact_message.contact_us.field_title
+    - field.field.contact_message.contact_us.field_upload_label
   module:
     - file
+    - markup
     - options
 id: contact_message.contact_us.default
 targetEntityType: contact_message
@@ -101,6 +103,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_upload_label:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: markup
     region: content
   message:
     type: basic_string
