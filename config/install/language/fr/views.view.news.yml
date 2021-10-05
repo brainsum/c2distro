@@ -64,6 +64,7 @@ display:
   lister_page:
     display_title: Page
   page_1:
+    display_title: Évènements
     display_options:
       fields:
         nid:

@@ -1,3 +1,4 @@
+label: Évènements
 display:
   default:
     display_title: 'Par défaut'
@@ -23,7 +24,11 @@ display:
       fields:
         title:
           separator: ', '
+      title: Évènements
   lister_block:
     display_title: Bloc
   lister_page:
     display_title: Page
+    display_options:
+      menu:
+        title: Évènements
