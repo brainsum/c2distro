@@ -30,6 +30,7 @@ install:
   - field_ui
   - media_library
   - block_content
+  - contact
   # Contrib.
   - admin_toolbar
   - paragraphs
