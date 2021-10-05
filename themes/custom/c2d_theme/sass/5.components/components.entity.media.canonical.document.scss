@@ -1,24 +1,44 @@
 @import '../index';
 
+.layout-content {
+  background-color: white;
+}
 .region.region-content {
-    background-color: white;
-    margin-top: 2rem;
-    padding: 0 2rem;
-    @include breakpoint(medium) {
-      padding: 0;
+  max-width: 139rem;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 0 2rem;
+  @include breakpoint(medium) {
+    padding: 0;
+  }
+}
+
+.block-page-title-block {
+  max-width: 139rem !important;
+  padding-top: 4.2rem !important;
+  .block-inner {
+    margin-left: 9.2rem;
+    h1.page-title {
+      color: $color-blue-gray;
+      text-decoration: none solid rgb(18, 40, 76);
+      line-height: 5rem !important;
+      max-width: 110rem;
     }
+  }
 }
 
 article .media__content {
-  max-width: 119.2rem;
+  max-width: 139rem;
   margin: 0 auto;
 
   .content-header {
-    padding: 4rem 0 2rem 0;
+    padding: 1.6rem 0 2rem 0;
     display: flex;
     align-items: center;
+    margin-left: 8.4rem;
     .share-button {
-      margin-right: 4rem;
+      margin-right: 2.2rem;
+      padding: 0.4rem 0;
     }
     .content-header-text {
       display: flex;
@@ -41,7 +61,8 @@ article .media__content {
         display: none;
         @include breakpoint(medium) {
           display: block;
-          padding: 0 1rem;
+          padding: 0 0.7rem;
+          font-size: 18px;
         }
       }
       .category-link {
@@ -60,7 +81,8 @@ article .media__content {
   .content-body {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding-top: 0.8rem;
+    margin-left: 9.2rem;
     .content-body-img {
       width: 100%;
       @include breakpoint(medium) {
@@ -75,13 +97,13 @@ article .media__content {
       }
     }
     .content-body-text {
-      max-width: calc(119.2rem - 25.3rem);
+      max-width: 81.4rem;
       padding-left: 0;
       padding-bottom: 8rem;
       font-family: Open Sans;
       font-size: 18px;
       @include breakpoint(medium) {
-        padding-left: 4rem;
+        margin-left: 3.3rem;
       }
       a.text-black {
         color: $color-blue-gray;
@@ -90,7 +112,7 @@ article .media__content {
       }
     }
     .content-body-text--field-lead {
-      margin-bottom: 1rem;
+      margin-bottom: 2.4rem;
     }
     .content-body-text--field-body {
       margin-bottom: 4rem;
@@ -102,37 +124,40 @@ article .media__content {
       }
     }
     .content-body-text--field-media-file {
-      max-width: 20rem;
+      width: 18.7rem;
       font-family: Open Sans;
-      font-size: 1.8rem;
+      height: 4.7rem;
+      a {
+        font-size: 1.6rem !important;
+      }
       a:hover {
         color: white;
       }
     }
     .field--name-field-custom-text {
       /* lorem@ipsum.com */
-      font-family: Open Sans;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: $color-blue-gray;;
       line-height: 30px;
-      padding: 4rem 0;
+      padding: 3.4rem 0;
+      font-family: Open Sans;
+      text-decoration: none solid rgb(15, 29, 64);
       strong {
         font-weight: 700;
         font-family: Open Sans;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       p {
         margin: 0;
         font-family: Open Sans;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       a {
         font-family: Open Sans;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: $color-blue-gray;;
         text-decoration: underline solid rgb(15, 29, 64);
         line-height: 30px;
-  
       }
     }
   }
