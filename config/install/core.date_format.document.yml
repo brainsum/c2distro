@@ -4,4 +4,4 @@ dependencies: {  }
 id: document
 label: Document
 locked: false
-pattern: 'j F, Y'
+pattern: 'j M, Y'
