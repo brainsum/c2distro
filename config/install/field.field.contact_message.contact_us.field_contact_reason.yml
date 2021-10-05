@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_contact_reason
+  module:
+    - options
+id: contact_message.contact_us.field_contact_reason
+field_name: field_contact_reason
+entity_type: contact_message
+bundle: contact_us
+label: 'What is your reason for contacting us?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

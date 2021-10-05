@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_contact_reason
+field_name: field_contact_reason
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: submit_document
+      label: 'I would like to submit a document to the learning toolkit'
+    -
+      value: reg_training_facility
+      label: 'I would like to register a training facility'
+    -
+      value: another_learning_tool
+      label: 'I have an idea for another learning tool'
+    -
+      value: touch_team
+      label: 'I would like to get in touch with the team to talk about learning'
+    -
+      value: feedback
+      label: 'I would like to give feedback on the website'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

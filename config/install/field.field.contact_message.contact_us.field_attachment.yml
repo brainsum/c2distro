@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_attachment
+  module:
+    - file
+id: contact_message.contact_us.field_attachment
+field_name: field_attachment
+entity_type: contact_message
+bundle: contact_us
+label: 'Attach file (pdf, doc, docx)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'contact-form/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
