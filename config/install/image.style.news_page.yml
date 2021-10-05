@@ -4,11 +4,11 @@ dependencies: {  }
 name: news_page
 label: 'News page'
 effects:
-  d32ab897-5649-4809-bd71-c2c51d5ac429:
-    uuid: d32ab897-5649-4809-bd71-c2c51d5ac429
-    id: image_scale
+  af79aa20-638f-485c-979b-d884d265ee55:
+    uuid: af79aa20-638f-485c-979b-d884d265ee55
+    id: image_scale_and_crop
     weight: 1
     data:
       width: 823
-      height: null
-      upscale: false
+      height: 464
+      anchor: center-center
