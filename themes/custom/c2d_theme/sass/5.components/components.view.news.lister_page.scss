@@ -9,6 +9,9 @@ h1.page-title {
     padding: 0 2rem;
     @include breakpoint(medium) {
         padding: 0;
+        color: $color-blue-gray;
+        text-decoration: none solid rgb(18, 40, 76);
+        line-height: 4rem !important;
     }
 }
 
@@ -25,12 +28,12 @@ h1.page-title {
             padding: 0 2rem;
             @include breakpoint(medium) {
                 font-size: 4rem;
-                padding: 0;
+                padding: 6.4rem 0 0 0;
             }
         }
     }
     .view-content {
-        padding-top: 4rem;
+        padding-top: 6rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -51,7 +54,7 @@ h1.page-title {
 
             .views-field.views-field-created,
             .views-field.views-field-field-event-date {
-                padding: 2rem 2rem 0 2rem;
+                padding: 1.5rem 2rem 0 2.5rem;
                 color: $color-blue-darkest2;
                 font-family: Montserrat;
                 font-size: 14px;
@@ -69,22 +72,30 @@ h1.page-title {
                 font-size: 14px;
                 font-weight: 600;
                 height: 4rem;
+                .field-content {
+                    a {
+                        display: flex;
+                    }
+                }
                 a:before {
                     content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
-                    height: 10px;
-                    width: 10px;
+                    width: 22px;
                     display: inline-block;
-                    padding-right: 1rem;
+                    padding-right: 0.5rem;
+                    height: 15px;
                 }
             }
 
             .views-field.views-field-title {
-                padding: 20px 20px 4rem;
+                margin: 20px 25px 3.9rem;
                 color: $color-blue-darkest2;
                 font-family: Montserrat;
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-weight: 600;
-                height: 15rem;
+                text-decoration: none solid rgb(15, 29, 64);
+                line-height: 2.2rem;
+                width: 190px;
+                height: 90px;
                 a {
                     transition: .3s;
                     &:hover {
@@ -94,14 +105,14 @@ h1.page-title {
             }
 
             .views-field.views-field-view-node {
-                padding: 0 20px 20px;
+                padding: 0 20px 45px 25px;
                 transition: .5s;
                 a {
                     transition: .3s;
                     color: $color-blue-darkest2;
                     font-family: Montserrat;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-style: italic;
                     &:hover {
                         color: $color-turquoise-light;
