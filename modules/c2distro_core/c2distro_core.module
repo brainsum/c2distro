@@ -11,6 +11,7 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\media\MediaInterface;
 use Drupal\file\Entity\File;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_entity_base_field_info_alter().
@@ -91,7 +92,7 @@ function c2distro_core_media_source_info_alter(array &$sources) {
 
 /**
  * Implements hook_ENTITY_TYPE_update().
- * 
+ *
  * Invalidate cache tags after hero block content type has modified.
  */
 function c2distro_core_block_content_update(EntityInterface $entity) {
@@ -100,4 +101,47 @@ function c2distro_core_block_content_update(EntityInterface $entity) {
     $tags = ['config:block.block.hphero'];
     \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
   }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Hide/show conditionally fields for Contact us form.
+ */
+function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state) {
+  $form['field_upload_label']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ]
+  ];
+
+  $form['field_category']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ]
+  ];
+
+  $form['field_title']['widget'][0]['value']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ]
+  ];
+
+  $form['field_description']['widget'][0]['value']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ],
+  ];
+
+  $form['field_name_as_author']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ]
+  ];
+
+  $form['field_attachment']['#states'] = [
+    'visible' => [
+      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+    ]
+  ];
 }
