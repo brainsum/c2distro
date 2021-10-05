@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_terms_and_conditions
+id: contact_message.contact_us.field_terms_and_conditions
+field_name: field_terms_and_conditions
+entity_type: contact_message
+bundle: contact_us
+label: 'I have read and accepted Terms & Conditions'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: ' No'
+field_type: boolean
