@@ -502,7 +502,7 @@ article .node__content .content-header .created-time .content-type {
 }
 article .node__content .content-header .location {
   display: flex;
-  padding-left: 4rem;
+  padding-left: 5rem;
   color: #12284c;
   font-size: 1.8rem;
   font-weight: 700;
@@ -513,8 +513,8 @@ article .node__content .content-header .location {
   line-height: 30px;
 }
 article .node__content .content-header .location img {
-  padding-right: 1rem;
-  height: 16px;
+  padding-right: 0.4rem;
+  height: 23px;
   align-self: center;
 }
 article .node__content .field.field--name-field-lead.field--type-string-long {

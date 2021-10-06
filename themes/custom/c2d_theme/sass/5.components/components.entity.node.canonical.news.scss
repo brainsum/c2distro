@@ -48,7 +48,7 @@ article {
       }
       .location {
         display: flex;
-        padding-left: 4rem;
+        padding-left: 5rem;
         color: $color-blue-gray;
         font-size: 1.8rem;
         font-weight: 700;
@@ -57,8 +57,8 @@ article {
         text-decoration: none solid rgb(18, 40, 76);
         line-height: 30px;
         img {
-          padding-right: 1rem;
-          height: 16px;
+          padding-right: 0.4rem;
+          height: 23px;
           align-self: center;
         }
       }
