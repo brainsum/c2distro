@@ -56,6 +56,11 @@ function c2d_theme_preprocess_block(&$variables) {
   if ($blockId === 'views_block__selector_cards_selector_cards_block') {
     $variables['#attached']['library'][] = 'c2d_theme/views_block__selector_cards_selector_cards_block';
   }
+  if ($blockId === 'views_block__news_lister_block') {
+    $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
+    $variables['#attached']['library'][] = 'c2d_theme/views_block__news_lister_block';
+  }
+
 }
 
 /**

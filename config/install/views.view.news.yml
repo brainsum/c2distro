@@ -1314,9 +1314,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: default
+            image_style: news_image
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1502,6 +1503,7 @@ display:
         use_more_always: false
         use_more_text: false
         title: false
+        css_class: false
       pager:
         type: some
         options:
@@ -1511,6 +1513,7 @@ display:
       use_more_always: false
       use_more_text: 'View more'
       title: 'Related news'
+      css_class: lister-page
     cache_metadata:
       max-age: -1
       contexts:

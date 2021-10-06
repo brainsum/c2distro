@@ -131,3 +131,7 @@ pager:
   css:
     theme:
       css/5.components/components.pager.css: {}
+views_block__news_lister_block:
+  css:
+    theme:
+      css/5.components/components.views_block__news_lister_block.css: {}
