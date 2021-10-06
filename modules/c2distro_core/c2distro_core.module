@@ -109,42 +109,26 @@ function c2distro_core_block_content_update(EntityInterface $entity) {
  * Hide/show conditionally fields for Contact us form.
  */
 function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state) {
-  $form['field_upload_label']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ]
+  //Hide/show conditionally fields for Contact us form.
+  $dependentFields = [
+    'field_upload_label',
+    'field_category',
+    'field_title',
+    'field_description',
+    'field_name_as_author',
+    'field_attachment',
   ];
 
-  $form['field_category']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ]
-  ];
-
-  $form['field_title']['widget'][0]['value']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ]
-  ];
-
-  $form['field_description']['widget'][0]['value']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ],
-  ];
-
-  $form['field_name_as_author']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ]
-  ];
-
-  $form['field_attachment']['#states'] = [
-    'visible' => [
-      'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-    ]
-  ];
+  foreach ($dependentFields as $dependentField) {
+    $form[$dependentField]['#states'] = [
+      'visible' => [
+        'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
+      ]
+    ];
+  }
 
   // Create link to Terms & Conditions.
-  $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted ') . '<a href="/terms-and-conditions">' . t('Terms & Conditions') . '</a>';
+  $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted <a href="@url">Terms & Conditions', [
+    '@url' => '/terms-and-conditions',
+  ]);
 }
