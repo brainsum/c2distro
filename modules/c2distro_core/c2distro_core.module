@@ -144,4 +144,7 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
       'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
     ]
   ];
+
+  // Create link to Terms & Conditions.
+  $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted ') . '<a href="/terms-and-conditions">' . t('Terms & Conditions') . '</a>';
 }
