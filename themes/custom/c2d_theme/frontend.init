@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Frontend compiler first init"
+
+npm install
+cd node_modules/foundation-sites/scss/util
+npm install -g sass-migrator
+sass-migrator division *.scss
+cd ../../../..
+npm start
