@@ -8,6 +8,7 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access media overview'
+  - 'access site-wide contact form'
   - 'access toolbar'
   - 'create document media'
   - 'create event content'
