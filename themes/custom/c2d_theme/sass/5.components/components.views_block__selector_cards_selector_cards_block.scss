@@ -22,6 +22,7 @@
                 flex-wrap: wrap;
                 .views-col {
                     width: 100%;
+                    min-height: 23.5rem;
                     &:nth-child(odd) {
                         background-color: $color-grey-backbgorund;
                     }
@@ -55,7 +56,7 @@
                                 text-decoration: none solid rgb(18, 40, 76);
                                 line-height: 4rem;
                                 @include breakpoint(medium) {
-                                    margin: 7rem 4rem 1.2rem;
+                                    margin: 7rem 4rem 1rem;
                                 }
                             }
                             p {
@@ -104,7 +105,7 @@
         }
     }
     .view-footer {
-        padding: 6rem 2rem;
+        padding: 6rem 2rem 5rem;
         a {
             max-width: 22rem;
             color: $color-blue-gray;
