@@ -60,6 +60,7 @@ install:
   - media_thumbnails_pdf
   - block_content_permissions
   - markup
+  - recaptcha
   # Custom
   - c2distro_core
 # Required dependencies.
