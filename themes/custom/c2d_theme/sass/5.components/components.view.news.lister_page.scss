@@ -28,12 +28,12 @@ h1.page-title {
             padding: 0 2rem;
             @include breakpoint(medium) {
                 font-size: 4rem;
-                padding: 6.4rem 0 0 0;
+                padding: 6.3rem 0 0 0;
             }
         }
     }
     .view-content {
-        padding-top: 6rem;
+        padding-top: 6.3rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -46,7 +46,7 @@ h1.page-title {
         .views-row {
             width: 262px;
             background-color: white;
-            margin: 0 24px 72px 24px;
+            margin: 0 24px 70px 24px;
             transition: .5s;
             &:hover {
                 box-shadow: 0 0 15px lightgray;
@@ -55,23 +55,23 @@ h1.page-title {
             .views-field.views-field-created,
             .views-field.views-field-field-event-date {
                 padding: 1.5rem 2rem 0 2.5rem;
-                color: $color-blue-darkest2;
+                color: $color-blue-gray;
                 font-family: Montserrat;
                 font-size: 14px;
                 font-weight: 600;
                 .content-type {
                     color: $color-turquoise-light;
                     text-transform: capitalize;
+                    line-height: 1.9rem;
                 }
             }
 
             .views-field.views-field-field-location {
                 padding: 10px 20px 0 20px;
-                color: $color-blue-darkest2;
+                color: $color-blue-gray;
                 font-family: Montserrat;
                 font-size: 14px;
                 font-weight: 600;
-                height: 4rem;
                 .field-content {
                     a {
                         display: flex;
@@ -87,15 +87,15 @@ h1.page-title {
             }
 
             .views-field.views-field-title {
-                margin: 20px 25px 3.9rem;
-                color: $color-blue-darkest2;
+                margin: 26px 25px 3.9rem;
+                color: $color-blue-gray;
                 font-family: Montserrat;
                 font-size: 1.8rem;
                 font-weight: 600;
                 text-decoration: none solid rgb(15, 29, 64);
                 line-height: 2.2rem;
                 width: 190px;
-                height: 90px;
+                min-height: 90px;
                 a {
                     transition: .3s;
                     &:hover {
@@ -109,7 +109,7 @@ h1.page-title {
                 transition: .5s;
                 a {
                     transition: .3s;
-                    color: $color-blue-darkest2;
+                    color: $color-blue-gray;
                     font-family: Montserrat;
                     font-size: 16px;
                     font-weight: 700;
@@ -126,7 +126,7 @@ h1.page-title {
         max-width: 119.2rem;
         margin: 0 auto;
         .no-results {
-            color: $color-blue-darkest2;
+            color: $color-blue-gray;
             font-family: Montserrat;
             font-size: 16px;
             font-weight: 600;

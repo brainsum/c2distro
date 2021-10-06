@@ -479,11 +479,11 @@ h1.page-title {
 @media print, screen and (min-width: 48em) {
   .view.lister-page .view-header .second-title {
     font-size: 4rem;
-    padding: 6.4rem 0 0 0;
+    padding: 6.3rem 0 0 0;
   }
 }
 .view.lister-page .view-content {
-  padding-top: 6rem;
+  padding-top: 6.3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -498,7 +498,7 @@ h1.page-title {
 .view.lister-page .view-content .views-row {
   width: 262px;
   background-color: white;
-  margin: 0 24px 72px 24px;
+  margin: 0 24px 70px 24px;
   transition: 0.5s;
 }
 .view.lister-page .view-content .views-row:hover {
@@ -507,7 +507,7 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-created,
 .view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
   padding: 1.5rem 2rem 0 2.5rem;
-  color: #0f1d40;
+  color: #12284c;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
@@ -516,14 +516,14 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-field-event-date .content-type {
   color: #26c9de;
   text-transform: capitalize;
+  line-height: 1.9rem;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-field-location {
   padding: 10px 20px 0 20px;
-  color: #0f1d40;
+  color: #12284c;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
-  height: 4rem;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-field-location .field-content a {
   display: flex;
@@ -536,8 +536,8 @@ h1.page-title {
   height: 15px;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-title {
-  margin: 20px 25px 3.9rem;
-  color: #0f1d40;
+  margin: 26px 25px 3.9rem;
+  color: #12284c;
   font-family: Montserrat;
   font-size: 1.8rem;
   font-weight: 600;
@@ -545,7 +545,7 @@ h1.page-title {
           text-decoration: none solid #0f1d40;
   line-height: 2.2rem;
   width: 190px;
-  height: 90px;
+  min-height: 90px;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-title a {
   transition: 0.3s;
@@ -559,7 +559,7 @@ h1.page-title {
 }
 .view.lister-page .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;
-  color: #0f1d40;
+  color: #12284c;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
@@ -574,7 +574,7 @@ h1.page-title {
   margin: 0 auto;
 }
 .view.lister-page .view-empty .no-results {
-  color: #0f1d40;
+  color: #12284c;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 600;
