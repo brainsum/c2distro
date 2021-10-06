@@ -506,7 +506,7 @@ h1.page-title {
 }
 .view.lister-page .view-content .views-row .views-field.views-field-created,
 .view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
-  padding: 1.5rem 2rem 0 2.5rem;
+  padding: 1.5rem 2rem 1rem 2.5rem;
   color: #12284c;
   font-family: Montserrat;
   font-size: 14px;
@@ -519,7 +519,7 @@ h1.page-title {
   line-height: 1.9rem;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-field-location {
-  padding: 10px 20px 0 20px;
+  padding: 0 20px 17px 20px;
   color: #12284c;
   font-family: Montserrat;
   font-size: 14px;
@@ -536,7 +536,7 @@ h1.page-title {
   height: 15px;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-title {
-  margin: 26px 25px 3.9rem;
+  margin: 9px 25px 3.9rem;
   color: #12284c;
   font-family: Montserrat;
   font-size: 1.8rem;
