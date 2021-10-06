@@ -4,7 +4,7 @@ dependencies: {  }
 id: contact_us
 label: 'Contact us'
 recipients:
-  - c2distro@example.com
+  - dev+c2distro@brainsum.com
 reply: ''
 weight: 0
 message: ''
