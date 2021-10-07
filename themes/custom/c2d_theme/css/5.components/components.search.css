@@ -582,13 +582,11 @@
   margin: 0 0.25em;
 }
 .view-search .node .field--name-field-location {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   margin-top: 0.7rem;
 }
-.view-search .node .field--name-field-location svg {
-  margin-right: 1rem;
+.view-search .node .field--name-field-location img {
+  margin-top: -0.2rem;
+  margin-left: -0.4rem;
 }
 .view-search .node .field--name-field-lead {
   margin-top: 1.5rem;
