@@ -448,23 +448,23 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-.field--name-field-paragraphs .field__item .background-color--white {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view {
   background-color: white;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner {
   width: 100%;
   max-width: unset;
   padding: 0;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner {
   max-width: unset;
   padding: 0;
   background-color: #ebebeb;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .title-holder {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .title-holder {
   max-width: 115.7rem;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .title-holder span {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .title-holder span {
   margin-left: 0;
   font-family: Montserrat;
   font-size: 3.6rem;
@@ -474,14 +474,14 @@
   line-height: 3.4rem;
   box-shadow: 2.2rem 0 0 #12284c, -1.9rem 0 0 #12284c;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .view.lister-page .view-content {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .view.lister-page .view-content {
   padding-top: 10.2rem;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .view.lister-page .more-link {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .view.lister-page .more-link {
   text-align: center;
   padding-bottom: 4rem;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .view.lister-page .more-link a {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .view.lister-page .more-link a {
   width: 261px;
   height: 47px;
   border: solid 2px #26c9de;
@@ -495,7 +495,7 @@
   color: #12284c;
   transition: all, 0.2s;
 }
-.field--name-field-paragraphs .field__item .background-color--white .paragraph--inner .block-views .block-inner .view.lister-page .more-link a:hover {
+.field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .view.lister-page .more-link a:hover {
   background-color: #26c9de;
   color: white;
 }
