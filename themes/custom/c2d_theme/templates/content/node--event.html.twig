@@ -109,7 +109,7 @@
         {% include '@c2d_theme/custom/share-button.twig' %}
       {% endif %}
       <div class="created-time">{{ content.field_event_date }}</div>
-      <div class="location"><img src="/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg"> {{ content.field_location }}</div>
+      <div class="location">{{ content.field_location }}</div>
     </div>
     {{ content|without('field_event_date', 'field_location') }}
   </div>

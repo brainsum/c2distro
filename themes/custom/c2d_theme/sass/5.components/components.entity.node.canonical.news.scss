@@ -38,8 +38,7 @@ article {
         color: $color-blue-gray;
         font-size: 1.8rem;
         font-weight: 700;
-        font-size: 18px;
-        font-family: Open Sans;
+        font-family: $font-open;
         text-decoration: none solid rgb(18, 40, 76);
         line-height: 30px;
         .content-type {
@@ -47,18 +46,18 @@ article {
         }
       }
       .location {
-        display: flex;
         padding-left: 5rem;
+      }
+      .field--name-field-location {
+        display: flex;
         color: $color-blue-gray;
         font-size: 1.8rem;
         font-weight: 700;
-        font-size: 18px;
-        font-family: Open Sans;
+        font-family: $font-open;
         text-decoration: none solid rgb(18, 40, 76);
         line-height: 30px;
         img {
-          padding-right: 0.4rem;
-          height: 23px;
+          margin-right: 0.4rem;
           align-self: center;
         }
       }
@@ -68,7 +67,7 @@ article {
       font-weight: 700;
       line-height: 3rem;
       padding: 0;
-      font-family: Open Sans;
+      font-family: $font-open;
       font-size: 22px;
       max-width: 68.4rem;
       color: black;
@@ -76,16 +75,16 @@ article {
         margin: 4.4rem 2.3rem 0 2.3rem;
       }
     }
-    
+
     .field.field--name-body {
       max-width: 684px;
       font-size: 18px;
       line-height: 3rem;
       padding: 0 0 4rem;
-      font-family: Open Sans;
+      font-family: $font-open;
       margin-top: 3rem;
       @include breakpoint(medium) {
-        margin: 2.8rem 0rem 4rem 2.3rem;
+        margin: 2.8rem 0 4rem 2.3rem;
       }
     }
     .field.field--name-field-tags {

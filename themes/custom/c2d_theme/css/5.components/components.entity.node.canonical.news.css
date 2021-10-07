@@ -491,8 +491,7 @@ article .node__content .content-header .created-time {
   color: #12284c;
   font-size: 1.8rem;
   font-weight: 700;
-  font-size: 18px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
   line-height: 30px;
@@ -501,20 +500,20 @@ article .node__content .content-header .created-time .content-type {
   color: #26c9de;
 }
 article .node__content .content-header .location {
-  display: flex;
   padding-left: 5rem;
+}
+article .node__content .content-header .field--name-field-location {
+  display: flex;
   color: #12284c;
   font-size: 1.8rem;
   font-weight: 700;
-  font-size: 18px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
   line-height: 30px;
 }
-article .node__content .content-header .location img {
-  padding-right: 0.4rem;
-  height: 23px;
+article .node__content .content-header .field--name-field-location img {
+  margin-right: 0.4rem;
   align-self: center;
 }
 article .node__content .field.field--name-field-lead.field--type-string-long {
@@ -522,7 +521,7 @@ article .node__content .field.field--name-field-lead.field--type-string-long {
   font-weight: 700;
   line-height: 3rem;
   padding: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 22px;
   max-width: 68.4rem;
   color: black;
@@ -537,12 +536,12 @@ article .node__content .field.field--name-body {
   font-size: 18px;
   line-height: 3rem;
   padding: 0 0 4rem;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   margin-top: 3rem;
 }
 @media print, screen and (min-width: 48em) {
   article .node__content .field.field--name-body {
-    margin: 2.8rem 0rem 4rem 2.3rem;
+    margin: 2.8rem 0 4rem 2.3rem;
   }
 }
 article .node__content .field.field--name-field-tags {

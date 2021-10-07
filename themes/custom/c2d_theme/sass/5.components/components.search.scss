@@ -137,13 +137,11 @@
     }
 
     .field--name-field-location {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
       margin-top: 0.7rem;
 
-      svg {
-        margin-right: 1rem;
+      img {
+        margin-top: -0.2rem;
+        margin-left: -0.4rem;
       }
     }
 
