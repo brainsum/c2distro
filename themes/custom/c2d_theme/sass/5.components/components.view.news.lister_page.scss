@@ -1,6 +1,6 @@
 @import '../index';
 
-.views-field-field-media-thumbnail:before, 
+.views-field-field-media-thumbnail:before,
 .views-field-field-image:before {
     content: unset !important;
 }
@@ -13,8 +13,8 @@ h1.page-title {
     padding: 0 2rem;
     @include breakpoint(medium) {
         padding: 0;
-        color: $color-blue-gray;
-        text-decoration: none solid rgb(18, 40, 76);
+        color: $body-font-color;
+        text-decoration: none solid $body-font-color;
         line-height: 4rem !important;
     }
 }
@@ -22,13 +22,12 @@ h1.page-title {
 .view.lister-page {
     .view-header {
         .second-title {
-            padding: 0 0 4rem 0;
             max-width: 119.2rem;
             margin: 0 auto;
             font-size: 3rem;
             line-height: 4.9rem;
-            font-family: Montserrat;
-            color: $color-blue-darkest2;
+            font-family: $font-montserrat;
+            color: $body-font-color;
             padding: 0 2rem;
             @include breakpoint(medium) {
                 font-size: 4rem;
@@ -46,7 +45,7 @@ h1.page-title {
         @include breakpoint(medium) {
             justify-content: flex-start;
         }
-    
+
         .views-row {
             width: 262px;
             background-color: white;
@@ -61,12 +60,12 @@ h1.page-title {
             .views-field.views-field-created,
             .views-field.views-field-field-event-date {
                 padding: 1.5rem 2rem 1rem 2.5rem;
-                color: $color-blue-gray;
-                font-family: Montserrat;
+                color: $body-font-color;
+                font-family: $font-montserrat;
                 font-size: 14px;
                 font-weight: 600;
                 .content-type {
-                    color: $color-turquoise-light;
+                    color: $color-secondary;
                     text-transform: capitalize;
                     line-height: 1.9rem;
                 }
@@ -74,8 +73,8 @@ h1.page-title {
 
             .views-field.views-field-field-location {
                 padding: 0 20px 17px 20px;
-                color: $color-blue-gray;
-                font-family: Montserrat;
+                color: $body-font-color;
+                font-family: $font-montserrat;
                 font-size: 14px;
                 font-weight: 600;
                 .field-content {
@@ -94,18 +93,18 @@ h1.page-title {
 
             .views-field.views-field-title {
                 margin: 9px 25px 2.4rem;
-                color: $color-blue-gray;
-                font-family: Montserrat;
+                color: $body-font-color;
+                font-family: $font-montserrat;
                 font-size: 1.8rem;
                 font-weight: 600;
-                text-decoration: none solid rgb(15, 29, 64);
+                text-decoration: none solid $body-font-color;
                 line-height: 2.2rem;
                 width: 190px;
                 min-height: 90px;
                 a {
                     transition: .3s;
                     &:hover {
-                        color: $color-turquoise-light;
+                        color: $color-secondary;
                     }
                 }
             }
@@ -117,13 +116,13 @@ h1.page-title {
                 position: absolute;
                 a {
                     transition: .3s;
-                    color: $color-blue-gray;
-                    font-family: Montserrat;
+                    color: $body-font-color;
+                    font-family: $font-montserrat;
                     font-size: 16px;
                     font-weight: 700;
                     font-style: italic;
                     &:hover {
-                        color: $color-turquoise-light;
+                        color: $color-secondary;
                     }
                 }
             }
@@ -134,8 +133,8 @@ h1.page-title {
         max-width: 119.2rem;
         margin: 0 auto;
         .no-results {
-            color: $color-blue-gray;
-            font-family: Montserrat;
+            color: $body-font-color;
+            font-family: $font-montserrat;
             font-size: 16px;
             font-weight: 600;
         }

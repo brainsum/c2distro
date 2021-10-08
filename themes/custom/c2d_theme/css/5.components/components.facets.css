@@ -672,6 +672,7 @@ select::-ms-expand {
 @media print, screen and (min-width: 23.5em) {
   .path-resources .page-title {
     margin-bottom: 2.2rem;
+    font-size: 4rem;
   }
 }
 

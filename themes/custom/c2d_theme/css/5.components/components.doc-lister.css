@@ -678,12 +678,12 @@ select::-ms-expand {
 }
 .media-wrapper .left {
   display: inline-grid;
-  max-width: 21rem;
+  max-width: 20.6rem;
   margin-right: 4.7rem;
 }
 .media-wrapper .left .field--name-thumbnail {
   max-width: 20.6rem;
-  max-height: 28.9rem;
+  max-height: 45rem;
 }
 .media-wrapper .left .field--name-thumbnail img {
   width: 100%;
