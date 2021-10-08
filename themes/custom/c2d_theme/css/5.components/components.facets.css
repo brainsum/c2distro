@@ -469,7 +469,7 @@
  *   }
  */
 /*:root {
-  --color-font: #011e41;
+  --color-font: #12284c;
   --color-body: white;
 }*/
 /**
@@ -501,7 +501,7 @@ html {
 
 body {
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #011e41;
+  color: #12284c;
   background-color: #efefef;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -520,10 +520,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #011e41;
+  color: #12284c;
 }
 a:hover {
-  color: black;
+  color: #03070e;
 }
 a:focus {
   outline: 0;
@@ -675,7 +675,7 @@ select::-ms-expand {
   background: #ffffff;
 }
 .block-facet-blocktags-of-document .facet-item a {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
@@ -685,10 +685,10 @@ select::-ms-expand {
 }
 .block-facet-blocktags-of-document .facet-item .js-facet-deactivate {
   background: url("../../images/dist/icons/close-dark.svg");
+  background-repeat: no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;
-  background-repeat: no-repeat;
   top: 2px;
   position: relative;
 }
@@ -707,27 +707,27 @@ select::-ms-expand {
   max-width: 1391px;
   margin: 0 auto;
 }
-.block-views-exposed-filter-blocksearch-resources .js-form-type-textfield {
+.block-views-exposed-filter-blocksearch-resources .form-type-textfield {
   float: left;
   max-width: 411px;
 }
-.block-views-exposed-filter-blocksearch-resources .js-form-type-textfield input {
+.block-views-exposed-filter-blocksearch-resources .form-type-textfield input {
   background-color: white;
   padding-left: 23px;
   max-width: 411px;
-  border: 1px solid #dadada;
+  border: 1px solid #d4d4d4;
   background-image: url("../../images/dist/icons/search.svg");
   background-repeat: no-repeat;
   background-position: 98% center;
   background-size: 22px;
   height: 48px;
 }
-.block-views-exposed-filter-blocksearch-resources .js-form-item-category {
+.block-views-exposed-filter-blocksearch-resources .form-item-category {
   float: left;
   max-width: 386px;
   margin-left: 27px;
 }
-.block-views-exposed-filter-blocksearch-resources .js-form-item-category select {
+.block-views-exposed-filter-blocksearch-resources .form-item-category select {
   background-color: white;
   border: 1px solid #dadada;
   height: 48px;
@@ -741,6 +741,6 @@ select::-ms-expand {
 
 .page-title {
   max-width: 1391px;
-  margin: 60px auto;
+  margin: 6rem auto;
 }
 /*# sourceMappingURL=../../maps/5.components/components.facets.css.map */

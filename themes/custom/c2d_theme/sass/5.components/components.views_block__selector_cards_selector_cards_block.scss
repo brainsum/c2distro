@@ -1,128 +1,145 @@
 @import '../index';
 
 .block-page-title-block {
+  margin-top: 6rem;
+
+  .block-inner {
+    max-width: 139.5rem !important;
+    padding: 0 !important;
     margin-top: 6rem;
-    .block-inner {
-        max-width: 139.5rem !important;
-        padding: 0 !important;
-        margin-top: 6rem;
-    }
+  }
 }
+
 .block-views-blockselector-cards-selector-cards-block {
-    .block-inner {
-        margin-top: 6rem;
-        max-width: 139.5rem;
-        padding: 0;
-    }
-    .view-content {
-        width: 100%;
-        .views-view-grid {
-            .views-row {
-                display: flex;
-                flex-wrap: wrap;
-                .views-col {
-                    width: 100%;
-                    min-height: 23.5rem;
-                    &:nth-child(odd) {
-                        background-color: $color-grey-backbgorund;
-                    }
-                    &:nth-child(even) {
-                        background-color: white;
-                    }
-                    @include breakpoint(medium) {
-                        // width: 50%;
-                        max-width: 695px !important;
-                        transition: 0.4s;
-                    }
-                    &:hover {
-                        border-color: $color-turquoise !important;
-                    }
-                    a {
-                        cursor: pointer;
-                        display: block;
-                        padding: 0;
-                        align-items: center;
-                        justify-content: flex-start;
-                        flex-wrap: wrap;
-                        @include breakpoint(medium) {
-                            padding: 0;
-                        }
-                        &.selector-card {
-                            h4 {
-                                color: $color-blue-gray;
-                                font-family: Montserrat;
-                                font-size: 3rem;
-                                margin: 6.7rem 2rem 1.2rem;
-                                text-decoration: none solid rgb(18, 40, 76);
-                                line-height: 4rem;
-                                @include breakpoint(medium) {
-                                    margin: 7rem 4rem 1rem;
-                                }
-                            }
-                            p {
-                                color: $color-blue-gray;
-                                font-family: Open Sans;
-                                font-size: 1.8rem;
-                                text-decoration: none solid $color-grey-backbgorund;
-                                line-height: 3rem;
-                                margin: 0 2rem 4.9rem;
-                                max-width: 33.5rem;
-                                @include breakpoint(medium) {
-                                    margin: 0 4rem 4.6rem;
-                                    max-width: 51.5rem;
-                                }
-                            }
+  .block-inner {
+    margin-top: 6rem;
+    max-width: 139.5rem;
+    padding: 0;
+  }
 
-                        }
-                    }
-                }
-            }
-            .views-row:nth-child(odd) .views-col:nth-child(odd) {
-                @include breakpoint(medium) {
-                    background-color: $color-grey-backbgorund;
-                    border: solid 3px $color-grey-backbgorund;
-                }
-            }
-            .views-row:nth-child(even) .views-col:nth-child(even) {
-                @include breakpoint(medium) {
-                    background-color: $color-grey-backbgorund;
-                    border: solid 3px $color-grey-backbgorund;
-                }
-            }
-            .views-row:nth-child(odd) .views-col:nth-child(even) {
-                @include breakpoint(medium) {
-                    background-color: white;
-                    border: solid 3px white;
-                }
-            }
-            .views-row:nth-child(even) .views-col:nth-child(odd) {
-                @include breakpoint(medium) {
-                    background-color: white;
-                    border: solid 3px white;
-                }
+  .view-content {
+    width: 100%;
+
+    .views-view-grid {
+      .views-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .views-col {
+          width: 100%;
+          min-height: 23.5rem;
+
+          &:nth-child(odd) {
+            background-color: $background-grey-light;
+          }
+
+          &:nth-child(even) {
+            background-color: white;
+          }
+
+          @include breakpoint(medium) {
+            // width: 50%;
+            max-width: 695px !important;
+            transition: 0.4s;
+          }
+
+          &:hover {
+            border-color: $color-secondary !important;
+          }
+
+          a {
+            cursor: pointer;
+            display: block;
+            padding: 0;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            @include breakpoint(medium) {
+              padding: 0;
             }
 
+            &.selector-card {
+              h4 {
+                color: $body-font-color;
+                font-family: $font-montserrat;
+                font-size: 3rem;
+                margin: 6.7rem 2rem 1.2rem;
+                text-decoration: none solid $body-font-color;
+                line-height: 4rem;
+                @include breakpoint(medium) {
+                  margin: 7rem 4rem 1rem;
+                }
+              }
+
+              p {
+                color: $body-font-color;
+                font-family: $font-open;
+                font-size: 1.8rem;
+                text-decoration: none solid $background-grey-light;
+                line-height: 3rem;
+                margin: 0 2rem 4.9rem;
+                max-width: 33.5rem;
+                @include breakpoint(medium) {
+                  margin: 0 4rem 4.6rem;
+                  max-width: 51.5rem;
+                }
+              }
+            }
+          }
         }
-    }
-    .view-footer {
-        padding: 6rem 2rem 5rem;
-        a {
-            max-width: 22rem;
-            color: $color-blue-gray;
-            margin: 0 auto;
-            font-family: Montserrat;
-            font-size: 1.7rem;
-            text-decoration: none solid rgb(18, 40, 76);
-            line-height: 20px;
-            text-transform: capitalize;
-            text-align: center;
-            height: 5rem;
-            border: solid 2px $color-turquoise !important;
+      }
+
+      .views-row:nth-child(odd) .views-col:nth-child(odd) {
+        @include breakpoint(medium) {
+          background-color: $background-grey-light;
+          border: solid 3px $background-grey-light;
         }
+      }
+
+      .views-row:nth-child(even) .views-col:nth-child(even) {
+        @include breakpoint(medium) {
+          background-color: $background-grey-light;
+          border: solid 3px $background-grey-light;
+        }
+      }
+
+      .views-row:nth-child(odd) .views-col:nth-child(even) {
+        @include breakpoint(medium) {
+          background-color: white;
+          border: solid 3px white;
+        }
+      }
+
+      .views-row:nth-child(even) .views-col:nth-child(odd) {
+        @include breakpoint(medium) {
+          background-color: white;
+          border: solid 3px white;
+        }
+      }
+
     }
+  }
+
+  .view-footer {
+    padding: 6rem 2rem 5rem;
+
+    a {
+      max-width: 22rem;
+      color: $body-font-color;
+      margin: 0 auto;
+      font-family: $font-montserrat;
+      font-size: 1.7rem;
+      text-decoration: none solid $body-font-color;
+      line-height: 20px;
+      text-transform: capitalize;
+      text-align: center;
+      height: 5rem;
+      border: solid 2px $color-secondary !important;
+    }
+  }
 }
 
 .page-node-type-page .field--name-body,
 .page-node-type-page .field--name-field-lead {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }

@@ -1,53 +1,56 @@
 @import '../index';
 
 .share-button--links li {
-    list-style: none;
-    margin: 15px auto !important;
+  list-style: none;
+  margin: 15px auto !important;
 }
-  
+
 .share-button {
-    width: 50px;
-    padding: 0.5rem 0;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    background: #0000;
+  width: 50px;
+  padding: 0.5rem 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background: #0000;
 }
-  
+
 .share-button--links {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.2s;
-    background-color: $color-grey-light-extra;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-  
-    ul {
-        margin: auto;
-        li {
-            a {
-                display: block;
-                &:hover img {
-                    filter: invert(77%) sepia(16%) saturate(4642%) hue-rotate(141deg) brightness(97%) contrast(79%);
-                }
-            }
-        }
-    }
-}
-  
-img.share-button--icon {
-    width: 32px !important;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: $color-grey-light-extra;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  ul {
     margin: auto;
+
+    li {
+      a {
+        display: block;
+
+        &:hover img {
+          filter: invert(77%) sepia(16%) saturate(4642%) hue-rotate(141deg) brightness(97%) contrast(79%);
+        }
+      }
+    }
+  }
 }
-  
+
+img.share-button--icon {
+  width: 32px !important;
+  margin: auto;
+}
+
 .share-button--button {
-    border: none;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
 }
+
 .share-links-open {
-    max-height: max-content;
+  max-height: max-content;
 }

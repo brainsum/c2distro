@@ -466,7 +466,7 @@
 }
 .field--name-field-paragraphs .field__item .background-color--white.paragraph--type--view .paragraph--inner .block-views .block-inner .title-holder span {
   margin-left: 0;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.6rem;
   color: white;
   -webkit-text-decoration: none solid white;
@@ -489,7 +489,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #12284c;

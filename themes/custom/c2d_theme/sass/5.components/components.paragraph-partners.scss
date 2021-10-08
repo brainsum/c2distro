@@ -68,7 +68,7 @@
             width: 20rem;
             height: 20rem;
             overflow: hidden;
-            border: 2px solid $color-turquoise;
+            border: 2px solid $color-secondary;
             border-radius: 17rem;
 
             &:hover {
@@ -84,7 +84,7 @@
           font-weight: 700;
 
           &:hover {
-            color: $color-turquoise;
+            color: $color-secondary;
           }
         }
 
@@ -125,7 +125,7 @@
             &:hover,
             &:focus,
             &:active {
-              color: $color-primary;
+              color: $body-font-color;
             }
           }
         }

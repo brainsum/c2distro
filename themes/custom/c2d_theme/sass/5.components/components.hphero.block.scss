@@ -1,93 +1,99 @@
 @import "../_index";
 
 .region.region-top {
-    position: relative;
-    top: 0;
+  position: relative;
+  top: 0;
+  @include breakpoint(medium) {
+    margin-top: -12rem;
+  }
+
+  #block-hphero {
+    display: flex;
+    justify-content: center;
+    height: 66.7rem;
+    width: 100%;
     @include breakpoint(medium) {
-        margin-top: -12rem;
+      height: auto;
+      width: auto;
     }
-    #block-hphero {
-        display: flex;
-        justify-content: center;
+
+    article.media.media--type-image.media--view-mode-hp-hero {
+      height: 66.7rem;
+      @include breakpoint(medium) {
+        height: auto;
+      }
+
+      .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
         height: 66.7rem;
-        width: 100%;
         @include breakpoint(medium) {
-            height: auto;
-            width: auto;
+          height: auto;
         }
 
-        article.media.media--type-image.media--view-mode-hp-hero {
+        picture {
+          height: 66.7rem;
+          @include breakpoint(medium) {
+            height: auto;
+          }
+
+          img {
+            object-fit: cover;
             height: 66.7rem;
             @include breakpoint(medium) {
-                height: auto;
+              object-fit: initial;
+              height: auto;
             }
-            .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
-                height: 66.7rem;
-                @include breakpoint(medium) {
-                    height: auto;
-                }
-                picture {
-                    height: 66.7rem;
-                    @include breakpoint(medium) {
-                        height: auto;
-                    }
-                    img {
-                        object-fit: cover;
-                        height: 66.7rem;
-                        @include breakpoint(medium) {
-                            object-fit: initial;
-                            height: auto;
-                        }
-                    }
-                }
-            }
+          }
         }
-
-        .hero-text {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: transparent;
-            max-width: 60rem;
-            margin: 0 auto;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            @include breakpoint(medium) {
-                margin: 6rem auto 0;
-            }
-    
-            .hero-text-container-title {
-                font-family: Montserrat;
-                font-size: 36px;
-                color: #ffffff;
-                text-decoration: none solid rgb(255, 255, 255);
-                line-height: 40px;
-                text-align: center;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.1rem;
-                margin-bottom: 1rem;
-                @include breakpoint(medium) {
-                    font-size: 40px;
-                }
-            }
-            .hero-text-container-description {
-                font-family: Open Sans;
-                font-size: 18px;
-                color: #ffffff;
-                text-decoration: none solid rgb(255, 255, 255);
-                line-height: 30px;
-                text-align: center;
-            }
-            .flex-centered {
-                margin-top: 3rem;
-            }
-        }
+      }
     }
+
+    .hero-text {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: transparent;
+      max-width: 60rem;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      @include breakpoint(medium) {
+        margin: 6rem auto 0;
+      }
+
+      .hero-text-container-title {
+        font-family: Montserrat;
+        font-size: 36px;
+        color: #ffffff;
+        text-decoration: none solid rgb(255, 255, 255);
+        line-height: 40px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+        @include breakpoint(medium) {
+          font-size: 40px;
+        }
+      }
+
+      .hero-text-container-description {
+        font-family: Open Sans;
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none solid rgb(255, 255, 255);
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .flex-centered {
+        margin-top: 3rem;
+      }
+    }
+  }
 }

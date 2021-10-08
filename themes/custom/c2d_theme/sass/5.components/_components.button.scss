@@ -12,9 +12,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .bordered-button {
   @include bordered-button;
 }
+
 .bordered-button-blue {
   @include bordered-button-blue;
 }
@@ -24,6 +26,7 @@
     .social-icon {
       margin-left: .8rem;
     }
+
     .bordered-button {
       margin-left: 2.8rem;
       @include breakpoint(medium down) {
@@ -34,6 +37,6 @@
 }
 
 .donate-button {
-  background-color: $color-turquoise;
+  background-color: $color-secondary;
   color: $color-white;
 }

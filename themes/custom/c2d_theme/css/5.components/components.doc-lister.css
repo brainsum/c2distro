@@ -469,7 +469,7 @@
  *   }
  */
 /*:root {
-  --color-font: #011e41;
+  --color-font: #12284c;
   --color-body: white;
 }*/
 /**
@@ -501,7 +501,7 @@ html {
 
 body {
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #011e41;
+  color: #12284c;
   background-color: #efefef;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -520,10 +520,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #011e41;
+  color: #12284c;
 }
 a:hover {
-  color: black;
+  color: #03070e;
 }
 a:focus {
   outline: 0;
@@ -658,37 +658,33 @@ select::-ms-expand {
  * - Define Font-families
  * - Define Typography-related global variables
  */
-h1.page-title {
-  font-size: 4rem;
-}
-
 .view-header {
-  margin-bottom: 60px;
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: #0f1d40;
+  margin-bottom: 6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
 }
 
 .media-wrapper {
   clear: both;
   width: 100%;
-  max-height: 362px;
-  background-color: white;
-  padding: 41px 62px;
-  margin-bottom: 30px;
+  max-height: 36.2rem;
+  background-color: #ffffff;
+  padding: 4.1rem 6.2rem;
+  margin-bottom: 3rem;
   display: flex;
 }
 .media-wrapper.highlighted {
-  box-shadow: inset 0px 0px 0px 5px #26c9de;
+  box-shadow: inset 0 0 0 0.5rem #26c9de;
 }
 .media-wrapper .left {
   display: inline-grid;
-  max-width: 206px;
-  margin-right: 47px;
+  max-width: 21rem;
+  margin-right: 4.7rem;
 }
 .media-wrapper .left .field--name-thumbnail {
-  max-width: 206px;
-  max-height: 450px;
+  max-width: 20.6rem;
+  max-height: 28.9rem;
 }
 .media-wrapper .left .field--name-thumbnail img {
   width: 100%;
@@ -698,22 +694,22 @@ h1.page-title {
   display: inline-grid;
 }
 .media-wrapper .right .title {
-  width: 1010px;
-  font-family: "Montserrat";
-  font-size: 30px;
-  color: #000000;
-  font-weight: bold;
-  line-height: 32px;
+  width: 101rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 3.2rem;
 }
 .media-wrapper .right .subtitle {
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .media-wrapper .right .subtitle .created {
   display: inline-block;
-  font-family: "Open Sans";
-  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
   color: #757575;
   -webkit-text-decoration: none solid #757575;
           text-decoration: none solid #757575;
@@ -725,48 +721,48 @@ h1.page-title {
   display: inline-block;
 }
 .media-wrapper .right .subtitle .category a {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #26c9de;
-  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-text-decoration: none solid #26c9de;
           text-decoration: none solid #26c9de;
 }
 .media-wrapper .right .field--name-field-lead {
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: #0f1d40;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
   margin-bottom: 10px;
 }
 .media-wrapper .right .field--name-field-tags {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .media-wrapper .right .field--name-field-tags .field__label {
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: #0f1d40;
-  -webkit-text-decoration: none solid #0f1d40;
-          text-decoration: none solid #0f1d40;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
 }
 .media-wrapper .right .field--name-field-tags .field__items {
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 .media-wrapper .right .field--name-field-tags .field__item {
   display: inline-block;
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: #0f1d40;
-  -webkit-text-decoration: underline solid #0f1d40;
-          text-decoration: underline solid #0f1d40;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  -webkit-text-decoration: underline solid #12284c;
+          text-decoration: underline solid #12284c;
 }
 .media-wrapper .right .read-more {
-  font-family: "Open Sans";
-  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
   color: #26c9de;
   -webkit-text-decoration: none solid #26c9de;
           text-decoration: none solid #26c9de;
   font-style: italic;
-  font-weight: bold;
-  margin-top: 26px;
+  font-weight: 700;
+  margin-top: 2.6rem;
 }
 
 .pager {

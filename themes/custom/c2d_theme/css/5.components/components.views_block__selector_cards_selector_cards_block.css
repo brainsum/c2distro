@@ -474,7 +474,7 @@
   min-height: 23.5rem;
 }
 .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row .views-col:nth-child(odd) {
-  background-color: #f5f5f5;
+  background-color: #f6f6f6;
 }
 .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row .views-col:nth-child(even) {
   background-color: white;
@@ -503,7 +503,7 @@
 }
 .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row .views-col a.selector-card h4 {
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   margin: 6.7rem 2rem 1.2rem;
   -webkit-text-decoration: none solid #12284c;
@@ -517,10 +517,10 @@
 }
 .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row .views-col a.selector-card p {
   color: #12284c;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  -webkit-text-decoration: none solid #f5f5f5;
-          text-decoration: none solid #f5f5f5;
+  -webkit-text-decoration: none solid #f6f6f6;
+          text-decoration: none solid #f6f6f6;
   line-height: 3rem;
   margin: 0 2rem 4.9rem;
   max-width: 33.5rem;
@@ -533,14 +533,14 @@
 }
 @media print, screen and (min-width: 48em) {
   .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row:nth-child(odd) .views-col:nth-child(odd) {
-    background-color: #f5f5f5;
-    border: solid 3px #f5f5f5;
+    background-color: #f6f6f6;
+    border: solid 3px #f6f6f6;
   }
 }
 @media print, screen and (min-width: 48em) {
   .block-views-blockselector-cards-selector-cards-block .view-content .views-view-grid .views-row:nth-child(even) .views-col:nth-child(even) {
-    background-color: #f5f5f5;
-    border: solid 3px #f5f5f5;
+    background-color: #f6f6f6;
+    border: solid 3px #f6f6f6;
   }
 }
 @media print, screen and (min-width: 48em) {
@@ -562,7 +562,7 @@
   max-width: 22rem;
   color: #12284c;
   margin: 0 auto;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;

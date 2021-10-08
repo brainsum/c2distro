@@ -29,7 +29,7 @@
       }
       &:hover {
         opacity: 1;
-        color: $color-turquoise;
+        color: $color-secondary;
       }
     }
   }
@@ -65,11 +65,11 @@
     @include flex-wrap(wrap);
     .property-label {
       padding: .5rem 1rem;
-      background-color: $color-grey;
+      background-color: $background-grey;
       margin-right: .5rem;
       margin-bottom: .5rem;
       &.is-active {
-        background-color: $color-turquoise;
+        background-color: $color-secondary;
         color: $color-white;
         font-weight: 700;
         span {
