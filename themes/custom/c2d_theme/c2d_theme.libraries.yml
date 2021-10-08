@@ -135,3 +135,8 @@ views_block__news_lister_block:
   css:
     theme:
       css/5.components/components.views_block__news_lister_block.css: {}
+entity.contact_form.canonical:
+  css:
+    theme:
+      css/5.components/components.entity.contact_form.canonical.css: {}
+      css/5.components/components.h1.page_title.css: {}
