@@ -3,9 +3,32 @@
 @import "../3.base/base.typography";
 @import "../1.settings/settings.all";
 
+.path-resources {
+  .block-page-title-block .block-inner {
+    @include width-1390;
+  }
+
+  .page-title {
+    margin: 6rem 0 3rem;
+    font-size: 3rem;
+    line-height: 1.16;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 2.2rem;
+    }
+  }
+}
+
 .block-facet-blocktags-of-document {
-  max-width: 1391px;
-  margin: 40px auto;
+  @include width-1390;
+  @include clearfix;
+
+  margin: 3rem auto 2.3rem;
+
+  @include breakpoint(mobile) {
+    margin: 4rem auto 3.5rem;
+  }
+
   .facet-item {
     float: left;
     display: block;
@@ -39,8 +62,7 @@
 }
 
 .views-element-container {
-  max-width: 1391px;
-  margin: 0 auto;
+  @include width-1390;
 }
 .view-search {
   clear: both;
@@ -48,28 +70,52 @@
 }
 
 .block-views-exposed-filter-blocksearch-resources {
-  max-width: 1391px;
-  margin: 0 auto;
+  @include width-1390;
+
+  .form--inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include breakpoint(mobile) {
+      flex-wrap: nowrap;
+      align-items: flex-end;
+    }
+  }
 
   .form-type-textfield {
-    float: left;
-    max-width: 411px;
+    @include breakpoint(mobile) {
+      float: left;
+      max-width: 411px;
+    }
+
     input {
       background-color: white;
-      padding-left: 23px;
-      max-width: 411px;
       border: 1px solid $border-color;
       background-image: url('../../images/dist/icons/search.svg');
       background-repeat: no-repeat;
       background-position: 98% center;
       background-size: 22px;
       height: 48px;
+
+      @include breakpoint(mobile) {
+        padding-left: 23px;
+      }
     }
   }
   .form-item-category {
-    float: left;
-    max-width: 386px;
-    margin-left: 27px;
+    margin-top: 2.1rem;
+
+    @include breakpoint(mobile) {
+      max-width: 38.6rem;
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+
+    @include breakpoint(medium) {
+      margin-left: 2.7rem;
+    }
+
     select {
       background-color: white;
       border: 1px solid #dadada;
@@ -77,14 +123,25 @@
       background-image: url('../../images/dist/icons/chevron-down.svg');
     }
   }
-  .form-actions {
-    margin-top: 26px;
-    margin-left: 27px;
-    float: left;
-  }
-}
 
-.page-title {
-  max-width: 1391px;
-  margin: 6rem auto;
+  .form-actions {
+    width: 100%;
+    margin-top: 2.6rem;
+
+    @include breakpoint(mobile) {
+      width: auto;
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+
+    @include breakpoint(medium) {
+      margin-left: 2.7rem;
+    }
+  }
+
+  input.form-submit {
+    @include breakpoint(mobile down) {
+      width: 100%;
+    }
+  }
 }

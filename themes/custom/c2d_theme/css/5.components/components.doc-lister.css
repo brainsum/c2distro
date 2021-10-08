@@ -668,7 +668,6 @@ select::-ms-expand {
 .media-wrapper {
   clear: both;
   width: 100%;
-  max-height: 36.2rem;
   background-color: #ffffff;
   padding: 4.1rem 6.2rem;
   margin-bottom: 3rem;
@@ -694,7 +693,6 @@ select::-ms-expand {
   display: inline-grid;
 }
 .media-wrapper .right .title {
-  width: 101rem;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: #000;

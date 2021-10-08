@@ -658,9 +658,41 @@ select::-ms-expand {
  * - Define Font-families
  * - Define Typography-related global variables
  */
+.path-resources .block-page-title-block .block-inner {
+  max-width: 139rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+}
+.path-resources .page-title {
+  margin: 6rem 0 3rem;
+  font-size: 3rem;
+  line-height: 1.16;
+}
+@media print, screen and (min-width: 23.5em) {
+  .path-resources .page-title {
+    margin-bottom: 2.2rem;
+  }
+}
+
 .block-facet-blocktags-of-document {
-  max-width: 1391px;
-  margin: 40px auto;
+  max-width: 139rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+  margin: 3rem auto 2.3rem;
+}
+.block-facet-blocktags-of-document:before, .block-facet-blocktags-of-document:after {
+  content: " ";
+  display: table;
+}
+.block-facet-blocktags-of-document:after {
+  clear: both;
+}
+@media print, screen and (min-width: 23.5em) {
+  .block-facet-blocktags-of-document {
+    margin: 4rem auto 3.5rem;
+  }
 }
 .block-facet-blocktags-of-document .facet-item {
   float: left;
@@ -694,8 +726,10 @@ select::-ms-expand {
 }
 
 .views-element-container {
-  max-width: 1391px;
-  margin: 0 auto;
+  max-width: 139rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
 }
 
 .view-search {
@@ -704,17 +738,30 @@ select::-ms-expand {
 }
 
 .block-views-exposed-filter-blocksearch-resources {
-  max-width: 1391px;
-  margin: 0 auto;
+  max-width: 139rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
 }
-.block-views-exposed-filter-blocksearch-resources .form-type-textfield {
-  float: left;
-  max-width: 411px;
+.block-views-exposed-filter-blocksearch-resources .form--inline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media print, screen and (min-width: 23.5em) {
+  .block-views-exposed-filter-blocksearch-resources .form--inline {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+}
+@media print, screen and (min-width: 23.5em) {
+  .block-views-exposed-filter-blocksearch-resources .form-type-textfield {
+    float: left;
+    max-width: 411px;
+  }
 }
 .block-views-exposed-filter-blocksearch-resources .form-type-textfield input {
   background-color: white;
-  padding-left: 23px;
-  max-width: 411px;
   border: 1px solid #d4d4d4;
   background-image: url("../../images/dist/icons/search.svg");
   background-repeat: no-repeat;
@@ -722,10 +769,25 @@ select::-ms-expand {
   background-size: 22px;
   height: 48px;
 }
+@media print, screen and (min-width: 23.5em) {
+  .block-views-exposed-filter-blocksearch-resources .form-type-textfield input {
+    padding-left: 23px;
+  }
+}
 .block-views-exposed-filter-blocksearch-resources .form-item-category {
-  float: left;
-  max-width: 386px;
-  margin-left: 27px;
+  margin-top: 2.1rem;
+}
+@media print, screen and (min-width: 23.5em) {
+  .block-views-exposed-filter-blocksearch-resources .form-item-category {
+    max-width: 38.6rem;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+@media print, screen and (min-width: 48em) {
+  .block-views-exposed-filter-blocksearch-resources .form-item-category {
+    margin-left: 2.7rem;
+  }
 }
 .block-views-exposed-filter-blocksearch-resources .form-item-category select {
   background-color: white;
@@ -734,13 +796,24 @@ select::-ms-expand {
   background-image: url("../../images/dist/icons/chevron-down.svg");
 }
 .block-views-exposed-filter-blocksearch-resources .form-actions {
-  margin-top: 26px;
-  margin-left: 27px;
-  float: left;
+  width: 100%;
+  margin-top: 2.6rem;
 }
-
-.page-title {
-  max-width: 1391px;
-  margin: 6rem auto;
+@media print, screen and (min-width: 23.5em) {
+  .block-views-exposed-filter-blocksearch-resources .form-actions {
+    width: auto;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+@media print, screen and (min-width: 48em) {
+  .block-views-exposed-filter-blocksearch-resources .form-actions {
+    margin-left: 2.7rem;
+  }
+}
+@media print, screen and (max-width: 47.99875em) {
+  .block-views-exposed-filter-blocksearch-resources input.form-submit {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=../../maps/5.components/components.facets.css.map */
