@@ -32,8 +32,8 @@ third_party_settings:
         - field_description
         - field_name_as_author
         - field_attachment
-      parent_name: ''
-      weight: 0
+      parent_name: group_form
+      weight: 4
       format_type: html_element
       region: content
       format_settings:
@@ -52,8 +52,8 @@ third_party_settings:
     group_right:
       children:
         - message
-      parent_name: ''
-      weight: 1
+      parent_name: group_form
+      weight: 5
       format_type: html_element
       region: content
       format_settings:
@@ -69,13 +69,29 @@ third_party_settings:
         effect: none
         speed: fast
       label: Right
+    group_form:
+      children:
+        - group_left
+        - group_right
+        - field_terms_and_conditions
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: form-container
+        show_empty_fields: false
+        required_fields: false
+      label: Form
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us
 mode: default
 content:
   field_attachment:
-    weight: 10
+    weight: 11
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -133,7 +149,7 @@ content:
     type: string_textfield
     region: content
   field_terms_and_conditions:
-    weight: 3
+    weight: 6
     settings:
       display_label: true
     third_party_settings: {  }
