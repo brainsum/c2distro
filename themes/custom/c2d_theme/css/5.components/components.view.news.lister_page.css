@@ -453,6 +453,10 @@
   content: unset !important;
 }
 
+.extra-space {
+  padding: 15px 1px;
+}
+
 h1.page-title {
   padding: 0 2rem;
 }
@@ -500,6 +504,8 @@ h1.page-title {
   background-color: white;
   margin: 0 24px 70px 24px;
   transition: 0.5s;
+  position: relative;
+  padding-bottom: 7.3rem;
 }
 .view.lister-page .view-content .views-row:hover {
   box-shadow: 0 0 15px lightgray;
@@ -536,7 +542,7 @@ h1.page-title {
   height: 15px;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-title {
-  margin: 9px 25px 3.9rem;
+  margin: 9px 25px 2.4rem;
   color: #12284c;
   font-family: Montserrat;
   font-size: 1.8rem;
@@ -554,8 +560,10 @@ h1.page-title {
   color: #26c9de;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-view-node {
-  padding: 0 20px 45px 25px;
+  padding: 0 20px 0 25px;
   transition: 0.5s;
+  bottom: 38px;
+  position: absolute;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;

@@ -5,6 +5,10 @@
     content: unset !important;
 }
 
+.extra-space {
+    padding: 15px 1px;
+}
+
 h1.page-title {
     padding: 0 2rem;
     @include breakpoint(medium) {
@@ -48,6 +52,8 @@ h1.page-title {
             background-color: white;
             margin: 0 24px 70px 24px;
             transition: .5s;
+            position: relative;
+            padding-bottom: 7.3rem;;
             &:hover {
                 box-shadow: 0 0 15px lightgray;
             }
@@ -87,7 +93,7 @@ h1.page-title {
             }
 
             .views-field.views-field-title {
-                margin: 9px 25px 3.9rem;
+                margin: 9px 25px 2.4rem;
                 color: $color-blue-gray;
                 font-family: Montserrat;
                 font-size: 1.8rem;
@@ -105,8 +111,10 @@ h1.page-title {
             }
 
             .views-field.views-field-view-node {
-                padding: 0 20px 45px 25px;
+                padding: 0 20px 0 25px;
                 transition: .5s;
+                bottom: 38px;
+                position: absolute;
                 a {
                     transition: .3s;
                     color: $color-blue-gray;
