@@ -25,15 +25,15 @@
   }
   a.iw-modal__to-contact {
     @include transition(all, .2s);
-    border: 0.2rem solid $color-turquoise;
+    border: 0.2rem solid $color-secondary;
     display: inline-block;
     font-size: 1.3rem;
     padding: .5rem 1.5rem;
     margin-top: 2.5rem;
     font-weight: 700;
     &:hover {
-      border-color: $color-blue-darkest;
-      background-color: $color-blue-darkest;
+      border-color: $body-font-color;
+      background-color: $body-font-color;
       color: $color-white;
     }
   }

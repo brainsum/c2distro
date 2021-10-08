@@ -1,60 +1,68 @@
 @import '../index';
 
 .field--name-field-paragraphs {
-    .field__item {
-        .background-color--white.paragraph--type--view {
-            background-color: white;
-            .paragraph--inner {
-                width: 100%;
-                max-width: unset;
-                padding: 0;
-                .block-views {
-                    .block-inner {
-                        max-width: unset;
-                        padding: 0;
-                        background-color: $color-grey-light-extra;
-                        .title-holder {
-                            max-width: 115.7rem;
-                            span {
-                                margin-left: 0;
-                                font-family: Montserrat;
-                                font-size: 3.6rem;
-                                color: white;
-                                text-decoration: none solid rgb(255, 255, 255);
-                                line-height: 3.4rem;
-                                box-shadow: 2.2rem 0 0 $color-blue-gray, -1.9rem 0 0 $color-blue-gray;
-                            }
-                        }
-                        .view.lister-page {
-                            .view-content {
-                                padding-top: 10.2rem;
-                            }
-                            .more-link {
-                                text-align: center;
-                                padding-bottom: 4rem;
-                                a {
-                                    width: 261px;
-                                    height: 47px;
-                                    border: solid 2px $color-turquoise;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    margin: 0 auto;
-                                    font-family: Montserrat;
-                                    font-size: 16px;
-                                    font-weight: 600;
-                                    color: $color-blue-gray;
-                                    transition: all,0.2s;
-                                    &:hover {
-                                        background-color: $color-turquoise;
-                                        color: white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+  .field__item {
+    .background-color--white.paragraph--type--view {
+      background-color: white;
+
+      .paragraph--inner {
+        width: 100%;
+        max-width: unset;
+        padding: 0;
+
+        .block-views {
+          .block-inner {
+            max-width: unset;
+            padding: 0;
+            background-color: $color-grey-light-extra;
+
+            .title-holder {
+              max-width: 115.7rem;
+
+              span {
+                margin-left: 0;
+                font-family: $font-montserrat;
+                font-size: 3.6rem;
+                color: white;
+                text-decoration: none solid rgb(255, 255, 255);
+                line-height: 3.4rem;
+                box-shadow: 2.2rem 0 0 $body-font-color, -1.9rem 0 0 $body-font-color;
+              }
             }
+
+            .view.lister-page {
+              .view-content {
+                padding-top: 10.2rem;
+              }
+
+              .more-link {
+                text-align: center;
+                padding-bottom: 4rem;
+
+                a {
+                  width: 261px;
+                  height: 47px;
+                  border: solid 2px $color-secondary;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0 auto;
+                  font-family: $font-montserrat;
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: $body-font-color;
+                  transition: all, 0.2s;
+
+                  &:hover {
+                    background-color: $color-secondary;
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 }

@@ -497,7 +497,7 @@
  *   }
  */
 /*:root {
-  --color-font: #011e41;
+  --color-font: #12284c;
   --color-body: white;
 }*/
 /**
@@ -529,7 +529,7 @@ html {
 
 body {
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #011e41;
+  color: #12284c;
   background-color: #efefef;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -548,10 +548,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #011e41;
+  color: #12284c;
 }
 a:hover {
-  color: black;
+  color: #03070e;
 }
 a:focus {
   outline: 0;

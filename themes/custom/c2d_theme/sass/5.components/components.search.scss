@@ -94,7 +94,7 @@
 .node {
   .view-search & {
     padding: 3rem;
-    color: $color-blue-darkest2;
+    color: $body-font-color;
     background: #fff;
 
     @include breakpoint(mobile) {

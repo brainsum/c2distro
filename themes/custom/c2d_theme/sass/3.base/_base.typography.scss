@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: $font-family--body;
-  color: $color-blue-darkest;
+  color: $body-font-color;
   background-color: $color-grey-light;
   font-size: $global-font-size;
   line-height: $global-lineheight;
@@ -25,16 +25,16 @@ body {
 }
 
 ::selection {
-  background-color: $color-turquoise;
+  background-color: $color-secondary;
   color: white;
 }
 
 a {
   text-decoration: none;
-  color: $color-primary;
+  color: $body-font-color;
 
   &:hover {
-    color: darken($color-primary, 15%);
+    color: darken($body-font-color, 15%);
   }
   &:focus {
     outline: 0;
@@ -94,7 +94,7 @@ select {
 .field--type-text-long,
 .field--name-body {
   a {
-    color: $color-turquoise;
+    color: $color-secondary;
     text-decoration: underline;
     &:hover {
       text-decoration: none;

@@ -35,14 +35,14 @@ article {
         }
       }
       .created-time {
-        color: $color-blue-gray;
+        color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
         font-family: $font-open;
         text-decoration: none solid rgb(18, 40, 76);
         line-height: 30px;
         .content-type {
-            color: $color-turquoise-light;
+            color: $color-secondary;
         }
       }
       .location {
@@ -50,7 +50,7 @@ article {
       }
       .field--name-field-location {
         display: flex;
-        color: $color-blue-gray;
+        color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
         font-family: $font-open;

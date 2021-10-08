@@ -57,7 +57,7 @@
           width: 20%;
         }
         a:hover {
-          color: $color-turquoise
+          color: $color-secondary;
         }
       }
       .view-grouping-content {
@@ -85,7 +85,7 @@
           margin-bottom: 5px;
           display: inline-block;
           &:hover {
-            color: $color-turquoise
+            color: $color-secondary;
           }
         }
       }
@@ -253,7 +253,7 @@
         margin-bottom: 4rem;
         display: inline-block;
         &:hover {
-          color: $color-turquoise
+          color: $color-secondary;
         }
       }
       .field {

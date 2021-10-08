@@ -471,13 +471,12 @@ h1.page-title {
 }
 
 .view.lister-page .view-header .second-title {
-  padding: 0 0 4rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
   font-size: 3rem;
   line-height: 4.9rem;
-  font-family: Montserrat;
-  color: #0f1d40;
+  font-family: "Montserrat", sans-serif;
+  color: #12284c;
   padding: 0 2rem;
 }
 @media print, screen and (min-width: 48em) {
@@ -514,7 +513,7 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
   padding: 1.5rem 2rem 1rem 2.5rem;
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -527,7 +526,7 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-field-location {
   padding: 0 20px 17px 20px;
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -544,11 +543,11 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-title {
   margin: 9px 25px 2.4rem;
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
-  -webkit-text-decoration: none solid #0f1d40;
-          text-decoration: none solid #0f1d40;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
   line-height: 2.2rem;
   width: 190px;
   min-height: 90px;
@@ -568,7 +567,7 @@ h1.page-title {
 .view.lister-page .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: italic;
@@ -583,7 +582,7 @@ h1.page-title {
 }
 .view.lister-page .view-empty .no-results {
   color: #12284c;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
 }

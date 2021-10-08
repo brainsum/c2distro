@@ -63,8 +63,8 @@
             }
 
             &.is-active {
-              border-bottom: 2px solid $color-turquoise;
-              color: $color-turquoise;
+              border-bottom: 2px solid $color-secondary;
+              color: $color-secondary;
             }
           }
         }
@@ -167,7 +167,7 @@
           padding: 0.5rem 2rem 0.5rem 1rem;
           border: 0;
           border-radius: 0;
-          background-color: $color-turquoise;
+          background-color: $color-secondary;
           background-image: none;
           box-shadow: none;
           color: $color-white;
@@ -176,9 +176,7 @@
           .search-choice-close {
             top: 0.6rem;
             right: 0.3rem;
-            background: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/close--white.svg");
-            background-repeat: no-repeat;
-            background-position: center;
+            background: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/close--white.svg") no-repeat center;
             background-size: 1.7rem;
           }
         }
@@ -234,7 +232,7 @@
       min-width: 50%;
       margin-bottom: 1rem;
       padding: 1.1rem 1.5rem;
-      background-color: $color-grey;
+      background-color: $background-grey;
       font-size: 1.6rem;
       font-weight: 700;
       cursor: pointer;
@@ -247,7 +245,7 @@
     }
 
     input:checked + label {
-      background-color: $color-turquoise;
+      background-color: $color-secondary;
       color: $color-white;
     }
 
@@ -334,9 +332,9 @@
         right: -2.5rem;
         width: 1.6rem;
         height: 1.6rem;
-        border: 1px solid $color-turquoise;
+        border: 1px solid $color-secondary;
         border-radius: 1rem;
-        color: $color-turquoise;
+        color: $color-secondary;
         font-size: 1.1rem;
         line-height: 1.7rem;
         text-align: center;
@@ -353,7 +351,7 @@
         padding: 10px;
         background-color: #fff;
         box-shadow: 0 0 20px #00000047;
-        font-family: "Open Sans", sans-serif;
+        font-family: $font-open;
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 18px;
@@ -399,7 +397,7 @@
           margin-right: 0.5rem;
           margin-bottom: 0.5rem;
           padding: 0 2.5rem 0 0.7rem;
-          background-color: $color-turquoise;
+          background-color: $color-secondary;
           color: $color-white;
           font-size: 1.4rem;
           cursor: pointer;
@@ -430,7 +428,7 @@
 
       a {
         margin: 0.3rem 0.5rem;
-        color: $color-turquoise;
+        color: $color-secondary;
         font-weight: 700;
         text-decoration: underline;
       }
@@ -470,7 +468,7 @@
       cursor: pointer;
 
       &.active {
-        color: $color-turquoise;
+        color: $color-secondary;
       }
 
       &:after {
@@ -495,7 +493,7 @@
       cursor: pointer;
 
       &.active {
-        color: $color-turquoise;
+        color: $color-secondary;
       }
 
       &:after {
@@ -564,19 +562,19 @@
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
       padding: 0.5rem 1rem;
-      background-color: $color-grey;
+      background-color: $background-grey;
       font-size: 1.4rem;
       cursor: pointer;
     }
 
     input:checked + label {
-      background-color: $color-turquoise;
+      background-color: $color-secondary;
       color: $color-white;
       font-weight: 700;
     }
 
     input:checked ~ label {
-      background-color: $color-turquoise;
+      background-color: $color-secondary;
       color: $color-white;
       font-weight: 700;
     }

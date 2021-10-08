@@ -17,8 +17,8 @@
     }
   }
   &.background-color {
-    &--white { background-color: $color-white; }
-    &--silver { background-color: $color-grey; }
+    &--white { background-color: $background-white; }
+    &--silver { background-color: $background-grey; }
     &--blue { background-color: $color-blue-light; }
   }
   &.padding {

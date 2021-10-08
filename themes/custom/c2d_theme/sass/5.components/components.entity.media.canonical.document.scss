@@ -19,7 +19,7 @@
   .block-inner {
     margin-left: 9.2rem;
     h1.page-title {
-      color: $color-blue-gray;
+      color: $body-font-color;
       text-decoration: none solid rgb(18, 40, 76);
       line-height: 5rem !important;
       max-width: 110rem;
@@ -45,13 +45,12 @@ article .media__content {
       align-items: center;
       flex-wrap: wrap;
       .created-time {
-        color: $color-blue-gray;
+        color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
-        font-size: 18px;
-        font-family: Open Sans;
-        text-decoration: none solid rgb(18, 40, 76);
-        line-height: 30px;
+        font-family: $font-open;
+        text-decoration: none solid $body-font-color;
+        line-height: 3rem;
         width: 100%;
         @include breakpoint(medium) {
           width: auto;
@@ -62,15 +61,15 @@ article .media__content {
         @include breakpoint(medium) {
           display: block;
           padding: 0 0.7rem;
-          font-size: 18px;
+          font-size: 1.8rem;
         }
       }
       .category-link {
         a {
-          font-family: Open Sans;
+          font-family: $font-open;
           font-size: 18px;
-          color: $color-turquoise;
-          text-decoration: none solid $color-turquoise;
+          color: $color-secondary;
+          text-decoration: none solid $color-secondary;
           line-height: 30px;
           font-weight: 700;
         }
@@ -94,22 +93,22 @@ article .media__content {
         @include breakpoint(medium) {
           width: auto;
         }
-  
+
       }
     }
     .content-body-text {
       max-width: 81.4rem;
       padding-left: 0;
       padding-bottom: 8rem;
-      font-family: Open Sans;
+      font-family: $font-open;
       font-size: 18px;
-      color: black;
+      color: #000;
       @include breakpoint(medium) {
         margin-left: 3.3rem;
       }
       a.text-black {
-        color: $color-blue-gray;
-        font-family: Open Sans;
+        color: $body-font-color;
+        font-family: $font-open;
         font-size: 1.8rem;
       }
     }
@@ -127,7 +126,7 @@ article .media__content {
     }
     .content-body-text--field-media-file {
       width: 18.7rem;
-      font-family: Open Sans;
+      font-family: $font-open;
       height: 4.7rem;
       a {
         font-size: 1.6rem !important;
@@ -139,27 +138,27 @@ article .media__content {
     .field--name-field-custom-text {
       /* lorem@ipsum.com */
       font-size: 1.6rem;
-      color: $color-blue-gray;
+      color: $body-font-color;
       line-height: 30px;
       padding: 3.4rem 0;
-      font-family: Open Sans;
-      text-decoration: none solid rgb(15, 29, 64);
+      font-family: $font-open;
+      text-decoration: none solid $body-font-color;
       strong {
         font-weight: 700;
-        font-family: Open Sans;
+        font-family: $font-open;
         font-size: 1.6rem;
       }
       p {
         margin: 0;
-        font-family: Open Sans;
+        font-family: $font-open;
         font-size: 1.6rem;
       }
       a {
-        font-family: Open Sans;
+        font-family: $font-open;
         font-size: 1.6rem;
-        color: $color-blue-gray;;
-        text-decoration: underline solid rgb(15, 29, 64);
-        line-height: 30px;
+        color: $body-font-color;
+        text-decoration: underline solid $body-font-color;
+        line-height: 3rem;
       }
     }
   }

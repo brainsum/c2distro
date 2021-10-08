@@ -27,7 +27,7 @@
         font-size: 1.6rem;
         font-family: $font-open;
         width: 100%;
-        color: $color-blue-darkest;
+        color: $body-font-color;
         position: relative;
         line-height: 2.2rem;
         @include breakpoint(mobile down) {
@@ -40,7 +40,7 @@
             content: '';
             height: .2rem;
             width: calc(100% - 66px);
-            background-color: $color-turquoise;
+            background-color: $color-secondary;
             display: block;
           }
         }
@@ -67,7 +67,7 @@
           line-height: 2.2rem;
           position: relative;
           &:hover {
-            color: $color-turquoise;
+            color: $color-secondary;
           }
           &:before {
             content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/download.svg");
@@ -94,13 +94,13 @@
         }
         &:hover {
           h3 {
-            color: $color-turquoise;
+            color: $color-secondary;
           }
         }
         &.active h3 {
-          color: $color-turquoise;
+          color: $color-secondary;
           background-color: $color-white;
-          border-left-color: $color-turquoise;
+          border-left-color: $color-secondary;
         }
       }
       .group-holder {

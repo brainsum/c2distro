@@ -454,11 +454,11 @@
   margin: 0 auto;
 }
 .paragraph--type--cta .field--name-field-title {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
-  color: #011e41;
-  -webkit-text-decoration: none solid #011e41;
-          text-decoration: none solid #011e41;
+  color: #12284c;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
   text-align: center;
   font-weight: 700;
   margin-bottom: 5rem;
@@ -467,11 +467,11 @@
   margin-bottom: 4rem;
 }
 .paragraph--type--cta .field--name-field-text p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  color: #011e41;
-  -webkit-text-decoration: none solid #011e41;
-          text-decoration: none solid #011e41;
+  color: #12284c;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
   line-height: 30px;
   text-align: center;
 }

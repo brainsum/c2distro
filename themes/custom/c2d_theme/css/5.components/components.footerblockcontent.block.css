@@ -481,7 +481,7 @@ footer .footer-block-body-item {
 @media print, screen and (min-width: 48em) {
   footer .footer-block-body-item {
     width: auto;
-    flex: 1 1 0px;
+    flex: 1 1 0;
     padding: 0 3rem;
   }
 }
@@ -496,7 +496,7 @@ footer .footer-block-body-item {
   }
 }
 footer .footer-block-body-item .footer-title {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
@@ -510,7 +510,7 @@ footer .footer-block-body-item .footer-title {
   }
 }
 footer .footer-block-body-item p, footer .footer-block-body-item a {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
@@ -535,7 +535,7 @@ footer .footer-block-footer-content {
   max-width: 113.5rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
