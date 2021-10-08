@@ -109,7 +109,7 @@ function c2distro_core_block_content_update(EntityInterface $entity) {
  * Hide/show conditionally fields for Contact us form.
  */
 function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state) {
-  //Hide/show conditionally fields for Contact us form.
+  // Hide/show conditionally fields for Contact us form.
   $dependentFields = [
     'field_upload_label',
     'field_category',
@@ -122,8 +122,8 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
   foreach ($dependentFields as $dependentField) {
     $form[$dependentField]['#states'] = [
       'visible' => [
-        'select[name="field_contact_reason"]' => array('value' => 'submit_document'),
-      ]
+        'select[name="field_contact_reason"]' => ['value' => 'submit_document'],
+      ],
     ];
   }
 
