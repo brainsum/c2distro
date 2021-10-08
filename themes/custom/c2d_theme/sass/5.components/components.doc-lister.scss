@@ -3,6 +3,9 @@
 @import "../3.base/base.typography";
 @import "../1.settings/settings.all";
 
+h1.page-title {
+  font-size: 4rem;
+}
 .view-header {
   margin-bottom: 60px;
   font-family: 'Open Sans';
@@ -24,12 +27,12 @@
   display: flex;
   .left {
     display: inline-grid;
-    max-width: 210px;
+    max-width: 206px;
     margin-right: 47px;
   
     .field--name-thumbnail {
       max-width: 206px;
-      max-height: 289px;
+      max-height: 450px;
   
       img {
         width: 100%;

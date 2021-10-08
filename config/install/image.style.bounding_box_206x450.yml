@@ -1,0 +1,15 @@
+uuid: a750f5a4-996e-4501-87a4-ee76885b47a0
+langcode: en
+status: true
+dependencies: {  }
+name: bounding_box_206x450
+label: bounding-box-206x450
+effects:
+  521aba21-38b4-48fa-b730-5dbb2bd5113d:
+    uuid: 521aba21-38b4-48fa-b730-5dbb2bd5113d
+    id: image_scale
+    weight: 1
+    data:
+      width: 206
+      height: 450
+      upscale: true
