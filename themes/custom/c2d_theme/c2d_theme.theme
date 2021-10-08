@@ -13,18 +13,18 @@ function c2d_theme_preprocess_page(array &$variables) {
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
 
-  if ($route_name == 'entity.contact_form.canonical') {
+  if ($route_name === 'entity.contact_form.canonical') {
     $variables['#attached']['library'][] = 'c2d_theme/entity.contact_form.canonical';
   }
 
-  if (($route_name == 'view.news.lister_page') || ($route_name == 'view.news.page_1')) {
+  if (($route_name === 'view.news.lister_page') || ($route_name === 'view.news.page_1')) {
     $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
   }
 
   $media = \Drupal::routeMatch()->getParameter('media');
   if ($media) {
     $typeName = $media->bundle();
-    if ($typeName == 'document') {
+    if ($typeName === 'document') {
       $variables['#attached']['library'][] = 'c2d_theme/entity.media.canonical.document';
     }
   }
@@ -32,10 +32,10 @@ function c2d_theme_preprocess_page(array &$variables) {
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node) {
     $typeName = $node->bundle();
-    if ($typeName == 'page') {
+    if ($typeName === 'page') {
       $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.page';
     }
-    if (($typeName == 'news') || ($typeName == 'event')) {
+    if (($typeName === 'news') || ($typeName === 'event')) {
       $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.news';
     }
   }
