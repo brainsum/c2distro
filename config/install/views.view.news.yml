@@ -1544,7 +1544,7 @@ display:
         weight: 30
         context: '0'
         menu_name: main
-      css_class: lister-page
+      css_class: 'lister-page extra-space'
       fields:
         nid:
           id: nid
