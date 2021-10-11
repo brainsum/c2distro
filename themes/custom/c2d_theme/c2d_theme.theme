@@ -12,7 +12,6 @@ function c2d_theme_preprocess_page(array &$variables) {
 
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
-  dump($route_name);
 
   if (\Drupal::service('path.matcher')->isFrontPage()) {
     $variables['#attached']['library'][] = 'c2d_theme/h1.page_title_center';
