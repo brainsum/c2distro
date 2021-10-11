@@ -63,8 +63,21 @@ display:
           separator: ', '
   lister_page:
     display_title: Page
+    display_options:
+      fields:
+        nid:
+          separator: ', '
+        field_image:
+          separator: ', '
+        type:
+          separator: ', '
+        created:
+          separator: ', '
+        title:
+          separator: ', '
+        field_lead:
+          separator: ', '
   page_1:
-    display_title: Évènements
     display_options:
       fields:
         nid:
