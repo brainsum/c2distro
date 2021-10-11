@@ -127,6 +127,8 @@ paragraph_cta:
   css:
     theme:
       css/5.components/components.paragraph_cta.css: {}
+  dependecies:
+    - c2d_theme/paragraphs-base
 pager:
   css:
     theme:
