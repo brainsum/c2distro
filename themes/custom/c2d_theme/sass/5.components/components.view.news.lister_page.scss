@@ -6,16 +6,20 @@
 }
 
 .extra-space {
-    padding: 15px 1px;
+    padding: 30px 1px;
 }
-
-h1.page-title {
-    padding: 0 2rem;
-    @include breakpoint(medium) {
-        padding: 0;
-        color: $body-font-color;
-        text-decoration: none solid $body-font-color;
-        line-height: 4rem !important;
+.block-page-title-block {
+    .block-inner {
+        h1.page-title {
+            text-align: left !important;
+            padding: 0 2rem;
+            @include breakpoint(medium) {
+                padding: 0;
+                color: $body-font-color;
+                text-decoration: none solid $body-font-color;
+                line-height: 4rem !important;
+            }
+        }
     }
 }
 
@@ -92,7 +96,7 @@ h1.page-title {
             }
 
             .views-field.views-field-title {
-                margin: 9px 25px 2.4rem;
+                margin: 9px 25px 2.6rem;
                 color: $body-font-color;
                 font-family: $font-montserrat;
                 font-size: 1.8rem;

@@ -140,3 +140,8 @@ entity.contact_form.canonical:
     theme:
       css/5.components/components.entity.contact_form.canonical.css: {}
       css/5.components/components.h1.page_title.css: {}
+h1.page_title_center:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title_center.css: {}
