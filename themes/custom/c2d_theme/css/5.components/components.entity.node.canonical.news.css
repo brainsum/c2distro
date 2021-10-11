@@ -466,6 +466,9 @@
   max-width: 774px;
   margin-left: calc(1/8 * 100%);
 }
+.block-page-title-block .block-inner h1.page-title {
+  text-align: left;
+}
 
 article {
   max-width: 139rem;
