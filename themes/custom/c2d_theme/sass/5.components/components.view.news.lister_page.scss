@@ -2,145 +2,183 @@
 
 .views-field-field-media-thumbnail:before,
 .views-field-field-image:before {
-    content: unset !important;
+  content: unset !important;
 }
 
 .extra-space {
-    padding: 30px 1px;
+  padding: 30px 1px;
 }
+
 .block-page-title-block {
-    .block-inner {
-        h1.page-title {
-            text-align: left !important;
-            padding: 0 2rem;
-            @include breakpoint(medium) {
-                padding: 0;
-                color: $body-font-color;
-                text-decoration: none solid $body-font-color;
-                line-height: 4rem !important;
-            }
-        }
+  .block-inner {
+    h1.page-title {
+      text-align: left !important;
+      padding: 0 2rem;
+      @include breakpoint(medium) {
+        padding: 0;
+        color: $body-font-color;
+        text-decoration: none solid $body-font-color;
+        line-height: 4rem !important;
+      }
     }
+  }
 }
 
 .view.lister-page {
-    .view-header {
-        .second-title {
-            max-width: 119.2rem;
-            margin: 0 auto;
-            font-size: 3rem;
-            line-height: 4.9rem;
-            font-family: $font-montserrat;
-            color: $body-font-color;
-            padding: 0 2rem;
-            @include breakpoint(medium) {
-                font-size: 4rem;
-                padding: 6.3rem 0 0 0;
-            }
-        }
+  .view-header {
+    .second-title {
+      max-width: 119.2rem;
+      margin: 0 auto;
+      font-size: 3rem;
+      line-height: 4.9rem;
+      font-family: $font-montserrat;
+      color: $body-font-color;
+      padding: 0 2rem;
+      @include breakpoint(medium) {
+        font-size: 4rem;
+        padding: 6.3rem 0 0 0;
+      }
     }
-    .view-content {
-        padding-top: 6.3rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 124.2rem;
-        margin: 0 auto;
+  }
+
+  .view-content {
+    padding-top: 6.3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      justify-content: flex-start;
+      max-width: 124.2rem;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .views-row {
+      width: 100%;
+      background-color: white;
+      transition: .5s;
+      position: relative;
+      margin-bottom: 4rem;
+
+      @include breakpoint(medium) {
+        width: 262px;
+        margin: 0 24px 70px 24px;
+        padding-bottom: 7.3rem;
+      }
+
+      &:hover {
+        box-shadow: 0 0 15px lightgray;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .views-field.views-field-created,
+      .views-field.views-field-field-event-date {
+        padding: 2.4rem 3.2rem 0;
+        color: $body-font-color;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        font-weight: 600;
+
         @include breakpoint(medium) {
-            justify-content: flex-start;
+          padding: 1.5rem 2rem 1rem 2.5rem;
         }
 
-        .views-row {
-            width: 262px;
-            background-color: white;
-            margin: 0 24px 70px 24px;
-            transition: .5s;
-            position: relative;
-            padding-bottom: 7.3rem;;
-            &:hover {
-                box-shadow: 0 0 15px lightgray;
-            }
-
-            .views-field.views-field-created,
-            .views-field.views-field-field-event-date {
-                padding: 1.5rem 2rem 1rem 2.5rem;
-                color: $body-font-color;
-                font-family: $font-montserrat;
-                font-size: 14px;
-                font-weight: 600;
-                .content-type {
-                    color: $color-secondary;
-                    text-transform: capitalize;
-                    line-height: 1.9rem;
-                }
-            }
-
-            .views-field.views-field-field-location {
-                padding: 0 20px 17px 20px;
-                color: $body-font-color;
-                font-family: $font-montserrat;
-                font-size: 14px;
-                font-weight: 600;
-                .field-content {
-                    a {
-                        display: flex;
-                    }
-                }
-                a:before {
-                    content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
-                    width: 22px;
-                    display: inline-block;
-                    padding-right: 0.5rem;
-                    height: 15px;
-                }
-            }
-
-            .views-field.views-field-title {
-                margin: 9px 25px 2.6rem;
-                color: $body-font-color;
-                font-family: $font-montserrat;
-                font-size: 1.8rem;
-                font-weight: 600;
-                text-decoration: none solid $body-font-color;
-                line-height: 2.2rem;
-                width: 190px;
-                min-height: 90px;
-                a {
-                    transition: .3s;
-                    &:hover {
-                        color: $color-secondary;
-                    }
-                }
-            }
-
-            .views-field.views-field-view-node {
-                padding: 0 20px 0 25px;
-                transition: .5s;
-                bottom: 38px;
-                position: absolute;
-                a {
-                    transition: .3s;
-                    color: $body-font-color;
-                    font-family: $font-montserrat;
-                    font-size: 16px;
-                    font-weight: 700;
-                    font-style: italic;
-                    &:hover {
-                        color: $color-secondary;
-                    }
-                }
-            }
+        .content-type {
+          color: $color-secondary;
+          text-transform: capitalize;
+          line-height: 1.9rem;
         }
+      }
+
+      .views-field.views-field-field-location {
+        padding: 0 20px 17px 20px;
+        color: $body-font-color;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        font-weight: 600;
+
+        .field-content {
+          a {
+            display: flex;
+          }
+        }
+
+        a:before {
+          content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
+          width: 22px;
+          display: inline-block;
+          padding-right: 0.5rem;
+          height: 15px;
+        }
+      }
+
+      .views-field.views-field-title {
+        padding: 3rem 3.2rem 0;
+        color: $body-font-color;
+        font-family: $font-montserrat;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-decoration: none solid $body-font-color;
+        line-height: 1.22;
+
+        @include breakpoint(medium) {
+          width: 190px;
+          min-height: 90px;
+          padding: 9px 25px 2.6rem;
+        }
+
+        a {
+          transition: .3s;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
+
+      .views-field.views-field-view-node {
+        padding: 3rem 3.2rem 3rem;
+        transition: .5s;
+
+        @include breakpoint(medium) {
+          position: absolute;
+          padding: 0 2rem 0 2.5rem;
+          bottom: 38px;
+        }
+
+        a {
+          transition: .3s;
+          color: $body-font-color;
+          font-family: $font-montserrat;
+          font-size: 1.6rem;
+          font-weight: 700;
+          font-style: italic;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
     }
-    .view-empty {
-        padding: 2rem 0 8rem 0;
-        max-width: 119.2rem;
-        margin: 0 auto;
-        .no-results {
-            color: $body-font-color;
-            font-family: $font-montserrat;
-            font-size: 16px;
-            font-weight: 600;
-        }
+  }
+
+  .view-empty {
+    padding: 2rem 0 8rem 0;
+    max-width: 119.2rem;
+    margin: 0 auto;
+
+    .no-results {
+      color: $body-font-color;
+      font-family: $font-montserrat;
+      font-size: 16px;
+      font-weight: 600;
     }
+  }
 }
