@@ -448,25 +448,7 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-.block-page-title-block {
-  padding: 4rem 0 0 0;
-  max-width: 119.2rem;
-  margin: 0 auto;
-}
 .block-page-title-block .block-inner h1.page-title {
-  text-align: center;
-  font-size: 3rem;
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  line-height: 3rem;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
+  text-align: center !important;
 }
-@media print, screen and (min-width: 48em) {
-  .block-page-title-block .block-inner h1.page-title {
-    margin-left: 0;
-    font-size: 4rem;
-    line-height: 4.9rem;
-  }
-}
-/*# sourceMappingURL=../../maps/5.components/components.h1.page_title.css.map */
+/*# sourceMappingURL=../../maps/5.components/components.h1.page_title_center.css.map */

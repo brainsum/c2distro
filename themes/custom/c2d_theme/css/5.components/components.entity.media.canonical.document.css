@@ -472,6 +472,7 @@
   margin-left: 9.2rem;
 }
 .block-page-title-block .block-inner h1.page-title {
+  text-align: left !important;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;

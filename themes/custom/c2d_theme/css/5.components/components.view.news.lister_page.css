@@ -454,14 +454,15 @@
 }
 
 .extra-space {
-  padding: 15px 1px;
+  padding: 30px 1px;
 }
 
-h1.page-title {
+.block-page-title-block .block-inner h1.page-title {
+  text-align: left !important;
   padding: 0 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  h1.page-title {
+  .block-page-title-block .block-inner h1.page-title {
     padding: 0;
     color: #12284c;
     -webkit-text-decoration: none solid #12284c;
@@ -541,7 +542,7 @@ h1.page-title {
   height: 15px;
 }
 .view.lister-page .view-content .views-row .views-field.views-field-title {
-  margin: 9px 25px 2.4rem;
+  margin: 9px 25px 2.6rem;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
