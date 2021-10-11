@@ -13,6 +13,10 @@ function c2d_theme_preprocess_page(array &$variables) {
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
 
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $variables['#attached']['library'][] = 'c2d_theme/h1.page_title_center';
+  }
+
   if ($route_name === 'entity.contact_form.canonical') {
     $variables['#attached']['library'][] = 'c2d_theme/entity.contact_form.canonical';
   }
