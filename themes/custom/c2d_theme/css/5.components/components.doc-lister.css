@@ -669,21 +669,44 @@ select::-ms-expand {
   clear: both;
   width: 100%;
   background-color: #ffffff;
-  padding: 4.1rem 6.2rem;
+  padding: 4rem 2rem;
   margin-bottom: 3rem;
   display: flex;
+  flex-wrap: wrap;
 }
 .media-wrapper.highlighted {
   box-shadow: inset 0 0 0 0.5rem #26c9de;
 }
+@media print, screen and (min-width: 48em) {
+  .media-wrapper {
+    flex-wrap: nowrap;
+    padding: 4rem 6.2rem;
+  }
+}
 .media-wrapper .left {
-  display: inline-grid;
-  max-width: 20.6rem;
-  margin-right: 4.7rem;
+  flex: 1 0 100%;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+@media print, screen and (min-width: 48em) {
+  .media-wrapper .left {
+    flex: 1 0 25%;
+    max-width: 25%;
+    display: inline-grid;
+    margin-right: 4.7rem;
+    margin-bottom: 0;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .media-wrapper .left {
+    flex: 1 0 20.6rem;
+    max-width: 20.6rem;
+  }
 }
 .media-wrapper .left .field--name-thumbnail {
   max-width: 20.6rem;
   max-height: 45rem;
+  margin: 0 auto;
 }
 .media-wrapper .left .field--name-thumbnail img {
   width: 100%;
@@ -694,10 +717,15 @@ select::-ms-expand {
 }
 .media-wrapper .right .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #000;
   font-weight: 700;
-  line-height: 3.2rem;
+  line-height: 1.16;
+}
+@media print, screen and (min-width: 48em) {
+  .media-wrapper .right .title {
+    font-size: 3rem;
+  }
 }
 .media-wrapper .right .subtitle {
   font-weight: 700;
