@@ -4,3 +4,5 @@ third_party_settings:
       label: Gauche
     group_right:
       label: Droit
+    group_form:
+      label: Formulaire
