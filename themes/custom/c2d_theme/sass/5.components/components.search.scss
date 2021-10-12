@@ -91,7 +91,8 @@
   }
 }
 
-.node {
+.node,
+.media {
   .view-search & {
     padding: 3rem;
     color: $body-font-color;
@@ -119,9 +120,13 @@
       }
     }
 
-    .content-header {
+    .content-header,
+    .content-header-text {
       display: flex;
       flex-direction: row;
+    }
+
+    .content-header {
       margin-top: 1rem;
     }
 
