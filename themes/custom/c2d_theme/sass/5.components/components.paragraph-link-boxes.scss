@@ -5,17 +5,23 @@
   > .paragraph--inner {
     > .field__items {
       @include flex;
-      @include justify-content(space-between);
+      @include justify-content(center);
       @include flex-wrap(wrap);
+      margin-bottom: -5%;
+
+      @include breakpoint(medium) {
+        margin: -2.5% 0;
+      }
 
       > .field__item {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 0 5%;
         background-color: $background-grey;
         font-size: 1.4rem;
 
         @include breakpoint(medium) {
           width: 40%;
+          margin: 2.5%;
         }
       }
     }

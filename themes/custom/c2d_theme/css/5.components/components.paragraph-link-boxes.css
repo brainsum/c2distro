@@ -450,19 +450,25 @@
  */
 .paragraph--type--link-boxes > .paragraph--inner > .field__items {
   display: flex;
-  -font-box-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: -5%;
+}
+@media print, screen and (min-width: 48em) {
+  .paragraph--type--link-boxes > .paragraph--inner > .field__items {
+    margin: -2.5% 0;
+  }
 }
 .paragraph--type--link-boxes > .paragraph--inner > .field__items > .field__item {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0 5%;
   background-color: #e8e8e8;
   font-size: 1.4rem;
 }
 @media print, screen and (min-width: 48em) {
   .paragraph--type--link-boxes > .paragraph--inner > .field__items > .field__item {
     width: 40%;
+    margin: 2.5%;
   }
 }
 .paragraph--type--link-boxes > .paragraph--inner .view,
