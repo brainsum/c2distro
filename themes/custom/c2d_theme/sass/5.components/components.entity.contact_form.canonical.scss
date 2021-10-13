@@ -48,7 +48,7 @@
           font-family: $font-montserrat;
           font-size: 24px;
           color: $color-blue-gray;
-          text-decoration: none solid rgb(18, 40, 76);
+          text-decoration: none solid $body-font-color;
           line-height: 30px;
           font-weight: 700;
           margin-bottom: 1.8rem;
@@ -60,13 +60,14 @@
 
         .field--name-field-attachment {
           label {
-            font-family: Montserrat;
+            font-family: $font-montserrat;
             font-size: 1.8rem;
-            color: $color-blue-gray;
-            text-decoration: none solid rgb(18, 40, 76);
+            color: $body-font-color;
+            text-decoration: none solid $body-font-color;
             font-weight: 700;
           }
           input[type="file"] {
+            width: 100%;
             margin-top: 10px;
           }
           input[type="submit"] {
@@ -75,9 +76,9 @@
             height: 4.7rem;
           }
           .description {
-            font-family: Open Sans;
+            font-family: $font-open;
             font-size: 1.6rem;
-            color: $color-blue-gray;
+            color: $body-font-color;
             text-decoration: none solid rgb(0, 0, 0);
             line-height: 25px;
           }
@@ -97,24 +98,23 @@
 
     #edit-field-terms-and-conditions-wrapper {
       width: 100%;
-      margin-top: 9.9rem;
+      margin-top: 5.6rem;
       text-align: center;
       font-family: $font-open;
       font-size: 1.6rem;
-      color: $color-blue-gray;
+      color: $body-font-color;
 
       a {
-        text-decoration: underline solid rgb(18, 40, 76);
+        text-decoration: underline solid $body-font-color;
       }
     }
   }
 
   input#edit-submit {
-    margin-top: 8.5rem;
     font-family: $font-montserrat;
     font-size: 1.6rem;
-    color: $color-blue-gray;
-    text-decoration: none solid rgb(18, 40, 76);
+    color: $body-font-color;
+    text-decoration: none solid $body-font-color;
     line-height: 19px;
     text-align: center;
     width: 23.1rem;
@@ -124,8 +124,8 @@
 
     &:hover {
       color: white;
-      background-color: $color-turquoise-light !important;
-      border-color: $color-turquoise-light !important;
+      background-color: $color-secondary !important;
+      border-color: $color-secondary !important;
     }
   }
 
