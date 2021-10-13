@@ -34,6 +34,13 @@ paragraph-text-media:
       css/5.components/components.paragraph-text-media.css: {}
   dependencies:
     - c2d_theme/paragraphs-base
+paragraph-link-boxes:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.paragraph-link-boxes.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 paragraph-small-boxes:
   version: 1.0
   css:
