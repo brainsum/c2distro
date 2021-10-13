@@ -128,7 +128,7 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
   }
 
   // Create link to Terms & Conditions.
-  $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted <a href="@url">Terms & Conditions</a>', [
+  $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted <a target="_blank" href="@url">Terms & Conditions</a>', [
     '@url' => '/terms-and-conditions',
   ]);
 }
