@@ -2,26 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.search
+    - views.view.events
   module:
     - system
     - views
   theme:
     - c2d_theme
-id: exposedformsearchresources
+id: views_block__events_upcoming_events_block
 theme: c2d_theme
 region: content
-weight: -2
+weight: -3
 provider: null
-plugin: 'views_exposed_filter_block:search-resources'
+plugin: 'views_block:events-upcoming_events_block'
 settings:
-  id: 'views_exposed_filter_block:search-resources'
+  id: 'views_block:events-upcoming_events_block'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
+  items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /resources
+    pages: /events
     negate: false
