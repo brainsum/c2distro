@@ -284,90 +284,13 @@
   }
 }
 
-.paragraph--type--link-boxes {
-  > .paragraph--inner {
-    > .field__items {
-      @include flex;
-      @include justify-content(space-between);
-      @include flex-wrap(wrap);
 
-      > .field__item {
-        width: 100%;
-        margin: 0 auto;
-        background-color: $background-grey;
-        font-size: 1.4rem;
 
-        @include breakpoint(medium) {
-          width: 40%;
-        }
-      }
-    }
 
-    .view,
-    .paragraph--type--link-box {
-      padding: 2.5rem 2.5rem 4.5rem 2.5rem;
-      text-align: center;
 
-      .paragraph--inner {
-        position: relative;
-      }
-
-      .view-header h3,
-      .field--name-field-title {
-        margin-bottom: 4rem;
-        font-family: $font-montserrat;
-        font-size: 2rem;
-        // padding-right: 5rem;
-        font-weight: 700;
-      }
-
-      .field--name-field-media {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 4rem;
-        height: 4rem;
-
-        img {
-          display: block;
-          margin-left: auto;
-        }
-      }
-
-      .view-content,
-      .field__items {
-        .views-row,
-        .field__item {
-          margin-bottom: 2.8rem;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-
-          a {
-            font-size: 1.4rem;
-            line-height: 3rem;
-          }
-        }
-
-        & + .field__items {
-          margin-top: 2.8rem;
-        }
-      }
-
-      .view-footer,
-      .field--name-field-links {
-        a {
-          text-decoration: underline;
-        }
-      }
-
-      .view-footer {
-        margin-top: 3.5rem;
-      }
     }
   }
-}
+
 
 .paragraph--type--media-document {
   font-family: $font-montserrat;
