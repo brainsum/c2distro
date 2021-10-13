@@ -96,3 +96,13 @@ function c2d_theme_preprocess_paragraph__cta(&$variables) {
   $variables['#attached']['library'][] = 'c2d_theme/paragraphs-base';
   $variables['#attached']['library'][] = 'c2d_theme/paragraph_cta';
 }
+
+/**
+ * Implements hook_theme_suggestions_block_alter().
+ */
+function c2d_theme_theme_suggestions_block_alter(&$suggestions, $variables) {
+  $content = $variables['elements']['content'];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
+    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+  }
+}
