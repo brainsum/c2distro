@@ -8,7 +8,7 @@ dependencies:
 id: pagetitle
 theme: c2d_theme
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
@@ -19,5 +19,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /search
+    pages: "/search\r\n/events"
     negate: true
