@@ -501,6 +501,34 @@
   font-weight: 700;
   margin-bottom: 1.8rem;
 }
+.contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason {
+  padding: 1rem 5rem 1rem 1rem;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
+  font-weight: 700;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=file] {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=submit] {
+  margin: 20px 0;
+  width: 23.1rem;
+  height: 4.7rem;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment .description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #12284c;
+  -webkit-text-decoration: none solid black;
+          text-decoration: none solid black;
+  line-height: 25px;
+}
 .contact-form .form-container .fieldset-wrapper .right {
   width: 100%;
   padding-right: 2.4rem;
@@ -513,7 +541,7 @@
 }
 .contact-form .form-container #edit-field-terms-and-conditions-wrapper {
   width: 100%;
-  margin-top: 9.9rem;
+  margin-top: 5.6rem;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -524,7 +552,6 @@
           text-decoration: underline solid #12284c;
 }
 .contact-form input#edit-submit {
-  margin-top: 9.9rem;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #12284c;

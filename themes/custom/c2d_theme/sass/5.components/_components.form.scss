@@ -144,8 +144,8 @@ input.form-submit.js-hide {
       padding-left: 2rem;
     }
   }
-  .form-wrapper:not(:last-child) {
-    margin-bottom: 4.2rem;
+  .form-wrapper:not(:first-child) {
+    margin-top: 4.2rem;
   }
   .form-managed-file {
     @include flex;
