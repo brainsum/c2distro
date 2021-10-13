@@ -85,14 +85,6 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
@@ -108,10 +100,18 @@
       {% if view_mode == 'full' %}
         {% include '@c2d_theme/custom/share-button.twig' %}
       {% endif %}
-      <div class="created-time">{{ content.field_event_date }}</div>
-      <div class="location">{{ content.field_location }}</div>
     </div>
-    {{ content|without('field_event_date', 'field_location') }}
+    {{ content }}
   </div>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="read-more"> {{ 'Read more'|t }} </a>
 
 </article>
