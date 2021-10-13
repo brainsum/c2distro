@@ -464,10 +464,11 @@
   padding-bottom: 11.2rem;
 }
 .contact-form .form-container {
-  max-width: 119.5rem;
-  margin: 0 auto;
-  border: unset;
-  padding: 0;
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+  border: 0;
 }
 .contact-form .form-container legend {
   display: none;
@@ -476,16 +477,22 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 6.8rem;
+  margin-right: -2.4rem;
+  margin-left: -2.4rem;
 }
 .contact-form .form-container .fieldset-wrapper .left {
-  max-width: 417px !important;
-  padding: 0 !important;
-  width: auto !important;
-  margin: 0 48px 0 0;
+  width: 100%;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+@media print, screen and (min-width: 48em) {
+  .contact-form .form-container .fieldset-wrapper .left {
+    width: calc(3 / 8 * 100%);
+  }
 }
 .contact-form .form-container .fieldset-wrapper .left #edit-field-upload-label-wrapper {
   margin-top: 5.1rem;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
@@ -494,45 +501,21 @@
   font-weight: 700;
   margin-bottom: 1.8rem;
 }
-.contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason {
-  padding: 1rem 5rem 1rem 1rem;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment label {
-  font-family: Montserrat;
-  font-size: 1.8rem;
-  color: #12284c;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
-  font-weight: 700;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=file] {
-  margin-top: 10px;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=submit] {
-  margin: 20px 0;
-  width: 23.1rem;
-  height: 4.7rem;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment .description {
-  font-family: Open Sans;
-  font-size: 1.6rem;
-  color: #12284c;
-  -webkit-text-decoration: none solid black;
-          text-decoration: none solid black;
-  line-height: 25px;
-}
 .contact-form .form-container .fieldset-wrapper .right {
-  max-width: 727px !important;
-  padding: 0 !important;
   width: 100%;
-  margin: 0;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+@media print, screen and (min-width: 48em) {
+  .contact-form .form-container .fieldset-wrapper .right {
+    width: calc(5 / 8 * 100%);
+  }
 }
 .contact-form .form-container #edit-field-terms-and-conditions-wrapper {
   width: 100%;
-  margin-top: 5.6rem;
+  margin-top: 9.9rem;
   text-align: center;
-  font-family: Open Sans;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   color: #12284c;
 }
@@ -541,8 +524,8 @@
           text-decoration: underline solid #12284c;
 }
 .contact-form input#edit-submit {
-  margin-top: 8.5rem;
-  font-family: Montserrat;
+  margin-top: 9.9rem;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;

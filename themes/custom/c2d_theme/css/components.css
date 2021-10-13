@@ -2533,8 +2533,8 @@ input.form-submit.js-hide:hover {
     padding-left: 2rem;
   }
 }
-.contact-form .js-form-item {
-  margin-bottom: 4.3rem;
+.contact-form .form-wrapper:not(:last-child) {
+  margin-bottom: 4.2rem;
 }
 .contact-form .form-managed-file {
   display: flex;

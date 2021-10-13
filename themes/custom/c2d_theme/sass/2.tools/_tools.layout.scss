@@ -10,6 +10,11 @@
   @include basePadding;
 }
 
+@mixin width-1200 {
+  max-width: 120rem;
+  @include basePadding;
+}
+
 @mixin width-1105 {
   max-width: 113.5rem;
   @include basePadding;
