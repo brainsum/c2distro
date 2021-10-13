@@ -53,18 +53,6 @@ function c2d_theme_preprocess_page(array &$variables) {
  */
 function c2d_theme_preprocess_block(&$variables) {
 
-  $block_content = $variables['elements']['content']['#block_content'] ?? '';
-  if ($block_content instanceof BlockContentInterface) {
-    $block_type = $block_content->bundle();
-
-    if ($block_type === 'footer') {
-      $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
-    }
-    if ($block_type === 'hero') {
-      $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
-    }
-  }
-
   $blockId = $variables['elements']['#id'] ?? '';
 
   if ($variables['derivative_plugin_id'] == 'search-resources') {
@@ -103,6 +91,7 @@ function c2d_theme_preprocess_paragraph__cta(&$variables) {
 function c2d_theme_theme_suggestions_block_alter(&$suggestions, $variables) {
   $content = $variables['elements']['content'];
   if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
-    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    $new_suggestion = 'block__block_type__' . $content['#block_content']->bundle();
+    array_splice($suggestions, 2, 0, $new_suggestion);
   }
 }

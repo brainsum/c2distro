@@ -25,6 +25,8 @@
  * @see template_preprocess_block()
  */
 #}
+{{ attach_library('c2d_theme/footerblockcontent.block') }}
+
 <div class="footer-block">
     <div class="footer-block-body">
         {% if content.field_title1.0['#context']['value'] is not empty %}
