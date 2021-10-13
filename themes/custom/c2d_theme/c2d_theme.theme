@@ -5,6 +5,8 @@
  * Functions to support theming in the c2d_theme theme.
  */
 
+use Drupal\block_content\BlockContentInterface;
+
 /**
  * Implements hook_preprocess_page() for PAGE document templates.
  */
@@ -51,13 +53,20 @@ function c2d_theme_preprocess_page(array &$variables) {
  */
 function c2d_theme_preprocess_block(&$variables) {
 
+  $block_content = $variables['elements']['content']['#block_content'] ?? '';
+  if ($block_content instanceof BlockContentInterface) {
+    $block_type = $block_content->bundle();
+
+    if ($block_type === 'footer') {
+      $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
+    }
+    if ($block_type === 'hero') {
+      $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
+    }
+  }
+
   $blockId = $variables['elements']['#id'] ?? '';
-  if ($blockId === 'hphero') {
-    $variables['#attached']['library'][] = 'c2d_theme/hphero.block';
-  }
-  if ($blockId === 'footerblockcontent') {
-    $variables['#attached']['library'][] = 'c2d_theme/footerblockcontent.block';
-  }
+
   if ($variables['derivative_plugin_id'] == 'search-resources') {
     $variables['#cache']['max-age'] = 0;
   }
