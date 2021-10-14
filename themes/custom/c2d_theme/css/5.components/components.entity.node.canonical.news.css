@@ -453,18 +453,15 @@
   margin-top: 2rem;
   padding: 0 2rem;
 }
-@media print, screen and (min-width: 48em) {
-  .region.region-content {
-    padding: 0;
-  }
-}
 
 .block-page-title-block {
   max-width: 139rem !important;
 }
-.block-page-title-block .block-inner {
-  max-width: 774px;
-  margin-left: calc(1/8 * 100%);
+@media print, screen and (min-width: 48em) {
+  .block-page-title-block .block-inner {
+    max-width: 774px;
+    margin-left: calc(1/8 * 100%);
+  }
 }
 .block-page-title-block .block-inner h1.page-title {
   text-align: left;
@@ -474,8 +471,10 @@ article {
   max-width: 139rem;
   margin: 0 auto;
 }
-article .node__content {
-  margin-left: calc(1/8 * 100%);
+@media print, screen and (min-width: 48em) {
+  article .node__content {
+    margin-left: calc(1/8 * 100%);
+  }
 }
 article .node__content .content-header {
   padding: 1.8rem 0 2.9rem 0;
