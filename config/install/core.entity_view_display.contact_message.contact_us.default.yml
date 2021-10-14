@@ -25,7 +25,7 @@ mode: default
 content:
   field_attachment:
     weight: 11
-    label: inline
+    label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
@@ -33,7 +33,7 @@ content:
     region: content
   field_category:
     weight: 5
-    label: inline
+    label: above
     settings:
       link: true
     third_party_settings: {  }
@@ -41,14 +41,14 @@ content:
     region: content
   field_contact_reason:
     weight: 3
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_description:
     weight: 7
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
@@ -62,7 +62,7 @@ content:
     region: content
   field_name:
     weight: 0
-    label: inline
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -70,7 +70,7 @@ content:
     region: content
   field_name_as_author:
     weight: 8
-    label: inline
+    label: above
     settings:
       format: default
       format_custom_false: ''
@@ -80,7 +80,7 @@ content:
     region: content
   field_phone_number:
     weight: 2
-    label: inline
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -88,7 +88,7 @@ content:
     region: content
   field_terms_and_conditions:
     weight: 10
-    label: inline
+    label: above
     settings:
       format: default
       format_custom_false: ''
@@ -98,7 +98,7 @@ content:
     region: content
   field_title:
     weight: 6
-    label: inline
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -106,7 +106,7 @@ content:
     region: content
   field_upload_label:
     weight: 12
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: markup
@@ -114,7 +114,7 @@ content:
   message:
     type: basic_string
     weight: 4
-    label: inline
+    label: above
     region: content
     settings: {  }
     third_party_settings: {  }

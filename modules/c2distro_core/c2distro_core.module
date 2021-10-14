@@ -138,14 +138,15 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
 /**
  * Order by weight.
  */
-function compare_fields_weight($a, $b) {
+function _c2distro_core_compare_fields_weight($a, $b) {
   return strnatcmp($a['weight'], $b['weight']);
 }
 
 /**
- * Implements hook_mail_alter().
+ * Implements hook_mail_alter() for Contact us form.
  */
 function c2distro_core_mail_alter(&$message) {
+
   if ($message['id'] === 'contact_page_mail') {
     $contact_message = $message['params']['contact_message'];
 
@@ -174,7 +175,7 @@ function c2distro_core_mail_alter(&$message) {
 
       }
 
-      uasort($data['fields'], 'compare_fields_weight');
+      uasort($data['fields'], '_c2distro_core_compare_fields_weight');
 
       $body = '';
       foreach ($data['fields'] as $fields) {
@@ -184,12 +185,13 @@ function c2distro_core_mail_alter(&$message) {
         $rendered = strip_tags($rendered);
         $rendered = str_replace("\n\n", "", $rendered);
         $rendered = str_replace("  ", "", $rendered);
-        $body = $body . nl2br($rendered . "\r\n");
+        $new_element = strval($rendered) . "\n";
 
+        if (!empty($rendered)) {
+          $body = $body . $new_element;
+        }
       }
-
       $message['body'][1] = $body;
-
     }
   }
 }
