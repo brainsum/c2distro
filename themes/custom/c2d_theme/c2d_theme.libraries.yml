@@ -112,9 +112,9 @@ footerblockcontent.block:
 entity.media.canonical.document:
   css:
     theme:
-      css/5.components/components.entity.media.canonical.document.css: {}
       css/5.components/components.h1.page_title.css: {}
       css/5.components/components.tags.css: {}
+      css/5.components/components.entity.media.canonical.document.css: {}
 share_button_from_ifrc:
   js:
     js/src/custom/share_button_from_ifrc.js: {}
