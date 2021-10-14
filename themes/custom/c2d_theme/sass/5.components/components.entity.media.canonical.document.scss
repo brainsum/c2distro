@@ -8,22 +8,26 @@
   margin: 2rem auto;
   background-color: white;
   padding: 0 2rem;
-  @include breakpoint(medium) {
-    padding: 0;
-  }
 }
 
 .block-page-title-block {
   max-width: 139rem !important;
   padding-top: 4.4rem !important;
   .block-inner {
-    margin-left: 9.2rem;
+    @include breakpoint(medium) {
+      margin-left: 9.2rem;
+    }
     h1.page-title {
-      text-align: left !important;
+      font-size: 2.2rem;
+      text-align: left;
       color: $body-font-color;
-      text-decoration: none solid rgb(18, 40, 76);
-      line-height: 5rem !important;
+      text-decoration: none solid $body-font-color;
+      line-height: 1.25;
       max-width: 110rem;
+
+      @include breakpoint(medium) {
+        font-size: 4rem;
+      }
     }
   }
 }
@@ -36,7 +40,10 @@ article .media__content {
     padding: 1.8rem 0 2rem 0;
     display: flex;
     align-items: center;
-    margin-left: 8.4rem;
+
+    @include breakpoint(medium) {
+      margin-left: 8.4rem;
+    }
     .share-button {
       margin-right: 2.3rem;
       padding: 0.4rem 0;
@@ -82,7 +89,10 @@ article .media__content {
     display: flex;
     flex-wrap: wrap;
     padding-top: 0.6rem;
-    margin-left: 9.2rem;
+
+    @include breakpoint(medium) {
+      margin-left: 9.2rem;
+    }
     .content-body-img {
       width: 100%;
       @include breakpoint(medium) {
