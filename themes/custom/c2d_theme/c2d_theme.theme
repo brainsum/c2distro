@@ -86,12 +86,31 @@ function c2d_theme_preprocess_paragraph__cta(&$variables) {
 }
 
 /**
- * Implements hook_theme_suggestions_block_alter().
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Add custom suggestion based on block_content type.
  */
 function c2d_theme_theme_suggestions_block_alter(&$suggestions, $variables) {
   $content = $variables['elements']['content'];
   if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
-    $new_suggestion = 'block__block_type__' . $content['#block_content']->bundle();
-    array_splice($suggestions, 2, 0, $new_suggestion);
+    $block_type_suggestions[] = 'block__block_type__' . $content['#block_content']->bundle();
+
+    // Because block__block_content exists twice in $suggestions,
+    // the suggestion arrays are reversed for further processing.
+    $suggestions_rev = array_reverse($suggestions);
+    $block_type_suggestions = array_reverse($block_type_suggestions);
+
+    // Insert the block type suggestions between
+    // block__block_content and the block instance-specific suggestions.
+    $index = array_search('block__block_content', $suggestions_rev);
+    if (is_numeric($index)) {
+      array_splice($suggestions_rev, $index, 0, $block_type_suggestions);
+      $suggestions = array_reverse($suggestions_rev);
+    }
+    // If block__block_content isn't present as a suggestion.
+    else {
+      $suggestions_rev = array_merge($suggestions_rev, $block_type_suggestions);
+      $suggestions = array_reverse($suggestions_rev);
+    }
   }
 }
