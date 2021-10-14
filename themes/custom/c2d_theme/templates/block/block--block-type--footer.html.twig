@@ -78,7 +78,7 @@
                {% set loginText = 'Login' %}
             {% endif %}
 
-            <p>© 2021 - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
+            <p>© {{ "now"|date("Y") }} - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
         </div>
         <div class="footer-block-footer-content-item">
             <p><a href="/legal-disclaimer">Legal Disclaimer</a> |  <a href="/fraud-notice">Fraud Notice</a></p>
