@@ -39,6 +39,11 @@ article {
           text-align: left !important;
         }
       }
+      .content-header-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
       .created-time {
         color: $body-font-color;
         font-size: 1.8rem;
@@ -51,7 +56,9 @@ article {
         }
       }
       .location {
-        padding-left: 5rem;
+        @include breakpoint(medium) {
+          padding-left: 5rem;
+        }
       }
       .field--name-field-location {
         display: flex;
