@@ -107,9 +107,14 @@
     <div class="content-header">
       {% if view_mode == 'full' %}
         {% include '@c2d_theme/custom/share-button.twig' %}
+        <div class="content-header-text">
+          <div class="created-time">{{ content.field_event_date }}</div>
+          <div class="location">{{ content.field_location }}</div>
+        </div>
+      {% else %}
+        <div class="created-time">{{ content.field_event_date }}</div>
+        <div class="location">{{ content.field_location }}</div>
       {% endif %}
-      <div class="created-time">{{ content.field_event_date }}</div>
-      <div class="location">{{ content.field_location }}</div>
     </div>
     {{ content|without('field_event_date', 'field_location') }}
   </div>

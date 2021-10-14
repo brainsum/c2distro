@@ -489,6 +489,11 @@ article .node__content .content-header .share-button--button {
   padding: 0 !important;
   text-align: left !important;
 }
+article .node__content .content-header .content-header-text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 article .node__content .content-header .created-time {
   color: #12284c;
   font-size: 1.8rem;
@@ -501,8 +506,10 @@ article .node__content .content-header .created-time {
 article .node__content .content-header .created-time .content-type {
   color: #26c9de;
 }
-article .node__content .content-header .location {
-  padding-left: 5rem;
+@media print, screen and (min-width: 48em) {
+  article .node__content .content-header .location {
+    padding-left: 5rem;
+  }
 }
 article .node__content .content-header .field--name-field-location {
   display: flex;
