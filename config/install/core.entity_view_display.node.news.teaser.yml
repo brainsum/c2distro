@@ -10,26 +10,17 @@ dependencies:
     - field.field.node.news.field_tags
     - node.type.news
   module:
-    - text
     - user
 id: node.news.teaser
 targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_lead:
     type: basic_string
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   rrssb:
@@ -38,6 +29,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  body: true
   field_highlighted: true
   field_image: true
   field_tags: true
