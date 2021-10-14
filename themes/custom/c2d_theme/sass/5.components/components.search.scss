@@ -10,6 +10,25 @@
 
 @import '../index';
 
+.block-page-title-block {
+  .block-inner {
+    @include width-1390;
+
+    margin-top: 7.5rem;
+    margin-bottom: 4.5rem;
+
+    @include breakpoint(medium) {
+      margin-top: 13.5rem;
+      margin-bottom: 6.5rem;
+    }
+
+    .page-title {
+      font-size: 4rem;
+      line-height: 1.16;
+    }
+  }
+}
+
 .views-exposed-form {
   .view-search & {
     @include width-1390;
@@ -79,7 +98,8 @@
 }
 
 .view-content {
-  .view-search & {
+  .view-search &,
+  .view-taxonomy-term & {
     @include width-1390;
 
     margin-top: -2rem;
@@ -92,7 +112,8 @@
 
 .node,
 .media {
-  .view-search & {
+  .view-search &,
+  .view-taxonomy-term & {
     padding: 3rem;
     color: $body-font-color;
     background: #fff;
@@ -157,7 +178,8 @@
 }
 
 .views-row {
-  .view-search & {
+  .view-search &,
+  .view-taxonomy-term & {
     padding: 2rem 0;
   }
 }
