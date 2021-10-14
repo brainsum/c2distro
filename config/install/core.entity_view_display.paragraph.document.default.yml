@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.document.field_language
     - field.field.paragraph.document.field_media
     - paragraphs.paragraphs_type.document
 id: paragraph.document.default
@@ -10,14 +9,6 @@ targetEntityType: paragraph
 bundle: document
 mode: default
 content:
-  field_language:
-    weight: 0
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_media:
     type: entity_reference_entity_view
     weight: 1
