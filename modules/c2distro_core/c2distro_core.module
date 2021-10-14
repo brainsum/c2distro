@@ -7,11 +7,13 @@
  * @ingroup c2distro
  */
 
+use Drupal\contact\MessageInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\media\MediaInterface;
 use Drupal\file\Entity\File;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Mail\MailFormatHelper;
 
 /**
  * Implements hook_entity_base_field_info_alter().
@@ -131,4 +133,63 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
   $form['field_terms_and_conditions']['widget']['value']['#title'] = t('I have read and accepted <a target="_blank" href="@url">Terms & Conditions</a>', [
     '@url' => '/terms-and-conditions',
   ]);
+}
+
+/**
+ * Order by weight.
+ */
+function compare_fields_weight($a, $b) {
+  return strnatcmp($a['weight'], $b['weight']);
+}
+
+/**
+ * Implements hook_mail_alter().
+ */
+function c2distro_core_mail_alter(&$message) {
+  if ($message['id'] === 'contact_page_mail') {
+    $contact_message = $message['params']['contact_message'];
+
+    if ($contact_message instanceof MessageInterface) {
+
+      $entityType = $contact_message->getEntityType()->id();
+      $bundle = $contact_message->bundle();
+
+      $viewModes = \Drupal::service('entity_display.repository')
+        ->getViewModeOptionsByBundle($entityType, $bundle);
+
+      $displayMode = array_key_exists('mail', $viewModes) ? 'mail' : 'default';
+
+      $display = \Drupal::entityTypeManager()
+        ->getStorage('entity_view_display')
+        ->load($entityType . '.' . $bundle . '.' . $displayMode);
+      $displayFields = $display->getComponents();
+
+      $data = [];
+      foreach ($displayFields as $key => $fieldConfig) {
+        $field = $contact_message->get($key);
+        $data['fields'][$key] = [
+          'field' => $field,
+          'weight' => $fieldConfig['weight'],
+        ];
+
+      }
+
+      uasort($data['fields'], 'compare_fields_weight');
+
+      $body = '';
+      foreach ($data['fields'] as $fields) {
+        $rendered = \Drupal::service('renderer')->renderPlain($fields['field']->view());
+        $rendered = MailFormatHelper::htmlToText($rendered);
+        $rendered = MailFormatHelper::wrapMail($rendered);
+        $rendered = strip_tags($rendered);
+        $rendered = str_replace("\n\n", "", $rendered);
+        $rendered = str_replace("  ", "", $rendered);
+        $body = $body . nl2br($rendered . "\r\n");
+
+      }
+
+      $message['body'][1] = $body;
+
+    }
+  }
 }
