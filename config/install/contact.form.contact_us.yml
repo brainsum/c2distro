@@ -7,5 +7,5 @@ recipients:
   - dev+c2distro@brainsum.com
 reply: ''
 weight: 0
-message: ''
+message: 'Message sent'
 redirect: ''
