@@ -54,6 +54,17 @@ function c2d_theme_preprocess_page(array &$variables) {
  */
 function c2d_theme_preprocess_block(&$variables) {
 
+  $block_content = $variables['elements']['content']['#block_content'] ?? '';
+  if ($block_content instanceof BlockContentInterface) {
+    $block_type = $block_content->bundle();
+
+    if ($block_type === 'footer') {
+      $variables['attributes']['class'][] = 'footer-block-type';
+    }
+    if ($block_type === 'hero') {
+      $variables['attributes']['class'][] = 'hero-block-type';
+    }
+  }
   $blockId = $variables['elements']['#id'] ?? '';
 
   if ($variables['derivative_plugin_id'] == 'search-resources') {

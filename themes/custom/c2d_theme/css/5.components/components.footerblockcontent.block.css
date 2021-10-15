@@ -453,15 +453,15 @@ footer {
   border-top: solid 1rem #dbdbdb;
   padding: 0;
 }
-footer .footer-block {
+footer .footer-block-type {
   padding: 1.4rem 0 0;
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block {
+  footer .footer-block-type {
     padding: 4.4rem 0 0;
   }
 }
-footer .footer-block-body {
+footer .footer-block-type-body {
   max-width: 113.5rem;
   margin: 0 auto;
   padding: 0 1.5rem 3.2rem;
@@ -469,33 +469,33 @@ footer .footer-block-body {
   flex-wrap: wrap;
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-body {
+  footer .footer-block-type-body {
     padding: 0 1.5rem 13.2rem;
   }
 }
-footer .footer-block-body-item {
+footer .footer-block-type-body-item {
   flex: 1 1 100%;
   width: 100%;
   padding: 2rem 0 4rem;
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-body-item {
+  footer .footer-block-type-body-item {
     width: auto;
     flex: 1 1 0;
     padding: 0 3rem;
   }
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-body-item:first-child {
+  footer .footer-block-type-body-item:first-child {
     padding-left: 0;
   }
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-body-item:last-child {
+  footer .footer-block-type-body-item:last-child {
     padding-left: 0;
   }
 }
-footer .footer-block-body-item .footer-title {
+footer .footer-block-type-body-item .footer-title {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #12284c;
@@ -505,11 +505,11 @@ footer .footer-block-body-item .footer-title {
   padding-bottom: 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-body-item .footer-title {
+  footer .footer-block-type-body-item .footer-title {
     padding-bottom: 3rem;
   }
 }
-footer .footer-block-body-item p, footer .footer-block-body-item a {
+footer .footer-block-type-body-item p, footer .footer-block-type-body-item a {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #12284c;
@@ -518,17 +518,17 @@ footer .footer-block-body-item p, footer .footer-block-body-item a {
   line-height: 20px;
   margin-top: 0;
 }
-footer .footer-block-body-item ul {
+footer .footer-block-type-body-item ul {
   padding-left: 1.5rem;
 }
-footer .footer-block-body-item ul a {
+footer .footer-block-type-body-item ul a {
   text-decoration: underline;
 }
-footer .footer-block-footer {
+footer .footer-block-type-footer {
   background-color: #dbdbdb;
   padding: 2rem 0;
 }
-footer .footer-block-footer-content {
+footer .footer-block-type-footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -542,11 +542,11 @@ footer .footer-block-footer-content {
           text-decoration: none solid #12284c;
   line-height: 24px;
 }
-footer .footer-block-footer-content-item:first-child {
+footer .footer-block-type-footer-content-item:first-child {
   padding-bottom: 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  footer .footer-block-footer-content-item:first-child {
+  footer .footer-block-type-footer-content-item:first-child {
     padding-bottom: 0;
   }
 }

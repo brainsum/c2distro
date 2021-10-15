@@ -27,16 +27,16 @@
 #}
 {{ attach_library('c2d_theme/footerblockcontent.block') }}
 
-<div class="footer-block">
-    <div class="footer-block-body">
+<div class="footer-block-type">
+    <div class="footer-block-type-body">
         {% if content.field_title1.0['#context']['value'] is not empty %}
-            <div class="footer-block-body-item">
+            <div class="footer-block-type-body-item">
                 <h4 class="footer-title">{{ content.field_title1.0['#context']['value'] }}</h4>
                 <p class="footer-body">{{ content.field_body.0['#text'] }}</p>
             </div>
         {% endif %}
         {% if content.field_title2.0['#context']['value'] is not empty %}
-            <div class="footer-block-body-item">
+            <div class="footer-block-type-body-item">
                 <h4 class="footer-title">{{ content.field_title2.0['#context']['value'] }}</h4>
                 <ul>
                 {% for link in content.field_links %}
@@ -53,7 +53,7 @@
             </div>
         {% endif %}
         {% if content.field_title3.0['#context']['value'] is not empty %}
-            <div class="footer-block-body-item">
+            <div class="footer-block-type-body-item">
                 <h4 class="footer-title">{{ content.field_title3.0['#context']['value'] }}</h4>
                 {% if content.field_link.0['#url'] %}
                     {% if content.field_link.0['#title'] %}
@@ -66,9 +66,9 @@
             </div>
         {% endif %}
 </div>
-<div class="footer-block-footer">
-    <div class="footer-block-footer-content">
-        <div class="footer-block-footer-content-item">
+<div class="footer-block-type-footer">
+    <div class="footer-block-type-footer-content">
+        <div class="footer-block-type-footer-content-item">
 
             {% if logged_in %}
                {% set loginUrl = '/user/' ~ user.id %}
@@ -80,7 +80,7 @@
 
             <p>© {{ "now"|date("Y") }} - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
         </div>
-        <div class="footer-block-footer-content-item">
+        <div class="footer-block-type-footer-content-item">
             <p><a href="/legal-disclaimer">Legal Disclaimer</a> |  <a href="/fraud-notice">Fraud Notice</a></p>
         </div>
     </div>

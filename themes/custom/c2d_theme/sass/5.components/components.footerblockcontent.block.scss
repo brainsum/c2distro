@@ -5,7 +5,7 @@ footer {
   border-top: solid 1rem $color-grey-extra;
   padding: 0;
 
-  .footer-block {
+  .footer-block-type {
     padding: 1.4rem 0 0;
     @include breakpoint(medium) {
       padding: 4.4rem 0 0;
