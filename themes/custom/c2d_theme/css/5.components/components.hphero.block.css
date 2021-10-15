@@ -457,83 +457,42 @@
     margin-top: -12rem;
   }
 }
-.region.region-top #block-hphero {
-  display: flex;
-  justify-content: center;
-  height: 66.7rem;
-  width: 100%;
-}
 @media print, screen and (min-width: 48em) {
   .region.region-top #block-hphero {
-    height: auto;
-    width: auto;
-  }
-}
-.region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero {
-  height: 66.7rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero {
-    height: auto;
-  }
-}
-.region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
-  height: 66.7rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
-    height: auto;
-  }
-}
-.region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item picture {
-  height: 66.7rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item picture {
-    height: auto;
-  }
-}
-.region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item picture img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 66.7rem;
-}
-@media print, screen and (min-width: 48em) {
-  .region.region-top #block-hphero article.media.media--type-image.media--view-mode-hp-hero .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item picture img {
-    -o-object-fit: initial;
-       object-fit: initial;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 .region.region-top #block-hphero .hero-text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: transparent;
-  max-width: 60rem;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+  margin-top: 4.5rem;
 }
 @media print, screen and (min-width: 48em) {
   .region.region-top #block-hphero .hero-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    max-width: 60rem;
     margin: 6rem auto 0;
+    text-align: center;
+    color: white;
   }
 }
 .region.region-top #block-hphero .hero-text .hero-text-container-title {
-  font-family: Montserrat;
-  font-size: 36px;
-  color: #ffffff;
-  -webkit-text-decoration: none solid white;
-          text-decoration: none solid white;
-  line-height: 40px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  text-decoration: none;
+  line-height: 1.11;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -542,18 +501,27 @@
 @media print, screen and (min-width: 48em) {
   .region.region-top #block-hphero .hero-text .hero-text-container-title {
     font-size: 40px;
+    color: #ffffff;
   }
 }
 .region.region-top #block-hphero .hero-text .hero-text-container-description {
-  font-family: Open Sans;
-  font-size: 18px;
-  color: #ffffff;
-  -webkit-text-decoration: none solid white;
-          text-decoration: none solid white;
-  line-height: 30px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  line-height: 1.66;
+}
+@media print, screen and (min-width: 48em) {
+  .region.region-top #block-hphero .hero-text .hero-text-container-description {
+    color: #ffffff;
+  }
 }
 .region.region-top #block-hphero .hero-text .flex-centered {
   margin-top: 3rem;
+}
+@media print, screen and (max-width: 63.99875em) {
+  .region.region-top #block-hphero .hero-text .bordered-button-blue {
+    color: #12284c;
+  }
 }
 /*# sourceMappingURL=../../maps/5.components/components.hphero.block.css.map */

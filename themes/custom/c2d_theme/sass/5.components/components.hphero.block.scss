@@ -8,91 +8,69 @@
   }
 
   #block-hphero {
-    display: flex;
-    justify-content: center;
-    height: 66.7rem;
-    width: 100%;
     @include breakpoint(medium) {
-      height: auto;
-      width: auto;
-    }
-
-    article.media.media--type-image.media--view-mode-hp-hero {
-      height: 66.7rem;
-      @include breakpoint(medium) {
-        height: auto;
-      }
-
-      .field.field--name-field-media-image.field--type-image.field--label-hidden.field__item {
-        height: 66.7rem;
-        @include breakpoint(medium) {
-          height: auto;
-        }
-
-        picture {
-          height: 66.7rem;
-          @include breakpoint(medium) {
-            height: auto;
-          }
-
-          img {
-            object-fit: cover;
-            height: 66.7rem;
-            @include breakpoint(medium) {
-              object-fit: initial;
-              height: auto;
-            }
-          }
-        }
-      }
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     .hero-text {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background-color: transparent;
-      max-width: 60rem;
-      margin: 0 auto;
-      text-align: center;
-      color: white;
-      padding: 0 20px;
+      @include basePadding;
+
+      margin-top: 4.5rem;
+
       @include breakpoint(medium) {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        max-width: 60rem;
         margin: 6rem auto 0;
+        text-align: center;
+        color: white;
       }
 
       .hero-text-container-title {
-        font-family: Montserrat;
-        font-size: 36px;
-        color: #ffffff;
-        text-decoration: none solid rgb(255, 255, 255);
-        line-height: 40px;
         text-align: center;
+        font-family: $font-montserrat;
+        font-size: 3.6rem;
+        text-decoration: none;
+        line-height: 1.11;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         margin-bottom: 1rem;
         @include breakpoint(medium) {
           font-size: 40px;
+          color: #ffffff;
         }
       }
 
       .hero-text-container-description {
-        font-family: Open Sans;
-        font-size: 18px;
-        color: #ffffff;
-        text-decoration: none solid rgb(255, 255, 255);
-        line-height: 30px;
         text-align: center;
+        font-family: $font-open;
+        font-size: 1.8rem;
+        text-decoration: none;
+        line-height: 1.66;
+
+        @include breakpoint(medium) {
+          color: #ffffff;
+        }
       }
 
       .flex-centered {
         margin-top: 3rem;
+      }
+
+      .bordered-button-blue {
+        @include breakpoint(medium down) {
+          color: $body-font-color;
+        }
       }
     }
   }
