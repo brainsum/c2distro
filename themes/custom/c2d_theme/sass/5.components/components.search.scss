@@ -14,11 +14,11 @@
   .block-inner {
     @include width-1390;
 
-    margin-top: 7.5rem;
+    margin-top: 4rem;
     margin-bottom: 4.5rem;
 
     @include breakpoint(medium) {
-      margin-top: 13.5rem;
+      margin-top: 6rem;
       margin-bottom: 6.5rem;
     }
 
