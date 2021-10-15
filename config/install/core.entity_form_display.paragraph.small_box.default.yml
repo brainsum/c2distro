@@ -19,6 +19,11 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
