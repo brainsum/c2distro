@@ -8,9 +8,9 @@ dependencies:
     module:
       - media_library
   module:
-    - image
     - media
     - media_library
+    - svg_image
     - user
 id: media_library
 label: 'Media library'
@@ -472,13 +472,28 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'url.query_args:sort_by'
         - user
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.media_library'
+        - 'config:core.entity_view_display.media.document.lister_page'
+        - 'config:core.entity_view_display.media.document.search_index'
+        - 'config:core.entity_view_display.media.icon.default'
+        - 'config:core.entity_view_display.media.icon.media_library'
+        - 'config:core.entity_view_display.media.icon.search_index'
+        - 'config:core.entity_view_display.media.image.hp_hero'
+        - 'config:core.entity_view_display.media.image.search_index'
+        - 'config:core.entity_view_display.media.remote_video.search_index'
   page:
     display_plugin: page
     id: page
@@ -775,7 +790,21 @@ display:
         - 'url.query_args:sort_by'
         - user
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.lister_page'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.document.search_index'
+        - 'config:core.entity_view_display.media.icon.default'
+        - 'config:core.entity_view_display.media.icon.media_library'
+        - 'config:core.entity_view_display.media.icon.search_index'
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.hp_hero'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image.search_index'
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.media_library'
+        - 'config:core.entity_view_display.media.remote_video.search_index'
   widget:
     display_plugin: page
     id: widget
@@ -1095,7 +1124,21 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.lister_page'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.document.search_index'
+        - 'config:core.entity_view_display.media.icon.default'
+        - 'config:core.entity_view_display.media.icon.media_library'
+        - 'config:core.entity_view_display.media.icon.search_index'
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.hp_hero'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image.search_index'
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.media_library'
+        - 'config:core.entity_view_display.media.remote_video.search_index'
   widget_table:
     display_plugin: page
     id: widget_table
