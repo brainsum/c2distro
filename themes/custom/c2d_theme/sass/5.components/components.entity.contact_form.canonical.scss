@@ -103,11 +103,15 @@
       font-family: $font-open;
       font-size: 1.6rem;
       color: $body-font-color;
+      margin-bottom: 2.1rem;
 
       a {
         text-decoration: underline solid $body-font-color;
       }
     }
+  }
+  .form-actions {
+    margin-top: 2.1rem !important;
   }
 
   input#edit-submit {
