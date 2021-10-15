@@ -28,60 +28,61 @@
 {{ attach_library('c2d_theme/footerblockcontent.block') }}
 
 <div class="footer-block-type">
-    <div class="footer-block-type-body">
-        {% if content.field_title1.0['#context']['value'] is not empty %}
-            <div class="footer-block-type-body-item">
-                <h4 class="footer-title">{{ content.field_title1.0['#context']['value'] }}</h4>
-                <p class="footer-body">{{ content.field_body.0['#text'] }}</p>
-            </div>
-        {% endif %}
-        {% if content.field_title2.0['#context']['value'] is not empty %}
-            <div class="footer-block-type-body-item">
-                <h4 class="footer-title">{{ content.field_title2.0['#context']['value'] }}</h4>
-                <ul>
-                {% for link in content.field_links %}
-                    {% if link['#url'] %}
-                        {% if link['#title'] %}
-                            {% set linktitle = link['#title'] %}
-                        {% else %}
-                            {% set linktitle = link['#url'] %}
-                        {% endif %}
-                        <li><a href="{{ link['#url'] }}">{{ linktitle }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
-        {% if content.field_title3.0['#context']['value'] is not empty %}
-            <div class="footer-block-type-body-item">
-                <h4 class="footer-title">{{ content.field_title3.0['#context']['value'] }}</h4>
-                {% if content.field_link.0['#url'] %}
-                    {% if content.field_link.0['#title'] %}
-                        {% set linktitle = content.field_link.0['#title'] %}
-                    {% else %}
-                        {% set linktitle = content.field_link.0['#url'] %}
-                    {% endif %}
-                    <a class="bordered-button-blue" href="{{ content.field_link.0['#url'] }}">{{ linktitle }}</a>
-                {% endif %}
-            </div>
-        {% endif %}
-</div>
-<div class="footer-block-type-footer">
-    <div class="footer-block-type-footer-content">
-        <div class="footer-block-type-footer-content-item">
-
-            {% if logged_in %}
-               {% set loginUrl = '/user/' ~ user.id %}
-               {% set loginText = 'My Account' %}
-            {% else %}
-                {% set loginUrl = path('user.login') %}
-               {% set loginText = 'Login' %}
+  <div class="footer-block-type-body">
+    {% if content.field_title1.0['#context']['value'] is not empty %}
+      <div class="footer-block-type-body-item">
+        <h4 class="footer-title">{{ content.field_title1.0['#context']['value'] }}</h4>
+        <p class="footer-body">{{ content.field_body.0['#text'] }}</p>
+      </div>
+    {% endif %}
+    {% if content.field_title2.0['#context']['value'] is not empty %}
+      <div class="footer-block-type-body-item">
+        <h4 class="footer-title">{{ content.field_title2.0['#context']['value'] }}</h4>
+        <ul>
+          {% for link in content.field_links %}
+            {% if link['#url'] %}
+              {% if link['#title'] %}
+                {% set linktitle = link['#title'] %}
+              {% else %}
+                {% set linktitle = link['#url'] %}
+              {% endif %}
+              <li><a href="{{ link['#url'] }}">{{ linktitle }}</a></li>
             {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {% if content.field_title3.0['#context']['value'] is not empty %}
+      <div class="footer-block-type-body-item">
+        <h4 class="footer-title">{{ content.field_title3.0['#context']['value'] }}</h4>
+        {% if content.field_link.0['#url'] %}
+          {% if content.field_link.0['#title'] %}
+            {% set linktitle = content.field_link.0['#title'] %}
+          {% else %}
+            {% set linktitle = content.field_link.0['#url'] %}
+          {% endif %}
+          <a class="bordered-button-blue" href="{{ content.field_link.0['#url'] }}">{{ linktitle }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
 
-            <p>© {{ "now"|date("Y") }} - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
-        </div>
-        <div class="footer-block-type-footer-content-item">
-            <p><a href="/legal-disclaimer">Legal Disclaimer</a> |  <a href="/fraud-notice">Fraud Notice</a></p>
-        </div>
+  <div class="footer-block-type-footer">
+    <div class="footer-block-type-footer-content">
+      <div class="footer-block-type-footer-content-item">
+        {% if logged_in %}
+          {% set loginUrl = '/user/' ~ user.id %}
+          {% set loginText = 'My Account' %}
+        {% else %}
+          {% set loginUrl = path('user.login') %}
+          {% set loginText = 'Login' %}
+        {% endif %}
+
+        <p>© {{ "now"|date("Y") }} - International Federation of Red Cross and Red Crescent Societies | <a href="{{ loginUrl }}">{{ loginText|t }}</a></p>
+      </div>
+      <div class="footer-block-type-footer-content-item">
+        <p><a href="/legal-disclaimer">Legal Disclaimer</a> |  <a href="/fraud-notice">Fraud Notice</a></p>
+      </div>
     </div>
+  </div>
 </div>
