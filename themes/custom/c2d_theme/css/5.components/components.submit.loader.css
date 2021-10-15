@@ -448,134 +448,67 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-.block-page-title-block {
-  margin: 78px auto 33px !important;
-  padding: 0 !important;
+.custom-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000000;
 }
-.block-page-title-block .block-inner h1.page-title {
-  margin-left: 0 !important;
-  font-size: 4rem !important;
-  line-height: 4.9rem !important;
-  text-align: center !important;
+.custom-loader .loader {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
-
-.contact-form {
-  background-color: white;
-  padding-bottom: 11.2rem;
+.custom-loader .loader div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-.contact-form .form-container {
-  max-width: 120rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 1.5rem;
-  border: 0;
+.custom-loader .loader div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
 }
-.contact-form .form-container legend {
-  display: none;
-}
-.contact-form .form-container .fieldset-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 6.8rem;
-  margin-right: -2.4rem;
-  margin-left: -2.4rem;
-}
-.contact-form .form-container .fieldset-wrapper .left {
-  width: 100%;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
-}
-@media print, screen and (min-width: 48em) {
-  .contact-form .form-container .fieldset-wrapper .left {
-    width: calc(3 / 8 * 100%);
+@-webkit-keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
 }
-.contact-form .form-container .fieldset-wrapper .left #edit-field-upload-label-wrapper {
-  margin-top: 5.1rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  color: #12284c;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
-  line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 1.8rem;
-}
-.contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason {
-  padding: 1rem 5rem 1rem 1rem;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment label {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  color: #12284c;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
-  font-weight: 700;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=file] {
-  width: 100%;
-  margin-top: 10px;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=submit] {
-  margin: 20px 0;
-  width: 23.1rem;
-  height: 4.7rem;
-}
-.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment .description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  color: #12284c;
-  -webkit-text-decoration: none solid black;
-          text-decoration: none solid black;
-  line-height: 25px;
-}
-.contact-form .form-container .fieldset-wrapper .right {
-  width: 100%;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
-}
-@media print, screen and (min-width: 48em) {
-  .contact-form .form-container .fieldset-wrapper .right {
-    width: calc(5 / 8 * 100%);
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
 }
-.contact-form .form-container #edit-field-terms-and-conditions-wrapper {
-  width: 100%;
-  margin-top: 5.6rem;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  color: #12284c;
-  margin-bottom: 2.1rem;
-}
-.contact-form .form-container #edit-field-terms-and-conditions-wrapper a {
-  -webkit-text-decoration: underline solid #12284c;
-          text-decoration: underline solid #12284c;
-}
-.contact-form .form-actions {
-  margin-top: 2.1rem !important;
-}
-.contact-form input#edit-submit {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  color: #12284c;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
-  line-height: 19px;
-  text-align: center;
-  width: 23.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contact-form input#edit-submit:hover {
-  color: white;
-  background-color: #26c9de !important;
-  border-color: #26c9de !important;
-}
-.contact-form .captcha {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-/*# sourceMappingURL=../../maps/5.components/components.entity.contact_form.canonical.css.map */
+/*# sourceMappingURL=../../maps/5.components/components.submit.loader.css.map */

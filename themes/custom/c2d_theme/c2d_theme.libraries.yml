@@ -161,3 +161,9 @@ h1.page_title_center:
   css:
     theme:
       css/5.components/components.h1.page_title_center.css: {}
+submit.loader:
+  js:
+    js/src/custom/submit.loader.js: {}
+  css:
+    theme:
+      css/5.components/components.submit.loader.css: {}
