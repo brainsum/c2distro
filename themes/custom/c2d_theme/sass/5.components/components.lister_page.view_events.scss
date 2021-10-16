@@ -36,7 +36,7 @@
       background-color: $color-white;
       position: relative;
       padding-bottom: 7.3rem;
-      margin-bottom: 0;
+      margin-bottom: 2.3;
       .field--name-field-event-date {
         @include text-small-bold;
         margin: 1.9rem 2.8rem 1.3rem 2.6rem;
@@ -68,6 +68,11 @@
       }
     }
   }
+  .more-link {
+    margin-top: 7.3rem;
+    @include view-more-button;
+
+  }
   .view-empty {
     margin-top: 3.4rem;
     .no-results {
@@ -77,6 +82,6 @@
       text-decoration: none solid $color-blue-gray;
       line-height: 40px;
       font-weight: 700;
-  }
+    }
   }
 }
