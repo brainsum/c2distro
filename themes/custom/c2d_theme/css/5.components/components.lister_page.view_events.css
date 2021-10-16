@@ -503,7 +503,7 @@
   background-color: #ffffff;
   position: relative;
   padding-bottom: 7.3rem;
-  margin-bottom: 0;
+  margin-bottom: 2.3;
 }
 .lister-page.view-events .view-content .views-row .field--name-field-event-date {
   font-family: "Montserrat", sans-serif;
@@ -553,6 +553,27 @@
   position: absolute;
   bottom: 4.6rem;
   left: 2.6rem;
+}
+.lister-page.view-events .more-link {
+  margin-top: 7.3rem;
+}
+.lister-page.view-events .more-link a {
+  width: 261px;
+  height: 47px;
+  border: solid 2px #26c9de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #12284c;
+  transition: all, 0.2s;
+}
+.lister-page.view-events .more-link a:hover {
+  background-color: #26c9de;
+  color: #ffffff;
 }
 .lister-page.view-events .view-empty {
   margin-top: 3.4rem;

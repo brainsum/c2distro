@@ -628,3 +628,25 @@ $-zf-flex-direction: (
   font-style: italic;
   font-weight: $fw-600;
 }
+
+@mixin view-more-button {
+  a {
+    width: 261px;
+    height: 47px;
+    border: solid 2px $color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: $font-montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    color: $body-font-color;
+    transition: all, 0.2s;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-white;
+    }
+  }
+}

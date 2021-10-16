@@ -448,7 +448,9 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-.views-element-container > .block-inner {
+.region.region-content {
+  max-width: 122.2rem;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
