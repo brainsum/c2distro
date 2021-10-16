@@ -94,6 +94,12 @@ view.news.lister_page:
     theme:
       css/5.components/components.h1.page_title.css: {}
       css/5.components/components.view.news.lister_page.css: {}
+view.events.lister_page:
+  version: 1.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.view.events.lister_page.css: {}
 entity.node.canonical.news:
   version: 1.0
   css:
@@ -167,3 +173,7 @@ submit.loader:
   css:
     theme:
       css/5.components/components.submit.loader.css: {}
+lister_page.view_events:
+  css:
+    theme:
+      css/5.components/components.lister_page.view_events.css: {}

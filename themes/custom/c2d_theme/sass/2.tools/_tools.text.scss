@@ -116,3 +116,32 @@
     color: $color-secondary;
   }
 }
+
+@mixin block-title-simple {
+  font-family: $font-montserrat;
+  font-size: 3rem;
+  color: $color-blue-gray;
+  text-decoration: none solid $color-blue-gray;
+  line-height: 4rem;
+  font-weight: 700;
+  @include breakpoint(medium) {
+    font-size: 4rem;
+  }
+}
+@mixin text-small-bold {
+  font-family: $font-montserrat;
+  font-size: 1.4rem;
+  color: $color-blue-gray;
+  text-decoration: none solid $color-blue-gray;
+  line-height: 1.9rem;
+  font-weight: 700;
+}
+@mixin text-read-more {
+  font-family: $font-montserrat;
+  color: $color-blue-gray;
+  text-decoration: none solid $color-blue-gray;
+  line-height: 1.9rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-style: italic;
+}

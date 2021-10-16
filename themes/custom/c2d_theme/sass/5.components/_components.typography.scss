@@ -25,20 +25,22 @@
   }
 }
 
-.block-holder {
-  .block-inner {
-    position: relative;
+.paragraph {
+  .block-holder {
+    .block-inner {
+      position: relative;
 
-    .title-holder {
-      @include width-1105;
-      z-index: 10;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      top: -25px;
-      span {
-        @include block-title;
+      .title-holder {
+        @include width-1105;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -25px;
+        span {
+          @include block-title;
+        }
       }
     }
   }
