@@ -71,7 +71,7 @@
     <div class="footer-block-type-footer-content">
       <div class="footer-block-type-footer-content-item">
         {% if logged_in %}
-          {% set loginUrl = '/user/' ~ user.id %}
+          {% set loginUrl = path('entity.user.canonical', {'user' : user.id}) %}
           {% set loginText = 'My Account' %}
         {% else %}
           {% set loginUrl = path('user.login') %}
