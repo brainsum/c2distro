@@ -1,0 +1,82 @@
+@import "../_index";
+
+.views-element-container > .block-inner {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  padding: 0;
+  .title-holder {
+    @include block-title-simple;
+    margin-top: 6rem;
+  }
+  .lister-page {
+    // margin-top: 6.2rem;
+  }
+}
+.lister-page {
+  .second-title {
+    @include block-title-simple;
+    margin-top: 10.3rem;
+  }
+}
+
+.lister-page.view-events {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -48px 0 -22px -48px;
+    width: calc(100% + 48px);
+    padding-top: 6.2rem;
+    & > * {
+      margin: 48px 0 22px 48px;
+    }
+    .views-row {
+      width: 262px;
+      background-color: $color-white;
+      position: relative;
+      padding-bottom: 7.3rem;
+      margin-bottom: 0;
+      .field--name-field-event-date {
+        @include text-small-bold;
+        margin: 1.9rem 2.8rem 1.3rem 2.6rem;
+      }
+      .field--name-field-location {
+        @include text-small-bold;
+        margin-left: 21px;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: .4rem;
+        }
+      }
+      .field--name-title {
+        font-family: $font-montserrat;
+        color: $color-blue-gray;
+        font-size: 1.8rem;
+        text-decoration: none solid $color-blue-gray;
+        line-height: 2.2rem;
+        margin: 2.6rem 4.6rem 3.3rem 2.6rem;
+        display: block;
+        min-height: 9rem;
+      }
+      a.read-more {
+        @include text-read-more;
+        position: absolute;
+        bottom: 4.6rem;
+        left: 2.6rem;
+      }
+    }
+  }
+  .view-empty {
+    margin-top: 3.4rem;
+    .no-results {
+      font-family: $font-open;
+      font-size: 1.6rem;
+      color: $color-blue-gray;
+      text-decoration: none solid $color-blue-gray;
+      line-height: 40px;
+      font-weight: 700;
+  }
+  }
+}

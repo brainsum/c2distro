@@ -471,7 +471,7 @@
   }
 }
 
-.view.lister-page .view-header .second-title {
+.view.lister-page.view-news .view-header .second-title {
   max-width: 119.2rem;
   margin: 0 auto;
   font-size: 3rem;
@@ -481,12 +481,12 @@
   padding: 0 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-header .second-title {
+  .view.lister-page.view-news .view-header .second-title {
     font-size: 4rem;
     padding: 6.3rem 0 0 0;
   }
 }
-.view.lister-page .view-content {
+.view.lister-page.view-news .view-content {
   padding-top: 6.3rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -496,14 +496,14 @@
   margin: 0 auto;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-content {
+  .view.lister-page.view-news .view-content {
     justify-content: flex-start;
     max-width: 124.2rem;
     padding-right: 0;
     padding-left: 0;
   }
 }
-.view.lister-page .view-content .views-row {
+.view.lister-page.view-news .view-content .views-row {
   width: 100%;
   background-color: white;
   transition: 0.5s;
@@ -511,20 +511,17 @@
   margin-bottom: 4rem;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-content .views-row {
+  .view.lister-page.view-news .view-content .views-row {
     width: 262px;
     margin: 0 24px 70px 24px;
     padding-bottom: 7.3rem;
   }
 }
-.view.lister-page .view-content .views-row:hover {
+.view.lister-page.view-news .view-content .views-row:hover {
   box-shadow: 0 0 15px lightgray;
 }
-.view.lister-page .view-content .views-row img {
-  width: 100%;
-}
-.view.lister-page .view-content .views-row .views-field.views-field-created,
-.view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
   padding: 2.4rem 3.2rem 0;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
@@ -532,35 +529,35 @@
   font-weight: 600;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-content .views-row .views-field.views-field-created,
-.view.lister-page .view-content .views-row .views-field.views-field-field-event-date {
+  .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
     padding: 1.5rem 2rem 1rem 2.5rem;
   }
 }
-.view.lister-page .view-content .views-row .views-field.views-field-created .content-type,
-.view.lister-page .view-content .views-row .views-field.views-field-field-event-date .content-type {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-created .content-type,
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date .content-type {
   color: #26c9de;
   text-transform: capitalize;
   line-height: 1.9rem;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-field-location {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location {
   padding: 0 20px 17px 20px;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-field-location .field-content a {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location .field-content a {
   display: flex;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-field-location a:before {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location a:before {
   content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
   width: 22px;
   display: inline-block;
   padding-right: 0.5rem;
   height: 15px;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-title {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-title {
   padding: 3rem 3.2rem 0;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
@@ -571,29 +568,29 @@
   line-height: 1.22;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-content .views-row .views-field.views-field-title {
+  .view.lister-page.view-news .view-content .views-row .views-field.views-field-title {
     min-height: 90px;
     padding: 9px 25px 2.6rem;
   }
 }
-.view.lister-page .view-content .views-row .views-field.views-field-title a {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-title a {
   transition: 0.3s;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-title a:hover {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-title a:hover {
   color: #26c9de;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-view-node {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node {
   padding: 3rem 3.2rem 3rem;
   transition: 0.5s;
 }
 @media print, screen and (min-width: 48em) {
-  .view.lister-page .view-content .views-row .views-field.views-field-view-node {
+  .view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node {
     position: absolute;
     padding: 0 2rem 0 2.5rem;
     bottom: 38px;
   }
 }
-.view.lister-page .view-content .views-row .views-field.views-field-view-node a {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node a {
   transition: 0.3s;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
@@ -601,15 +598,15 @@
   font-weight: 700;
   font-style: italic;
 }
-.view.lister-page .view-content .views-row .views-field.views-field-view-node a:hover {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node a:hover {
   color: #26c9de;
 }
-.view.lister-page .view-empty {
+.view.lister-page.view-news .view-empty {
   padding: 2rem 0 8rem 0;
   max-width: 119.2rem;
   margin: 0 auto;
 }
-.view.lister-page .view-empty .no-results {
+.view.lister-page.view-news .view-empty .no-results {
   color: #12284c;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;

@@ -24,7 +24,7 @@
   }
 }
 
-.view.lister-page {
+.view.lister-page.view-news {
   .view-header {
     .second-title {
       max-width: 119.2rem;
@@ -72,10 +72,6 @@
 
       &:hover {
         box-shadow: 0 0 15px lightgray;
-      }
-
-      img {
-        width: 100%;
       }
 
       .views-field.views-field-created,

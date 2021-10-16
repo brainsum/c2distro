@@ -571,7 +571,7 @@
   padding: 0 1.5rem;
 }
 .block-holder.width--wide .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -685,7 +685,7 @@
 }
 
 .contact-block .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -706,7 +706,7 @@
 }
 .page-node-type-region #block-dislaw-theme-page-title .block-inner,
 .page-node-type-country #block-dislaw-theme-page-title .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -721,7 +721,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -897,7 +897,7 @@
 .view-general-site-search .content-section,
 .page-node-type-news .info-section,
 .page-node-type-news .content-section {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1113,7 +1113,7 @@
 }
 .view-general-site-search .field--name-field-related-news-and-events .field-label--holder,
 .page-node-type-news .field--name-field-related-news-and-events .field-label--holder {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1145,7 +1145,7 @@
 }
 .view-general-site-search .field--name-field-related-news-and-events .field-items-holder,
 .page-node-type-news .field--name-field-related-news-and-events .field-items-holder {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1456,7 +1456,7 @@
   padding-bottom: 12rem;
 }
 .view-disaster-law-database .view-header {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1464,7 +1464,7 @@
 }
 .view-disaster-law-database .view-content--inner {
   display: flex;
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1687,7 +1687,7 @@
   background-color: #ffffff;
 }
 .dmiMainCategoriesHolder .dmiMainCategories--inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1735,7 +1735,7 @@
 }
 
 .dmiInstrumentsHolder {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -1802,7 +1802,7 @@
   }
 }
 .dmi-countries-block--wrapper .region-wrapper .region-content {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -2015,7 +2015,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: column;
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -2487,7 +2487,7 @@ input.form-submit.js-hide:hover {
   }
 }
 .path-contact .block-system-main-block .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -2698,7 +2698,7 @@ input.form-submit.js-hide:hover {
 }
 
 .views-element-container > .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -2954,7 +2954,7 @@ input.form-submit.js-hide:hover {
  * @package: navigation
  */
 #block-dislaw-theme-primary-local-tasks {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -3421,7 +3421,7 @@ body.fixed .block-country-navigation {
 }
 
 #block-dislaw-theme-breadcrumbs .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -3473,7 +3473,7 @@ body.fixed .block-country-navigation {
   }
 }
 .block-views-exposed-filter-blocknews-events-lister .block-inner {
-  max-width: 113.5rem;
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -4383,11 +4383,11 @@ body.fixed .block-country-navigation {
   line-height: 1.225;
 }
 
-.block-holder .block-inner {
+.paragraph .block-holder .block-inner {
   position: relative;
 }
-.block-holder .block-inner .title-holder {
-  max-width: 113.5rem;
+.paragraph .block-holder .block-inner .title-holder {
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
@@ -4398,7 +4398,7 @@ body.fixed .block-country-navigation {
   margin: 0 auto;
   top: -25px;
 }
-.block-holder .block-inner .title-holder span {
+.paragraph .block-holder .block-inner .title-holder span {
   font-family: "Montserrat", sans-serif !important;
   font-size: 2.4rem;
   font-weight: 700;
@@ -4413,7 +4413,7 @@ body.fixed .block-country-navigation {
   line-height: 5rem;
 }
 @media print, screen and (min-width: 64em) {
-  .block-holder .block-inner .title-holder span {
+  .paragraph .block-holder .block-inner .title-holder span {
     font-size: 3.6rem;
   }
 }

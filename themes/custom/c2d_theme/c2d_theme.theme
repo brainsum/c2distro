@@ -24,8 +24,11 @@ function c2d_theme_preprocess_page(array &$variables) {
     $variables['#attached']['library'][] = 'c2d_theme/submit.loader';
   }
 
-  if (($route_name === 'view.news.lister_page') || ($route_name === 'view.news.page_1')) {
+  if ($route_name === 'view.news.lister_page') {
     $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
+  }
+  if ($route_name === 'view.events.lister_page') {
+    $variables['#attached']['library'][] = 'c2d_theme/view.events.lister_page';
   }
 
   $media = \Drupal::routeMatch()->getParameter('media');
