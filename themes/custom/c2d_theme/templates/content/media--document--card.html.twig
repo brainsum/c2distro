@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    <div{{ content_attributes.addClass('media__content') }}>
+      <div class="thumbnail">
+        {{ content.thumbnail }}
+      </div>
+      <div class="content-header">
+        <div class="content-header-text">
+          <div class="created-time">{{ content.created }}</div>
+          <div class="created-time-pipe">|</div>
+          <div class="category-link"><a href="/resources?text=&category={{ content.field_category.0['#taxonomy_term'].tid.0.value }}">{{ content.field_category.0['#taxonomy_term'].name.0.value }}</a></div>
+        </div>
+      </div>
+      {{ content|without('thumbnail', 'created', 'field_category') }}
+      <a href="{{ path('entity.media.canonical', {'media': media.id}) }}" class="read-more"> {{ 'Read more'|t }} </a>
+    </div>
+  {% endif %}
+
+</article>

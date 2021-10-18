@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.card
     - core.entity_view_mode.media.lister_page
     - image.style.thumbnail
     - media.type.document
@@ -75,7 +76,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:media'
+        options:
+          relationship: none
+          view_mode: card
       fields:
         thumbnail__target_id:
           id: thumbnail__target_id
@@ -296,6 +300,13 @@ display:
       defaults:
         pager: false
         fields: false
+        title: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        css_class: false
       fields:
         thumbnail__target_id:
           id: thumbnail__target_id
@@ -485,6 +496,13 @@ display:
           absolute: false
           entity_type: media
           plugin_id: entity_link
+      title: 'Key resources'
+      use_more: true
+      use_more_always: false
+      use_more_text: 'View more'
+      link_display: custom_url
+      link_url: /resources
+      css_class: lister-page
     cache_metadata:
       max-age: -1
       contexts:
