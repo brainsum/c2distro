@@ -28,11 +28,10 @@
     "theme",
     "twig"
   ],
-  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.8.5",
     "browser-sync": "^2.26.14",
-    "foundation-sites": "^6.6.3",
+    "foundation-sites": "^6.7.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.0",
     "gulp-remove-empty-lines": "^0.1.0",
