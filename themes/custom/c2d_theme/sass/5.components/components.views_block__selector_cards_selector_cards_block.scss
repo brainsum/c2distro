@@ -50,12 +50,12 @@
           a {
             cursor: pointer;
             display: block;
-            padding: 0;
+            padding: 7rem 4rem 8.5rem;
             align-items: center;
             justify-content: flex-start;
             flex-wrap: wrap;
             @include breakpoint(medium) {
-              padding: 0;
+              padding: 7rem 4rem 8.5rem;
             }
 
             &.selector-card {
@@ -63,11 +63,11 @@
                 color: $body-font-color;
                 font-family: $font-montserrat;
                 font-size: 3rem;
-                margin: 6.7rem 2rem 1.2rem;
+                margin: 0 0 1rem;
                 text-decoration: none solid $body-font-color;
                 line-height: 4rem;
                 @include breakpoint(medium) {
-                  margin: 7rem 4rem 1rem;
+                  margin: 0 0 1rem;
                 }
               }
 
@@ -77,10 +77,10 @@
                 font-size: 1.8rem;
                 text-decoration: none solid $background-grey-light;
                 line-height: 3rem;
-                margin: 0 2rem 4.9rem;
+                margin: 0;
                 max-width: 33.5rem;
                 @include breakpoint(medium) {
-                  margin: 0 4rem 4.6rem;
+                  margin: 0;
                   max-width: 51.5rem;
                 }
               }

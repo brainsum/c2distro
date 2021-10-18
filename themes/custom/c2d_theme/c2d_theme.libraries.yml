@@ -105,7 +105,7 @@ entity.node.canonical.news:
   css:
     theme:
       css/5.components/components.h1.page_title.css: {}
-      css/5.components/components.tags.scss: {}
+      css/5.components/components.tags.css: {}
       css/5.components/components.entity.node.canonical.news.css: {}
 hphero.block:
   css:
