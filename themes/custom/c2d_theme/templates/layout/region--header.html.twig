@@ -22,12 +22,12 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     {{ content }}
-    
+
     {#{ elements.sitebranding }#}
     {{ site_name }}
-    
+
     <div class="social-block desktop">
-      <a href="/search" target="_blank" rel="nofollow" class="search-icon"><img src="/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/search-solid.svg"></a>
+      <a href="/search" target="_blank" rel="nofollow" class="search-icon"><img src="/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/search-solid.svg" alt="{{ 'search-icon'|t }}"></a>
     </div>
     <div class="mobile-icons">
       <div class="hamburger"><img src="/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/hamburger.svg" alt="hamburger icon"></div>
