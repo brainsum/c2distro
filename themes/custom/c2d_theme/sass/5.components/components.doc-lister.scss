@@ -132,7 +132,7 @@
   }
 }
 .pager {
-  font-family: 'Open Sans';
+  font-family: $font-open;
   font-size: 18px;
   color: #0f1d40;
   text-decoration: none solid rgb(15, 29, 64);
@@ -149,5 +149,5 @@
 .view-empty {
   font-size: 18px;
   padding: 15px 0 49px 0;
-  font-family: 'Open Sans';
+  font-family: $font-open;
 }

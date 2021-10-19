@@ -792,7 +792,7 @@ select::-ms-expand {
 }
 
 .pager {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #0f1d40;
   -webkit-text-decoration: none solid #0f1d40;
@@ -809,6 +809,6 @@ select::-ms-expand {
 .view-empty {
   font-size: 18px;
   padding: 15px 0 49px 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 /*# sourceMappingURL=../../maps/5.components/components.doc-lister.css.map */
