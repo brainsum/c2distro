@@ -695,10 +695,13 @@ select::-ms-expand {
     margin: 4rem auto 3.5rem;
   }
 }
+.block-facet-blocktags-of-document .item-list__links {
+  margin: -2.5px;
+}
 .block-facet-blocktags-of-document .facet-item {
   float: left;
   display: block;
-  margin-left: 5px;
+  padding: 2.5px;
 }
 .block-facet-blocktags-of-document .facet-item .facet-wrapper {
   padding: 15px;
