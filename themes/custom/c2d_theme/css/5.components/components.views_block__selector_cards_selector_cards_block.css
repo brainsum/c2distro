@@ -572,6 +572,9 @@
   height: 5rem;
   border: solid 2px #26c9de !important;
 }
+.block-views-blockselector-cards-selector-cards-block .view-footer a:hover {
+  color: #ffffff;
+}
 
 .page-node-type-page .field--name-body,
 .page-node-type-page .field--name-field-lead {

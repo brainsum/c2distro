@@ -135,6 +135,9 @@
       text-align: center;
       height: 5rem;
       border: solid 2px $color-secondary !important;
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 }
