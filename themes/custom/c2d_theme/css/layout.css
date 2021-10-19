@@ -560,12 +560,16 @@
   margin: 0 auto;
   padding-right: 1.5rem;
 }
-@media print, screen and (min-width: 64em) {
+@media print, screen and (min-width: 48em) {
   .region-header {
     height: 8.7rem;
-    margin: 3rem auto 2rem;
     padding-left: 1.4rem;
     padding-right: 5.7rem;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .region-header {
+    margin: 3rem auto 2rem;
   }
 }
 .region-header #block-dislaw-theme-site-branding a {

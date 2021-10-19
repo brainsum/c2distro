@@ -43,11 +43,13 @@ header {
   height: 5.6rem;
   margin: 0 auto;
   padding-right: 1.5rem;
-  @include breakpoint(tablet) {
+  @include breakpoint(medium) {
     height: 8.7rem;
-    margin: 3rem auto 2rem;
     padding-left: 1.4rem;
     padding-right: 5.7rem;
+  }
+  @include breakpoint(tablet) {
+    margin: 3rem auto 2rem;
   }
   #block-dislaw-theme-site-branding {
     a { display: block; }
