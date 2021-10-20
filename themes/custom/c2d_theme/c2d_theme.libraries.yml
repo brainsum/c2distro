@@ -177,3 +177,7 @@ lister_page.view_events:
   css:
     theme:
       css/5.components/components.lister_page.view_events.css: {}
+lister_page.view_documents:
+  css:
+    theme:
+      css/5.components/components.lister_page.view_documents.css: {}

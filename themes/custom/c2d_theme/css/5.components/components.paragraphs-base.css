@@ -462,6 +462,9 @@
 .paragraph.background-color--grey {
   background-color: #e8e8e8;
 }
+.paragraph.background-color--lightgrey {
+  background-color: #f2f2f2;
+}
 .paragraph .field--name-field-title {
   margin-bottom: 2rem;
   font-size: 3rem;

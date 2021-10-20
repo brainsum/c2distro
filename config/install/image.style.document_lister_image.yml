@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: document_lister_image
+label: 'Document lister image'
+effects:
+  71cbe70d-5a71-4297-970b-eec09e70ec48:
+    uuid: 71cbe70d-5a71-4297-970b-eec09e70ec48
+    id: image_scale
+    weight: 1
+    data:
+      width: 262
+      height: 304
+      upscale: false

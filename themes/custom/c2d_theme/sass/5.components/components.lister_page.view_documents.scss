@@ -1,0 +1,80 @@
+@import "../_index";
+
+.views-element-container > .block-inner {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  padding: 0;
+  .title-holder {
+    @include block-title-simple;
+    margin-top: 6rem;
+  }
+}
+.lister-page.view-documents {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -48px 0 -22px -48px;
+    width: calc(100% + 48px);
+    padding-top: 6.2rem;
+    & > * {
+      margin: 48px 0 22px 48px;
+    }
+    .views-row {
+      width: 262px;
+      background-color: $color-white;
+      position: relative;
+      padding-bottom: 7.3rem;
+      margin-bottom: 2.3;
+      .field--name-thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26.2rem;
+        height: 30.4rem;
+      }
+      .content-header-text {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 1.9rem 2.8rem 1.3rem 2.6rem;
+        display: flex;
+        align-items: center;
+        .field--name-created {
+          @include text-small-bold;
+        }
+        .category-link {
+          a {
+            color: $color-turquoise;
+            font-family: Montserrat;
+            text-decoration: none solid rgb(38, 201, 222);
+            line-height: 19px;
+            font-weight: 600;
+            font-size: 14px;
+          }
+        }
+      }
+      .field--name-name {
+        font-family: $font-montserrat;
+        color: $color-blue-gray;
+        font-size: 1.8rem;
+        text-decoration: none solid $color-blue-gray;
+        line-height: 2.2rem;
+        margin: 2.6rem 4.6rem 3.3rem 2.6rem;
+        display: block;
+        min-height: 9rem;
+        font-weight: 600;
+      }
+      a.read-more {
+        @include text-read-more;
+        position: absolute;
+        bottom: 4.6rem;
+        left: 2.6rem;
+      }
+    }
+  }
+  .more-link {
+    margin-top: 7.3rem;
+    @include view-more-button;
+  }
+}

@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: background_lightgrey
+label: Lightgrey
+classes: background-color--lightgrey
