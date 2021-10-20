@@ -181,3 +181,7 @@ lister_page.view_documents:
   css:
     theme:
       css/5.components/components.lister_page.view_documents.css: {}
+special_pages:
+  css:
+    theme:
+      css/5.components/components.special_pages.css: {}
