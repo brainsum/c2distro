@@ -50,12 +50,15 @@ function c2d_theme_preprocess_page(array &$variables) {
     }
   }
 
-  if (($route_name === 'system.404') ||
-    ($route_name === 'system.403') ||
-    ($route_name === 'user.login') ||
-    ($route_name === 'user.register') ||
-    ($route_name === 'user.pass') ||
-    ($route_name === 'entity.user.canonical')) {
+  $specialRoutes = [
+    'system.404',
+    'system.403',
+    'user.login',
+    'user.register',
+    'user.pass',
+    'entity.user.canonical',
+  ];
+  if (in_array($route_name, $specialRoutes)) {
     $variables['#attached']['library'][] = 'c2d_theme/special_pages';
   }
 
