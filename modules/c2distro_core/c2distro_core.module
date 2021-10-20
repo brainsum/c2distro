@@ -103,6 +103,11 @@ function c2distro_core_block_content_update(EntityInterface $entity) {
     $tags = ['config:block.block.hphero'];
     \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
   }
+  if ($entity->bundle() === 'footer') {
+    // @todo Check which content_block used on Footer Block.
+    $tags = ['config:block.block.footerblockcontent'];
+    \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
+  }
 }
 
 /**
