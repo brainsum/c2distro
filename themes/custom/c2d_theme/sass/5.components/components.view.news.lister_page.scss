@@ -25,6 +25,9 @@
 }
 
 .view.lister-page.view-news {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
   .view-header {
     .second-title {
       max-width: 119.2rem;
@@ -42,6 +45,7 @@
   }
 
   .view-content {
+/*
     padding-top: 6.3rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -56,19 +60,34 @@
       padding-right: 0;
       padding-left: 0;
     }
+*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: -48px 0 -22px -48px;
+    width: calc(100% + 48px);
+    padding-top: 6.2rem;
+    & > * {
+      margin: 48px 0 22px 48px;
+    }
 
     .views-row {
+      /*
       width: 100%;
       background-color: white;
       transition: .5s;
       position: relative;
       margin-bottom: 4rem;
-
       @include breakpoint(medium) {
         width: 262px;
         margin: 0 24px 70px 24px;
         padding-bottom: 7.3rem;
       }
+      */
+      width: 262px;
+      background-color: $color-white;
+      position: relative;
+      padding-bottom: 7.3rem;
+      margin-bottom: 2.3;
 
       &:hover {
         box-shadow: 0 0 15px lightgray;

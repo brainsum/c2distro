@@ -630,6 +630,7 @@ $-zf-flex-direction: (
 }
 
 @mixin view-more-button {
+  margin-bottom: 3rem;
   a {
     width: 261px;
     height: 47px;
