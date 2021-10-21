@@ -14,6 +14,7 @@ use Drupal\media\MediaInterface;
 use Drupal\file\Entity\File;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Mail\MailFormatHelper;
+use Drupal\views\Views;
 
 /**
  * Implements hook_entity_base_field_info_alter().
@@ -90,6 +91,39 @@ function _c2distro_core_set_thumbnail_alt($entity) {
  */
 function c2distro_core_media_source_info_alter(array &$sources) {
   $sources['file']['class'] = 'Drupal\c2distro_core\Plugin\media\Source\File';
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Invalidate some views cache tags before node page content type has saved.
+ */
+function c2distro_core_node_presave(EntityInterface $entity) {
+  if ($entity->bundle() === 'page') {
+
+    $tags = [];
+
+    foreach ($entity->field_paragraphs as $paragraph) {
+      $views_plugin = $paragraph->entity->field_view_list->plugin_id ?? '';
+      switch ($views_plugin) {
+        case 'views_block:documents-lister_block':
+          $tags[] = 'config:views.view.documents';
+          break;
+
+        case 'views_block:news-lister_block':
+          $tags[] = 'config:views.view.news';
+          break;
+
+        case 'views_block:events-lister_block':
+          $tags[] = 'config:views.view.events';
+          break;
+      }
+    }
+
+    \Drupal::service('cache_tags.invalidator')->invalidateTags($tags);
+
+  }
+
 }
 
 /**
