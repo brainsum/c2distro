@@ -513,7 +513,6 @@
   margin: -48px 0 -22px -48px;
   width: calc(100% + 48px);
   padding-top: 6.2rem;
-  padding-bottom: 10rem;
 }
 .view.lister-page.view-news .view-content > * {
   margin: 48px 0 22px 48px;
@@ -630,5 +629,9 @@
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
+}
+
+.path-news .view.lister-page.view-news .view-content {
+  padding-bottom: 10rem;
 }
 /*# sourceMappingURL=../../maps/5.components/components.view.news.lister_page.css.map */

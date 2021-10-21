@@ -66,7 +66,6 @@
     margin: -48px 0 -22px -48px;
     width: calc(100% + 48px);
     padding-top: 6.2rem;
-    padding-bottom: 10rem;
     & > * {
       margin: 48px 0 22px 48px;
     }
@@ -126,7 +125,7 @@
         }
 
         a:before {
-          content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
+          content: url(../images/dist/svg/location.svg);
           width: 22px;
           display: inline-block;
           padding-right: 0.5rem;
@@ -195,4 +194,8 @@
       font-weight: 600;
     }
   }
+}
+
+.path-news .view.lister-page.view-news .view-content {
+  padding-bottom: 10rem;
 }

@@ -4072,7 +4072,7 @@ body.fixed .block-country-navigation {
   padding: 0;
 }
 .paragraph--type--view .block-views {
-  padding: 4.5rem 0;
+  padding: 4.5rem 0 7.5rem;
 }
 .paragraph--type--view .block-views .title-holder {
   padding: 0 !important;
