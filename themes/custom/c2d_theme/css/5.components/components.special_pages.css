@@ -455,9 +455,10 @@
  *   }
  */
 .region.region-content {
-  max-width: 119.2rem;
-  margin: 0 auto;
-  padding: 8rem 2rem;
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
   text-align: center;
 }
 .region.region-content .block-page-title-block {

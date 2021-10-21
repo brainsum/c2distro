@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /**
  * @file
+ * Theming Drupal system messages
+ */
+/**
+ * @file
  * Sass index file
  *
  * The main importer and organizer sass file.
@@ -448,187 +452,12 @@
  *      @include visually-hidden--focusable;
  *   }
  */
-.views-field-field-media-thumbnail:before,
-.views-field-field-image:before {
-  content: unset !important;
-}
-
-.extra-space {
-  padding: 30px 1px;
-}
-
-.block-page-title-block .block-inner h1.page-title {
-  text-align: left !important;
-  padding: 0 2rem;
-}
-@media print, screen and (min-width: 48em) {
-  .block-page-title-block .block-inner h1.page-title {
-    padding: 0;
-    color: #12284c;
-    -webkit-text-decoration: none solid #12284c;
-            text-decoration: none solid #12284c;
-    line-height: 4rem !important;
-  }
-}
-
-.view.lister-page.view-news {
-  max-width: 122.2rem;
-  margin: 0 auto;
+.system-messages .inner-container {
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.view.lister-page.view-news .view-header .second-title {
-  max-width: 119.2rem;
-  margin: 0 auto;
-  font-size: 3rem;
-  line-height: 4.9rem;
-  font-family: "Montserrat", sans-serif;
-  color: #12284c;
-  padding: 0 2rem;
-}
-@media print, screen and (min-width: 48em) {
-  .view.lister-page.view-news .view-header .second-title {
-    font-size: 4rem;
-    padding: 6.3rem 0 0 0;
-  }
-}
-.view.lister-page.view-news .view-content {
-  /*
-      padding-top: 6.3rem;
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-
-      @include breakpoint(medium) {
-        justify-content: flex-start;
-        max-width: 124.2rem;
-        padding-right: 0;
-        padding-left: 0;
-      }
-  */
-  display: flex;
-  flex-wrap: wrap;
-  margin: -48px 0 -22px -48px;
-  width: calc(100% + 48px);
-  padding-top: 6.2rem;
-  padding-bottom: 10rem;
-}
-.view.lister-page.view-news .view-content > * {
-  margin: 48px 0 22px 48px;
-}
-.view.lister-page.view-news .view-content .views-row {
-  /*
-  width: 100%;
-  background-color: white;
-  transition: .5s;
-  position: relative;
-  margin-bottom: 4rem;
-  @include breakpoint(medium) {
-    width: 262px;
-    margin: 0 24px 70px 24px;
-    padding-bottom: 7.3rem;
-  }
-  */
-  width: 262px;
-  background-color: #ffffff;
-  position: relative;
-  padding-bottom: 7.3rem;
-}
-.view.lister-page.view-news .view-content .views-row:hover {
-  box-shadow: 0 0 15px lightgray;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
-  padding: 2.4rem 3.2rem 0;
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-@media print, screen and (min-width: 48em) {
-  .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
-    padding: 1.5rem 2rem 1rem 2.5rem;
-  }
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-created .content-type,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date .content-type {
-  color: #26c9de;
-  text-transform: capitalize;
-  line-height: 1.9rem;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location {
-  padding: 0 20px 17px 20px;
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location .field-content a {
-  display: flex;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-location a:before {
-  content: url(/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/location.svg);
-  width: 22px;
-  display: inline-block;
-  padding-right: 0.5rem;
-  height: 15px;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-title {
-  padding: 3rem 3.2rem 0;
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
-  line-height: 1.22;
-}
-@media print, screen and (min-width: 48em) {
-  .view.lister-page.view-news .view-content .views-row .views-field.views-field-title {
-    min-height: 90px;
-    padding: 9px 25px 2.6rem;
-  }
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-title a {
-  transition: 0.3s;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-title a:hover {
-  color: #26c9de;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node {
-  padding: 3rem 3.2rem 3rem;
-  transition: 0.5s;
-}
-@media print, screen and (min-width: 48em) {
-  .view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node {
-    position: absolute;
-    padding: 0 2rem 0 2.5rem;
-    bottom: 38px;
-  }
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node a {
-  transition: 0.3s;
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  font-style: italic;
-}
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-view-node a:hover {
-  color: #26c9de;
-}
-.view.lister-page.view-news .view-empty {
-  padding: 2rem 0 8rem 0;
-  max-width: 119.2rem;
-  margin: 0 auto;
-}
-.view.lister-page.view-news .view-empty .no-results {
-  color: #12284c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
-/*# sourceMappingURL=../../maps/5.components/components.view.news.lister_page.css.map */
+/*# sourceMappingURL=../../maps/5.components/components.messages.css.map */
