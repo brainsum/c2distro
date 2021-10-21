@@ -557,4 +557,8 @@ a.site-logo img {
     line-height: 1;
   }
 }
+
+.node--unpublished {
+  background-color: transparent;
+}
 /*# sourceMappingURL=../maps/theme.css.map */
