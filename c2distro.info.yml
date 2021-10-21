@@ -32,6 +32,7 @@ install:
   - block_content
   - contact
   - options
+  - content_moderation
   # Contrib.
   - admin_toolbar
   - paragraphs
