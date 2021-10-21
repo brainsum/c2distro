@@ -457,12 +457,12 @@
   padding: 30px 1px;
 }
 
-.block-page-title-block .block-inner h1.page-title {
+.path-news  .block-page-title-block .block-inner h1.page-title {
   text-align: left !important;
   padding: 0 2rem;
 }
 @media print, screen and (min-width: 48em) {
-  .block-page-title-block .block-inner h1.page-title {
+  .path-news  .block-page-title-block .block-inner h1.page-title {
     padding: 0;
     color: #12284c;
     -webkit-text-decoration: none solid #12284c;
