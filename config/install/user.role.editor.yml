@@ -37,4 +37,5 @@ permissions:
   - 'update any media'
   - 'use text format simple'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'
