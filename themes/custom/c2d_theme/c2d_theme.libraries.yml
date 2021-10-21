@@ -143,11 +143,13 @@ views_block__selector_cards_selector_cards_block:
   css:
     theme:
       css/5.components/components.views_block__selector_cards_selector_cards_block.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 paragraph_cta:
   css:
     theme:
       css/5.components/components.paragraph_cta.css: {}
-  dependecies:
+  dependencies:
     - c2d_theme/paragraphs-base
 pager:
   css:
@@ -157,6 +159,8 @@ views_block__news_lister_block:
   css:
     theme:
       css/5.components/components.views_block__news_lister_block.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 entity.contact_form.canonical:
   css:
     theme:
@@ -177,10 +181,14 @@ lister_page.view_events:
   css:
     theme:
       css/5.components/components.lister_page.view_events.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 lister_page.view_documents:
   css:
     theme:
       css/5.components/components.lister_page.view_documents.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
 special_pages:
   css:
     theme:
