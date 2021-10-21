@@ -45,4 +45,4 @@ type_settings:
       - event
       - news
       - page
-  default_moderation_state: draft
+  default_moderation_state: published
