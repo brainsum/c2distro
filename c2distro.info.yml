@@ -63,6 +63,7 @@ install:
   - recaptcha
   - openid_connect
   - openid_connect_windows_aad
+  - role_delegation
   # Custom
   - c2distro_core
 # Required dependencies.
