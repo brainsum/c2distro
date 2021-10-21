@@ -117,21 +117,23 @@ function c2distro_core_block_content_update(EntityInterface $entity) {
  */
 function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state) {
   // Hide/show conditionally fields for Contact us form.
-  $dependentFields = [
-    'field_upload_label',
-    'field_category',
-    'field_title',
-    'field_description',
-    'field_name_as_author',
-    'field_attachment',
-  ];
-
-  foreach ($dependentFields as $dependentField) {
-    $form[$dependentField]['#states'] = [
-      'visible' => [
-        'select[name="field_contact_reason"]' => ['value' => 'submit_document'],
-      ],
+  if (isset($form['field_contact_reason'])) {
+    $dependentFields = [
+      'field_upload_label',
+      'field_category',
+      'field_title',
+      'field_description',
+      'field_name_as_author',
+      'field_attachment',
     ];
+
+    foreach ($dependentFields as $dependentField) {
+      $form[$dependentField]['#states'] = [
+        'visible' => [
+          'select[name="field_contact_reason"]' => ['value' => 'submit_document'],
+        ],
+      ];
+    }
   }
 
   // Create link to Terms & Conditions.
@@ -153,6 +155,8 @@ function _c2distro_core_compare_fields_weight($a, $b) {
 function c2distro_core_mail_alter(&$message) {
 
   if ($message['id'] === 'contact_page_mail') {
+
+    $message['headers']['From'] = str_replace(',', '', $message['headers']['From']);
 
     $contact_message = $message['params']['contact_message'];
 
