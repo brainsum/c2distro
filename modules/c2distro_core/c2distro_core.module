@@ -153,6 +153,7 @@ function _c2distro_core_compare_fields_weight($a, $b) {
 function c2distro_core_mail_alter(&$message) {
 
   if ($message['id'] === 'contact_page_mail') {
+
     $contact_message = $message['params']['contact_message'];
 
     if ($contact_message instanceof MessageInterface) {
