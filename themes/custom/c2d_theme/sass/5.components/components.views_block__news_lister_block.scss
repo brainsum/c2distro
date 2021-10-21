@@ -3,15 +3,7 @@
 .field--name-field-paragraphs {
   .field__item {
     .paragraph--type--view {
-      //background-color: white;
-
       .paragraph--inner {
-        /*
-        width: 100%;
-        max-width: unset;
-        margin: 0;
-        padding: 0;
-        */
         max-width: 122.2rem;
         margin-right: auto;
         margin-left: auto;
@@ -26,12 +18,12 @@
               max-width: 115.7rem;
 
               span {
+                @include block-title;
                 margin-left: 0;
                 font-family: $font-montserrat;
                 font-size: 3.6rem;
-                color: white;
-                text-decoration: none solid rgb(255, 255, 255);
-                line-height: 3.4rem;
+                color: #fff;
+                text-decoration: none;
                 box-shadow: 2.2rem 0 0 $body-font-color, -1.9rem 0 0 $body-font-color;
               }
             }

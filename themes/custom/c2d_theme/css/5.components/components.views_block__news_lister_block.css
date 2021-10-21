@@ -474,7 +474,6 @@
   color: white;
   -webkit-text-decoration: none solid white;
           text-decoration: none solid white;
-  line-height: 3.4rem;
   box-shadow: 2.2rem 0 0 #12284c, -1.9rem 0 0 #12284c;
 }
 .field--name-field-paragraphs .field__item .paragraph--type--view .paragraph--inner .block-views .block-inner .view.lister-page.view-news {

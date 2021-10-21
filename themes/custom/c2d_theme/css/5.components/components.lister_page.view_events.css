@@ -503,7 +503,6 @@
   background-color: #ffffff;
   position: relative;
   padding-bottom: 7.3rem;
-  margin-bottom: 2.3;
 }
 .lister-page.view-events .view-content .views-row .field--name-field-event-date {
   font-family: "Montserrat", sans-serif;
@@ -536,7 +535,7 @@
   font-size: 1.8rem;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
-  line-height: 2.2rem;
+  line-height: 1.22;
   margin: 2.6rem 4.6rem 3.3rem 2.6rem;
   display: block;
   min-height: 9rem;
@@ -585,7 +584,7 @@
   color: #12284c;
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
-  line-height: 40px;
+  line-height: 2.5;
   font-weight: 700;
 }
 /*# sourceMappingURL=../../maps/5.components/components.lister_page.view_events.css.map */
