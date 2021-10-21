@@ -193,3 +193,7 @@ special_pages:
   css:
     theme:
       css/5.components/components.special_pages.css: {}
+messages:
+  css:
+    theme:
+      css/5.components/components.messages.css: {}

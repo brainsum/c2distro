@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Theming Drupal system messages
+ */
+
+@import '../index';
+
+.system-messages {
+  .inner-container {
+    @include width-1200;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

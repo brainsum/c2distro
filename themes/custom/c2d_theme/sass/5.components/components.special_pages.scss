@@ -8,9 +8,8 @@
  @import '../index';
 
 .region.region-content {
-  max-width: 119.2rem;
-  margin: 0 auto;
-  padding: 8rem 2rem;
+  @include width-1200;
+
   text-align: center;
   .block-page-title-block {
     margin-bottom: 4rem;
