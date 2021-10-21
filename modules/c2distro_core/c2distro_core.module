@@ -190,7 +190,7 @@ function c2distro_core_mail_alter(&$message) {
 
   if ($message['id'] === 'contact_page_mail') {
 
-    $message['headers']['From'] = str_replace(',', '', $message['headers']['From']);
+    $message['headers']['From'] = str_replace(',', ' ', $message['headers']['From']);
 
     $contact_message = $message['params']['contact_message'];
 
