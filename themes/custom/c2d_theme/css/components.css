@@ -4068,8 +4068,11 @@ body.fixed .block-country-navigation {
 }
 
 .paragraph--type--view {
-  padding-top: 0;
   font-family: "Montserrat", sans-serif;
+  padding: 0;
+}
+.paragraph--type--view .block-views {
+  padding: 4.5rem 0;
 }
 .paragraph--type--view .block-views .title-holder {
   padding: 0 !important;
