@@ -333,10 +333,11 @@
 }
 
 .paragraph--type--view {
-  padding-top: 0;
   font-family: $font-montserrat;
+  padding: 0;
 
   .block-views {
+    padding: 4.5rem 0;
     .title-holder {
       padding: 0 !important;
     }
