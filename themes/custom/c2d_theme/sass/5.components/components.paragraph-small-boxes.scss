@@ -7,6 +7,11 @@
   > .paragraph--inner {
     position: relative;
     padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    @include breakpoint(medium) {
+      padding-bottom: 10rem;
+    }
 
     > .field--name-field-title {
       @include block-title;
