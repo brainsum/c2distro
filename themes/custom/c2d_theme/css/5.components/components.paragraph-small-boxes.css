@@ -454,6 +454,12 @@
 .paragraph--type--small-boxes > .paragraph--inner {
   position: relative;
   padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+@media print, screen and (min-width: 48em) {
+  .paragraph--type--small-boxes > .paragraph--inner {
+    padding-bottom: 10rem;
+  }
 }
 .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title {
   font-family: "Montserrat", sans-serif !important;
