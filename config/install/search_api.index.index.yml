@@ -88,6 +88,14 @@ field_settings:
     dependencies:
       module:
         - media
+  media_status:
+    label: Published
+    datasource_id: 'entity:media'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - media
   media_tag_name:
     label: 'Tags » Taxonomy term » Name'
     datasource_id: 'entity:media'
@@ -130,6 +138,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_lead
+  node_status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   node_tag_name:
     label: 'tags » Taxonomy term » Name'
     datasource_id: 'entity:node'
@@ -173,8 +189,6 @@ processor_settings:
       - media_bundle
       - media_category_name
       - media_document_description
-      - media_image_alt
-      - media_image_title
       - media_lead
       - media_name
       - media_tag_name
