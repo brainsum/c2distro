@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+    - node.type.event
+    - node.type.news
+    - node.type.page
+  module:
+    - content_moderation
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types:
+    media:
+      - document
+    node:
+      - event
+      - news
+      - page
+  default_moderation_state: draft
