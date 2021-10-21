@@ -36,7 +36,6 @@
       background-color: $color-white;
       position: relative;
       padding-bottom: 7.3rem;
-      margin-bottom: 2.3;
       .field--name-field-event-date {
         @include text-small-bold;
         margin: 1.9rem 2.8rem 1.3rem 2.6rem;
@@ -55,7 +54,7 @@
         color: $color-blue-gray;
         font-size: 1.8rem;
         text-decoration: none solid $color-blue-gray;
-        line-height: 2.2rem;
+        line-height: 1.22;
         margin: 2.6rem 4.6rem 3.3rem 2.6rem;
         display: block;
         min-height: 9rem;
@@ -80,7 +79,7 @@
       font-size: 1.6rem;
       color: $color-blue-gray;
       text-decoration: none solid $color-blue-gray;
-      line-height: 40px;
+      line-height: 2.5;
       font-weight: 700;
     }
   }

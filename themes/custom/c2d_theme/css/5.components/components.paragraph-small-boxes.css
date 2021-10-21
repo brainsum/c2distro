@@ -473,7 +473,6 @@
   left: 1.5rem;
   margin-top: -1.7rem;
   padding: 0;
-  line-height: 3.5rem;
 }
 @media print, screen and (min-width: 64em) {
   .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title {
