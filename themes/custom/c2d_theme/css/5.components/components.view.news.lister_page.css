@@ -513,6 +513,7 @@
   margin: -48px 0 -22px -48px;
   width: calc(100% + 48px);
   padding-top: 6.2rem;
+  padding-bottom: 7rem;
 }
 .view.lister-page.view-news .view-content > * {
   margin: 48px 0 22px 48px;
@@ -534,7 +535,6 @@
   background-color: #ffffff;
   position: relative;
   padding-bottom: 7.3rem;
-  margin-bottom: 2.3;
 }
 .view.lister-page.view-news .view-content .views-row:hover {
   box-shadow: 0 0 15px lightgray;

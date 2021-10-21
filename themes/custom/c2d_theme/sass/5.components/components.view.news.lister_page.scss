@@ -66,6 +66,7 @@
     margin: -48px 0 -22px -48px;
     width: calc(100% + 48px);
     padding-top: 6.2rem;
+    padding-bottom: 10rem;
     & > * {
       margin: 48px 0 22px 48px;
     }
@@ -87,7 +88,6 @@
       background-color: $color-white;
       position: relative;
       padding-bottom: 7.3rem;
-      margin-bottom: 2.3;
 
       &:hover {
         box-shadow: 0 0 15px lightgray;
