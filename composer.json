@@ -42,6 +42,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
+        "drupal/role_delegation": "^1.1",
         "drupal/search_api": "^1.19.0",
         "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^1.14",
