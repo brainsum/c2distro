@@ -61,6 +61,8 @@ install:
   - block_content_permissions
   - markup
   - recaptcha
+  - openid_connect
+  - openid_connect_windows_aad
   # Custom
   - c2distro_core
 # Required dependencies.
