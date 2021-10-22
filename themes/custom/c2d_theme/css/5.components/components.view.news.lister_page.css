@@ -535,9 +535,6 @@
   position: relative;
   padding-bottom: 7.3rem;
 }
-.view.lister-page.view-news .view-content .views-row:hover {
-  box-shadow: 0 0 15px lightgray;
-}
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
   padding: 2.4rem 3.2rem 0;
