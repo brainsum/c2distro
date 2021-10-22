@@ -29,7 +29,7 @@
         top: 0;
         bottom: 0;
         background-color: transparent;
-        max-width: 60rem;
+        max-width: 127rem;
         margin: 6rem auto 0;
         text-align: center;
         color: white;
@@ -57,6 +57,7 @@
         font-size: 1.8rem;
         text-decoration: none;
         line-height: 1.66;
+        max-width: 83rem;
 
         @include breakpoint(medium) {
           color: #ffffff;
