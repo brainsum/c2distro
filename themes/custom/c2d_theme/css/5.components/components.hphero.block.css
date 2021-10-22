@@ -481,7 +481,7 @@
     top: 0;
     bottom: 0;
     background-color: transparent;
-    max-width: 60rem;
+    max-width: 127rem;
     margin: 6rem auto 0;
     text-align: center;
     color: white;
@@ -510,6 +510,7 @@
   font-size: 1.8rem;
   text-decoration: none;
   line-height: 1.66;
+  max-width: 83rem;
 }
 @media print, screen and (min-width: 48em) {
   .region.region-top .hero-block-type .hero-text .hero-text-container-description {
