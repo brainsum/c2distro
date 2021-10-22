@@ -466,4 +466,11 @@
 .region.region-content .block-page-title-block {
   margin-bottom: 4rem;
 }
+
+.path-user form .form-actions {
+  text-align: center;
+}
+.path-user form .form-actions input.form-submit {
+  display: inline-flex;
+}
 /*# sourceMappingURL=../../maps/5.components/components.special_pages.css.map */

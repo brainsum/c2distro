@@ -17,3 +17,15 @@
     margin-bottom: 4rem;
   }
 }
+
+.path-user {
+  form {
+    .form-actions {
+      text-align: center;
+
+      input.form-submit {
+        display: inline-flex;
+      }
+    }
+  }
+}
