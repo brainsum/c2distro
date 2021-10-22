@@ -459,6 +459,8 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   text-align: center;
 }
 .region.region-content .block-page-title-block {
