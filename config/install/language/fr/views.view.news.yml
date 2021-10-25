@@ -1,38 +1,4 @@
 display:
-  attachment_1_past_events:
-    display_options:
-      fields:
-        nid:
-          separator: ', '
-        field_image:
-          separator: ', '
-        type:
-          separator: ', '
-        field_event_date:
-          separator: ', '
-        field_location:
-          separator: ', '
-        title:
-          separator: ', '
-        field_lead:
-          separator: ', '
-  page_1:
-    display_options:
-      fields:
-        nid:
-          separator: ', '
-        field_image:
-          separator: ', '
-        type:
-          separator: ', '
-        field_event_date:
-          separator: ', '
-        field_location:
-          separator: ', '
-        title:
-          separator: ', '
-        field_lead:
-          separator: ', '
   default:
     display_title: 'Par défaut'
     display_options:
@@ -61,8 +27,6 @@ display:
           separator: ', '
         type:
           separator: ', '
-        created:
-          separator: ', '
         title:
           separator: ', '
         field_lead:
@@ -74,23 +38,7 @@ display:
       fields:
         field_image:
           separator: ', '
-        created:
-          separator: ', '
         title:
           separator: ', '
   lister_page:
     display_title: Page
-    display_options:
-      fields:
-        nid:
-          separator: ', '
-        field_image:
-          separator: ', '
-        type:
-          separator: ', '
-        created:
-          separator: ', '
-        title:
-          separator: ', '
-        field_lead:
-          separator: ', '
