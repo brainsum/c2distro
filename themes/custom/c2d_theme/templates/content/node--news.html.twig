@@ -108,9 +108,9 @@
       {% if view_mode == 'full' %}
         {% include '@c2d_theme/custom/share-button.twig' %}
       {% endif %}
-      <div class="created-time">{{ node.getCreatedTime|format_date('document')  }} </div>
+      <div class="created-time">{{ content.field_date }} </div>
     </div>
-    {{ content }}
+    {{ content|without('field_date') }}
   </div>
 
 </article>
