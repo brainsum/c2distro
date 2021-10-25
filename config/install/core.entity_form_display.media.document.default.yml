@@ -11,7 +11,9 @@ dependencies:
     - field.field.media.document.field_tags
     - image.style.thumbnail
     - media.type.document
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - file
     - path
     - svg_image
@@ -93,6 +95,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   name:
     type: string_textfield

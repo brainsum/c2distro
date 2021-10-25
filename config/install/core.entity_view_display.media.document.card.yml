@@ -60,6 +60,7 @@ content:
         height: null
     third_party_settings: {  }
 hidden:
+  content_moderation_control: true
   field_body: true
   field_custom_text: true
   field_highlighted: true
