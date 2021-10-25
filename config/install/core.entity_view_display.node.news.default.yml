@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_date
     - field.field.node.news.field_highlighted
     - field.field.node.news.field_image
     - field.field.node.news.field_lead
@@ -10,6 +11,7 @@ dependencies:
     - image.style.news_page
     - node.type.news
   module:
+    - datetime
     - media
     - text
     - user
@@ -24,6 +26,20 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date:
+    weight: 5
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: document
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_image:
     type: media_thumbnail

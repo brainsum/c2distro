@@ -4,20 +4,36 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.news.body
+    - field.field.node.news.field_date
     - field.field.node.news.field_highlighted
     - field.field.node.news.field_image
     - field.field.node.news.field_lead
     - field.field.node.news.field_tags
     - node.type.news
   module:
+    - datetime
     - user
 id: node.news.search_index
 targetEntityType: node
 bundle: news
 mode: search_index
 content:
-  field_lead:
+  content_moderation_control:
     weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: document
+    third_party_settings: {  }
+  field_lead:
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
