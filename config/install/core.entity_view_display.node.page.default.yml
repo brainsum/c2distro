@@ -23,6 +23,11 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_lead:
     type: basic_string
     weight: 1
