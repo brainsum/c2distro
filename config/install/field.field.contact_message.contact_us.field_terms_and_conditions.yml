@@ -8,7 +8,7 @@ id: contact_message.contact_us.field_terms_and_conditions
 field_name: field_terms_and_conditions
 entity_type: contact_message
 bundle: contact_us
-label: 'I have read and accepted Terms & Conditions'
+label: 'I have read and accept the Terms & Conditions'
 description: ''
 required: true
 translatable: false
