@@ -27,6 +27,8 @@ display:
           separator: ', '
         type:
           separator: ', '
+        created:
+          separator: ', '
         title:
           separator: ', '
         field_lead:
@@ -38,7 +40,23 @@ display:
       fields:
         field_image:
           separator: ', '
+        field_date:
+          separator: ', '
         title:
           separator: ', '
   lister_page:
     display_title: Page
+    display_options:
+      fields:
+        nid:
+          separator: ', '
+        field_image:
+          separator: ', '
+        type:
+          separator: ', '
+        field_date:
+          separator: ', '
+        title:
+          separator: ', '
+        field_lead:
+          separator: ', '
