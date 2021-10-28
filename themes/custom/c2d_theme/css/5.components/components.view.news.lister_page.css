@@ -536,7 +536,8 @@
   padding-bottom: 7.3rem;
 }
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date,
+.view.lister-page.view-news .view-content .views-row .views-field-field-date {
   padding: 2.4rem 3.2rem 0;
   color: #12284c;
   font-family: "Montserrat", sans-serif;
@@ -545,12 +546,14 @@
 }
 @media print, screen and (min-width: 48em) {
   .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date {
+  .view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date,
+  .view.lister-page.view-news .view-content .views-row .views-field-field-date {
     padding: 1.5rem 2rem 1rem 2.5rem;
   }
 }
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-created .content-type,
-.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date .content-type {
+.view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date .content-type,
+.view.lister-page.view-news .view-content .views-row .views-field-field-date .content-type {
   color: #26c9de;
   text-transform: capitalize;
   line-height: 1.9rem;

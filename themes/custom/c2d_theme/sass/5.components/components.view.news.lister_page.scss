@@ -28,6 +28,7 @@
   max-width: 122.2rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+
   .view-header {
     .second-title {
       max-width: 119.2rem;
@@ -45,27 +46,28 @@
   }
 
   .view-content {
-/*
-    padding-top: 6.3rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
+    /*
+        padding-top: 6.3rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
 
-    @include breakpoint(medium) {
-      justify-content: flex-start;
-      max-width: 124.2rem;
-      padding-right: 0;
-      padding-left: 0;
-    }
-*/
+        @include breakpoint(medium) {
+          justify-content: flex-start;
+          max-width: 124.2rem;
+          padding-right: 0;
+          padding-left: 0;
+        }
+    */
     display: flex;
     flex-wrap: wrap;
     margin: -48px 0 -22px -48px;
     width: calc(100% + 48px);
     padding-top: 6.2rem;
+
     & > * {
       margin: 48px 0 22px 48px;
     }
@@ -89,7 +91,8 @@
       padding-bottom: 7.3rem;
 
       .views-field.views-field-created,
-      .views-field.views-field-field-event-date {
+      .views-field.views-field-field-event-date,
+      .views-field-field-date {
         padding: 2.4rem 3.2rem 0;
         color: $body-font-color;
         font-family: $font-montserrat;
