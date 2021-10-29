@@ -561,4 +561,11 @@ a.site-logo img {
 .node--unpublished {
   background-color: transparent;
 }
+
+.openid-connect-login-form {
+  text-align: center;
+}
+.openid-connect-login-form input.form-submit {
+  display: inline-flex;
+}
 /*# sourceMappingURL=../maps/theme.css.map */
