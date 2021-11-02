@@ -30,6 +30,11 @@
  * @see template_preprocess_views_view()
  */
 #}
+
+{% if id is same as('events') %}
+  {{ attach_library('c2d_theme/lister_page.view_events') }}
+{% endif %}
+
 {%
   set classes = [
     'view',
@@ -39,6 +44,7 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if title %}
