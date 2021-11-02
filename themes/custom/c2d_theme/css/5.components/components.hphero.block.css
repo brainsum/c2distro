@@ -452,12 +452,12 @@
   position: relative;
   top: 0;
 }
-@media print, screen and (min-width: 48em) {
+@media print, screen and (min-width: 80em) {
   .region.region-top {
     margin-top: -12rem;
   }
 }
-@media print, screen and (min-width: 48em) {
+@media print, screen and (min-width: 80em) {
   .region.region-top .hero-block-type {
     display: flex;
     justify-content: center;
@@ -470,7 +470,7 @@
   padding: 0 1.5rem;
   margin-top: 4.5rem;
 }
-@media print, screen and (min-width: 48em) {
+@media print, screen and (min-width: 80em) {
   .region.region-top .hero-block-type .hero-text {
     position: absolute;
     display: flex;
@@ -498,21 +498,23 @@
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
 }
-@media print, screen and (min-width: 48em) {
+@media print, screen and (min-width: 80em) {
   .region.region-top .hero-block-type .hero-text .hero-text-container-title {
     font-size: 40px;
     color: #ffffff;
   }
 }
 .region.region-top .hero-block-type .hero-text .hero-text-container-description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 83rem;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   text-decoration: none;
   line-height: 1.66;
-  max-width: 83rem;
 }
-@media print, screen and (min-width: 48em) {
+@media print, screen and (min-width: 80em) {
   .region.region-top .hero-block-type .hero-text .hero-text-container-description {
     color: #ffffff;
   }
@@ -520,9 +522,12 @@
 .region.region-top .hero-block-type .hero-text .flex-centered {
   margin-top: 3rem;
 }
-@media print, screen and (max-width: 63.99875em) {
+.region.region-top .hero-block-type .hero-text .bordered-button-blue {
+  color: #12284c;
+}
+@media print, screen and (min-width: 80em) {
   .region.region-top .hero-block-type .hero-text .bordered-button-blue {
-    color: #12284c;
+    color: #ffffff;
   }
 }
 /*# sourceMappingURL=../../maps/5.components/components.hphero.block.css.map */

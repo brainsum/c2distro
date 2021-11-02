@@ -3,12 +3,12 @@
 .region.region-top {
   position: relative;
   top: 0;
-  @include breakpoint(medium) {
+  @include breakpoint(desktop) {
     margin-top: -12rem;
   }
 
   .hero-block-type {
-    @include breakpoint(medium) {
+    @include breakpoint(desktop) {
       display: flex;
       justify-content: center;
       width: 100%;
@@ -19,7 +19,7 @@
 
       margin-top: 4.5rem;
 
-      @include breakpoint(medium) {
+      @include breakpoint(desktop) {
         position: absolute;
         display: flex;
         align-items: center;
@@ -45,21 +45,23 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         margin-bottom: 1rem;
-        @include breakpoint(medium) {
+        @include breakpoint(desktop) {
           font-size: 40px;
           color: #ffffff;
         }
       }
 
       .hero-text-container-description {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 83rem;
         text-align: center;
         font-family: $font-open;
         font-size: 1.8rem;
         text-decoration: none;
         line-height: 1.66;
-        max-width: 83rem;
 
-        @include breakpoint(medium) {
+        @include breakpoint(desktop) {
           color: #ffffff;
         }
       }
@@ -69,8 +71,10 @@
       }
 
       .bordered-button-blue {
-        @include breakpoint(medium down) {
-          color: $body-font-color;
+        color: $body-font-color;
+
+        @include breakpoint(desktop) {
+          color: #ffffff;
         }
       }
     }
