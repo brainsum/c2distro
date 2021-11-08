@@ -2,5 +2,5 @@ langcode: en
 status: true
 dependencies: {  }
 formId: contact_message_contact_us_form
-captchaType: recaptcha/reCAPTCHA
+captchaType: recaptcha_v3/contact_form
 label: contact_message_contact_us_form

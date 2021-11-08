@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact form'
+threshold: 0.9
+challenge: default
