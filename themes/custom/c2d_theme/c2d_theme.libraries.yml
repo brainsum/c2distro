@@ -62,26 +62,26 @@ paragraph-accordion:
       css/5.components/components.paragraph-accordion.css: { }
   js:
     js/src/accordion.js: {}
-  dependecies:
+  dependencies:
     - c2d_theme/paragraphs-base
     - core/jquery
 popup:
   version: 1.0
   js:
     js/src/popup.js: {}
-  dependecies:
+  dependencies:
     - core/jquery
 timeline:
   version: 1.0
   js:
     js/src/timeline.js: {}
-  dependecies:
+  dependencies:
     - core/jquery
 quote:
   version: 1.0
   js:
     js/src/quote.js: {}
-  dependecies:
+  dependencies:
     - core/jquery
 entity.node.canonical.page:
   version: 1.0
