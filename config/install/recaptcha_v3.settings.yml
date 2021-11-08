@@ -1,8 +1,6 @@
-site_key: ''
-secret_key: ''
+site_key: 6LfqBP0cAAAAAH9lG9BBGgL7l9pmrTZvy0qEpyJI
+secret_key: 6LfqBP0cAAAAABxey8JUbkyMVKvYE9lrPWHrB_FR
 verify_hostname: true
-default_challenge: captcha\Math
+default_challenge: recaptcha/reCAPTCHA
 error_message: 'Antibot verification failed.'
 cacheable: false
-_core:
-  default_config_hash: jv0PKCJEOq2bOwY9RspuPZCf67ifVJ4tfTk-BfZMw8k
