@@ -8,12 +8,15 @@
  */
 
 use Drupal\contact\MessageInterface;
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\media\MediaInterface;
 use Drupal\file\Entity\File;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Mail\MailFormatHelper;
+use Drupal\media\Entity\Media;
+use Drupal\taxonomy\TermInterface;
 use Drupal\views\Views;
 
 /**
@@ -237,6 +240,25 @@ function c2distro_core_mail_alter(&$message) {
         }
       }
       $message['body'][1] = $body;
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ *
+ * Invalidate cache tags after taxonomy term has deleted.
+ */
+function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
+
+  $query = \Drupal::entityQuery('media')
+    ->condition('field_tags', $entity->id());
+  $results = $query->execute();
+
+  $references = Media::loadMultiple($results);
+  if (!empty($references)) {
+    foreach ($references as $reference) {
+      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
     }
   }
 }
