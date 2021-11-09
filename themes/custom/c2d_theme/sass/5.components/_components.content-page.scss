@@ -319,7 +319,11 @@
     color: #12284c;
     text-decoration: none solid rgb(18, 40, 76);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: -3rem;
+
+    @include breakpoint(medium) {
+      margin-top: -4rem;
+    }
   }
 
   .field--name-field-lead {

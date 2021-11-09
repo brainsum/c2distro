@@ -1272,7 +1272,13 @@
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -3rem;
+}
+@media print, screen and (min-width: 48em) {
+  .page-node-type-page .field--name-body,
+.page-node-type-page .field--name-field-lead {
+    margin-top: -4rem;
+  }
 }
 .page-node-type-page .field--name-field-lead {
   font-weight: 700;
@@ -4369,10 +4375,12 @@ body.fixed .block-country-navigation {
  */
 .page-node-type-page .block-page-title-block {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 @media print, screen and (min-width: 48em) {
   .page-node-type-page .block-page-title-block {
     margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
 .page-node-type-page .block-page-title-block .block-inner {
