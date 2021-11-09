@@ -316,8 +316,8 @@
     @include width-655;
     @include font-open-18;
     padding-bottom: 5.5rem;
-    color: #12284c;
-    text-decoration: none solid rgb(18, 40, 76);
+    color: $body-font-color;
+    text-decoration: none solid $body-font-color;
     text-align: center;
     margin-top: -3rem;
 
