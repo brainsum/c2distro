@@ -625,4 +625,8 @@ select::-ms-expand {
 .field--name-body a:hover {
   text-decoration: none;
 }
+
+p.text-align-justify {
+  text-align: justify;
+}
 /*# sourceMappingURL=../maps/base.css.map */
