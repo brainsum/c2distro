@@ -16,8 +16,7 @@ use Drupal\file\Entity\File;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Mail\MailFormatHelper;
 use Drupal\media\Entity\Media;
-use Drupal\taxonomy\TermInterface;
-use Drupal\views\Views;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_entity_base_field_info_alter().
@@ -245,7 +244,7 @@ function c2distro_core_mail_alter(&$message) {
 }
 
 /**
- * Implements hook_ENTITY_TYPE_delete().
+ * Implements hook_ENTITY_TYPE_predelete().
  *
  * Invalidate cache tags after taxonomy term has deleted.
  */
@@ -256,9 +255,17 @@ function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
   $results = $query->execute();
 
   $references = Media::loadMultiple($results);
-  if (!empty($references)) {
-    foreach ($references as $reference) {
-      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
-    }
+  foreach ($references as $reference) {
+    Cache::invalidateTags($reference->getCacheTagsToInvalidate());
   }
+
+  $query = \Drupal::entityQuery('node')
+    ->condition('field_tags', $entity->id());
+  $results = $query->execute();
+
+  $references = Node::loadMultiple($results);
+  foreach ($references as $reference) {
+    Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+  }
+
 }
