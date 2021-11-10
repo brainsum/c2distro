@@ -319,10 +319,17 @@
     color: $body-font-color;
     text-decoration: none solid $body-font-color;
     text-align: center;
-    margin-top: -3rem;
+    margin-top: 2rem;
+  }
 
-    @include breakpoint(medium) {
-      margin-top: -4rem;
+  .block-page-title-block + .node--type-page {
+    .field--name-body,
+    .field--name-field-lead {
+      margin-top: -3rem;
+
+      @include breakpoint(medium) {
+        margin-top: -4rem;
+      }
     }
   }
 
