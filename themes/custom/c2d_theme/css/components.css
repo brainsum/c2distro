@@ -1272,11 +1272,15 @@
   -webkit-text-decoration: none solid #12284c;
           text-decoration: none solid #12284c;
   text-align: center;
+  margin-top: 2rem;
+}
+.page-node-type-page .block-page-title-block + .node--type-page .field--name-body,
+.page-node-type-page .block-page-title-block + .node--type-page .field--name-field-lead {
   margin-top: -3rem;
 }
 @media print, screen and (min-width: 48em) {
-  .page-node-type-page .field--name-body,
-.page-node-type-page .field--name-field-lead {
+  .page-node-type-page .block-page-title-block + .node--type-page .field--name-body,
+.page-node-type-page .block-page-title-block + .node--type-page .field--name-field-lead {
     margin-top: -4rem;
   }
 }
