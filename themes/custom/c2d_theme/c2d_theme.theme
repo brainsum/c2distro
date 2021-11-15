@@ -21,7 +21,9 @@ function c2d_theme_preprocess_page(array &$variables) {
 
   if (($route_name === 'entity.contact_form.canonical') || ($route_name === 'contact.site_page')) {
     $variables['#attached']['library'][] = 'c2d_theme/entity.contact_form.canonical';
-    $variables['#attached']['library'][] = 'c2d_theme/submit.loader';
+
+    // Temporary removed.
+    // ($variables['#attached']['library'][] = 'c2d_theme/submit.loader';)
   }
 
   if ($route_name === 'view.news.lister_page') {
