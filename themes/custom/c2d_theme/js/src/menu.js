@@ -6,7 +6,7 @@
       if ($(context).is(document)) {
         let hamburgerIcon = $(context).find('.hamburger');
         let closeMenuIcon = $(context).find('.close-menu');
-        let mainMenu = $(context).find('#block-mainnavigation');
+        let mainMenu = $(context).find('.menu--main');
         let expandableItem = $(context).find('.menu-item--expanded span');
         hamburgerIcon.on('click', function () {
           mainMenu.addClass('open');
