@@ -499,10 +499,11 @@
 }
 .lister-page.view-documents .view-content .views-row .content-header-text {
   font-size: 14px;
+  line-height: 1.3;
   font-weight: 600;
   margin: 1.9rem 2.8rem 1.3rem 2.6rem;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .lister-page.view-documents .view-content .views-row .content-header-text .field--name-created {
   font-family: "Montserrat", sans-serif;
@@ -512,12 +513,12 @@
           text-decoration: none solid #12284c;
   line-height: 1.9rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 .lister-page.view-documents .view-content .views-row .content-header-text .category-link a {
   color: #26c9de;
   font-family: Montserrat;
-  -webkit-text-decoration: none solid #26c9de;
-          text-decoration: none solid #26c9de;
+  text-decoration: none;
   line-height: 19px;
   font-weight: 600;
   font-size: 14px;
@@ -526,8 +527,7 @@
   font-family: "Montserrat", sans-serif;
   color: #12284c;
   font-size: 1.8rem;
-  -webkit-text-decoration: none solid #12284c;
-          text-decoration: none solid #12284c;
+  text-decoration: none;
   line-height: 2.2rem;
   margin: 2.6rem 4.6rem 3.3rem 2.6rem;
   display: block;
