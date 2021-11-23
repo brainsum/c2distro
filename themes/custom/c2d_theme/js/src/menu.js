@@ -7,7 +7,7 @@
         let hamburgerIcon = $(context).find('.hamburger');
         let closeMenuIcon = $(context).find('.close-menu');
         let mainMenu = $(context).find('.menu--main');
-        let expandableItem = $(context).find('.menu-item--expanded span');
+        let expandableItem = $(context).find('.menu-item--expanded .js-dropdown-arrow');
         hamburgerIcon.on('click', function () {
           mainMenu.addClass('open');
         });
