@@ -66,10 +66,11 @@ function c2d_theme_preprocess_page(array &$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for Region document templates.
+ * Implements hook_preprocess_HOOK()
+ * for Region document templates.
  */
 function c2d_theme_preprocess_region(&$variables) {
-  // store theme's path in a variable to access it from region Twig templates.
+  // Store theme's path in a variable to access it from region Twig templates.
   $variables['c2d_theme_path'] = drupal_get_path('theme', 'c2d_theme');
 }
 
