@@ -123,6 +123,7 @@
       @include breakpoint(medium down) {
         margin-bottom: 2rem;
         width: 100%;
+        text-align: center;
       }
       @include breakpoint(tablet) {
         @include flex-grow(0);
@@ -152,7 +153,7 @@
           //background-color: $body-font-color;
           @include breakpoint(medium) {
             transition: .2s;
-            color: white;
+            color: $color-white ;
             background-color: $body-font-color;
           }
         }
@@ -164,11 +165,12 @@
         cursor: pointer;
         padding: 1.5rem 0;
         line-height: 2rem;
+        transition: all .5s;
         @include breakpoint(medium down) {
+          display: inline-block;
           font-size: 1.8rem;
           text-align: center;
         }
-        background-color: white;
         @include breakpoint(medium) {
           color: $body-font-color;
           background-color: white;
@@ -193,17 +195,17 @@
         }*/
       }
       &.menu-item--active-trail {
-        color: white;
+        color: $color-white ;
         background-color: $body-font-color;
         @include breakpoint(tablet) {
-          color: white;
+          color: $color-white ;
           background-color: $body-font-color;
         }
         >span,
         >a {
           //color: $body-font-color;
           //background-color: white;
-          color: white;
+          color: $color-white ;
           background-color: $body-font-color;
           @include breakpoint(medium) {
             color: white;
@@ -215,36 +217,40 @@
 
     .menu-item--expanded {
       position: relative;
-      span {
-        &:after {
-          content: "\203A";
-          padding: 0 1rem;
-          transform: rotate(90deg);
-          display: inline-block;
-          transition: .5s;
-          @include breakpoint(medium) {
-            display: none;
-          }
+      .dropdown-arrow {
+        transform: rotate(90deg);
+        display: inline-block;
+        transition: .5s;
+        margin-left: 1rem;
+        @include breakpoint(medium) {
+          display: none;
+        }
+
+        &__icon {
+          width: 1rem;
+          height: 1rem;
+          pointer-events: none;
         }
       }
       &.opened {
-        // background-color: $body-font-color;
-        span {
-          &:after {
-            content: "\203A";
-            padding: 0 1rem;
-            transform: rotate(270deg);
-            display: inline-block;
-            transition: .5s;
-            @include breakpoint(medium) {
-              display: none;
-            }
+        background-color: $body-font-color;
 
+        .menu-link {
+          @include breakpoint(medium down) {
+            color: $color-white;
+          }
+        }
+
+        .dropdown-arrow {
+          transform: rotate(270deg);
+
+          &__icon {
+            fill: $color-white ;
           }
         }
       }
       >.menu {
-        color: white;
+        color: $color-white ;
         background-color: $body-font-color;
         display: none;
         padding: 0 1.5rem 1rem;
@@ -262,14 +268,14 @@
           }
           &--active-trail {
             a {
-              color: white;
+              color: $color-white ;
             }
             @include breakpoint(tablet) {
               span:hover {
-                color: white;
+                color: $color-white ;
               }
               a {
-                color: white;
+                color: $color-white ;
                 font-weight: 700;
               }
             }

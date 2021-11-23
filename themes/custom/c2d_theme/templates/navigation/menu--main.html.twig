@@ -45,7 +45,10 @@ We call a macro which calls itself to render the full tree.
           ]
           %}
           <li{{ item.attributes.addClass(classes) }}>
-            {{ link(item.title, item.url) }}
+            {{ link(item.title, item.url, { 'class':['menu-link', 'js-menu-link']}) }}
+            {% if item.is_expanded %}<i class="dropdown-arrow js-dropdown-arrow">
+              <svg class="dropdown-arrow__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentCcolor" d="M16.0141347,11.0621681 L7.51679008,19.5595127 C6.92947361,20.1468291 5.9797704,20.1468291 5.39870198,19.5595127 L3.98664325,18.1474539 C3.39932679,17.5601375 3.39932679,16.6104342 3.98664325,16.0293658 L10.009761,10.006248 L3.98664325,3.98313027 C3.39932679,3.39581381 3.39932679,2.44611059 3.98664325,1.86504217 L5.39245393,0.440487348 C5.9797704,-0.146829116 6.92947361,-0.146829116 7.51054203,0.440487348 L16.0078866,8.93783193 C16.6014511,9.52514839 16.6014511,10.4748516 16.0141347,11.0621681 L16.0141347,11.0621681 Z"/></svg>
+            </i>{% endif %}
             {% if item.below %}
               {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
             {% endif %}
