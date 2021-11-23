@@ -66,8 +66,9 @@ function c2d_theme_preprocess_page(array &$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK()
- * for Region document templates.
+ * Implements hook_preprocess_region().
+ *
+ * Provide new variables in region document twig templates.
  */
 function c2d_theme_preprocess_region(&$variables) {
   // Store theme's path in a variable to access it from region Twig templates.
