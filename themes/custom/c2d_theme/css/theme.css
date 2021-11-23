@@ -483,9 +483,6 @@ nav.navigation.menu--main {
     background-color: transparent;
   }
 }
-.adminimal-admin-toolbar nav.navigation.menu--main, .toolbar-vertical nav.navigation.menu--main {
-  top: 39px;
-}
 
 nav.navigation.menu--main.open {
   left: 0;
