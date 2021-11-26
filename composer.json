@@ -33,6 +33,7 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/field_group": "^3.1",
+        "drupal/maillog": "^1.0.0",
         "drupal/mailsystem": "^4.3",
         "drupal/markup": "^1.0@beta",
         "drupal/media_thumbnails_pdf": "^1.0@alpha",
