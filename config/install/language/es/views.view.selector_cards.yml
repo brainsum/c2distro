@@ -1,0 +1,22 @@
+display:
+  default:
+    display_title: 'Por defecto'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        tid:
+          separator: ', '
+        description__value:
+          separator: ', '
+        name:
+          separator: ', '
+  selector_cards_block:
+    display_title: Bloque
+  selector_cards_page:
+    display_title: Página
