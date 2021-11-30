@@ -560,16 +560,16 @@ article .node__content .field.field--name-field-tags {
 }
 @media print, screen and (min-width: 48em) {
   article .node__content .field.field--name-field-tags {
-    padding: 2.3rem;
+    padding: 2.3rem 2.3rem 5.3rem;
   }
 }
 article .node__content .field.field--name-field-tags .field__item {
-  margin-bottom: 3rem;
+  padding: 2.5px;
 }
 article .node__content .field.field--name-field-tags .field__item a {
+  display: inline-block;
   padding: 1.5rem 3rem;
   background-color: #efefef;
-  margin-right: 2rem;
   font-weight: 600;
 }
 /*# sourceMappingURL=../../maps/5.components/components.entity.node.canonical.news.css.map */
