@@ -1,4 +1,4 @@
-wrapper: true
-display_language_id: 0
-filter_untranslated: 0
+wrapper: false
+display_language_id: 2
+filter_untranslated: 1
 always_show_block: 0
