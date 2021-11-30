@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+  theme:
+    - c2d_theme
+id: dropdownlanguage
+theme: c2d_theme
+region: header
+weight: 0
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  provider: dropdown_language
+  label_display: '0'
+  labels: null
+visibility: {  }
