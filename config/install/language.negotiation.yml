@@ -6,8 +6,10 @@ url:
     en: ''
     fr: fr
     es: es
+    ar: ar
   domains:
     en: ''
     fr: ''
     es: ''
+    ar: ''
 selected_langcode: site_default
