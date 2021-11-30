@@ -1,0 +1,54 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        title:
+          separator: ', '
+        field_event_date:
+          separator: ', '
+  page_day:
+    display_title: باليوم
+    display_options:
+      menu:
+        title: باليوم
+      arguments:
+        field_event_date_value_full_date:
+          exception:
+            title: الكل
+  page_month:
+    display_title: بالشهر
+    display_options:
+      menu:
+        title: بالشهر
+      tab_options:
+        title: التقويم
+      arguments:
+        field_event_date_value_year_month:
+          exception:
+            title: الكل
+  page_week:
+    display_title: بالأسبوع
+    display_options:
+      menu:
+        title: بالأسبوع
+      arguments:
+        field_event_date_value_year_week:
+          exception:
+            title: الكل
+  page_year:
+    display_title: السنة
+    display_options:
+      arguments:
+        field_event_date_value_year:
+          exception:
+            title: الكل
+      menu:
+        title: السنة
