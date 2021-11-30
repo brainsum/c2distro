@@ -31,6 +31,7 @@
         "drupal/classy_paragraphs": "^1.0@beta",
         "drupal/ctools": "^3.6",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/dropdown_language": "^3.0",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/field_group": "^3.1",
         "drupal/maillog": "^1.0.0",
