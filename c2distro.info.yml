@@ -70,6 +70,9 @@ install:
   - mailsystem
   - maillog
   - password_policy
+  - password_policy_character_types
+  - password_policy_history
+  - password_policy_length
   # Custom
   - c2distro_core
 # Required dependencies.
