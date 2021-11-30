@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: 'Por defecto'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+  lister_block:
+    display_title: Bloque
+    display_options:
+      fields:
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+  lister_page:
+    display_title: Página
+    display_options:
+      filters:
+        field_tags_target_id:
+          expose:
+            label: Etiquetas
