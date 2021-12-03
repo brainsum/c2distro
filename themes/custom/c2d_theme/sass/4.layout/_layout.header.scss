@@ -43,6 +43,8 @@ header {
   height: 5.6rem;
   margin: 0 auto;
   padding-right: 1.5rem;
+  z-index: 100;
+
   @include breakpoint(medium) {
     height: 8.7rem;
     padding-left: 1.4rem;
@@ -60,4 +62,57 @@ header {
       }
     }
   }
+
+  .block-dropdown-language {
+    margin: 0 4rem 0 auto;
+    font-family: $font-open;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-top: 3rem;
+    z-index: 51;
+    cursor: pointer;
+    min-width: 110px;
+    user-select: none;
+    font-size: 1.8rem;
+
+    .dropbutton-widget {
+      border: none;
+      padding: 0;
+
+      .dropbutton {
+        border: none;
+
+        .dropbutton-action:first-child {
+        // .dropbutton-action:not(.secondary-action):after {
+          background-image: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/angle-down-solid.svg");
+          background-repeat: no-repeat;
+          background-position: right center;
+          background-size: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .secondary-action {
+          border-top: none;
+          padding: 10px 5px;
+          background-color: $color-grey-light-extra;
+          &:hover {
+            background-color: $color-blue-gray;
+
+            a {
+              color: $color-white;
+            }
+
+          }
+        }
+
+        .dropbutton-toggle {
+          display: none !important;
+          outline: none;
+        }
+
+      }
+
+    }
+  }
+
 }
