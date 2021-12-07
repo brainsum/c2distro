@@ -547,6 +547,7 @@
   font-size: 1.6rem;
   color: #12284c;
   margin-bottom: 2.1rem;
+  padding: 0 1rem;
 }
 .contact-form .form-container #edit-field-terms-and-conditions-wrapper a {
   -webkit-text-decoration: underline solid #12284c;
