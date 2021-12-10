@@ -2,14 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_text
-    - paragraphs.paragraphs_type.cta
+    - taxonomy.vocabulary.category
   module:
     - text
-id: paragraph.cta.field_text
-field_name: field_text
-entity_type: paragraph
-bundle: cta
+id: taxonomy_term.category.description
+field_name: description
+entity_type: taxonomy_term
+bundle: category
 label: Description
 description: ''
 required: false
