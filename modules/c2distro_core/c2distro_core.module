@@ -249,23 +249,30 @@ function c2distro_core_mail_alter(&$message) {
  * Invalidate cache tags after taxonomy term has deleted.
  */
 function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
+  $storage = \Drupal::entityTypeManager()->getStorage('field_storage_config');
+  $nodeFields = $storage->loadByProperties(['entity_type' => 'node']);
+  $mediaFields = $storage->loadByProperties(['entity_type' => 'media']);
 
-  $query = \Drupal::entityQuery('media')
-    ->condition('field_tags', $entity->id());
-  $results = $query->execute();
+  if (in_array('media.field_tags', array_keys($mediaFields))) {
+    $query = \Drupal::entityQuery('media')
+      ->condition('field_tags', $entity->id());
+    $results = $query->execute();
 
-  $references = Media::loadMultiple($results);
-  foreach ($references as $reference) {
-    Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    $references = Media::loadMultiple($results);
+    foreach ($references as $reference) {
+      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    }
   }
 
-  $query = \Drupal::entityQuery('node')
-    ->condition('field_tags', $entity->id());
-  $results = $query->execute();
+  if (in_array('node.field_tags', array_keys($nodeFields))) {
+    $query = \Drupal::entityQuery('node')
+      ->condition('field_tags', $entity->id());
+    $results = $query->execute();
 
-  $references = Node::loadMultiple($results);
-  foreach ($references as $reference) {
-    Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    $references = Node::loadMultiple($results);
+    foreach ($references as $reference) {
+      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    }
   }
 
 }
