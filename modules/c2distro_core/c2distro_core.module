@@ -257,10 +257,11 @@ function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
     $query = \Drupal::entityQuery('media')
       ->condition('field_tags', $entity->id());
     $results = $query->execute();
-
-    $references = Media::loadMultiple($results);
-    foreach ($references as $reference) {
-      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    if (!empty($results)) {
+      $references = Media::loadMultiple($results);
+      foreach ($references as $reference) {
+        Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+      }
     }
   }
 
@@ -268,10 +269,11 @@ function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
     $query = \Drupal::entityQuery('node')
       ->condition('field_tags', $entity->id());
     $results = $query->execute();
-
-    $references = Node::loadMultiple($results);
-    foreach ($references as $reference) {
-      Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+    if (!empty($results)) {
+      $references = Node::loadMultiple($results);
+      foreach ($references as $reference) {
+        Cache::invalidateTags($reference->getCacheTagsToInvalidate());
+      }
     }
   }
 
