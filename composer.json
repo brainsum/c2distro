@@ -56,7 +56,7 @@
         "drupal/transliterate_filenames": "^1.5",
         "drupal/warmer": "^2.0",
         "drupal/warmer_entity": "^2.0",
-        "drupal/facets": "^1.8",
+        "drupal/facets": "^2.0",
         "drupal/core_views_facets": "^1.2"
     },
     "extra": {
