@@ -71,9 +71,6 @@
             "drupal/classy_paragraphs": {
                 "Choose and order selectable styles": "https://www.drupal.org/files/issues/2021-02-23/choose_and_order-2830403-44.patch"
             },
-            "drupal/facets": {
-                "BooleanItemProcessor assumes SearchApiFacetSourceInterface" : "https://www.drupal.org/files/issues/2021-09-09/NastyBooleanItemProcessor-3226284-3.patch"
-            },
             "drupal/smtp": {
                 "Maillog support": "https://www.drupal.org/files/issues/2020-10-13/maillog-integration.2920034.16.patch"
             }
