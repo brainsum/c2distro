@@ -12,6 +12,7 @@
     &--grey {
       background-color: $background-grey;
     }
+
     &--lightgrey {
       background-color: $color-lightgrey;
     }
@@ -53,7 +54,7 @@
     @include width-690;
 
     @include breakpoint(medium) {
-      width: 50%;
+      @include width-655;
     }
   }
 }
