@@ -501,7 +501,10 @@
 .paragraph--type--accordion > .paragraph--inner,
 .paragraph--type--popup-wrapper > .paragraph--inner,
 .paragraph--type--media > .paragraph--inner {
-    width: 50%;
+    max-width: 68.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1.5rem;
   }
 }
 
