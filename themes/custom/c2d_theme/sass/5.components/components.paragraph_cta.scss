@@ -22,6 +22,10 @@
       text-decoration: none solid $body-font-color;
       line-height: 30px;
       text-align: center;
+
+      &.text-align-justify {
+        text-align: justify;
+      }
     }
   }
 }
