@@ -471,4 +471,7 @@
   line-height: 30px;
   text-align: center;
 }
+.paragraph--type--cta .field--name-field-text p.text-align-justify {
+  text-align: justify;
+}
 /*# sourceMappingURL=../../maps/5.components/components.paragraph_cta.css.map */
