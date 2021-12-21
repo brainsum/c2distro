@@ -45,6 +45,22 @@ header {
   padding-right: 1.5rem;
   z-index: 100;
 
+  @include breakpoint(mobile down) {
+    position: relative;
+
+    // faux header background
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3.4rem;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 3.4rem;
+      background: $color-white;
+    }
+  }
+
   @include breakpoint(medium) {
     height: 8.7rem;
     padding-left: 1.4rem;
@@ -75,12 +91,24 @@ header {
     user-select: none;
     font-size: 1.8rem;
 
+    @include breakpoint(mobile down) {
+      position: absolute;
+      right: 1.5rem;
+      bottom: 0;
+      margin: 0;
+    }
+
     .dropbutton-widget {
       border: none;
       padding: 0;
 
       .dropbutton {
         border: none;
+
+        @include breakpoint(mobile down) {
+          position: absolute;
+          width: 100%;
+        }
 
         .dropbutton-action:first-child {
         // .dropbutton-action:not(.secondary-action):after {
