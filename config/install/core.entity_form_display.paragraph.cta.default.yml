@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.cta.field_link
     - field.field.paragraph.cta.field_text
     - field.field.paragraph.cta.field_title
+    - field.field.paragraph.cta.field_width
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -45,11 +46,17 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  translation:
-    weight: 10
+  field_width:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+    type: options_select
     region: content
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
