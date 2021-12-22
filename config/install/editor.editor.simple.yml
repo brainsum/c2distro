@@ -15,6 +15,11 @@ settings:
           name: Formatting
           items:
             - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
             - JustifyLeft
             - JustifyBlock
         -
@@ -22,6 +27,16 @@ settings:
           items:
             - DrupalLink
             - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Tools
+          items:
+            - PasteFromWord
+            - RemoveFormat
   plugins:
     stylescombo:
       styles: ''
