@@ -1,5 +1,5 @@
-minimum_single: 20
-minimum_multiple: 20
+minimum_single: 1
+minimum_multiple: 1
 disable_search_threshold: 0
 minimum_width: 0
 use_relative_width: false
@@ -11,5 +11,9 @@ placeholder_text_multiple: 'Choose some options'
 placeholder_text_single: 'Choose an option'
 no_results_text: 'No results match'
 max_shown_results: null
-disabled_themes: {  }
-chosen_include: 2
+disabled_themes:
+  bartik: bartik
+  seven: seven
+  c2d_theme: c2d_theme
+  claro: '0'
+chosen_include: 0
