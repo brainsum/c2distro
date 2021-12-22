@@ -32,7 +32,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <p class="text-align-left text-align-justify">'
+      allowed_html: '<a href hreflang> <em> <strong> <p class="text-align-left text-align-justify"> <u> <s> <sup> <sub> <ul> <li> <ol>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
