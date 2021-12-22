@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: width_wide
+label: Wide
+classes: width--wide

@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: width_narrow
+label: Narrow
+classes: width--narrow
