@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.text.field_background_style
     - field.field.paragraph.text.field_text
     - field.field.paragraph.text.field_title
+    - field.field.paragraph.text.field_width
     - paragraphs.paragraphs_type.text
   module:
     - text
@@ -14,7 +15,7 @@ bundle: text
 mode: default
 content:
   field_background_style:
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -35,11 +36,17 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  translation:
-    weight: 10
+  field_width:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
+    type: options_select
     region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
