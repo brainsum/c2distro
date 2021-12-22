@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.cta.field_link
     - field.field.paragraph.cta.field_text
     - field.field.paragraph.cta.field_title
+    - field.field.paragraph.cta.field_width
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -44,4 +45,5 @@ content:
     region: content
 hidden:
   field_background_style: true
+  field_width: true
   search_api_excerpt: true
