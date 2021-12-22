@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.accordion.field_paragraphs
     - field.field.paragraph.accordion.field_text
     - field.field.paragraph.accordion.field_title
+    - field.field.paragraph.accordion.field_width
     - paragraphs.paragraphs_type.accordion
   module:
     - entity_reference_revisions
@@ -41,4 +42,5 @@ content:
     region: content
 hidden:
   field_background_style: true
+  field_width: true
   search_api_excerpt: true
