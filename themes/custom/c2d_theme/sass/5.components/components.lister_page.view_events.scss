@@ -16,26 +16,54 @@
   .second-title {
     @include block-title-simple;
     margin-top: 10.3rem;
+
+    @include breakpoint(medium) {
+      margin: 10.3rem 24px 0;
+    }
+  }
+}
+
+.block-views-blockevents-upcoming-events-block {
+  @include block-title-simple;
+
+  @include breakpoint(medium) {
+    margin: 0 24px;
   }
 }
 
 .lister-page.view-events {
   max-width: 122.2rem;
   margin: 0 auto;
+
   .view-content {
+    padding-top: 6.3rem;
     display: flex;
     flex-wrap: wrap;
-    margin: -48px 0 -22px -48px;
-    width: calc(100% + 48px);
-    padding-top: 6.2rem;
-    & > * {
-      margin: 48px 0 22px 48px;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      justify-content: flex-start;
+      max-width: 124.2rem;
     }
+
     .views-row {
-      width: 262px;
-      background-color: $color-white;
+      width: 100%;
+      background-color: white;
+      transition: .5s;
       position: relative;
-      padding-bottom: 7.3rem;
+      margin-bottom: 4rem;
+
+      @include breakpoint(medium) {
+        width: 262px;
+        margin: 0 24px 70px 24px;
+        padding-bottom: 7.3rem;
+      }
+
+      .field--name-field-image img {
+        width: 100%;
+      }
+
       .field--name-field-event-date {
         @include text-small-bold;
         margin: 1.9rem 2.8rem 1.3rem 2.6rem;

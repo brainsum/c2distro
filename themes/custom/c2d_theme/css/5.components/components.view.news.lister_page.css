@@ -456,18 +456,28 @@
 .extra-space {
   padding: 30px 1px;
 }
+.path-news  .block-page-title-block {
+  width: 124.2rem;
+  padding-top: 6rem;
+}
 
 .path-news  .block-page-title-block .block-inner h1.page-title {
   text-align: left !important;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 @media print, screen and (min-width: 48em) {
   .path-news  .block-page-title-block .block-inner h1.page-title {
-    padding: 0;
+    margin: 0 24px;
     color: #12284c;
     -webkit-text-decoration: none solid #12284c;
             text-decoration: none solid #12284c;
     line-height: 4rem !important;
+  }
+}
+
+@media print, screen and (min-width: 80em) {
+  .path-news  .block-page-title-block .block-inner h1.page-title {
+    padding: 0;
   }
 }
 
@@ -492,48 +502,34 @@
   }
 }
 .view.lister-page.view-news .view-content {
-  /*
-      padding-top: 6.3rem;
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-
-      @include breakpoint(medium) {
-        justify-content: flex-start;
-        max-width: 124.2rem;
-        padding-right: 0;
-        padding-left: 0;
-      }
-  */
+  padding-top: 6.3rem;
   display: flex;
   flex-wrap: wrap;
-  margin: -48px 0 -22px -48px;
-  width: calc(100% + 48px);
-  padding-top: 6.2rem;
+  justify-content: center;
+  margin: 0 auto;
 }
-.view.lister-page.view-news .view-content > * {
-  margin: 48px 0 22px 48px;
+@media print, screen and (min-width: 48em) {
+  .view.lister-page.view-news .view-content {
+    justify-content: flex-start;
+    max-width: 124.2rem;
+  }
 }
 .view.lister-page.view-news .view-content .views-row {
-  /*
   width: 100%;
   background-color: white;
   transition: .5s;
   position: relative;
   margin-bottom: 4rem;
-  @include breakpoint(medium) {
+}
+@media print, screen and (min-width: 48em) {
+  .view.lister-page.view-news .view-content .views-row {
     width: 262px;
     margin: 0 24px 70px 24px;
     padding-bottom: 7.3rem;
   }
-  */
-  width: 262px;
-  background-color: #ffffff;
-  position: relative;
-  padding-bottom: 7.3rem;
+}
+.view.lister-page.view-news .view-content .views-row .views-field-field-image img {
+  width: 100%;
 }
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-created,
 .view.lister-page.view-news .view-content .views-row .views-field.views-field-field-event-date,
