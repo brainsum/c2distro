@@ -10,15 +10,20 @@
 }
 
 .path-news .block-page-title-block {
+  width: 124.2rem;
+  padding-top: 6rem;
   .block-inner {
     h1.page-title {
       text-align: left !important;
-      padding: 0 2rem;
+      padding: 0 1.5rem;
       @include breakpoint(medium) {
-        padding: 0;
+        margin: 0 24px;
         color: $body-font-color;
         text-decoration: none solid $body-font-color;
         line-height: 4rem !important;
+      }
+      @include breakpoint(desktop) {
+        padding: 0;
       }
     }
   }
@@ -46,49 +51,37 @@
   }
 
   .view-content {
-    /*
-        padding-top: 6.3rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 auto;
-
-        @include breakpoint(medium) {
-          justify-content: flex-start;
-          max-width: 124.2rem;
-          padding-right: 0;
-          padding-left: 0;
-        }
-    */
+    padding-top: 6.3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    margin: -48px 0 -22px -48px;
-    width: calc(100% + 48px);
-    padding-top: 6.2rem;
+    justify-content: center;
+    margin: 0 auto;
 
-    & > * {
-      margin: 48px 0 22px 48px;
+    @include breakpoint(medium) {
+      justify-content: flex-start;
+      max-width: 124.2rem;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .views-row {
-      /*
       width: 100%;
       background-color: white;
       transition: .5s;
       position: relative;
       margin-bottom: 4rem;
+
       @include breakpoint(medium) {
         width: 262px;
         margin: 0 24px 70px 24px;
         padding-bottom: 7.3rem;
       }
-      */
-      width: 262px;
-      background-color: $color-white;
-      position: relative;
-      padding-bottom: 7.3rem;
+
+      .views-field-field-image img {
+        width: 100%;
+      }
 
       .views-field.views-field-created,
       .views-field.views-field-field-event-date,

@@ -483,26 +483,65 @@
     font-size: 4rem;
   }
 }
+@media print, screen and (min-width: 48em) {
+  .lister-page .second-title {
+    margin: 10.3rem 24px 0;
+  }
+}
+
+.block-views-blockevents-upcoming-events-block {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #12284c;
+  -webkit-text-decoration: none solid #12284c;
+          text-decoration: none solid #12284c;
+  line-height: 4rem;
+  font-weight: 700;
+}
+@media print, screen and (min-width: 48em) {
+  .block-views-blockevents-upcoming-events-block {
+    font-size: 4rem;
+  }
+}
+@media print, screen and (min-width: 48em) {
+  .block-views-blockevents-upcoming-events-block {
+    margin: 0 24px;
+  }
+}
 
 .lister-page.view-events {
   max-width: 122.2rem;
   margin: 0 auto;
 }
 .lister-page.view-events .view-content {
+  padding-top: 6.3rem;
   display: flex;
   flex-wrap: wrap;
-  margin: -48px 0 -22px -48px;
-  width: calc(100% + 48px);
-  padding-top: 6.2rem;
+  justify-content: center;
+  margin: 0 auto;
 }
-.lister-page.view-events .view-content > * {
-  margin: 48px 0 22px 48px;
+@media print, screen and (min-width: 48em) {
+  .lister-page.view-events .view-content {
+    justify-content: flex-start;
+    max-width: 124.2rem;
+  }
 }
 .lister-page.view-events .view-content .views-row {
-  width: 262px;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: white;
+  transition: 0.5s;
   position: relative;
-  padding-bottom: 7.3rem;
+  margin-bottom: 4rem;
+}
+@media print, screen and (min-width: 48em) {
+  .lister-page.view-events .view-content .views-row {
+    width: 262px;
+    margin: 0 24px 70px 24px;
+    padding-bottom: 7.3rem;
+  }
+}
+.lister-page.view-events .view-content .views-row .field--name-field-image img {
+  width: 100%;
 }
 .lister-page.view-events .view-content .views-row .field--name-field-event-date {
   font-family: "Montserrat", sans-serif;
