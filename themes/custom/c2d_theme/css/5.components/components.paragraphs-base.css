@@ -485,9 +485,6 @@
   padding: 4.5rem 0;
 }
 
-.paragraph--type--text > .paragraph--inner,
-.paragraph--type--cta > .paragraph--inner,
-.paragraph--type--accordion > .paragraph--inner,
 .paragraph--type--popup-wrapper > .paragraph--inner,
 .paragraph--type--media > .paragraph--inner {
   max-width: 72rem;
@@ -496,16 +493,44 @@
   padding: 0 1.5rem;
 }
 @media print, screen and (min-width: 48em) {
-  .paragraph--type--text > .paragraph--inner,
-.paragraph--type--cta > .paragraph--inner,
-.paragraph--type--accordion > .paragraph--inner,
-.paragraph--type--popup-wrapper > .paragraph--inner,
+  .paragraph--type--popup-wrapper > .paragraph--inner,
 .paragraph--type--media > .paragraph--inner {
     max-width: 68.5rem;
     margin-right: auto;
     margin-left: auto;
     padding: 0 1.5rem;
   }
+}
+
+.paragraph--type--text > .paragraph--inner, .paragraph--type--text.width--narrow > .paragraph--inner,
+.paragraph--type--cta > .paragraph--inner,
+.paragraph--type--cta.width--narrow > .paragraph--inner,
+.paragraph--type--accordion > .paragraph--inner,
+.paragraph--type--accordion.width--narrow > .paragraph--inner {
+  max-width: 72rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+}
+@media print, screen and (min-width: 48em) {
+  .paragraph--type--text > .paragraph--inner, .paragraph--type--text.width--narrow > .paragraph--inner,
+.paragraph--type--cta > .paragraph--inner,
+.paragraph--type--cta.width--narrow > .paragraph--inner,
+.paragraph--type--accordion > .paragraph--inner,
+.paragraph--type--accordion.width--narrow > .paragraph--inner {
+    max-width: 68.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1.5rem;
+  }
+}
+.paragraph--type--text.width--wide > .paragraph--inner,
+.paragraph--type--cta.width--wide > .paragraph--inner,
+.paragraph--type--accordion.width--wide > .paragraph--inner {
+  max-width: 122.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
 }
 
 .paragraph--type--quotes > .paragraph--inner {
