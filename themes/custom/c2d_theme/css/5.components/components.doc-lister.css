@@ -602,6 +602,11 @@ p.text-align-justify {
   text-align: justify;
 }
 
+.text-formatted ul,
+.text-formatted ol {
+  margin-left: 1em;
+}
+
 /**
  * @file
  * Settings

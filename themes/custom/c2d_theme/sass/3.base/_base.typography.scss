@@ -105,3 +105,10 @@ select {
 p.text-align-justify {
   text-align: justify;
 }
+
+.text-formatted {
+  ul,
+  ol {
+    margin-left: 1em;
+  }
+}
