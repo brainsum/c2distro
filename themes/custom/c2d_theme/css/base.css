@@ -629,4 +629,9 @@ select::-ms-expand {
 p.text-align-justify {
   text-align: justify;
 }
+
+.text-formatted ul,
+.text-formatted ol {
+  margin-left: 1em;
+}
 /*# sourceMappingURL=../maps/base.css.map */
