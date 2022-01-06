@@ -463,27 +463,22 @@
 }
 .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
   line-height: 5rem;
   position: absolute;
   top: 0;
-  left: 1.5rem;
+  left: 0;
   margin-top: -1.7rem;
   padding: 0;
-}
-@media print, screen and (min-width: 64em) {
-  .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title {
-    font-size: 3.6rem;
-  }
 }
 .paragraph--type--small-boxes > .paragraph--inner .field--name-field-paragraphs {
   display: flex;

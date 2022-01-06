@@ -85,18 +85,15 @@
 
 @mixin block-title {
   font-family: $font-montserrat !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: $color-white;
   background-color: $body-font-color;
   padding: .2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 $body-font-color, -1.9rem 0 0 $body-font-color;
   box-decoration-break: clone;
   line-height: 5rem;
-  @include breakpoint(tablet) {
-    font-size: 3.6rem;
-  }
 }
 
