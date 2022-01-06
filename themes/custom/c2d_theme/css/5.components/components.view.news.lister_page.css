@@ -457,7 +457,7 @@
   padding: 30px 1px;
 }
 .path-news  .block-page-title-block {
-  width: 124.2rem;
+  max-width: 124.2rem;
   padding-top: 6rem;
 }
 
