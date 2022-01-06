@@ -625,13 +625,13 @@
 }
 .block-holder > .block-inner > .field--name-field-title {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -639,11 +639,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-@media print, screen and (min-width: 64em) {
-  .block-holder > .block-inner > .field--name-field-title {
-    font-size: 3.6rem;
-  }
 }
 .block-holder > .block-inner > .field--name-field-description {
   max-width: 68.5rem;
@@ -1122,13 +1117,13 @@
 .view-general-site-search .field--name-field-related-news-and-events .field-label--holder .field__label,
 .page-node-type-news .field--name-field-related-news-and-events .field-label--holder .field__label {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -1136,12 +1131,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-@media print, screen and (min-width: 64em) {
-  .view-general-site-search .field--name-field-related-news-and-events .field-label--holder .field__label,
-.page-node-type-news .field--name-field-related-news-and-events .field-label--holder .field__label {
-    font-size: 3.6rem;
-  }
 }
 .view-general-site-search .field--name-field-related-news-and-events .field-items-holder,
 .page-node-type-news .field--name-field-related-news-and-events .field-items-holder {
@@ -3836,13 +3825,13 @@ body.fixed .block-country-navigation {
 }
 .paragraph--type--media-document .field--name-field-title {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -3850,11 +3839,6 @@ body.fixed .block-country-navigation {
   position: absolute;
   top: -6rem;
   padding: 0;
-}
-@media print, screen and (min-width: 64em) {
-  .paragraph--type--media-document .field--name-field-title {
-    font-size: 3.6rem;
-  }
 }
 .paragraph--type--media-document .field--name-field-media-entities {
   display: flex;
@@ -3984,7 +3968,7 @@ body.fixed .block-country-navigation {
   padding: 0;
 }
 .paragraph--type--view .block-views {
-  padding: 4.5rem 0 7.5rem;
+  padding: 0 0 7.5rem;
 }
 .paragraph--type--view .block-views .title-holder {
   padding: 0 !important;
@@ -3994,23 +3978,18 @@ body.fixed .block-country-navigation {
 }
 .paragraph--type--view .view-header {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
   line-height: 5rem;
   display: inline-block;
-}
-@media print, screen and (min-width: 64em) {
-  .paragraph--type--view .view-header {
-    font-size: 3.6rem;
-  }
 }
 
 .block-about-branches nav {
@@ -4304,35 +4283,26 @@ body.fixed .block-country-navigation {
   position: relative;
 }
 .paragraph .block-holder .block-inner .title-holder {
-  max-width: 122.2rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 1.5rem;
   z-index: 10;
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0;
   top: -25px;
 }
 .paragraph .block-holder .block-inner .title-holder span {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: #ffffff;
   background-color: #12284c;
   padding: 0.2rem 0;
   margin-top: -2.3rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   box-shadow: 2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
   line-height: 5rem;
-}
-@media print, screen and (min-width: 64em) {
-  .paragraph .block-holder .block-inner .title-holder span {
-    font-size: 3.6rem;
-  }
 }
 
 .field--label-inline {
