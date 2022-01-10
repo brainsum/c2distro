@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - classy_paragraphs.classy_paragraphs_style.width_narrow
     - field.storage.paragraph.field_width
     - paragraphs.paragraphs_type.accordion
 id: paragraph.accordion.field_width
@@ -13,9 +12,7 @@ label: Width
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    target_uuid: d9adee36-cbba-4e64-a246-e0b4de54ec8b
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: classy_paragraphs
