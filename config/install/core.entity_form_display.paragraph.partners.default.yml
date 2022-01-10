@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.partners.field_style
     - field.field.paragraph.partners.field_text
     - field.field.paragraph.partners.field_title
+    - field.field.paragraph.partners.field_width
     - paragraphs.paragraphs_type.partners
   module:
     - paragraphs
@@ -55,6 +56,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_width:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   translation:
     weight: 10
