@@ -27,11 +27,11 @@ header {
 .region-navigation {
   @include width-1390;
   position: relative;
-  z-index: 30;
 }
 
 .region-navigation {
   padding: 0;
+  z-index: 20;
 }
 
 .region-header {
@@ -40,11 +40,11 @@ header {
   @include justify-content(space-between);
   @include align-items(center);
 
+  z-index: 19;
   background-color: $color-white;
   height: 5.6rem;
   margin: 0 auto;
   padding-right: 1.5rem;
-  z-index: 100;
 
   @include breakpoint(mobile down) {
     position: relative;
@@ -58,6 +58,10 @@ header {
 
   @include breakpoint(tablet) {
     margin: 3rem auto 2rem;
+  }
+
+  body:not(.js-menu-is-open) & {
+    z-index: 22;
   }
 
   .block-dropdown-language {
@@ -82,7 +86,6 @@ header {
       font-family: $font-open;
       font-weight: 700;
       align-self: flex-start;
-      z-index: 51;
       cursor: pointer;
       min-width: 110px;
       user-select: none;
@@ -93,6 +96,22 @@ header {
         right: 1.5rem;
         bottom: 0;
         margin: 0;
+      }
+
+      body:not(.js-menu-is-open) & {
+        z-index: 31;
+      }
+    }
+
+    .dropbutton-multiple {
+      min-width: 11rem;
+
+      &.open {
+        position: absolute;
+
+        @include breakpoint(medium) {
+          top: -1.7rem;
+        }
       }
     }
 
