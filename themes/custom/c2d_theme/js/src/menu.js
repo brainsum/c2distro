@@ -10,9 +10,11 @@
         let expandableItem = $(context).find('.menu-item--expanded .js-dropdown-arrow');
         hamburgerIcon.on('click', function () {
           mainMenu.addClass('open');
+          $('body').addClass('js-menu-is-open');
         });
         closeMenuIcon.on('click', function () {
           mainMenu.removeClass('open');
+          $('body').removeClass('js-menu-is-open');
         });
         expandableItem.on('click', function (e) {
           let itemParent = $(e.target).parent();
