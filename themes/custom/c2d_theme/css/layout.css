@@ -636,7 +636,7 @@
   }
 }
 .region-header .block-dropdown-language .dropbutton-widget .dropbutton .dropbutton-action:first-child {
-  background-image: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/angle-down-solid.svg");
+  background-image: url("../images/dist/svg/angle-down-solid.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 1rem;
