@@ -588,9 +588,17 @@
   font-weight: 700;
   font-size: 1.6rem;
   font-style: italic;
-  position: absolute;
-  bottom: 4.6rem;
-  left: 2.6rem;
+  display: block;
+  margin-left: 2.6rem;
+  margin-bottom: 4.6rem;
+}
+@media print, screen and (min-width: 48em) {
+  .lister-page.view-events .view-content .views-row a.read-more {
+    position: absolute;
+    bottom: 4.6rem;
+    left: 2.6rem;
+    margin: 0;
+  }
 }
 .lister-page.view-events .more-link {
   margin-top: 5rem;
