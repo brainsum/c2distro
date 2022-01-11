@@ -2956,6 +2956,12 @@ input.form-submit.js-hide:hover {
   display: flex;
   -mox-box-align: center;
   align-items: center;
+  margin-left: auto;
+}
+@media print, screen and (min-width: 48em) {
+  .block-dropdown-language + .social-block {
+    margin-left: 0;
+  }
 }
 .social-block img {
   width: 2.4rem;

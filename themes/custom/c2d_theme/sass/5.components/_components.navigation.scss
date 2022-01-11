@@ -10,13 +10,24 @@
 .social-block {
   @include flex;
   @include align-items(center);
+
+  margin-left: auto;
+
+  .block-dropdown-language + & {
+    @include breakpoint(medium) {
+      margin-left: 0;
+    }
+  }
+
   img {
     width: 2.4rem;
     height: 2.4rem;
+
     @include breakpoint(medium down) {
       margin-right: 1.5rem;
     }
   }
+
   .bordered-button {
     padding: 1.4rem 5.1rem;
   }
