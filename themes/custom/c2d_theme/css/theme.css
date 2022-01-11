@@ -497,13 +497,12 @@ nav.navigation.menu--main.open {
     display: none;
   }
 }
-#block-sitebranding {
+.block-system-branding-block {
   padding-left: 0;
-  width: calc(100% - 5rem);
   line-height: 1;
 }
 @media print, screen and (min-width: 48em) {
-  #block-sitebranding {
+  .block-system-branding-block {
     width: 15rem;
     padding-left: 1rem;
     line-height: 1;
@@ -543,7 +542,7 @@ a.site-logo img {
   }
 }
 
-#block-sitebranding .block-inner {
+.block-system-branding-block .block-inner {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -551,7 +550,7 @@ a.site-logo img {
   line-height: 0;
 }
 @media print, screen and (min-width: 48em) {
-  #block-sitebranding .block-inner {
+  .block-system-branding-block .block-inner {
     display: flex;
     flex-wrap: wrap;
     line-height: 1;
