@@ -16,9 +16,19 @@
     }
   }
 
-  .field--name-field-title,
-  .field--name-field-text {
-    @include width-655;
+  &,
+  &.width--narrow {
+    .field--name-field-title,
+    .field--name-field-text {
+      @include width-655;
+    }
+  }
+
+  &.width--wide {
+    .field--name-field-title,
+    .field--name-field-text {
+      @include width-1105;
+    }
   }
 
   .field--name-field-text {

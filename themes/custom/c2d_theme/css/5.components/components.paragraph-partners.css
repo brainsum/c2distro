@@ -458,8 +458,16 @@
   padding: 2rem 0 0;
 }
 .paragraph--type--partners .field--name-field-title,
-.paragraph--type--partners .field--name-field-text {
+.paragraph--type--partners .field--name-field-text, .paragraph--type--partners.width--narrow .field--name-field-title,
+.paragraph--type--partners.width--narrow .field--name-field-text {
   max-width: 68.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.5rem;
+}
+.paragraph--type--partners.width--wide .field--name-field-title,
+.paragraph--type--partners.width--wide .field--name-field-text {
+  max-width: 122.2rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.5rem;
