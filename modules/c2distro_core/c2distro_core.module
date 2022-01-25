@@ -249,7 +249,7 @@ function c2distro_core_mail_alter(&$message) {
  * @param \Drupal\Core\Entity\EntityInterface $entity
  *   The entity object.
  */
-function invalidateTags(EntityInterface $entity) {
+function invalidate_tags(EntityInterface $entity) {
   $storage = \Drupal::entityTypeManager()->getStorage('field_storage_config');
   $nodeFields = $storage->loadByProperties(['entity_type' => 'node']);
   $mediaFields = $storage->loadByProperties(['entity_type' => 'media']);
@@ -285,7 +285,7 @@ function invalidateTags(EntityInterface $entity) {
  * Invalidate cache tags after taxonomy term has deleted.
  */
 function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
-  invalidateTags($entity);
+  invalidate_tags($entity);
 }
 
 /**
@@ -294,5 +294,5 @@ function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
  * Invalidate cache tags after taxonomy term has been updated.
  */
 function c2distro_core_taxonomy_term_update(EntityInterface $entity) {
-  invalidateTags($entity);
+  invalidate_tags($entity);
 }
