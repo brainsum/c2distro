@@ -15,18 +15,20 @@
   .view-content {
     display: flex;
     flex-wrap: wrap;
-    margin: -48px 0 -22px -48px;
-    width: calc(100% + 48px);
+    margin: -24px 0 -22px;
     padding-top: 6.2rem;
-    & > * {
-      margin: 48px 0 22px 48px;
-    }
     .views-row {
       width: 262px;
       background-color: $color-white;
       position: relative;
       padding-bottom: 7.3rem;
-      margin-bottom: 2.3;
+      @include breakpoint(medium) {
+        width: calc(50% - 48px);
+        margin: 0 24px 70px;
+      }
+      @include breakpoint(tablet) {
+        width: calc(25% - 48px);
+      }
       .field--name-thumbnail {
         display: flex;
         justify-content: center;
@@ -48,7 +50,7 @@
         .category-link {
           a {
             color: $color-turquoise;
-            font-family: Montserrat;
+            font-family: $font-montserrat;
             text-decoration: none;
             line-height: 19px;
             font-weight: 600;

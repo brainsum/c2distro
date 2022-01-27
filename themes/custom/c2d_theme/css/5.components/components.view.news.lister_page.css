@@ -523,9 +523,14 @@
 }
 @media print, screen and (min-width: 48em) {
   .view.lister-page.view-news .view-content .views-row {
-    width: 262px;
+    width: calc(50% - 48px);
     margin: 0 24px 70px 24px;
     padding-bottom: 7.3rem;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .view.lister-page.view-news .view-content .views-row {
+    width: calc(25% - 48px);
   }
 }
 .view.lister-page.view-news .view-content .views-row .views-field-field-image img {
