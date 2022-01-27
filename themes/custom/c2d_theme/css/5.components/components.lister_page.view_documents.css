@@ -476,19 +476,25 @@
 .lister-page.view-documents .view-content {
   display: flex;
   flex-wrap: wrap;
-  margin: -48px 0 -22px -48px;
-  width: calc(100% + 48px);
+  margin: -24px 0 -22px;
   padding-top: 6.2rem;
-}
-.lister-page.view-documents .view-content > * {
-  margin: 48px 0 22px 48px;
 }
 .lister-page.view-documents .view-content .views-row {
   width: 262px;
   background-color: #ffffff;
   position: relative;
   padding-bottom: 7.3rem;
-  margin-bottom: 2.3;
+}
+@media print, screen and (min-width: 48em) {
+  .lister-page.view-documents .view-content .views-row {
+    width: calc(50% - 48px);
+    margin: 0 24px 70px;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .lister-page.view-documents .view-content .views-row {
+    width: calc(25% - 48px);
+  }
 }
 .lister-page.view-documents .view-content .views-row .field--name-thumbnail {
   display: flex;
@@ -517,7 +523,7 @@
 }
 .lister-page.view-documents .view-content .views-row .content-header-text .category-link a {
   color: #26c9de;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   line-height: 19px;
   font-weight: 600;

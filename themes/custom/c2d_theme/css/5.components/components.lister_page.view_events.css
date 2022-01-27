@@ -535,9 +535,14 @@
 }
 @media print, screen and (min-width: 48em) {
   .lister-page.view-events .view-content .views-row {
-    width: 262px;
+    width: calc(50% - 48px);
     margin: 0 24px 70px 24px;
     padding-bottom: 7.3rem;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .lister-page.view-events .view-content .views-row {
+    width: calc(25% - 48px);
   }
 }
 .lister-page.view-events .view-content .views-row .field--name-field-image img {
