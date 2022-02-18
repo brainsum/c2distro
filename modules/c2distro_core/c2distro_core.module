@@ -296,3 +296,27 @@ function c2distro_core_taxonomy_term_predelete(EntityInterface $entity) {
 function c2distro_core_taxonomy_term_update(EntityInterface $entity) {
   _c2distro_core_invalidate_tags($entity);
 }
+
+/**
+ * Implements hook_preprocess_html().
+ *
+ * Display the IFRC warning message.
+ */
+function c2distro_core_preprocess_html(&$variable) {
+  $user = \Drupal::currentUser();
+  if (!(in_array('editor', $user->getRoles())
+    || in_array('manager', $user->getRoles())
+    || in_array('contributor', $user->getRoles())
+  )) {
+    return;
+  }
+
+  $variable['page_top']['ifrc_warning'] = [
+    '#markup' => t('Please, make sure that all content you publish is in line with the “Acceptable use of IFRC/ICT resources” policy (<a href=":url">LINK</a>).', [
+      ':url' => 'https://idp.ifrc.org/SSO/SAMLLogin?loginToSp=https://fednet.ifrc.org&returnUrl=https://fednet.ifrc.org/FedNet/Our%20IFRC/Procedures%20Database/Forms%20and%20templates/062_e_v250_information%20security%20acceptable%20use%20policy.pdf'
+    ]),
+    '#weight' => -100,
+    '#prefix' => '<div data-drupal-messages="" class="system-messages"> <div class="inner-container"> <div role="contentinfo" aria-label="Status message" class="messages messages--warning">',
+    '#suffix' => '</div> </div> </div>',
+  ];
+}
