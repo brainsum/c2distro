@@ -309,11 +309,27 @@ function c2distro_core_preprocess_html(&$variable) {
   }
 
   $variable['page_top']['ifrc_warning'] = [
-    '#markup' => t('Please, make sure that all content you publish is in line with the “Acceptable use of IFRC/ICT resources” policy (<a href=":url">LINK</a>).', [
-      ':url' => 'https://idp.ifrc.org/SSO/SAMLLogin?loginToSp=https://fednet.ifrc.org&returnUrl=https://fednet.ifrc.org/FedNet/Our%20IFRC/Procedures%20Database/Forms%20and%20templates/062_e_v250_information%20security%20acceptable%20use%20policy.pdf'
-    ]),
+    '#theme' => 'ifrc_warning',
+    '#content' => [
+      '#markup' => t('Please, make sure that all content you publish is in line with the “Acceptable use of IFRC/ICT resources” policy (<a href=":url">LINK</a>).', [
+        ':url' => 'https://idp.ifrc.org/SSO/SAMLLogin?loginToSp=https://fednet.ifrc.org&returnUrl=https://fednet.ifrc.org/FedNet/Our%20IFRC/Procedures%20Database/Forms%20and%20templates/062_e_v250_information%20security%20acceptable%20use%20policy.pdf'
+      ]),
+    ],
     '#weight' => -100,
-    '#prefix' => '<div data-drupal-messages="" class="system-messages"> <div class="inner-container"> <div role="contentinfo" aria-label="Status message" class="messages messages--warning">',
-    '#suffix' => '</div> </div> </div>',
+  ];
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * Define custom templates for Site warning message.
+ */
+function c2distro_core_theme() {
+  return [
+    'ifrc_warning' => [
+      'variables' => [
+        'content' => NULL,
+      ],
+    ],
   ];
 }
