@@ -300,14 +300,11 @@ function c2distro_core_taxonomy_term_update(EntityInterface $entity) {
 /**
  * Implements hook_preprocess_html().
  *
- * Display the IFRC warning message.
+ * Display the IFRC warning message if user has the right permission.
  */
 function c2distro_core_preprocess_html(&$variable) {
   $user = \Drupal::currentUser();
-  if (!(in_array('editor', $user->getRoles())
-    || in_array('manager', $user->getRoles())
-    || in_array('contributor', $user->getRoles())
-  )) {
+  if (!$user->hasPermission('access site warning message')) {
     return;
   }
 
