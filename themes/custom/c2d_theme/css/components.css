@@ -3178,7 +3178,7 @@ input.form-submit.js-hide:hover {
   }
   .menu--main > .menu .menu-item--expanded > .menu .menu-item--active-trail a {
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 400;
   }
 }
 .menu--main > .menu .menu-item--expanded > .menu .menu-item:last-child a {
