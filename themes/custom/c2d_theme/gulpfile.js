@@ -3,22 +3,22 @@
 /**
  * Import required node modules and other external files
  */
-var autoprefixer         = require('autoprefixer');
-var browserSync         = require('browser-sync').create();
-var gulp                = require('gulp');
-var postcss             = require('gulp-postcss');
-var sassGlob = require('gulp-sass-glob');
-var sass                = require('gulp-sass')(require('sass'));
-var sourcemaps          = require('gulp-sourcemaps');
-var stylelint          = require('gulp-stylelint');
-var sorting = require('postcss-sorting');
-var stripCssComments = require('gulp-strip-css-comments');
-var removeEmptyLines = require('gulp-remove-empty-lines');
+const autoprefixer         = require('autoprefixer');
+const browserSync         = require('browser-sync').create();
+const cssnano             = require('gulp-cssnano');
+const gulp                = require('gulp');
+const postcss             = require('gulp-postcss');
+const postcssPresetEnv    = require('postcss-preset-env');
+const sassGlob            = require('gulp-sass-glob');
+const sass                = require('gulp-sass')(require('sass'));
+const sorting             = require('postcss-sorting');
+const sourcemaps          = require('gulp-sourcemaps');
+const stylelint           = require('gulp-stylelint');
 
 /**
  * Gulp config
  */
-var config = {
+const config = {
   paths: {
     styles: {
       src: './sass/**/*.scss',
@@ -27,6 +27,36 @@ var config = {
     scripts: {
       src: './js/src/*.js',
       dest: './js/dist/'
+    }
+  },
+  cssnano: {
+    preset: ['lite', {
+      colormin               : true,
+      discardDuplicates      : true,
+      discardOverridden      : true,
+      mergeLonghand          : true,
+      mergeRules             : true,
+      normalizeCharset       : true,
+      normalizePositions     : true,
+      normalizeRepeatStyle   : true,
+      normalizeString        : true,
+      normalizeWhitespace    : false,
+    }]
+  },
+  postcssPresetEnv: {
+    stage: 1,
+    preserve: false,
+    autoprefixer: {
+      cascade: false,
+      grid: 'no-autoplace',
+    },
+    features: {
+      'blank-pseudo-class': false,
+      'focus-visible-pseudo-class': false,
+      'focus-within-pseudo-class': false,
+      'has-pseudo-class': false,
+      'image-set-function': false,
+      'prefers-color-scheme-query': false,
     }
   },
   browserSync: {
@@ -38,17 +68,8 @@ var config = {
   }
 };
 
-// Predefined complex Gulp tasks
-var compileTask = '';
-
-/**
- * Sass settings
- *
- * Set Sass compiler. There are two options:
- * - require('sass') for Dart Sass
- * - require('node-sass') for Node Sass (LibSass)
- */
-sass.compiler = require('sass');
+// Predefined Gulp tasks
+let watch = '';
 
 /**
  * SASS:Compile Task
@@ -59,42 +80,20 @@ sass.compiler = require('sass');
  */
 function sassCompileTask(done) {
   gulp
-    .src(config.paths.styles.src)
+    .src(config.paths.styles.src, { sourcemaps: true })
     .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(sassGlob())
-    .pipe(sass({
-      outputStyle: 'expanded',
-      precision: 10
-    }))
-    .on('error', sass.logError)
-    .pipe(postcss([
-      autoprefixer(),
-      sorting(),
-    ]))
+      .pipe(sassGlob())
+      .pipe(sass())
+      .on('error', sass.logError)
+    .pipe(sourcemaps.write({ includeContent: false }))
+    .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(postcss([
+        autoprefixer,
+        postcssPresetEnv(config.postcssPresetEnv),
+        sorting
+      ]))
+      .pipe(cssnano(config.cssnano))
     .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest(config.paths.styles.dest))
-    .pipe(browserSync.stream());
-  done();
-}
-
-function sassCompileTaskProd(done) {
-  gulp
-    .src(config.paths.styles.src)
-    .pipe(sassGlob())
-    .pipe(sass({
-      outputStyle: 'compressed',
-      precision: 10
-    }))
-    .on('error', sass.logError)
-    .pipe(stripCssComments({
-      preserve: true,
-      whitespace: true,
-    }))
-    .pipe(removeEmptyLines())
-    .pipe(postcss([
-      autoprefixer(),
-      sorting(),
-    ]))
     .pipe(gulp.dest(config.paths.styles.dest))
   done();
 }
@@ -136,24 +135,6 @@ function criticalTask(done) {
 }
 
 /**
- * JavaScript Task
- *
- * Currently there is only one JavaScript task (no separated for dev and prod).
- * And only run ESlint to detect errors.
- * @param {string} done The done argument is passed into the callback function;
- * executing that done function tells Gulp "a hint to tell it when the task is done".
- */
-function scriptsTask(done) {
-  gulp
-    .src(config.paths.scripts.src)
-    .pipe(eslint({ fix: true }))
-    .pipe(eslint.format())
-    .pipe(gulp.dest(config.paths.scripts.dest))
-    .pipe(browserSync.stream());
-  done();
-}
-
-/**
  * BrowserSync Task
  *
  * Watching Sass and JavaScript source files for changes.
@@ -166,7 +147,6 @@ function browserSyncTask(done) {
     open: config.browserSync.autoOpen,
     browser: config.browserSync.browsers
   });
-  gulp.watch(config.paths.styles.src, sassCompileTask);
   done();
 }
 
@@ -181,18 +161,26 @@ function browserSyncReloadTask(done) {
   done();
 }
 
-// Define complex tasks
-compileTask = gulp.parallel(sassCompileTask, scriptsTask);
+/**
+ * Watching Task
+ *
+ * Watching all Sass files; if it see any .scss file has been changed, it runs sassCompileTask then browserSyncReloadTask
+ * tasks after each other.
+ */
+watch = () => gulp.watch(
+  config.paths.styles.src,
+  { ignoreInitial: false },
+  gulp.series(
+    sassCompileTask,
+    browserSyncReloadTask
+  )
+);
 
 /**
  * Export Gulp tasks
  */
-exports.default = gulp.series(sassCompileTask, browserSyncTask);
-exports.lint = gulp.parallel(sassLintTask, scriptsTask);
+exports.default = gulp.series(sassCompileTask, browserSyncTask, watch);
 exports.sass = sassCompileTask;
-exports.sassprod = sassCompileTaskProd;
 exports.sassLint = sassLintTask;
-exports.scripts = scriptsTask;
-exports.watch = browserSyncTask;
 exports.critical = gulp.series(sassCompileTask, criticalTask);
 
