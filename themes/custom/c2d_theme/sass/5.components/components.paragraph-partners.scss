@@ -62,7 +62,7 @@
       @include breakpoint(tablet) {
         width: 25%;
         max-width: none;
-        padding-inline: 12rem;
+        padding-block-end: 12rem;
       }
 
       .paragraph--type--partner {
@@ -107,12 +107,7 @@
         }
 
         .field--name-field-image {
-          padding: 0 2.85rem;
           margin-block-end: 3rem;
-
-          img {
-            max-width: 20rem;
-          }
         }
 
         .field--name-field-name,
