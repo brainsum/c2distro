@@ -31,14 +31,10 @@ const config = {
   },
   cssnano: {
     preset: ['lite', {
-      colormin               : true,
       discardDuplicates      : true,
       discardOverridden      : true,
-      mergeLonghand          : true,
       mergeRules             : true,
       normalizeCharset       : true,
-      normalizePositions     : true,
-      normalizeRepeatStyle   : true,
       normalizeString        : true,
       normalizeWhitespace    : false,
     }]
