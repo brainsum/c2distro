@@ -84,7 +84,16 @@ select {
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
   appearance:none;
-  background: url("../images/dist/icons/chevron-down.svg") no-repeat 97% 70%;
+  background-image: url("../../images/dist/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+
+  [dir="ltr"] & {
+    background-position: 97% center;
+  }
+
+  [dir="rtl"] & {
+    background-position: 3% center;
+  }
 
   &::-ms-expand {
     display: none;
