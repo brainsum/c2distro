@@ -84,7 +84,7 @@
 %}
 
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes)|without('role') }}>
+<article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
 
   {% if display_submitted %}
     <footer class="node__meta">
