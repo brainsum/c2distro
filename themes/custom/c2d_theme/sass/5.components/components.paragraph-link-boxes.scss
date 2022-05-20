@@ -7,7 +7,8 @@
       @include flex;
       @include justify-content(center);
       @include flex-wrap(wrap);
-      margin-bottom: -5%;
+
+      margin-block-end: -5%;
 
       @include breakpoint(medium) {
         margin: -2.5% 0;
@@ -15,7 +16,9 @@
 
       > .field__item {
         width: 100%;
-        margin: 0 0 5%;
+        margin-block-start: 0;
+        margin-block-end: 5%;
+        margin-inline: 0;
         background-color: $background-grey;
         font-size: 1.4rem;
 
@@ -28,7 +31,9 @@
 
     .view,
     .paragraph--type--link-box {
-      padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+      padding-block-start: 2.5rem;
+      padding-block-end: 4.5rem;
+      padding-inline: 2.5rem;
       text-align: center;
 
       .paragraph--inner {
@@ -37,23 +42,22 @@
 
       .view-header h3,
       .field--name-field-title {
-        margin-bottom: 4rem;
+        margin-block-end: 4rem;
         font-family: $font-montserrat;
         font-size: 2rem;
-        // padding-right: 5rem;
         font-weight: 700;
       }
 
       .field--name-field-media {
         position: absolute;
-        top: 0;
-        right: 0;
+        inset-block-start: 0;
+        inset-inline-end: 0;
         width: 4rem;
         height: 4rem;
 
         img {
           display: block;
-          margin-left: auto;
+          margin-inline-start: auto;
         }
       }
 
@@ -61,10 +65,10 @@
       .field__items {
         .views-row,
         .field__item {
-          margin-bottom: 2.8rem;
+          margin-block-end: 2.8rem;
 
           &:last-child {
-            margin-bottom: 0;
+            margin-block-end: 0;
           }
 
           a {
@@ -74,7 +78,7 @@
         }
 
         & + .field__items {
-          margin-top: 2.8rem;
+          margin-block-start: 2.8rem;
         }
       }
 
@@ -86,7 +90,7 @@
       }
 
       .view-footer {
-        margin-top: 3.5rem;
+        margin-block-start: 3.5rem;
       }
     }
   }

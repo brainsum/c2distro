@@ -17,7 +17,7 @@
 select.form-select,
 input[data-drupal-selector="edit-search-api-fulltext"] {
   font-family: $font-open;
-  border: none;
+  border: 0;
   padding: .9rem 1.1rem;
 }
 
@@ -38,17 +38,18 @@ select {
 .form-type-select,
 .form-type-textarea,
 .form-type-password {
-  margin-right: 0;
+  margin-inline-end: 0;
   width: 100%;
+
   label {
-    margin-bottom: .6rem;
+    margin-block-end: .6rem;
     display: block;
     font-weight: 700;
     font-size: 1.8rem;
-    opacity: .9;
+    opacity: 0.9;
     color: $color-blue-gray;
-    text-decoration: none solid rgb(18, 40, 76);
-    line-height: 30px;
+    text-decoration: none;
+    line-height: 3rem;
   }
 
   select,
@@ -70,29 +71,32 @@ select {
 
 input.form-submit {
   @include bordered-button;
-  //height: 4.4rem;
 }
 
 input.form-submit.js-hide {
   @include bordered-button--small;
   padding: 0 3.5rem;
-  // height: 3rem;
 }
 
 .page-node-type-page {
   .block-views-exposed-filter-blockdisaster-law-database-main {
     background-color: $color-white;
-    padding-top: 5.5rem;
-    padding-bottom: 5rem;
+    padding-block-start: 5.5rem;
+    padding-block-end: 5rem;
+
     .block-inner {
       @include width-655;
+
       .form--inline {
         @include flex;
         @include justify-content(flex-center);
+
         width: 100%;
+
         label {
           display: none;
         }
+
         input.form-submit {
           min-height: 4.4rem;
           height: 4.4rem;
@@ -106,9 +110,11 @@ input.form-submit.js-hide {
   .block-system-main-block {
     background-color: $color-white;
     padding: 5rem 0 !important;
+
     @include breakpoint(tablet) {
       padding: 8rem !important;
     }
+
     .block-inner {
       @include width-1105;
     }
@@ -117,53 +123,67 @@ input.form-submit.js-hide {
 .contact-form {
   @include flex;
   @include flex-wrap(wrap);
+
   .left,
   .right {
     width: 100%;
+
     @include breakpoint(mobile) {
       width: 80%;
       margin: 0 auto;
     }
+
     @include breakpoint(medium) {
       width: 60%;
     }
+
     @include breakpoint(tablet) {
       width: 50%;
     }
   }
+
   .left {
     @include breakpoint(tablet) {
-      padding-right: 2rem;
+      padding-inline-end: 2rem;
     }
   }
+
   .right {
     .ajax-progress {
       display: none;
     }
+
     @include breakpoint(tablet) {
-      padding-left: 2rem;
+      padding-inline-start: 2rem;
     }
   }
+
   .form-wrapper:not(:first-child) {
-    margin-top: 4.2rem;
+    margin-block-start: 4.2rem;
   }
+
   .form-managed-file {
     @include flex;
     @include justify-content(space-between);
     @include align-items(center);
     @include flex-wrap(wrap);
+
     .form-submit {
       @include bordered-button--small;
     }
   }
+
   .form-actions {
     @include flex;
     @include justify-content(center);
+
     text-align: center;
     width: 100%;
   }
+
   .description {
     font-size: 1.4rem;
+
     a {
       color: $color-secondary;
       text-decoration: underline;
@@ -177,11 +197,14 @@ input.form-submit.js-hide {
 .path-user {
   .user-login-form {
     @include width-655;
-    padding-bottom:10rem;
+
+    padding-block-end:10rem;
   }
+
   .js-form-item {
-    margin-bottom: 3rem;
+    margin-block-end: 3rem;
   }
+
   select,
   input,
   textarea {

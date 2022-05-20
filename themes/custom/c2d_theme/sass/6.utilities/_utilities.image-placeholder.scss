@@ -1,27 +1,25 @@
 
 @mixin image-placeholder {
   &:before {
-    content: '';
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, .8);
-    background-image: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/no-img.png");
+    content: "";
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, .8);
+    background-image: url("../../images/dist/icons/no-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
 .views-field-field-media-thumbnail,
 .views-field-field-image {
+  @include image-placeholder;
+
   .field-content {
     position: relative;
   }
-  @include image-placeholder;
 }

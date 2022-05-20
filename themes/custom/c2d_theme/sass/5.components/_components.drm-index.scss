@@ -1,8 +1,8 @@
 .dmi-countries-block--wrapper {
-  padding-top: 1rem;
+  padding-block-start: 1rem;
 
   .title {
-    margin-bottom: 5rem;
+    margin-block-end: 5rem;
     font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
@@ -16,7 +16,9 @@
 
   .region-wrapper {
     min-height: 25rem;
-    padding: 2rem 0 5rem;
+    padding-block-start: 2rem;
+    padding-block-end: 5rem;
+    padding-inline: 0;
     background-color: $color-white;
 
     @include breakpoint(medium) {
@@ -43,8 +45,8 @@
           @include justify-content(space-between);
           @include flex-wrap(wrap);
 
-          margin-bottom: 5rem;
-          padding-left: 0;
+          margin-block-end: 5rem;
+          padding-inline-start: 0;
           list-style: none;
 
           @include breakpoint(medium) {
@@ -53,7 +55,7 @@
 
           li {
             margin: 1.3rem;
-            border-bottom: 2px solid transparent;
+            border-bottom: 0.2rem solid transparent;
             font-family: $font-open;
             font-weight: 700;
             cursor: pointer;
@@ -63,7 +65,7 @@
             }
 
             &.is-active {
-              border-bottom: 2px solid $color-secondary;
+              border-block-end: 0.2rem solid $color-secondary;
               color: $color-secondary;
             }
           }
@@ -105,7 +107,7 @@
   #edit-description {
     @include width-655;
 
-    margin-bottom: 4.5rem;
+    margin-block-end: 4.5rem;
     font-family: $font-open;
     font-size: 1.8rem;
     text-align: center;
@@ -123,8 +125,8 @@
 
   .geographical-area-title,
   .instrument-type-title {
-    margin-bottom: 2rem;
-    padding-top: 1rem;
+    margin-block-end: 2rem;
+    padding-block-start: 1rem;
     font-size: 1.8rem;
     font-weight: 700;
   }
@@ -134,7 +136,7 @@
     @include flex-direction(column);
     @include justify-content(center);
 
-    margin-bottom: 5rem;
+    margin-block-end: 5rem;
     padding: 4rem 0;
     background-color: $color-white;
 
@@ -162,9 +164,11 @@
 
         li.search-choice {
           display: inline-block;
-          margin-right: 0.5rem;
-          margin-bottom: 0.5rem;
-          padding: 0.5rem 2rem 0.5rem 1rem;
+          margin-inline-end: 0.5rem;
+          margin-block-end: 0.5rem;
+          padding-block: 0.5rem;
+          padding-inline-start: 1rem;
+          padding-inline-end: 2rem;
           border: 0;
           border-radius: 0;
           background-color: $color-secondary;
@@ -174,16 +178,16 @@
           cursor: pointer;
 
           .search-choice-close {
-            top: 0.6rem;
-            right: 0.3rem;
-            background: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/close--white.svg") no-repeat center;
+            inset-block-start: 0.6rem;
+            inset-inline-end: 0.3rem;
+            background: url("../../images/dist/icons/close--white.svg") no-repeat center;
             background-size: 1.7rem;
           }
         }
       }
 
       .chosen-drop {
-        text-align: left;
+        text-align: start;
       }
 
       &-active {
@@ -195,7 +199,7 @@
   }
 
   #edit-top-container-geographical-area {
-    border-right: 0.1rem solid $color-grey-light;
+    border-inline-end: 0.1rem solid $color-grey-light;
 
     .form-type-select {
       display: none;
@@ -230,7 +234,7 @@
     label {
       display: inline-block;
       min-width: 50%;
-      margin-bottom: 1rem;
+      margin-block-end: 1rem;
       padding: 1.1rem 1.5rem;
       background-color: $background-grey;
       font-size: 1.6rem;
@@ -239,8 +243,8 @@
 
       @include breakpoint(medium) {
         min-width: auto;
-        margin-right: 1rem;
-        margin-bottom: 0;
+        margin-inline-end: 1rem;
+        margin-block-end: 0;
       }
     }
 
@@ -250,7 +254,7 @@
     }
 
     .js-form-item:last-child label {
-      margin-right: 0;
+      margin-inline-end: 0;
     }
   }
 
@@ -263,7 +267,7 @@
     @include width-1105;
     @include transition(opacity, 0.2s);
 
-    margin-bottom: 5rem;
+    margin-block-end: 5rem;
     opacity: 0.4;
     pointer-events: none;
 
@@ -278,7 +282,7 @@
 
       #edit-bottom-container-results {
         position: sticky;
-        top: 10rem;
+        inset-block-start: 10rem;
       }
     }
   }
@@ -288,7 +292,7 @@
 
     @include breakpoint(medium) {
       width: 60%;
-      padding-right: 2rem;
+      padding-inline-end: 2rem;
     }
   }
 
@@ -312,15 +316,16 @@
 
     #edit-bottom-container-results-title {
       @include flex;
-      @include justify-content(center);
+
+      text-align: center;
 
       position: relative;
     }
 
     .result-title {
       position: relative;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
+      margin-block-start: 3rem;
+      margin-block-end: 2rem;
       font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
@@ -328,11 +333,11 @@
       .helper-icon {
         content: "i";
         position: absolute;
-        top: -0.7rem;
-        right: -2.5rem;
+        inset-block-start: -0.7rem;
+        inset-inline-end: -2.5rem;
         width: 1.6rem;
         height: 1.6rem;
-        border: 1px solid $color-secondary;
+        border: 0.1rem solid $color-secondary;
         border-radius: 1rem;
         color: $color-secondary;
         font-size: 1.1rem;
@@ -345,16 +350,16 @@
         display: none;
         position: absolute;
         z-index: 999;
-        top: 31px;
-        right: -50%;
+        inset-block-start: 3.1rem;
+        inset-inline-end: -50%;
         width: 200%;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 0 20px #00000047;
+        padding: 1rem;
+        background-color: $color-white;
+        box-shadow: 0 0 2rem #00000047;
         font-family: $font-open;
         font-size: 1.2rem;
         font-weight: 400;
-        line-height: 18px;
+        line-height: 1.8rem;
       }
 
       .helper-icon:hover + .result-title-helper {
@@ -378,7 +383,7 @@
         @include flex-wrap(wrap);
         @include justify-content(flex-start);
 
-        margin-bottom: 2rem;
+        margin-block-end: 2rem;
 
         .selected-filter {
           input {
@@ -387,16 +392,18 @@
         }
 
         .result-item-title {
-          margin-right: 1rem;
+          margin-inline-end: 1rem;
           font-weight: 700;
         }
 
         label {
           display: inline-block;
           position: relative;
-          margin-right: 0.5rem;
-          margin-bottom: 0.5rem;
-          padding: 0 2.5rem 0 0.7rem;
+          margin-inline-end: 0.5rem;
+          margin-block-end: 0.5rem;
+          padding-block: 0;
+          padding-inline-end: 2.5rem;
+          padding-inline-start: 0.7rem;
           background-color: $color-secondary;
           color: $color-white;
           font-size: 1.4rem;
@@ -406,11 +413,11 @@
             content: "";
             display: inline-block;
             position: absolute;
-            top: 0.4rem;
-            right: 0.3rem;
+            inset-block-start: 0.4rem;
+            inset-inline-end: 0.3rem;
             width: 1.7rem;
             height: 1.7rem;
-            background-image: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/close--white.svg");
+            background-image: url("../../images/dist/icons/close--white.svg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 1.7rem;
@@ -423,7 +430,7 @@
       @include flex;
       @include flex-wrap(wrap);
 
-      margin-top: 3rem;
+      margin-block-start: 3rem;
       padding: 0 3rem;
 
       a {
@@ -437,32 +444,37 @@
 
   #edit-results-title,
   .drm-indicators-title {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
     font-size: 1.8rem;
     font-weight: 700;
   }
 
   .category-fieldset {
     position: relative;
-    margin-bottom: 2rem;
-    padding: 0 2rem 1.5rem;
+    margin-block-end: 2rem;
+    padding-block-start: 0;
+    padding-block-end: 1.5rem;
+    padding-inline: 2rem;
     background-color: $color-white;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
 
     > img {
       display: inline-block;
       position: absolute;
-      top: 0.6rem;
-      left: 2rem;
+      inset-block-start: 0.6rem;
+      inset-inline-start: 2rem;
       width: 4.5rem;
     }
 
     .categories-title {
       position: relative;
-      padding: 2rem 2rem 0 6rem;
+      padding-block-start: 2rem;
+      padding-block-end: 0;
+      padding-inline-start: 6rem;
+      padding-inline-end: 2rem;
       font-size: 1.8rem;
       font-weight: 700;
       cursor: pointer;
@@ -472,12 +484,12 @@
       }
 
       &:after {
-        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/plus.svg");
+        content: url("../../images/dist/icons/plus.svg");
         display: inline-block;
         position: absolute;
-        top: 1.8rem;
-        right: 0;
-        bottom: 0;
+        inset-block-start: 1.8rem;
+        inset-inline-end: 0;
+        inset-block-end: 0;
         width: 2.2rem;
         height: 2.2rem;
         margin: auto 0;
@@ -487,8 +499,8 @@
     .subcategories-title {
       position: relative;
       width: 100%;
-      margin-bottom: 15px;
-      padding-right: 2rem;
+      margin-block-end: 1.5rem;
+      padding-inline-end: 2rem;
       font-weight: 700;
       cursor: pointer;
 
@@ -499,11 +511,11 @@
       &:after {
         @include transition(all, 0.2s);
 
-        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/chevron-down.svg");
+        content: url("../../images/dist/icons/chevron-down.svg");
         display: inline-block;
         position: absolute;
-        top: -3px;
-        right: -6px;
+        inset-block-start: -0.3rem;
+        inset-inline-end: -0.6rem;
         width: 3.2rem;
         height: 3.2rem;
       }
@@ -515,20 +527,20 @@
       @include flex-wrap(wrap);
 
       display: none;
-      padding-top: 2rem;
+      padding-block-start: 2rem;
 
       .indicator {
         display: none;
       }
 
       & + .subcategory-fieldset {
-        padding-top: 1.5rem;
-        border-top: 1px solid $color-grey;
+        padding-block-start: 1.5rem;
+        border-block-start: 0.1rem solid $color-grey;
       }
 
       &.open {
         & + .subcategory-fieldset {
-          margin-top: 1.5rem;
+          margin-block-start: 1.5rem;
         }
 
         .subcategories-title:after {
@@ -547,7 +559,7 @@
       }
 
       .categories-title:after {
-        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/minus.svg");
+        content: url("../../images/dist/icons/minus.svg");
       }
     }
   }
@@ -559,8 +571,8 @@
 
     label {
       display: inline-block;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-inline-end: 0.5rem;
+      margin-block-end: 0.5rem;
       padding: 0.5rem 1rem;
       background-color: $background-grey;
       font-size: 1.4rem;

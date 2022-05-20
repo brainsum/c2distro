@@ -1,25 +1,28 @@
 @import '../index';
 
 .field.field--name-field-tags {
-  padding: 0 0 4rem;
+  padding-block-start: 0;
+  padding-block-end: 4rem;
+  padding-inline: 0;
   display: flex;
   flex-wrap: wrap;
+
   @include breakpoint(medium) {
     padding: 4rem;
   }
 
   .field__label {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
   }
 
   .field__items {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-block-end: 3rem;
 
     .field__item {
-      padding: 2.5px;
+      padding: 0.25rem;
 
       a {
         display: inline-block;

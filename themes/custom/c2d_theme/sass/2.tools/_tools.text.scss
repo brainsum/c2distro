@@ -1,19 +1,18 @@
 /**
  * @file
  * Text Tool
- ******************************************************************************
  *
  * Text block related tools
  *
+ * @author Krisztian Pinter <krisz@keeteean.com>
  * @see 6.utilities/_utilities.text.scss for BEM based class named version
  */
 
 /**
  * Text-align Mixin
  *
- * @parameter {string} $align - Align value ex.: left.
+ * @parameter {string} $align - Align value ex.: start.
  * @parameter {string} $last - Optional, align value for justify aligned last line.
- *
  *
  * Examples
  *
@@ -28,10 +27,9 @@
  *
  * @example
  *   .section__lead {
- *     @include text-align(justify, left);
+ *     @include text-align(justify, start);
  *   }
  */
-
 @mixin text-align($align, $last: null) {
   @if ($last != null) {
     text-align: $align !important; // for Edge
@@ -54,6 +52,7 @@
  *
  * Borrowed from Spectre.css
  * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
  * @link https://picturepan2.github.io/spectre/utilities/text.html
  *
  * @example
@@ -61,7 +60,6 @@
  *     @include text-ellipsis;
  *   }
  */
-
 @mixin text-ellipsis {
   overflow: hidden;
   white-space: nowrap;
@@ -75,6 +73,7 @@
  *
  * Borrowed from Spectre.css
  * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
  * @link https://picturepan2.github.io/spectre/utilities/text.html
  *
  * @example
@@ -82,11 +81,10 @@
  *     @include text-clip;
  *   }
  */
-
 @mixin text-clip {
   overflow: hidden;
-  text-overflow: clip;
   white-space: nowrap;
+  text-overflow: clip;
 }
 
 /**
@@ -94,8 +92,9 @@
  *
  * Text may be broken at arbitrary points.
  *
- * Borrowed from Spectre.css
+ * Part of Shake.sass, borrowed from Spectre.css.
  * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
  * @link https://picturepan2.github.io/spectre/utilities/text.html
  *
  * @example
@@ -103,15 +102,15 @@
  *     @include text-break;
  *   }
  */
-
 @mixin text-break {
-  hyphens: auto;
-  word-break: break-word;
   word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 @mixin link-hover {
   @include transition(color, .2s);
+
   &:hover {
     color: $color-secondary;
   }
@@ -124,10 +123,12 @@
   text-decoration: none solid $color-blue-gray;
   line-height: 4rem;
   font-weight: 700;
+
   @include breakpoint(medium) {
     font-size: 4rem;
   }
 }
+
 @mixin text-small-bold {
   font-family: $font-montserrat;
   font-size: 1.4rem;
@@ -136,6 +137,7 @@
   line-height: 1.9rem;
   font-weight: 700;
 }
+
 @mixin text-read-more {
   font-family: $font-montserrat;
   color: $color-blue-gray;

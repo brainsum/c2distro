@@ -2,7 +2,9 @@
 
 #block-tabs nav.tabs {
   max-width: 113.5rem;
-  margin: 20px auto 10px;
+  margin-block-start: 2rem;
+  margin-inline: auto;
+  margin-block-end: 1rem;
 }
 
 .view-general-site-search,
@@ -22,16 +24,15 @@
   }
 
   .info-section {
+    margin-block-end: 3.2rem;
     font-size: 1.8rem;
-    margin-bottom: 3.2rem;
     font-family: $font-open;
     font-weight: 700;
 
     .field {
       &:after {
         content: '|';
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-inline: 1rem;
       }
 
       &:last-child:after {
@@ -41,7 +42,7 @@
       &.field--name-field-start-date {
         &:after {
           content: '-';
-          margin-left: .4rem;
+          margin-inline-start: .4rem;
         }
       }
     }
@@ -52,43 +53,38 @@
       width: 100%;
       font-family: $font-open;
       line-height: 3rem;
-      margin-bottom: 6rem;
+      margin-block-end: 6rem;
+
       @include breakpoint(medium) {
         max-width: 66.5rem;
         width: 60%;
       }
 
       .field--name-field-media-image {
-        margin-bottom: 5rem;
+        margin-block-end: 5rem;
       }
 
       .field--name-field-lead,
       .field--name-body {
         @include breakpoint(medium) {
-          padding: 0 3rem;
+          padding-block: 0;
+          padding-inline: 3rem;
         }
       }
 
       .field--name-field-lead {
         font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 4rem;
+        margin-block-end: 4rem;
         line-height: 2.8rem;
       }
 
       .field--name-body {
         font-size: 1.8rem;
-        /*        a {
-                  color: $color-secondary;
-                  text-decoration: underline;
-                  &:hover {
-                    text-decoration: none;
-                  }
-                }*/
       }
 
       .lightgallery-wrapper {
-        margin-top: 5rem;
+        margin-block-start: 5rem;
 
         .lightgallery {
           @include flex;
@@ -97,7 +93,7 @@
 
           li {
             max-width: 25%;
-            margin-bottom: 1rem;
+            margin-block-end: 1rem;
             padding: 0 .5rem;
             list-style: none;
 
@@ -108,7 +104,7 @@
               &:after {
                 content: '';
                 position: absolute;
-                top: 0;
+                inset-block-start: 0;
                 width: 100%;
                 height: 100%;
                 display: block;
@@ -123,14 +119,14 @@
 
             &:first-child {
               max-width: none;
-              margin-bottom: 2rem;
+              margin-block-end: 2rem;
             }
           }
         }
       }
 
       .field--name-field-media-oembed-video {
-        margin-top: 5rem;
+        margin-block-start: 5rem;
 
         iframe {
           width: 100%;
@@ -141,30 +137,33 @@
 
     &--sidebar {
       width: 100%;
+
       @include breakpoint(medium) {
-        padding-left: 1.7rem;
+        padding-inline-start: 1.7rem;
         width: 40%;
         max-width: 44rem;
       }
 
       .sidebar-block {
         width: 100%;
-        padding: 3rem 3.5rem 5.4rem 3.5rem;
+        padding-block-start: 3rem;
+        padding-block-end: 5.4rem;
+        padding-inline: 3.5rem;
         background-color: $color-blue-light;
-        margin-bottom: 4rem;
+        margin-block-end: 4rem;
         overflow: hidden;
 
         .field--name-field-title-related-links,
         .field--name-field-title-related-documents {
           font-weight: 700;
-          margin-bottom: 2.3rem;
+          margin-block-end: 2.3rem;
         }
 
         .field--name-field-news-attachment,
         .field--name-field-related-links,
         .field--name-field-related-documents {
           .field__item {
-            margin-bottom: 2.4rem;
+            margin-block-end: 2.4rem;
 
             a {
               @include link-hover;
@@ -174,7 +173,7 @@
       }
 
       .files--holder {
-        margin-bottom: 4rem;
+        margin-block-end: 4rem;
 
         .field--name-field-news-attachment {
           a {
@@ -187,17 +186,19 @@
 
   .field--name-field-related-news-and-events {
     background-color: $color-blue-light;
-    margin-top: 10rem;
+    margin-block-start: 10rem;
 
     .field-label--holder {
       @include width-1105;
+
       position: relative;
 
       .field__label {
         @include block-title;
+
         position: absolute;
-        top: 0;
-        left: 0;
+        inset-block-start: 0;
+        inset-inline-start: 0;
       }
     }
 
@@ -209,30 +210,40 @@
         @include flex-direction(row);
         @include justify-content(flex-start);
         @include flex-wrap(wrap);
+
         margin: 0 -1.5rem;
-        padding: 8rem 0 4rem;
+        padding-block-start: 8rem;
+        padding-block-end: 4rem;
+        padding-inline: 0;
 
         > .field__item {
           max-width: 35.6rem;
-          margin: 0 1rem 3rem;
-          border: 1px solid transparent;
+          margin-block-start: 0;
+          margin-block-end: 3rem;
+          margin-inline: 1rem;
+          border: 0.1rem solid transparent;
           min-height: 47rem;
+
           @include breakpoint(tablet) {
             max-width: calc(25% - 3rem);
-            margin: 0 1.5rem 3rem;
+            margin-block-start: 0;
+            margin-block-end: 3rem;
+            margin-inline: 1.5rem;
           }
 
           article {
             @include flex;
             @include flex-direction(column);
             @include justify-content(flex-start);
+
             height: 100%;
           }
 
           .field--name-field-image {
-            margin-bottom: 2.6rem;
+            margin-block-end: 2.6rem;
+
             @include breakpoint(tablet) {
-              margin-bottom: 1.3rem;
+              margin-block-end: 1.3rem;
             }
           }
 
@@ -242,21 +253,22 @@
             .field--name-field-date + .field--name-field-type {
               &:before {
                 content: "|";
-                margin: 0 .3rem;
+                margin: 0 0.3rem;
                 font-weight: 400;
               }
             }
           }
 
           .item-title {
-            margin-bottom: auto;
+            margin-block-end: auto;
           }
 
           .field--name-title,
           .field--name-field-short-title {
-            @include transition(color, .2s);
+            @include transition(color, 0.2s);
+
             max-height: 9.6rem;
-            margin-bottom: 1.6rem;
+            margin-block-end: 1.6rem;
             overflow: hidden;
             display: block;
             font-weight: 700;
@@ -271,28 +283,30 @@
             .field--name-field-city:before {
               content: '';
               display: inline-block;
-              background-image: url('/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/map-marker.svg');
+              background-image: url('../../images/dist/icons/map-marker.svg');
               background-repeat: no-repeat;
               width: 1.5rem;
               height: 1.7rem;
-              margin-bottom: -.2rem;
-              margin-right: .5rem;
+              margin-block-end: -0.2rem;
+              margin-inline-end: 0.5rem;
             }
           }
 
           .node-readmore {
-            @include transition(all, .2s);
-            border-bottom: 1rem solid $color-white;
+            @include transition(all, 0.2s);
+
+            border-block-end: 1rem solid $color-white;
             padding: 0 2.3rem;
 
             a {
-              @include transition(all, .2s);
-              margin-top: auto;
-              padding-bottom: 2rem;
+              @include transition(all, 0.2s);
+
+              margin-block-start: auto;
+              padding-block-end: 2rem;
               font-style: italic;
               font-weight: 700;
               display: block;
-              margin-bottom: -1rem;
+              margin-block-end: -1rem;
 
               &:hover {
                 color: $color-secondary;
@@ -315,20 +329,21 @@
   .field--name-field-lead {
     @include width-655;
     @include font-open-18;
-    padding-bottom: 5.5rem;
+
+    padding-block-end: 5.5rem;
     color: $body-font-color;
     text-decoration: none solid $body-font-color;
     text-align: center;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
   }
 
   .block-page-title-block + .node--type-page {
     .field--name-body,
     .field--name-field-lead {
-      margin-top: -3rem;
+      margin-block-start: -3rem;
 
       @include breakpoint(medium) {
-        margin-top: -4rem;
+        margin-block-start: -4rem;
       }
     }
   }

@@ -84,7 +84,7 @@
 
       & > .field__item {
         width: 100%;
-        margin-bottom: 3.5rem;
+        margin-block-end: 3.5rem;
 
         @include breakpoint(medium) {
           width: 50%;
@@ -103,7 +103,9 @@
 
     position: relative;
     height: 100%;
-    padding: 9rem 5.5rem 5rem;
+    padding-block-start: 9rem;
+    padding-block-end: 5rem;
+    padding-inline: 5.5rem;
     background-color: #f0f0f0;
     box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -116,12 +118,12 @@
       content: '';
       display: block;
       position: absolute;
-      top: 4rem;
-      left: 1.5rem;
+      inset-block-start: 4rem;
+      inset-inline-start: 1.5rem;
       width: 3rem;
       height: 3rem;
       opacity: 0.5;
-      background-image: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/svg/quote-open.svg");
+      background-image: url("../../images/dist/svg/quote-open.svg");
     }
 
     .field--name-field-text {
@@ -132,11 +134,11 @@
       position: relative;
 
       &:after {
-        content: url('/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/arrow-right.svg');
+        content: url('../../images/dist/icons/arrow-right.svg');
         position: absolute;
-        top: 0.1rem;
-        left: 100%;
-        padding-left: 0.5rem;
+        inset-block-start: 0.1rem;
+        inset-inline-start: 100%;
+        padding-inline-start: 0.5rem;
       }
     }
   }
@@ -181,7 +183,7 @@
   .field--name-field-title,
   .field--name-field-text {
     & + .field--name-field-link {
-      margin-top: 4rem;
+      margin-block-start: 4rem;
     }
   }
 
@@ -200,14 +202,14 @@
 
   .paragraph--inner {
     position: relative;
-    padding-top: 3rem;
+    padding-block-start: 3rem;
   }
 
   .field--name-field-title {
     @include block-title;
 
     position: absolute;
-    top: -6rem;
+    inset-block-start: -6rem;
     padding: 0;
   }
 
@@ -221,11 +223,15 @@
     > .field__item {
       width: 100%;
       max-width: 23.4rem;
-      margin: 0 1rem 3rem;
+      margin-block-start: 0;
+      margin-block-end: 3rem;
+      margin-inline: 1rem;
 
       @include breakpoint(tablet) {
         max-width: calc(25% - 3rem);
-        margin: 0 1.5rem 3rem;
+        margin-block-start: 0;
+        margin-block-end: 3rem;
+        margin-inline: 1.5rem;
       }
 
       .media {
@@ -240,18 +246,18 @@
 
         .field--type-image {
           position: relative;
-          margin-bottom: 1.3rem;
+          margin-block-end: 1.3rem;
         }
 
         .field--name-field-date {
-          margin-bottom: 1.6rem;
+          margin-block-end: 1.6rem;
           padding: 0 2.3rem;
         }
 
         .field--name-name,
         .field--name-field-short-title {
           max-height: 9.5rem;
-          margin-bottom: 1.6rem;
+          margin-block-end: 1.6rem;
           overflow: hidden;
         }
 
@@ -276,7 +282,7 @@
           @include transition(all, 0.2s);
 
           justify-self: flex-end;
-          margin-top: auto;
+          margin-block-start: auto;
           border-bottom: 1rem solid $color-white;
 
           &:hover {
@@ -284,8 +290,8 @@
           }
 
           a {
-            margin-bottom: -1rem;
-            padding-bottom: 2rem;
+            margin-block-end: -1rem;
+            padding-block-end: 2rem;
             font-style: italic;
           }
         }
@@ -297,7 +303,7 @@
     @include flex;
     @include justify-content(center);
 
-    padding-top: 3rem;
+    padding-block-start: 3rem;
 
     a {
       @include bordered-button;
@@ -306,7 +312,7 @@
 }
 
 .paragraph--type--tab-group-wrapper {
-  padding-top: 5rem;
+  padding-block-start: 5rem;
 
   .tab-group--content__wrapper {
     position: relative;
@@ -323,6 +329,7 @@
           .left {
             width: 25%;
           }
+
           .right {
             width: 75%;
           }
@@ -337,14 +344,17 @@
   padding: 0;
 
   .block-views {
-    padding: 0 0 7.5rem;
+    padding-block-start: 0;
+    padding-block-end: 7.5rem;
+    padding-inline: 0;
+
     .title-holder {
       padding: 0 !important;
     }
   }
 
   .view-footer {
-    padding-bottom: 0 !important;
+    padding-block-end: 0 !important;
   }
 
   .view-header {
@@ -356,7 +366,7 @@
 
 .block-about-branches {
   nav {
-    padding-top: 10rem;
+    padding-block-start: 10rem;
   }
 }
 
@@ -364,7 +374,7 @@
 .paragraph--type--popup-wrapper {
   > .paragraph--inner {
     > .field--name-field-description {
-      margin-bottom: 5rem;
+      margin-block-end: 5rem;
     }
   }
 }
@@ -373,24 +383,22 @@
   display: none;
   position: fixed;
   z-index: 999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset-block: 0;
+  inset-inline: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.3rem);
 
   .field--type-string-long {
     position: fixed;
     z-index: 1001;
-    top: 50%;
-    left: 50%;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
     width: 100%;
     margin: 0;
     padding: 5rem;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow: 0 15px 12px 4px rgb(0 0 0 / 15%);
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 1.2rem 0.4rem rgba(0, 0, 0, 0.15);
 
     @include breakpoint(medium) {
       max-width: 30vw;
@@ -398,19 +406,19 @@
 
     .popup-text--close {
       position: absolute;
-      top: 1.3rem;
-      right: 1.3rem;
+      inset-block-start: 1.3rem;
+      inset-inline-end: 1.3rem;
       width: 2.9rem;
       height: 2.9rem;
-      padding-top: 0.2rem;
+      padding-block-start: 0.2rem;
       border-radius: 50%;
       background-color: #333;
       text-align: center;
       cursor: pointer;
 
       @include breakpoint(medium) {
-        top: -1.3rem;
-        right: -1.3rem;
+        inset-block-start: -1.3rem;
+        inset-inline-end: -1.3rem;
       }
     }
   }
@@ -445,14 +453,16 @@
 
 .paragraph--type--timeline {
   position: relative;
-  padding: 0 3rem 10rem;
+  padding-block-start: 0;
+  padding-block-end: 10rem;
+  padding-inline: 3rem;
 
   .paragraph--inner {
     @include flex;
     @include justify-content(space-between);
 
-    padding-bottom: 0.4rem;
-    border-bottom: 0.2rem solid $color-secondary;
+    padding-block-end: 0.4rem;
+    border-block-end: 0.2rem solid $color-secondary;
 
     .field--name-field-left-title,
     .field--name-field-middle-title,
@@ -465,9 +475,9 @@
         content: '';
         display: block;
         position: absolute;
-        right: 0;
-        bottom: -0.8rem;
-        left: 0;
+        inset-inline-end: 0;
+        inset-block-end: -0.8rem;
+        inset-inline-start: 0;
         width: 0.6rem;
         height: 0.6rem;
         margin: 0 auto;
@@ -477,20 +487,20 @@
     }
 
     .field--name-field-left-title {
-      margin-left: 2rem;
+      margin-inline-start: 2rem;
     }
 
     .field--name-field-right-title {
-      margin-right: 2rem;
+      margin-inline-end: 2rem;
     }
   }
 
   .field--name-field-timeline-text {
     position: absolute;
-    top: 15px;
-    left: 50%;
+    inset-block-start: 1.5rem;
+    inset-inline-start: 50%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 1rem;
     transform: translate(-50%, 0);
     background-color: #efefef;
   }

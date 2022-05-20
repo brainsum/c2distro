@@ -5,7 +5,9 @@
     background-color: #efefef;
 }
 .view.view-news.view-id-news.view-display-id-lister_page .views-row #block-tabs {
-    max-width: 113.5rem;
-    margin: 0 auto;
-    padding: 20px 0 10px;
-  }
+  max-width: 113.5rem;
+  margin: 0 auto;
+  padding-block-start: 2rem;
+  padding-block-end: 1rem;
+  padding-inline: 0;
+}

@@ -12,18 +12,20 @@
 
 .block-page-title-block {
   max-width: 139rem !important;
-  padding-top: 4.4rem !important;
+  padding-block-start: 4.4rem !important;
+
   .block-inner {
     @include breakpoint(medium) {
-      margin-left: 9.2rem;
+      margin-inline-start: 9.2rem;
     }
+
     h1.page-title {
       font-size: 2.2rem;
-      text-align: left;
       color: $body-font-color;
       text-decoration: none solid $body-font-color;
       line-height: 1.25;
       max-width: 110rem;
+      text-align: start;
 
       @include breakpoint(medium) {
         font-size: 4rem;
@@ -37,21 +39,24 @@ article .media__content {
   margin: 0 auto;
 
   .content-header {
-    padding: 1.8rem 0 2rem 0;
+    padding-block-start: 1.8rem;
+    padding-block-end: 2rem;
+    padding-inline: 0;
     display: flex;
     align-items: center;
 
     @include breakpoint(medium) {
-      margin-left: 8.4rem;
+      margin-inline-start: 8.4rem;
     }
     .share-button {
-      margin-right: 2.3rem;
+      margin-inline-end: 2.3rem;
       padding: 0.4rem 0;
     }
     .content-header-text {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+
       .created-time {
         color: $body-font-color;
         font-size: 1.8rem;
@@ -60,12 +65,15 @@ article .media__content {
         text-decoration: none solid $body-font-color;
         line-height: 3rem;
         width: 100%;
+
         @include breakpoint(medium) {
           width: auto;
         }
       }
+
       .created-time-pipe {
         display: none;
+
         @include breakpoint(medium) {
           display: block;
           padding: 0 0.7rem;
@@ -75,10 +83,10 @@ article .media__content {
       .category-link {
         a {
           font-family: $font-open;
-          font-size: 18px;
+          font-size: 1.8rem;
           color: $color-secondary;
-          text-decoration: none solid $color-secondary;
-          line-height: 30px;
+          text-decoration: none;
+          line-height: 3rem;
           font-weight: 700;
         }
       }
@@ -88,77 +96,93 @@ article .media__content {
   .content-body {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 0.6rem;
+    padding-block-start: 0.6rem;
 
     @include breakpoint(medium) {
-      margin-left: 9.2rem;
+      margin-inline-start: 9.2rem;
     }
     .content-body-img {
       width: 100%;
+
       @include breakpoint(medium) {
         width: auto;
       }
+
       img {
         width: 100%;
-        margin-bottom: 4.4rem;
+        margin-block-end: 4.4rem;
+
         @include breakpoint(medium) {
           width: auto;
         }
-
       }
     }
     .content-body-text {
       max-width: 81.4rem;
-      padding-left: 0;
-      padding-bottom: 8rem;
+      padding-inline-start: 0;
+      padding-block-end: 8rem;
       font-family: $font-open;
-      font-size: 18px;
+      font-size: 1.8rem;
       color: #000;
+
       @include breakpoint(medium) {
-        margin-left: 3.3rem;
+        margin-inline-start: 3.3rem;
       }
+
       a.text-black {
         color: $body-font-color;
         font-family: $font-open;
         font-size: 1.8rem;
       }
     }
+
     .content-body-text--field-lead {
-      margin-bottom: 2.4rem;
+      margin-block-end: 2.4rem;
     }
+
     .content-body-text--field-body {
-      margin-bottom: 4rem;
+      margin-block-end: 4rem;
     }
+
     .field.field--name-field-tags {
-      padding: 0 4rem 4rem 0;
+      padding-block-start: 0;
+      padding-block-end: 4rem;
+      padding-inline-start: 0;
+      padding-inline-end: 4rem;
+
       .field__label {
         font-weight: 700;
       }
     }
+
     .content-body-text--field-media-file {
       width: 18.7rem;
       font-family: $font-open;
       height: 4.7rem;
+
       a {
         font-size: 1.6rem !important;
       }
+
       a:hover {
         color: white;
       }
     }
+
     .field--name-field-custom-text {
-      /* lorem@ipsum.com */
       font-size: 1.6rem;
       color: $body-font-color;
-      line-height: 30px;
+      line-height: 3rem;
       padding: 3.4rem 0;
       font-family: $font-open;
       text-decoration: none solid $body-font-color;
+
       strong {
         font-weight: 700;
         font-family: $font-open;
         font-size: 1.6rem;
       }
+
       p {
         margin: 0;
         font-family: $font-open;

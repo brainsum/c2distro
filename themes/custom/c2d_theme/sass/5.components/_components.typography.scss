@@ -9,12 +9,10 @@
 
 .page-node-type-page {
   .block-page-title-block {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-block: 5rem;
 
     @include breakpoint(medium) {
-      margin-top: 6rem;
-      margin-bottom: 6rem;
+      margin-block: 6rem;
     }
 
     .block-inner {
@@ -36,10 +34,10 @@
       .title-holder {
         z-index: 10;
         position: absolute;
-        left: 0;
-        right: 0;
+        inset-inline: 0;
+        inset-block-start: -2.5rem;
         margin: 0;
-        top: -25px;
+
         span {
           @include block-title;
         }
@@ -52,14 +50,18 @@
   @include flex;
   @include flex-direction(column);
   @include justify-content(flex-start);
+
   @include breakpoint(medium) {
     @include flex-direction(row);
   }
+
   font-family: $font-open;
+
   .field__label {
     font-weight: 700;
+
     &:after {
-      content: ': ';
+      content: ": ";
     }
   }
 }

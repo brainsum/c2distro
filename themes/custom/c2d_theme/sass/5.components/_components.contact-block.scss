@@ -2,12 +2,16 @@
 .contact-block {
   .block-inner {
     @include width-1105;
+
     position: relative;
-    padding: 9rem 0;
+    padding-block: 9rem;
+    padding-inline: 0;
     text-align: center;
+
     @include breakpoint(tablet) {
-      padding: 9rem 0 15rem;
+      padding-block-start: 9rem;
+      padding-inline: 0;
+      padding-block-end: 15rem;
     }
   }
 }
-

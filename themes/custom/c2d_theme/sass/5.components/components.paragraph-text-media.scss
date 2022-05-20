@@ -39,8 +39,8 @@
 
     .left {
       @include breakpoint(medium) {
-        padding-top: 2.5em;
-        padding-right: 5.5rem;
+        padding-block-start: 2.5em;
+        padding-inline-end: 5.5rem;
       }
     }
   }
@@ -48,8 +48,8 @@
   &.paragraph--view-mode--default {
     .right {
       @include breakpoint(medium) {
-        padding-top: 2.5em;
-        padding-left: 12.5%;
+        padding-block-start: 2.5em;
+        padding-inline-start: 12.5%;
       }
     }
   }
@@ -60,10 +60,10 @@
   }
 
   .field--name-field-media {
-    margin-bottom: 3rem;
+    margin-block-end: 3rem;
 
     @include breakpoint(medium) {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
 
     img {
@@ -72,21 +72,21 @@
   }
 
   .field--name-field-link {
-    margin-top: 4rem;
+    margin-block-start: 4rem;
 
     a {
       @include font-open-18;
 
       position: relative;
-      padding-left: 3rem;
+      padding-inline-start: 3rem;
       text-decoration: underline;
 
-      &:before {
-        content: url("/profiles/contrib/c2distro/themes/custom/c2d_theme/images/dist/icons/arrow-right.svg");
+      &::before {
+        content: url("../../images/dist/icons/arrow-right.svg");
         position: absolute;
-        top: 0.2rem;
-        left: 0;
-        padding-right: 15px;
+        inset-block-start: 0.2rem;
+        inset-inline-start: 0;
+        padding-inline-end: 1.5rem;
       }
 
       &:hover {

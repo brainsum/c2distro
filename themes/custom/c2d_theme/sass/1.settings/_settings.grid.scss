@@ -17,6 +17,10 @@
  */
 $global-text-direction: ltr !default;
 
+[dir="rtl"] {
+  $global-text-direction: rtl !default;
+}
+
 /**
  * Enables flexbox for components that support it.
  *

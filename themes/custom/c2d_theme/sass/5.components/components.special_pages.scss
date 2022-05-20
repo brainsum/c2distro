@@ -10,11 +10,11 @@
 .region.region-content {
   @include width-1200;
 
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-block: 8rem;
   text-align: center;
+
   .block-page-title-block {
-    margin-bottom: 4rem;
+    margin-block-end: 4rem;
   }
 }
 

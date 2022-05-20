@@ -20,11 +20,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 @mixin bordered-button {
   @include flex;
   @include align-items(center);
   @include justify-content(center);
   @include transition(all, .2s);
+
   border: .2rem solid $color-secondary;
   font-family: $font-montserrat !important;
   font-size: 1.7rem;
@@ -33,9 +35,11 @@
   text-decoration: none !important;
   background-color: transparent;
   min-height: 4.8rem;
+
   @include breakpoint(medium) {
     padding: 0 5.1rem;
   }
+
   &:hover {
     border-color: $body-font-color;
     background-color: $body-font-color;
@@ -48,6 +52,7 @@
   @include align-items(center);
   @include justify-content(center);
   @include transition(all, .2s);
+
   border: .2rem solid $color-secondary;
   font-family: $font-montserrat !important;
   font-size: 1.6rem;
@@ -57,9 +62,11 @@
   text-decoration: none !important;
   background-color: transparent;
   min-height: 4.8rem;
+
   @include breakpoint(medium) {
     padding: 0 5.1rem;
   }
+
   &:hover {
     background-color: $color-secondary;
     color: $color-white;
@@ -73,9 +80,11 @@
   font-weight: 700;
   padding: .8rem 2rem;
   text-decoration: none !important;
+
   @include breakpoint(medium) {
     padding: .8rem 3.5rem;
   }
+
   &:hover {
     border-color: $body-font-color;
     background-color: $body-font-color;
@@ -90,8 +99,8 @@
   color: $color-white;
   background-color: $body-font-color;
   padding: .2rem 0;
-  margin-top: -2.3rem;
-  margin-left: 1.5rem;
+  margin-block-start: -2.3rem;
+  margin-inline-start: 1.5rem;
   box-shadow: 2.6rem 0 0 $body-font-color, -1.9rem 0 0 $body-font-color;
   box-decoration-break: clone;
   line-height: 5rem;

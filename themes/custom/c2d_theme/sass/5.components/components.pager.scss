@@ -8,7 +8,8 @@
 @import '../index';
 
 .pager {
-  padding: 4rem 0;
+  padding-block: 4rem;
+  padding-inline: 0;
   font-family: $font-open;
 
   &,
@@ -24,6 +25,6 @@
   }
 
   .view-search & {
-    margin-top: -2rem;
+    margin-block-start: -2rem;
   }
 }

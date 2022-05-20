@@ -9,7 +9,6 @@
   .inner-container {
     @include width-1200;
 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-block: 2rem;
   }
 }

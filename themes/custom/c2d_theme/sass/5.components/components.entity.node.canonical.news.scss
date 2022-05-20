@@ -2,20 +2,21 @@
 
 .region.region-content {
   background-color: white;
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   padding: 0 2rem;
 }
 
 .block-page-title-block {
   max-width: 139rem !important;
+
   .block-inner {
     @include breakpoint(medium) {
-      max-width: 774px;
-      margin-left: calc(1/8 * 100%);
+      max-width: 77.4rem;
+      margin-inline-start: calc(1/8 * 100%);
     }
 
     h1.page-title {
-      text-align: left;
+      text-align: start;
     }
   }
 }
@@ -23,91 +24,121 @@
 article {
   max-width: 139rem;
   margin: 0 auto;
+
   .node__content {
     @include breakpoint(medium) {
-      margin-left: calc(1/8 * 100%);
+      margin-inline-start: calc(1/8 * 100%);
     }
+
     .content-header {
-      padding: 1.8rem 0 2.9rem 0;
+      padding-block-start: 1.8rem;
+      padding-block-end: 2.9rem;
+      padding-inline: 0;
       display: flex;
       align-items: center;
+
       .share-button {
-        margin-right: 3.7rem;
-        padding: 0!important;
+        margin-inline-end: 3.7rem;
+        padding: 0 !important;
+
         &--button {
           padding: 0 !important;
-          text-align: left !important;
+          text-align: start !important;
         }
       }
+
       .content-header-text {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
       }
+
       .created-time {
         color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
         font-family: $font-open;
-        text-decoration: none solid rgb(18, 40, 76);
-        line-height: 30px;
+        text-decoration: none;
+        line-height: 3rem;
+
         .content-type {
             color: $color-secondary;
         }
       }
+
       .location {
         @include breakpoint(medium) {
-          padding-left: 5rem;
+          padding-inline-start: 5rem;
         }
       }
+
       .field--name-field-location {
         display: flex;
         color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
         font-family: $font-open;
-        text-decoration: none solid rgb(18, 40, 76);
-        line-height: 30px;
+        text-decoration: none;
+        line-height: 3rem;
+
         img {
-          margin-right: 0.4rem;
+          margin-inline-end: 0.4rem;
           align-self: center;
         }
       }
     }
+
     .field.field--name-field-lead.field--type-string-long {
-      margin: 4.4rem 0 0 0;
+      margin-block-start: 4.4rem;
+      margin-block-end: 0;
+      margin-inline: 0;
+      padding: 0;
       font-weight: 700;
       line-height: 3rem;
-      padding: 0;
       font-family: $font-open;
-      font-size: 22px;
+      font-size: 2.2rem;
       max-width: 68.4rem;
-      color: black;
+      color: #000;
+
       @include breakpoint(medium) {
-        margin: 4.4rem 2.3rem 0 2.3rem;
+        margin-block-start: 4.4rem;
+        margin-block-end: 0;
+        margin-inline: 2.3rem;
       }
     }
 
     .field.field--name-body {
-      max-width: 684px;
-      font-size: 18px;
+      max-width: 68.4rem;
+      font-size: 1.8rem;
       line-height: 3rem;
       padding: 0 0 4rem;
       font-family: $font-open;
-      margin-top: 3rem;
+      margin-block-start: 3rem;
+
       @include breakpoint(medium) {
-        margin: 2.8rem 0 4rem 2.3rem;
+        margin-block-start: 2.8rem;
+        margin-block-end: 4rem;
+        margin-inline-start: 2.3rem;
+        margin-inline-end: 0;
       }
     }
+
     .field.field--name-field-tags {
-      padding: 0 0 4rem;
+      padding-block-start: 0;
+      padding-block-end: 4rem;
+      padding-inline: 0;
       display: flex;
       flex-wrap: wrap;
+
       @include breakpoint(medium) {
-        padding: 2.3rem 2.3rem 5.3rem;
+        padding-block-start: 2.3rem;
+        padding-block-end: 5.3rem;
+        padding-inline: 2.3rem;
       }
+
       .field__item {
-        padding: 2.5px;
+        padding: 0.25rem;
+
         a {
           display: inline-block;
           padding: 1.5rem 3rem;

@@ -1,7 +1,9 @@
 @import '../index';
 
 .block-page-title-block {
-  padding: 4rem 0 0 0;
+  padding-block-start: 4rem;
+  padding-block-end: 0;
+  padding-inline: 0;
   max-width: 119.2rem;
   margin: 0 auto;
 
@@ -13,12 +15,12 @@
       font-family: $font-montserrat;
       line-height: 3rem;
       text-decoration: none solid $body-font-color;
+
       @include breakpoint(medium) {
-        margin-left: 0;
+        margin-inline-start: 0;
         font-size: 4rem;
         line-height: 4.9rem;
       }
     }
   }
 }
-

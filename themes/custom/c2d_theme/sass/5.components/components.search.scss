@@ -14,12 +14,12 @@
   .block-inner {
     @include width-1390;
 
-    margin-top: 4rem;
-    margin-bottom: 4.5rem;
+    margin-block-start: 4rem;
+    margin-block-end: 4.5rem;
 
     @include breakpoint(medium) {
-      margin-top: 6rem;
-      margin-bottom: 6.5rem;
+      margin-block-start: 6rem;
+      margin-block-end: 6.5rem;
     }
 
     .page-title {
@@ -34,8 +34,7 @@
     @include width-1390;
 
     @include breakpoint(large) {
-      padding-right: 0;
-      padding-left: 0;
+      padding-inline: 0;
     }
 
     .form--inline {
@@ -68,17 +67,17 @@
       height: auto;
       padding: 1.35rem 1em;
       border: 1px solid $color-grey-dark;
-      background: #fff;
+      background: $color-white;
     }
 
     .form-actions {
       width: 100%;
-      margin-top: 3rem;
+      margin-block-start: 3rem;
 
       @include breakpoint(mobile) {
         width: auto;
-        margin-top: 0;
-        margin-left: 1.3rem;
+        margin-block-start: 0;
+        margin-inline-start: 1.3rem;
       }
     }
 
@@ -92,8 +91,8 @@
 
 .view-filters {
   .view-search & {
-    padding-top: 12rem;
-    padding-bottom: 8rem;
+    padding-block-start: 12rem;
+    padding-block-end: 8rem;
   }
 }
 
@@ -102,7 +101,7 @@
   .view-taxonomy-term & {
     @include width-1390;
 
-    margin-top: -2rem;
+    margin-block-start: -2rem;
 
     @include breakpoint(large) {
       padding: 0;
@@ -147,7 +146,7 @@
     }
 
     .content-header {
-      margin-top: 1rem;
+      margin-block-start: 1rem;
     }
 
     .content-header,
@@ -162,16 +161,16 @@
     }
 
     .field--name-field-location {
-      margin-top: 1.5rem;
+      margin-block-start: 1.5rem;
 
       img {
-        margin-top: -0.2rem;
-        margin-left: -0.4rem;
+        margin-block-start: -0.2rem;
+        margin-inline-start: -0.4rem;
       }
     }
 
     .field--name-field-lead {
-      margin-top: 1.5rem;
+      margin-block-start: 1.5rem;
       font-family: $font-open;
     }
   }
