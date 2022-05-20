@@ -101,7 +101,8 @@ header {
         position: absolute;
         inset-inline-end: 1.5rem;
         inset-block-end: 0;
-        margin: 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
       }
 
       body:not(.js-menu-is-open) & {
@@ -123,7 +124,11 @@ header {
 
     .dropbutton-widget {
       border: 0;
-      padding: 0;
+
+      &,
+      .js[dir="rtl"] & {
+        padding: 0;
+      }
 
       .dropbutton {
         border: 0;
@@ -136,9 +141,16 @@ header {
         .dropbutton-action:first-child {
           background-image: url("../images/dist/svg/angle-down-solid.svg");
           background-repeat: no-repeat;
-          background-position: right center;
           background-size: 1rem;
           margin-block-end: 1rem;
+
+          [dir="ltr"] & {
+            background-position: right center;
+          }
+
+          [dir="rtl"] & {
+            background-position: left center;
+          }
         }
 
         .secondary-action {
