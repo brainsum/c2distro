@@ -1,18 +1,18 @@
 @import '../index';
 
 .block-page-title-block {
-  margin-top: 6rem;
+  margin-block-start: 6rem;
 
   .block-inner {
     max-width: 139.5rem !important;
     padding: 0 !important;
-    margin-top: 6rem;
+    margin-block-start: 6rem;
   }
 }
 
 .block-views-blockselector-cards-selector-cards-block {
   .block-inner {
-    margin-top: 6rem;
+    margin-block-start: 6rem;
     max-width: 139.5rem;
     padding: 0;
   }
@@ -34,12 +34,11 @@
           }
 
           &:nth-child(even) {
-            background-color: white;
+            background-color: $color-white;
           }
 
           @include breakpoint(medium) {
-            // width: 50%;
-            max-width: 695px !important;
+            max-width: 69.5rem !important;
             transition: 0.4s;
           }
 
@@ -50,24 +49,28 @@
           a {
             cursor: pointer;
             display: block;
-            padding: 7rem 4rem 8.5rem;
+            padding-block-start: 7rem;
+            padding-block-end: 8.5rem;
+            padding-inline: 4rem;
             align-items: center;
             justify-content: flex-start;
             flex-wrap: wrap;
-            @include breakpoint(medium) {
-              padding: 7rem 4rem 8.5rem;
-            }
 
             &.selector-card {
               h4 {
                 color: $body-font-color;
                 font-family: $font-montserrat;
                 font-size: 3rem;
-                margin: 0 0 1rem;
+                margin-block-start: 0;
+                margin-block-end: 1rem;
+                margin-inline: 0;
                 text-decoration: none solid $body-font-color;
                 line-height: 4rem;
+
                 @include breakpoint(medium) {
-                  margin: 0 0 1rem;
+                  margin-block-start: 0;
+                  margin-block-end: 1rem;
+                  margin-inline: 0;
                 }
               }
 
@@ -79,8 +82,8 @@
                 line-height: 3rem;
                 margin: 0;
                 max-width: 33.5rem;
+
                 @include breakpoint(medium) {
-                  margin: 0;
                   max-width: 51.5rem;
                 }
               }
@@ -92,36 +95,37 @@
       .views-row:nth-child(odd) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
           background-color: $background-grey-light;
-          border: solid 3px $background-grey-light;
+          border: solid 0.3rem $background-grey-light;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(even) {
         @include breakpoint(medium) {
           background-color: $background-grey-light;
-          border: solid 3px $background-grey-light;
+          border: solid 0.3rem $background-grey-light;
         }
       }
 
       .views-row:nth-child(odd) .views-col:nth-child(even) {
         @include breakpoint(medium) {
-          background-color: white;
-          border: solid 3px white;
+          background-color: $color-white;
+          border: solid 0.3rem $color-white;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
-          background-color: white;
-          border: solid 3px white;
+          background-color: $color-white;
+          border: solid 0.3rem $color-white;
         }
       }
-
     }
   }
 
   .view-footer {
-    padding: 6rem 2rem 5rem;
+    padding-block-start: 6rem;
+    padding-block-end: 5rem;
+    padding-inline: 2rem;
 
     a {
       max-width: 22rem;
@@ -130,11 +134,12 @@
       font-family: $font-montserrat;
       font-size: 1.7rem;
       text-decoration: none solid $body-font-color;
-      line-height: 20px;
+      line-height: 2rem;
       text-transform: capitalize;
       text-align: center;
       height: 5rem;
-      border: solid 2px $color-secondary !important;
+      border: solid 0.2rem $color-secondary !important;
+
       &:hover {
         color: $color-white;
       }
@@ -142,7 +147,9 @@
   }
 }
 
-.page-node-type-page .field--name-body,
-.page-node-type-page .field--name-field-lead {
-  padding-bottom: 0;
+.page-node-type-page {
+  .field--name-body,
+  .field--name-field-lead {
+    padding-block-end: 0;
+  }
 }

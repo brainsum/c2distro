@@ -2,16 +2,16 @@
 
 .share-button--links li {
   list-style: none;
-  margin: 15px auto !important;
+  margin: 1.5rem auto !important;
 }
 
 .share-button {
-  width: 50px;
+  width: 5rem;
   padding: 0.5rem 0;
   text-align: center;
   position: relative;
   display: inline-block;
-  background: #0000;
+  background: #000;
 }
 
 .share-button--links {
@@ -39,14 +39,14 @@
 }
 
 img.share-button--icon {
-  width: 32px !important;
+  width: 3.2rem !important;
   margin: auto;
 }
 
 .share-button--button {
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
   background: transparent;
 }

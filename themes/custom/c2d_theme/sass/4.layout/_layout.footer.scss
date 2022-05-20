@@ -8,9 +8,13 @@
  */
 footer {
   background-color: $color-grey-dark;
-  padding: 4rem 3rem 9rem;
+  padding-block-start: 4rem;
+  padding-inline: 3rem;
+  padding-block-end: 9rem;
+
   @include breakpoint(tablet) {
-    padding: 6.2rem 0 9rem;
+    padding-block-start: 6.2rem;
+    padding-inline: 0;
   }
 }
 
@@ -19,38 +23,47 @@ footer {
   @include flex;
   @include flex-direction(column);
   @include width-1105;
+
   @include breakpoint(medium) {
     @include flex-direction(row);
     @include justify-content(space-between);
   }
+
   .region-footer--left-side {
     @include breakpoint(tablet down) {
-      margin-bottom: 2.7rem;
+      margin-block-end: 2.7rem;
     }
   }
+
   .region-footer--right-side {
     font-family: $font-open;
     font-size: 1.5rem;
+  }
+
+  a {
+    @include link-hover;
+  }
+
+  .footer-title {
+    margin-block-end: 1.4rem;
+    display: inline-block;
+    font-weight: 700;
+
+    @include breakpoint(medium) {
+      margin-block-end: 3.5rem;
+    }
+  }
+
+  .social-block {
+    margin-block-end: 7.4rem;
+
+    @include breakpoint(medium) {
+      margin-block-end: 3.8rem;
+    }
+
     a {
       @include link-hover;
-    }
-    .footer-title {
-      margin-bottom: 1.4rem;
-      display: inline-block;
-      font-weight: 700;
-      @include breakpoint(medium) {
-        margin-bottom: 3.5rem;
-      }
-    }
-    .social-block {
-      margin-bottom: 7.4rem;
-      @include breakpoint(medium) {
-        margin-bottom: 3.8rem;
-      }
-      a {
-        @include link-hover;
-        margin-right: 1.6rem;
-      }
+      margin-inline-end: 1.6rem;
     }
   }
 }

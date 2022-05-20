@@ -1,12 +1,14 @@
 @import '../index';
 
 .block-page-title-block {
-  margin: 78px auto 33px !important;
+  margin-block-start: 7.8rem !important;
+  margin-block-end: 3.3rem !important;
+  margin-inline: auto !important;
   padding: 0 !important;
 
   .block-inner {
     h1.page-title {
-      margin-left: 0 !important;
+      margin-inline-start: 0 !important;
       font-size: 4rem !important;
       line-height: 4.9rem !important;
       text-align: center !important;
@@ -16,7 +18,7 @@
 
 .contact-form {
   background-color: white;
-  padding-bottom: 11.2rem;
+  padding-block-end: 11.2rem;
 
   .form-container {
     @include width-1200;
@@ -30,32 +32,32 @@
     .fieldset-wrapper {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 6.8rem;
-      margin-right: -2.4rem;
-      margin-left: -2.4rem;
+      margin-block-start: 6.8rem;
+      margin-inline: -2.4rem;
 
       .left {
         width: 100%;
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
+        padding-inline: 2.4rem;
 
         @include breakpoint(medium) {
           width: calc(3 / 8 * 100%);
         }
 
         #edit-field-upload-label-wrapper {
-          margin-top: 5.1rem;
+          margin-block-start: 5.1rem;
+          margin-block-end: 1.8rem;
           font-family: $font-montserrat;
-          font-size: 24px;
+          font-size: 2.4rem;
           color: $color-blue-gray;
           text-decoration: none solid $body-font-color;
-          line-height: 30px;
+          line-height: 3rem;
           font-weight: 700;
-          margin-bottom: 1.8rem;
         }
 
         #edit-field-contact-reason {
-          padding: 1rem 5rem 1rem 1rem;
+          padding-block: 1rem;
+          padding-inline-start: 1rem;
+          padding-inline-end: 5rem;
         }
 
         .field--name-field-attachment {
@@ -63,32 +65,34 @@
             font-family: $font-montserrat;
             font-size: 1.8rem;
             color: $body-font-color;
-            text-decoration: none solid $body-font-color;
+            text-decoration: none;
             font-weight: 700;
           }
+
           input[type="file"] {
             width: 100%;
-            margin-top: 10px;
+            margin-block-start: 1rem;
           }
+
           input[type="submit"] {
-            margin: 20px 0;
+            margin: 2rem 0;
             width: 23.1rem;
             height: 4.7rem;
           }
+
           .description {
             font-family: $font-open;
             font-size: 1.6rem;
             color: $body-font-color;
-            text-decoration: none solid rgb(0, 0, 0);
-            line-height: 25px;
+            text-decoration: none solid #000;
+            line-height: 2.5rem;
           }
         }
       }
 
       .right {
         width: 100%;
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
+        padding-inline: 2.4rem;
 
         @include breakpoint(medium) {
           width: calc(5 / 8 * 100%);
@@ -98,13 +102,13 @@
 
     #edit-field-terms-and-conditions-wrapper {
       width: 100%;
-      margin-top: 5.6rem;
+      margin-block-start: 5.6rem;
+      margin-block-end: 2.1rem;
+      padding: 0 1rem;
       text-align: center;
       font-family: $font-open;
       font-size: 1.6rem;
       color: $body-font-color;
-      margin-bottom: 2.1rem;
-      padding: 0 1rem;
 
       a {
         text-decoration: underline solid $body-font-color;
@@ -112,7 +116,7 @@
     }
   }
   .form-actions {
-    margin-top: 2.1rem !important;
+    margin-block-start: 2.1rem !important;
   }
 
   input#edit-submit {
@@ -120,7 +124,7 @@
     font-size: 1.6rem;
     color: $body-font-color;
     text-decoration: none solid $body-font-color;
-    line-height: 19px;
+    line-height: 1.9rem;
     text-align: center;
     width: 23.1rem;
     display: flex;
@@ -128,7 +132,7 @@
     align-items: center;
 
     &:hover {
-      color: white;
+      color: $color-white;
       background-color: $color-secondary !important;
       border-color: $color-secondary !important;
     }

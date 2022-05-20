@@ -25,11 +25,11 @@
  */
 
 .u-text--left {
-  @include text-align(left);
+  @include text-align(start);
 }
 
 .u-text--right {
-  @include text-align(right);
+  @include text-align(end);
 }
 
 .u-text--center {
@@ -41,11 +41,11 @@
 }
 
 .u-text--justify-left {
-  @include text-align(justify, left);
+  @include text-align(justify, start);
 }
 
 .u-text--justify-right {
-  @include text-align(justify, right);
+  @include text-align(justify, end);
 }
 
 .u-text--justify-center {

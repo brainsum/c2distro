@@ -18,14 +18,9 @@
     }
   }
 
-  /*  &.padding {
-      &--high { padding: 10rem 0; }
-      &--normal { padding: 6rem 0; }
-      &--low { padding: 2rem 0; }
-    } */
   // general styles
   .field--name-field-title {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
     font-size: 3rem;
     line-height: 1.25;
     font-weight: 700;

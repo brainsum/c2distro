@@ -18,7 +18,7 @@
 header {
   @include breakpoint(medium down) {
     position: sticky;
-    top: 0;
+    inset-block-start: 0;
     z-index: 20;
   }
 }
@@ -26,6 +26,7 @@ header {
 .region-header,
 .region-navigation {
   @include width-1390;
+
   position: relative;
 }
 
@@ -44,7 +45,7 @@ header {
   background-color: $color-white;
   height: 5.6rem;
   margin: 0 auto;
-  padding-right: 1.5rem;
+  padding-inline-end: 1.5rem;
 
   @include breakpoint(mobile down) {
     position: relative;
@@ -52,12 +53,14 @@ header {
 
   @include breakpoint(medium) {
     height: 8.7rem;
-    padding-left: 1.4rem;
-    padding-right: 5.7rem;
+    padding-inline-start: 1.4rem;
+    padding-inline-end: 5.7rem;
   }
 
   @include breakpoint(tablet) {
-    margin: 3rem auto 2rem;
+    margin-block-start: 3rem;
+    margin-inline: auto;
+    margin-block-end: 2rem;
   }
 
   body:not(.js-menu-is-open) & {
@@ -65,16 +68,16 @@ header {
   }
 
   .block-dropdown-language {
-    margin-left: auto;
+    margin-inline-start: auto;
 
     // faux header background
     &::after {
       @include breakpoint(mobile down) {
         content: "";
         position: absolute;
-        bottom: -3.4rem;
-        left: 0;
-        right: 0;
+        inset-block-end: -3.4rem;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         width: 100%;
         height: 3.4rem;
         background: $color-white;
@@ -82,19 +85,22 @@ header {
     }
 
     .block-inner {
-      margin: 1rem 4rem 0 0;
+      margin-block-start: 1rem;
+      margin-inline-end: 4rem;
+      margin-block-end: 0;
+      margin-inline-start: 0;
       font-family: $font-open;
       font-weight: 700;
       align-self: flex-start;
       cursor: pointer;
-      min-width: 110px;
+      min-width: 11rem;
       user-select: none;
       font-size: 1.8rem;
 
       @include breakpoint(mobile down) {
         position: absolute;
-        right: 1.5rem;
-        bottom: 0;
+        inset-inline-end: 1.5rem;
+        inset-block-end: 0;
         margin: 0;
       }
 
@@ -110,17 +116,17 @@ header {
         position: absolute;
 
         @include breakpoint(medium) {
-          top: -1.7rem;
+          inset-block-start: -1.7rem;
         }
       }
     }
 
     .dropbutton-widget {
-      border: none;
+      border: 0;
       padding: 0;
 
       .dropbutton {
-        border: none;
+        border: 0;
 
         @include breakpoint(mobile down) {
           position: absolute;
@@ -132,12 +138,13 @@ header {
           background-repeat: no-repeat;
           background-position: right center;
           background-size: 1rem;
-          margin-bottom: 1rem;
+          margin-block-end: 1rem;
         }
 
         .secondary-action {
-          border-top: none;
-          padding: 10px 5px;
+          border-block-start: 0;
+          padding-block: 1rem;
+          padding-inline: 0.5rem;
           background-color: $color-grey-light-extra;
 
           &:hover {
@@ -151,7 +158,6 @@ header {
 
         .dropbutton-toggle {
           display: none !important;
-          outline: none;
         }
       }
     }

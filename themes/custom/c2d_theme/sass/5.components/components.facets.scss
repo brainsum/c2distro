@@ -9,12 +9,14 @@
   }
 
   .page-title {
-    margin: 6rem 0 3rem;
+    margin-block-start: 6rem;
+    margin-block-end: 3rem;
+    margin-inline: 0;
     font-size: 3rem;
     line-height: 1.16;
 
     @include breakpoint(mobile) {
-      margin-bottom: 2.2rem;
+      margin-block-end: 2.2rem;
       font-size: 4rem;
     }
   }
@@ -24,43 +26,49 @@
   @include width-1390;
   @include clearfix;
 
-  margin: 3rem auto 2.3rem;
+  margin-block-start: 3rem;
+  margin-block-end: 2.3rem;
+  margin-inline: auto;
 
   @include breakpoint(mobile) {
-    margin: 4rem auto 3.5rem;
+    margin-block-start: 4rem;
+    margin-block-end: 3.5rem;
   }
 
   .item-list__links {
-    margin: -2.5px;
+    margin: -0.25rem;
   }
 
   .facet-item {
-    float: left;
+    float: start;
     display: block;
-    padding: 2.5px;
+    padding: 0.25rem;
+
     .facet-wrapper {
-      padding: 15px;
+      padding: 1.5rem;
       background: #f6f6f6;
+
       &.active {
-        background: #ffffff;
+        background: $color-white;
       }
     }
+
     a {
       font-family: $font-montserrat;
-      font-size: 16px;
+      font-size: 1.6rem;
       color: $body-font-color;
-      text-decoration: none solid rgb(18, 40, 76);
-      line-height: 18px;
+      text-decoration: none;
+      line-height: 1.8rem;
       font-weight: bold;
     }
 
     .js-facet-deactivate {
-      background: url('../../images/dist/icons/close-dark.svg');
+      background-image: url('../../images/dist/icons/close-dark.svg');
       background-repeat: no-repeat;
-      width: 15px;
-      height: 15px;
+      width: 1.5rem;
+      height: 1.5rem;
       display: inline-block;
-      top: 2px;
+      inset-block-start: 0.2rem;
       position: relative;
     }
   }
@@ -71,7 +79,7 @@
 }
 .view-search {
   clear: both;
-  padding-top: 35px;
+  padding-block-start: 3.5rem;
 }
 
 .block-views-exposed-filter-blocksearch-resources {
@@ -90,8 +98,8 @@
 
   .form-type-textfield {
     @include breakpoint(mobile) {
-      float: left;
-      max-width: 411px;
+      float: start;
+      max-width: 41.1rem;
     }
 
     input {
@@ -100,47 +108,47 @@
       background-image: url('../../images/dist/icons/search.svg');
       background-repeat: no-repeat;
       background-position: 98% center;
-      background-size: 22px;
-      height: 48px;
+      background-size: 2.2rem;
+      height: 4.8rem;
 
       @include breakpoint(mobile) {
-        padding-left: 23px;
+        padding-inline-start: 2.3rem;
       }
     }
   }
   .form-item-category {
-    margin-top: 2.1rem;
+    margin-block-start: 2.1rem;
 
     @include breakpoint(mobile) {
       max-width: 38.6rem;
-      margin-top: 0;
-      margin-left: 1rem;
+      margin-block-start: 0;
+      margin-inline-start: 1rem;
     }
 
     @include breakpoint(medium) {
-      margin-left: 2.7rem;
+      margin-inline-start: 2.7rem;
     }
 
     select {
-      background-color: white;
-      border: 1px solid #dadada;
-      height: 48px;
+      background-color: $color-white;
+      border: 0.1rem solid #dadada;
+      height: 4.8rem;
       background-image: url('../../images/dist/icons/chevron-down.svg');
     }
   }
 
   .form-actions {
     width: 100%;
-    margin-top: 2.6rem;
+    margin-block-start: 2.6rem;
 
     @include breakpoint(mobile) {
       width: auto;
-      margin-top: 0;
-      margin-left: 1rem;
+      margin-block-start: 0;
+      margin-inline-start: 1rem;
     }
 
     @include breakpoint(medium) {
-      margin-left: 2.7rem;
+      margin-inline-start: 2.7rem;
     }
   }
 

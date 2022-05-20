@@ -11,58 +11,111 @@
       @include width-655;
     }
   }
+
   &.width--wide {
     .block-inner {
       @include width-1105;
     }
   }
+
   &.background-color {
-    &--white { background-color: $background-white; }
-    &--silver { background-color: $background-grey; }
-    &--blue { background-color: $color-blue-light; }
-  }
-  &.padding {
-    &--huge .block-inner { padding: 7rem 0; }
-    &--high .block-inner { padding: 5rem 0; }
-    &--normal .block-inner { padding: 3rem 0; }
-    &--low .block-inner { padding: 1rem 0; }
-    @include breakpoint(medium) {
-      &--huge .block-inner { padding: 15rem 0; }
-      &--high .block-inner { padding: 10rem 0; }
-      &--normal .block-inner { padding: 6rem 0; }
-      &--low .block-inner { padding: 2rem 0; }
+    &--white {
+      background-color: $background-white;
+    }
+
+    &--silver {
+      background-color: $background-grey;
+    }
+
+    &--blue {
+      background-color: $color-blue-light;
     }
   }
+
+  &.padding {
+    &--huge .block-inner {
+      padding-block: 7rem;
+      padding-inline: 0;
+    }
+
+    &--high .block-inner {
+      padding-block: 5rem;
+      padding-inline: 0;
+    }
+
+    &--normal .block-inner {
+      padding-block: 3rem;
+      padding-inline: 0;
+    }
+
+    &--low .block-inner {
+      padding-block: 1rem;
+      padding-inline: 0;
+    }
+
+    @include breakpoint(medium) {
+      &--huge .block-inner {
+        padding-block: 15rem;
+        padding-inline: 0;
+      }
+
+      &--high .block-inner {
+        padding-block: 10rem;
+        padding-inline: 0;
+      }
+
+      &--normal .block-inner {
+        padding-block: 6rem;
+        padding-inline: 0;
+      }
+
+      &--low .block-inner {
+        padding-block: 2rem;
+        padding-inline: 0;
+      }
+    }
+  }
+
   &.font--opensans {
     font-family: $font-open;
   }
+
   &.font-size--18 {
     font-size: 1.8rem;
   }
+
   &.content {
-    &--center .block-inner { text-align: center; }
+    &--center .block-inner {
+      text-align: center;
+    }
   }
+
   >.block-inner {
     position: relative;
+
     >.field--name-field-title {
       @include block-title;
+
       position: absolute;
-      top: 0;
-      left: 0;
+      inset-block-start: 0;
+      inset-inline-start: 0;
     }
+
     >.field--name-field-description {
       @include width-655;
+
       & + .field--name-field-link {
-        margin-top: 4rem;
+        margin-block-start: 4rem;
       }
     }
+
     >.field--name-field-link {
       @include flex;
       @include justify-content(center);
+
       a {
         @include bordered-button;
       }
     }
   }
-
 }

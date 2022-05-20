@@ -179,25 +179,25 @@ $retina-suffix: '@2x';
 
 
 $-zf-flex-justify: (
-        'left': flex-start,
-        'right': flex-end,
-        'center': center,
-        'justify': space-between,
-        'spaced': space-around,
+  'left': flex-start,
+  'right': flex-end,
+  'center': center,
+  'justify': space-between,
+  'spaced': space-around,
 );
 
 $-zf-flex-align: (
-        'top': flex-start,
-        'bottom': flex-end,
-        'middle': center,
-        'stretch': stretch,
+  'top': flex-start,
+  'bottom': flex-end,
+  'middle': center,
+  'stretch': stretch,
 );
 
 $-zf-flex-direction: (
-        'row': row,
-        'row-reverse': row-reverse,
-        'column': column,
-        'column-reverse': column-reverse,
+  'row': row,
+  'row-reverse': row-reverse,
+  'column': column,
+  'column-reverse': column-reverse,
 );
 
 /// Enables flexbox by adding `display: flex` to the element.
@@ -514,12 +514,13 @@ $-zf-flex-direction: (
   @if $type == primary {
     color: white;
     background: $c-red;
-    font-weight: $fw-700;
+    font-weight: 700;
     font-size: $fs-small;
     padding: 0 3em;
     text-transform: uppercase;
     height: 4rem;
     line-height: 4rem;
+
     @include breakpoint(medium) {
       height: 6rem;
       line-height: 6rem;
@@ -530,14 +531,16 @@ $-zf-flex-direction: (
 
   @if $type == primary-more {
     width: 100%;
-    font-weight: $fw-700;
+    font-weight: 700;
     font-size: $fs-medium;
-    padding-left: 2.5rem;
+    padding-inline-start: 2.5rem;
     text-transform: uppercase;
     color: white;
     background: $c-red url('../../images/nectel-white-arrow-right.png') no-repeat 90% center;
+
     @include breakpoint(medium) {
       width: 24rem;
+
       &:hover {
         color: $c-red;
         background: white url('../../images/nectel-red-arrow-right-big.png') no-repeat 90% center;
@@ -550,6 +553,7 @@ $-zf-flex-direction: (
     font-size: 0;
     color: transparent;
     background: $c-red url('../../images/nectel-white-arrow-right.png') no-repeat center;
+
     @include breakpoint(medium) {
       &:hover {
         background: white url('../../images/nectel-red-arrow-right-big.png') no-repeat center;
@@ -563,6 +567,7 @@ $-zf-flex-direction: (
   width: 100%;
   margin: 0 auto;
   padding: 0 2.4rem;
+
   @include breakpoint(medium) {
     padding: 0 1.5rem;
   }
@@ -579,10 +584,10 @@ $-zf-flex-direction: (
 // list mixins
 @mixin list-container($col) {
   background-color: $c-grey-bgr;
-  padding: 30px 20px;
+  padding: 3rem 2rem;
 
   @include breakpoint(medium) {
-    padding: 30px 40px;
+    padding-inline: 4rem;
 
     @if $col > 1 {
       column-count: $col;
@@ -595,9 +600,11 @@ $-zf-flex-direction: (
   position: relative;
 
   @if $level == 1 {
-    margin-left: $base-font-size;
-  } @else if $level == 2 {
-    margin-left: 1rem;
+    margin-inline-start: $base-font-size;
+  }
+
+  @else if $level == 2 {
+    margin-inline-start: 1rem;
   }
 
   &::before {
@@ -606,18 +613,24 @@ $-zf-flex-direction: (
     display: block;
 
     @if $level == 1 {
-      top: 1.2rem;
-      margin: 0 10px 0 $base-font-size * -1;
-      width: 6px;
-      height: 6px;
-      border-radius: 6px;
+      inset-block-start: 1.2rem;
+      margin-block: 0;
+      margin-inline-start: $base-font-size * -1;
+      margin-inline-end: 1rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 0.6rem;
       background-color: $c-red;
-    } @else if $level == 2 {
-      top: 50%;
-      width: 3px;
-      height: 3px;
-      border-radius: 3px;
-      margin: -1.5px 0 0 -1rem;
+    }
+
+    @else if $level == 2 {
+      inset-block-start: 50%;
+      width: 0.3rem;
+      height: 0.3rem;
+      border-radius: 0.3rem;
+      margin-block-start: -0.15rem;
+      margin-block-end: -1rem;
+      margin-inline: 0;
       background-color: $c-dark-grey;
     }
   }
@@ -625,22 +638,24 @@ $-zf-flex-direction: (
 
 @mixin list-item($level) {
   @include bullet-point($level);
+
   font-style: italic;
-  font-weight: $fw-600;
+  font-weight: 600;
 }
 
 @mixin view-more-button {
-  margin-bottom: 3rem;
+  margin-block-end: 3rem;
+
   a {
-    width: 261px;
-    height: 47px;
-    border: solid 2px $color-secondary;
+    width: 26.1rem;
+    height: 4.7rem;
+    border: solid 0.2rem $color-secondary;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     font-family: $font-montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: $body-font-color;
     transition: all, 0.2s;

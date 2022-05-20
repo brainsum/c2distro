@@ -1,115 +1,142 @@
 .page-node-type-region,
 .page-node-type-country {
   #block-dislaw-theme-page-title {
-    // background-color: $color-blue-light;
-    padding: 4rem 0 4rem;
-    margin-top: 2rem;
+    padding: 4rem 0;
+    margin-block-start: 2rem;
+
     .block-inner {
       @include width-1105;
+
       text-align: center;
     }
   }
+
   .country--top-section {
-    // background-color: $color-blue-light;
-    padding: 4rem 0 5rem;
+    padding-block-start: 4rem;
+    padding-inline: 0;
+    padding-block-end: 5rem;
+
     .block-inner {
       @include flex;
       @include justify-content(center);
       @include flex-direction(column);
       @include width-1105;
+
       @include breakpoint(medium) {
         @include flex-direction(row);
       }
     }
+
     &__right {
-      padding-top: 4rem;
+      padding-block-start: 4rem;
+
       @include breakpoint(medium) {
-        padding-top: 0;
-        padding-left: 3rem;
+        padding-block-start: 0;
+        padding-inline-start: 3rem;
       }
     }
 
     #map {
       width: 100%;
       height: 32rem;
+
       @include breakpoint(mobile) {
         width: 30.5rem;
         margin: 0 auto;
       }
     }
+
     .field--label-inline {
-      margin-bottom: 2.4rem;
+      margin-block-end: 2.4rem;
     }
+
     .field__label {
       @include breakpoint(medium) {
         min-width: 25rem;
       }
     }
+
     .field__items {
       @include flex;
       @include flex-direction(column);
+
       @include breakpoint(medium) {
         @include flex-direction(row);
       }
     }
+
     .population-group {
       @include flex;
     }
+
     .field--name-field-population-year {
-      margin-left: .7rem;
+      margin-inline-start: .7rem;
     }
 
     .field--name-field-official-languages {
       .field__items {
         @include flex-wrap(wrap);
+
         .field__item {
           &:after {
             content: ',';
-            margin-right: .3rem;
+            margin-inline-end: .3rem;
           }
+
           &:last-child:after {
             content: '';
           }
         }
       }
     }
+
     .field--name-field-country-selector {
       font-family: $font-open;
-      margin-top: -.8rem;
+      margin-block-start: -.8rem;
+
       .block-inner {
         @include flex;
         @include flex-direction(column);
         @include justify-content(flex-start);
+
         @include breakpoint(medium) {
           @include flex-direction(row);
         }
       }
+
       .field__item {
         width: 100%;
       }
+
       .form-type-select {
         min-width: 28.8rem;
-        margin-right: 1rem;
+        margin-inline-end: 1rem;
+
         select {
           width: 100%;
           background-color: $color-white;
         }
       }
+
       .field__label {
         @include flex;
         @include align-items(center);
         font-weight: 700;
+
         &:after {
           content: ': ';
         }
       }
+
       .field__item form {
         @include flex;
         @include flex-direction(column);
         @include justify-content(flex-start);
+
         @include breakpoint(medium) {
           @include flex-direction(row);
         }
+
         input.form-submit {
           min-height: 4.4rem;
           height: 4.4rem;
@@ -121,25 +148,30 @@
   // small-boxes-block
   .block-country-small-boxes {
     background-color: $color-white;
-    padding: 2.5rem 0 6.5rem;
+    padding-block-start: 2.5rem;
+    padding-block-end: 6.5rem;
+    padding-inline: 0;
+
     .paragraph--type--small-boxes {
-      margin-top: 3rem;
+      margin-block-start: 3rem;
     }
+
     .paragraph--type--small-box {
       .paragraph--inner {
         img {
           position: absolute;
           width: 3.5rem;
           height: 3.5rem;
-          top: 0;
-          bottom: 0;
-          left: 2rem;
+          inset-block-start: 0;
+          inset-block-end: 0;
+          inset-inline-start: 2rem;
           margin: auto 0;
           z-index: 1;
         }
+
         a {
           position: relative;
-          padding-left: 6.8rem;
+          padding-inline-start: 6.8rem;
           z-index: 5;
         }
       }

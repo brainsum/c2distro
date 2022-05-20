@@ -24,11 +24,12 @@
 .region-header {
   .social-block {
     .social-icon {
-      margin-left: .8rem;
+      margin-inline-start: .8rem;
     }
 
     .bordered-button {
-      margin-left: 2.8rem;
+      margin-inline-start: 2.8rem;
+
       @include breakpoint(medium down) {
         display: none;
       }
