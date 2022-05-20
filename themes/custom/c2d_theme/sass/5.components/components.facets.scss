@@ -40,7 +40,7 @@
   }
 
   .facet-item {
-    float: start;
+    float: inline-start;
     display: block;
     padding: 0.25rem;
 
@@ -98,7 +98,7 @@
 
   .form-type-textfield {
     @include breakpoint(mobile) {
-      float: start;
+      float: inline-start;
       max-width: 41.1rem;
     }
 
