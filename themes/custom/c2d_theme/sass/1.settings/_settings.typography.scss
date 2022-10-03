@@ -21,16 +21,16 @@ $font-family--system:
   "Segoe UI Emoji",
   "Segoe UI Symbol",
   "Noto Color Emoji";
-$font-family--body  : 'Montserrat', $font-family--system;
+$font-family--body  : 'Montserrat', $font-family--system !default;
 
-$font-open: 'Open Sans', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
+$font-open: 'Open Sans', sans-serif !default;
+$font-montserrat: 'Montserrat', sans-serif !default;
 
 // Font sizes
-$global-font-size   : 1.6rem;
+$global-font-size   : 1.6rem !default;
 
 // Line height
-$global-lineheight  : 2.4rem;
+$global-lineheight  : 2.4rem !default;
 
 @mixin font-open-18 {
   font-family: $font-open;

@@ -13,15 +13,23 @@
  * Foundation's utility.
  */
 
+$breakpoint--small  : 0 !default;
+$breakpoint--mobile : 376px !default;  // 23.438em
+$breakpoint--medium : 768px !default;  // 48.000em
+$breakpoint--tablet : 1024px !default; // 64.000em
+$breakpoint--desktop: 1280px !default; // 80.000em
+$breakpoint--large  : 1440px !default; // 90.000em
+$breakpoint--xxlarge: 1920px !default; // 120.000em
+
 $breakpoints: (
-  small: 0,
-  mobile: 376px, // 23.438em
-  medium: 768px, // 48.000em
-  tablet: 1024px, // 64.000em
-  desktop: 1280px, // 80.000em
-  large: 1440px, // 90.000em
-  xxlarge: 1920px, // 120.000em
+  small: $breakpoint--small,
+  mobile: $breakpoint--mobile,
+  medium: $breakpoint--medium,
+  tablet: $breakpoint--tablet,
+  desktop: $breakpoint--desktop,
+  large: $breakpoint--large,
+  xxlarge: $breakpoint--xxlarge,
 );
-$print-breakpoint: desktop;
+$print-breakpoint: desktop !default;
 // for css class names
-$breakpoint-classes: (small mobile tablet desktop xxlarge);
+$breakpoint-classes: (small mobile tablet desktop xxlarge) !default;

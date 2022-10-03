@@ -29,25 +29,24 @@ $global-text-direction: ltr !default;
 $global-flexbox: true !default;
 
 // Internal variables used for text direction
-$global-left: if($global-text-direction == rtl, right, left);
-$global-right: if($global-text-direction == rtl, left, right);
+$global-left: if($global-text-direction == rtl, right, left) !default;
+$global-right: if($global-text-direction == rtl, left, right) !default;
 
 // Internal variable that contains the flex justifying options
-$-zf-flex-justify: -zf-flex-justify($global-text-direction);
+$-zf-flex-justify: -zf-flex-justify($global-text-direction) !default;
 
 // XY Grid Settings
-$global-width: 90rem;
-$xy-grid: true;
-$grid-container: $global-width;
-$grid-columns: 12;
+$global-width: 90rem !default;
+$xy-grid: true !default;
+$grid-container: $global-width !default;
+$grid-columns: 12 !default;
 // Not the best, but because we use different body font size than 16px (10px),
 // we need multiple the desired value to get that.
 $grid-margin-gutters: (
   small: 1rem * 2,
   medium: 1.5rem * 2
-);
-$grid-padding-gutters: $grid-margin-gutters;
-$grid-container-padding: $grid-padding-gutters;
-$grid-container-max: $global-width;
-$xy-block-grid-max: 8;
-
+) !default;
+$grid-padding-gutters: $grid-margin-gutters !default;
+$grid-container-padding: $grid-padding-gutters !default;
+$grid-container-max: $global-width !default;
+$xy-block-grid-max: 8 !default;
