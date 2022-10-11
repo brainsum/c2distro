@@ -374,7 +374,8 @@ display:
     display_options:
       title: 'Learning toolbox'
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       empty:
         area_text_custom:
           id: area_text_custom
@@ -659,4 +660,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:facets.facet.tags_of_document'
         - 'config:search_api.index.index'
