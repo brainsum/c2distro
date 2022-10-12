@@ -1,14 +1,14 @@
 /*
 .paragraph {
-  font-family: $font-open;
+  font-family: $font-primary;
   // style options
   &.background-color {
     &--white {
-      background-color: $color-white;
+      background-color: $background-lightest;
     }
 
     &--grey {
-      background-color: $background-grey;
+      background-color: $background-primary;
     }
   }
 
@@ -111,7 +111,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $color-white;
+      background-color: $background-lightest;
     }
 
     &:before {
@@ -170,7 +170,7 @@
 
     .field--name-field-text {
       padding: 1.5rem;
-      background-color: darken($color-grey-light, 5%);
+      background-color: darken($color-shade1, 5%);
       font-size: 1.4rem;
       line-height: 2.5rem;
     }
@@ -198,7 +198,7 @@
 }
 
 .paragraph--type--media-document {
-  font-family: $font-montserrat;
+  font-family: $font-secondary;
 
   .paragraph--inner {
     position: relative;
@@ -241,8 +241,8 @@
 
         height: 100%;
         min-height: 47rem;
-        border: 0.1rem solid $color-grey-light;
-        background-color: $color-white;
+        border: 0.1rem solid $background-quaternary;
+        background-color: $background-lightest;
 
         .field--type-image {
           position: relative;
@@ -283,7 +283,7 @@
 
           justify-self: flex-end;
           margin-block-start: auto;
-          border-bottom: 1rem solid $color-white;
+          border-bottom: 1rem solid $background-lightest;
 
           &:hover {
             border-color: $color-secondary;
@@ -340,7 +340,7 @@
 }
 
 .paragraph--type--view {
-  font-family: $font-montserrat;
+  font-family: $font-secondary;
   padding: 0;
 
   .block-views {
@@ -397,7 +397,7 @@
     margin: 0;
     padding: 5rem;
     transform: translate(-50%, -50%);
-    background-color: $color-white;
+    background-color: $background-lightest;
     box-shadow: 0 1.5rem 1.2rem 0.4rem rgba(0, 0, 0, 0.15);
 
     @include breakpoint(medium) {

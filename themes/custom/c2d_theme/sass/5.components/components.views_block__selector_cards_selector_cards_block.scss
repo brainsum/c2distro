@@ -30,11 +30,11 @@
           min-height: 23.5rem;
 
           &:nth-child(odd) {
-            background-color: $background-grey-light;
+            background-color: $background-quaternary;
           }
 
           &:nth-child(even) {
-            background-color: $color-white;
+            background-color: $background-lightest;
           }
 
           @include breakpoint(medium) {
@@ -59,7 +59,7 @@
             &.selector-card {
               h4 {
                 color: $body-font-color;
-                font-family: $font-montserrat;
+                font-family: $font-secondary;
                 font-size: 3rem;
                 margin-block-start: 0;
                 margin-block-end: 1rem;
@@ -76,9 +76,9 @@
 
               p {
                 color: $body-font-color;
-                font-family: $font-open;
+                font-family: $font-primary;
                 font-size: 1.8rem;
-                text-decoration: none solid $background-grey-light;
+                text-decoration: none solid $background-quaternary;
                 line-height: 3rem;
                 margin: 0;
                 max-width: 33.5rem;
@@ -94,29 +94,29 @@
 
       .views-row:nth-child(odd) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
-          background-color: $background-grey-light;
-          border: solid 0.3rem $background-grey-light;
+          background-color: $background-quaternary;
+          border: solid 0.3rem $background-quaternary;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(even) {
         @include breakpoint(medium) {
-          background-color: $background-grey-light;
-          border: solid 0.3rem $background-grey-light;
+          background-color: $background-quaternary;
+          border: solid 0.3rem $background-quaternary;
         }
       }
 
       .views-row:nth-child(odd) .views-col:nth-child(even) {
         @include breakpoint(medium) {
-          background-color: $color-white;
-          border: solid 0.3rem $color-white;
+          background-color: $background-lightest;
+          border: solid 0.3rem $background-lightest;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
-          background-color: $color-white;
-          border: solid 0.3rem $color-white;
+          background-color: $background-lightest;
+          border: solid 0.3rem $background-lightest;
         }
       }
     }
@@ -131,7 +131,7 @@
       max-width: 22rem;
       color: $body-font-color;
       margin: 0 auto;
-      font-family: $font-montserrat;
+      font-family: $font-secondary;
       font-size: 1.7rem;
       text-decoration: none solid $body-font-color;
       line-height: 2rem;
@@ -141,7 +141,7 @@
       border: solid 0.2rem $color-secondary !important;
 
       &:hover {
-        color: $color-white;
+        color: $color-lightest;
       }
     }
   }

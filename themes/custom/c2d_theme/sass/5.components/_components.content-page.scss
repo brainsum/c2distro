@@ -10,7 +10,7 @@
 .view-general-site-search,
 .page-node-type-news {
   .node {
-    background-color: $color-white;
+    background-color: $background-lightest;
     padding: 0;
   }
 
@@ -26,7 +26,7 @@
   .info-section {
     margin-block-end: 3.2rem;
     font-size: 1.8rem;
-    font-family: $font-open;
+    font-family: $font-primary;
     font-weight: 700;
 
     .field {
@@ -51,7 +51,7 @@
   .content-section {
     &--content {
       width: 100%;
-      font-family: $font-open;
+      font-family: $font-primary;
       line-height: 3rem;
       margin-block-end: 6rem;
 
@@ -149,7 +149,7 @@
         padding-block-start: 3rem;
         padding-block-end: 5.4rem;
         padding-inline: 3.5rem;
-        background-color: $color-blue-light;
+        background-color: $background-tertiary;
         margin-block-end: 4rem;
         overflow: hidden;
 
@@ -185,7 +185,7 @@
   }
 
   .field--name-field-related-news-and-events {
-    background-color: $color-blue-light;
+    background-color: $background-tertiary;
     margin-block-start: 10rem;
 
     .field-label--holder {
@@ -295,7 +295,7 @@
           .node-readmore {
             @include transition(all, 0.2s);
 
-            border-block-end: 1rem solid $color-white;
+            border-block-end: 1rem solid $color-lightest;
             padding: 0 2.3rem;
 
             a {
@@ -352,4 +352,3 @@
     font-weight: 700;
   }
 }
-

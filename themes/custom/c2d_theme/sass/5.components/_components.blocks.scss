@@ -20,15 +20,15 @@
 
   &.background-color {
     &--white {
-      background-color: $background-white;
+      background-color: $background-lightest;
     }
 
     &--silver {
-      background-color: $background-grey;
+      background-color: $background-primary;
     }
 
     &--blue {
-      background-color: $color-blue-light;
+      background-color: $background-tertiary;
     }
   }
 
@@ -77,7 +77,7 @@
   }
 
   &.font--opensans {
-    font-family: $font-open;
+    font-family: $font-primary;
   }
 
   &.font-size--18 {

@@ -2,19 +2,19 @@
 @import '../index';
 
 .paragraph {
-  font-family: $font-open;
+  font-family: $font-primary;
   // style options
   &.background-color {
     &--white {
-      background-color: $color-white;
+      background-color: $background-lightest;
     }
 
     &--grey {
-      background-color: $background-grey;
+      background-color: $background-primary;
     }
 
     &--lightgrey {
-      background-color: $color-lightgrey;
+      background-color: $background-quaternary;
     }
   }
 

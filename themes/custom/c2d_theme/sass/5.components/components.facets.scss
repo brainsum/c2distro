@@ -49,12 +49,12 @@
       background: #f6f6f6;
 
       &.active {
-        background: $color-white;
+        background: $background-lightest;
       }
     }
 
     a {
-      font-family: $font-montserrat;
+      font-family: $font-secondary;
       font-size: 1.6rem;
       color: $body-font-color;
       text-decoration: none;
@@ -103,7 +103,7 @@
     }
 
     input {
-      background-color: white;
+      background-color: $background-lightest;
       border: 1px solid $border-color;
       background-image: url('../../images/dist/icons/search.svg');
       background-repeat: no-repeat;
@@ -137,8 +137,8 @@
     }
 
     select {
-      background-color: $color-white;
-      border: 0.1rem solid #dadada;
+      background-color: $background-lightest;
+      border: 0.1rem solid $color-shade4;
       height: 4.8rem;
     }
   }

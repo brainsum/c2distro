@@ -16,7 +16,7 @@
 
 select.form-select,
 input[data-drupal-selector="edit-search-api-fulltext"] {
-  font-family: $font-open;
+  font-family: $font-primary;
   border: 0;
   padding: .9rem 1.1rem;
 }
@@ -47,21 +47,21 @@ select {
     font-weight: 700;
     font-size: 1.8rem;
     opacity: 0.9;
-    color: $color-blue-gray;
+    color: $color-primary;
     text-decoration: none;
     line-height: 3rem;
   }
 
   select,
   input {
-    background-color: $color-grey-light;
+    background-color: $color-shade1;
     border: 0;
     padding: 1rem;
     height: 4.4rem;
     width: 100%;
   }
   textarea {
-    background-color: $color-grey-light;
+    background-color: $color-shade1;
     border: 0;
     padding: 1rem;
     width: 100%;
@@ -80,7 +80,7 @@ input.form-submit.js-hide {
 
 .page-node-type-page {
   .block-views-exposed-filter-blockdisaster-law-database-main {
-    background-color: $color-white;
+    background-color: $background-lightest;
     padding-block-start: 5.5rem;
     padding-block-end: 5rem;
 
@@ -108,7 +108,7 @@ input.form-submit.js-hide {
 
 .path-contact {
   .block-system-main-block {
-    background-color: $color-white;
+    background-color: $background-lightest;
     padding: 5rem 0 !important;
 
     @include breakpoint(tablet) {
@@ -208,6 +208,6 @@ input.form-submit.js-hide {
   select,
   input,
   textarea {
-    background-color: $color-white;
+    background-color: $background-lightest;
   }
 }

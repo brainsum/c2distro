@@ -5,7 +5,7 @@
 
 .view-header {
   margin-block-end: 6rem;
-  font-family: $font-open;
+  font-family: $font-primary;
   font-size: 1.8rem;
   color: $body-font-color;
 }
@@ -13,7 +13,7 @@
 .media-wrapper {
   clear: both;
   width: 100%;
-  background-color: $color-white;
+  background-color: $background-lightest;
   padding: 4rem 2rem;
   margin-block-end: 3rem;
   display: flex;
@@ -62,7 +62,7 @@
     display: inline-grid;
 
     .title {
-      font-family: $font-montserrat;
+      font-family: $font-secondary;
       font-size: 2.2rem;
       color: #000;
       font-weight: 700;
@@ -83,7 +83,7 @@
         }
 
         display: inline-block;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.8rem;
         color: #757575;
         text-decoration: none solid rgb(117, 117, 117);
@@ -93,7 +93,7 @@
         display: inline-block;
 
         a {
-          font-family: $font-open;
+          font-family: $font-primary;
           color: $color-secondary;
           font-size: 1.8rem;
           text-decoration: none solid $color-secondary;
@@ -102,7 +102,7 @@
     }
 
     .field--name-field-lead {
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.8rem;
       color: $body-font-color;
       margin-block-end: 1rem;
@@ -112,7 +112,7 @@
       margin-block-start: 2rem;
 
       .field__label {
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.8rem;
         color: $body-font-color;
         text-decoration: none solid $body-font-color;
@@ -124,7 +124,7 @@
 
       .field__item {
         display: inline-block;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.8rem;
         color: $body-font-color;
         text-decoration: underline solid $body-font-color;
@@ -132,7 +132,7 @@
     }
 
     .read-more {
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.8rem;
       color: $color-secondary;
       text-decoration: none solid $color-secondary;
@@ -144,7 +144,7 @@
 }
 
 .pager {
-  font-family: $font-open;
+  font-family: $font-primary;
   font-size: 1.8rem;
   color: #0f1d40;
   text-decoration: none;
@@ -163,5 +163,5 @@
   padding-block-start: 1.5rem;
   padding-block-end: 4.9rem;
   padding-inline: 0;
-  font-family: $font-open;
+  font-family: $font-primary;
 }

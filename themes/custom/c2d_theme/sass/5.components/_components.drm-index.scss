@@ -19,7 +19,7 @@
     padding-block-start: 2rem;
     padding-block-end: 5rem;
     padding-inline: 0;
-    background-color: $color-white;
+    background-color: $background-lightest;
 
     @include breakpoint(medium) {
       padding: 5rem 0;
@@ -56,7 +56,7 @@
           li {
             margin: 1.3rem;
             border-bottom: 0.2rem solid transparent;
-            font-family: $font-open;
+            font-family: $font-primary;
             font-weight: 700;
             cursor: pointer;
 
@@ -91,7 +91,7 @@
       a {
         display: inline-block;
         margin: 0.5rem 1rem;
-        color: $color-yellow-light;
+        color: $color-tertiary;
         font-weight: 700;
         text-decoration: underline;
       }
@@ -108,7 +108,7 @@
     @include width-655;
 
     margin-block-end: 4.5rem;
-    font-family: $font-open;
+    font-family: $font-primary;
     font-size: 1.8rem;
     text-align: center;
   }
@@ -138,7 +138,7 @@
 
     margin-block-end: 5rem;
     padding: 4rem 0;
-    background-color: $color-white;
+    background-color: $background-lightest;
 
     @include breakpoint(medium) {
       @include flex-direction(row);
@@ -158,7 +158,7 @@
       .chosen-choices {
         padding: 1rem 1.5rem;
         border: 0;
-        background-color: $color-grey-light;
+        background-color: $color-shade1;
         background-image: none;
         cursor: pointer;
 
@@ -174,7 +174,7 @@
           background-color: $color-secondary;
           background-image: none;
           box-shadow: none;
-          color: $color-white;
+          color: $color-lightest;
           cursor: pointer;
 
           .search-choice-close {
@@ -199,7 +199,7 @@
   }
 
   #edit-top-container-geographical-area {
-    border-inline-end: 0.1rem solid $color-grey-light;
+    border-inline-end: 0.1rem solid $color-shade1;
 
     .form-type-select {
       display: none;
@@ -236,7 +236,7 @@
       min-width: 50%;
       margin-block-end: 1rem;
       padding: 1.1rem 1.5rem;
-      background-color: $background-grey;
+      background-color: $background-primary;
       font-size: 1.6rem;
       font-weight: 700;
       cursor: pointer;
@@ -250,7 +250,7 @@
 
     input:checked + label {
       background-color: $color-secondary;
-      color: $color-white;
+      color: $color-lightest;
     }
 
     .js-form-item:last-child label {
@@ -299,7 +299,7 @@
   #edit-bottom-container-results {
     width: 100%;
     padding: 6rem 2rem;
-    background-color: $color-white;
+    background-color: $background-lightest;
 
     @include breakpoint(medium) {
       width: 40%;
@@ -354,9 +354,9 @@
         inset-inline-end: -50%;
         width: 200%;
         padding: 1rem;
-        background-color: $color-white;
+        background-color: $background-lightest;
         box-shadow: 0 0 2rem #00000047;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.8rem;
@@ -405,7 +405,7 @@
           padding-inline-end: 2.5rem;
           padding-inline-start: 0.7rem;
           background-color: $color-secondary;
-          color: $color-white;
+          color: $color-lightest;
           font-size: 1.4rem;
           cursor: pointer;
 
@@ -455,7 +455,7 @@
     padding-block-start: 0;
     padding-block-end: 1.5rem;
     padding-inline: 2rem;
-    background-color: $color-white;
+    background-color: $background-lightest;
 
     &:last-child {
       margin-block-end: 0;
@@ -574,20 +574,20 @@
       margin-inline-end: 0.5rem;
       margin-block-end: 0.5rem;
       padding: 0.5rem 1rem;
-      background-color: $background-grey;
+      background-color: $background-primary;
       font-size: 1.4rem;
       cursor: pointer;
     }
 
     input:checked + label {
       background-color: $color-secondary;
-      color: $color-white;
+      color: $color-lightest;
       font-weight: 700;
     }
 
     input:checked ~ label {
       background-color: $color-secondary;
-      color: $color-white;
+      color: $color-lightest;
       font-weight: 700;
     }
   }

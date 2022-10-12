@@ -29,7 +29,7 @@ $breakpoints: (
   desktop: $breakpoint--desktop,
   large: $breakpoint--large,
   xxlarge: $breakpoint--xxlarge,
-);
+) !default;
 $print-breakpoint: desktop !default;
 // for css class names
 $breakpoint-classes: (small mobile tablet desktop xxlarge) !default;

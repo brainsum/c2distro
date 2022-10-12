@@ -1,12 +1,12 @@
 @import '../index';
 
 .layout-content {
-  background-color: white;
+  background-color: $background-lightest;
 }
 .region.region-content {
   max-width: 139rem;
   margin: 2rem auto;
-  background-color: white;
+  background-color: $background-lightest;
   padding: 0 2rem;
 }
 
@@ -61,7 +61,7 @@ article .media__content {
         color: $body-font-color;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: $font-open;
+        font-family: $font-primary;
         text-decoration: none solid $body-font-color;
         line-height: 3rem;
         width: 100%;
@@ -82,7 +82,7 @@ article .media__content {
       }
       .category-link {
         a {
-          font-family: $font-open;
+          font-family: $font-primary;
           font-size: 1.8rem;
           color: $color-secondary;
           text-decoration: none;
@@ -121,7 +121,7 @@ article .media__content {
       max-width: 81.4rem;
       padding-inline-start: 0;
       padding-block-end: 8rem;
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.8rem;
       color: #000;
 
@@ -131,7 +131,7 @@ article .media__content {
 
       a.text-black {
         color: $body-font-color;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.8rem;
       }
     }
@@ -157,7 +157,7 @@ article .media__content {
 
     .content-body-text--field-media-file {
       width: 18.7rem;
-      font-family: $font-open;
+      font-family: $font-primary;
       height: 4.7rem;
 
       a {
@@ -165,7 +165,7 @@ article .media__content {
       }
 
       a:hover {
-        color: white;
+        color: $color-lightest;
       }
     }
 
@@ -174,22 +174,22 @@ article .media__content {
       color: $body-font-color;
       line-height: 3rem;
       padding: 3.4rem 0;
-      font-family: $font-open;
+      font-family: $font-primary;
       text-decoration: none solid $body-font-color;
 
       strong {
         font-weight: 700;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.6rem;
       }
 
       p {
         margin: 0;
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.6rem;
       }
       a {
-        font-family: $font-open;
+        font-family: $font-primary;
         font-size: 1.6rem;
         color: $body-font-color;
         text-decoration: underline solid $body-font-color;

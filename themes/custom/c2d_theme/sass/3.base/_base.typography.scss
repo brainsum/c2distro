@@ -18,7 +18,7 @@ html {
 body {
   font-family: $font-family--body;
   color: $body-font-color;
-  background-color: $color-grey-light;
+  background-color: $color-shade1;
   font-size: $global-font-size;
   line-height: $global-lineheight;
   word-wrap: break-word;
@@ -26,7 +26,7 @@ body {
 
 ::selection {
   background-color: $color-secondary;
-  color: white;
+  color: $color-lightest;
 }
 
 a {

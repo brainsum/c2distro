@@ -2,7 +2,7 @@
 
 .paragraph--type--cta {
   .field--name-field-title {
-    font-family: $font-montserrat;
+    font-family: $font-secondary;
     font-size: 4rem;
     line-height: normal;
     color: $body-font-color;
@@ -16,7 +16,7 @@
     margin-block-end: 4rem;
 
     p {
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.8rem;
       color: $body-font-color;
       text-decoration: none solid $body-font-color;
