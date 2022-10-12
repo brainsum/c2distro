@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.field.field--name-field-tags{
+  padding-top:0;
+  padding-bottom:4rem;
+  padding-left:0;
+  padding-right:0;
+  display:flex;
+  flex-wrap:wrap;
+}
+@media print, screen and (min-width: 48em){
+  .field.field--name-field-tags{
+    padding:4rem;
+  }
+}
+.field.field--name-field-tags .field__label{
+  width:100%;
+  margin-bottom:2rem;
+}
+.field.field--name-field-tags .field__items{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:3rem;
+}
+.field.field--name-field-tags .field__items .field__item{
+  padding:0.25rem;
+}
+.field.field--name-field-tags .field__items .field__item a{
+  display:inline-block;
+  padding:1.5rem 3rem;
+  background-color:#efefef;
+  font-weight:600;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.tags.css.map */

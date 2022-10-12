@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph--type--accordion > .paragraph--inner > .field--name-field-text{
+  margin-bottom:3rem;
+}
+.paragraph--type--accordion .paragraph--type--item{
+  margin-bottom:3rem;
+  border-bottom:0.1rem solid rgba(18, 40, 76, 0.4);
+}
+[dir="ltr"] .paragraph--type--accordion .paragraph--type--item .field--name-field-title{
+  padding-right:4rem;}
+[dir="rtl"] .paragraph--type--accordion .paragraph--type--item .field--name-field-title{
+  padding-left:4rem;}
+.paragraph--type--accordion .paragraph--type--item .field--name-field-title{
+  position:relative;
+  font-size:1.8rem;
+  cursor:pointer;
+}
+[dir="ltr"] .paragraph--type--accordion .paragraph--type--item .field--name-field-title:after{
+  right:-0.6rem;}
+[dir="rtl"] .paragraph--type--accordion .paragraph--type--item .field--name-field-title:after{
+  left:-0.6rem;}
+.paragraph--type--accordion .paragraph--type--item .field--name-field-title:after{
+  transition:all, 0.2s;
+  content:url("../../images/dist/icons/chevron-down.svg");
+  position:absolute;
+  top:-0.3rem;
+  width:3.2rem;
+  height:3.2rem;
+}
+.paragraph--type--accordion .paragraph--type--item.empty .field--name-field-title{
+  cursor:default;
+}
+.paragraph--type--accordion .paragraph--type--item.empty .field--name-field-title::after{
+  content:"";
+}
+.paragraph--type--accordion .paragraph--type--item .open .field--name-field-title::after{
+  transform:rotate(180deg);
+}
+.paragraph--type--accordion .paragraph--type--item .field--name-field-text{
+  transition:all, 0.2s;
+  height:0;
+  overflow:hidden;
+}
+.paragraph--type--accordion .paragraph--type--item .paragraph--inner.open .field--name-field-text{
+  height:auto;
+  padding-bottom:2.5rem;
+  overflow:auto;
+}
+.paragraph--type--accordion .field__item:last-child .paragraph--type--item{
+  margin-bottom:0;
+  padding-bottom:0;
+  border-bottom:0;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.paragraph-accordion.css.map */

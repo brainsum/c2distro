@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph--type--cta .field--name-field-title{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:4rem;
+  line-height:normal;
+  color:#12284c;
+  text-decoration:none;
+  text-align:center;
+  font-weight:700;
+  margin-bottom:5rem;
+}
+.paragraph--type--cta .field--name-field-text{
+  margin-bottom:4rem;
+}
+.paragraph--type--cta .field--name-field-text p{
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.8rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:3rem;
+  text-align:center;
+}
+.paragraph--type--cta .field--name-field-text p.text-align-justify{
+  text-align:justify !important;
+  text-align-last:start !important;
+}
+.paragraph--type--cta .field--name-field-text p.text-align-justify{
+  -webkit-hyphens:auto;
+      -ms-hyphens:auto;
+          hyphens:auto;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.paragraph_cta.css.map */

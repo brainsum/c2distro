@@ -1,0 +1,51 @@
+name: C2distro Subtheme
+type: theme
+base theme: c2d_theme
+description: A flexible theme with a responsive, mobile-first layout.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries-override:
+  c2d_theme/global-styling: c2distro_subtheme/global-styling
+  c2d_theme/paragraphs-base: c2distro_subtheme/paragraphs-base
+  c2d_theme/paragraph-text: c2distro_subtheme/paragraph-text
+  c2d_theme/paragraph-text-media: c2distro_subtheme/paragraph-text-media
+  c2d_theme/paragraph-link-boxes: c2distro_subtheme/paragraph-link-boxes
+  c2d_theme/paragraph-small-boxes: c2distro_subtheme/paragraph-small-boxes
+  c2d_theme/paragraph-partners: c2distro_subtheme/paragraph-partners
+  c2d_theme/paragraph-accordion: c2distro_subtheme/paragraph-accordion
+  c2d_theme/popup: c2distro_subtheme/popup
+  c2d_theme/timeline: c2distro_subtheme/timeline
+  c2d_theme/quote: c2distro_subtheme/quote
+  c2d_theme/entity.node.canonical.page: c2distro_subtheme/entity.node.canonical.page
+  c2d_theme/view.news.lister_page: c2distro_subtheme/view.news.lister_page
+  c2d_theme/view.events.lister_page: c2distro_subtheme/view.events.lister_page
+  c2d_theme/hphero.block: c2distro_subtheme/hphero.block
+  c2d_theme/footerblockcontent.block: c2distro_subtheme/footerblockcontent.block
+  c2d_theme/entity.media.canonical.document: c2distro_subtheme/entity.media.canonical.document
+  c2d_theme/share_button_from_ifrc: c2distro_subtheme/share_button_from_ifrc
+  c2d_theme/resources: c2distro_subtheme/resources
+  c2d_theme/search: c2distro_subtheme/search
+  c2d_theme/documents: c2distro_subtheme/documents
+  c2d_theme/views_block__selector_cards_selector_cards_block: c2distro_subtheme/views_block__selector_cards_selector_cards_block
+  c2d_theme/paragraph_cta: c2distro_subtheme/paragraph_cta
+  c2d_theme/pager: c2distro_subtheme/pager
+  c2d_theme/views_block__news_lister_block: c2distro_subtheme/views_block__news_lister_block
+  c2d_theme/entity.contact_form.canonical: c2distro_subtheme/entity.contact_form.canonical
+  c2d_theme/h1.page_title_center: c2distro_subtheme/h1.page_title_center
+  c2d_theme/submit.loader: c2distro_subtheme/submit.loader
+  c2d_theme/lister_page.view_events: c2distro_subtheme/lister_page.view_events
+  c2d_theme/lister_page.view_documents: c2distro_subtheme/lister_page.view_documents
+  c2d_theme/special_pages: c2distro_subtheme/special_pages
+  c2d_theme/messages: c2distro_subtheme/messages
+regions:
+  top_bar: Top Bar
+  header: Header
+  navigation: Navigation
+  featured: Featured
+  top: Top
+  sidebar_first: 'Sidebar first'
+  content: Content
+  sidebar_second: 'Sidebar second'
+  bottom: Bottom
+  footer: Footer

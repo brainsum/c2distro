@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.region.region-content{
+  max-width:122.2rem;
+  margin:0 auto;
+  padding:0 1.5rem;
+}
+
+footer{
+  margin-top:6rem;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.view.events.lister_page.css.map */

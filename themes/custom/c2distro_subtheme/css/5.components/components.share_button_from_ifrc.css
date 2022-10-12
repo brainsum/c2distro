@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.share-button--links li{
+  margin:1.5rem auto !important;
+}
+.share-button--links li{
+  list-style:none;
+}
+
+.share-button{
+  width:5rem;
+  padding:0.5rem 0;
+  text-align:center;
+  position:relative;
+  display:inline-block;
+  background:none;
+}
+
+.share-button--links{
+  max-height:0;
+  overflow:hidden;
+  transition:0.2s;
+  background-color:#ebebeb;
+  width:100%;
+  position:absolute;
+  z-index:1;
+}
+.share-button--links ul{
+  margin:auto;
+}
+
+img.share-button--icon{
+  display:block;
+  width:3.2rem;
+  margin:auto;
+}
+
+.share-button--button{
+  border:none;
+  width:5rem;
+  height:5rem;
+  cursor:pointer;
+  background:none;
+}
+.share-button--button:hover img{
+  filter:invert(77%) sepia(16%) saturate(4642%) hue-rotate(141deg) brightness(97%) contrast(79%);
+}
+
+.share-links-open{
+  max-height:max-content;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.share_button_from_ifrc.css.map */
