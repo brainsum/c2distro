@@ -50,7 +50,7 @@
 
     .views-row {
       width: 100%;
-      background-color: white;
+      background-color: $background-lightest;
       transition: 0.5s;
       position: relative;
       margin-block-end: 4rem;
@@ -93,10 +93,10 @@
       }
 
       .field--name-title {
-        font-family: $font-montserrat;
-        color: $color-blue-gray;
+        font-family: $font-secondary;
+        color: $color-primary;
         font-size: 1.8rem;
-        text-decoration: none solid $color-blue-gray;
+        text-decoration: none solid $color-primary;
         line-height: 1.22;
         margin-block-start: 2.6rem;
         margin-block-end: 3.3rem;
@@ -134,10 +134,10 @@
     margin-block-start: 3.4rem;
 
     .no-results {
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.6rem;
-      color: $color-blue-gray;
-      text-decoration: none solid $color-blue-gray;
+      color: $color-primary;
+      text-decoration: none solid $color-primary;
       line-height: 2.5;
       font-weight: 700;
     }

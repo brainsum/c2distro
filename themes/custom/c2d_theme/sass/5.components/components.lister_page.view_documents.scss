@@ -25,7 +25,7 @@
 
     .views-row {
       width: 26.2rem;
-      background-color: $color-white;
+      background-color: $background-lightest;
       position: relative;
       padding-block-end: 7.3rem;
 
@@ -66,8 +66,8 @@
 
         .category-link {
           a {
-            color: $color-turquoise;
-            font-family: $font-montserrat;
+            color: $color-secondary;
+            font-family: $font-secondary;
             text-decoration: none;
             line-height: 1.9rem;
             font-weight: 600;
@@ -77,8 +77,8 @@
       }
 
       .field--name-name {
-        font-family: $font-montserrat;
-        color: $color-blue-gray;
+        font-family: $font-secondary;
+        color: $color-primary;
         font-size: 1.8rem;
         text-decoration: none;
         line-height: 2.2rem;

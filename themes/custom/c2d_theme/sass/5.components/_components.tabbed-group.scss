@@ -28,12 +28,12 @@
         @include align-items(center);
         @include justify-content(flex-start);
 
-        background-color: $color-white;
+        background-color: $background-lightest;
         height: 8rem;
         cursor: pointer;
         padding: 0 2.5rem;
         font-size: 1.6rem;
-        font-family: $font-open;
+        font-family: $font-primary;
         width: 100%;
         color: $body-font-color;
         position: relative;
@@ -57,7 +57,7 @@
     }
 
     .group-holder {
-      background-color: $color-white;
+      background-color: $background-lightest;
       margin-block-end: 1.3rem;
       padding-block: 2.9rem;
       padding-inline-start: 2.8rem;
@@ -79,7 +79,7 @@
         a {
           @include transition(color, .2s);
 
-          font-family: $font-open;
+          font-family: $font-primary;
           font-weight: 400;
           line-height: 2.2rem;
           position: relative;
@@ -109,8 +109,8 @@
         h3 {
           @include transition(color, .2s);
 
-          border-inline-start: .6rem solid $color-grey-dark;
-          background-color: $color-grey-dark;
+          border-inline-start: .6rem solid $color-shade4;
+          background-color: $color-shade4;
           color: $body-font-color;
           font-size: 1.8rem;
         }
@@ -123,7 +123,7 @@
 
         &.active h3 {
           color: $color-secondary;
-          background-color: $color-white;
+          background-color: $background-lightest;
           border-inline-start-color: $color-secondary;
         }
       }

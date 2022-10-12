@@ -1,6 +1,6 @@
 
 .dmiMainCategoriesHolder {
-  background-color: $color-white;
+  background-color: $background-lightest;
 
   .dmiMainCategories--inner {
     @include width-1105;
@@ -75,7 +75,7 @@
 
   .subcategoryTitle {
     padding: 1rem 1.5rem;
-    background-color: $color-blue-light;
+    background-color: $background-tertiary;
     font-weight: 700;
     margin-block-end: 1.5rem;
     font-size: 1.8rem;
@@ -87,13 +87,13 @@
 
     .property-label {
       padding: .5rem 1rem;
-      background-color: $background-grey;
+      background-color: $background-primary;
       margin-inline-end: .5rem;
       margin-block-end: .5rem;
 
       &.is-active {
         background-color: $color-secondary;
-        color: $color-white;
+        color: $color-lightest;
         font-weight: 700;
 
         span {

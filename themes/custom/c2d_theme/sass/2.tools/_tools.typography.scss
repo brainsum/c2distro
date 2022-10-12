@@ -28,7 +28,7 @@
   @include transition(all, .2s);
 
   border: .2rem solid $color-secondary;
-  font-family: $font-montserrat !important;
+  font-family: $font-secondary !important;
   font-size: 1.7rem;
   font-weight: 700;
   padding: 0 2.1rem;
@@ -43,7 +43,7 @@
   &:hover {
     border-color: $body-font-color;
     background-color: $body-font-color;
-    color: $color-white;
+    color: $color-lightest;
   }
 }
 
@@ -54,10 +54,10 @@
   @include transition(all, .2s);
 
   border: .2rem solid $color-secondary;
-  font-family: $font-montserrat !important;
+  font-family: $font-secondary !important;
   font-size: 1.6rem;
   font-weight: 600;
-  color: white;
+  color: $color-lightest;
   padding: 0 2.1rem;
   text-decoration: none !important;
   background-color: transparent;
@@ -69,13 +69,13 @@
 
   &:hover {
     background-color: $color-secondary;
-    color: $color-white;
+    color: $color-lightest;
   }
 }
 
 @mixin bordered-button--small {
   border: .2rem solid $color-secondary;
-  font-family: $font-montserrat !important;
+  font-family: $font-secondary !important;
   font-size: 1.7rem;
   font-weight: 700;
   padding: .8rem 2rem;
@@ -88,15 +88,15 @@
   &:hover {
     border-color: $body-font-color;
     background-color: $body-font-color;
-    color: $color-white;
+    color: $color-lightest;
   }
 }
 
 @mixin block-title {
-  font-family: $font-montserrat !important;
+  font-family: $font-secondary !important;
   font-size: 3.6rem;
   font-weight: 700;
-  color: $color-white;
+  color: $color-lightest;
   background-color: $body-font-color;
   padding: .2rem 0;
   margin-block-start: -2.3rem;
@@ -106,3 +106,8 @@
   line-height: 5rem;
 }
 
+@mixin font-open-18 {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}

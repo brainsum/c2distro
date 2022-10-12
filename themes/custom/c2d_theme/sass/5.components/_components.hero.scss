@@ -78,21 +78,21 @@
       margin-block-end: 2.3rem;
 
       @include breakpoint(medium) {
-        color: $color-white;
+        color: $color-lightest;
       }
     }
 
     .field--name-field-description {
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 2.8rem;
       margin-inline-start: 1.3rem;
 
       span {
-        background-color: $color-white;
+        background-color: $background-lightest;
         padding: 0.5rem 0;
-        box-shadow: 1.3rem 0 0 $color-white, -1.3rem 0 0 $color-white;
+        box-shadow: 1.3rem 0 0 $background-lightest, -1.3rem 0 0 $background-lightest;
         box-decoration-break: clone;
       }
     }

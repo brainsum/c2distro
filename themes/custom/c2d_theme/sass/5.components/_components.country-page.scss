@@ -91,7 +91,7 @@
     }
 
     .field--name-field-country-selector {
-      font-family: $font-open;
+      font-family: $font-primary;
       margin-block-start: -.8rem;
 
       .block-inner {
@@ -114,7 +114,7 @@
 
         select {
           width: 100%;
-          background-color: $color-white;
+          background-color: $background-lightest;
         }
       }
 
@@ -147,7 +147,7 @@
 
   // small-boxes-block
   .block-country-small-boxes {
-    background-color: $color-white;
+    background-color: $background-lightest;
     padding-block-start: 2.5rem;
     padding-block-end: 6.5rem;
     padding-inline: 0;

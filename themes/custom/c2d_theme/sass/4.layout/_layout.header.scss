@@ -42,7 +42,7 @@ header {
   @include align-items(center);
 
   z-index: 19;
-  background-color: $color-white;
+  background-color: $color-lightest;
   height: 5.6rem;
   margin: 0 auto;
   padding-inline-end: 1.5rem;
@@ -80,7 +80,7 @@ header {
         inset-inline-end: 0;
         width: 100%;
         height: 3.4rem;
-        background: $color-white;
+        background: $background-lightest;
       }
     }
 
@@ -89,7 +89,7 @@ header {
       margin-inline-end: 4rem;
       margin-block-end: 0;
       margin-inline-start: 0;
-      font-family: $font-open;
+      font-family: $font-primary;
       font-weight: 700;
       align-self: flex-start;
       cursor: pointer;
@@ -157,13 +157,13 @@ header {
           border-block-start: 0;
           padding-block: 1rem;
           padding-inline: 0.5rem;
-          background-color: $color-grey-light-extra;
+          background-color: $color-shade2;
 
           &:hover {
-            background-color: $color-blue-gray;
+            background-color: $color-primary;
 
             a {
-              color: $color-white;
+              color: $color-lightest;
             }
           }
         }

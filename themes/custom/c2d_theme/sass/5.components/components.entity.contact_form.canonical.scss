@@ -17,7 +17,7 @@
 }
 
 .contact-form {
-  background-color: white;
+  background-color: $background-lightest;
   padding-block-end: 11.2rem;
 
   .form-container {
@@ -46,9 +46,9 @@
         #edit-field-upload-label-wrapper {
           margin-block-start: 5.1rem;
           margin-block-end: 1.8rem;
-          font-family: $font-montserrat;
+          font-family: $font-secondary;
           font-size: 2.4rem;
-          color: $color-blue-gray;
+          color: $color-primary;
           text-decoration: none solid $body-font-color;
           line-height: 3rem;
           font-weight: 700;
@@ -62,7 +62,7 @@
 
         .field--name-field-attachment {
           label {
-            font-family: $font-montserrat;
+            font-family: $font-secondary;
             font-size: 1.8rem;
             color: $body-font-color;
             text-decoration: none;
@@ -81,7 +81,7 @@
           }
 
           .description {
-            font-family: $font-open;
+            font-family: $font-primary;
             font-size: 1.6rem;
             color: $body-font-color;
             text-decoration: none solid #000;
@@ -106,7 +106,7 @@
       margin-block-end: 2.1rem;
       padding: 0 1rem;
       text-align: center;
-      font-family: $font-open;
+      font-family: $font-primary;
       font-size: 1.6rem;
       color: $body-font-color;
 
@@ -120,7 +120,7 @@
   }
 
   input#edit-submit {
-    font-family: $font-montserrat;
+    font-family: $font-secondary;
     font-size: 1.6rem;
     color: $body-font-color;
     text-decoration: none solid $body-font-color;
@@ -132,7 +132,7 @@
     align-items: center;
 
     &:hover {
-      color: $color-white;
+      color: $color-lightest;
       background-color: $color-secondary !important;
       border-color: $color-secondary !important;
     }

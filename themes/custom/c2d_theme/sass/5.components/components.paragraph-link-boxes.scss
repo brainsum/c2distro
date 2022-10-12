@@ -19,7 +19,7 @@
         margin-block-start: 0;
         margin-block-end: 5%;
         margin-inline: 0;
-        background-color: $background-grey;
+        background-color: $background-primary;
         font-size: 1.4rem;
 
         @include breakpoint(medium) {
@@ -43,7 +43,7 @@
       .view-header h3,
       .field--name-field-title {
         margin-block-end: 4rem;
-        font-family: $font-montserrat;
+        font-family: $font-secondary;
         font-size: 2rem;
         font-weight: 700;
       }

@@ -67,7 +67,7 @@
       height: auto;
       padding: 1.35rem 1em;
       border: 1px solid $color-grey-dark;
-      background: $color-white;
+      background: $background-lightest;
     }
 
     .form-actions {
@@ -115,7 +115,7 @@
   .view-taxonomy-term & {
     padding: 3rem;
     color: $body-font-color;
-    background: #fff;
+    background: $background-lightest;
 
     @include breakpoint(mobile) {
       padding: 3rem 5rem;
@@ -171,7 +171,7 @@
 
     .field--name-field-lead {
       margin-block-start: 1.5rem;
-      font-family: $font-open;
+      font-family: $font-primary;
     }
   }
 }
