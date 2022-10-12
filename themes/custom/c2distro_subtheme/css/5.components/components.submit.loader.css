@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+@keyframes lds-ripple{
+  0%{
+    inset-block-start:3.6rem;
+    inset-inline-start:3.6rem;
+    width:0;
+    height:0;
+    opacity:1;
+  }
+  100%{
+    inset-block-start:0;
+    inset-inline-start:0;
+    width:7.2rem;
+    height:7.2rem;
+    opacity:0;
+  }
+}
+.custom-loader{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:10000000;
+}
+[dir="ltr"] .custom-loader .loader{
+  left:50%;}
+[dir="rtl"] .custom-loader .loader{
+  right:50%;}
+.custom-loader .loader{
+  top:50%;
+  transform:translate(-50%, -50%);
+  display:inline-block;
+  position:relative;
+  width:10rem;
+  height:10rem;
+}
+.custom-loader .loader div{
+  position:absolute;
+  border:0.4rem solid #ffffff;
+  opacity:1;
+  border-radius:50%;
+  animation:lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.custom-loader .loader div:nth-child(2){
+  animation-delay:-0.5s;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.submit.loader.css.map */

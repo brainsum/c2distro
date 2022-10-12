@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.region.region-content{
+  max-width:120rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+  padding-top:8rem;
+  padding-bottom:8rem;
+  text-align:center;
+}
+.region.region-content .block-page-title-block{
+  margin-bottom:4rem;
+}
+
+.path-user form .form-actions{
+  text-align:center;
+}
+.path-user form .form-actions input.form-submit{
+  display:inline-flex;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.special_pages.css.map */

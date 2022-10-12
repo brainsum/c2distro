@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.region.region-content{
+  background-color:#ffffff;
+  margin-top:2rem;
+  padding:0 2rem;
+}
+
+.block-page-title-block{
+  max-width:139rem !important;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-page-title-block .block-inner{
+    margin-left:12.5%;}
+  [dir="rtl"] .block-page-title-block .block-inner{
+    margin-right:12.5%;}
+  .block-page-title-block .block-inner{
+    max-width:77.4rem;
+  }
+}
+[dir="ltr"] .block-page-title-block .block-inner h1.page-title{
+  text-align:left;}
+[dir="rtl"] .block-page-title-block .block-inner h1.page-title{
+  text-align:right;}
+
+article{
+  max-width:139rem;
+  margin:0 auto;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] article .node__content{
+    margin-left:12.5%;}
+  [dir="rtl"] article .node__content{
+    margin-right:12.5%;}
+}
+article .node__content .content-header{
+  padding-top:1.8rem;
+  padding-bottom:2.9rem;
+  padding-left:0;
+  padding-right:0;
+  display:flex;
+  align-items:center;
+}
+[dir="ltr"] article .node__content .content-header .share-button{
+  margin-right:3.7rem;}
+[dir="rtl"] article .node__content .content-header .share-button{
+  margin-left:3.7rem;}
+article .node__content .content-header .share-button{
+  padding:0 !important;
+}
+[dir="ltr"] article .node__content .content-header .share-button--button{
+  text-align:left !important;}
+[dir="rtl"] article .node__content .content-header .share-button--button{
+  text-align:right !important;}
+article .node__content .content-header .share-button--button{
+  padding:0 !important;
+}
+article .node__content .content-header .content-header-text{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+}
+article .node__content .content-header .created-time{
+  color:#12284c;
+  font-size:1.8rem;
+  font-weight:700;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration:none;
+  line-height:3rem;
+}
+article .node__content .content-header .created-time .content-type{
+  color:#26c9de;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] article .node__content .content-header .location{
+    padding-left:5rem;}
+  [dir="rtl"] article .node__content .content-header .location{
+    padding-right:5rem;}
+}
+article .node__content .content-header .field--name-field-location{
+  display:flex;
+  color:#12284c;
+  font-size:1.8rem;
+  font-weight:700;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration:none;
+  line-height:3rem;
+}
+[dir="ltr"] article .node__content .content-header .field--name-field-location img{
+  margin-right:0.4rem;}
+[dir="rtl"] article .node__content .content-header .field--name-field-location img{
+  margin-left:0.4rem;}
+article .node__content .content-header .field--name-field-location img{
+  align-self:center;
+}
+article .node__content .field.field--name-field-lead.field--type-string-long{
+  margin-top:4.4rem;
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  font-weight:700;
+  line-height:3rem;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:2.2rem;
+  max-width:68.4rem;
+  color:#000;
+}
+@media print, screen and (min-width: 48em){
+  article .node__content .field.field--name-field-lead.field--type-string-long{
+    margin-top:4.4rem;
+    margin-bottom:0;
+    margin-left:2.3rem;
+    margin-right:2.3rem;
+  }
+}
+article .node__content .field.field--name-body{
+  max-width:68.4rem;
+  font-size:1.8rem;
+  line-height:3rem;
+  padding:0 0 4rem;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top:3rem;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] article .node__content .field.field--name-body{
+    margin-left:2.3rem;}
+  [dir="rtl"] article .node__content .field.field--name-body{
+    margin-right:2.3rem;}
+  [dir="ltr"] article .node__content .field.field--name-body{
+    margin-right:0;}
+  [dir="rtl"] article .node__content .field.field--name-body{
+    margin-left:0;}
+  article .node__content .field.field--name-body{
+    margin-top:2.8rem;
+    margin-bottom:4rem;
+  }
+}
+article .node__content .field.field--name-field-tags{
+  padding-top:0;
+  padding-bottom:4rem;
+  padding-left:0;
+  padding-right:0;
+  display:flex;
+  flex-wrap:wrap;
+}
+@media print, screen and (min-width: 48em){
+  article .node__content .field.field--name-field-tags{
+    padding-top:2.3rem;
+    padding-bottom:5.3rem;
+    padding-left:2.3rem;
+    padding-right:2.3rem;
+  }
+}
+article .node__content .field.field--name-field-tags .field__item{
+  padding:0.25rem;
+}
+article .node__content .field.field--name-field-tags .field__item a{
+  display:inline-block;
+  padding:1.5rem 3rem;
+  background-color:#efefef;
+  font-weight:600;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.entity.node.canonical.news.css.map */

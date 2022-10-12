@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+[dir="ltr"] .close-menu{
+  text-align:right;}
+[dir="rtl"] .close-menu{
+  text-align:left;}
+.close-menu{
+  padding:2rem;
+}
+
+[dir="ltr"] nav.navigation.menu--main{
+  left:100%;}
+
+[dir="rtl"] nav.navigation.menu--main{
+  right:100%;}
+
+[dir="ltr"] nav.navigation.menu--main{
+  right:0;}
+
+[dir="rtl"] nav.navigation.menu--main{
+  left:0;}
+
+nav.navigation.menu--main{
+  display:block !important;
+}
+
+nav.navigation.menu--main{
+  position:fixed;
+  top:0;
+  bottom:0;
+  transition:0.5s;
+  overflow:hidden;
+  background-color:#ffffff;
+}
+@media print, screen and (min-width: 64em){
+  nav.navigation.menu--main{
+    overflow:visible;
+    overflow:initial;
+    background-color:transparent;
+  }
+}
+
+[dir="ltr"] nav.navigation.menu--main.open{
+  left:0;}
+
+[dir="rtl"] nav.navigation.menu--main.open{
+  right:0;}
+
+@media print, screen and (min-width: 64em){
+  nav.navigation.menu--main{
+    position:static !important;
+    position:initial !important;
+  }
+  .close-menu{
+    display:none;
+  }
+}
+[dir="ltr"] .block-system-branding-block{
+  padding-left:0;}
+[dir="rtl"] .block-system-branding-block{
+  padding-right:0;}
+.block-system-branding-block{
+  width:calc(100% - 5rem);
+  line-height:1;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-system-branding-block{
+    padding-left:1rem;}
+  [dir="rtl"] .block-system-branding-block{
+    padding-right:1rem;}
+  .block-system-branding-block{
+    width:30rem;
+  }
+}
+.block-system-branding-block .block-inner{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+a.site-logo img{
+  border-bottom:0;
+  margin-bottom:0;
+  width:10rem;
+  padding-top:0;
+  padding-bottom:0;
+}
+@media print, screen and (min-width: 48em){
+  a.site-logo img{
+    border-bottom:solid 0.2rem lightgray;
+    margin-bottom:0.5rem;
+    padding-bottom:1rem;
+    padding-top:0.8rem;
+    width:13rem;
+  }
+}
+
+.site-name{
+  margin-top:0.5em;
+}
+.site-name a{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.5rem;
+  color:#000;
+  text-decoration:none;
+  font-style:italic;
+  font-weight:500;
+}
+
+.node--unpublished{
+  background-color:transparent;
+}
+
+.openid-connect-login-form{
+  text-align:center;
+}
+.openid-connect-login-form input.form-submit{
+  display:inline-flex;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+
+/*# sourceMappingURL=../maps/theme.css.map */

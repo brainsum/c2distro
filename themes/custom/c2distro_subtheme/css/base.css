@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+:root .global-hash-dark-version{
+  --color-font:$color-lightest;
+  --color-body:#222327;
+}
+
+*{
+  box-sizing:border-box;
+}
+html{
+  text-rendering:optimizeLegibility;
+  -webkit-tap-highlight-color:transparent;
+  font-size:62.5%;
+}
+
+body{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color:#12284c;
+  background-color:#efefef;
+  font-size:1.6rem;
+  line-height:2.4rem;
+  word-wrap:break-word;
+}
+
+::selection{
+  background-color:#26c9de;
+  color:#ffffff;
+}
+
+a{
+  text-decoration:none;
+  color:#12284c;
+}
+a:hover{
+  color:#03070e;
+}
+a:focus{
+  outline:0;
+}
+
+p:first-child{
+  margin-top:0;
+}
+p:last-child{
+  margin-bottom:0;
+}
+
+ol,
+ul{
+  padding:0;
+  margin:0;
+}
+
+[dir="ltr"] ul.menu,[dir="ltr"] 
+ul.links,[dir="ltr"] 
+.menu ul{
+  padding-left:0;}
+
+[dir="rtl"] ul.menu,[dir="rtl"] 
+ul.links,[dir="rtl"] 
+.menu ul{
+  padding-right:0;}
+
+ul.menu,
+ul.links,
+.menu ul{
+  list-style:none;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align:top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin:0;
+}
+
+select{
+  -webkit-appearance:none;
+  appearance:none;
+  background-image:url("../../images/dist/icons/chevron-down.svg");
+  background-repeat:no-repeat;
+}
+[dir=ltr] select{
+  background-position:97% center;
+}
+[dir=rtl] select{
+  background-position:3% center;
+}
+select::-ms-expand{
+  display:none;
+}
+
+.field--type-text-long a,
+.field--name-body a{
+  color:#26c9de;
+  text-decoration:underline;
+}
+.field--type-text-long a:hover,
+.field--name-body a:hover{
+  text-decoration:none;
+}
+
+p.text-align-justify{
+  text-align:justify;
+}
+
+[dir="ltr"] .text-formatted ul,[dir="ltr"] 
+.text-formatted ol{
+  margin-left:1em;}
+
+[dir="rtl"] .text-formatted ul,[dir="rtl"] 
+.text-formatted ol{
+  margin-right:1em;}
+
+/*# sourceMappingURL=../maps/base.css.map */

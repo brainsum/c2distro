@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.block-page-title-block{
+  margin-top:7.8rem !important;
+  margin-bottom:3.3rem !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding:0 !important;
+}
+[dir="ltr"] .block-page-title-block .block-inner h1.page-title{
+  margin-left:0 !important;}
+[dir="rtl"] .block-page-title-block .block-inner h1.page-title{
+  margin-right:0 !important;}
+.block-page-title-block .block-inner h1.page-title{
+  font-size:4rem !important;
+  line-height:4.9rem !important;
+  text-align:center !important;
+}
+
+.contact-form{
+  background-color:#ffffff;
+  padding-bottom:11.2rem;
+}
+.contact-form .form-container{
+  max-width:120rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+  border:0;
+}
+.contact-form .form-container legend{
+  display:none;
+}
+.contact-form .form-container .fieldset-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:6.8rem;
+  margin-left:-2.4rem;
+  margin-right:-2.4rem;
+}
+.contact-form .form-container .fieldset-wrapper .left{
+  width:100%;
+  padding-left:2.4rem;
+  padding-right:2.4rem;
+}
+@media print, screen and (min-width: 48em){
+  .contact-form .form-container .fieldset-wrapper .left{
+    width:37.5%;
+  }
+}
+.contact-form .form-container .fieldset-wrapper .left #edit-field-upload-label-wrapper{
+  margin-top:5.1rem;
+  margin-bottom:1.8rem;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:2.4rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:3rem;
+  font-weight:700;
+}
+[dir="ltr"] .contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason{
+  padding-left:1rem;}
+[dir="rtl"] .contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason{
+  padding-right:1rem;}
+[dir="ltr"] .contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason{
+  padding-right:5rem;}
+[dir="rtl"] .contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason{
+  padding-left:5rem;}
+.contact-form .form-container .fieldset-wrapper .left #edit-field-contact-reason{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment label{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.8rem;
+  color:#12284c;
+  text-decoration:none;
+  font-weight:700;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=file]{
+  width:100%;
+  margin-top:1rem;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment input[type=submit]{
+  margin:2rem 0;
+  width:23.1rem;
+  height:4.7rem;
+}
+.contact-form .form-container .fieldset-wrapper .left .field--name-field-attachment .description{
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.6rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:2.5rem;
+}
+.contact-form .form-container .fieldset-wrapper .right{
+  width:100%;
+  padding-left:2.4rem;
+  padding-right:2.4rem;
+}
+@media print, screen and (min-width: 48em){
+  .contact-form .form-container .fieldset-wrapper .right{
+    width:62.5%;
+  }
+}
+.contact-form .form-container #edit-field-terms-and-conditions-wrapper{
+  width:100%;
+  margin-top:5.6rem;
+  margin-bottom:2.1rem;
+  padding:0 1rem;
+  text-align:center;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.6rem;
+  color:#12284c;
+}
+.contact-form .form-container #edit-field-terms-and-conditions-wrapper a{
+  text-decoration:underline;
+}
+.contact-form .form-actions{
+  margin-top:2.1rem !important;
+}
+.contact-form input#edit-submit{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.6rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:1.9rem;
+  text-align:center;
+  width:23.1rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.contact-form input#edit-submit:hover{
+  background-color:#26c9de !important;
+  border-color:#26c9de !important;
+}
+.contact-form input#edit-submit:hover{
+  color:#ffffff;
+}
+.contact-form .captcha{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.entity.contact_form.canonical.css.map */

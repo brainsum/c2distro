@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph{
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.paragraph.background-color--white{
+  background-color:#ffffff;
+}
+.paragraph.background-color--grey{
+  background-color:#e8e8e8;
+}
+.paragraph.background-color--lightgrey{
+  background-color:#f6f6f6;
+}
+.paragraph .field--name-field-title{
+  margin-bottom:2rem;
+  font-size:3rem;
+  line-height:1.25;
+  font-weight:700;
+}
+
+.paragraph--type--text,
+.paragraph--type--cta,
+.paragraph--type--accordion,
+.paragraph--type--text-media,
+.paragraph--type--link-boxes,
+.paragraph--type--popup-wrapper,
+.paragraph--type--timeline-wrapper,
+.paragraph--type--quotes,
+.paragraph--type--media,
+.paragraph--type--partners{
+  padding:4.5rem 0;
+}
+
+.paragraph--type--popup-wrapper > .paragraph--inner,
+.paragraph--type--media > .paragraph--inner{
+  max-width:72rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+@media print, screen and (min-width: 48em){
+  .paragraph--type--popup-wrapper > .paragraph--inner,
+.paragraph--type--media > .paragraph--inner{
+    max-width:68.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 1.5rem;
+  }
+}
+
+.paragraph--type--text > .paragraph--inner, .paragraph--type--text.width--narrow > .paragraph--inner,
+.paragraph--type--cta > .paragraph--inner,
+.paragraph--type--cta.width--narrow > .paragraph--inner,
+.paragraph--type--accordion > .paragraph--inner,
+.paragraph--type--accordion.width--narrow > .paragraph--inner{
+  max-width:72rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+@media print, screen and (min-width: 48em){
+  .paragraph--type--text > .paragraph--inner, .paragraph--type--text.width--narrow > .paragraph--inner,
+.paragraph--type--cta > .paragraph--inner,
+.paragraph--type--cta.width--narrow > .paragraph--inner,
+.paragraph--type--accordion > .paragraph--inner,
+.paragraph--type--accordion.width--narrow > .paragraph--inner{
+    max-width:68.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 1.5rem;
+  }
+}
+.paragraph--type--text.width--wide > .paragraph--inner,
+.paragraph--type--cta.width--wide > .paragraph--inner,
+.paragraph--type--accordion.width--wide > .paragraph--inner{
+  max-width:122.2rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+
+.paragraph--type--quotes > .paragraph--inner{
+  max-width:88.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+
+.paragraph--type--media-document > .paragraph--inner,
+.paragraph--type--view > .paragraph--inner,
+.paragraph--type--partners > .paragraph--inner,
+.paragraph--type--link-boxes > .paragraph--inner,
+.paragraph--type--timeline-wrapper > .paragraph--inner,
+.paragraph--type--small-boxes > .paragraph--inner{
+  max-width:122.2rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+
+.paragraph > .paragraph--inner .field--name-field-text,
+.paragraph > .paragraph--inner .field--name-field-plaintext{
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.8rem;
+  line-height:1.66;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.paragraphs-base.css.map */

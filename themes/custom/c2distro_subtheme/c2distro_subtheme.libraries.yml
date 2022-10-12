@@ -1,0 +1,248 @@
+global-styling:
+  version: 1.0.0
+  css:
+    base:
+      //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:wght@400;700&display=swap: { type: external }
+      css/base.css: {}
+    layout:
+      css/layout.css: {}
+    component:
+      css/components.css: {}
+    theme:
+      css/theme.css: {}
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/menu.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+paragraphs-base:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraphs-base.css: {}
+
+paragraph-text:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-text.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph-text-media:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-text-media.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph-link-boxes:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-link-boxes.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph-small-boxes:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-small-boxes.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph-partners:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-partners.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph-accordion:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph-accordion.css: { }
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/accordion.js: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+    - core/jquery
+
+popup:
+  version: 1.0.0
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/popup.js: {}
+  dependencies:
+    - core/jquery
+
+timeline:
+  version: 1.0.0
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/timeline.js: {}
+  dependencies:
+    - core/jquery
+
+quote:
+  version: 1.0.0
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/quote.js: {}
+  dependencies:
+    - core/jquery
+
+entity.node.canonical.page:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.entity.node.canonical.page.css: {}
+
+view.news.lister_page:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.view.news.lister_page.css: {}
+
+view.events.lister_page:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.view.events.lister_page.css: {}
+
+entity.node.canonical.news:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.tags.css: {}
+      css/5.components/components.entity.node.canonical.news.css: {}
+
+hphero.block:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.hphero.block.css: {}
+
+footerblockcontent.block:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.footerblockcontent.block.css: {}
+
+entity.media.canonical.document:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title.css: {}
+      css/5.components/components.tags.css: {}
+      css/5.components/components.entity.media.canonical.document.css: {}
+
+share_button_from_ifrc:
+  version: 1.0.0
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/custom/share_button_from_ifrc.js: {}
+  css:
+    theme:
+      css/5.components/components.share_button_from_ifrc.css: {}
+
+resources:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.facets.css: {}
+
+search:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.search.css: {}
+
+documents:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.doc-lister.css: {}
+
+views_block__selector_cards_selector_cards_block:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.views_block__selector_cards_selector_cards_block.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+paragraph_cta:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.paragraph_cta.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+pager:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.pager.css: {}
+
+views_block__news_lister_block:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.views_block__news_lister_block.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+entity.contact_form.canonical:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.entity.contact_form.canonical.css: {}
+      css/5.components/components.h1.page_title.css: {}
+
+h1.page_title_center:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.h1.page_title_center.css: {}
+
+submit.loader:
+  version: 1.0.0
+  js:
+    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/src/custom/submit.loader.js: {}
+  css:
+    theme:
+      css/5.components/components.submit.loader.css: {}
+
+lister_page.view_events:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.lister_page.view_events.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+lister_page.view_documents:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.lister_page.view_documents.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+special_pages:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.special_pages.css: {}
+
+messages:
+  version: 1.0.0
+  css:
+    theme:
+      css/5.components/components.messages.css: {}

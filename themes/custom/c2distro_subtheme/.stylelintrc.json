@@ -1,0 +1,149 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "selector-class-pattern": null,
+    "declaration-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "else",
+          "each",
+          "include",
+          "mixin",
+          "for",
+          "use"
+        ]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": null,
+    "number-leading-zero": "never",
+    "unit-allowed-list": [
+      "px",
+      "deg",
+      "em",
+      "ex",
+      "ms",
+      "rem",
+      "%",
+      "s",
+      "vh",
+      "vw",
+      "fr"
+    ],
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/dollar-variable-colon-space-after": null,
+    "scss/dollar-variable-pattern": "^_?[a-z]+[\\w-]*$",
+    "scss/at-extend-no-missing-placeholder": true,
+    "order/order": [
+      {
+        "type": "at-rule",
+        "name": "include",
+        "hasBlock": false
+      },
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include",
+        "hasBlock": true
+      }
+    ],
+    "order/properties-order": [
+      {
+        "order": "flexible",
+        "properties": [
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "display",
+          "float",
+          "margin",
+          "margin-top",
+          "margin-right",
+          "margin-bottom",
+          "margin-left",
+          "padding",
+          "padding-top",
+          "padding-right",
+          "padding-bottom",
+          "padding-left",
+          "width",
+          "height",
+          "z-index",
+          "grid-gap",
+          "column-gap",
+          "row-gap",
+          "grid-area",
+          "grid-template",
+          "grid-template-areas",
+          "grid-template-columns",
+          "grid-template-rows",
+          "grid-column",
+          "grid-column-start",
+          "grid-column-end",
+          "grid-row",
+          "grid-row-start",
+          "grid-row-end",
+          "justify-items",
+          "align-items",
+          "place-items",
+          "justify-content",
+          "align-content",
+          "place-content"
+        ]
+      },
+      {
+        "order": "flexible",
+        "properties": [
+          "vertical-align",
+          "text-align",
+          "background",
+          "background-color",
+          "background-image",
+          "background-position",
+          "background-size",
+          "background-repeat",
+          "background-origin",
+          "background-clip",
+          "background-attachment,",
+          "background-color",
+          "border",
+          "border-top",
+          "border-right",
+          "border-bottom",
+          "border-left",
+          "border-radius",
+          "transform"
+        ],
+        "emptyLineBefore": "always"
+      },
+      {
+        "order": "flexible",
+        "properties": [
+          "font-family",
+          "font-size",
+          "font-weight",
+          "line-height",
+          "src",
+          "color",
+          "fill",
+          "text-decoration",
+          "cursor"
+        ],
+        "emptyLineBefore": "always"
+      }
+    ]
+  }
+}

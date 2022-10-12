@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.White{
+  background-color:#ffffff;
+}
+
+.Grey{
+  background-color:#efefef;
+}
+
+.view.view-news.view-id-news.view-display-id-lister_page .views-row #block-tabs{
+  max-width:113.5rem;
+  margin:0 auto;
+  padding-top:2rem;
+  padding-bottom:1rem;
+  padding-left:0;
+  padding-right:0;
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.entity.node.canonical.page.css.map */

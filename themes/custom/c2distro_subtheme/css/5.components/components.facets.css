@@ -1,0 +1,324 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+:root .global-hash-dark-version{
+  --color-font:$color-lightest;
+  --color-body:#222327;
+}
+
+*{
+  box-sizing:border-box;
+}
+html{
+  text-rendering:optimizeLegibility;
+  -webkit-tap-highlight-color:transparent;
+  font-size:62.5%;
+}
+
+body{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color:#12284c;
+  background-color:#efefef;
+  font-size:1.6rem;
+  line-height:2.4rem;
+  word-wrap:break-word;
+}
+
+::selection{
+  background-color:#26c9de;
+  color:#ffffff;
+}
+
+a{
+  text-decoration:none;
+  color:#12284c;
+}
+a:hover{
+  color:#03070e;
+}
+a:focus{
+  outline:0;
+}
+
+p:first-child{
+  margin-top:0;
+}
+p:last-child{
+  margin-bottom:0;
+}
+
+ol,
+ul{
+  padding:0;
+  margin:0;
+}
+
+[dir="ltr"] ul.menu,[dir="ltr"] 
+ul.links,[dir="ltr"] 
+.menu ul{
+  padding-left:0;}
+
+[dir="rtl"] ul.menu,[dir="rtl"] 
+ul.links,[dir="rtl"] 
+.menu ul{
+  padding-right:0;}
+
+ul.menu,
+ul.links,
+.menu ul{
+  list-style:none;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align:top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin:0;
+}
+
+select{
+  -webkit-appearance:none;
+  appearance:none;
+  background-image:url("../../images/dist/icons/chevron-down.svg");
+  background-repeat:no-repeat;
+}
+[dir=ltr] select{
+  background-position:97% center;
+}
+[dir=rtl] select{
+  background-position:3% center;
+}
+select::-ms-expand{
+  display:none;
+}
+
+.field--type-text-long a,
+.field--name-body a{
+  color:#26c9de;
+  text-decoration:underline;
+}
+.field--type-text-long a:hover,
+.field--name-body a:hover{
+  text-decoration:none;
+}
+
+p.text-align-justify{
+  text-align:justify;
+}
+
+[dir="ltr"] .text-formatted ul,[dir="ltr"] 
+.text-formatted ol{
+  margin-left:1em;}
+
+[dir="rtl"] .text-formatted ul,[dir="rtl"] 
+.text-formatted ol{
+  margin-right:1em;}
+.path-resources .block-page-title-block .block-inner{
+  max-width:139rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+.path-resources .page-title{
+  margin-top:6rem;
+  margin-bottom:3rem;
+  margin-left:0;
+  margin-right:0;
+  font-size:3rem;
+  line-height:1.16;
+}
+@media print, screen and (min-width: 23.5em){
+  .path-resources .page-title{
+    margin-bottom:2.2rem;
+    font-size:4rem;
+  }
+}
+
+.block-facet-blocktags-of-document{
+  max-width:139rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+  margin-top:3rem;
+  margin-bottom:2.3rem;
+  margin-left:auto;
+  margin-right:auto;
+}
+.block-facet-blocktags-of-document:before, .block-facet-blocktags-of-document:after{
+  content:" ";
+  display:table;
+}
+.block-facet-blocktags-of-document:after{
+  clear:both;
+}
+@media print, screen and (min-width: 23.5em){
+  .block-facet-blocktags-of-document{
+    margin-top:4rem;
+    margin-bottom:3.5rem;
+  }
+}
+.block-facet-blocktags-of-document .item-list__links{
+  margin:-0.25rem;
+}
+[dir="ltr"] .block-facet-blocktags-of-document .facet-item{
+  float:left;}
+[dir="rtl"] .block-facet-blocktags-of-document .facet-item{
+  float:right;}
+.block-facet-blocktags-of-document .facet-item{
+  display:block;
+  padding:0.25rem;
+}
+.block-facet-blocktags-of-document .facet-item .facet-wrapper{
+  padding:1.5rem;
+  background:#f6f6f6;
+}
+.block-facet-blocktags-of-document .facet-item .facet-wrapper.active{
+  background:#ffffff;
+}
+.block-facet-blocktags-of-document .facet-item a{
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size:1.6rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:1.8rem;
+  font-weight:bold;
+}
+.block-facet-blocktags-of-document .facet-item .js-facet-deactivate{
+  background-image:url("../../images/dist/icons/close-dark.svg");
+  background-repeat:no-repeat;
+  width:1.5rem;
+  height:1.5rem;
+  display:inline-block;
+  top:0.2rem;
+  position:relative;
+}
+
+.views-element-container{
+  max-width:139rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+
+.view-search{
+  clear:both;
+  padding-top:3.5rem;
+}
+
+.block-views-exposed-filter-blocksearch-resources{
+  max-width:139rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+.block-views-exposed-filter-blocksearch-resources .form--inline{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+@media print, screen and (min-width: 23.5em){
+  .block-views-exposed-filter-blocksearch-resources .form--inline{
+    flex-wrap:nowrap;
+    align-items:flex-end;
+  }
+}
+@media print, screen and (min-width: 23.5em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-type-textfield{
+    float:left;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-type-textfield{
+    float:right;}
+  .block-views-exposed-filter-blocksearch-resources .form-type-textfield{
+    max-width:41.1rem;
+  }
+}
+.block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
+  background-color:#ffffff;
+  border:1px solid #d4d4d4;
+  background-image:url("../../images/dist/icons/search.svg");
+  background-repeat:no-repeat;
+  background-size:2.2rem;
+  height:4.8rem;
+}
+@media print, screen and (min-width: 23.5em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
+    padding-left:2.3rem;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
+    padding-right:2.3rem;}
+}
+[dir=ltr] .block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
+  background-position:98% center;
+}
+[dir=rtl] .block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
+  background-position:2% center;
+}
+.block-views-exposed-filter-blocksearch-resources .form-item-category{
+  margin-top:2.1rem;
+}
+@media print, screen and (min-width: 23.5em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-item-category{
+    margin-left:1rem;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-item-category{
+    margin-right:1rem;}
+  .block-views-exposed-filter-blocksearch-resources .form-item-category{
+    max-width:38.6rem;
+    margin-top:0;
+  }
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-item-category{
+    margin-left:2.7rem;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-item-category{
+    margin-right:2.7rem;}
+}
+.block-views-exposed-filter-blocksearch-resources .form-item-category select{
+  background-color:#ffffff;
+  border:0.1rem solid #dadada;
+  height:4.8rem;
+}
+.block-views-exposed-filter-blocksearch-resources .form-actions{
+  width:100%;
+  margin-top:2.6rem;
+}
+@media print, screen and (min-width: 23.5em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-actions{
+    margin-left:1rem;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-actions{
+    margin-right:1rem;}
+  .block-views-exposed-filter-blocksearch-resources .form-actions{
+    width:auto;
+    margin-top:0;
+  }
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-views-exposed-filter-blocksearch-resources .form-actions{
+    margin-left:2.7rem;}
+  [dir="rtl"] .block-views-exposed-filter-blocksearch-resources .form-actions{
+    margin-right:2.7rem;}
+}
+@media print, screen and (max-width: 47.99875em){
+  .block-views-exposed-filter-blocksearch-resources input.form-submit{
+    width:100%;
+  }
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.facets.css.map */

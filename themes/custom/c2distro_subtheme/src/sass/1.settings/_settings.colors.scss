@@ -1,0 +1,46 @@
+/**
+ * @file
+ * Color Settings
+ *
+ * - Define color variables
+ */
+
+// color definitions
+$color-white               : #ffffff;
+$color-turquoise-light     : #26c9de;
+$color-blue-light          : #d0d0d0;
+$color-blue                : #a0d2f4;
+$color-blue-dark           : #3d5e8e;
+$color-blue-darkest        : #011e41;
+$color-blue-darkest2       : #0f1d40;
+$color-blue-gray           : #12284c;
+$color-turquoise           : #26c9de;
+$color-yellow              : #ff8200;
+$color-yellow-light        : #ffb25b;
+$color-grey-light          : #efefef;
+$color-grey-light-extra    : #ebebeb;
+$color-grey-extra          : #dbdbdb;
+$color-grey                : #e8e8e8;
+$color-grey-dark           : #dadada;
+$color-red                 : #d24744;
+$color-grey-background     : #f5f5f5;
+$color-lightgrey           : #f2f2f2;
+
+
+// colors by functions
+$color-brand               : $color-red;
+$color-primary             : $color-blue-gray;
+$color-secondary           : $color-turquoise;
+$color-tertiary            : $color-yellow-light;
+$color-shade1              : $color-grey-light;
+$color-shade2              : $color-grey-light-extra;
+$color-shade3              : $color-grey-extra;
+$color-shade4              : $color-grey-dark;
+$color-lightest            : $color-white;
+$body-font-color           : $color-primary;
+$border-color              : #d4d4d4;
+$background-primary        : $color-grey;
+$background-lightest       : $color-white;
+$background-secondary      : $color-secondary;
+$background-tertiary       : $color-blue-light;
+$background-quaternary     : #f6f6f6;

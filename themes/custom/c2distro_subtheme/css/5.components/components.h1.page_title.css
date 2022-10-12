@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.block-page-title-block{
+  padding-top:4rem;
+  padding-bottom:0;
+  padding-left:0;
+  padding-right:0;
+  max-width:119.2rem;
+  margin:0 auto;
+}
+.block-page-title-block .block-inner h1.page-title{
+  text-align:center;
+  font-size:3rem;
+  color:#12284c;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height:3rem;
+  text-decoration:none;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-page-title-block .block-inner h1.page-title{
+    margin-left:0;}
+  [dir="rtl"] .block-page-title-block .block-inner h1.page-title{
+    margin-right:0;}
+  .block-page-title-block .block-inner h1.page-title{
+    font-size:4rem;
+    line-height:4.9rem;
+  }
+}
+
+/*# sourceMappingURL=../../maps/5.components/components.h1.page_title.css.map */

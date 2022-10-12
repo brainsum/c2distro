@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Tools
+ *
+ * Tools are sets of globally used sass mixins and functions. Mixins that are
+ * connected to one and only module are a part of the module itself.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+
+/**
+ * Mixin tools
+ */
+
+// Import tools
+@import "../../../profiles/contrib/c2distro/themes/custom/c2d_theme/sass/2.tools/tools.all";
