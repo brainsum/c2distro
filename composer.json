@@ -51,7 +51,7 @@
         "drupal/redirect": "^1.6",
         "drupal/role_delegation": "^1.1",
         "drupal/search_api": "^1.19.0",
-        "drupal/smtp": "^1.x-dev#58e1c825",
+        "drupal/smtp": "^1.2",
         "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^1.14",
         "drupal/token": "^1.9",
@@ -74,7 +74,7 @@
                 "Choose and order selectable styles": "https://www.drupal.org/files/issues/2021-02-23/choose_and_order-2830403-44.patch"
             },
             "drupal/smtp": {
-                "Maillog support": "https://www.drupal.org/files/issues/2022-09-12/maillog-integration.2920034.21.patch"
+                "Maillog support": "https://www.drupal.org/files/issues/2022-12-19/maillog-integration.2920034.22.patch"
             }
         }
     }
