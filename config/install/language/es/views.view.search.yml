@@ -3,6 +3,17 @@ display:
   default:
     display_title: 'Por defecto'
     display_options:
+      pager:
+        options:
+          tags:
+            next: 'Siguiente >'
+            previous: '‹ Anterior'
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
       exposed_form:
         options:
           submit_button: Aplicar
@@ -10,17 +21,6 @@ display:
           exposed_sorts_label: 'Ordenar por'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Anterior'
-            next: 'Siguiente >'
-            first: '« Primero'
-            last: 'Último »'
-          expose:
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options_all_label: '- Todo -'
-            offset_label: Desplazamiento
   page:
     display_title: Página
     display_options:
@@ -33,14 +33,14 @@ display:
           sort_desc_label: Desc
   resources:
     display_options:
-      filters:
-        search_api_fulltext:
-          expose:
-            label: Buscar
       sorts:
         media_highlighted:
           expose:
             label: Destacado
         media_created:
           expose:
-            label: Fecha
+            label: 'Fecha de autoría'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Buscar
