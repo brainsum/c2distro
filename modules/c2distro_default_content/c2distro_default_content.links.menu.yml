@@ -16,5 +16,5 @@ c2distro_default_content.get_involved:
   title: Get involved
   description: Get involved
   menu_name: main
-  route_name: <nolink>
+  url: 'internal:/contact'
   weight: 50
