@@ -3,6 +3,17 @@ display:
   default:
     display_title: 'Par défaut'
     display_options:
+      pager:
+        options:
+          tags:
+            next: 'Suivant ›'
+            previous: '‹ Précédent'
+            first: '« Premier'
+            last: 'Dernier »'
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
       exposed_form:
         options:
           submit_button: Appliquer
@@ -10,17 +21,6 @@ display:
           exposed_sorts_label: 'Trier par'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
-          expose:
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options_all_label: '- Tout -'
-            offset_label: Décalage
   page:
     display_title: Page
     display_options:
@@ -33,10 +33,6 @@ display:
           sort_desc_label: Desc
   resources:
     display_options:
-      filters:
-        search_api_fulltext:
-          expose:
-            label: Rechercher
       sorts:
         media_highlighted:
           expose:
@@ -44,3 +40,7 @@ display:
         media_created:
           expose:
             label: 'Écrit le'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Rechercher

@@ -3,6 +3,14 @@ display:
   default:
     display_title: الافتراضي
     display_options:
+      pager:
+        options:
+          tags:
+            next: 'التالي ›'
+            previous: '‹ السابق'
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
       exposed_form:
         options:
           submit_button: تطبيق
@@ -10,14 +18,6 @@ display:
           exposed_sorts_label: 'الترتيب حسب'
           sort_asc_label: تصاعدي
           sort_desc_label: تنازلي
-      pager:
-        options:
-          tags:
-            previous: '‹ السابق'
-            next: 'التالي ›'
-          expose:
-            items_per_page_options_all_label: '- الكل -'
-            offset_label: الإزاحة
   page:
     display_title: الصفحة
     display_options:
@@ -30,10 +30,6 @@ display:
           sort_desc_label: تنازلي
   resources:
     display_options:
-      filters:
-        search_api_fulltext:
-          expose:
-            label: بحث
       sorts:
         media_highlighted:
           expose:
@@ -41,3 +37,7 @@ display:
         media_created:
           expose:
             label: 'أُنشِئ يوم'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: بحث
