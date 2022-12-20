@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: document_card_image
+label: 'Document card image'
+effects:
+  ce5026c8-c16f-4668-b5e7-99ec53a46056:
+    uuid: ce5026c8-c16f-4668-b5e7-99ec53a46056
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 257
+      height: 304
+      anchor: center-top

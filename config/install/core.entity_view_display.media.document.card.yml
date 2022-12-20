@@ -10,7 +10,7 @@ dependencies:
     - field.field.media.document.field_lead
     - field.field.media.document.field_media_file
     - field.field.media.document.field_tags
-    - image.style.document_lister_image
+    - image.style.document_card_image
     - media.type.document
   module:
     - svg_image
@@ -21,44 +21,44 @@ mode: card
 content:
   created:
     type: timestamp
-    weight: 1
-    region: content
     label: hidden
     settings:
       date_format: document
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_category:
-    weight: 2
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 2
     region: content
   name:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   thumbnail:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: document_lister_image
       image_link: ''
-      svg_render_as_image: true
+      image_style: document_card_image
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   content_moderation_control: true
   field_body: true
