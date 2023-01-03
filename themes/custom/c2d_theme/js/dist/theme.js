@@ -1,1 +1,0 @@
-"use strict";jQuery,Drupal.behaviors.astarterthemeThemeFunction={attach:function(){}};

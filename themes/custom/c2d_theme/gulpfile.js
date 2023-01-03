@@ -3,9 +3,13 @@
 /**
  * Import required node modules and other external files
  */
+require('dotenv').config();
 const autoprefixer         = require('autoprefixer');
+const babel               = require('gulp-babel');
 const browserSync         = require('browser-sync').create();
-const cssnano             = require('gulp-cssnano');
+const cssnano             = require('cssnano');
+const cssnanoLite         = require('cssnano-preset-lite');
+const eslint              = require('gulp-eslint-new');
 const gulp                = require('gulp');
 const postcss             = require('gulp-postcss');
 const postcssPresetEnv    = require('postcss-preset-env');
@@ -21,12 +25,12 @@ const stylelint           = require('gulp-stylelint');
 const config = {
   paths: {
     styles: {
-      src: './sass/**/*.scss',
+      src: './src/sass/**/*.scss',
       dest: './css/'
     },
     scripts: {
-      src: './js/src/*.js',
-      dest: './js/dist/'
+      src: './src/js/**/*.js',
+      dest: './js/'
     }
   },
   cssnano: {
@@ -55,17 +59,24 @@ const config = {
       'prefers-color-scheme-query': false,
     }
   },
+  sass: {
+    outputStyle: 'expanded',
+    precision: 10,
+  },
   browserSync: {
-    proxy: 'http://c2distro.docker.localhost:8000',
+    proxy: process.env.BROWSERSYC_PROXY,
     autoOpen: false,
+    notify: true,
     browsers: [
       'Google Chrome'
     ]
   }
 };
 
-// Predefined Gulp tasks
-let watch = '';
+// Predefined complex Gulp tasks
+let compileTask = '';
+let watchTask = '';
+let watchTaskNoSync = '';
 
 /**
  * SASS:Compile Task
@@ -73,13 +84,16 @@ let watch = '';
  * The all-in-one Sass task for compiling, linting sass files with live injecting into all browsers
  * @param {string} done The done argument is passed into the callback function;
  * executing that done function tells Gulp "a hint to tell it when the task is done".
+ *
+ *
+ * npm run sass
  */
-function sassCompileTask(done) {
+function sassCompileDev(done) {
   gulp
     .src(config.paths.styles.src, { sourcemaps: true })
     .pipe(sourcemaps.init({ largeFile: true }))
       .pipe(sassGlob())
-      .pipe(sass())
+      .pipe(sass(config.sass))
       .on('error', sass.logError)
     .pipe(sourcemaps.write({ includeContent: false }))
     .pipe(sourcemaps.init({ loadMaps: true }))
@@ -88,8 +102,23 @@ function sassCompileTask(done) {
         postcssPresetEnv(config.postcssPresetEnv),
         sorting
       ]))
-      .pipe(cssnano(config.cssnano))
     .pipe(sourcemaps.write('../maps'))
+    .pipe(gulp.dest(config.paths.styles.dest))
+  done();
+}
+
+function sassCompileProd(done) {
+  gulp
+    .src(config.paths.styles.src)
+    .pipe(sassGlob())
+    .pipe(sass(config.sass))
+    .on('error', sass.logError)
+    .pipe(postcss([
+      autoprefixer,
+      postcssPresetEnv(config.postcssPresetEnv),
+      sorting,
+      cssnano(config.cssnano)
+    ]))
     .pipe(gulp.dest(config.paths.styles.dest))
   done();
 }
@@ -119,14 +148,24 @@ function sassLintTask(done) {
 }
 
 /**
- * Critical CSS Task
+ * JavaScript Task
  *
- * Generate & Inline Critical-path CSS.
+ * Currently, there is only one JavaScript task (not separated for dev and prod).
+ * And only run ESlint to detect errors.
  * @param {string} done The done argument is passed into the callback function;
  * executing that done function tells Gulp "a hint to tell it when the task is done".
  */
-function criticalTask(done) {
-  critical.generate(config.critical, config.pages);
+function scriptsTask(done) {
+  gulp
+    .src(config.paths.scripts.src, { sourcemaps: true })
+    .pipe(sourcemaps.init({ largeFile: true }))
+    .pipe(eslint({ fix: true }))
+    .pipe(eslint.format())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(sourcemaps.write('../maps'))
+    .pipe(gulp.dest(config.paths.scripts.dest))
   done();
 }
 
@@ -141,7 +180,15 @@ function browserSyncTask(done) {
   browserSync.init({
     proxy: config.browserSync.proxy,
     open: config.browserSync.autoOpen,
-    browser: config.browserSync.browsers
+    browser: config.browserSync.browsers,
+    files: [
+      './css/**/*',
+      './js/**/*',
+      './templates/**/*',
+      './*.yml',
+      './*.theme',
+    ],
+    watchEvents: ['add', 'change'],
   });
   done();
 }
@@ -160,23 +207,43 @@ function browserSyncReloadTask(done) {
 /**
  * Watching Task
  *
- * Watching all Sass files; if it see any .scss file has been changed, it runs sassCompileTask then browserSyncReloadTask
+ * Watching all Sass files; if it sees any .scss file has been changed, it runs sassCompileTask then browserSyncReloadTask
  * tasks after each other.
  */
-watch = () => gulp.watch(
-  config.paths.styles.src,
-  { ignoreInitial: false },
+const watch = () => gulp.watch(
+  [
+    config.paths.styles.src,
+    config.paths.scripts.src
+  ],
   gulp.series(
-    sassCompileTask,
+    sassCompileDev,
+    scriptsTask,
     browserSyncReloadTask
   )
 );
 
+const watchNoSync = () => gulp.watch(
+  [
+    config.paths.styles.src,
+    config.paths.scripts.src
+  ],
+  gulp.series(
+    sassCompileDev,
+    scriptsTask,
+  )
+);
+
+// Define complex tasks
+compileTask = gulp.parallel(sassCompileDev, scriptsTask);
+watchTask = gulp.series(compileTask, browserSyncTask, watch);
+watchTaskNoSync = gulp.series(compileTask, watchNoSync);
+
 /**
  * Export Gulp tasks
  */
-exports.default = gulp.series(sassCompileTask, browserSyncTask, watch);
-exports.sass = sassCompileTask;
-exports.sassLint = sassLintTask;
-exports.critical = gulp.series(sassCompileTask, criticalTask);
-
+exports.default = watchTask;
+exports.defaultNoSync = watchTaskNoSync;
+exports.prod = gulp.parallel(sassCompileProd, scriptsTask);
+exports.sassDev = sassCompileDev;
+exports.sassProd = sassCompileProd;
+exports.scripts = scriptsTask;
