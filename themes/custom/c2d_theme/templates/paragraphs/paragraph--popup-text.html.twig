@@ -46,7 +46,7 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     content.field_description[0] ? 'has-popup'
-]
+  ]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
