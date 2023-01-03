@@ -1,2 +1,838 @@
-.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}:root .global-hash-dark-version{--color-font:#fff;--color-body:#222327}*{box-sizing:border-box}html{text-rendering:optimizeLegibility;-webkit-tap-highlight-color:transparent;font-size:62.5%}body{font-family:Montserrat,-apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:#12284c;background-color:#efefef;font-size:1.6rem;line-height:2.4rem;word-wrap:break-word}::-moz-selection{background-color:#26c9de;color:#fff}::selection{background-color:#26c9de;color:#fff}a{text-decoration:none;color:#12284c}a:hover{color:#03070e}a:focus{outline:0}p:first-child{margin-top:0}p:last-child{margin-bottom:0}ol,ul{padding:0;margin:0}[dir=ltr] .menu ul,[dir=ltr] ul.links,[dir=ltr] ul.menu{padding-left:0}[dir=rtl] .menu ul,[dir=rtl] ul.links,[dir=rtl] ul.menu{padding-right:0}.menu ul,ul.links,ul.menu{list-style:none;-webkit-padding-start:0}img{max-width:100%;height:auto;vertical-align:top}h1,h2,h3,h4,h5,h6{margin:0}select{-moz-appearance:none;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' overflow='visible' preserveAspectRatio='none' viewBox='0 0 24 24' width='32' height='32'%3E%3Cpath xmlns:default='http://www.w3.org/2000/svg' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z' vector-effect='non-scaling-stroke' fill='%23121212'/%3E%3C/svg%3E");background-repeat:no-repeat}[dir=ltr] select{background-position:97%}[dir=rtl] select{background-position:3%}select::-ms-expand{display:none}.field--name-body a,.field--type-text-long a{color:#26c9de;text-decoration:underline}.field--name-body a:hover,.field--type-text-long a:hover{text-decoration:none}p.text-align-justify{text-align:justify}[dir=ltr] .text-formatted ol,[dir=ltr] .text-formatted ul{margin-left:1em}[dir=rtl] .text-formatted ol,[dir=rtl] .text-formatted ul{margin-right:1em}.text-formatted ol,.text-formatted ul{-webkit-margin-start:1em}.view-header{-webkit-margin-after:6rem;margin-bottom:6rem;font-family:Open Sans,sans-serif;font-size:1.8rem;color:#12284c}.media-wrapper{clear:both;width:100%;background-color:#fff;padding:4rem 2rem;-webkit-margin-after:3rem;margin-bottom:3rem;display:flex;flex-wrap:wrap}@media print,screen and (min-width:48em){.media-wrapper{flex-wrap:nowrap;padding:4rem 6.2rem}}.media-wrapper.highlighted{box-shadow:inset 0 0 0 .5rem #26c9de}.media-wrapper .left{flex:1 0 100%;max-width:100%;-webkit-margin-after:3rem;margin-bottom:3rem}@media print,screen and (min-width:48em){[dir=ltr] .media-wrapper .left{margin-right:4.7rem}[dir=rtl] .media-wrapper .left{margin-left:4.7rem}.media-wrapper .left{flex:1 0 25%;max-width:25%;display:inline-grid;-webkit-margin-end:4.7rem;-webkit-margin-after:0;margin-bottom:0}}@media print,screen and (min-width:64em){.media-wrapper .left{flex:1 0 20.6rem;max-width:20.6rem}}.media-wrapper .left .field--name-thumbnail{max-width:20.6rem;max-height:45rem;margin:0 auto}.media-wrapper .left .field--name-thumbnail img{width:100%;height:auto}.media-wrapper .right{display:inline-grid}.media-wrapper .right .title{font-family:Montserrat,sans-serif;font-size:2.2rem;color:#000;font-weight:700;line-height:1.16}@media print,screen and (min-width:48em){.media-wrapper .right .title{font-size:3rem}}.media-wrapper .right .subtitle{font-weight:700;margin-top:2rem;margin-bottom:2rem}.media-wrapper .right .subtitle .created{display:inline-block;font-family:Open Sans,sans-serif;font-size:1.8rem;color:#757575;-webkit-text-decoration:none solid #757575;text-decoration:none solid #757575}[dir=ltr] .media-wrapper .right .subtitle .created .field--type-created{float:left}[dir=rtl] .media-wrapper .right .subtitle .created .field--type-created{float:right}.media-wrapper .right .subtitle .category{display:inline-block}.media-wrapper .right .subtitle .category a{font-family:Open Sans,sans-serif;color:#26c9de;font-size:1.8rem;-webkit-text-decoration:none solid #26c9de;text-decoration:none solid #26c9de}.media-wrapper .right .field--name-field-lead{font-family:Open Sans,sans-serif;font-size:1.8rem;color:#12284c;-webkit-margin-after:1rem;margin-bottom:1rem}.media-wrapper .right .field--name-field-tags{-webkit-margin-before:2rem;margin-top:2rem}.media-wrapper .right .field--name-field-tags .field__label{font-family:Open Sans,sans-serif;font-size:1.8rem;color:#12284c;-webkit-text-decoration:none solid #12284c;text-decoration:none solid #12284c}[dir=ltr] .media-wrapper .right .field--name-field-tags .field__items{margin-left:.5rem}[dir=rtl] .media-wrapper .right .field--name-field-tags .field__items{margin-right:.5rem}.media-wrapper .right .field--name-field-tags .field__items{-webkit-margin-start:.5rem}.media-wrapper .right .field--name-field-tags .field__item{display:inline-block;font-family:Open Sans,sans-serif;font-size:1.8rem;color:#12284c;-webkit-text-decoration:underline solid #12284c;text-decoration:underline solid #12284c}.media-wrapper .right .read-more{color:#26c9de;-webkit-text-decoration:none solid #26c9de;text-decoration:none solid #26c9de;font-style:italic;font-weight:700;-webkit-margin-before:2.6rem;margin-top:2.6rem}.media-wrapper .right .read-more,.pager{font-family:Open Sans,sans-serif;font-size:1.8rem}.pager{color:#0f1d40;text-decoration:none;letter-spacing:1rem}.pager .pager__item--first,.pager .pager__item--last,.pager .pager__item--next,.pager .pager__item--previous{letter-spacing:.1rem}.view-empty{font-size:1.8rem;-webkit-padding-before:1.5rem;-webkit-padding-after:4.9rem;padding:1.5rem 0 4.9rem;font-family:Open Sans,sans-serif}
+@charset "UTF-8";
+/**
+ * @file
+ * Sass index file
+ *
+ * The main importer and organizer sass file.
+ *
+ */
+/**
+ * Settings
+ *
+ * Setting files contain **global** configurations that are shared by more than
+ * one modules.
+ * Settings that are connected to one and only module are a part of the module
+ * itself.
+ * Local configurations should be contained into the modules (objects,
+ * components, etc.) that are related to.
+ */
+/**
+ * @file
+ * Settings
+ *
+ * Setting files contain **global** configurations that are shared by more than
+ * one modules. Settings that are connected to one and only module are a part
+ * of the module itself.
+ * Local configurations should be contained into the modules (objects,
+ * components, etc.) that are related to.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * @file
+ * Breakpoint Settings
+ *
+ * Foundation for Sites 6 Media Queries
+ * @see documentation, usage: https://foundation.zurb.com/sites/docs/media-queries.html
+ *
+ * - Define breakpoint variables as Sass map
+ * - Provide a breakpoint variable for print media
+ * - Provide breakpoint classes for Foundation for Sites 6 XY Grid
+ *
+ * We have to use here only px, it will be converted to em by
+ * Foundation's utility.
+ */
+/**
+ * @file
+ * Color Settings
+ *
+ * - Define color variables
+ */
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid Settings
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Define some global Foundation 6 settings what required for XY Grid
+ * - Define breakpoint variables
+ */
+/**
+ * Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
+ *
+ * @type Keyword
+ */
+/**
+ * Enables flexbox for components that support it.
+ *
+ * @type Boolean
+ */
+/**
+ * @file
+ * Typography Settings
+ *
+ * - Import Webfonts
+ * - Define Font-families
+ * - Define Typography-related global variables
+ */
+/**
+ * Tools
+ *
+ * Globally used mixins and functions.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * @file
+ * Tools
+ *
+ * Tools are sets of globally used sass mixins and functions. Mixins that are
+ * connected to one and only module are a part of the module itself.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * Mixin tools
+ */
+/**
+ * @file
+ * Clearfix Tool
+ *
+ * The clearfix utility is used on elements that need to automatically clear
+ * their child elements.
+ *
+ * Use it wherever you need it.
+ *
+ *
+ * @example
+ *   .o-grid {
+ *     @include clearfix;
+ *   }
+ */
+/**
+ * @file
+ * Form Tool
+ *
+ * Form related mixins and functions.
+ */
+/**
+ * Placeholder mixin
+ *
+ * With it you can theming input placeholders easily for any browsers.
+ *
+ * @example
+ *  @include input-placeholder {
+ *    color: grey;
+ *  }
+ */
+/**
+ * Webkit autofill mixin
+ *
+ * With it you can theming autofilled inputs easily.
+ * You must declare the font color, other rules optionally.
+ *
+ * @example
+ *  @include autofill($color-primary) {
+ *    background: lighten($color-primary, 30%);
+ *  }
+ */
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Import Foundation for Site 6 required vendor libraries
+ * - Import Foundation for Sites 6 Util Library
+ * - Import Foundation for Sites 6 XY Grid
+ */
+/**
+ * @file
+ *** FOUNDATION FOR SITES AND CUSTOM MIXINS
+ */
+/**
+ * @group Foundation for Sites mixins
+ * Mixins placeholder file
+ * @todo These are mostly from Foundation and should be removed and used straight from Foundation.
+ */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * Horizontally or vertically aligns the items within a flex container.
+ *
+ * @param {Keyword} $x [null] - Horizontal alignment to use. Can be `left`,
+ * `right`, `center`, `justify`, or `spaced`. Or, set it to `null`
+ * (the default) to not set horizontal alignment.
+ * @param {Keyword} $y [null] - Vertical alignment to use. Can be `top`,
+ * `bottom`, `middle`, or `stretch`. Or, set it to `null` (the default) to not
+ * set vertical alignment.
+ */
+/**
+ * Vertically align a single column within a flex row. Apply this mixin to a
+ * flex column.
+ *
+ * @param {Keyword} $y [null] - Vertical alignment to use. Can be `top`,
+ * `bottom`, `middle`, or `stretch`. Or, set it to `null` (the default) to not
+ * set vertical alignment.
+ */
+/**
+ * Changes the source order of a flex child. Children with lower numbers appear
+ * first in the layout.
+ *
+ * @param {Number} $order [0] - Order number to apply.
+ */
+/**
+ * Change flex-direction
+ *
+ * @param {Keyword} $direction [row] - Flex direction to use. Can be
+ * - row (default): same as text direction
+ * - row-reverse: opposite to text direction
+ * - column: same as row but top to bottom
+ * - column-reverse: same as row-reverse top to bottom
+ */
+/**
+ * @include flex-wrap(nowrap | wrap | wrap-reverse);
+ * Default: nowrap
+ */
+/**
+ * @include flex-flow(values);
+ * Default: row nowrap
+ */
+/**
+ * @include order(int);
+ * Default: 0
+ */
+/**
+ * @include flex-grow(int);
+ * Default: 1
+ */
+/**
+ * @include flex-shrink(int);
+ * Default: 0
+ */
+/**
+ * @include flex-basis(int);
+ * Default: auto
+ */
+/**
+ * @include justify-content(flex-start | flex-end | center | space-between
+ * | space-around);
+ * Default: flex-start
+ */
+/**
+ * @include align-items(flex-start | flex-end | center | baseline | stretch);
+ * Default: stretch
+ */
+/**
+ * @include align-self(auto | flex-start | flex-end | center | baseline | stretch);
+ * Default: auto
+ */
+/**
+ * @include align-content(flex-start | flex-end | center | space-between | space-around | stretch);
+ * Default: stretch
+ */
+/**
+ * @group theming mixins
+ */
+/**
+ * @file
+ * Stretched-lnk Tool ***
+ ******************************************************************************
+ *
+ * Make any HTML element or a component clickable by "stretching" a nested link
+ * via css.
+ *
+ * Borrowed from Bootstrap 4
+ * @link https://getbootstrap.com/docs/4.3/utilities/stretched-link
+ *
+ * Include `stretched-link` mixin to a link (`<a>` element) to make its
+ * containing block clickable via a `::after` pseudo element.
+ * In most cases, this means that an element with `position: relative;` that
+ * contains a link with included `stretched-link` mixin is clickable.
+ *
+ * @example
+ *   .o-media {
+ *     position: relative;
+ *
+ *     &__link {
+ *       @include stretched-link;
+ *     }
+ *   }
+ *
+ * You can use it as utility class too:
+ * @see 6.utilities/_utilities.stretched-link.scss
+ */
+/**
+ * @file
+ * Text Tool
+ *
+ * Text block related tools
+ *
+ * @author Krisztian Pinter <krisz@keeteean.com>
+ * @see 6.utilities/_utilities.text.scss for BEM based class named version
+ */
+/**
+ * Text-align Mixin
+ *
+ * @parameter {string} $align - Align value ex.: start.
+ * @parameter {string} $last - Optional, align value for justify aligned last line.
+ *
+ * Examples
+ *
+ * Simple text align.
+ *
+ * @example
+ *   .c-button {
+ *     @include text-align(center);
+ *   }
+ *
+ * Align last line of a justify text.
+ *
+ * @example
+ *   .section__lead {
+ *     @include text-align(justify, start);
+ *   }
+ */
+/**
+ * Text Overflow behaviors
+ *
+ * Text Ellipsis
+ *
+ * Overflow behavior: display an ellipsis to represent clipped text.
+ * Only works on single line text!
+ *
+ * Borrowed from Spectre.css
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__lead {
+ *     @include text-ellipsis;
+ *   }
+ */
+/**
+ * Text Clip
+ *
+ * Overflow behavior: truncate the text.
+ *
+ * Borrowed from Spectre.css
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__lead {
+ *     @include text-clip;
+ *   }
+ */
+/**
+ * Text Break
+ *
+ * Text may be broken at arbitrary points.
+ *
+ * Part of Shake.sass, borrowed from Spectre.css.
+ * @author Yan Zhu <picturepan2@hotmail.com>
+ * @author Krisztian Pinter <krisz@keeteean.com>
+ * @link https://picturepan2.github.io/spectre/utilities/text.html
+ *
+ * @example
+ *   .article__body {
+ *     @include text-break;
+ *   }
+ */
+/**
+ * @file
+ * CSS Triangle Tool
+ *
+ * Generates a triangle pointing in a specified direction.
+ *
+ * Borrowed from bourbon
+ * @link https://www.bourbon.io/docs/latest#triangle
+ * *
+ * @example
+ *   .button__arrow {
+ *     @include make-triangle(right, 1.5rem, 1rem, $color-secondary);
+ *   }
+ */
+/**
+ * Make Triangle mixin
+ *
+ * @parameter {string} $direction
+ *   The direction the triangle should point. Accepts `up`, `up-right`,
+ *   `right`, `down-right`, `down`, `down-left`, `left` or `up-left`.
+ *
+ * @parameter {number (with unit)} $width
+ *   Width of the triangle.
+ *
+ * @parameter {number (with unit)} $height
+ *   Height of the triangle.
+ *
+ * @parameter {color} $color
+ *   Color of the triangle.
+ */
+/**
+ * @file
+ * Typography Tool
+ *
+ * Inline typography related mixins.
+ */
+/**
+ * Font Antialiasing
+ *
+ * Makes font thickness to look the same in Firefox and Webkit.
+ *
+ * @example
+ *   h1 {
+ *     @include font-smooth;
+ *   }
+ */
+/**
+ * @file
+ * CSS Custom Variable Tool
+ ******************************************************************************
+ *
+ * To write CSS variables faster in SCSS.
+ */
+/**
+ * v() function
+ *
+ * @example
+ *  :root {
+ *    --primary: #000;
+ *  }
+ *
+ *  color: v(primary);
+ */
+/**
+ * @file
+ * Visibility Tool
+ *
+ * Control the visibility, without modifying the display, of elements with
+ * visibility utilities.
+ *
+ * @see 6.utilities/_utilities.visibility.scss for BEM based class named version
+ */
+/**
+ * Visually Hidden
+ *
+ * Use visually-hidden mixin to hide elements on all devices except screen
+ * readers.
+ *
+ * borrowed from iota.css
+ * @author Dimitris Psaropoulos <info@harby.me>
+ * @link https://www.iotacss.com/docs/utilities/display
+ *
+ * @example
+ *   .page__title {
+ *     @include visually-hidden;
+ *   }
+ */
+/**
+ * Focusable Visually hidden
+ *
+ * Use in conjunction with `visually-hidden` to only display content when it's focused.
+ * Useful for "Skip to main content" links.
+ * @see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+ *
+ * borrowed from HTML5 Boilerplate
+ *
+ * @example
+ *   .skip-navigation {
+ *      @include visually-hidden;
+ *      @include visually-hidden--focusable;
+ *   }
+ */
+/**
+ * @file
+ * CSS Custom Variables
+ *
+ * Here you can define your CSS variables. Unlike Sass variables, these will be
+ * compiled to final CSS file. You can access these values in the browsers,
+ * change these on the fly via JavaScript or modify values as you need in CSS.
+ *
+ * If you want to use a Sass variable as value, you must interpolate that:
+ *
+ * @example
+ *   #d24744
+ *
+ * With Variable Tool you can use CSS custom properties in a faster way:
+ *
+ * @example
+ *   :root {
+ *     --color-details: v(color-elements-white);
+ *   }
+ */
+/*:root {
+  --color-font: #12284c;
+  --color-body: white;
+}*/
+/**
+ * Dark version
+ */
+:root .global-hash-dark-version {
+  --color-font: white;
+  --color-body: #222327;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * @file
+ * Typography element
+ *
+ * Text elements.
+ */
+/**
+* @group Basic elements
+*/
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #12284c;
+  background-color: #efefef;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  word-wrap: break-word;
+}
+
+::selection {
+  background-color: #26c9de;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #12284c;
+}
+a:hover {
+  color: #03070e;
+}
+a:focus {
+  outline: 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+[dir="ltr"] ul.menu,[dir="ltr"] 
+ul.links,[dir="ltr"] 
+.menu ul{
+  padding-left: 0;
+}
+
+[dir="rtl"] ul.menu,[dir="rtl"] 
+ul.links,[dir="rtl"] 
+.menu ul{
+  padding-right: 0;
+}
+
+ul.menu,
+ul.links,
+.menu ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+select { /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' overflow='visible' preserveAspectRatio='none' viewBox='0 0 24 24' width='32' height='32'%3E%3Cg%3E%3Cpath xmlns:default='http://www.w3.org/2000/svg' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z' style='fill: rgb(18, 18, 18);' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+[dir=ltr] select {
+  background-position: 97% center;
+}
+[dir=rtl] select {
+  background-position: 3% center;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.field--type-text-long a,
+.field--name-body a {
+  color: #26c9de;
+  text-decoration: underline;
+}
+.field--type-text-long a:hover,
+.field--name-body a:hover {
+  text-decoration: none;
+}
+
+p.text-align-justify {
+  text-align: justify;
+}
+
+[dir="ltr"] .text-formatted ul,[dir="ltr"] 
+.text-formatted ol{
+  margin-left: 1em;
+}
+
+[dir="rtl"] .text-formatted ul,[dir="rtl"] 
+.text-formatted ol{
+  margin-right: 1em;
+}
+
+/**
+ * @file
+ * Settings
+ *
+ * Setting files contain **global** configurations that are shared by more than
+ * one modules. Settings that are connected to one and only module are a part
+ * of the module itself.
+ * Local configurations should be contained into the modules (objects,
+ * components, etc.) that are related to.
+ * It’s important not to output any CSS in the first 2 layers.
+ */
+/**
+ * @file
+ * Breakpoint Settings
+ *
+ * Foundation for Sites 6 Media Queries
+ * @see documentation, usage: https://foundation.zurb.com/sites/docs/media-queries.html
+ *
+ * - Define breakpoint variables as Sass map
+ * - Provide a breakpoint variable for print media
+ * - Provide breakpoint classes for Foundation for Sites 6 XY Grid
+ *
+ * We have to use here only px, it will be converted to em by
+ * Foundation's utility.
+ */
+/**
+ * @file
+ * Color Settings
+ *
+ * - Define color variables
+ */
+/**
+ * @file
+ * Foundation for Sites 6 XY Grid Settings
+ *
+ * @author ZURB
+ * @licence MIT
+ * @see options: https://foundation.zurb.com/sites/docs/xy-grid.html
+ *
+ * - Define some global Foundation 6 settings what required for XY Grid
+ * - Define breakpoint variables
+ */
+/**
+ * Sets the text direction of the CSS. Can be either `ltr` or `rtl`.
+ *
+ * @type Keyword
+ */
+/**
+ * Enables flexbox for components that support it.
+ *
+ * @type Boolean
+ */
+/**
+ * @file
+ * Typography Settings
+ *
+ * - Import Webfonts
+ * - Define Font-families
+ * - Define Typography-related global variables
+ */
+.view-header {
+  margin-bottom: 6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+}
+
+.media-wrapper {
+  clear: both;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media print, screen and (min-width: 48em) {
+  .media-wrapper {
+    flex-wrap: nowrap;
+    padding: 4rem 6.2rem;
+  }
+}
+.media-wrapper.highlighted {
+  box-shadow: inset 0 0 0 0.5rem #26c9de;
+}
+.media-wrapper .left {
+  flex: 1 0 100%;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+@media print, screen and (min-width: 48em) {
+  [dir="ltr"] .media-wrapper .left{
+    margin-right: 4.7rem;
+  }
+  [dir="rtl"] .media-wrapper .left{
+    margin-left: 4.7rem;
+  }
+  .media-wrapper .left {
+    flex: 1 0 25%;
+    max-width: 25%;
+    display: inline-grid;
+    margin-bottom: 0;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .media-wrapper .left {
+    flex: 1 0 20.6rem;
+    max-width: 20.6rem;
+  }
+}
+.media-wrapper .left .field--name-thumbnail {
+  max-width: 20.6rem;
+  max-height: 45rem;
+  margin: 0 auto;
+}
+.media-wrapper .left .field--name-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.media-wrapper .right {
+  display: inline-grid;
+}
+.media-wrapper .right .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.16;
+}
+@media print, screen and (min-width: 48em) {
+  .media-wrapper .right .title {
+    font-size: 3rem;
+  }
+}
+.media-wrapper .right .subtitle {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.media-wrapper .right .subtitle .created {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #757575;
+  text-decoration: none;
+}
+[dir="ltr"] .media-wrapper .right .subtitle .created .field--type-created{
+  float: left;
+}
+[dir="rtl"] .media-wrapper .right .subtitle .created .field--type-created{
+  float: right;
+}
+.media-wrapper .right .subtitle .category {
+  display: inline-block;
+}
+.media-wrapper .right .subtitle .category a {
+  font-family: "Open Sans", sans-serif;
+  color: #26c9de;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.media-wrapper .right .field--name-field-lead {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  margin-bottom: 1rem;
+}
+.media-wrapper .right .field--name-field-tags {
+  margin-top: 2rem;
+}
+.media-wrapper .right .field--name-field-tags .field__label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  text-decoration: none;
+}
+[dir="ltr"] .media-wrapper .right .field--name-field-tags .field__items{
+  margin-left: 0.5rem;
+}
+[dir="rtl"] .media-wrapper .right .field--name-field-tags .field__items{
+  margin-right: 0.5rem;
+}
+.media-wrapper .right .field--name-field-tags .field__item {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #12284c;
+  text-decoration: underline;
+}
+.media-wrapper .right .read-more {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #26c9de;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 2.6rem;
+}
+
+.pager {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #0f1d40;
+  text-decoration: none;
+  letter-spacing: 1rem;
+}
+.pager .pager__item--next,
+.pager .pager__item--previous,
+.pager .pager__item--last,
+.pager .pager__item--first {
+  letter-spacing: 0.1rem;
+}
+
+.view-empty {
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 4.9rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9pbmRleC5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuYWxsLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5icmVha3BvaW50cy5zY3NzIiwiMS5zZXR0aW5ncy9fc2V0dGluZ3MuY29sb3JzLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy5ncmlkLnNjc3MiLCIxLnNldHRpbmdzL19zZXR0aW5ncy50eXBvZ3JhcGh5LnNjc3MiLCIyLnRvb2xzL190b29scy5hbGwuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLmNsZWFyZml4LnNjc3MiLCIyLnRvb2xzL190b29scy5mb3JtLnNjc3MiLCIyLnRvb2xzL190b29scy5ncmlkLnNjc3MiLCIyLnRvb2xzL190b29scy5taXhpbnMuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnN0cmV0Y2hlZC1saW5rLnNjc3MiLCIyLnRvb2xzL190b29scy50ZXh0LnNjc3MiLCIyLnRvb2xzL190b29scy50cmlhbmdsZS5zY3NzIiwiMi50b29scy9fdG9vbHMudHlwb2dyYXBoeS5zY3NzIiwiMi50b29scy9fdG9vbHMudmFyaWFibGUuc2NzcyIsIjIudG9vbHMvX3Rvb2xzLnZpc2liaWxpdHkuc2NzcyIsIjMuYmFzZS9fYmFzZS5jc3Mtc2V0dGluZ3Muc2NzcyIsIjMuYmFzZS9fYmFzZS50eXBvZ3JhcGh5LnNjc3MiLCI1LmNvbXBvbmVudHMvY29tcG9uZW50cy5kb2MtbGlzdGVyLnNjc3MiLCIuLi8uLi9ub2RlX21vZHVsZXMvZm91bmRhdGlvbi1zaXRlcy9zY3NzL3V0aWwvX2JyZWFrcG9pbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFRQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQ1JBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUNBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQVlBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFXQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDdkJBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUxxQkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FNckJBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFTQTtBQUFBO0FBQUE7QUNUQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUNBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFPQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQWdDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDdkNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQ0VBO0FBQUE7QUFBQTtBQUFBO0FBUUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQTBDRTtFQUVFO0VBQ0E7O0FBRUY7RUFDRTs7O0FBbUtKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBb0NBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUF1QkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBV0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBY0E7QUFBQTtBQUFBO0FBQUE7QUFvQkE7QUFBQTtBQUFBO0FBQUE7QUFZQTtBQUFBO0FBQUE7QUFBQTtBQWFBO0FBQUE7QUFBQTtBQUFBO0FBYUE7QUFBQTtBQUFBO0FBQUE7QUFZQTtBQUFBO0FBQUE7QUFBQTtBQVdBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUF1Q0E7QUFBQTtBQUFBO0FBQUE7QUE0QkE7QUFBQTtBQUFBO0FBQUE7QUF1QkE7QUFBQTtBQUFBO0FBQUE7QUF3QkE7QUFBQTtBQUFBO0FDcGZBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBVUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFrQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBd0JBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQXFCQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUN6RkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQWVBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDZkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBT0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUNQQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQVFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDUkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBVUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBeUJBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQ25DQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBcUJBO0FBQUE7QUFBQTtBQUFBO0FBS0E7QUFBQTtBQUFBO0FBR0E7RUFDRTtFQUNBOzs7QUFHRjtFQUNFOzs7QUNuQ0Y7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBT0E7QUFBQTtBQUFBO0FBR0E7RUFDRTtFQUNBO0VBQ0E7OztBQUlGO0VBQ0UsYWJLb0I7RWFKcEIsT2ZId0I7RWVJeEIsa0JmQ3dCO0VlQXhCLFdiUW9CO0VhUHBCLGFiVW9CO0VhVHBCOzs7QUFHRjtFQUNFLGtCZlZ3QjtFZVd4Qjs7O0FBR0Y7RUFDRTtFQUNBLE9makJ3Qjs7QWVtQnhCO0VBQ0U7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTs7QUFHRjtFQUNFOzs7QUFJSjtBQUFBO0VBRUU7RUFDQTs7O0FBR0Y7QUFBQTtBQUFBO0VBR0U7RUFDQTs7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7OztBQUdGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtFQU1FOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUdGO0VBQ0U7OztBQU1GO0FBQUE7RUFDRSxPZnhGc0I7RWV5RnRCOztBQUVBO0FBQUE7RUFDRTs7O0FBS047RUFDRTs7O0FBSUE7QUFBQTtFQUVFOzs7QWpCekhKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUNBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQVlBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFXQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FDdkJBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QWNLQTtFQUNFO0VBQ0EsYWRrQlU7RWNqQlY7RUFDQSxPaEJPd0I7OztBZ0JKMUI7RUFDRTtFQUNBO0VBQ0Esa0JoQlB3QjtFZ0JReEI7RUFDQTtFQUNBO0VBQ0E7O0FDZ0tNO0VEdktSO0lBVUk7SUFDQTs7O0FBR0Y7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTs7QUNrSkk7RURySk47SUFNSTtJQUNBO0lBQ0E7SUFDQTtJQUNBOzs7QUMySUU7RURySk47SUFjSTtJQUNBOzs7QUFHRjtFQUNFO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBS047RUFDRTs7QUFFQTtFQUNFLGFkdENZO0VjdUNaO0VBQ0E7RUFDQTtFQUNBOztBQytHRTtFRHBISjtJQVFJOzs7QUFJSjtFQUNFO0VBQ0E7O0FBRUE7RUFLRTtFQUNBLGFkNURJO0VjNkRKO0VBQ0E7RUFDQTs7QUFSQTtFQUNFOztBQVVKO0VBQ0U7O0FBRUE7RUFDRSxhZHRFRTtFY3VFRixPaEIvRWdCO0VnQmdGaEI7RUFDQTs7QUFLTjtFQUNFLGFkL0VNO0VjZ0ZOO0VBQ0EsT2hCMUZvQjtFZ0IyRnBCOztBQUdGO0VBQ0U7O0FBRUE7RUFDRSxhZHpGSTtFYzBGSjtFQUNBLE9oQnBHa0I7RWdCcUdsQjs7QUFHRjtFQUNFOztBQUdGO0VBQ0U7RUFDQSxhZHJHSTtFY3NHSjtFQUNBLE9oQmhIa0I7RWdCaUhsQjs7QUFJSjtFQUNFLGFkN0dNO0VjOEdOO0VBQ0EsT2hCdkhvQjtFZ0J3SHBCO0VBQ0E7RUFDQTtFQUNBOzs7QUFLTjtFQUNFLGFkekhVO0VjMEhWO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0FBQUE7QUFBQTtBQUFBO0VBSUU7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQSxhZDVJVSIsImZpbGUiOiI1LmNvbXBvbmVudHMvY29tcG9uZW50cy5kb2MtbGlzdGVyLmNzcyJ9 */
+
 /*# sourceMappingURL=../../maps/5.components/components.doc-lister.css.map */
