@@ -26,22 +26,25 @@ const config = {
   paths: {
     styles: {
       src: './src/sass/**/*.scss',
-      dest: './css/'
+      dest: './css/',
     },
     scripts: {
       src: './src/js/**/*.js',
-      dest: './js/'
-    }
+      dest: './js/',
+    },
   },
   cssnano: {
-    preset: ['lite', {
-      discardDuplicates      : true,
-      discardOverridden      : true,
-      mergeRules             : true,
-      normalizeCharset       : true,
-      normalizeString        : true,
-      normalizeWhitespace    : false,
-    }]
+    preset: [
+      'lite',
+      {
+        discardDuplicates: true,
+        discardOverridden: true,
+        mergeRules: true,
+        normalizeCharset: true,
+        normalizeString: true,
+        normalizeWhitespace: false,
+      },
+    ],
   },
   postcssPresetEnv: {
     stage: 1,
@@ -57,7 +60,7 @@ const config = {
       'has-pseudo-class': false,
       'image-set-function': false,
       'prefers-color-scheme-query': false,
-    }
+    },
   },
   sass: {
     outputStyle: 'expanded',
@@ -90,20 +93,20 @@ let watchTaskNoSync = '';
  */
 function sassCompileDev(done) {
   gulp
-    .src(config.paths.styles.src, { sourcemaps: true })
-    .pipe(sourcemaps.init({ largeFile: true }))
-      .pipe(sassGlob())
-      .pipe(sass(config.sass))
-      .on('error', sass.logError)
-    .pipe(sourcemaps.write({ includeContent: false }))
-    .pipe(sourcemaps.init({ loadMaps: true }))
-      .pipe(postcss([
+    .src(config.paths.styles.src)
+    .pipe(sourcemaps.init())
+    .pipe(sassGlob())
+    .pipe(sass.sync(config.sass))
+    .on('error', sass.logError)
+    .pipe(
+      postcss([
         autoprefixer,
         postcssPresetEnv(config.postcssPresetEnv),
-        sorting
-      ]))
-    .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest(config.paths.styles.dest))
+        sorting,
+      ]),
+    )
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.paths.styles.dest));
   done();
 }
 
@@ -111,15 +114,17 @@ function sassCompileProd(done) {
   gulp
     .src(config.paths.styles.src)
     .pipe(sassGlob())
-    .pipe(sass(config.sass))
+    .pipe(sass.sync(config.sass))
     .on('error', sass.logError)
-    .pipe(postcss([
-      autoprefixer,
-      postcssPresetEnv(config.postcssPresetEnv),
-      sorting,
-      cssnano(config.cssnano)
-    ]))
-    .pipe(gulp.dest(config.paths.styles.dest))
+    .pipe(
+      postcss([
+        autoprefixer,
+        postcssPresetEnv(config.postcssPresetEnv),
+        sorting,
+        cssnano(config.cssnano),
+      ]),
+    )
+    .pipe(gulp.dest(config.paths.styles.dest));
   done();
 }
 
@@ -131,19 +136,19 @@ function sassCompileProd(done) {
  * executing that done function tells Gulp "a hint to tell it when the task is done".
  */
 function sassLintTask(done) {
-  gulp
-    .src(config.paths.styles.src)
-    .pipe(stylelint({
+  gulp.src(config.paths.styles.src).pipe(
+    stylelint({
       reporters: [
         {
           formatter: 'verbose',
-          console: true
-        }
+          console: true,
+        },
       ],
       debug: true,
       failAfterError: false,
-      fix: true
-    }))
+      fix: true,
+    }),
+  );
   done();
 }
 
@@ -161,11 +166,15 @@ function scriptsTask(done) {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(eslint({ fix: true }))
     .pipe(eslint.format())
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest(config.paths.scripts.dest))
+    .pipe(
+      babel({
+        presets: [
+          '@babel/env'
+        ],
+      }),
+    )
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.paths.scripts.dest));
   done();
 }
 
@@ -234,16 +243,16 @@ const watchNoSync = () => gulp.watch(
 );
 
 // Define complex tasks
-compileTask = gulp.parallel(sassCompileDev, scriptsTask);
-watchTask = gulp.series(compileTask, browserSyncTask, watch);
-watchTaskNoSync = gulp.series(compileTask, watchNoSync);
+compileTask           = gulp.parallel(sassCompileDev, scriptsTask);
+watchTask             = gulp.series(compileTask, browserSyncTask, watch);
+watchTaskNoSync       = gulp.series(compileTask, watchNoSync);
 
 /**
  * Export Gulp tasks
  */
-exports.default = watchTask;
+exports.default       = watchTask;
 exports.defaultNoSync = watchTaskNoSync;
-exports.prod = gulp.parallel(sassCompileProd, scriptsTask);
-exports.sassDev = sassCompileDev;
-exports.sassProd = sassCompileProd;
-exports.scripts = scriptsTask;
+exports.prod          = gulp.parallel(sassCompileProd, scriptsTask);
+exports.sassDev       = sassCompileDev;
+exports.sassProd      = sassCompileProd;
+exports.scripts       = scriptsTask;
