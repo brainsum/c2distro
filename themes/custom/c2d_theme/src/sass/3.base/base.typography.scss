@@ -8,6 +8,12 @@
 /**
 * @group Basic elements
 */
+@import "../index";
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
