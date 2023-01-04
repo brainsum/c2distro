@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-{{ attach_library('c2d_theme/custom_share_button') }}
+{{ attach_library('c2d_theme/share-button') }}
 {%
   set classes = [
     'node',
@@ -106,7 +106,7 @@
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="content-header">
       {% if view_mode == 'full' %}
-        {% include '@c2d_theme/custom/share-button.twig' %}
+        {% include '@c2d_theme/includes/share-button.twig' %}
       {% endif %}
       <div class="created-time">{{ content.field_date }} </div>
     </div>
