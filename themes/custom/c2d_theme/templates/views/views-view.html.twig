@@ -31,8 +31,15 @@
  */
 #}
 
-{% if id is same as('events') %}
-  {{ attach_library('c2d_theme/lister_page.view_events') }}
+{% if id is same as('events') and display_id is same as('lister_page') %}
+  {{ attach_library('c2d_theme/views.events.page') }}
+{% elseif id is same as('news') and display_id is same as('lister_page') %}
+  {{ attach_library('c2d_theme/views.news') }}
+{% elseif id is same as('search') %}
+  {{ attach_library('c2d_theme/views.resources.page') }}
+  {% if display_id is same as('page') %}
+    {{ attach_library('c2d_theme/views.search.page') }}
+  {% endif %}
 {% endif %}
 
 {%

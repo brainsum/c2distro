@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph--type--link-boxes > .paragraph--inner > .field__items{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:-5%;
+}
+@media print, screen and (min-width: 48em){
+  .paragraph--type--link-boxes > .paragraph--inner > .field__items{
+    margin:-2.5% 0;
+  }
+}
+.paragraph--type--link-boxes > .paragraph--inner > .field__items > .field__item{
+  width:100%;
+  margin-top:0;
+  margin-bottom:5%;
+  margin-left:0;
+  margin-right:0;
+  background-color:#e8e8e8;
+  font-size:1.4rem;
+}
+@media print, screen and (min-width: 48em){
+  .paragraph--type--link-boxes > .paragraph--inner > .field__items > .field__item{
+    width:40%;
+    margin:2.5%;
+  }
+}
+.paragraph--type--link-boxes > .paragraph--inner .view,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box{
+  padding-top:2.5rem;
+  padding-bottom:4.5rem;
+  padding-left:2.5rem;
+  padding-right:2.5rem;
+  text-align:center;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .paragraph--inner,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .paragraph--inner{
+  position:relative;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-header h3,
+.paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-title,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-header h3,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-title{
+  margin-bottom:4rem;
+  font-family:"Montserrat", sans-serif;
+  font-size:2rem;
+  font-weight:700;
+}
+[dir="ltr"] .paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media,[dir="ltr"] 
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media{
+  right:0;}
+[dir="rtl"] .paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media,[dir="rtl"] 
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media{
+  left:0;}
+.paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media{
+  position:absolute;
+  top:0;
+  width:4rem;
+  height:4rem;
+}
+[dir="ltr"] .paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media img,[dir="ltr"] 
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media img{
+  margin-left:auto;}
+[dir="rtl"] .paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media img,[dir="rtl"] 
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media img{
+  margin-right:auto;}
+.paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-media img,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-media img{
+  display:block;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .views-row,
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .field__item,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .views-row,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .field__item,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .views-row,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .field__item,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .views-row,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .field__item{
+  margin-bottom:2.8rem;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .views-row:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .field__item:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .views-row:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .field__item:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .views-row:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .field__item:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .views-row:last-child,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .field__item:last-child{
+  margin-bottom:0;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .views-row a,
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content .field__item a,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .views-row a,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items .field__item a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .views-row a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content .field__item a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .views-row a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items .field__item a{
+  font-size:1.4rem;
+  line-height:3rem;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-content + .field__items,
+.paragraph--type--link-boxes > .paragraph--inner .view .field__items + .field__items,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-content + .field__items,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field__items + .field__items{
+  margin-top:2.8rem;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-footer a,
+.paragraph--type--link-boxes > .paragraph--inner .view .field--name-field-links a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-footer a,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-links a{
+  text-decoration:underline;
+}
+.paragraph--type--link-boxes > .paragraph--inner .view .view-footer,
+.paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-footer{
+  margin-top:3.5rem;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.views-element-container > .block-inner{
+  max-width:122.2rem;
+  margin:0 auto;
+  padding:0;
+}
+.views-element-container > .block-inner .title-holder{
+  font-family:"Montserrat", sans-serif;
+  font-size:3rem;
+  color:#12284c;
+  text-decoration:none;
+  line-height:4rem;
+  font-weight:700;
+  margin-top:6rem;
+}
+@media print, screen and (min-width: 48em){
+  .views-element-container > .block-inner .title-holder{
+    font-size:4rem;
+  }
+}

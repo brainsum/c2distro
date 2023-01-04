@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.region.region-top{
+  position:relative;
+  top:0;
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top{
+    margin-top:-12rem;
+  }
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top .hero-block-type{
+    display:flex;
+    justify-content:center;
+    width:100%;
+  }
+}
+.region.region-top .hero-block-type .hero-text{
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+  margin-top:4.5rem;
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top .hero-block-type .hero-text{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:transparent;
+    max-width:127rem;
+    margin-top:6rem;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:white;
+  }
+}
+.region.region-top .hero-block-type .hero-text .hero-text-container-title{
+  text-align:center;
+  font-family:"Montserrat", sans-serif;
+  font-size:3.6rem;
+  text-decoration:none;
+  line-height:1.11;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.1rem;
+  margin-bottom:1rem;
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top .hero-block-type .hero-text .hero-text-container-title{
+    font-size:4rem;
+    color:#ffffff;
+  }
+}
+.region.region-top .hero-block-type .hero-text .hero-text-container-description{
+  margin-inside:auto;
+  max-width:83rem;
+  text-align:center;
+  font-family:"Open Sans", sans-serif;
+  font-size:1.8rem;
+  text-decoration:none;
+  line-height:1.66;
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top .hero-block-type .hero-text .hero-text-container-description{
+    color:#ffffff;
+  }
+}
+.region.region-top .hero-block-type .hero-text .flex-centered{
+  margin-top:3rem;
+}
+.region.region-top .hero-block-type .hero-text .bordered-button-blue{
+  color:#12284c;
+}
+@media print, screen and (min-width: 80em){
+  .region.region-top .hero-block-type .hero-text .bordered-button-blue{
+    color:#ffffff;
+  }
+}

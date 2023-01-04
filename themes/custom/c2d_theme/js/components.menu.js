@@ -9,15 +9,15 @@
         var $mainMenu = $(context).find('.menu--main');
         var $expandableItem = $(context).find('.menu-item--expanded .js-dropdown-arrow');
         var $body = $('body');
-        $hamburgerIcon.on('click', function hamburgerAction() {
+        $hamburgerIcon.on('click', function () {
           $mainMenu.addClass('open');
           $body.addClass('js-menu-is-open');
         });
-        $closeMenuIcon.on('click', function closeMenuAction() {
+        $closeMenuIcon.on('click', function () {
           $mainMenu.removeClass('open');
           $body.removeClass('js-menu-is-open');
         });
-        $expandableItem.on('click', function expandItem(event) {
+        $expandableItem.on('click', function (event) {
           var $itemParent = $(event.target).parent();
           // closeSearch();
           if ($itemParent.hasClass('opened')) {
@@ -31,4 +31,4 @@
     }
   };
 })(jQuery, Drupal);
-//# sourceMappingURL=../maps/components.menu.js.map
+//# sourceMappingURL=components.menu.js.map

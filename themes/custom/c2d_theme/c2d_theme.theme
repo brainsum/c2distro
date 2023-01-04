@@ -15,22 +15,11 @@ function c2d_theme_preprocess_page(array &$variables) {
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
 
-  if (\Drupal::service('path.matcher')->isFrontPage()) {
-    $variables['#attached']['library'][] = 'c2d_theme/h1.page_title_center';
-  }
-
   if (($route_name === 'entity.contact_form.canonical') || ($route_name === 'contact.site_page')) {
     $variables['#attached']['library'][] = 'c2d_theme/entity.contact_form.canonical';
 
     // Temporary removed.
     // ($variables['#attached']['library'][] = 'c2d_theme/submit.loader';)
-  }
-
-  if ($route_name === 'view.news.lister_page') {
-    $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
-  }
-  if ($route_name === 'view.events.lister_page') {
-    $variables['#attached']['library'][] = 'c2d_theme/view.events.lister_page';
   }
 
   $media = \Drupal::routeMatch()->getParameter('media');
@@ -61,7 +50,7 @@ function c2d_theme_preprocess_page(array &$variables) {
     'entity.user.canonical',
   ];
   if (in_array($route_name, $specialRoutes)) {
-    $variables['#attached']['library'][] = 'c2d_theme/special_pages';
+    $variables['#attached']['library'][] = 'c2d_theme/pages.special';
   }
 }
 
@@ -90,31 +79,20 @@ function c2d_theme_preprocess_block(&$variables) {
   if ($variables['derivative_plugin_id'] == 'search-resources') {
     $variables['#cache']['max-age'] = 0;
   }
-  if ($blockId === 'views_block__selector_cards_selector_cards_block') {
-    $variables['#attached']['library'][] = 'c2d_theme/views_block__selector_cards_selector_cards_block';
-  }
-  if ($blockId === 'views_block__news_lister_block') {
-    $variables['#attached']['library'][] = 'c2d_theme/view.news.lister_page';
-    $variables['#attached']['library'][] = 'c2d_theme/views_block__news_lister_block';
-  }
-
 }
 
 /**
  * Implements hook_preprocess().
  */
 function c2d_theme_preprocess(&$vars, $hook) {
-
   $vars['share_url'] = \Drupal::request()->getSchemeAndHttpHost() . \Drupal::request()->getPathInfo();
-
 }
 
 /**
  * Implements template_preprocess_paragraph().
  */
 function c2d_theme_preprocess_paragraph__cta(&$variables) {
-  $variables['#attached']['library'][] = 'c2d_theme/paragraphs-base';
-  $variables['#attached']['library'][] = 'c2d_theme/paragraph_cta';
+  $variables['#attached']['library'][] = 'c2d_theme/paragraph.cta';
 }
 
 /**

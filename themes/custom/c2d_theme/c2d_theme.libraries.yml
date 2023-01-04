@@ -16,185 +16,233 @@ global-styling:
   dependencies:
     - core/jquery
     - core/drupal
+
+# Paragraph Types
 paragraphs-base:
-  version: 1.0
+  version: 1.1.0
   css:
-    theme:
+    component:
       css/5.components/components.paragraphs-base.css: {}
-paragraph-text:
-  version: 1.0
+
+paragraph.accordion:
+  version: 1.1.0
   css:
-    theme:
-      css/5.components/components.paragraph-text.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph-text-media:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.paragraph-text-media.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph-link-boxes:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.paragraph-link-boxes.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph-small-boxes:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.paragraph-small-boxes.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph-partners:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.paragraph-partners.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph-accordion:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.paragraph-accordion.css: { }
+    component:
+      css/5.components/components.paragraph.accordion.css: { }
   js:
-    js/src/accordion.js: {}
+    js/components.paragraph.accordion.js: {}
   dependencies:
     - c2d_theme/paragraphs-base
     - core/jquery
-popup:
-  version: 1.0
+
+paragraph.cta:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.cta.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.link-boxes:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.link-boxes.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.partners:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.partners.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.popup:
+  version: 1.1.0
   js:
-    js/src/popup.js: {}
+    js/components.paragraph.popup.js: {}
   dependencies:
     - core/jquery
-timeline:
-  version: 1.0
+
+paragraph.quote:
+  version: 1.1.0
   js:
-    js/src/timeline.js: {}
+    js/components.paragraph.quote.js: {}
   dependencies:
     - core/jquery
-quote:
-  version: 1.0
+
+paragraph.small-boxes:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.small-boxes.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.text:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.text.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.text-media:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.text-media.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.timeline:
+  version: 1.1.0
   js:
-    js/src/quote.js: {}
+    js/components.paragraph.timeline.js: {}
   dependencies:
     - core/jquery
+
+paragraph.views.documents:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.views.documents.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.views.events:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.views.events.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+    - c2d_theme/views.events
+
+paragraph.views.news:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.views.news.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+    - c2d_theme/views.news
+
+# Block
+block.footer:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.footer.css: {}
+
+block.hero:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.hero.css: {}
+
+block.title:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.title.css: {}
+
+# Facets
+facets:
+  css:
+    component:
+      css/5.components/components.facets.css: {}
+
+# Form
+submit.loader:
+  css:
+    component:
+      css/5.components/components.submit.loader.css: {}
+  js:
+    js/components.submit.loader.js: {}
+
+# Includes
+share-button:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.share-button.css: {}
+  js:
+    js/components.share-button.js: { }
+
+# Misc
+messages:
+  css:
+    component:
+      css/5.components/components.messages.css: {}
+
+# Navigation
+pager:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.pager.css: {}
+
+# Pages
+pages.special:
+  css:
+    theme:
+      css/7.pages/pages.special.css: {}
+
+# Views
+views.events:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.events.css: {}
+
+views.news:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.news.css: {}
+
+views.resources.page:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.resources.page.css: {}
+
+views.search.page:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.search.page.css: {}
+
+views.selector-cards:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.selector-cards.css: {}
+
+# TODO
 entity.node.canonical.page:
   version: 1.0
   css:
-    theme:
+    component:
       css/5.components/components.entity.node.canonical.page.css: {}
-view.news.lister_page:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.h1.page_title.css: {}
-      css/5.components/components.view.news.lister_page.css: {}
-view.events.lister_page:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.h1.page_title.css: {}
-      css/5.components/components.view.events.lister_page.css: {}
-entity.node.canonical.news:
-  version: 1.0
-  css:
-    theme:
-      css/5.components/components.h1.page_title.css: {}
-      css/5.components/components.tags.css: {}
-      css/5.components/components.entity.node.canonical.news.css: {}
-hphero.block:
-  css:
-    theme:
-      css/5.components/components.hphero.block.css: {}
-footerblockcontent.block:
-  css:
-    theme:
-      css/5.components/components.footerblockcontent.block.css: {}
-entity.media.canonical.document:
-  css:
-    theme:
-      css/5.components/components.h1.page_title.css: {}
-      css/5.components/components.tags.css: {}
-      css/5.components/components.entity.media.canonical.document.css: {}
-share_button_from_ifrc:
-  js:
-    js/src/custom/share_button_from_ifrc.js: {}
-  css:
-    theme:
-      css/5.components/components.share_button_from_ifrc.css: {}
-resources:
-  css:
-    theme:
-      css/5.components/components.facets.css: {}
-search:
-  css:
-    theme:
-      css/5.components/components.search.css: {}
-documents:
-  css:
-    theme:
-      css/5.components/components.doc-lister.css: {}
-views_block__selector_cards_selector_cards_block:
-  css:
-    theme:
-      css/5.components/components.views_block__selector_cards_selector_cards_block.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-paragraph_cta:
-  css:
-    theme:
-      css/5.components/components.paragraph_cta.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-pager:
-  css:
-    theme:
-      css/5.components/components.pager.css: {}
-views_block__news_lister_block:
-  css:
-    theme:
-      css/5.components/components.views_block__news_lister_block.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
+
 entity.contact_form.canonical:
   css:
-    theme:
+    component:
       css/5.components/components.entity.contact_form.canonical.css: {}
-      css/5.components/components.h1.page_title.css: {}
-h1.page_title_center:
-  version: 1.0
+
+entity.node.canonical.news:
+  version: 1.0.0
   css:
-    theme:
-      css/5.components/components.h1.page_title_center.css: {}
-submit.loader:
-  js:
-    js/src/custom/submit.loader.js: {}
+    component:
+      css/5.components/components.tags.css: {}
+      css/5.components/components.entity.node.canonical.news.css: {}
+
+entity.media.canonical.document:
   css:
-    theme:
-      css/5.components/components.submit.loader.css: {}
-lister_page.view_events:
-  css:
-    theme:
-      css/5.components/components.lister_page.view_events.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-lister_page.view_documents:
-  css:
-    theme:
-      css/5.components/components.lister_page.view_documents.css: {}
-  dependencies:
-    - c2d_theme/paragraphs-base
-special_pages:
-  css:
-    theme:
-      css/5.components/components.special_pages.css: {}
-messages:
-  css:
-    theme:
-      css/5.components/components.messages.css: {}
+    component:
+      css/5.components/components.tags.css: {}
+      css/5.components/components.entity.media.canonical.document.css: {}

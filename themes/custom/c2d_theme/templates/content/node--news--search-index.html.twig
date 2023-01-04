@@ -70,18 +70,19 @@
  *   in different view modes.
  */
 #}
-{{ attach_library('c2d_theme/custom_share_button') }}
 {%
   set classes = [
-  'node',
-  'node--type-' ~ node.bundle|clean_class,
-  node.isPromoted() ? 'node--promoted',
-  node.isSticky() ? 'node--sticky',
-  not node.isPublished() ? 'node--unpublished',
-  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-]
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
 %}
+
 {{ attach_library('classy/node') }}
+
 <article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
 
   {{ title_prefix }}
