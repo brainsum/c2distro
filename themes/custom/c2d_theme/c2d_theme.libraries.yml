@@ -11,7 +11,8 @@ global-styling:
     theme:
       css/theme.css: {}
   js:
-    js/src/menu.js: {}
+    js/components.menu.js: {}
+#    js/theme.js: {}
   dependencies:
     - core/jquery
     - core/drupal
