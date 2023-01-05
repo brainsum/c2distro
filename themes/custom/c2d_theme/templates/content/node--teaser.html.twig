@@ -82,8 +82,6 @@
 %}
 
 <article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
-  {{ title_prefix }}
-  {{ title_suffix }}
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content.field_image }}
     {{ content.field_date }}

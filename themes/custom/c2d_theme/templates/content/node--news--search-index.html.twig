@@ -70,6 +70,9 @@
  *   in different view modes.
  */
 #}
+
+{{ attach_library('classy/node') }}
+
 {%
   set classes = [
     'node',
@@ -81,10 +84,7 @@
   ]
 %}
 
-{{ attach_library('classy/node') }}
-
 <article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
-
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -111,5 +111,4 @@
     </div>
     {{ content|without('field_date') }}
   </div>
-
 </article>
