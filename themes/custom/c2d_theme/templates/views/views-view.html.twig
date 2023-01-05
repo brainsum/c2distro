@@ -32,7 +32,7 @@
 #}
 
 {% if id is same as('events') and display_id is same as('lister_page') %}
-  {{ attach_library('c2d_theme/views.events.page') }}
+  {{ attach_library('c2d_theme/views.events') }}
 {% elseif id is same as('news') and display_id is same as('lister_page') %}
   {{ attach_library('c2d_theme/views.news') }}
 {% elseif id is same as('search') %}

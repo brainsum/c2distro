@@ -23,6 +23,17 @@ footer {
   }
 }
 
+.views-element-container > .block-inner {
+  max-width: 122.2rem;
+  margin: 0 auto;
+  padding: 0;
+
+  .title-holder {
+    @include block-title-simple;
+    margin-block-start: 6rem;
+  }
+}
+
 .block-views-blockevents-upcoming-events-block {
   @include block-title-simple;
 
