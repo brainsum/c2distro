@@ -8,6 +8,7 @@ global-styling:
       css/layout.css: {}
     component:
       css/components.css: {}
+      css/5.components/components.button.css: {}
     theme:
       css/theme.css: {}
   js:
