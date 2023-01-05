@@ -31,4 +31,4 @@
     }
   };
 })(jQuery, Drupal);
-//# sourceMappingURL=components.menu.js.map
+//# sourceMappingURL=components.navigation-menu.js.map

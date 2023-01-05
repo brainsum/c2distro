@@ -7,31 +7,7 @@
  * @package: navigation
  */
 
-.social-block {
-  @include flex;
-  @include align-items(center);
-
-  margin-inline-start: auto;
-
-  .block-dropdown-language + & {
-    @include breakpoint(medium) {
-      margin-inline-start: 0;
-    }
-  }
-
-  img {
-    width: 2.4rem;
-    height: 2.4rem;
-
-    @include breakpoint(medium down) {
-      margin-inline-end: 1.5rem;
-    }
-  }
-
-  .bordered-button {
-    padding: 1.4rem 5.1rem;
-  }
-}
+@import '../index';
 
 .mobile-icons {
   @include flex;
@@ -436,19 +412,5 @@ li.menu-item.menu-item--expanded.opened span {
         }
       }
     }
-  }
-}
-
-body.fixed {
-  padding-block-start: 11.6rem;
-
-  .block-country-navigation {
-    position: fixed;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inset-inline-end: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 0 1rem rgba($body-font-color, 0.3);
   }
 }

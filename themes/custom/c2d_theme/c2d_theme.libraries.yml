@@ -12,7 +12,6 @@ global-styling:
     theme:
       css/theme.css: {}
   js:
-    js/components.menu.js: {}
 #    js/theme.js: {}
   dependencies:
     - core/jquery
@@ -118,6 +117,14 @@ messages:
       css/5.components/components.messages.css: {}
 
 # Navigation
+navigation-menu:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.navigation-menu.css: {}
+  js:
+    js/components.navigation-menu.js: {}
+
 pager:
   version: 1.1.0
   css:
