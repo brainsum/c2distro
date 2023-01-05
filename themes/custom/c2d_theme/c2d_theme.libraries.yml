@@ -86,6 +86,12 @@ field:
     component:
       css/5.components/components.field.css: {}
 
+field.image:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.field.image.css: {}
+
 # Form
 form:
   version: 1.1.0
