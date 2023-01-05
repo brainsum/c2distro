@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Field component
+ *
+ * Common field styles.
+ */
+
+@import '../index';
+
+.field--label-inline {
+  @include flex;
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+
+  @include breakpoint(medium) {
+    @include flex-direction(row);
+  }
+
+  font-family: $font-open;
+
+  .field__label {
+    font-weight: 700;
+
+    &:after {
+      content: ": ";
+    }
+  }
+}

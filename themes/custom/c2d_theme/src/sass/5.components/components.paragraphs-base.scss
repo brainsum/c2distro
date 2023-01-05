@@ -3,6 +3,7 @@
 
 .paragraph {
   font-family: $font-primary;
+
   // style options
   &.background-color {
     &--white {
@@ -24,6 +25,31 @@
     font-size: 3rem;
     line-height: 1.25;
     font-weight: 700;
+  }
+
+  .block-holder {
+    .block-inner {
+      position: relative;
+
+      .title-holder {
+        z-index: 10;
+        position: absolute;
+        inset-inline: 0;
+        inset-block-start: -2.5rem;
+        margin: 0;
+
+        span {
+          @include block-title;
+        }
+      }
+    }
+  }
+
+  > .paragraph--inner {
+    .field--name-field-text,
+    .field--name-field-plaintext {
+      @include font-open-18;
+    }
   }
 }
 
@@ -86,14 +112,5 @@
 .paragraph--type--small-boxes {
   > .paragraph--inner {
     @include width-1105;
-  }
-}
-
-.paragraph {
-  > .paragraph--inner {
-    .field--name-field-text,
-    .field--name-field-plaintext {
-      @include font-open-18;
-    }
   }
 }
