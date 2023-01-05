@@ -17,6 +17,93 @@ global-styling:
     - core/jquery
     - core/drupal
 
+# Block
+block.footer:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.footer.css: {}
+
+block.hero:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.hero.css: {}
+
+block.title:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.block.title.css: {}
+
+# Content
+node.event:
+  version: 1.0.0
+  dependencies:
+    - c2d_theme/node.news
+
+node.news:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.node.news.css: {}
+  dependencies:
+    - c2d_theme/tags
+
+node.page:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.node.page.css: {}
+
+tags:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.tags.css: {}
+
+# Facets
+facets:
+  css:
+    component:
+      css/5.components/components.facets.css: {}
+
+# Form
+submit.loader:
+  css:
+    component:
+      css/5.components/components.submit.loader.css: {}
+  js:
+    js/components.submit.loader.js: {}
+
+# Includes
+share-button:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.share-button.css: {}
+  js:
+    js/components.share-button.js: { }
+
+# Misc
+messages:
+  css:
+    component:
+      css/5.components/components.messages.css: {}
+
+# Navigation
+pager:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.pager.css: {}
+
+# Pages
+pages.special:
+  css:
+    theme:
+      css/7.pages/pages.special.css: {}
+
 # Paragraph Types
 paragraphs-base:
   version: 1.1.0
@@ -129,67 +216,6 @@ paragraph.views.news:
   dependencies:
     - c2d_theme/paragraphs-base
     - c2d_theme/views.news
-
-# Block
-block.footer:
-  version: 1.1.0
-  css:
-    component:
-      css/5.components/components.block.footer.css: {}
-
-block.hero:
-  version: 1.1.0
-  css:
-    component:
-      css/5.components/components.block.hero.css: {}
-
-block.title:
-  version: 1.1.0
-  css:
-    component:
-      css/5.components/components.block.title.css: {}
-
-# Facets
-facets:
-  css:
-    component:
-      css/5.components/components.facets.css: {}
-
-# Form
-submit.loader:
-  css:
-    component:
-      css/5.components/components.submit.loader.css: {}
-  js:
-    js/components.submit.loader.js: {}
-
-# Includes
-share-button:
-  version: 1.1.0
-  css:
-    component:
-      css/5.components/components.share-button.css: {}
-  js:
-    js/components.share-button.js: { }
-
-# Misc
-messages:
-  css:
-    component:
-      css/5.components/components.messages.css: {}
-
-# Navigation
-pager:
-  version: 1.1.0
-  css:
-    component:
-      css/5.components/components.pager.css: {}
-
-# Pages
-pages.special:
-  css:
-    theme:
-      css/7.pages/pages.special.css: {}
 
 # Views
 views.events:
