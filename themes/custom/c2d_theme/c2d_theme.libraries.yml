@@ -113,6 +113,12 @@ pager:
     component:
       css/5.components/components.pager.css: {}
 
+primary-tabs:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.primary-tabs.css: {}
+
 # Pages
 pages.special:
   css:

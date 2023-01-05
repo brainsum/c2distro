@@ -6,20 +6,10 @@
 .clearfix:after{
   clear:both;
 }
-#block-tabs nav.tabs{
-  max-width:113.5rem;
-  margin-top:2rem;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:1rem;
-}
-
 [dir="ltr"] .file{
   padding-left:0;}
-
 [dir="rtl"] .file{
   padding-right:0;}
-
 .file{
   background-image:none !important;
 }
