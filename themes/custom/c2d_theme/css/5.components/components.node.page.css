@@ -6,6 +6,26 @@
 .clearfix:after{
   clear:both;
 }
+.page-node-type-page .block-page-title-block{
+  margin-top:5rem;
+  margin-bottom:5rem;
+}
+@media print, screen and (min-width: 48em){
+  .page-node-type-page .block-page-title-block{
+    margin-top:6rem;
+    margin-bottom:6rem;
+  }
+}
+.page-node-type-page .block-page-title-block .block-inner{
+  max-width:88.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+}
+.page-node-type-page .block-page-title-block .page-title{
+  text-align:center;
+  line-height:1.225;
+}
 .page-node-type-page .field--name-body,
 .page-node-type-page .field--name-field-lead{
   max-width:68.5rem;

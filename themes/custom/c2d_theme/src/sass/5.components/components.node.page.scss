@@ -1,6 +1,23 @@
 @import "../index";
 
 .page-node-type-page {
+  .block-page-title-block {
+    margin-block: 5rem;
+
+    @include breakpoint(medium) {
+      margin-block: 6rem;
+    }
+
+    .block-inner {
+      @include width-855;
+    }
+
+    .page-title {
+      text-align: center;
+      line-height: 1.225;
+    }
+  }
+
   .field--name-body,
   .field--name-field-lead {
     @include width-655;

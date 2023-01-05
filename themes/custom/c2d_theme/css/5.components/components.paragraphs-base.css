@@ -24,6 +24,42 @@
   line-height:1.25;
   font-weight:700;
 }
+.paragraph .block-holder .block-inner{
+  position:relative;
+}
+.paragraph .block-holder .block-inner .title-holder{
+  z-index:10;
+  position:absolute;
+  left:0;
+  right:0;
+  top:-2.5rem;
+  margin:0;
+}
+[dir="ltr"] .paragraph .block-holder .block-inner .title-holder span{
+  margin-left:1.5rem;}
+[dir="rtl"] .paragraph .block-holder .block-inner .title-holder span{
+  margin-right:1.5rem;}
+.paragraph .block-holder .block-inner .title-holder span{
+  font-family:"Montserrat", sans-serif !important;
+}
+.paragraph .block-holder .block-inner .title-holder span{
+  font-size:3.6rem;
+  font-weight:700;
+  color:#ffffff;
+  background-color:#12284c;
+  padding:0.2rem 0;
+  margin-top:-2.3rem;
+  box-shadow:2.6rem 0 0 #12284c, -1.9rem 0 0 #12284c;
+  -webkit-box-decoration-break:clone;
+          box-decoration-break:clone;
+  line-height:5rem;
+}
+.paragraph > .paragraph--inner .field--name-field-text,
+.paragraph > .paragraph--inner .field--name-field-plaintext{
+  font-family:"Open Sans", sans-serif;
+  font-size:1.8rem;
+  line-height:1.66;
+}
 
 .paragraph--type--text,
 .paragraph--type--cta,
@@ -103,11 +139,4 @@
   margin-left:auto;
   margin-right:auto;
   padding:0 1.5rem;
-}
-
-.paragraph > .paragraph--inner .field--name-field-text,
-.paragraph > .paragraph--inner .field--name-field-plaintext{
-  font-family:"Open Sans", sans-serif;
-  font-size:1.8rem;
-  line-height:1.66;
 }

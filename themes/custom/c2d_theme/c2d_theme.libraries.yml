@@ -72,11 +72,19 @@ tags:
 
 # Facets
 facets:
+  version: 1.0.0
   css:
     component:
       css/5.components/components.facets.css: {}
   dependencies:
     - c2d_theme/form
+
+# Field
+field:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.field.css: {}
 
 # Form
 form:
