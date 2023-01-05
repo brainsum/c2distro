@@ -1,3 +1,40 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.page-node-type-page .field--name-body,
+.page-node-type-page .field--name-field-lead{
+  max-width:68.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 1.5rem;
+  font-family:"Open Sans", sans-serif;
+  font-size:1.8rem;
+  line-height:1.66;
+  padding-bottom:5.5rem;
+  color:#12284c;
+  text-decoration:none;
+  text-align:center;
+  margin-top:2rem;
+}
+.page-node-type-page .block-page-title-block + .node--type-page .field--name-body,
+.page-node-type-page .block-page-title-block + .node--type-page .field--name-field-lead{
+  margin-top:-3rem;
+}
+@media print, screen and (min-width: 48em){
+  .page-node-type-page .block-page-title-block + .node--type-page .field--name-body,
+  .page-node-type-page .block-page-title-block + .node--type-page .field--name-field-lead{
+    margin-top:-4rem;
+  }
+}
+.page-node-type-page .field--name-field-lead{
+  font-weight:700;
+}
+
 .White{
   background-color:white;
 }
