@@ -22,14 +22,6 @@ function c2d_theme_preprocess_page(array &$variables) {
     // ($variables['#attached']['library'][] = 'c2d_theme/submit.loader';)
   }
 
-  $media = \Drupal::routeMatch()->getParameter('media');
-  if ($media) {
-    $typeName = $media->bundle();
-    if ($typeName === 'document') {
-      $variables['#attached']['library'][] = 'c2d_theme/entity.media.canonical.document';
-    }
-  }
-
   $specialRoutes = [
     'system.404',
     'system.403',
