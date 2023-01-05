@@ -70,7 +70,11 @@
  *   in different view modes.
  */
 #}
+
+{{ attach_library('classy/node') }}
+{{ attach_library('c2d_theme/node.news') }}
 {{ attach_library('c2d_theme/share-button') }}
+
 {%
   set classes = [
     'node',
@@ -82,9 +86,7 @@
   ]
 %}
 
-{{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
-
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -107,16 +109,9 @@
     <div class="content-header">
       {% if view_mode == 'full' %}
         {% include '@c2d_theme/includes/share-button.twig' %}
-        <div class="content-header-text">
-          <div class="created-time">{{ content.field_event_date }}</div>
-          <div class="location">{{ content.field_location }}</div>
-        </div>
-      {% else %}
-        <div class="created-time">{{ content.field_event_date }}</div>
-        <div class="location">{{ content.field_location }}</div>
       {% endif %}
+      <div class="created-time">{{ content.field_date }} </div>
     </div>
-    {{ content|without('field_event_date', 'field_location') }}
+    {{ content|without('field_date') }}
   </div>
-
 </article>

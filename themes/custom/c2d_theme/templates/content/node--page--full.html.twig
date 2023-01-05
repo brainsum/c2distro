@@ -70,6 +70,10 @@
  *   in different view modes.
  */
 #}
+
+{{ attach_library('classy/node') }}
+{{ attach_library('c2d_theme/node.page') }}
+
 {%
   set classes = [
     'node',
@@ -81,10 +85,7 @@
   ]
 %}
 
-{{ attach_library('classy/node') }}
-
 <article {{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
-
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -106,5 +107,4 @@
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
   </div>
-
 </article>
