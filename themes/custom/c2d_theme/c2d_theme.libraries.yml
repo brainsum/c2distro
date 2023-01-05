@@ -37,6 +37,14 @@ block.title:
       css/5.components/components.block.title.css: {}
 
 # Content
+media.document:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.media.document.css: {}
+  dependencies:
+    - c2d_theme/tags
+
 node.event:
   version: 1.0.0
   dependencies:
@@ -251,9 +259,3 @@ entity.contact_form.canonical:
   css:
     component:
       css/5.components/components.entity.contact_form.canonical.css: {}
-
-entity.media.canonical.document:
-  css:
-    component:
-      css/5.components/components.tags.css: {}
-      css/5.components/components.entity.media.canonical.document.css: {}
