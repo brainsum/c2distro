@@ -8,7 +8,6 @@
  */
 .flex-centered {
   display: flex;
-  -mox-box-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -19,25 +18,25 @@
 
 .bordered-button-blue {
   @include bordered-button-blue;
-}
 
-.region-header {
-  .social-block {
-    .social-icon {
-      margin-inline-start: .8rem;
-    }
 
-    .bordered-button {
-      margin-inline-start: 2.8rem;
 
-      @include breakpoint(medium down) {
-        display: none;
-      }
-    }
-  }
-}
 
-.donate-button {
-  background-color: $color-secondary;
-  color: $color-lightest;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

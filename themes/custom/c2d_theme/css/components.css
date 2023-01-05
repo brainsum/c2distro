@@ -8,7 +8,6 @@
 }
 .flex-centered{
   display:flex;
-  -mox-box-align:center;
   align-items:center;
   justify-content:center;
 }
@@ -67,26 +66,6 @@
   }
 }
 .bordered-button-blue:hover{
-  background-color:#26c9de;
-  color:#ffffff;
-}
-
-[dir="ltr"] .region-header .social-block .social-icon{
-  margin-left:0.8rem;}
-
-[dir="rtl"] .region-header .social-block .social-icon{
-  margin-right:0.8rem;}
-[dir="ltr"] .region-header .social-block .bordered-button{
-  margin-left:2.8rem;}
-[dir="rtl"] .region-header .social-block .bordered-button{
-  margin-right:2.8rem;}
-@media print, screen and (max-width: 63.99875em){
-  .region-header .social-block .bordered-button{
-    display:none;
-  }
-}
-
-.donate-button{
   background-color:#26c9de;
   color:#ffffff;
 }
