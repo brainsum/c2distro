@@ -246,23 +246,11 @@ views.selector-cards:
       css/5.components/components.views.selector-cards.css: {}
 
 # TODO
-entity.node.canonical.page:
-  version: 1.0
-  css:
-    component:
-      css/5.components/components.entity.node.canonical.page.css: {}
 
 entity.contact_form.canonical:
   css:
     component:
       css/5.components/components.entity.contact_form.canonical.css: {}
-
-entity.node.canonical.news:
-  version: 1.0.0
-  css:
-    component:
-      css/5.components/components.tags.css: {}
-      css/5.components/components.entity.node.canonical.news.css: {}
 
 entity.media.canonical.document:
   css:

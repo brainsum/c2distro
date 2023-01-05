@@ -30,17 +30,6 @@ function c2d_theme_preprocess_page(array &$variables) {
     }
   }
 
-  $node = \Drupal::routeMatch()->getParameter('node');
-  if ($node) {
-    $typeName = $node->bundle();
-    if ($typeName === 'page') {
-      $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.page';
-    }
-    if (($typeName === 'news') || ($typeName === 'event')) {
-      $variables['#attached']['library'][] = 'c2d_theme/entity.node.canonical.news';
-    }
-  }
-
   $specialRoutes = [
     'system.404',
     'system.403',
