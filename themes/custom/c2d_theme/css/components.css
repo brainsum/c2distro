@@ -70,27 +70,6 @@
   color:#ffffff;
 }
 
-.contact-block .block-inner{
-  max-width:122.2rem;
-  margin-left:auto;
-  margin-right:auto;
-  padding:0 1.5rem;
-  position:relative;
-  padding-top:9rem;
-  padding-bottom:9rem;
-  padding-left:0;
-  padding-right:0;
-  text-align:center;
-}
-@media print, screen and (min-width: 64em){
-  .contact-block .block-inner{
-    padding-top:9rem;
-    padding-left:0;
-    padding-right:0;
-    padding-bottom:15rem;
-  }
-}
-
 .page-node-type-region #block-dislaw-theme-page-title,
 .page-node-type-country #block-dislaw-theme-page-title{
   padding:4rem 0;
