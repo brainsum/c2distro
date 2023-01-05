@@ -77,6 +77,12 @@ facets:
       css/5.components/components.facets.css: {}
 
 # Form
+form.contact:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.form.contact.css: {}
+
 submit.loader:
   css:
     component:
@@ -252,10 +258,3 @@ views.selector-cards:
   css:
     component:
       css/5.components/components.views.selector-cards.css: {}
-
-# TODO
-
-entity.contact_form.canonical:
-  css:
-    component:
-      css/5.components/components.entity.contact_form.canonical.css: {}

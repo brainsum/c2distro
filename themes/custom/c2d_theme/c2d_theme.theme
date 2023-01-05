@@ -16,7 +16,7 @@ function c2d_theme_preprocess_page(array &$variables) {
   $route_name = $current_route->getRouteName();
 
   if (($route_name === 'entity.contact_form.canonical') || ($route_name === 'contact.site_page')) {
-    $variables['#attached']['library'][] = 'c2d_theme/entity.contact_form.canonical';
+    $variables['#attached']['library'][] = 'c2d_theme/form.contact';
 
     // Temporary removed.
     // ($variables['#attached']['library'][] = 'c2d_theme/submit.loader';)
