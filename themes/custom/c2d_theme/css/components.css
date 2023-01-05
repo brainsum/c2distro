@@ -6,57 +6,6 @@
 .clearfix:after{
   clear:both;
 }
-.block-country-map{
-  margin-bottom:1rem;
-}
-@media print, screen and (min-width: 64em){
-  .block-country-map{
-    margin-bottom:-5.5rem;
-    position:relative;
-  }
-}
-.block-country-map .block-inner{
-  max-width:128rem;
-  margin:0 auto;
-}
-.block-country-map #map{
-  height:38rem;
-}
-@media print, screen and (min-width: 64em){
-  .block-country-map #map{
-    height:60rem;
-  }
-}
-
-#map button.gm-ui-hover-effect{
-  display:none !important;
-}
-#map .iw-modal__heading{
-  font-weight:700;
-}
-#map a.iw-modal__to-contact{
-  transition:all, 0.2s;
-  border:0.2rem solid #26c9de;
-  display:inline-block;
-  font-size:1.3rem;
-  padding:0.5rem 1.5rem;
-  margin-top:2.5rem;
-  font-weight:700;
-}
-#map a.iw-modal__to-contact:hover{
-  border-color:#12284c;
-  background-color:#12284c;
-  color:#ffffff;
-}
-#map .gm-style .gm-style-iw{
-  font-weight:400;
-}
-#map .gm-style .gm-style-iw-c{
-  max-width:21rem !important;
-}
-#map .gm-style .gm-style-iw-c{
-  border-radius:0;
-}
 [dir="ltr"] .social-block{
   margin-left:auto;}
 [dir="rtl"] .social-block{
