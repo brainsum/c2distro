@@ -70,6 +70,9 @@
  *   in different view modes.
  */
 #}
+
+{{ attach_library('classy/node') }}
+
 {%
   set classes = [
     'node',
@@ -80,9 +83,8 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
 
+<article{{ attributes.addClass(classes)|without('role', 'lang', 'dir') }}>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -107,7 +109,7 @@
       <div class="created-time-pipe">|</div>
       <div class="media-bundle">{{ node.bundle|capitalize }}</div>
     </div>
+
     {{ content }}
   </div>
-
 </article>
