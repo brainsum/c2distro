@@ -6,39 +6,6 @@
 .clearfix:after{
   clear:both;
 }
-.layout-content{
-  width:100%;
-  margin:0 auto;
-}
-
-.section-holder.white{
-  background-color:#ffffff;
-}
-
-#block-dislaw-theme-content{
-  max-width:113.5rem;
-  margin:0 auto;
-  padding-bottom:3rem;
-}
-
-.path-node #block-dislaw-theme-content,
-.path-contact #block-dislaw-theme-content,
-.page-node-type-page #block-dislaw-theme-content,
-.path-disaster-law-database #block-dislaw-theme-content,
-.path-drm-index-search #block-dislaw-theme-content,
-.path-media #block-dislaw-theme-content,
-.path-dmi #block-dislaw-theme-content,
-.path-news-events #block-dislaw-theme-content,
-.path-user #block-dislaw-theme-content,
-.path-search #block-dislaw-theme-content,
-.path-frontpage #block-dislaw-theme-content,
-.page-node-type-news #block-dislaw-theme-content{
-  max-width:none;
-  margin:0;
-  margin:initial;
-  padding-bottom:0;
-  padding-bottom:initial;
-}
 @media print, screen and (max-width: 47.99875em){
   #toolbar-administration #admin-toolbar-search-tab{
     display:none;
