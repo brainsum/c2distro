@@ -1,11 +1,16 @@
 /**
  * @file
- * Field component
+ * Field Component
  *
  * Common field styles.
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .field--label-inline {
   @include flex;

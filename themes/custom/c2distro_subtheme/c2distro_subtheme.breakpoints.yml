@@ -1,0 +1,51 @@
+c2d_theme.small:
+  label: small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+    - 3x
+c2d_theme.mobile:
+  label: mobile (375px)
+  mediaQuery: 'all and (min-width: 23.438em)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+c2d_theme.medium:
+  label: medium (768px)
+  mediaQuery: 'all and (min-width: 48em)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+c2d_theme.tablet:
+  label: tablet (1024px)
+  mediaQuery: 'all and (min-width: 64em)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+c2d_theme.desktop:
+  label: desktop (1280px)
+  mediaQuery: 'all and (min-width: 80em)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+c2d_theme.large:
+  label: large (1440px)
+  mediaQuery: 'all and (min-width: 90em)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+c2d_theme.xxlarge:
+  label: xxlarge (1920px)
+  mediaQuery: 'all and (min-width: 120em)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x

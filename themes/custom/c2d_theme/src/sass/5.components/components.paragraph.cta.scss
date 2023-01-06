@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * CTA Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .paragraph--type--cta {
   .field--name-field-title {

@@ -1,5 +1,14 @@
+/**
+ * @file
+ * Text and Media Paragraph Type Component
+ */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .paragraph--type--text-media {
   .paragraph--inner {

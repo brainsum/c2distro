@@ -7,7 +7,12 @@
  * @package: interactive
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .flex-centered {
   display: flex;

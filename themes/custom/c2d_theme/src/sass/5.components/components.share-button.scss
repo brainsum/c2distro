@@ -1,4 +1,18 @@
-@import '../index';
+/**
+ * @file
+ * Share Button Component
+ *
+ * Borrowed from IFRC.org.
+ *
+ * @package: interactive
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .share-button--links li {
   list-style: none;

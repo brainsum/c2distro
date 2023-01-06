@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * News Lister Page Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .views-field-field-media-thumbnail:before,
 .views-field-field-image:before {

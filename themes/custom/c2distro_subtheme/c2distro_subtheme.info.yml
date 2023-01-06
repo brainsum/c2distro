@@ -7,45 +7,51 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 libraries-override:
   c2d_theme/global-styling: c2distro_subtheme/global-styling
-  c2d_theme/paragraphs-base: c2distro_subtheme/paragraphs-base
-  c2d_theme/paragraph-text: c2distro_subtheme/paragraph-text
-  c2d_theme/paragraph-text-media: c2distro_subtheme/paragraph-text-media
-  c2d_theme/paragraph-link-boxes: c2distro_subtheme/paragraph-link-boxes
-  c2d_theme/paragraph-small-boxes: c2distro_subtheme/paragraph-small-boxes
-  c2d_theme/paragraph-partners: c2distro_subtheme/paragraph-partners
-  c2d_theme/paragraph-accordion: c2distro_subtheme/paragraph-accordion
-  c2d_theme/popup: c2distro_subtheme/popup
-  c2d_theme/timeline: c2distro_subtheme/timeline
-  c2d_theme/quote: c2distro_subtheme/quote
-  c2d_theme/entity.node.canonical.page: c2distro_subtheme/entity.node.canonical.page
-  c2d_theme/view.news.lister_page: c2distro_subtheme/view.news.lister_page
-  c2d_theme/view.events.lister_page: c2distro_subtheme/view.events.lister_page
-  c2d_theme/hphero.block: c2distro_subtheme/hphero.block
-  c2d_theme/footerblockcontent.block: c2distro_subtheme/footerblockcontent.block
-  c2d_theme/entity.media.canonical.document: c2distro_subtheme/entity.media.canonical.document
-  c2d_theme/share_button_from_ifrc: c2distro_subtheme/share_button_from_ifrc
-  c2d_theme/resources: c2distro_subtheme/resources
-  c2d_theme/search: c2distro_subtheme/search
-  c2d_theme/documents: c2distro_subtheme/documents
-  c2d_theme/views_block__selector_cards_selector_cards_block: c2distro_subtheme/views_block__selector_cards_selector_cards_block
-  c2d_theme/paragraph_cta: c2distro_subtheme/paragraph_cta
-  c2d_theme/pager: c2distro_subtheme/pager
-  c2d_theme/views_block__news_lister_block: c2distro_subtheme/views_block__news_lister_block
-  c2d_theme/entity.contact_form.canonical: c2distro_subtheme/entity.contact_form.canonical
-  c2d_theme/h1.page_title_center: c2distro_subtheme/h1.page_title_center
+  c2d_theme/block.footer: c2distro_subtheme/block.footer
+  c2d_theme/block.hero: c2distro_subtheme/block.hero
+  c2d_theme/block.title: c2distro_subtheme/block.title
+  c2d_theme/media.document: c2distro_subtheme/media.document
+  c2d_theme/node.event: c2distro_subtheme/node.event
+  c2d_theme/node.news: c2distro_subtheme/node.news
+  c2d_theme/node.page: c2distro_subtheme/node.page
+  c2d_theme/tags: c2distro_subtheme/tags
+  c2d_theme/facets: c2distro_subtheme/facets
+  c2d_theme/field: c2distro_subtheme/field
+  c2d_theme/field.image: c2distro_subtheme/field.image
+  c2d_theme/form: c2distro_subtheme/form
+  c2d_theme/form.contact: c2distro_subtheme/form.contact
   c2d_theme/submit.loader: c2distro_subtheme/submit.loader
-  c2d_theme/lister_page.view_events: c2distro_subtheme/lister_page.view_events
-  c2d_theme/lister_page.view_documents: c2distro_subtheme/lister_page.view_documents
-  c2d_theme/special_pages: c2distro_subtheme/special_pages
+  c2d_theme/share-button: c2distro_subtheme/share-button
   c2d_theme/messages: c2distro_subtheme/messages
+  c2d_theme/navigation-menu: c2distro_subtheme/navigation-menu
+  c2d_theme/pager: c2distro_subtheme/pager
+  c2d_theme/primary-tabs: c2distro_subtheme/primary-tabs
+  c2d_theme/pages.special: c2distro_subtheme/pages.special
+  c2d_theme/paragraphs-base: c2distro_subtheme/paragraphs-base
+  c2d_theme/paragraph.accordion: c2distro_subtheme/paragraph.accordion
+  c2d_theme/paragraph.cta: c2distro_subtheme/paragraph.cta
+  c2d_theme/paragraph.link-boxes: c2distro_subtheme/paragraph.link-boxes
+  c2d_theme/paragraph.partners: c2distro_subtheme/paragraph.partners
+  c2d_theme/paragraph.popup: c2distro_subtheme/paragraph.popup
+  c2d_theme/paragraph.quote: c2distro_subtheme/paragraph.quote
+  c2d_theme/paragraph.small-boxes: c2distro_subtheme/paragraph.small-boxes
+  c2d_theme/paragraph.text: c2distro_subtheme/paragraph.text
+  c2d_theme/paragraph.text-media: c2distro_subtheme/paragraph.text-media
+  c2d_theme/paragraph.timeline: c2distro_subtheme/paragraph.timeline
+  c2d_theme/paragraph.views.documents: c2distro_subtheme/paragraph.views.documents
+  c2d_theme/paragraph.views.events: c2distro_subtheme/paragraph.views.events
+  c2d_theme/paragraph.views.news: c2distro_subtheme/paragraph.views.news
+  c2d_theme/views.events: c2distro_subtheme/views.events
+  c2d_theme/views.news: c2distro_subtheme/views.news
+  c2d_theme/views.resources.page: c2distro_subtheme/views.resources.page
+  c2d_theme/views.search.page: c2distro_subtheme/views.search.page
+  c2d_theme/views.selector-cards: c2distro_subtheme/views.selector-cards
 regions:
   top_bar: Top Bar
   header: Header
   navigation: Navigation
   featured: Featured
   top: Top
-  sidebar_first: 'Sidebar first'
   content: Content
-  sidebar_second: 'Sidebar second'
   bottom: Bottom
   footer: Footer

@@ -1,3 +1,14 @@
+/**
+ * @file
+ * Image Field component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 @mixin image-placeholder {
   &:before {

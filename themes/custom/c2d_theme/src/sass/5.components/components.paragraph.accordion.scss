@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * Accordion Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .paragraph--type--accordion {
   > .paragraph--inner > .field--name-field-text {
