@@ -28,7 +28,7 @@
 [dir="rtl"] .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title{
   right:0;}
 .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title{
-  font-family:"Montserrat", sans-serif !important;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 .paragraph--type--small-boxes > .paragraph--inner > .field--name-field-title{
   font-size:3.6rem;
@@ -70,7 +70,7 @@
 }
 
 .paragraph--type--small-box{
-  border:0.1rem solid #efefef;
+  border:0.1rem solid #f6f6f6;
   background-color:#ffffff;
 }
 .paragraph--type--small-box .paragraph--inner{
@@ -86,7 +86,7 @@
   width:100%;
   height:11.3rem;
   padding:2rem;
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.4rem;
   font-weight:700;
   line-height:2rem;

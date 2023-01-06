@@ -49,7 +49,7 @@
 .paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .view-header h3,
 .paragraph--type--link-boxes > .paragraph--inner .paragraph--type--link-box .field--name-field-title{
   margin-bottom:4rem;
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:2rem;
   font-weight:700;
 }

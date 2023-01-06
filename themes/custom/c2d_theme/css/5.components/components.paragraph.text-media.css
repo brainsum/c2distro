@@ -80,7 +80,7 @@
 [dir="rtl"] .paragraph--type--text-media .field--name-field-link a{
   padding-right:3rem;}
 .paragraph--type--text-media .field--name-field-link a{
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.8rem;
   line-height:1.66;
   position:relative;

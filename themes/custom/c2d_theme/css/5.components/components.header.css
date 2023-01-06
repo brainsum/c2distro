@@ -113,7 +113,7 @@ body:not(.js-menu-is-open) .region-header{
 .region-header .block-dropdown-language .block-inner{
   margin-top:1rem;
   margin-bottom:0;
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight:700;
   align-self:flex-start;
   cursor:pointer;
@@ -251,7 +251,7 @@ a.site-logo img{
   margin-top:0.5em;
 }
 .site-name a{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.5rem;
   color:#000;
   text-decoration:none;

@@ -68,7 +68,7 @@ footer .footer-block-type-body-item{
     padding-right:0;}
 }
 footer .footer-block-type-body-item .footer-title{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.6rem;
   color:#12284c;
   text-decoration:none;
@@ -82,7 +82,7 @@ footer .footer-block-type-body-item .footer-title{
 }
 footer .footer-block-type-body-item p,
 footer .footer-block-type-body-item a{
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.5rem;
   color:#12284c;
   text-decoration:none;
@@ -107,7 +107,7 @@ footer .footer-block-type-footer-content{
   max-width:113.5rem;
   margin:0 auto;
   padding:0 1.5rem;
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.5rem;
   color:#12284c;
   text-decoration:none;

@@ -12,7 +12,7 @@
   padding:0;
 }
 .views-element-container > .block-inner .title-holder{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:3rem;
   color:#12284c;
   text-decoration:none;
@@ -84,7 +84,7 @@
   align-items:baseline;
 }
 .lister-page.view-documents .view-content .views-row .content-header-text .field--name-created{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.4rem;
   color:#12284c;
   text-decoration:none;
@@ -94,7 +94,7 @@
 }
 .lister-page.view-documents .view-content .views-row .content-header-text .category-link a{
   color:#26c9de;
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration:none;
   line-height:1.9rem;
   font-weight:600;
@@ -109,7 +109,7 @@
 [dir="rtl"] .lister-page.view-documents .view-content .views-row .field--name-name{
   margin-left:4.6rem;}
 .lister-page.view-documents .view-content .views-row .field--name-name{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color:#12284c;
   font-size:1.8rem;
   text-decoration:none;
@@ -125,7 +125,7 @@
 [dir="rtl"] .lister-page.view-documents .view-content .views-row a.read-more{
   margin-right:2.6rem;}
 .lister-page.view-documents .view-content .views-row a.read-more{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color:#12284c;
   text-decoration:none;
   line-height:1.9rem;
@@ -147,7 +147,7 @@
   justify-content:center;
   align-items:center;
   margin:0 auto;
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.6rem;
   font-weight:600;
   color:#12284c;
