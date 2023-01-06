@@ -25,3 +25,10 @@
 .path-user form .form-actions input.form-submit{
   display:inline-flex;
 }
+
+.openid-connect-login-form{
+  text-align:center;
+}
+.openid-connect-login-form input.form-submit{
+  display:inline-flex;
+}
