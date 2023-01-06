@@ -1,15 +1,13 @@
 @import "../index";
 
 .region.region-top {
-  position: relative;
-  inset-block-start: 0;
-
   @include breakpoint(desktop) {
     margin-block-start: -12rem;
   }
 
   .hero-block-type {
     @include breakpoint(desktop) {
+      position: relative;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -29,7 +27,7 @@
         inset-block: 0;
         background-color: transparent;
         max-width: 127rem;
-        margin-block-start: 6rem;
+        margin-block-start: 12rem;
         margin-block-end: 0;
         margin-inline: auto;
         text-align: center;
