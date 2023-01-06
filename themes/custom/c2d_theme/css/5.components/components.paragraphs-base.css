@@ -7,7 +7,7 @@
   clear:both;
 }
 .paragraph{
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .paragraph.background-color--white{
   background-color:#ffffff;
@@ -16,7 +16,7 @@
   background-color:#e8e8e8;
 }
 .paragraph.background-color--lightgrey{
-  background-color:#f2f2f2;
+  background-color:#f6f6f6;
 }
 .paragraph .field--name-field-title{
   margin-bottom:2rem;
@@ -40,7 +40,7 @@
 [dir="rtl"] .paragraph .block-holder .block-inner .title-holder span{
   margin-right:1.5rem;}
 .paragraph .block-holder .block-inner .title-holder span{
-  font-family:"Montserrat", sans-serif !important;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 .paragraph .block-holder .block-inner .title-holder span{
   font-size:3.6rem;
@@ -56,7 +56,7 @@
 }
 .paragraph > .paragraph--inner .field--name-field-text,
 .paragraph > .paragraph--inner .field--name-field-plaintext{
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.8rem;
   line-height:1.66;
 }

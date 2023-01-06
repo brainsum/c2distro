@@ -61,7 +61,7 @@
     -ms-flex-grow:0;
     flex-grow:0;
     flex:1 1 0;
-    background-color:white;
+    background-color:#ffffff;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -72,7 +72,7 @@
   }
   .menu--main > .menu > .menu-item:hover, .menu--main > .menu > .menu-item:hover span, .menu--main > .menu > .menu-item:hover a{
     background-color:#12284c;
-    color:white;
+    color:#ffffff;
     transition:0.2s;
   }
 }
@@ -109,7 +109,7 @@
   .menu--main > .menu > .menu-item > span,
   .menu--main > .menu > .menu-item > a{
     color:#12284c;
-    background-color:white;
+    background-color:#ffffff;
     padding:0;
   }
 }
@@ -130,23 +130,10 @@
   color:#ffffff;
   background-color:#12284c;
 }
-@media print, screen and (min-width: 64em){
-  .menu--main > .menu > .menu-item.menu-item--active-trail{
-    color:#ffffff;
-    background-color:#12284c;
-  }
-}
 .menu--main > .menu > .menu-item.menu-item--active-trail > span,
 .menu--main > .menu > .menu-item.menu-item--active-trail > a{
   color:#ffffff;
   background-color:#12284c;
-}
-@media print, screen and (min-width: 48em){
-  .menu--main > .menu > .menu-item.menu-item--active-trail > span,
-  .menu--main > .menu > .menu-item.menu-item--active-trail > a{
-    color:white;
-    background-color:#12284c;
-  }
 }
 .menu--main > .menu .menu-item--expanded{
   position:relative;
@@ -224,7 +211,7 @@
 .menu--main > .menu .menu-item--expanded > .menu .menu-item a{
   white-space:pre-wrap;
   line-height:2rem;
-  color:white;
+  color:#ffffff;
   display:inline-block;
   text-align:center;
   padding-top:0;
@@ -348,7 +335,7 @@ li.menu-item.menu-item--expanded.opened span{
 }
 .menu--footer .menu .menu-item a{
   transition:color, 0.2s;
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.5rem;
   font-weight:400;
 }

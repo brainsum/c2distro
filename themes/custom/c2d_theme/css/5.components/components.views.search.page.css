@@ -114,7 +114,7 @@
 .view-taxonomy-term .media{
   padding:3rem;
   color:#12284c;
-  background:#fff;
+  background:#ffffff;
 }
 @media print, screen and (min-width: 23.5em){
   .view-search .node, .view-taxonomy-term .node,
@@ -198,7 +198,7 @@
 .view-search .media .field--name-field-lead,
 .view-taxonomy-term .media .field--name-field-lead{
   margin-top:1.5rem;
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .view-search .views-row, .view-taxonomy-term .views-row{

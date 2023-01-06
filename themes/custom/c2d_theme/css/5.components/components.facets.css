@@ -69,7 +69,7 @@
   background:#ffffff;
 }
 .block-facet-blocktags-of-document .facet-item a{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size:1.6rem;
   color:#12284c;
   text-decoration:none;
@@ -125,7 +125,7 @@
   }
 }
 .block-views-exposed-filter-blocksearch-resources .form-type-textfield input{
-  background-color:white;
+  background-color:#ffffff;
   border:1px solid #d4d4d4;
   background-image:url("../../images/dist/icons/search.svg");
   background-repeat:no-repeat;

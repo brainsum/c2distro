@@ -8,7 +8,7 @@
 }
 select.form-select,
 input[data-drupal-selector=edit-search-api-fulltext]{
-  font-family:"Open Sans", sans-serif;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   border:0;
   padding:0.9rem 1.1rem;
 }
@@ -93,7 +93,7 @@ select:focus{
 }
 
 input.form-submit{
-  font-family:"Montserrat", sans-serif !important;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   text-decoration:none !important;
 }
 
@@ -122,7 +122,7 @@ input.form-submit:hover{
 }
 
 input.form-submit.js-hide{
-  font-family:"Montserrat", sans-serif !important;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   text-decoration:none !important;
 }
 
@@ -241,7 +241,7 @@ input.form-submit.js-hide:hover{
   flex-wrap:wrap;
 }
 .contact-form .form-managed-file .form-submit{
-  font-family:"Montserrat", sans-serif !important;
+  font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   text-decoration:none !important;
 }
 .contact-form .form-managed-file .form-submit{
