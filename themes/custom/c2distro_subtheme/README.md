@@ -12,7 +12,7 @@ Following these instructions, you can create a new subtheme to any c2distro proj
    - Download, extract and overwrite the favicon package into `images/favicon` folder.
    - Copy the `favicon.ico` file into the custom theme root folder.
    - Copy the `mstile-150x150.png` into the custom theme root folder.
-6. Change the `name` value in `package.json` file.
+6. Change the project specific values in `package.json` file.
 7. Create an `.env` file from `env.example` and rewrite the url.
 8. Run `yarn start`. This' going to install all npm modules and start watching changes.
 

@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * Document Media Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .layout-content {
   background-color: $background-lightest;

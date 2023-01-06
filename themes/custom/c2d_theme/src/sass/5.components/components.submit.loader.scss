@@ -1,4 +1,16 @@
-@import '../index';
+/**
+ * @file
+ * Submit Loader Component
+ *
+ * @package: interactive
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 @keyframes lds-ripple {
   0% {

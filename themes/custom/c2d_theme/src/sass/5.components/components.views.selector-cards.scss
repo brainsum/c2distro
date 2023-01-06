@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * Selector Cards component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .block-page-title-block {
   margin-block-start: 6rem;

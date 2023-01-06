@@ -1,10 +1,10 @@
-# BRAINSUM's Drupal 8 startertheme
+# C2 Distro Theme
 
 * Created by: [Krisztian Pinter](kpinter@brainsum.com)
-* Created in: 2019.
-* Updated on: 2019.11.21.
+* Created in: 2020.
+* Updated on: 2022.01.06.
 
-## Table of Contents
+## Table of Contents
 
 * About
 * Installation
@@ -14,31 +14,30 @@
 
 ## About
 
-Drupal 8 startertheme based on core's Classy base theme. Build process powered
+The C2 Distro Theme based on core's Classy base theme. Build process powered
 by [Gulp.js 4](https://gulpjs.com/docs/en/getting-started/quick-start) and asset
 files (sass, css, js) structured, linted and compiled according to Drupal Coding
 Standards. You can equally run build processes by gulp commands or npm scripts.
 
 ## Installation
 
-You will need **node.js**, **npm**, **gulp-cli (min 4.0.0)** globally installed
-to working with this startertheme.
+You will need **node.js**, **npm (yarn preferred)**, **gulp-cli (min 4.0.0)** globally installed
+to working with this theme.
 
 ```bash
-cd {project}/web/themes/custom/
-git clone git@github.com:brainsum/drupal8-startertheme.git projectname_theme
-cd projectname_theme
-npm install
+cd {project}/web/profiles/contrib/c2distro/themes/custom/c2d_theme
+yarn install
 ```
 
 ## Usage
 
 We use here Gulp.js 4 as task runner. You can run the gulp tasks directly with
-gulp, like `gulp sassDev` or with package.json's scripts: `npm start` or
-`npm run start`. In both you can choose from the following tasks:
+gulp, like `gulp sassDev` or with package.json's scripts: `yarn start` or
+`yarn run scripts`. In both you can choose from the following tasks:
 
 ```bash
 start # run development version sass, scripts then watch and BrowserSync
+startNoSync # same as 'start' without BrowserSync
 prod # run production version sass and scripts. You must run it before commit
 sassDev # run development version sass; no watch, BrowserSync in this way
 sassProd # run production version sass
@@ -64,12 +63,12 @@ Theme's structure based on Drupal 8 coding standards and theme recommendations:
 * `css` directory: for all compiled css files (not commit map files)
 * `fonts` directory: for webfonts
 * `images` directory: for all theme images and graphics
-* `js` directory: for all JavaScript files*
-* `node_modules` directory: we need install all required frontend vendor
-libraries here
-* `sass` directory: Source sass files
+* `js` directory: for all compiled JavaScript files
+* `js/vendors` directory: all production needed vendor libraries used from here
+* `node_modules` directory: we need install all required frontend vendor libraries here
+* `src/js` directory: Source js files
+* `src/sass` directory: Source sass files
 * `templates` directory: all twig templates in Drupal module based structure
-* `vendors` directory: all production needed vendor libraries used from here
 
 ### Sass structure
 
@@ -95,29 +94,22 @@ and place the compiled js files to `dist` directory.
 
 ### Vendor libraries
 
-Because we don't use ES6 features, js bundlers, if you need a third party
-css/sass/js library and you want use it as library (instead of merging it into
-your src files): install it with npm to `node_modules`, then just run the
-`copyVendorsTask` from gulp.js. (It's part of `default`/`start` and `prod` tasks
-too.) It will search dist version of the library and copy it into `vendors`
-directory.
-For example __Glide JS__ library added to `dependencies` and run
-`vendors` task. As you can see only the needed files have been copied from
-`node_modules` to `vendors` directory. However this is just for demonstration
-purposes, you can remove it if you don't want to use.
+Because we don't use js bundlers, if you need a third party
+css/sass/js library, and you want use it as library (instead of merging it into
+your src files): Just place the dist files into js/vendors directory.
 
 ### Drupal libraries
 
 You have to manage you compiled CSS and JavaScript files as Drupal libraries.
 All libraries are defined in `libraries.yml` file. There is a global library:
 we will load that in all pages. But you have to create and attach different
-libraries for specified blocks / pages. For example you can create libraries for
+libraries for specified blocks / pages. For example, you can create libraries for
 sliders, a specific view, a single page or block.
 
-Don't forget to add dependencies for each libraries, and attributes for files
+Don't forget to add dependencies for each library, and attributes for files
 like: `minified`, `external`, `async` and so on.
 
-Further more we don't want to be aggregated these libraries by Drupal, so you
+Furthermore, we don't want to be aggregated these libraries by Drupal, so you
 will need to add `{preprocess: false}` too.
 
 Example for them:
@@ -228,38 +220,6 @@ plugins for all popular IDE/code editor, but also there is linting task in
 builder tool too. Some rules can be fixed via CLI, but the most need manual
 work (You will get only warning messages.).
 
-_Another tool_: **[CSSComb](http://csscomb.com/)**. However it's an almost dead
-project (only maintained, but no any new features in the future), only a few
-(12) rules supported (Stylelint has more than 160 + plugins), but it can autofix
-everything and sorting CSS rules.
-Recommended to run it manually before commit a Sass file. Use the `.csscomb.json`
-with IDE/code editor plugins. CSSComb config based on Drupal's [CSSCombx](https://github.com/drugan/csscombx) config, but updated to latest version and added new
-css properties.
-
-Currently there aren't a "perfect" tool, so there are some caveats:
-
-* **stylelint-no-browser-hacks** _Stylelint plugin_ has been removed because it
-  has incompatibility issue with Sass variables (originally its developed for
-  vanilla CSS, Sass linting is provided only by a plugin).
-
-* **no-unknown-animations** _Stylelint rule_ has been removed because it's not
-  support Sass `@mixin`, `@import` rules (they must be same file and same level).
-
-* **CSSComb** doesn't support multiline property values (after it we need
-  realign them).
-
-* **CSSComb** could fail when a file started with comment blocks (temporary need
-  to remove them, then paste back).
-
-* However **Stylelint** has sorting plugins, they can't make any changes in
-  files, only warning us for about wrong order, so we need still use CSSComb for
-  that. (Run CSSComb on a file then fix reported issues by Stylelint.)
-
-* There are some new/edge css properties what **CCSComb** currently doesn't
-  support, You must add them to `.csscomb.json` and rerun CSSComb, otherwise
-  there will be an empty newline, what will be cause an error/warning in
-  Stylelint (and css coding standard).
-
 ### JavaScript Coding Standard
 
 #### JavaScript Coding Style and Tool
@@ -267,6 +227,4 @@ Currently there aren't a "perfect" tool, so there are some caveats:
 JavaScript coding style based on [Drupal's JavaScript coding standard](https://www.drupal.org/docs/develop/standards/javascript).
 For linting we use **[ESlint](https://eslint.org)**. The ESlint config based on
 [Drupal's core ESlint config](https://www.drupal.org/docs/develop/standards/javascript/eslint-settings),
-witch is based on Airbnb's React ESlint config. Because there isn't any React
-and ES6, we removed all rules that related directly to them and switched to
-`airbnb-base/legacy` config for ES5 (and below).
+witch is based on Airbnb's React ESlint config.

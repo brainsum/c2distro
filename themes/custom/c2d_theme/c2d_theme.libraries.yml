@@ -124,6 +124,7 @@ share-button:
 
 # Misc
 messages:
+  version: 1.0.0
   css:
     component:
       css/5.components/components.messages.css: {}

@@ -1,6 +1,8 @@
 
 # Created by https://www.gitignore.io/api/sass,code,node,linux,macos,windows,codekit,sublimetext,intellij+all,jetbrains+all
 
+*.map
+
 ### Code ###
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/

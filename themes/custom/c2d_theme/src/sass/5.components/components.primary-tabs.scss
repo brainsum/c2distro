@@ -1,11 +1,16 @@
 /**
  * @file
- * Primary Tabs component
+ * Primary Tabs Component
  *
  * @package: navigation
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 #block-tabs nav.tabs {
   max-width: 113.5rem;

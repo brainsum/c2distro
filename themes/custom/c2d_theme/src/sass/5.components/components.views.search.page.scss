@@ -8,7 +8,12 @@
  * @see more 5.components/components.form
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .block-page-title-block {
   .block-inner {

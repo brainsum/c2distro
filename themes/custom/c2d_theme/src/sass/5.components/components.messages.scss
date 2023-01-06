@@ -1,9 +1,16 @@
 /**
  * @file
+ * Messages Component
+ *
  * Theming Drupal system messages
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .system-messages {
   .inner-container {

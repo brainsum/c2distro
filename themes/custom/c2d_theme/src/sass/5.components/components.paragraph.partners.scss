@@ -1,5 +1,14 @@
+/**
+ * @file
+ * Partners Paragraph Type Component
+ */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .paragraph--type--partners {
   &.padding {

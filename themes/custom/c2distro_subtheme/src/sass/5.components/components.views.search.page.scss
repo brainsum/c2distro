@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Search component
+ *
+ * Site search, a special form component.
+ *
+ * @package: interactive
+ * @see more 5.components/components.form
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+@import "../../../profiles/contrib/c2distro/themes/custom/c2d_theme/src/sass/5.components/components.views.search.page";

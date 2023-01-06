@@ -1,11 +1,16 @@
 /**
  * @file
- * Pager component
+ * Pager Component
  *
  * For any pagination.
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .pager {
   padding-block: 4rem;

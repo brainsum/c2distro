@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * News Lister Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .field--name-field-paragraphs .field__item .paragraph--type--view {
   .paragraph--inner {

@@ -1,5 +1,16 @@
+/**
+ * @file
+ * Paragraph Base Component
+ *
+ * All common rules.
+ */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .paragraph {
   font-family: $font-primary;

@@ -1,4 +1,16 @@
-@import '../index';
+/**
+ * @file
+ * News Node Component
+ *
+ * Full display mode (A News node page).
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .region.region-content {
   background-color: $background-lightest;

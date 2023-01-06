@@ -1,4 +1,14 @@
-@import '../index';
+/**
+ * @file
+ * Tags Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .field.field--name-field-tags {
   padding-block-start: 0;

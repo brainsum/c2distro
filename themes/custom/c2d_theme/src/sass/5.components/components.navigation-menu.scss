@@ -1,13 +1,18 @@
 /**
  * @file
- * Navigation component
+ * Navigation Component
  *
  * Main navigation menu of site.
  *
  * @package: navigation
  */
 
-@import '../index';
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
 
 .mobile-icons {
   @include flex;
