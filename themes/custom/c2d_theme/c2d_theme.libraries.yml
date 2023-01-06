@@ -154,6 +154,8 @@ pages.special:
   css:
     theme:
       css/7.pages/pages.special.css: {}
+  dependencies:
+    - c2d_theme/form
 
 # Paragraph Types
 paragraphs-base:

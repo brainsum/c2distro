@@ -196,3 +196,65 @@ body:not(.js-menu-is-open) .region-header .block-dropdown-language .block-inner{
 .region-header .block-dropdown-language .dropbutton-widget .dropbutton .dropbutton-toggle{
   display:none !important;
 }
+
+[dir="ltr"] .block-system-branding-block{
+  padding-left:0;}
+
+[dir="rtl"] .block-system-branding-block{
+  padding-right:0;}
+
+.block-system-branding-block{
+  width:calc(100% - 5rem);
+  line-height:1;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-system-branding-block{
+    padding-left:1rem;}
+  [dir="rtl"] .block-system-branding-block{
+    padding-right:1rem;}
+  .block-system-branding-block{
+    width:30rem;
+  }
+}
+.block-system-branding-block .block-inner{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+a.site-logo img{
+  border-bottom:0;
+  margin-bottom:0;
+  width:10rem;
+  padding-top:0;
+  padding-bottom:0;
+}
+@media print, screen and (min-width: 48em){
+  a.site-logo img{
+    border-bottom:solid 0.2rem lightgray;
+    margin-bottom:0.5rem;
+    padding-bottom:1rem;
+    padding-top:0.8rem;
+    width:13rem;
+  }
+}
+
+.site-name{
+  margin-top:0.5em;
+}
+.site-name a{
+  font-family:"Montserrat", sans-serif;
+  font-size:1.5rem;
+  color:#000;
+  text-decoration:none;
+  font-style:italic;
+  font-weight:500;
+}

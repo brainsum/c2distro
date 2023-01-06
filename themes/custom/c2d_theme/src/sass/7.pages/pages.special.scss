@@ -29,3 +29,11 @@
     }
   }
 }
+
+.openid-connect-login-form {
+  text-align: center;
+
+  input.form-submit {
+    display: inline-flex;
+  }
+}

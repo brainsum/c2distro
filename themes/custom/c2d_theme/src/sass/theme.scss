@@ -14,102 +14,94 @@
  */
 @import 'index';
 
-.close-menu {
-  text-align: end;
-  padding: 2rem;
-}
 
-nav.navigation.menu--main {
-  display: block !important;
-  position: fixed;
-  inset-block: 0;
-  inset-inline-start: 100%;
-  inset-inline-end: 0;
-  transition: 0.5s;
-  overflow: hidden;
-  background-color: $background-lightest;
 
-  @include breakpoint(tablet) {
-    overflow: unset;
-    background-color: transparent;
-  }
-}
 
-nav.navigation.menu--main.open {
-  inset-inline-start: 0;
-}
 
-@include breakpoint(tablet) {
-  nav.navigation.menu--main {
-    position: initial !important;
-  }
 
-  .close-menu {
-    display: none;
-  }
-}
 
-.block-system-branding-block {
-  width: calc(100% - 5rem);
-  padding-inline-start: 0;
-  line-height: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
 
-  @include breakpoint(medium) {
-    width: 30rem;
-    padding-inline-start: 1rem;
-  }
 
-  .block-inner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-}
 
-a.site-logo img {
-  border-block-end: 0;
-  margin-block-end: 0;
-  width: 10rem;
-  padding-block: 0;
 
-  @include breakpoint(medium) {
-    border-block-end: solid 0.2rem lightgray;
-    margin-block-end: 0.5rem;
-    padding-block-end: 1rem;
-    padding-block-start: 0.8rem;
-    width: 13rem;
-  }
-}
 
-.site-name {
-  margin-block-start: 0.5em;
 
-  a {
-    font-family: $font-secondary;
-    font-size: 1.5rem;
-    color: #000;
-    text-decoration: none solid #000;
-    font-style: italic;
-    font-weight: 500;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .node--unpublished {
   background-color: transparent;
-}
-
-.openid-connect-login-form {
-  text-align: center;
-
-  input.form-submit {
-    display: inline-flex;
-  }
 }

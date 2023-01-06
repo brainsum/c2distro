@@ -414,3 +414,38 @@ li.menu-item.menu-item--expanded.opened span {
     }
   }
 }
+
+.close-menu {
+  text-align: end;
+  padding: 2rem;
+}
+
+nav.navigation.menu--main {
+  display: block !important;
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 100%;
+  inset-inline-end: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: $color-white;
+
+  @include breakpoint(tablet) {
+    overflow: unset;
+    background-color: transparent;
+  }
+}
+
+nav.navigation.menu--main.open {
+  inset-inline-start: 0;
+}
+
+@include breakpoint(tablet) {
+  nav.navigation.menu--main {
+    position: initial !important;
+  }
+
+  .close-menu {
+    display: none;
+  }
+}

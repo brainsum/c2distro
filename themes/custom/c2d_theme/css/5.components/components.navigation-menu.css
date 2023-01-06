@@ -400,3 +400,61 @@ li.menu-item.menu-item--expanded.opened span{
 .block-about-branches .block-inner .menu .menu-item a .icon-holder img{
   width:7rem;
 }
+
+[dir="ltr"] .close-menu{
+  text-align:right;}
+
+[dir="rtl"] .close-menu{
+  text-align:left;}
+
+.close-menu{
+  padding:2rem;
+}
+
+[dir="ltr"] nav.navigation.menu--main{
+  left:100%;}
+
+[dir="rtl"] nav.navigation.menu--main{
+  right:100%;}
+
+[dir="ltr"] nav.navigation.menu--main{
+  right:0;}
+
+[dir="rtl"] nav.navigation.menu--main{
+  left:0;}
+
+nav.navigation.menu--main{
+  display:block !important;
+}
+
+nav.navigation.menu--main{
+  position:fixed;
+  top:0;
+  bottom:0;
+  transition:0.5s;
+  overflow:hidden;
+  background-color:#ffffff;
+}
+@media print, screen and (min-width: 64em){
+  nav.navigation.menu--main{
+    overflow:visible;
+    overflow:initial;
+    background-color:transparent;
+  }
+}
+
+[dir="ltr"] nav.navigation.menu--main.open{
+  left:0;}
+
+[dir="rtl"] nav.navigation.menu--main.open{
+  right:0;}
+
+@media print, screen and (min-width: 64em){
+  nav.navigation.menu--main{
+    position:static !important;
+    position:initial !important;
+  }
+  .close-menu{
+    display:none;
+  }
+}
