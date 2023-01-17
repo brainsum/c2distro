@@ -1,3 +1,11 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
 .views-field-field-media-thumbnail:before,
 .views-field-field-image:before{
   content:"";

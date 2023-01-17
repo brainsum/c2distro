@@ -38,8 +38,12 @@
     padding-block-end: 5.5rem;
     color: $body-font-color;
     text-decoration: none solid $body-font-color;
-    text-align: center;
     margin-block-start: 2rem;
+  }
+
+  .field--name-field-lead,
+  .field--name-body p:not([class]) {
+    text-align: center;
   }
 
   .block-page-title-block + .node--type-page {
