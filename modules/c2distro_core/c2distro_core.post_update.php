@@ -2,13 +2,13 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the c2distro_core module.
+ * C2distro_core module updates once other modules have made their own updates.
  */
 
 /**
  * Set Password never expires to true for existing AD users.
  */
-function c2distro_core_update_9001() {
+function c2distro_core_post_update_set_password_never_expires() {
   $userStorage = \Drupal::entityTypeManager()->getStorage('user');
   $users = $userStorage->loadMultiple();
   foreach ($users as $user) {
