@@ -75,6 +75,9 @@
             },
             "drupal/smtp": {
                 "Maillog support": "https://www.drupal.org/files/issues/2022-12-19/maillog-integration.2920034.22.patch"
+            },
+            "drupal/svg_image": {
+                "Sanitize svg images on uploads": "web/profiles/contrib/c2distro/patches/sanitize-svg-images-on-uploads.patch"
             }
         }
     }
