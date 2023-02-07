@@ -17,6 +17,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Mail\MailFormatHelper;
 use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
+use Drupal\user\UserInterface;
 
 /**
  * Implements hook_entity_base_field_info_alter().
@@ -333,3 +334,13 @@ function c2distro_core_theme() {
     ],
   ];
 }
+
+/**
+ * Implements hook_openid_connect_userinfo_save().
+ *
+ * Set Password never expires for AD users.
+ */
+function c2distro_core_openid_connect_userinfo_save(UserInterface $account, array $context) {
+  $account->set('field_password_never_expires', 1);
+  $account->save();
+};

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the c2distro_core module.
+ */
+
+/**
+ * Set Password never expires to true for existing AD users.
+ */
+function c2distro_core_update_9001() {
+  $userStorage = \Drupal::entityTypeManager()->getStorage('user');
+  $users = $userStorage->loadMultiple();
+  foreach ($users as $user) {
+    $value = \Drupal::service('user.data')->get('openid_connect', $user->id(), 'oidc_name');
+    if ($value) {
+      $user->set('field_password_never_expires', TRUE);
+      $user->set('field_password_expiration', FALSE);
+      $user->save();
+    }
+  }
+}
