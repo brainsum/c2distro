@@ -1,7 +1,7 @@
 name: 'C2 distro profile'
 type: profile
 description: 'Distribution for quickly starting a new c2d system with Drupal.'
-version: 1.0.0
+version: 1.0.5
 
 core_version_requirement: ^9.1
 php: 7.3
