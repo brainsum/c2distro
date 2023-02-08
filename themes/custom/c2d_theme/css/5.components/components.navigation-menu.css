@@ -6,6 +6,35 @@
 .clearfix:after{
   clear:both;
 }
+[dir="ltr"] .social-block{
+  margin-left:auto;}
+[dir="rtl"] .social-block{
+  margin-right:auto;}
+.social-block{
+  display:flex;
+  -mox-box-align:center;
+  align-items:center;
+}
+@media print, screen and (min-width: 48em){
+  [dir="ltr"] .block-dropdown-language + .social-block{
+    margin-left:0;}
+  [dir="rtl"] .block-dropdown-language + .social-block{
+    margin-right:0;}
+}
+.social-block img{
+  width:2.4rem;
+  height:2.4rem;
+}
+@media print, screen and (max-width: 63.99875em){
+  [dir="ltr"] .social-block img{
+    margin-right:1.5rem;}
+  [dir="rtl"] .social-block img{
+    margin-left:1.5rem;}
+}
+.social-block .bordered-button{
+  padding:1.4rem 5.1rem;
+}
+
 .mobile-icons{
   display:flex;
   flex-direction:row;

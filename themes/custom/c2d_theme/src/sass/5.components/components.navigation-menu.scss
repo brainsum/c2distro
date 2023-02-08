@@ -14,6 +14,32 @@
  */
 @import "../index";
 
+.social-block {
+  @include flex;
+  @include align-items(center);
+
+  margin-inline-start: auto;
+
+  .block-dropdown-language + & {
+    @include breakpoint(medium) {
+      margin-inline-start: 0;
+    }
+  }
+
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    @include breakpoint(medium down) {
+      margin-inline-end: 1.5rem;
+    }
+  }
+
+  .bordered-button {
+    padding: 1.4rem 5.1rem;
+  }
+}
+
 .mobile-icons {
   @include flex;
   @include flex-direction(row);
