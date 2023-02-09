@@ -1,0 +1,86 @@
+/**
+ * @file
+ * Quotes Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--quotes {
+  .paragraph--inner {
+    & > .field__items {
+      @include flex;
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+
+      & > .field__item {
+        width: 100%;
+        margin-block-end: 3.5rem;
+
+        @include breakpoint(medium) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.paragraph--type--quote-paragraph {
+  height: 100%;
+  padding: 0 1.8rem;
+
+  .paragraph--inner {
+    @include transition(background-color, 0.2s);
+
+    position: relative;
+    height: 100%;
+    padding-block-start: 9rem;
+    padding-block-end: 5rem;
+    padding-inline: 5.5rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-white;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      inset-block-start: 4rem;
+      inset-inline-start: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      opacity: 0.5;
+      background-image: url("../../images/dist/svg/quote-open.svg");
+    }
+
+    .field--name-field-text {
+      position: relative;
+    }
+
+    .more-btn {
+      position: relative;
+
+      &:after {
+        content: url('../../images/dist/icons/arrow-right.svg');
+        position: absolute;
+        inset-block-start: 0.1rem;
+        inset-inline-start: 100%;
+        padding-inline-start: 0.5rem;
+      }
+    }
+  }
+
+  &.open {
+    .popup-text--wrapper {
+      display: block;
+    }
+  }
+}

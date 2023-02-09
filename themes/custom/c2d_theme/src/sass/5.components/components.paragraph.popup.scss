@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Popup Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--popup-wrapper {
+  > .paragraph--inner {
+    > .field--name-field-description {
+      margin-block-end: 5rem;
+    }
+  }
+}
+
+.popup-text--wrapper {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset-block: 0;
+  inset-inline: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.3rem);
+
+  .field--type-string-long {
+    position: fixed;
+    z-index: 1001;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 5rem;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 1.2rem 0.4rem rgba(0, 0, 0, 0.15);
+
+    @include breakpoint(medium) {
+      max-width: 30vw;
+    }
+
+    .popup-text--close {
+      position: absolute;
+      inset-block-start: 1.3rem;
+      inset-inline-end: 1.3rem;
+      width: 2.9rem;
+      height: 2.9rem;
+      padding-block-start: 0.2rem;
+      border-radius: 50%;
+      background-color: #333;
+      text-align: center;
+      cursor: pointer;
+
+      @include breakpoint(medium) {
+        inset-block-start: -1.3rem;
+        inset-inline-end: -1.3rem;
+      }
+    }
+  }
+
+  &.open {
+    display: block;
+  }
+}
+
+.paragraph--type--popup-text {
+  .field--name-field-title {
+    font-size: 1.8rem;
+  }
+
+  .paragraph--inner.open {
+    .popup-text--wrapper {
+      display: block;
+    }
+  }
+
+  &.has-popup {
+    @include transition(all, 0.2s);
+
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

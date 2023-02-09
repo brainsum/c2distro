@@ -192,6 +192,23 @@ paragraph.link-boxes:
   dependencies:
     - c2d_theme/paragraphs-base
 
+paragraph.media:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.media.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+# currently it's not attached
+paragraph.media-document:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.media-document.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
 paragraph.partners:
   version: 1.1.0
   css:
@@ -202,23 +219,40 @@ paragraph.partners:
 
 paragraph.popup:
   version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.popup.css: {}
   js:
     js/components.paragraph.popup.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 paragraph.quote:
   version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.quote.css: {}
   js:
     js/components.paragraph.quote.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
+    - c2d_theme/paragraph.popup
 
 paragraph.small-boxes:
   version: 1.1.0
   css:
     component:
       css/5.components/components.paragraph.small-boxes.css: {}
+  dependencies:
+    - c2d_theme/paragraphs-base
+
+paragraph.tabs:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.tabs.css: {}
   dependencies:
     - c2d_theme/paragraphs-base
 
@@ -240,9 +274,13 @@ paragraph.text-media:
 
 paragraph.timeline:
   version: 1.1.0
+  css:
+    component:
+      css/5.components/components.paragraph.timeline.css: {}
   js:
     js/components.paragraph.timeline.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 paragraph.views:

@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Media Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--media {
+  .paragraph--inner {
+    .field--type-image {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .field--name-field-media-oembed-video {
+      iframe {
+        display: block;
+        width: 100%;
+        min-height: 40rem;
+        margin: 0 auto;
+      }
+    }
+
+    .field--name-field-text {
+      padding: 1.5rem;
+      background-color: darken($color-grey-light, 5%);
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+}

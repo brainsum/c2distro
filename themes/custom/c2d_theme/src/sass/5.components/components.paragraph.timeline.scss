@@ -1,0 +1,86 @@
+/**
+ * @file
+ * Timeline Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--timeline-wrapper {
+  > .paragraph--inner {
+    > .field--name-field-description {
+      margin-block-end: 5rem;
+    }
+  }
+}
+
+.paragraph--type--timeline {
+  position: relative;
+  padding-block-start: 0;
+  padding-block-end: 10rem;
+  padding-inline: 3rem;
+
+  .paragraph--inner {
+    @include flex;
+    @include justify-content(space-between);
+
+    padding-block-end: 0.4rem;
+    border-block-end: 0.2rem solid $color-secondary;
+
+    .field--name-field-left-title,
+    .field--name-field-middle-title,
+    .field--name-field-right-title {
+      position: relative;
+      font-size: 1.8rem;
+      font-weight: 700;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        inset-inline-end: 0;
+        inset-block-end: -0.8rem;
+        inset-inline-start: 0;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 auto;
+        border-radius: 0.3rem;
+        background-color: $body-font-color;
+      }
+    }
+
+    .field--name-field-left-title {
+      margin-inline-start: 2rem;
+    }
+
+    .field--name-field-right-title {
+      margin-inline-end: 2rem;
+    }
+  }
+
+  .field--name-field-timeline-text {
+    position: absolute;
+    inset-block-start: 1.5rem;
+    inset-inline-start: 50%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    transform: translate(-50%, 0);
+    background-color: #efefef;
+  }
+
+  &.left-popup .field--name-field-left-title,
+  &.middle-popup .field--name-field-middle-title,
+  &.right-popup .field--name-field-right-title {
+    @include transition(color, 0.2s);
+
+    cursor: pointer;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
