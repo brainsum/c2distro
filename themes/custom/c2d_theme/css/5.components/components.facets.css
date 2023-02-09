@@ -12,7 +12,22 @@
   margin-right:auto;
   padding:0 1.5rem;
 }
-.path-resources .page-title{
+.path-resources .block-page-title-block{
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
+  padding-top:0;
+  padding-bottom:0;
+  padding-left:0;
+  padding-right:0;
+  max-width:100%;
+}
+[dir="ltr"] .path-resources .block-page-title-block .block-inner h1.page-title{
+  text-align:left;}
+[dir="rtl"] .path-resources .block-page-title-block .block-inner h1.page-title{
+  text-align:right;}
+.path-resources .block-page-title-block .block-inner h1.page-title{
   margin-top:6rem;
   margin-bottom:3rem;
   margin-left:0;
@@ -21,7 +36,7 @@
   line-height:1.16;
 }
 @media print, screen and (min-width: 23.5em){
-  .path-resources .page-title{
+  .path-resources .block-page-title-block .block-inner h1.page-title{
     margin-bottom:2.2rem;
     font-size:4rem;
   }
