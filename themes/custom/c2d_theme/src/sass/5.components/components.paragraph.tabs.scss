@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Tabs Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--tab-group-wrapper {
+  padding-block-start: 5rem;
+
+  .tab-group--content__wrapper {
+    position: relative;
+
+    .tab-group--content {
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+
+      .paragraph--type--text-media {
+        @include breakpoint(medium) {
+          .left {
+            width: 25%;
+          }
+
+          .right {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}

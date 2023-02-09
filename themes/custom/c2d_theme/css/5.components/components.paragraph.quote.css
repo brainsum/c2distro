@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph--type--quotes .paragraph--inner > .field__items{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.paragraph--type--quotes .paragraph--inner > .field__items > .field__item{
+  width:100%;
+  margin-bottom:3.5rem;
+}
+@media print, screen and (min-width: 48em){
+  .paragraph--type--quotes .paragraph--inner > .field__items > .field__item{
+    width:50%;
+  }
+}
+
+.paragraph--type--quote-paragraph{
+  height:100%;
+  padding:0 1.8rem;
+}
+.paragraph--type--quote-paragraph .paragraph--inner{
+  transition:background-color, 0.2s;
+  position:relative;
+  height:100%;
+  padding-top:9rem;
+  padding-bottom:5rem;
+  padding-left:5.5rem;
+  padding-right:5.5rem;
+  background-color:#f0f0f0;
+  box-shadow:0 1rem 5rem rgba(0, 0, 0, 0.1);
+  cursor:pointer;
+}
+.paragraph--type--quote-paragraph .paragraph--inner:hover{
+  background-color:#ffffff;
+}
+[dir="ltr"] .paragraph--type--quote-paragraph .paragraph--inner:before{
+  left:1.5rem;}
+[dir="rtl"] .paragraph--type--quote-paragraph .paragraph--inner:before{
+  right:1.5rem;}
+.paragraph--type--quote-paragraph .paragraph--inner:before{
+  content:"";
+  display:block;
+  position:absolute;
+  top:4rem;
+  width:3rem;
+  height:3rem;
+  opacity:0.5;
+  background-image:url("../../images/dist/svg/quote-open.svg");
+}
+.paragraph--type--quote-paragraph .paragraph--inner .field--name-field-text{
+  position:relative;
+}
+.paragraph--type--quote-paragraph .paragraph--inner .more-btn{
+  position:relative;
+}
+[dir="ltr"] .paragraph--type--quote-paragraph .paragraph--inner .more-btn:after{
+  left:100%;}
+[dir="rtl"] .paragraph--type--quote-paragraph .paragraph--inner .more-btn:after{
+  right:100%;}
+[dir="ltr"] .paragraph--type--quote-paragraph .paragraph--inner .more-btn:after{
+  padding-left:0.5rem;}
+[dir="rtl"] .paragraph--type--quote-paragraph .paragraph--inner .more-btn:after{
+  padding-right:0.5rem;}
+.paragraph--type--quote-paragraph .paragraph--inner .more-btn:after{
+  content:url("../../images/dist/icons/arrow-right.svg");
+  position:absolute;
+  top:0.1rem;
+}
+.paragraph--type--quote-paragraph.open .popup-text--wrapper{
+  display:block;
+}

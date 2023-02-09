@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+.paragraph--type--timeline-wrapper > .paragraph--inner > .field--name-field-description{
+  margin-bottom:5rem;
+}
+
+.paragraph--type--timeline{
+  position:relative;
+  padding-top:0;
+  padding-bottom:10rem;
+  padding-left:3rem;
+  padding-right:3rem;
+}
+.paragraph--type--timeline .paragraph--inner{
+  display:flex;
+  -font-box-pack:justify;
+  justify-content:space-between;
+  padding-bottom:0.4rem;
+  border-bottom:0.2rem solid #26c9de;
+}
+.paragraph--type--timeline .paragraph--inner .field--name-field-left-title,
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title,
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title{
+  position:relative;
+  font-size:1.8rem;
+  font-weight:700;
+}
+[dir="ltr"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title:after,[dir="ltr"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title:after,[dir="ltr"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title:after{
+  right:0;}
+[dir="rtl"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title:after,[dir="rtl"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title:after,[dir="rtl"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title:after{
+  left:0;}
+[dir="ltr"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title:after,[dir="ltr"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title:after,[dir="ltr"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title:after{
+  left:0;}
+[dir="rtl"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title:after,[dir="rtl"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title:after,[dir="rtl"] 
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title:after{
+  right:0;}
+.paragraph--type--timeline .paragraph--inner .field--name-field-left-title:after,
+.paragraph--type--timeline .paragraph--inner .field--name-field-middle-title:after,
+.paragraph--type--timeline .paragraph--inner .field--name-field-right-title:after{
+  content:"";
+  display:block;
+  position:absolute;
+  bottom:-0.8rem;
+  width:0.6rem;
+  height:0.6rem;
+  margin:0 auto;
+  border-radius:0.3rem;
+  background-color:#12284c;
+}
+[dir="ltr"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title{
+  margin-left:2rem;}
+[dir="rtl"] .paragraph--type--timeline .paragraph--inner .field--name-field-left-title{
+  margin-right:2rem;}
+[dir="ltr"] .paragraph--type--timeline .paragraph--inner .field--name-field-right-title{
+  margin-right:2rem;}
+[dir="rtl"] .paragraph--type--timeline .paragraph--inner .field--name-field-right-title{
+  margin-left:2rem;}
+[dir="ltr"] .paragraph--type--timeline .field--name-field-timeline-text{
+  left:50%;}
+[dir="rtl"] .paragraph--type--timeline .field--name-field-timeline-text{
+  right:50%;}
+.paragraph--type--timeline .field--name-field-timeline-text{
+  position:absolute;
+  top:1.5rem;
+  margin:0 auto;
+  padding:0 1rem;
+  transform:translate(-50%, 0);
+  background-color:#efefef;
+}
+.paragraph--type--timeline.left-popup .field--name-field-left-title, .paragraph--type--timeline.middle-popup .field--name-field-middle-title, .paragraph--type--timeline.right-popup .field--name-field-right-title{
+  transition:color, 0.2s;
+  cursor:pointer;
+}
+.paragraph--type--timeline.left-popup .field--name-field-left-title:hover, .paragraph--type--timeline.middle-popup .field--name-field-middle-title:hover, .paragraph--type--timeline.right-popup .field--name-field-right-title:hover{
+  color:#26c9de;
+}

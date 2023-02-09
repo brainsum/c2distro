@@ -1,0 +1,125 @@
+/**
+ * @file
+ * Media Document Paragraph Type Component
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--media-document {
+  font-family: $font-secondary;
+
+  .paragraph--inner {
+    position: relative;
+    padding-block-start: 3rem;
+  }
+
+  .field--name-field-title {
+    @include block-title;
+
+    position: absolute;
+    inset-block-start: -6rem;
+    padding: 0;
+  }
+
+  .field--name-field-media-entities {
+    @include flex;
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+
+    margin: 0 -1.5rem;
+
+    > .field__item {
+      width: 100%;
+      max-width: 23.4rem;
+      margin-block-start: 0;
+      margin-block-end: 3rem;
+      margin-inline: 1rem;
+
+      @include breakpoint(tablet) {
+        max-width: calc(25% - 3rem);
+        margin-block-start: 0;
+        margin-block-end: 3rem;
+        margin-inline: 1.5rem;
+      }
+
+      .media {
+        @include flex;
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+
+        height: 100%;
+        min-height: 47rem;
+        border: 0.1rem solid $color-grey-light;
+        background-color: $color-white;
+
+        .field--type-image {
+          position: relative;
+          margin-block-end: 1.3rem;
+        }
+
+        .field--name-field-date {
+          margin-block-end: 1.6rem;
+          padding: 0 2.3rem;
+        }
+
+        .field--name-name,
+        .field--name-field-short-title {
+          max-height: 9.5rem;
+          margin-block-end: 1.6rem;
+          overflow: hidden;
+        }
+
+        .readmore-btn,
+        .field--name-name,
+        .field--name-field-short-title {
+          padding: 0 2.7rem;
+
+          a {
+            @include transition(all, 0.2s);
+
+            display: block;
+            font-weight: 700;
+
+            &:hover {
+              color: $color-secondary;
+            }
+          }
+        }
+
+        .readmore-btn {
+          @include transition(all, 0.2s);
+
+          justify-self: flex-end;
+          margin-block-start: auto;
+          border-bottom: 1rem solid $color-white;
+
+          &:hover {
+            border-color: $color-secondary;
+          }
+
+          a {
+            margin-block-end: -1rem;
+            padding-block-end: 2rem;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+
+  .field--name-field-link {
+    @include flex;
+    @include justify-content(center);
+
+    padding-block-start: 3rem;
+
+    a {
+      @include bordered-button;
+    }
+  }
+}
