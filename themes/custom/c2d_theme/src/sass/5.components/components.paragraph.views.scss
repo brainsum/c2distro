@@ -1,0 +1,36 @@
+/**
+ * @file
+ *All Views-based Paragraph Type Components
+ */
+
+/**
+ * Imports
+ *
+ * First import our custom variables and mixins
+ */
+@import "../index";
+
+.paragraph--type--view {
+  font-family: $font-secondary;
+  padding: 0;
+
+  .block-views {
+    padding-block-start: 0;
+    padding-block-end: 7.5rem;
+    padding-inline: 0;
+
+    .title-holder {
+      padding: 0 !important;
+    }
+  }
+
+  .view-footer {
+    padding-block-end: 0 !important;
+  }
+
+  .view-header {
+    @include block-title;
+
+    display: inline-block;
+  }
+}
