@@ -17,16 +17,25 @@
     @include width-1390;
   }
 
-  .page-title {
-    margin-block-start: 6rem;
-    margin-block-end: 3rem;
+  .block-page-title-block {
+    margin-block: 0;
     margin-inline: 0;
-    font-size: 3rem;
-    line-height: 1.16;
+    padding-block: 0;
+    padding-inline: 0;
+    max-width: 100%;
 
-    @include breakpoint(mobile) {
-      margin-block-end: 2.2rem;
-      font-size: 4rem;
+    .block-inner h1.page-title {
+      margin-block-start: 6rem;
+      margin-block-end: 3rem;
+      margin-inline: 0;
+      text-align: start;
+      font-size: 3rem;
+      line-height: 1.16;
+
+      @include breakpoint(mobile) {
+        margin-block-end: 2.2rem;
+        font-size: 4rem;
+      }
     }
   }
 }
