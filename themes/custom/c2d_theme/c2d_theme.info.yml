@@ -18,6 +18,7 @@ libraries:
 # Regions, change it for your needs (don't forget change page template too)
 libraries-override:
   core/picturefill: false
+  core/drupal.dropbutton: false
 stylesheets-remove:
   - '@stable/css/system/components/align.module.css'
   - '@stable/css/system/components/ajax-progress.module.css'

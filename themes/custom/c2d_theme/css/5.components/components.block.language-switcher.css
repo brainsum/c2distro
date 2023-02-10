@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+}
+[dir="ltr"] .block-dropdown-language{
+  margin-left:auto;}
+[dir="rtl"] .block-dropdown-language{
+  margin-right:auto;}
+[dir="ltr"] .block-dropdown-language{
+  margin-right:4rem;}
+[dir="rtl"] .block-dropdown-language{
+  margin-left:4rem;}
+.block-dropdown-language{
+  min-width:11rem;
+}
+.block-dropdown-language .language-list{
+  position:relative;
+  list-style:none;
+}
+.block-dropdown-language .language-list__dropdown{
+  position:absolute;
+  z-index:700;
+  overflow:hidden;
+  width:calc(100% + 3.2rem);
+  height:auto;
+  max-height:0;
+  opacity:0;
+  background:#ebebeb;
+  transition:all 0.25s ease;
+}
+.block-dropdown-language .language-list__dropdown.is-active{
+  max-height:calc(var(--language-list__dropdown) * 5rem);
+  opacity:1;
+}
+.block-dropdown-language .language-link{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:block;
+  cursor:pointer;
+  color:#12284c;
+  font-size:1.8rem;
+  padding-top:1.18rem;
+  padding-bottom:1.18rem;
+  padding-left:1.4rem;
+  padding-right:1.4rem;
+  font-family:"Open Sans", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight:700;
+  transition:all 0.25s ease;
+}
+.block-dropdown-language .language-list__dropdown .language-link:hover{
+  background:#12284c;
+  color:#ffffff;
+}
+.block-dropdown-language .dropbutton{
+  display:flex;
+  flex-direction:row;
+}
+.block-dropdown-language .dropbutton__widget{
+  flex:1;
+}
+.block-dropdown-language .dropbutton__button{
+  border-top:0;
+  border-bottom:0;
+  border-left:0;
+  border-right:0;
+  background:none;
+}
+.block-dropdown-language .dropbutton__icon{
+  display:block;
+  width:2rem;
+  height:2rem;
+  color:#12284c;
+  transition:all 0.25s ease;
+}
+.block-dropdown-language .is-active .dropbutton__icon{
+  transform:rotate(-180deg);
+}
