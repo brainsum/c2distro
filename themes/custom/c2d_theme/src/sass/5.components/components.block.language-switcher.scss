@@ -1,0 +1,87 @@
+/**
+ * @file
+ * Language Switcher Component
+ *
+ * Theming Language Switcher block.
+ */
+
+/**
+  * Imports
+ */
+@import "../_index";
+
+.block-dropdown-language {
+  min-width: 11rem;
+  margin-inline-start: auto;
+  margin-inline-end: 4rem;
+
+  .language-list {
+    position: relative;
+    list-style: none;
+
+    &__dropdown {
+      position: absolute;
+      z-index: 700;
+      overflow: hidden;
+      width: calc(100% + 3.2rem);
+      height: auto;
+      max-height: 0;
+      opacity: 0;
+      background: $color-shade2;
+      transition: all .25s ease;
+
+      &.is-active {
+        max-height: calc(var(--language-list__dropdown) * 5rem);
+        opacity: 1;
+      }
+    }
+  }
+
+  .language-link {
+    @include font-smooth;
+
+    display: block;
+    cursor: pointer;
+    color: $color-primary;
+    font-size: 1.8rem;
+    padding-block: 1.18rem;
+    padding-inline: 1.4rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    transition: all .25s ease;
+  }
+
+  .language-list__dropdown .language-link {
+    &:hover {
+      background: $color-primary;
+      color: $color-lightest;
+    }
+  }
+
+  .dropbutton {
+    display: flex;
+    flex-direction: row;
+
+    &__widget {
+      flex: 1;
+    }
+
+    &__button {
+      border-block: 0;
+      border-inline: 0;
+      background: none;
+    }
+
+    &__icon {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      color: $color-primary;
+      transition: all .25s ease;
+    }
+  }
+
+  .is-active .dropbutton__icon {
+    transform: rotate(-180deg);
+  }
+}

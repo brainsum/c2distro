@@ -28,6 +28,14 @@ block.hero:
     component:
       css/5.components/components.block.hero.css: {}
 
+block.language-switcher:
+  version: 2.0.0
+  css:
+    component:
+      css/5.components/components.block.language-switcher.css: {}
+  js:
+    js/components.block.language-switcher.js: {}
+
 block.title:
   version: 1.1.0
   css:
