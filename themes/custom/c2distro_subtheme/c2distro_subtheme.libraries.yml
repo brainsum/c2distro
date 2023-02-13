@@ -23,6 +23,12 @@ block.hero:
     component:
       css/5.components/components.block.hero.css: {}
 
+block.language-switcher:
+  version: 2.0.0
+  css:
+    component:
+      css/5.components/components.block.language-switcher.css: {}
+
 block.title:
   version: 1.0.0
   css:
@@ -187,6 +193,23 @@ paragraph.link-boxes:
   dependencies:
     - c2distro_subtheme/paragraphs-base
 
+paragraph.media:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.paragraph.media.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
+# currently it's not attached
+paragraph.media-document:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.paragraph.media-document.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
 paragraph.partners:
   version: 1.0.0
   css:
@@ -217,6 +240,14 @@ paragraph.small-boxes:
   dependencies:
     - c2distro_subtheme/paragraphs-base
 
+paragraph.tabs:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.paragraph.tabs.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
 paragraph.text:
   version: 1.0.0
   css:
@@ -240,6 +271,14 @@ paragraph.timeline:
   dependencies:
     - core/jquery
 
+paragraph.views:
+  version: 1.0.0
+  css:
+    component:
+      css/5.components/components.paragraph.views.css: {}
+  dependencies:
+    - c2distro_subtheme/paragraphs-base
+
 paragraph.views.documents:
   version: 1.0.0
   css:
@@ -248,7 +287,7 @@ paragraph.views.documents:
   dependencies:
     - c2distro_subtheme/paragraphs-base
 
-paragraph.views.:
+paragraph.views.events:
   version: 1.0.0
   dependencies:
     - c2distro_subtheme/paragraphs-base
