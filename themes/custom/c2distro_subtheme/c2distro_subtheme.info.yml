@@ -9,6 +9,7 @@ libraries-override:
   c2d_theme/global-styling: c2distro_subtheme/global-styling
   c2d_theme/block.footer: c2distro_subtheme/block.footer
   c2d_theme/block.hero: c2distro_subtheme/block.hero
+  c2d_theme/block.language-switcher: c2distro_subtheme/block.language-switcher
   c2d_theme/block.title: c2distro_subtheme/block.title
   c2d_theme/media.document: c2distro_subtheme/media.document
   c2d_theme/node.event: c2distro_subtheme/node.event
@@ -31,13 +32,17 @@ libraries-override:
   c2d_theme/paragraph.accordion: c2distro_subtheme/paragraph.accordion
   c2d_theme/paragraph.cta: c2distro_subtheme/paragraph.cta
   c2d_theme/paragraph.link-boxes: c2distro_subtheme/paragraph.link-boxes
+  c2d_theme/paragraph.paragraph.media: c2distro_subtheme/paragraph.media
+  c2d_theme/paragraph.paragraph.media-document: c2distro_subtheme/paragraph.media-document
   c2d_theme/paragraph.partners: c2distro_subtheme/paragraph.partners
   c2d_theme/paragraph.popup: c2distro_subtheme/paragraph.popup
   c2d_theme/paragraph.quote: c2distro_subtheme/paragraph.quote
   c2d_theme/paragraph.small-boxes: c2distro_subtheme/paragraph.small-boxes
+  c2d_theme/paragraph.tabs: c2distro_subtheme/paragraph.tabs
   c2d_theme/paragraph.text: c2distro_subtheme/paragraph.text
   c2d_theme/paragraph.text-media: c2distro_subtheme/paragraph.text-media
   c2d_theme/paragraph.timeline: c2distro_subtheme/paragraph.timeline
+  c2d_theme/paragraph.views: c2distro_subtheme/paragraph.views
   c2d_theme/paragraph.views.documents: c2distro_subtheme/paragraph.views.documents
   c2d_theme/paragraph.views.events: c2distro_subtheme/paragraph.views.events
   c2d_theme/paragraph.views.news: c2distro_subtheme/paragraph.views.news
