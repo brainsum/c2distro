@@ -20,6 +20,8 @@
 .block-views-blockselector-cards-selector-cards-block .block-inner{
   margin-top:6rem;
   max-width:139.5rem;
+  margin-left:auto;
+  margin-right:auto;
   padding:0;
 }
 .block-views-blockselector-cards-selector-cards-block .view-content{
