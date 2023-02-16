@@ -80,7 +80,7 @@
                 "Sanitize svg images on uploads": "web/profiles/contrib/c2distro/patches/sanitize-svg-images-on-uploads.patch"
             },
             "drupal/password_policy": {
-                "Added Password never expires field": "https://www.drupal.org/files/issues/2023-02-02/3338618-added-Password-never-expires-field-2.patch"
+                "Added Password never expires field": "https://www.drupal.org/files/issues/2023-02-15/3338618-added-Password-never-expires-field-4.patch"
             }
         }
     }
