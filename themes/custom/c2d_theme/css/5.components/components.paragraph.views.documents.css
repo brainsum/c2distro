@@ -92,6 +92,10 @@
   font-weight:700;
   white-space:nowrap;
 }
+.lister-page.view-documents .view-content .views-row .content-header-text .created-time-pipe{
+  margin-left:0.25em;
+  margin-right:0.25em;
+}
 .lister-page.view-documents .view-content .views-row .content-header-text .category-link a{
   color:#26c9de;
   font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
