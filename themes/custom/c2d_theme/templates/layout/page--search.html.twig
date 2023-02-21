@@ -53,9 +53,7 @@
     {{ page.navigation }}
   </header>
 
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
+  {{ page.featured }}
 
   {{ page.help }}
 
@@ -66,20 +64,7 @@
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar %}
-      <aside class="layout-sidebar" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
+    </div>
   </main>
 
   {{ page.bottom }}
@@ -89,7 +74,4 @@
       {{ page.footer }}
     </footer>
   {% endif %}
-
-</div>{# /.layout-container #}
-
-{{ page.admin }}
+</div>

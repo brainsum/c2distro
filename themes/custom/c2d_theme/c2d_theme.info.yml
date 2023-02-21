@@ -63,6 +63,7 @@ regions:
   header: Header
   navigation: Navigation
   featured: Featured
+  help: Help
   top: Top
   content: Content
   bottom: Bottom
