@@ -17,11 +17,11 @@ plugin: 'facet_block:tags_of_document'
 settings:
   id: 'facet_block:tags_of_document'
   label: 'Tags of document'
-  provider: facets
   label_display: '0'
+  provider: facets
   block_id: tagsofdocument
 visibility:
   request_path:
     id: request_path
-    pages: /resources
     negate: false
+    pages: /resources
