@@ -5,15 +5,15 @@ dependencies:
     - c2d_theme
 id: tabs
 theme: c2d_theme
-region: top
-weight: 0
+region: help
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility: {  }
