@@ -40,6 +40,8 @@
   {% if display_id is same as('page') %}
     {{ attach_library('c2d_theme/views.search.page') }}
   {% endif %}
+{% elseif id is same as('taxonomy_term') %}
+  {{ attach_library('c2d_theme/views.search.page') }}
 {% endif %}
 
 {%
