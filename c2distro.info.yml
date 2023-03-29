@@ -51,7 +51,6 @@ install:
   - metatag
   - metatag_open_graph
   - redirect
-  - calendar
   - search_api
   - search_api_db
   - facets
@@ -80,7 +79,6 @@ dependencies:
   # Core.
   - basic_auth
   - block
-  - ckeditor
   - editor
   - field
   - file
