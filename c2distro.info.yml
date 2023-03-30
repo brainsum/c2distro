@@ -95,7 +95,5 @@ dependencies:
   # Contrib
 
 themes:
-  - bartik
-  - seven
   - claro
   - c2d_theme
