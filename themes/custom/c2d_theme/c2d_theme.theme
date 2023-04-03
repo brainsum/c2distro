@@ -42,7 +42,7 @@ function c2d_theme_preprocess_page(array &$variables) {
  */
 function c2d_theme_preprocess_region(&$variables) {
   // Store theme's path in a variable to access it from region Twig templates.
-  $variables['c2d_theme_path'] = drupal_get_path('theme', 'c2d_theme');
+  $variables['c2d_theme_path'] = \Drupal::service('extension.list.theme')->getPath('c2d_theme');
 }
 
 /**
