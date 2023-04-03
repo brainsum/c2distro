@@ -29,6 +29,7 @@
         "drupal/block_field": "^1.0@RC",
         "drupal/block_content_permissions": "^1.10",
         "drupal/fullcalendar_view": "^5.1",
+        "drupal/exception_mailer": "3.x-dev@dev",
         "drupal/chosen": "^3.0",
         "drupal/classy_paragraphs": "^1.0@beta",
         "drupal/ctools": "^3.6",
@@ -63,6 +64,9 @@
         "patches": {
             "drupal/core": {
                 "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
+            },
+            "drupal/exception_mailer": {
+                "Logger function not compatible with core Log function": "https://www.drupal.org/files/issues/2023-04-03/3351812.patch"
             },
             "drupal/media_thumbnails": {
                 "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch",
