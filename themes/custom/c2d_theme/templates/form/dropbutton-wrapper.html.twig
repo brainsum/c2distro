@@ -13,7 +13,7 @@
 #}
 
 {% if children %}
-  {% spaceless %}
+  {% apply spaceless %}
     <div class="dropbutton">
       <div class="dropbutton__widget">
         {{ children }}
@@ -25,5 +25,5 @@
         <span class="visually-hidden">{{ 'Toggle dropdown list'|t }}</span>
       </button>
     </div>
-  {% endspaceless %}
+  {% endapply %}
 {% endif %}
