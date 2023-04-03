@@ -37,6 +37,7 @@ install:
   # Contrib.
   - admin_toolbar
   - fullcalendar_view
+  - exception_mailer
   - ckeditor5
   - paragraphs
   - classy_paragraphs
