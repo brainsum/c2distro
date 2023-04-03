@@ -28,7 +28,7 @@
         "bower-asset/chosen": "^1.8",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_content_permissions": "^1.10",
-        "drupal/calendar_view": "^2.0",
+        "drupal/fullcalendar_view": "^5.1",
         "drupal/chosen": "^3.0",
         "drupal/classy_paragraphs": "^1.0@beta",
         "drupal/ctools": "^3.6",

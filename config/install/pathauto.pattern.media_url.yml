@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_url
+label: 'media URL'
+type: 'canonical_entities:media'
+pattern: '[media:bundle]/[media:name]'
+selection_criteria:
+  d7b6b66f-83b2-489f-9954-110dad697113:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: d7b6b66f-83b2-489f-9954-110dad697113
+    context_mapping:
+      media: media
+    bundles:
+      icon: icon
+      image: image
+      remote_video: remote_video
+selection_logic: and
+weight: -5
+relationships: {  }

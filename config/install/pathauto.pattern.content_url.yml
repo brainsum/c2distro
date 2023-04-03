@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_url
+label: 'content URL'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  9234aa0c-3afc-4aa9-a9bc-28a9905238f9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9234aa0c-3afc-4aa9-a9bc-28a9905238f9
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

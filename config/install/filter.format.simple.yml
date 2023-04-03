@@ -1,8 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  module:
-    - media
+dependencies: {  }
 name: Simple
 format: simple
 weight: 0
@@ -32,7 +30,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <p class="text-align-justify"> <u> <s> <sup> <sub> <ul> <li> <ol>'
+      allowed_html: '<br> <p class="text-align-justify"> <h2 class="text-align-justify"> <h3 class="text-align-justify"> <h4 class="text-align-justify"> <h5 class="text-align-justify"> <h6 class="text-align-justify"> <a hreflang href> <strong> <em> <u> <s> <sub> <sup> <ul> <ol> <li>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -41,12 +39,3 @@ filters:
     status: true
     weight: 10
     settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }

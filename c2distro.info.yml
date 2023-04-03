@@ -36,6 +36,8 @@ install:
   - content_moderation
   # Contrib.
   - admin_toolbar
+  - fullcalendar_view
+  - ckeditor5
   - paragraphs
   - classy_paragraphs
   - inline_form_errors

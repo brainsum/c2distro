@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple
+  module:
+    - ckeditor5
+format: simple
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - link
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - bulletedList
+      - numberedList
+      - alignment
+      - sourceEditing
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - justify
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: false
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<a hreflang>'
+image_upload: {  }
