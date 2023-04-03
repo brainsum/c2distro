@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function c2distro_core_install() {
+  $role = \Drupal\user\Entity\Role::create(['id' => 'user_manager', 'label' => 'User manager']);
+  $role->save();
+}
