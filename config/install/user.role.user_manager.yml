@@ -12,7 +12,6 @@ permissions:
   - 'assign contributor role'
   - 'assign editor role'
   - 'assign manager role'
-  - 'assign user_manager role'
   - 'openid connect set own password'
   - 'use text format simple'
   - 'view the administration theme'
