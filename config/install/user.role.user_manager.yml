@@ -1,6 +1,14 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.simple
+  module:
+    - filter
+    - openid_connect
+    - role_delegation
+    - system
+    - toolbar
 id: user_manager
 label: 'User Manager'
 weight: -9
@@ -12,6 +20,7 @@ permissions:
   - 'assign contributor role'
   - 'assign editor role'
   - 'assign manager role'
+  - 'assign user_manager role'
   - 'openid connect set own password'
   - 'use text format simple'
   - 'view the administration theme'
