@@ -257,6 +257,7 @@ function _c2distro_core_invalidate_tags(EntityInterface $entity) {
 
   if (in_array('media.field_tags', array_keys($mediaFields))) {
     $query = \Drupal::entityQuery('media')
+      ->accessCheck(FALSE)
       ->condition('field_tags', $entity->id());
     $results = $query->execute();
     if (!empty($results)) {
@@ -269,6 +270,7 @@ function _c2distro_core_invalidate_tags(EntityInterface $entity) {
 
   if (in_array('node.field_tags', array_keys($nodeFields))) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('field_tags', $entity->id());
     $results = $query->execute();
     if (!empty($results)) {
