@@ -1,0 +1,21 @@
+uuid: 547955d6-d53a-4643-9e74-8c0e42579743
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_footer
+    - paragraphs.paragraphs_type.map_block
+  module:
+    - text
+id: paragraph.map_block.field_block_footer
+field_name: field_block_footer
+entity_type: paragraph
+bundle: map_block
+label: 'Block footer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

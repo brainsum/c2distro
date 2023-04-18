@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * C2Distro Map module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function c2distro_map_theme() {
+  return [
+    'country_map' => [
+      'variables' => [
+        'content' => NULL,
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

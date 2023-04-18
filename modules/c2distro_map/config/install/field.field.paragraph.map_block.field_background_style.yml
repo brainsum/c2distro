@@ -1,0 +1,27 @@
+uuid: b26888dd-2aed-4710-9964-6113550a132f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.map_block
+id: paragraph.map_block.field_background_style
+field_name: field_background_style
+entity_type: paragraph
+bundle: map_block
+label: 'Background style'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: background_
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference
