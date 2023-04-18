@@ -1,0 +1,34 @@
+uuid: 7aa087ca-7200-4e03-a855-ea5318f7fc42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.map_block.field_background_style
+    - field.field.paragraph.map_block.field_block
+    - field.field.paragraph.map_block.field_block_footer
+    - paragraphs.paragraphs_type.map_block
+  module:
+    - block_field
+    - text
+id: paragraph.map_block.default
+targetEntityType: paragraph
+bundle: map_block
+mode: default
+content:
+  field_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_block_footer:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_background_style: true
+  search_api_excerpt: true

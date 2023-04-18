@@ -1,0 +1,40 @@
+.paragraph--type--map-block .paragraph--inner {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.paragraph--type--map-block .field--name-field-block-footer {
+  text-align: center;
+  padding-block: 30px;
+}
+
+#map {
+  height: 38rem;
+  margin: 0 auto;
+}
+
+#map a.iw-modal__to-contact {
+  transition: all, 0.2s;
+  border: 0.2rem solid #26c9de;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2.5rem;
+  font-weight: 700;
+  transition: all, 0.2s;
+}
+
+#map a.iw-modal__to-contact:hover {
+  background-color: #26c9de;
+  color: #ffffff;
+}
+
+#map .iw-modal__heading {
+  font-weight: 700;
+}
+
+@media (min-width: 64em) {
+  #map {
+    height: 60rem;
+  }
+}

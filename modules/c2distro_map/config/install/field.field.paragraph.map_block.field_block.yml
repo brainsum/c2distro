@@ -1,0 +1,25 @@
+uuid: f73b0e04-8d27-4772-ad4d-b31904d4e913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.map_block
+  module:
+    - block_field
+id: paragraph.map_block.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: map_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      country_map: country_map
+field_type: block_field

@@ -1,0 +1,13 @@
+gmap:
+  version: 1.8
+  header: true
+  css:
+    component:
+      css/map.css: {}
+  js:
+    //maps.googleapis.com/maps/api/js?key=AIzaSyDGCqOTW1HmchSYSs-7mScfCzVeCjbYWdE: { type: external, attributes: { defer: true, async: false, data-test: map } }
+    js/map.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

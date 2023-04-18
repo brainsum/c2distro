@@ -1,0 +1,43 @@
+uuid: 20e782fb-02a3-4ba1-a3c0-3ff7842d743a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.map_block.field_background_style
+    - field.field.paragraph.map_block.field_block
+    - field.field.paragraph.map_block.field_block_footer
+    - paragraphs.paragraphs_type.map_block
+  module:
+    - block_field
+    - text
+id: paragraph.map_block.default
+targetEntityType: paragraph
+bundle: map_block
+mode: default
+content:
+  field_background_style:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_block:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_block_footer:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
