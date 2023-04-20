@@ -1,0 +1,29 @@
+.page-node-type-country {
+  .region-content { 
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  #block-pagetitle {
+    text-align: center;
+    .block-inner {
+      max-width: 100%;
+
+      h1 {
+        text-align: center !important;
+      }
+    }
+  }
+  .field--type-image {
+    float: left;
+    // margin-top: 35px;
+  }
+
+  .field--name-body {
+    display: flex;
+    flex-flow: column;
+    padding-left: 8%;
+    margin-top: 40px;
+  }
+}
+
+

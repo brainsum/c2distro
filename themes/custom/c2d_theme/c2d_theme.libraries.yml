@@ -64,6 +64,14 @@ node.news:
   dependencies:
     - c2d_theme/tags
 
+node.country:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.node.country.css: {}
+  dependencies:
+    - c2d_theme/tags
+    
 node.page:
   version: 1.1.0
   css:
@@ -298,7 +306,11 @@ paragraph.views:
       css/5.components/components.paragraph.views.css: {}
   dependencies:
     - c2d_theme/paragraphs-base
-
+implementation.views:
+  version: 1.1.0
+  css:
+    component:
+      css/5.components/components.views.implementation-page.css: {}
 paragraph.views.documents:
   version: 1.1.0
   css:
