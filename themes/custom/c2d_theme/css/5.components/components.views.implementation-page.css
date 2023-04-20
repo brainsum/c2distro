@@ -1,0 +1,22 @@
+.view-implementations {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.view-implementations .view-content {
+  margin-top: 50px;
+}
+.view-implementations .view-content a {
+  text-decoration: underline;
+  position: relative;
+  padding-left: 20px;
+}
+.view-implementations .view-content a::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+/*# sourceMappingURL=components.views.implementation-page.css.map */
