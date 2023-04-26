@@ -3,8 +3,7 @@ type: theme
 base theme: c2d_theme
 description: A flexible theme with a responsive, mobile-first layout.
 package: Custom
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^10
 libraries-override:
   c2d_theme/global-styling: c2distro_subtheme/global-styling
   c2d_theme/block.footer: c2distro_subtheme/block.footer
@@ -56,6 +55,7 @@ regions:
   header: Header
   navigation: Navigation
   featured: Featured
+  help: Help
   top: Top
   content: Content
   bottom: Bottom
