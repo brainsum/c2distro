@@ -62,7 +62,9 @@
     "extra": {
         "patches": {
             "drupal/core": {
-                "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
+                "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch",
+                "Order image mappings by breakpoint ID and numeric multiplier": "https://www.drupal.org/files/issues/2022-05-19/3267870-9.5.x-47.patch",
+                "3192234: Apply width and height attributes to responsive image tag": "https://www.drupal.org/files/issues/2023-04-07/3192234-293-10.0.x.patch"
             },
             "drupal/media_thumbnails": {
                 "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch",
