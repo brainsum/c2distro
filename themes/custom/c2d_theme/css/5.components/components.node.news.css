@@ -28,6 +28,9 @@
   text-align:left;}
 [dir="rtl"] .block-page-title-block .block-inner h1.page-title{
   text-align:right;}
+.block-page-title-block .block-inner h1.page-title{
+  line-height:1.225;
+}
 
 article{
   max-width:139rem;
