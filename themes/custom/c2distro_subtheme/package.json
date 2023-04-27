@@ -18,7 +18,7 @@
   "scripts": {
     "start": "gulp",
     "startNoSync": "gulp defaultNoSync",
-    "prod": "gulp prod",
+    "build": "gulp prod",
     "sassDev": "gulp sassDev",
     "sassProd": "gulp sassProd",
     "scripts": "gulp scripts"
