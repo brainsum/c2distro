@@ -28,6 +28,10 @@ block.language-switcher:
   css:
     component:
       css/5.components/components.block.language-switcher.css: {}
+  js:
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.block.language-switcher.js: {}
+  dependencies:
+    - core/drupal
 
 block.title:
   version: 1.0.0
@@ -112,7 +116,9 @@ submit.loader:
     component:
       css/5.components/components.submit.loader.css: {}
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.submit.loader.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.submit.loader.js: {}
+  dependencies:
+    - core/drupal
 
 # Includes
 share-button:
@@ -121,7 +127,9 @@ share-button:
     component:
       css/5.components/components.share-button.css: {}
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.share-button.js: { }
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.share-button.js: { }
+  dependencies:
+    - core/drupal
 
 # Misc
 messages:
@@ -137,7 +145,10 @@ navigation-menu:
     component:
       css/5.components/components.navigation-menu.css: {}
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.navigation-menu.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.navigation-menu.js: {}
+    dependencies:
+    - core/drupal
+    - core/jquery
 
 pager:
   version: 1.0.0
@@ -172,9 +183,10 @@ paragraph.accordion:
     component:
       css/5.components/components.paragraph.accordion.css: { }
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/accordion.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.accordion.js: {}
   dependencies:
     - c2distro_subtheme/paragraphs-base
+    - core/drupal
     - core/jquery
 
 paragraph.cta:
@@ -221,15 +233,17 @@ paragraph.partners:
 paragraph.popup:
   version: 1.0.0
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.popup.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.popup.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 paragraph.quote:
   version: 1.0.0
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.quote.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.quote.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 paragraph.small-boxes:
@@ -267,8 +281,9 @@ paragraph.text-media:
 paragraph.timeline:
   version: 1.0.0
   js:
-    ../../profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.timeline.js: {}
+    /profiles/contrib/c2distro/themes/custom/c2d_theme/js/components.paragraph.timeline.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 paragraph.views:
