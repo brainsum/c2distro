@@ -50,7 +50,7 @@
         {{ text|length > 200 ? text|slice(0, 300) ~ '...' : text }}
         {{ content.field_tags }}
 
-        <a href="{{ path('entity.media.canonical', {'media': media.id}) }}" class="read-more"> {{ 'Read more'|t }} </a>
+        <a href="{{ content.name.0['#url'] }}" class="read-more"> {{ 'Read more'|t }} </a>
       </div>
     </div>
   {% endif %}

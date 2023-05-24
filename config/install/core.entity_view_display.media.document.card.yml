@@ -42,7 +42,7 @@ content:
     type: string
     label: hidden
     settings:
-      link_to_entity: false
+      link_to_entity: true
     third_party_settings: {  }
     weight: 3
     region: content
@@ -52,6 +52,8 @@ content:
     settings:
       image_link: ''
       image_style: document_card_image
+      image_loading:
+        attribute: lazy
       svg_attributes:
         width: null
         height: null

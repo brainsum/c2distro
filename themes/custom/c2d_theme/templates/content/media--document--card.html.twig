@@ -36,7 +36,7 @@
         </div>
       </div>
       {{ content|without('thumbnail', 'created', 'field_category') }}
-      <a href="{{ path('entity.media.canonical', {'media': media.id}) }}" class="read-more"> {{ 'Read more'|t }} </a>
+      <a href="{{ content.name.0['#url'] }}" class="read-more"> {{ 'Read more'|t }} </a>
     </div>
   {% endif %}
 
