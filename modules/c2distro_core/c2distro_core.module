@@ -165,11 +165,13 @@ function c2distro_core_form_contact_message_contact_us_form_alter(&$form, FormSt
     ];
 
     foreach ($dependentFields as $dependentField) {
-      $form[$dependentField]['#states'] = [
-        'visible' => [
-          'select[name="field_contact_reason"]' => ['value' => 'submit_document'],
-        ],
-      ];
+      if (isset($form[$dependentField])) {
+        $form[$dependentField]['#states'] = [
+          'visible' => [
+            'select[name="field_contact_reason"]' => ['value' => 'submit_document'],
+          ],
+        ];
+      }
     }
   }
 
