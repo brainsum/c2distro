@@ -22,3 +22,6 @@
   font-size:1.4rem;
   line-height:2.5rem;
 }
+.paragraph--type--media.width--wide .paragraph--inner .field--name-field-media-oembed-video iframe{
+  min-height:70rem;
+}
