@@ -77,8 +77,7 @@
   padding: 4.5rem 0;
 }
 
-.paragraph--type--popup-wrapper,
-.paragraph--type--media {
+.paragraph--type--popup-wrapper {
   > .paragraph--inner {
     @include width-690;
 
@@ -90,7 +89,8 @@
 
 .paragraph--type--text,
 .paragraph--type--cta,
-.paragraph--type--accordion {
+.paragraph--type--accordion,
+.paragraph--type--media {
   &,
   &.width--narrow {
     > .paragraph--inner {
