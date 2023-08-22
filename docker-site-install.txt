@@ -16,7 +16,7 @@ outside from container:
   cd app/web/profiles/contrib
   git clone git@github.com:brainsum/c2distro.git
   cd c2distro
-  git checkout 1.0.x
+  git checkout 2.0.x
 
 in container:
   drush site-install --site-mail=example@mail.com --site-name=C2Distro c2distro -y
