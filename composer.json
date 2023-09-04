@@ -62,7 +62,7 @@
     "extra": {
         "patches": {
             "drupal/core": {
-                "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch",
+                "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
             },
             "drupal/media_thumbnails": {
                 "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch",
