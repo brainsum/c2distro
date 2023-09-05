@@ -26,6 +26,16 @@
     }
   }
 
+  .lightgallery {
+    li {
+      list-style: none;
+      a {
+        display: block;
+        cursor: zoom-in;
+      }
+    }
+  }
+
   .right {
     .text-formatted p a {
       color: $color-secondary;

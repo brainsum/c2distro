@@ -24,6 +24,13 @@
     width:50%;
   }
 }
+.paragraph--type--text-media .lightgallery li{
+  list-style:none;
+}
+.paragraph--type--text-media .lightgallery li a{
+  display:block;
+  cursor:zoom-in;
+}
 .paragraph--type--text-media .right .text-formatted p a{
   color:#26c9de;
   text-decoration:underline;
