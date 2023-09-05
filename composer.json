@@ -22,6 +22,19 @@
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "lightgallery": {
+          "type": "package",
+          "package": {
+            "name": "sachinchoolur/lightgallery",
+            "version": "1.10.0",
+            "type": "drupal-library",
+            "source": {
+              "url": "https://github.com/sachinchoolur/lightGallery",
+              "type": "git",
+              "reference": "1.10.0"
+            }
+          }
         }
     },
     "require": {
@@ -57,9 +70,15 @@
         "drupal/token": "^1.9",
         "drupal/transliterate_filenames": "^2.0",
         "drupal/facets": "^2.0",
-        "drupal/core_views_facets": "^2.0"
+        "drupal/core_views_facets": "^2.0",
+        "sachinchoolur/lightgallery": "1.10.0"
     },
     "extra": {
+        "installer-paths": {
+          "libraries/{$name}": [
+            "type:drupal-library"
+          ]
+        },
         "patches": {
             "drupal/core": {
                 "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
@@ -79,6 +98,9 @@
             },
             "drupal/password_policy": {
                 "Added Password never expires field": "https://www.drupal.org/files/issues/2023-02-15/3338618-added-Password-never-expires-field-4.patch"
+            },
+            "drupal/lightgallery": {
+              "Support for Media Image and Video": "https://www.drupal.org/files/issues/2021-04-18/lightgallery-media_support-3204181-8.patch"
             }
         }
     }
