@@ -1,0 +1,15 @@
+uuid: f848c28f-0ee7-49b3-bffb-95dc1576b503
+langcode: en
+status: true
+dependencies: {  }
+name: narrow_full_width
+label: 'Narrow full width (w690px)'
+effects:
+  149e11d3-3054-4ef2-bd79-db9e6edcb4d2:
+    uuid: 149e11d3-3054-4ef2-bd79-db9e6edcb4d2
+    id: image_scale
+    weight: 1
+    data:
+      width: 690
+      height: null
+      upscale: false
