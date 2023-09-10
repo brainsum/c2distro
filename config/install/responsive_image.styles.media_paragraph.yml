@@ -1,0 +1,24 @@
+uuid: e9f2c514-1721-4459-b1a0-1d4d3cce5c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.narrow_full_width
+    - image.style.wide_full_width
+  theme:
+    - c2d_theme
+id: media_paragraph
+label: 'Media paragraph'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: wide_full_width
+    breakpoint_id: c2d_theme.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: narrow_full_width
+    breakpoint_id: c2d_theme.small
+    multiplier: 1x
+breakpoint_group: c2d_theme
+fallback_image_style: '_original image_'
