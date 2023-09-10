@@ -50,19 +50,13 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     content.field_style[0] ? 'background-color--' ~ content.field_style[0]['#plain_text']|lower,
-    content.field_image_zoom[0]['#markup'] ? 'image-zoom'
   ]
 %}
-
-  {% if content.field_image_zoom[0]['#markup'] == 1 %}
-    {{ attach_library('c2d_theme/image.zoom') }}
-  {% endif %}
-{{ dpm() }}
 {% block paragraph %}
   <div {{ attributes.addClass(classes).setAttribute('data-paragraph-id', paragraph.id.value) }}>
     <div class="paragraph--inner">
       {% block content %}
-        {{ content|without('field_style', 'field_image_zoom') }}
+        {{ content|without('field_style') }}
       {% endblock %}
     </div>
   </div>
