@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wide_width
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.media_paragraph
+  module:
+    - responsive_image
+id: media.image.wide_width
+targetEntityType: media
+bundle: image
+mode: wide_width
+content:
+  field_media_image:
+    type: responsive_image
+    label: visually_hidden
+    settings:
+      responsive_image_style: media_paragraph
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
