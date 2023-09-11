@@ -48,7 +48,6 @@
 
     .left {
       @include breakpoint(medium) {
-        padding-block-start: 2.5em;
         padding-inline-end: 5.5rem;
       }
     }
@@ -57,7 +56,6 @@
   &.paragraph--view-mode--default {
     .right {
       @include breakpoint(medium) {
-        padding-block-start: 2.5em;
         padding-inline-start: 12.5%;
       }
     }
