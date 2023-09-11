@@ -44,18 +44,12 @@
     padding-right:5.5rem;}
   [dir="rtl"] .paragraph--type--text-media.paragraph--view-mode--invers .left{
     padding-left:5.5rem;}
-  .paragraph--type--text-media.paragraph--view-mode--invers .left{
-    padding-top:2.5em;
-  }
 }
 @media print, screen and (min-width: 48em){
   [dir="ltr"] .paragraph--type--text-media.paragraph--view-mode--default .right{
     padding-left:12.5%;}
   [dir="rtl"] .paragraph--type--text-media.paragraph--view-mode--default .right{
     padding-right:12.5%;}
-  .paragraph--type--text-media.paragraph--view-mode--default .right{
-    padding-top:2.5em;
-  }
 }
 .paragraph--type--text-media iframe{
   width:100%;
