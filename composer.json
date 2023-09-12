@@ -49,6 +49,7 @@
         "drupal/dropdown_language": "^4.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/field_group": "^3.1",
+        "drupal/image_widget_crop": "^2.4",
         "drupal/lightgallery": "^1.4",
         "drupal/maillog": "^1.0.0",
         "drupal/mailsystem": "^4.3",
