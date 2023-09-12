@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.document_card
+  module:
+    - crop
 name: document_lister_image
 label: 'Document lister image'
 effects:
   71cbe70d-5a71-4297-970b-eec09e70ec48:
     uuid: 71cbe70d-5a71-4297-970b-eec09e70ec48
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 262
       height: 304
       upscale: false
+  aa148d87-9139-4c95-abc6-82319723c43a:
+    uuid: aa148d87-9139-4c95-abc6-82319723c43a
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: document_card
+      automatic_crop_provider: null

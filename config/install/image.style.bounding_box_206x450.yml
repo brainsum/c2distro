@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.bounding_box
+  module:
+    - crop
 name: bounding_box_206x450
 label: bounding-box-206x450
 effects:
   521aba21-38b4-48fa-b730-5dbb2bd5113d:
     uuid: 521aba21-38b4-48fa-b730-5dbb2bd5113d
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 206
       height: 450
       upscale: true
+  e781c85d-a9ac-4c2a-a579-e324b897a572:
+    uuid: e781c85d-a9ac-4c2a-a579-e324b897a572
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: bounding_box
+      automatic_crop_provider: null
