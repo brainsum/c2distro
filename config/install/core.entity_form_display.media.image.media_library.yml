@@ -4,23 +4,43 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.image.field_media_image
-    - image.style.thumbnail
+    - image.style.large
     - media.type.image
   module:
-    - svg_image
+    - content_moderation
+    - image_widget_crop
 id: media.image.media_library
 targetEntityType: media
 bundle: image
 mode: media_library
 content:
   field_media_image:
+    type: image_widget_crop
     weight: -50
+    region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - document_card
+        - bounding_box
+        - hero_large
+        - hero_mobile
+        - hero_tablet
+        - news_header_image
+        - news_thumbnail
+      crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: false
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_image
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
   translation:
     weight: 10
     region: content
