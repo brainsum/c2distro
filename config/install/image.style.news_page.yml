@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.news_header_image
+  module:
+    - crop
 name: news_page
 label: 'News page'
 effects:
   af79aa20-638f-485c-979b-d884d265ee55:
     uuid: af79aa20-638f-485c-979b-d884d265ee55
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 823
       height: 464
       anchor: center-center
+  143a7a99-3646-4a66-a5dc-f984c914879e:
+    uuid: 143a7a99-3646-4a66-a5dc-f984c914879e
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: news_header_image
+      automatic_crop_provider: null
