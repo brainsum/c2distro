@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.hero_tablet
+  module:
+    - crop
 name: hero_tablet
 label: 'Hero tablet (1024*303)'
 effects:
   9f2ab85f-a8bf-4016-bee3-13b7d5199207:
     uuid: 9f2ab85f-a8bf-4016-bee3-13b7d5199207
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 1024
       height: 303
       anchor: center-center
+  94bb56be-f3fd-4ce6-aee7-f8bf4efd5fd7:
+    uuid: 94bb56be-f3fd-4ce6-aee7-f8bf4efd5fd7
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_tablet
+      automatic_crop_provider: null

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'News thumbnail'
+id: news_thumbnail
+description: ''
+aspect_ratio: '262:192'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

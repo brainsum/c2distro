@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.hero_mobile
+  module:
+    - crop
 name: hero_mobile
 label: 'Hero mobile (375*667)'
 effects:
   05012e8a-bd3d-4ffb-bbca-5df74957e91a:
     uuid: 05012e8a-bd3d-4ffb-bbca-5df74957e91a
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 375
       height: 667
       anchor: center-center
+  57babafa-9dc1-48bc-9cbf-1e9e75db4e95:
+    uuid: 57babafa-9dc1-48bc-9cbf-1e9e75db4e95
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_mobile
+      automatic_crop_provider: null

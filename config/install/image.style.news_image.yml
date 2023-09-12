@@ -1,14 +1,25 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.news_thumbnail
+  module:
+    - crop
 name: news_image
 label: 'News image'
 effects:
   53816792-7080-4808-8397-4ff0e8b9882a:
     uuid: 53816792-7080-4808-8397-4ff0e8b9882a
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 262
       height: 192
       anchor: center-center
+  6c2a8b0f-7932-4860-aead-297fd8554df5:
+    uuid: 6c2a8b0f-7932-4860-aead-297fd8554df5
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: news_thumbnail
+      automatic_crop_provider: null
