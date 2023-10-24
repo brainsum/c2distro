@@ -3,7 +3,7 @@ name: "IFRC-C2D theme"
 type: theme
 # Short description text for admin UI, change for your project
 description: "Drupal 8 coding standards ready theme powered by Gulp 4 based on Classy."
-core_version_requirement: ^10
+core_version_requirement: ^9 || ^10
 # website logo, begin with Drupal 8.6 you can use SVG or PNG format too
 logo: logo.png
 # screenshot cover image for admin UI (588x438): take a screenshot about home page
