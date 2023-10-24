@@ -53,7 +53,7 @@
         "drupal/lightgallery": "^1.4",
         "drupal/maillog": "^1.0.0",
         "drupal/mailsystem": "^4.3",
-        "drupal/markup": "^1.0@beta",
+        "drupal/markup": "^2.0@beta",
         "drupal/media_thumbnails_pdf": "^2.0@beta",
         "drupal/media_thumbnails": "^1.0@alpha",
         "drupal/metatag": "^1.16",
