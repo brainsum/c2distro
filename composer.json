@@ -105,7 +105,7 @@
                 "Drupal 10 compatibility - to check access by default is deprecated in drupal:9.2.0 and an error will be thrown from drupal:10.0.0.": "https://www.drupal.org/files/issues/2023-10-15/password_policy_accessCheck-3391009.patch"
             },
             "drupal/lightgallery": {
-              "Support for Media Image and Video": "https://www.drupal.org/files/issues/2021-04-18/lightgallery-media_support-3204181-8.patch"
+              "Support for Media Image and Video": "https://www.drupal.org/files/issues/2023-11-09/lightgallery-media_support-3204181-27_0.patch"
             },
             "drupal/recaptcha_v3": {
                 "Relying on entity queries to check access by default is deprecated in drupal:9.2.0 and an error will be thrown from drupal:10.0.0.": "https://www.drupal.org/files/issues/2023-11-09/added-accessCheck-3400511-2.patch"
