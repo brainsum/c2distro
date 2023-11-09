@@ -101,7 +101,8 @@
                 "Sanitize svg images on uploads": "web/profiles/contrib/c2distro/patches/sanitize-svg-images-on-uploads.patch"
             },
             "drupal/password_policy": {
-                "Added Password never expires field": "https://www.drupal.org/files/issues/2023-03-30/3338618-added-Password-never-expires-field-7.patch"
+                "Added Password never expires field": "https://www.drupal.org/files/issues/2023-03-30/3338618-added-Password-never-expires-field-7.patch",
+                "Drupal 10 compatibility - to check access by default is deprecated in drupal:9.2.0 and an error will be thrown from drupal:10.0.0.": "https://www.drupal.org/files/issues/2023-10-15/password_policy_accessCheck-3391009.patch"
             },
             "drupal/lightgallery": {
               "Support for Media Image and Video": "https://www.drupal.org/files/issues/2021-04-18/lightgallery-media_support-3204181-8.patch"
