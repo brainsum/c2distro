@@ -12,6 +12,8 @@ package: brainsum
 # Defines the base theme, change it for your needs
 base theme: classy
 # Defines libraries group in which we can add css/js.
+dependencies:
+  - classy:classy
 libraries:
   - c2d_theme/global-styling
 # Regions, change it for your needs (don't forget change page template too)
