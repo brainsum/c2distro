@@ -1,5 +1,3 @@
-"use strict";
-
 (function c2distroLoader($) {
   Drupal.behaviors.c2distroLoader = {
     attach: function attach(context) {

@@ -1,5 +1,3 @@
-"use strict";
-
 (function popup($) {
   Drupal.behaviors.popup = {
     attach: function attach(context) {

@@ -38,7 +38,6 @@
  *       - core/drupal
  */
 /*
-'use strict';
 
 (function drupalJs($) {
   Drupal.behaviors.astarterthemeThemeFunction = {

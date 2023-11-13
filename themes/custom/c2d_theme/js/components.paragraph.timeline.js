@@ -1,5 +1,3 @@
-"use strict";
-
 (function timeline($) {
   Drupal.behaviors.timeline = {
     attach: function attach(context) {

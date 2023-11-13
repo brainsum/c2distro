@@ -1,5 +1,3 @@
-"use strict";
-
 (function shareButton(document, Drupal, $) {
   /**
    * Share Button from IFRC.org

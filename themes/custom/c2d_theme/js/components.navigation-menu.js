@@ -1,5 +1,3 @@
-"use strict";
-
 (function mainMenu($, Drupal) {
   Drupal.behaviors.mainmenu = {
     attach: function attach(context) {

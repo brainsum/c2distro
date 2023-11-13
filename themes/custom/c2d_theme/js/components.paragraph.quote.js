@@ -1,5 +1,3 @@
-"use strict";
-
 (function quote($) {
   Drupal.behaviors.quote = {
     attach: function attach(context) {

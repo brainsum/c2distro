@@ -29,7 +29,7 @@ block.hero:
       css/5.components/components.block.hero.css: {}
 
 block.language-switcher:
-  version: 2.0.0
+  version: 2.0.1
   css:
     component:
       css/5.components/components.block.language-switcher.css: {}
@@ -71,7 +71,7 @@ node.country:
       css/5.components/components.node.country.css: {}
   dependencies:
     - c2d_theme/tags
-    
+
 node.page:
   version: 1.1.0
   css:
@@ -122,7 +122,7 @@ form.contact:
     - c2d_theme/form
 
 submit.loader:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.submit.loader.css: {}
@@ -131,7 +131,7 @@ submit.loader:
 
 # Includes
 share-button:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.share-button.css: {}
@@ -147,7 +147,7 @@ messages:
 
 # Navigation
 navigation-menu:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.navigation-menu.css: {}
@@ -182,7 +182,7 @@ paragraphs-base:
       css/5.components/components.paragraphs-base.css: {}
 
 paragraph.accordion:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.accordion.css: { }
@@ -234,7 +234,7 @@ paragraph.partners:
     - c2d_theme/paragraphs-base
 
 paragraph.popup:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.popup.css: {}
@@ -245,7 +245,7 @@ paragraph.popup:
     - core/jquery
 
 paragraph.quote:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.quote.css: {}
@@ -289,7 +289,7 @@ paragraph.text-media:
     - c2d_theme/paragraphs-base
 
 paragraph.timeline:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.timeline.css: {}
