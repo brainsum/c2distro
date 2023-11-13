@@ -31,6 +31,7 @@
     "babel-eslint": "^10.1.0",
     "browser-sync": "^2.27.10",
     "camelcase": "^7.0.0",
+    "caniuse-lite": "^1.0.30001561",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.11",
     "cssnano-preset-lite": "^2.1.3",
