@@ -122,3 +122,27 @@ p.text-align-justify{
 [dir="rtl"] .text-formatted ul,[dir="rtl"] 
 .text-formatted ol{
   margin-right:1em;}
+.text-formatted ol{
+  list-style-type:decimal;
+}
+.text-formatted ol ol{
+  list-style-type:lower-alpha;
+}
+.text-formatted ol ol ol{
+  list-style-type:lower-roman;
+}
+.text-formatted ol ol ol ol{
+  list-style-type:upper-latin;
+}
+.text-formatted ol ol ol ol ol{
+  list-style-type:upper-roman;
+}
+.text-formatted ul{
+  list-style-type:disc;
+}
+.text-formatted ul ul{
+  list-style-type:circle;
+}
+.text-formatted ul ul ul{
+  list-style-type:square;
+}
