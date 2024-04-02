@@ -52,7 +52,6 @@ header {
   background-color: $color-lightest;
   height: 5.6rem;
   margin: 0 auto;
-  padding-inline-end: 1.5rem;
 
   @include breakpoint(mobile down) {
     position: relative;
@@ -60,8 +59,7 @@ header {
 
   @include breakpoint(medium) {
     height: 8.7rem;
-    padding-inline-start: 1.4rem;
-    padding-inline-end: 5.7rem;
+    padding-inline: 2.5rem;
   }
 
   @include breakpoint(tablet) {
@@ -87,7 +85,6 @@ header {
 
   @include breakpoint(medium) {
     width: 30rem;
-    padding-inline-start: 1rem;
   }
 
   .block-inner {
