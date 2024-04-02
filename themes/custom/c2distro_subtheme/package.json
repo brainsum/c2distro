@@ -1,5 +1,5 @@
 {
-  "name": "C2DistroSubtheme",
+  "name": "c2distrosubtheme",
   "version": "1.0.0",
   "description": "Frontend development dependencies for C2 Distro Subtheme.",
   "author": "Krisztian Pinter <kpinter@brainsum.com>",
@@ -63,6 +63,7 @@
     "stylelint-config-standard-scss": "^4.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0",
+    "stylelint-use-logical": "^2.1.2",
     "yarn": "^1.22.19"
   }
 }

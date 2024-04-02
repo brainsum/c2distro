@@ -1,7 +1,6 @@
 {
   "extends": "stylelint-config-standard-scss",
   "plugins": [
-    "stylelint-no-browser-hacks/lib",
     "stylelint-scss",
     "stylelint-order",
     "stylelint-use-logical"
