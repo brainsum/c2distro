@@ -60,7 +60,7 @@ footer {
 
         &:last-child {
           @include breakpoint(medium) {
-            padding-inline-start: 0;
+            padding-inline-end: 0;
           }
         }
 

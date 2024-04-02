@@ -63,9 +63,9 @@ footer .footer-block-type-body-item{
 }
 @media print, screen and (min-width: 48em){
   [dir="ltr"] footer .footer-block-type-body-item:last-child{
-    padding-left:0;}
-  [dir="rtl"] footer .footer-block-type-body-item:last-child{
     padding-right:0;}
+  [dir="rtl"] footer .footer-block-type-body-item:last-child{
+    padding-left:0;}
 }
 footer .footer-block-type-body-item .footer-title{
   font-family:"Montserrat", -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
