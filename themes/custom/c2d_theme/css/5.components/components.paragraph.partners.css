@@ -127,5 +127,5 @@
   color:#12284c;
 }
 .paragraph--type--partners.style--rounded .field--name-field-image img{
-  border-radius:50%;
+  border-radius:99999rem;
 }
