@@ -15,204 +15,181 @@
   content: unset !important;
 }
 
+// @TODO: FIXME: Remove this class from views
 .extra-space {
-  padding: 30px 1px;
+  padding: 3rem 0.1rem;
 }
 
 .path-news .block-page-title-block {
-  max-width: 124.2rem;
+  @include width-1105;
+
   padding-block-start: 6rem;
 
   .block-inner {
     h1.page-title {
       text-align: start !important;
-      padding: 0 1.5rem;
+      font-size: 4rem;
 
       @include breakpoint(medium) {
-        margin: 0 2.4rem;
-        color: $body-font-color;
         text-decoration: none solid $body-font-color;
-        line-height: 4rem !important;
-      }
-
-      @include breakpoint(desktop) {
-        padding: 0;
+        color: $body-font-color;
+        line-height: 1em;
       }
     }
   }
 }
 
 .view.lister-page.view-news {
-  max-width: 122.2rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0;
 
   .view-header {
     .second-title {
-      max-width: 119.2rem;
+      max-inline-size: 119.2rem;
       margin: 0 auto;
+      padding: 0 2rem;
+      color: $body-font-color;
+      font-family: $font-secondary;
       font-size: 3rem;
       line-height: 4.9rem;
-      font-family: $font-secondary;
-      color: $body-font-color;
-      padding: 0 2rem;
 
       @include breakpoint(medium) {
-        font-size: 4rem;
-        padding-block-start: 6.3rem;
+        padding-block-start: 9rem;
         padding-block-end: 0;
         padding-inline: 0;
+        font-size: 4rem;
       }
     }
   }
 
   .view-content {
-    padding-block-start: 6.3rem;
-    padding-inline: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
+    @include width-1105;
 
-    @include breakpoint(medium) {
-      justify-content: flex-start;
-      max-width: 124.2rem;
-      padding-inline: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-block-start: 4.5rem;
+    padding-inline: 1.5rem;
+    column-gap: 4.8rem;
+    row-gap: 9.6rem;
+
+    @include breakpoint(mobile-large) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    .views-row {
-      width: 100%;
-      background-color: $background-lightest;
-      transition: 0.5s;
-      position: relative;
-      margin-block-end: 4rem;
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      padding-block-start: 9rem;
+    }
+  }
 
-      @include breakpoint(medium) {
-        width: calc(50% - 48px);
-        margin-block-start: 0;
-        margin-block-end: 7rem;
-        margin-inline: 2.4rem;
-        padding-block-end: 7.3rem;
+  .views-row {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+    padding-block-end: 2.5rem;
+    transition: 0.5s;
+    background-color: $background-lightest;
+
+    @include breakpoint(medium) {
+      margin-block-start: 0;
+    }
+  }
+
+  .views-field-field-image img {
+    inline-size: 100%;
+  }
+
+  .views-field-field-date {
+    margin-block-start: 2rem;
+    padding-inline: 2.5rem;
+    color: $body-font-color;
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    .content-type {
+      text-transform: capitalize;
+      color: $color-secondary;
+      line-height: 1.9rem;
+    }
+  }
+
+  .views-field.views-field-field-location {
+    padding-block-start: 0;
+    padding-block-end: 1.7rem;
+    padding-inline: 2rem;
+    color: $body-font-color;
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    .field-content {
+      a {
+        display: flex;
       }
+    }
 
-      @include breakpoint(tablet) {
-        width: calc(25% - 48px);
+    a:before {
+      display: inline-block;
+      inline-size: 2.2rem;
+      block-size: 1.5rem;
+      padding-inline-end: 0.5rem;
+      content: url(../images/dist/svg/location.svg);
+    }
+  }
+
+  .views-field.views-field-title {
+    margin-block: 2rem;
+    padding-inline: 2.5rem;
+    text-decoration: none solid $body-font-color;
+    color: $body-font-color;
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.22;
+
+    @include breakpoint(medium) {
+      min-block-size: 9.2rem;
+    }
+
+    a {
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-secondary;
       }
+    }
+  }
 
-      .views-field-field-image img {
-        width: 100%;
-      }
+  .views-field.views-field-view-node {
+    margin-block-start: auto;
+    padding-block: 3rem;
+    padding-inline: 2.5rem;
+    transition: 0.5s;
 
-      .views-field.views-field-created,
-      .views-field.views-field-field-event-date,
-      .views-field-field-date {
-        padding-block-start: 2.4rem;
-        padding-block-end: 0;
-        padding-inline: 3.2rem;
-        color: $body-font-color;
-        font-family: $font-secondary;
-        font-size: 1.4rem;
-        font-weight: 600;
+    @include breakpoint(medium) {
+      padding-block: 0;
+    }
 
-        @include breakpoint(medium) {
-          padding-block-start: 1.5rem;
-          padding-block-end: 1rem;
-          padding-inline-start: 2.5rem;
-          padding-inline-end: 2rem;
-        }
+    a {
+      transition: 0.3s;
+      color: $body-font-color;
+      font-family: $font-secondary;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-style: italic;
 
-        .content-type {
-          color: $color-secondary;
-          text-transform: capitalize;
-          line-height: 1.9rem;
-        }
-      }
-
-      .views-field.views-field-field-location {
-        padding-block-start: 0;
-        padding-block-end: 1.7rem;
-        padding-inline: 2rem;
-        color: $body-font-color;
-        font-family: $font-secondary;
-        font-size: 1.4rem;
-        font-weight: 600;
-
-        .field-content {
-          a {
-            display: flex;
-          }
-        }
-
-        a:before {
-          content: url(../images/dist/svg/location.svg);
-          width: 2.2rem;
-          display: inline-block;
-          padding-inline-end: 0.5rem;
-          height: 1.5rem;
-        }
-      }
-
-      .views-field.views-field-title {
-        padding-block-start: 3rem;
-        padding-block-end: 0;
-        padding-inline: 3.2rem;
-        color: $body-font-color;
-        font-family: $font-secondary;
-        font-size: 1.8rem;
-        font-weight: 600;
-        text-decoration: none solid $body-font-color;
-        line-height: 1.22;
-
-        @include breakpoint(medium) {
-          min-height: 9rem;
-          padding-block-start: 0.9rem;
-          padding-block-end: 2.6rem;
-          padding-inline: 2.5rem;
-        }
-
-        a {
-          transition: .3s;
-
-          &:hover {
-            color: $color-secondary;
-          }
-        }
-      }
-
-      .views-field.views-field-view-node {
-        padding: 3rem 3.2rem;
-        transition: 0.5s;
-
-        @include breakpoint(medium) {
-          position: absolute;
-          padding-block: 0;
-          padding-inline-start: 2.5rem;
-          padding-inline-end: 2rem;
-          bottom: 3.8rem;
-        }
-
-        a {
-          transition: 0.3s;
-          color: $body-font-color;
-          font-family: $font-secondary;
-          font-size: 1.6rem;
-          font-weight: 700;
-          font-style: italic;
-
-          &:hover {
-            color: $color-secondary;
-          }
-        }
+      &:hover {
+        color: $color-secondary;
       }
     }
   }
 
   .view-empty {
+    max-inline-size: 119.2rem;
+    margin: 0 auto;
     padding-block-start: 2rem;
     padding-block-end: 8rem;
     padding-inline: 0;
-    max-width: 119.2rem;
-    margin: 0 auto;
 
     .no-results {
       color: $body-font-color;
