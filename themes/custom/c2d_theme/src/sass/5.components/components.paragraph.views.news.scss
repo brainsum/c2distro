@@ -12,26 +12,26 @@
 
 .field--name-field-paragraphs .field__item .paragraph--type--view {
   .paragraph--inner {
-    max-width: 122.2rem;
-    margin-inline: auto;
-    padding: 0 1.5rem;
+    @include width-1105;
 
     .block-views .block-inner {
-      max-width: unset;
+      max-inline-size: unset;
       padding: 0;
 
       .title-holder {
-        max-width: 115.7rem;
+        max-inline-size: 115.7rem;
 
         span {
           @include block-title;
 
           margin-inline-start: 0;
+          text-decoration: none;
+          color: $color-lightest;
+          box-shadow:
+            2.2rem 0 0 $body-font-color,
+            -1.9rem 0 0 $body-font-color;
           font-family: $font-secondary;
           font-size: 3.6rem;
-          color: $color-lightest;
-          text-decoration: none;
-          box-shadow: 2.2rem 0 0 $body-font-color, -1.9rem 0 0 $body-font-color;
         }
       }
 
@@ -39,31 +39,31 @@
         padding: 0;
 
         .view-content {
-          padding-block-start: 10.2rem;
+          padding-block-start: 9.8rem;
         }
 
         .more-link {
+          padding-block-start: 4rem;
+          padding-block-end: 7.5rem;
           text-align: center;
-          padding-block-start: 5rem;
-          padding-block-end: 4rem;
 
           a {
-            width: 26.1rem;
-            height: 4.7rem;
-            border: solid 0.2rem $color-secondary;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            inline-size: 26.1rem;
+            block-size: 4.7rem;
             margin: 0 auto;
+            transition: all, 0.2s;
+            color: $body-font-color;
+            border: solid 0.2rem $color-secondary;
             font-family: $font-secondary;
             font-size: 1.6rem;
             font-weight: 600;
-            color: $body-font-color;
-            transition: all, 0.2s;
 
             &:hover {
-              background-color: $color-secondary;
               color: $color-lightest;
+              background-color: $color-secondary;
             }
           }
         }
