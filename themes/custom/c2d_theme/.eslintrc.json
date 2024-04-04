@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "airbnb-base"
-  ],
+  "extends": ["airbnb-base", "prettier"],
   "root": true,
   "env": {
     "browser": true,
@@ -9,6 +7,8 @@
     "node": true
   },
   "globals": {
+    "Backbone": true,
+    "CKEDITOR": true,
     "Drupal": true,
     "drupalSettings": true,
     "drupalTranslations": true,
@@ -16,39 +16,58 @@
     "jQuery": true,
     "_": true,
     "matchMedia": true,
-    "Backbone": true,
     "Modernizr": true,
-    "CKEDITOR": true
+    "once": true
   },
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "script"
+    "sourceType": "module"
   },
   "rules": {
     "consistent-return": ["off"],
     "no-underscore-dangle": ["off"],
     "max-nested-callbacks": ["warn", 3],
     "import/no-mutable-exports": ["warn"],
-    "no-plusplus": ["warn", {
-      "allowForLoopAfterthoughts": true
-    }],
+    "no-plusplus": [
+      "warn",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
     "no-param-reassign": ["off"],
     "no-prototype-builtins": ["off"],
-    "valid-jsdoc": ["warn", {
-      "prefer": {
-        "returns": "return",
-        "property": "prop"
-      },
-      "requireReturn": false
-    }],
+    "valid-jsdoc": [
+      "warn",
+      {
+        "prefer": {
+          "returns": "return",
+          "property": "prop"
+        },
+        "requireReturn": false
+      }
+    ],
     "no-unused-vars": ["warn"],
-    "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
+    "operator-linebreak": [
+      "error",
+      "after",
+      { "overrides": { "?": "ignore", ":": "ignore" } }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": true,
         "optionalDependencies": false,
         "peerDependencies": false
+      }
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "exceptions": {
+          "ImportDeclaration": true,
+          "VariableDeclarator": true,
+          "Property": true
+        }
       }
     ]
   }

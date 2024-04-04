@@ -8,6 +8,7 @@
 /**
 * @group Basic elements
 */
+@use "sass:color";
 @import "../index";
 
 * {
@@ -20,19 +21,18 @@ html {
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 }
 
-
 body {
-  font-family: $font-family--body;
+  word-wrap: break-word;
   color: $body-font-color;
   background-color: $color-shade1;
+  font-family: $font-family--body;
   font-size: $global-font-size;
   line-height: $global-lineheight;
-  word-wrap: break-word;
 }
 
 ::selection {
-  background-color: $color-secondary;
   color: $color-lightest;
+  background-color: $color-secondary;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
   color: $body-font-color;
 
   &:hover {
-    color: darken($body-font-color, 15%);
+    color: color.adjust($body-font-color, $lightness: -15%);
   }
 
   &:focus {
@@ -50,30 +50,30 @@ a {
 
 p {
   &:first-child {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   &:last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 
 ol,
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul.menu,
 ul.links,
 .menu ul {
-  list-style: none;
   padding-inline-start: 0;
+  list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
   vertical-align: top;
 }
 
@@ -87,9 +87,9 @@ h6 {
 }
 
 select {
-  -moz-appearance:none; /* Firefox */
-  -webkit-appearance:none; /* Safari and Chrome */
-  appearance:none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' overflow='visible' preserveAspectRatio='none' viewBox='0 0 24 24' width='32' height='32'%3E%3Cg%3E%3Cpath xmlns:default='http://www.w3.org/2000/svg' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z' style='fill: rgb(18, 18, 18);' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
 
@@ -109,8 +109,8 @@ select {
 .field--type-text-long,
 .field--name-body {
   a {
-    color: $color-secondary;
     text-decoration: underline;
+    color: $color-secondary;
 
     &:hover {
       text-decoration: none;

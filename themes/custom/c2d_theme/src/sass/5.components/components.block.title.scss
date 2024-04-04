@@ -11,18 +11,18 @@
 @import "../index";
 
 .block-page-title-block {
+  max-inline-size: 119.2rem;
+  margin: 0 auto;
   padding-block-start: 4rem;
   padding-block-end: 0;
   padding-inline: 0;
-  max-width: 119.2rem;
-  margin: 0 auto;
 
   .block-inner {
     h1.page-title {
       text-align: center;
+      text-decoration: none solid $body-font-color;
       color: $body-font-color;
       font-family: $font-secondary;
-      text-decoration: none solid $body-font-color;
 
       .path-frontpage & {
         font-size: 3rem;

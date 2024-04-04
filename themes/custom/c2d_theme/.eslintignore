@@ -1,4 +1,3 @@
+js/**/*
 node_modules/**/*
 src/js/vendors/**/*
-js/*.js
-gulpfile.js

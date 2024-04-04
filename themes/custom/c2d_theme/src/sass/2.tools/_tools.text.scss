@@ -31,13 +31,11 @@
  *   }
  */
 @mixin text-align($align, $last: null) {
-  @if ($last != null) {
+  @if $last not null {
     text-align: $align !important; // for Edge
     text-align-last: $last !important;
     hyphens: auto;
-  }
-
-  @else {
+  } @else {
     text-align: $align !important;
   }
 }
@@ -109,7 +107,7 @@
 }
 
 @mixin link-hover {
-  @include transition(color, .2s);
+  transition: color, 0.2s;
 
   &:hover {
     color: $color-secondary;
@@ -117,12 +115,12 @@
 }
 
 @mixin block-title-simple {
+  text-decoration: none solid $color-primary;
+  color: $color-primary;
   font-family: $font-secondary;
   font-size: 3rem;
-  color: $color-primary;
-  text-decoration: none solid $color-primary;
-  line-height: 4rem;
   font-weight: 700;
+  line-height: 4rem;
 
   @include breakpoint(medium) {
     font-size: 4rem;
@@ -130,20 +128,20 @@
 }
 
 @mixin text-small-bold {
+  text-decoration: none solid $color-primary;
+  color: $color-primary;
   font-family: $font-secondary;
   font-size: 1.4rem;
-  color: $color-primary;
-  text-decoration: none solid $color-primary;
-  line-height: 1.9rem;
   font-weight: 700;
+  line-height: 1.9rem;
 }
 
 @mixin text-read-more {
-  font-family: $font-secondary;
-  color: $color-primary;
   text-decoration: none solid $color-primary;
-  line-height: 1.9rem;
-  font-weight: 700;
+  color: $color-primary;
+  font-family: $font-secondary;
   font-size: 1.6rem;
+  font-weight: 700;
   font-style: italic;
+  line-height: 1.9rem;
 }

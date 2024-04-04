@@ -15,4 +15,3 @@
     }
   };
 })(document, Drupal, jQuery);
-//# sourceMappingURL=components.paragraph.share-button.js.map

@@ -22,18 +22,17 @@
     .field--name-field-title {
       position: relative;
       padding-inline-end: 4rem;
-      font-size: 1.8rem;
       cursor: pointer;
+      font-size: 1.8rem;
 
       &:after {
-        @include transition(all, 0.2s);
-
-        content: url("../../images/dist/icons/chevron-down.svg");
         position: absolute;
         inset-block-start: -0.3rem;
         inset-inline-end: -0.6rem;
-        width: 3.2rem;
-        height: 3.2rem;
+        inline-size: 3.2rem;
+        block-size: 3.2rem;
+        content: url("../../images/dist/icons/chevron-down.svg");
+        transition: all, 0.2s;
       }
     }
 
@@ -48,20 +47,19 @@
     }
 
     .open .field--name-field-title::after {
-      @include rotate(180);
+      transform: rotate(180deg);
     }
 
     .field--name-field-text {
-      @include transition(all, 0.2s);
-
-      height: 0;
       overflow: hidden;
+      block-size: 0;
+      transition: all, 0.2s;
     }
 
     .paragraph--inner.open .field--name-field-text {
-      height: auto;
-      padding-block-end: 2.5rem;
       overflow: auto;
+      block-size: auto;
+      padding-block-end: 2.5rem;
     }
   }
 

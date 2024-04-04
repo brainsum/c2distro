@@ -44,8 +44,7 @@
 
     .form--inline {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row;
 
       @include breakpoint(mobile) {
         flex-wrap: nowrap;
@@ -53,34 +52,34 @@
     }
 
     .form-item-text {
-      width: 100%;
+      inline-size: 100%;
 
       @include breakpoint(mobile) {
-        max-width: 40rem;
+        max-inline-size: 40rem;
       }
 
       @include breakpoint(tablet) {
-        width: 50%;
+        inline-size: 50%;
       }
 
       @include breakpoint(large) {
-        width: 30%;
+        inline-size: 30%;
       }
     }
 
     .form-text {
-      height: auto;
+      block-size: auto;
       padding: 1.35rem 1em;
-      border: 1px solid $color-grey-dark;
+      border: 0.1rem solid $color-grey-dark;
       background: $background-lightest;
     }
 
     .form-actions {
-      width: 100%;
+      inline-size: 100%;
       margin-block-start: 3rem;
 
       @include breakpoint(mobile) {
-        width: auto;
+        inline-size: auto;
         margin-block-start: 0;
         margin-inline-start: 1.3rem;
       }
@@ -88,7 +87,7 @@
 
     input.form-submit {
       @include breakpoint(mobile down) {
-        width: 100%;
+        inline-size: 100%;
       }
     }
   }
@@ -132,8 +131,8 @@
 
     h2 {
       font-size: 2.2rem;
-      line-height: 1.1;
       font-weight: 700;
+      line-height: 1.1;
 
       @include breakpoint(medium) {
         font-size: 3rem;

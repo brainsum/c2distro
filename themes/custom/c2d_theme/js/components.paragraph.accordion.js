@@ -15,4 +15,3 @@
     }
   };
 })(jQuery);
-//# sourceMappingURL=components.paragraph.accordion.js.map

@@ -1,30 +1,101 @@
 {
-  "extends": "stylelint-config-standard-scss",
-  "plugins": [
-    "stylelint-scss",
-    "stylelint-order",
-    "stylelint-use-logical"
-  ],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-property-sort-order-smacss"],
+  "plugins": ["stylelint-scss", "stylelint-order", "stylelint-use-logical"],
+  "customSyntax": "postcss-scss",
   "rules": {
-    "csstools/use-logical": true,
+    "alpha-value-notation": "number",
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested", "blockless-after-same-name-blockless"],
+        "ignore": ["after-comment", "inside-block", "blockless-after-blockless"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "debug",
+          "each",
+          "else",
+          "error",
+          "extend",
+          "for",
+          "forward",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return",
+          "use",
+          "warn",
+          "while"
+        ]
+      }
+    ],
+    "color-function-notation": null,
     "comment-empty-line-before": null,
+    "custom-property-pattern": "^[a-z][-_a-z0-9IE]*$",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-property-value-disallowed-list": {
+      "/^border/": ["none"]
+    },
     "function-linear-gradient-no-nonstandard-direction": null,
+    "function-url-quotes": null,
     "function-whitespace-after": null,
-    "no-descending-specificity": null,
-    "no-duplicate-selectors": null,
-    "no-unknown-animations": true,
+    "hue-degree-notation": "number",
+    "import-notation": "string",
+    "max-line-length": null,
     "media-feature-name-no-unknown": [
       true,
       {
         "ignoreMediaFeatureNames": [
           "prefers-reduced-motion",
-          "min--moz-device-pixel-ratio"
+          "/device-pixel-ratio$/"
         ]
       }
     ],
-    "number-leading-zero": "always",
-    "scss/dollar-variable-pattern": "^_?[a-z]+[\\w-]*$",
-    "scss/at-extend-no-missing-placeholder": true,
+    "media-feature-name-no-vendor-prefix": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "no-unknown-animations": true,
+    "number-max-precision": 5,
+    "property-no-vendor-prefix": null,
+    "rule-empty-line-before": null,
+    "selector-attribute-quotes": null,
+    "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "selector-id-pattern": "^[a-z][-_a-z0-9]*$",
+    "selector-no-vendor-prefix": null,
+    "selector-pseudo-element-colon-notation": null,
+    "shorthand-property-no-redundant-values": null,
+    "unit-allowed-list": [
+      "ch",
+      "deg",
+      "dpi",
+      "em",
+      "ex",
+      "fr",
+      "ms",
+      "rem",
+      "%",
+      "s",
+      "vw",
+      "vh"
+    ],
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true,
+        "ignoreProperties": ["--font-family", "font-family"]
+      }
+    ],
+    "value-no-vendor-prefix": null,
+    "csstools/use-logical": [
+      "always",
+      {
+        "except": ["float", "clear"]
+      }
+    ],
     "order/order": [
       "custom-properties",
       "dollar-variables",
@@ -85,6 +156,13 @@
       "right",
       "bottom",
       "left",
+      "inset",
+      "inset-block",
+      "inset-block-start",
+      "inset-block-end",
+      "inset-inline",
+      "inset-inline-start",
+      "inset-inline-end",
       "display",
       "visibility",
       "float",
@@ -146,16 +224,24 @@
       "width",
       "min-width",
       "max-width",
+      "inline-size",
+      "min-inline-size",
+      "max-inline-size",
       "height",
       "min-height",
       "max-height",
+      "block-size",
+      "min-block-size",
+      "max-block-size",
       "margin",
       "margin-top",
       "margin-right",
       "margin-bottom",
       "margin-left",
+      "margin-block",
       "margin-block-start",
       "margin-block-end",
+      "margin-inline",
       "margin-inline-start",
       "margin-inline-end",
       "padding",
@@ -163,8 +249,10 @@
       "padding-right",
       "padding-bottom",
       "padding-left",
+      "padding-block",
       "padding-block-start",
       "padding-block-end",
+      "padding-inline",
       "padding-inline-start",
       "padding-inline-end",
       "table-layout",
@@ -370,22 +458,24 @@
       "border-left-width",
       "border-left-style",
       "border-left-color",
+      "border-block",
       "border-block-start",
       "border-block-start-width",
       "border-block-start-style",
       "border-block-start-color",
-      "border-inline-end",
-      "border-inline-end-width",
-      "border-inline-end-style",
-      "border-inline-end-color",
       "border-block-end",
       "border-block-end-width",
       "border-block-end-style",
       "border-block-end-color",
+      "border-inline",
       "border-inline-start",
       "border-inline-start-width",
       "border-inline-start-style",
       "border-inline-start-color",
+      "border-inline-end",
+      "border-inline-end-width",
+      "border-inline-end-style",
+      "border-inline-end-color",
       "-webkit-border-radius",
       "-moz-border-radius",
       "border-radius",
@@ -481,85 +571,15 @@
       "font-smooth",
       "line-height"
     ],
-    "plugin/no-browser-hacks": [
-      true,
-      {
-        "browsers": [
-          "ie >= 9",
-          "edge >= 13",
-          "firefox >= 5",
-          "opera >= 12",
-          "safari >= 5",
-          "chrome >= 56"
-        ]
-      }
-    ],
-    "property-no-unknown": null,
-    "rule-empty-line-before": null,
-    "selector-pseudo-element-colon-notation": null,
-    "shorthand-property-no-redundant-values": null,
-    "string-quotes": "double",
-    "unit-allowed-list": [
-      "ch",
-      "deg",
-      "em",
-      "ex",
-      "fr",
-      "ms",
-      "rem",
-      "%",
-      "s",
-      "px",
-      "vw",
-      "vh"
-    ],
-    "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "each",
-          "else",
-          "error",
-          "extend",
-          "for",
-          "function",
-          "if",
-          "include",
-          "mixin",
-          "return",
-          "use",
-          "warn",
-          "while"
-        ]
-      }
-    ],
-    "at-rule-empty-line-before": [
-      "always",
-      {
-        "except": [
-          "first-nested",
-          "blockless-after-same-name-blockless"
-        ],
-        "ignore": [
-          "after-comment",
-          "inside-block",
-          "blockless-after-blockless"
-        ]
-      }
-    ],
-    "declaration-property-value-disallowed-list": {
-      "/^border/": [
-        "none"
-      ]
-    }
-  },
-  "media-feature-name-no-unknown": [
-    true,
-    {
-      "ignoreMediaFeatureNames": [
-        "prefers-reduced-motion",
-        "/device-pixel-ratio$/"
-      ]
-    }
-  ]
+    "scss/at-else-closing-brace-newline-after": null,
+    "scss/at-else-closing-brace-space-after": null,
+    "scss/at-else-empty-line-before": null,
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-if-closing-brace-newline-after": null,
+    "scss/at-if-closing-brace-space-after": null,
+    "scss/at-import-partial-extension": null,
+    "scss/at-mixin-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "scss/dollar-variable-colon-space-before": null,
+    "scss/dollar-variable-pattern": "^_?[a-z]+[\\w-]*$"
+  }
 }

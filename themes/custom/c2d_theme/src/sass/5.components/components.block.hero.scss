@@ -20,54 +20,54 @@
       position: relative;
       display: flex;
       justify-content: center;
-      width: 100%;
+      inline-size: 100%;
     }
 
     .hero-text {
-      @include basePadding;
+      @include base-padding;
 
       margin-block-start: 4.5rem;
 
       @include breakpoint(desktop) {
         position: absolute;
+        inset-block: 0;
+        inset-inline: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        inset-inline: 0;
-        inset-block: 0;
-        background-color: transparent;
-        max-width: 127rem;
+        max-inline-size: 127rem;
         margin-block-start: 12rem;
         margin-block-end: 0;
         margin-inline: auto;
         text-align: center;
         color: $color-lightest;
+        background-color: transparent;
       }
 
       .hero-text-container-title {
+        margin-block-end: 1rem;
         text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
         font-family: $font-secondary;
         font-size: 3.6rem;
-        text-decoration: none;
-        line-height: 1.11;
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        margin-block-end: 1rem;
+        line-height: 1.11;
 
         @include breakpoint(desktop) {
-          font-size: 4rem;
           color: $color-lightest;
+          font-size: 4rem;
         }
       }
 
       .hero-text-container-description {
+        max-inline-size: 83rem;
         margin-inline: auto;
-        max-width: 83rem;
         text-align: center;
+        text-decoration: none;
         font-family: $font-primary;
         font-size: 1.8rem;
-        text-decoration: none;
         line-height: 1.66;
 
         @include breakpoint(desktop) {

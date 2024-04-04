@@ -33,6 +33,7 @@ $global-left: if($global-text-direction == rtl, right, left) !default;
 $global-right: if($global-text-direction == rtl, left, right) !default;
 
 // Internal variable that contains the flex justifying options
+// stylelint-disable-next-line scss/dollar-variable-pattern
 $-zf-flex-justify: -zf-flex-justify($global-text-direction) !default;
 
 // XY Grid Settings
@@ -40,6 +41,7 @@ $global-width: 90rem !default;
 $xy-grid: true !default;
 $grid-container: $global-width !default;
 $grid-columns: 12 !default;
+
 // Not the best, but because we use different body font size than 16px (10px),
 // we need multiple the desired value to get that.
 $grid-margin-gutters: (

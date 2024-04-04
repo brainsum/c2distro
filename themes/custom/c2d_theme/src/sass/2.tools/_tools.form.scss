@@ -20,19 +20,7 @@
     @content;
   }
 
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &::-webkit-input-placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
+  &::placeholder {
     @content;
   }
 }
@@ -53,5 +41,29 @@
     @content;
 
     -webkit-text-fill-color: $color;
+  }
+}
+
+@mixin view-more-button {
+  margin-block-end: 3rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 26.1rem;
+    block-size: 4.7rem;
+    margin: 0 auto;
+    transition: all, 0.2s;
+    color: $body-font-color;
+    border: solid 0.2rem $color-secondary;
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-lightest;
+      background-color: $color-secondary;
+    }
   }
 }

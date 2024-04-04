@@ -25,9 +25,8 @@
   padding-inline: 3rem;
 
   .paragraph--inner {
-    @include flex;
-    @include justify-content(space-between);
-
+    display: flex;
+    justify-content: space-between;
     padding-block-end: 0.4rem;
     border-block-end: 0.2rem solid $color-secondary;
 
@@ -39,15 +38,15 @@
       font-weight: 700;
 
       &:after {
-        content: '';
-        display: block;
         position: absolute;
-        inset-inline-end: 0;
         inset-block-end: -0.8rem;
         inset-inline-start: 0;
-        width: 0.6rem;
-        height: 0.6rem;
+        inset-inline-end: 0;
+        display: block;
+        inline-size: 0.6rem;
+        block-size: 0.6rem;
         margin: 0 auto;
+        content: "";
         border-radius: 0.3rem;
         background-color: $body-font-color;
       }
@@ -75,9 +74,8 @@
   &.left-popup .field--name-field-left-title,
   &.middle-popup .field--name-field-middle-title,
   &.right-popup .field--name-field-right-title {
-    @include transition(color, 0.2s);
-
     cursor: pointer;
+    transition: color, 0.2s;
 
     &:hover {
       color: $color-secondary;

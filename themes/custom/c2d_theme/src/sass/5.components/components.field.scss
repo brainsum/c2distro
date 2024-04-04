@@ -13,15 +13,14 @@
 @import "../index";
 
 .field--label-inline {
-  @include flex;
-  @include flex-direction(column);
-  @include justify-content(flex-start);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: $font-primary;
 
   @include breakpoint(medium) {
-    @include flex-direction(row);
+    flex-direction: row;
   }
-
-  font-family: $font-primary;
 
   .field__label {
     font-weight: 700;

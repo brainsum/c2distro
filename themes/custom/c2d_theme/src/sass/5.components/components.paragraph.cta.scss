@@ -21,8 +21,8 @@
   }
 
   .field--name-field-link {
-    @include flex;
-    @include justify-content(center);
+    display: flex;
+    justify-content: center;
 
     a {
       @include bordered-button;
@@ -30,26 +30,26 @@
   }
 
   .field--name-field-title {
+    margin-block-end: 5rem;
+    text-align: center;
+    text-decoration: none;
+    color: $body-font-color;
     font-family: $font-secondary;
     font-size: 4rem;
-    line-height: normal;
-    color: $body-font-color;
-    text-decoration: none;
-    text-align: center;
     font-weight: 700;
-    margin-block-end: 5rem;
+    line-height: normal;
   }
 
   .field--name-field-text {
     margin-block-end: 4rem;
 
     p {
+      text-align: center;
+      text-decoration: none solid $body-font-color;
+      color: $body-font-color;
       font-family: $font-primary;
       font-size: 1.8rem;
-      color: $body-font-color;
-      text-decoration: none solid $body-font-color;
       line-height: 3rem;
-      text-align: center;
 
       &.text-align-justify {
         @include text-align(justify, start);

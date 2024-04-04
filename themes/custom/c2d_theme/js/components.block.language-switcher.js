@@ -51,4 +51,3 @@
     }
   };
 })(Drupal);
-//# sourceMappingURL=components.block.language-switcher.js.map

@@ -26,11 +26,11 @@
       .paragraph--type--text-media {
         @include breakpoint(medium) {
           .left {
-            width: 25%;
+            inline-size: 25%;
           }
 
           .right {
-            width: 75%;
+            inline-size: 75%;
           }
         }
       }

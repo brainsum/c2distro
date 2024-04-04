@@ -29,4 +29,3 @@
     }
   };
 })(jQuery, Drupal);
-//# sourceMappingURL=components.navigation-menu.js.map

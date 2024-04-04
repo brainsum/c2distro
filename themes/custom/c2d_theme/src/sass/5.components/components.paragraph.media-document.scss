@@ -27,33 +27,31 @@
   }
 
   .field--name-field-media-entities {
-    @include flex;
-    @include justify-content(center);
-    @include flex-wrap(wrap);
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 -1.5rem;
 
     > .field__item {
-      width: 100%;
-      max-width: 23.4rem;
+      inline-size: 100%;
+      max-inline-size: 23.4rem;
       margin-block-start: 0;
       margin-block-end: 3rem;
       margin-inline: 1rem;
 
       @include breakpoint(tablet) {
-        max-width: calc(25% - 3rem);
+        max-inline-size: calc(25% - 3rem);
         margin-block-start: 0;
         margin-block-end: 3rem;
         margin-inline: 1.5rem;
       }
 
       .media {
-        @include flex;
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-
-        height: 100%;
-        min-height: 47rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        block-size: 100%;
+        min-block-size: 47rem;
         border: 0.1rem solid $color-grey-light;
         background-color: $color-white;
 
@@ -69,9 +67,9 @@
 
         .field--name-name,
         .field--name-field-short-title {
-          max-height: 9.5rem;
-          margin-block-end: 1.6rem;
           overflow: hidden;
+          max-block-size: 9.5rem;
+          margin-block-end: 1.6rem;
         }
 
         .readmore-btn,
@@ -80,9 +78,8 @@
           padding: 0 2.7rem;
 
           a {
-            @include transition(all, 0.2s);
-
             display: block;
+            transition: all, 0.2s;
             font-weight: 700;
 
             &:hover {
@@ -92,11 +89,10 @@
         }
 
         .readmore-btn {
-          @include transition(all, 0.2s);
-
           justify-self: flex-end;
           margin-block-start: auto;
-          border-bottom: 1rem solid $color-white;
+          transition: all, 0.2s;
+          border-block-end: 1rem solid $color-white;
 
           &:hover {
             border-color: $color-secondary;
@@ -113,9 +109,8 @@
   }
 
   .field--name-field-link {
-    @include flex;
-    @include justify-content(center);
-
+    display: flex;
+    justify-content: center;
     padding-block-start: 3rem;
 
     a {
