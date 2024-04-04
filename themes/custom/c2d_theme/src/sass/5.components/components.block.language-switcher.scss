@@ -8,10 +8,10 @@
 /**
   * Imports
  */
-@import "../_index";
+@import "../index";
 
 .block-dropdown-language {
-  min-width: 11rem;
+  min-inline-size: 11rem;
   margin-inline-start: auto;
   margin-inline-end: 4rem;
 
@@ -23,15 +23,15 @@
       position: absolute;
       z-index: 700;
       overflow: hidden;
-      width: calc(100% + 3.2rem);
-      height: auto;
-      max-height: 0;
+      inline-size: calc(100% + 3.2rem);
+      block-size: auto;
+      max-block-size: 0;
+      transition: all 0.25s ease;
       opacity: 0;
       background: $color-shade2;
-      transition: all .25s ease;
 
       &.is-active {
-        max-height: calc(var(--language-list__dropdown) * 5rem);
+        max-block-size: calc(var(--language-list__dropdown) * 5rem);
         opacity: 1;
       }
     }
@@ -41,20 +41,20 @@
     @include font-smooth;
 
     display: block;
-    cursor: pointer;
-    color: $color-primary;
-    font-size: 1.8rem;
     padding-block: 1.18rem;
     padding-inline: 1.4rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: $color-primary;
     font-family: $font-primary;
+    font-size: 1.8rem;
     font-weight: 700;
-    transition: all .25s ease;
   }
 
   .language-list__dropdown .language-link {
     &:hover {
-      background: $color-primary;
       color: $color-lightest;
+      background: $color-primary;
     }
   }
 
@@ -74,10 +74,10 @@
 
     &__icon {
       display: block;
-      width: 2rem;
-      height: 2rem;
+      inline-size: 2rem;
+      block-size: 2rem;
+      transition: all 0.25s ease;
       color: $color-primary;
-      transition: all .25s ease;
     }
   }
 

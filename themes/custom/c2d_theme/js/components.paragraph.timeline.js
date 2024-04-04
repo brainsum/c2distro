@@ -13,4 +13,3 @@
     }
   };
 })(jQuery);
-//# sourceMappingURL=components.paragraph.timeline.js.map

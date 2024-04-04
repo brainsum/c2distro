@@ -6,7 +6,7 @@
  *
  * Borrowed from bourbon
  * @link https://www.bourbon.io/docs/latest#triangle
- * *
+ *
  * @example
  *   .button__arrow {
  *     @include make-triangle(right, 1.5rem, 1rem, $color-secondary);
@@ -31,62 +31,38 @@
  */
 
 @mixin make-triangle($direction, $width, $height, $color) {
-  @if not index(
-    "up" "up-right" "right" "down-right" "down" "down-left" "left" "up-left",
-    $direction
-  ) {
-    @error "Direction must be `up`, `up-right`, `right`, `down-right`, " +
-      "`down`, `down-left`, `left` or `up-left`.";
-  }
-
-  @else if not _is-color($color) {
-    @error "`#{$color}` is not a valid color for the `$color` argument in " +
-      "the `triangle` mixin.";
-  }
-
-  @else {
+  @if not index("up" "up-right" "right" "down-right" "down" "down-left" "left" "up-left", $direction) {
+    @error "Direction must be `up`, `up-right`, `right`, `down-right`, `down`, `down-left`, `left` or `up-left`.";
+  } @else if not validators.is-color($color) {
+    @error "`#{$color}` is not a valid color for the `$color` argument in the `triangle` mixin.";
+  } @else {
+    inline-size: 0;
+    block-size: 0;
     border-style: solid;
-    height: 0;
-    width: 0;
 
     @if $direction == "up" {
+      border-width: 0 ($width * 0.5) $height;
       border-color: transparent transparent $color;
-      border-width: 0 ($width / 2) $height;
-    }
-
-    @else if $direction == "up-right" {
-      border-color: transparent $color transparent transparent;
+    } @else if $direction == "up-right" {
       border-width: 0 $width $width 0;
-    }
-
-    @else if $direction == "right" {
-      border-color: transparent transparent transparent $color;
-      border-width: ($height / 2) 0 ($height / 2) $width;
-    }
-
-    @else if $direction == "down-right" {
-      border-color: transparent transparent $color;
-      border-width: 0 0 $width $width;
-    }
-
-    @else if $direction == "down" {
-      border-color: $color transparent transparent;
-      border-width: $height ($width / 2) 0;
-    }
-
-    @else if $direction == "down-left" {
-      border-color: transparent transparent transparent $color;
-      border-width: $width 0 0 $width;
-    }
-
-    @else if $direction == "left" {
       border-color: transparent $color transparent transparent;
-      border-width: ($height / 2) $width ($height / 2) 0;
-    }
-
-    @else if $direction == "up-left" {
+    } @else if $direction == "right" {
+      border-width: ($height * 0.5) 0 ($height * 0.5) $width;
+      border-color: transparent transparent transparent $color;
+    } @else if $direction == "down-right" {
+      border-width: 0 0 $width $width;
+      border-color: transparent transparent $color;
+    } @else if $direction == "down" {
+      border-width: $height ($width * 0.5) 0;
       border-color: $color transparent transparent;
+    } @else if $direction == "down-left" {
+      border-width: $width 0 0 $width;
+      border-color: transparent transparent transparent $color;
+    } @else if $direction == "left" {
+      border-color: transparent $color transparent transparent;
+    } @else if $direction == "up-left" {
       border-width: $width $width 0 0;
+      border-color: $color transparent transparent;
     }
   }
 }

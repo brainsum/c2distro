@@ -18,11 +18,11 @@
   }
 
   .block-page-title-block {
+    max-inline-size: 100%;
     margin-block: 0;
     margin-inline: 0;
     padding-block: 0;
     padding-inline: 0;
-    max-width: 100%;
 
     .block-inner h1.page-title {
       margin-block-start: 6rem;
@@ -58,8 +58,8 @@
   }
 
   .facet-item {
-    float: inline-start;
     display: block;
+    float: inline-start;
     padding: 0.25rem;
 
     .facet-wrapper {
@@ -72,22 +72,22 @@
     }
 
     a {
+      text-decoration: none;
+      color: $body-font-color;
       font-family: $font-secondary;
       font-size: 1.6rem;
-      color: $body-font-color;
-      text-decoration: none;
-      line-height: 1.8rem;
       font-weight: bold;
+      line-height: 1.8rem;
     }
 
     .js-facet-deactivate {
-      background-image: url('../../images/dist/icons/close-dark.svg');
-      background-repeat: no-repeat;
-      width: 1.5rem;
-      height: 1.5rem;
-      display: inline-block;
-      inset-block-start: 0.2rem;
       position: relative;
+      inset-block-start: 0.2rem;
+      display: inline-block;
+      inline-size: 1.5rem;
+      block-size: 1.5rem;
+      background-image: url("../../images/dist/icons/close-dark.svg");
+      background-repeat: no-repeat;
     }
   }
 }
@@ -117,16 +117,16 @@
   .form-type-textfield {
     @include breakpoint(mobile) {
       float: inline-start;
-      max-width: 41.1rem;
+      max-inline-size: 41.1rem;
     }
 
     input {
+      block-size: 4.8rem;
+      border: 0.1rem solid $border-color;
       background-color: $background-lightest;
-      border: 1px solid $border-color;
-      background-image: url('../../images/dist/icons/search.svg');
+      background-image: url("../../images/dist/icons/search.svg");
       background-repeat: no-repeat;
       background-size: 2.2rem;
-      height: 4.8rem;
 
       @include breakpoint(mobile) {
         padding-inline-start: 2.3rem;
@@ -145,7 +145,7 @@
     margin-block-start: 2.1rem;
 
     @include breakpoint(mobile) {
-      max-width: 38.6rem;
+      max-inline-size: 38.6rem;
       margin-block-start: 0;
       margin-inline-start: 1rem;
     }
@@ -155,18 +155,18 @@
     }
 
     select {
-      background-color: $background-lightest;
+      block-size: 4.8rem;
       border: 0.1rem solid $color-shade4;
-      height: 4.8rem;
+      background-color: $background-lightest;
     }
   }
 
   .form-actions {
-    width: 100%;
+    inline-size: 100%;
     margin-block-start: 2.6rem;
 
     @include breakpoint(mobile) {
-      width: auto;
+      inline-size: auto;
       margin-block-start: 0;
       margin-inline-start: 1rem;
     }
@@ -178,7 +178,7 @@
 
   input.form-submit {
     @include breakpoint(mobile down) {
-      width: 100%;
+      inline-size: 100%;
     }
   }
 }

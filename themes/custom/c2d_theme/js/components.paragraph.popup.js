@@ -19,4 +19,3 @@
     }
   };
 })(jQuery);
-//# sourceMappingURL=components.paragraph.popup.js.map

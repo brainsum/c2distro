@@ -19,16 +19,16 @@
   .block-inner {
     h1.page-title {
       margin-inline-start: 0 !important;
+      text-align: center !important;
       font-size: 4rem !important;
       line-height: 4.9rem !important;
-      text-align: center !important;
     }
   }
 }
 
 .contact-form {
-  background-color: $background-lightest;
   padding-block-end: 11.2rem;
+  background-color: $background-lightest;
 
   .form-container {
     @include width-1200;
@@ -46,22 +46,22 @@
       margin-inline: -2.4rem;
 
       .left {
-        width: 100%;
+        inline-size: 100%;
         padding-inline: 2.4rem;
 
         @include breakpoint(medium) {
-          width: calc(3 / 8 * 100%);
+          inline-size: calc(3 / 8 * 100%);
         }
 
         #edit-field-upload-label-wrapper {
           margin-block-start: 5.1rem;
           margin-block-end: 1.8rem;
+          text-decoration: none solid $body-font-color;
+          color: $color-primary;
           font-family: $font-secondary;
           font-size: 2.4rem;
-          color: $color-primary;
-          text-decoration: none solid $body-font-color;
-          line-height: 3rem;
           font-weight: 700;
+          line-height: 3rem;
         }
 
         #edit-field-contact-reason {
@@ -72,53 +72,53 @@
 
         .field--name-field-attachment {
           label {
+            text-decoration: none;
+            color: $body-font-color;
             font-family: $font-secondary;
             font-size: 1.8rem;
-            color: $body-font-color;
-            text-decoration: none;
             font-weight: 700;
           }
 
           input[type="file"] {
-            width: 100%;
+            inline-size: 100%;
             margin-block-start: 1rem;
           }
 
           input[type="submit"] {
+            inline-size: 23.1rem;
+            block-size: 4.7rem;
             margin: 2rem 0;
-            width: 23.1rem;
-            height: 4.7rem;
           }
 
           .description {
+            text-decoration: none solid #000;
+            color: $body-font-color;
             font-family: $font-primary;
             font-size: 1.6rem;
-            color: $body-font-color;
-            text-decoration: none solid #000;
             line-height: 2.5rem;
           }
         }
       }
 
       .right {
-        width: 100%;
+        inline-size: 100%;
         padding-inline: 2.4rem;
 
         @include breakpoint(medium) {
-          width: calc(5 / 8 * 100%);
+          inline-size: calc(5 / 8 * 100%);
         }
       }
     }
 
     #edit-field-terms-and-conditions-wrapper {
-      width: 100%;
+      inline-size: 100%;
       margin-block-start: 5.6rem;
       margin-block-end: 2.1rem;
       padding: 0 1rem;
       text-align: center;
+      color: $body-font-color;
       font-family: $font-primary;
       font-size: 1.6rem;
-      color: $body-font-color;
 
       a {
         text-decoration: underline solid $body-font-color;
@@ -130,27 +130,27 @@
   }
 
   input#edit-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 23.1rem;
+    text-align: center;
+    text-decoration: none solid $body-font-color;
+    color: $body-font-color;
     font-family: $font-secondary;
     font-size: 1.6rem;
-    color: $body-font-color;
-    text-decoration: none solid $body-font-color;
     line-height: 1.9rem;
-    text-align: center;
-    width: 23.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:hover {
       color: $color-lightest;
-      background-color: $color-secondary !important;
       border-color: $color-secondary !important;
+      background-color: $color-secondary !important;
     }
   }
 
   .captcha {
-    width: 100%;
     display: flex;
     justify-content: center;
+    inline-size: 100%;
   }
 }

@@ -15,9 +15,8 @@
 @import "../index";
 
 .social-block {
-  @include flex;
-  @include align-items(center);
-
+  display: flex;
+  align-items: center;
   margin-inline-start: auto;
 
   .block-dropdown-language + & {
@@ -27,8 +26,8 @@
   }
 
   img {
-    width: 2.4rem;
-    height: 2.4rem;
+    inline-size: 2.4rem;
+    block-size: 2.4rem;
 
     @include breakpoint(medium down) {
       margin-inline-end: 1.5rem;
@@ -41,9 +40,9 @@
 }
 
 .mobile-icons {
-  @include flex;
-  @include flex-direction(row);
-  @include align-items(center);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   @include breakpoint(tablet) {
     display: none;
@@ -51,16 +50,15 @@
 }
 
 .menu--main {
-  >.menu {
-    @include flex;
-    @include flex-direction(column);
-
+  > .menu {
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     @include breakpoint(medium down) {
-      @include align-items(center);
       overflow: scroll;
-      height: 100vh;
+      align-items: center;
+      block-size: 100vh;
     }
 
     @include breakpoint(tablet) {
@@ -73,23 +71,23 @@
       }
     }
 
-    >.menu-item {
-      width: auto;
+    > .menu-item {
+      inline-size: auto;
 
       @include breakpoint(medium down) {
+        inline-size: 100%;
         margin-block-end: 2rem;
-        width: 100%;
         text-align: center;
       }
 
       @include breakpoint(tablet) {
-        @include flex-grow(0);
-        margin-inline-end: .2rem;
-        flex: 1 1 0;
-        background-color: $background-lightest;
         display: flex;
-        justify-content: center;
+        flex: 1 1 0;
+        flex-grow: 0;
         align-items: center;
+        justify-content: center;
+        margin-inline-end: 0.2rem;
+        background-color: $background-lightest;
 
         a,
         span {
@@ -97,21 +95,23 @@
         }
 
         &:hover {
-          &, span, a {
-            background-color: $body-font-color;
+          &,
+          span,
+          a {
+            transition: 0.2s;
             color: $background-lightest;
-            transition: .2s;
+            background-color: $body-font-color;
           }
         }
       }
 
       a,
       span {
-        @include transition(color, .2s);
+        transition: color, 0.2s;
 
         &:hover {
           @include breakpoint(medium) {
-            transition: .2s;
+            transition: 0.2s;
             color: $background-lightest;
             background-color: $body-font-color;
           }
@@ -120,34 +120,34 @@
 
       > span,
       > a {
-        font-weight: 700;
         display: block;
-        cursor: pointer;
         padding: 1.5rem 0;
+        cursor: pointer;
+        transition: all 0.5s;
+        font-weight: 700;
         line-height: 2rem;
-        transition: all .5s;
 
         @include breakpoint(medium down) {
           display: inline-block;
-          font-size: 1.8rem;
           text-align: center;
+          font-size: 1.8rem;
         }
 
         @include breakpoint(medium) {
+          padding: 0;
           color: $body-font-color;
           background-color: $background-lightest;
-          padding: 0;
         }
 
         @include breakpoint(tablet) {
-          text-transform: uppercase;
-          padding: 2.2rem 3rem;
-          background-color: $background-lightest;
           display: flex;
-          width: 100%;
-          height: 100%;
-          justify-content: center;
           align-items: center;
+          justify-content: center;
+          inline-size: 100%;
+          block-size: 100%;
+          padding: 2.2rem 3rem;
+          text-transform: uppercase;
+          background-color: $background-lightest;
         }
       }
 
@@ -167,18 +167,18 @@
       position: relative;
 
       .dropdown-arrow {
-        transform: rotate(90deg);
         display: inline-block;
-        transition: .5s;
         margin-inline-start: 1rem;
+        transition: 0.5s;
+        transform: rotate(90deg);
 
         @include breakpoint(medium) {
           display: none;
         }
 
         &__icon {
-          width: 1rem;
-          height: 1rem;
+          inline-size: 1rem;
+          block-size: 1rem;
           pointer-events: none;
         }
       }
@@ -202,13 +202,13 @@
       }
 
       > .menu {
-        color: $background-lightest;
-        background-color: $body-font-color;
         display: none;
         padding-block-start: 0;
         padding-block-end: 1rem;
         padding-inline: 1.5rem;
         transition: 0.2s;
+        color: $background-lightest;
+        background-color: $body-font-color;
 
         @include breakpoint(tablet) {
           position: absolute;
@@ -222,10 +222,6 @@
           }
 
           &--active-trail {
-            a {
-              color: $background-lightest;
-            }
-
             @include breakpoint(tablet) {
               span:hover {
                 color: $background-lightest;
@@ -236,6 +232,9 @@
                 font-weight: 400;
               }
             }
+            a {
+              color: $background-lightest;
+            }
           }
 
           &:last-child a {
@@ -243,14 +242,14 @@
           }
 
           a {
-            white-space: pre-wrap;
-            line-height: 2rem;
-            color: $background-lightest;
             display: inline-block;
-            text-align: center;
             padding-block-start: 0;
             padding-block-end: 1rem;
             padding-inline: 0;
+            text-align: center;
+            white-space: pre-wrap;
+            color: $background-lightest;
+            line-height: 2rem;
 
             @include breakpoint(medium) {
               text-align: start;
@@ -260,8 +259,8 @@
       }
 
       &:hover {
-        >.menu {
-          width: 100%;
+        > .menu {
+          inline-size: 100%;
 
           @include breakpoint(medium) {
             display: block !important;
@@ -270,10 +269,10 @@
       }
 
       &.opened {
-        >.menu {
+        > .menu {
           display: block;
+          inline-size: 100%;
           transition: 0.2s;
-          width: 100%;
 
           @include breakpoint(medium) {
             display: none;
@@ -290,21 +289,20 @@
   }
 
   .site-search {
-    @include transition(background-color, 0.2s);
-
+    z-index: 1;
     display: block;
     padding-block-start: 1.1rem;
     padding-block-end: 0;
     padding-inline: 1.1rem;
-    z-index: 1;
     cursor: pointer;
+    transition: background-color, 0.2s;
 
     @include breakpoint(medium down) {
       display: none;
     }
 
     svg {
-      @include transition(fill, 0.2s);
+      transition: fill, 0.2s;
       fill: $body-font-color;
     }
 
@@ -319,13 +317,13 @@
   }
 
   .close-search {
+    position: absolute;
+    z-index: -1;
+    inset-inline-end: 0;
     display: block;
     padding-block-start: 1.1rem;
     padding-block-end: 0;
     padding-inline: 1.1rem;
-    position: absolute;
-    right: 0;
-    z-index: -1;
 
     svg {
       fill: rgba($body-font-color, 0);
@@ -337,8 +335,7 @@
       cursor: pointer;
 
       svg {
-        @include transition(fill, 0.2s);
-
+        transition: fill, 0.2s;
         fill: rgba($body-font-color, 0.3);
       }
     }
@@ -352,32 +349,30 @@
 }
 
 li.menu-item.menu-item--expanded.opened span {
-  background-color: $body-font-color;
-  color: $background-lightest;
   transition: 0s;
+  color: $background-lightest;
+  background-color: $body-font-color;
 
   @include breakpoint(medium) {
-    background-color: $background-lightest;
     color: $body-font-color;
+    background-color: $background-lightest;
   }
 }
 
 .menu--footer {
   .menu {
-    @include flex;
-    @include flex-direction(column);
-    @include justify-content(flex-start);
-
-    max-width: 39.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-inline-size: 39.5rem;
 
     @include breakpoint(medium) {
-      @include flex-direction(row);
-      @include flex-wrap(wrap);
+      flex-flow: row wrap;
     }
 
     .menu-item {
-      max-width: 13.6rem;
-      width: 100%;
+      inline-size: 100%;
+      max-inline-size: 13.6rem;
       margin-block-end: 0.5rem;
 
       &:nth-child(5) {
@@ -400,32 +395,31 @@ li.menu-item.menu-item--expanded.opened span {
 .block-about-branches {
   .block-inner {
     .menu {
-      @include flex;
-      @include justify-content(center);
-      @include flex-direction(column);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       @include breakpoint(tablet) {
-        @include flex-direction(row);
+        flex-direction: row;
       }
 
       .menu-item {
-        margin-inline-start: 0;
+        inline-size: 100%;
         margin-block-end: 4.4rem;
         margin-inline: 0;
-        width: 100%;
+        margin-inline-start: 0;
         text-align: center;
 
         @include breakpoint(tablet) {
-          max-width: 20%;
+          max-inline-size: 20%;
           margin: 0 1.2rem;
         }
 
         a {
-          @include flex;
-          @include flex-direction(column);
-          @include justify-content(center);
-          @include transition(all, 0.2s);
-
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition: all, 0.2s;
           font-weight: 700;
 
           &:hover {
@@ -433,11 +427,11 @@ li.menu-item.menu-item--expanded.opened span {
           }
 
           .icon-holder {
-            height: 7.5rem;
+            block-size: 7.5rem;
             margin-block-end: 1rem;
 
             img {
-              width: 7rem;
+              inline-size: 7rem;
             }
           }
         }
@@ -447,18 +441,18 @@ li.menu-item.menu-item--expanded.opened span {
 }
 
 .close-menu {
-  text-align: end;
   padding: 2rem;
+  text-align: end;
 }
 
 nav.navigation.menu--main {
-  display: block !important;
   position: fixed;
   inset-block: 0;
   inset-inline-start: 100%;
   inset-inline-end: 0;
-  transition: 0.5s;
+  display: block !important;
   overflow: hidden;
+  transition: 0.5s;
   background-color: $color-white;
 
   @include breakpoint(tablet) {

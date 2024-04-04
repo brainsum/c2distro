@@ -13,8 +13,8 @@
 @import "../index";
 
 #block-tabs nav.tabs {
-  max-width: 113.5rem;
+  max-inline-size: 113.5rem;
   margin-block-start: 2rem;
-  margin-inline: auto;
   margin-block-end: 1rem;
+  margin-inline: auto;
 }

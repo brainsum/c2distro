@@ -17,4 +17,3 @@
     }
   };
 })(jQuery);
-//# sourceMappingURL=components.paragraph.quote.js.map

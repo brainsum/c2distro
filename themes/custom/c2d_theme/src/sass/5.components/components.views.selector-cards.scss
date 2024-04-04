@@ -14,22 +14,22 @@
   margin-block-start: 6rem;
 
   .block-inner {
-    max-width: 139.5rem !important;
-    padding: 0 !important;
+    max-inline-size: 139.5rem !important;
     margin-block-start: 6rem;
+    padding: 0 !important;
   }
 }
 
 .block-views-blockselector-cards-selector-cards-block {
   .block-inner {
+    max-inline-size: 139.5rem;
     margin-block-start: 6rem;
-    max-width: 139.5rem;
     margin-inline: auto;
     padding: 0;
   }
 
   .view-content {
-    width: 100%;
+    inline-size: 100%;
 
     .views-view-grid {
       .views-row {
@@ -37,8 +37,13 @@
         flex-wrap: wrap;
 
         .views-col {
-          width: 100%;
-          min-height: 23.5rem;
+          inline-size: 100%;
+          min-block-size: 23.5rem;
+
+          @include breakpoint(medium) {
+            max-inline-size: 69.5rem !important;
+            transition: 0.4s;
+          }
 
           &:nth-child(odd) {
             background-color: $background-quaternary;
@@ -48,34 +53,29 @@
             background-color: $background-lightest;
           }
 
-          @include breakpoint(medium) {
-            max-width: 69.5rem !important;
-            transition: 0.4s;
-          }
-
           &:hover {
             border-color: $color-secondary !important;
           }
 
           a {
-            cursor: pointer;
             display: block;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
             padding-block-start: 7rem;
             padding-block-end: 8.5rem;
             padding-inline: 4rem;
-            align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+            cursor: pointer;
 
             &.selector-card {
               h4 {
-                color: $body-font-color;
-                font-family: $font-secondary;
-                font-size: 3rem;
                 margin-block-start: 0;
                 margin-block-end: 1rem;
                 margin-inline: 0;
                 text-decoration: none solid $body-font-color;
+                color: $body-font-color;
+                font-family: $font-secondary;
+                font-size: 3rem;
                 line-height: 4rem;
 
                 @include breakpoint(medium) {
@@ -86,16 +86,16 @@
               }
 
               p {
+                max-inline-size: 33.5rem;
+                margin: 0;
+                text-decoration: none solid $background-quaternary;
                 color: $body-font-color;
                 font-family: $font-primary;
                 font-size: 1.8rem;
-                text-decoration: none solid $background-quaternary;
                 line-height: 3rem;
-                margin: 0;
-                max-width: 33.5rem;
 
                 @include breakpoint(medium) {
-                  max-width: 51.5rem;
+                  max-inline-size: 51.5rem;
                 }
               }
             }
@@ -105,29 +105,29 @@
 
       .views-row:nth-child(odd) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
-          background-color: $background-quaternary;
           border: solid 0.3rem $background-quaternary;
+          background-color: $background-quaternary;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(even) {
         @include breakpoint(medium) {
-          background-color: $background-quaternary;
           border: solid 0.3rem $background-quaternary;
+          background-color: $background-quaternary;
         }
       }
 
       .views-row:nth-child(odd) .views-col:nth-child(even) {
         @include breakpoint(medium) {
-          background-color: $background-lightest;
           border: solid 0.3rem $background-lightest;
+          background-color: $background-lightest;
         }
       }
 
       .views-row:nth-child(even) .views-col:nth-child(odd) {
         @include breakpoint(medium) {
-          background-color: $background-lightest;
           border: solid 0.3rem $background-lightest;
+          background-color: $background-lightest;
         }
       }
     }
@@ -139,17 +139,17 @@
     padding-inline: 2rem;
 
     a {
-      max-width: 22rem;
-      color: $body-font-color;
+      max-inline-size: 22rem;
+      block-size: 5rem;
       margin: 0 auto;
+      text-align: center;
+      text-decoration: none solid $body-font-color;
+      text-transform: capitalize;
+      color: $body-font-color;
+      border: solid 0.2rem $color-secondary !important;
       font-family: $font-secondary;
       font-size: 1.7rem;
-      text-decoration: none solid $body-font-color;
       line-height: 2rem;
-      text-transform: capitalize;
-      text-align: center;
-      height: 5rem;
-      border: solid 0.2rem $color-secondary !important;
 
       &:hover {
         color: $color-lightest;

@@ -17,19 +17,19 @@ global-styling:
 
 # Block
 block.footer:
-  version: 1.1.1
+  version: 1.1.2
   css:
     component:
       css/5.components/components.block.footer.css: {}
 
 block.hero:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.block.hero.css: {}
 
 block.language-switcher:
-  version: 2.0.1
+  version: 2.0.2
   css:
     component:
       css/5.components/components.block.language-switcher.css: {}
@@ -37,14 +37,14 @@ block.language-switcher:
     js/components.block.language-switcher.js: {}
 
 block.title:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.block.title.css: {}
 
 # Content
 media.document:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.media.document.css: {}
@@ -52,12 +52,12 @@ media.document:
     - c2d_theme/tags
 
 node.event:
-  version: 1.0.0
+  version: 1.0.1
   dependencies:
     - c2d_theme/node.news
 
 node.news:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.node.news.css: {}
@@ -65,7 +65,7 @@ node.news:
     - c2d_theme/tags
 
 node.country:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.node.country.css: {}
@@ -73,20 +73,20 @@ node.country:
     - c2d_theme/tags
 
 node.page:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.node.page.css: {}
 
 tags:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.tags.css: {}
 
 # Facets
 facets:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.facets.css: {}
@@ -95,26 +95,26 @@ facets:
 
 # Field
 field:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.field.css: {}
 
 field.image:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.field.image.css: {}
 
 # Form
 form:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.form.css: {}
 
 form.contact:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.form.contact.css: {}
@@ -140,7 +140,7 @@ share-button:
 
 # Misc
 messages:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.messages.css: {}
@@ -155,13 +155,13 @@ navigation-menu:
     js/components.navigation-menu.js: {}
 
 pager:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.pager.css: {}
 
 primary-tabs:
-  version: 1.0.0
+  version: 1.0.1
   css:
     component:
       css/5.components/components.primary-tabs.css: {}
@@ -176,13 +176,13 @@ pages.special:
 
 # Paragraph Types
 paragraphs-base:
-  version: 1.1.0
+  version: 1.1.2
   css:
     component:
       css/5.components/components.paragraphs-base.css: {}
 
 paragraph.accordion:
-  version: 1.1.1
+  version: 1.1.2
   css:
     component:
       css/5.components/components.paragraph.accordion.css: { }
@@ -193,7 +193,7 @@ paragraph.accordion:
     - core/jquery
 
 paragraph.cta:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.cta.css: {}
@@ -201,7 +201,7 @@ paragraph.cta:
     - c2d_theme/paragraphs-base
 
 paragraph.link-boxes:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.link-boxes.css: {}
@@ -209,7 +209,7 @@ paragraph.link-boxes:
     - c2d_theme/paragraphs-base
 
 paragraph.media:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.media.css: {}
@@ -218,7 +218,7 @@ paragraph.media:
 
 # currently it's not attached
 paragraph.media-document:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.media-document.css: {}
@@ -226,7 +226,7 @@ paragraph.media-document:
     - c2d_theme/paragraphs-base
 
 paragraph.partners:
-  version: 1.1.1
+  version: 1.12
   css:
     component:
       css/5.components/components.paragraph.partners.css: {}
@@ -234,7 +234,7 @@ paragraph.partners:
     - c2d_theme/paragraphs-base
 
 paragraph.popup:
-  version: 1.1.1
+  version: 1.1.2
   css:
     component:
       css/5.components/components.paragraph.popup.css: {}
@@ -245,7 +245,7 @@ paragraph.popup:
     - core/jquery
 
 paragraph.quote:
-  version: 1.1.1
+  version: 1.1.2
   css:
     component:
       css/5.components/components.paragraph.quote.css: {}
@@ -257,7 +257,7 @@ paragraph.quote:
     - c2d_theme/paragraph.popup
 
 paragraph.small-boxes:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.small-boxes.css: {}
@@ -265,7 +265,7 @@ paragraph.small-boxes:
     - c2d_theme/paragraphs-base
 
 paragraph.tabs:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.tabs.css: {}
@@ -273,7 +273,7 @@ paragraph.tabs:
     - c2d_theme/paragraphs-base
 
 paragraph.text:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.text.css: {}
@@ -281,7 +281,7 @@ paragraph.text:
     - c2d_theme/paragraphs-base
 
 paragraph.text-media:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.text-media.css: {}
@@ -289,7 +289,7 @@ paragraph.text-media:
     - c2d_theme/paragraphs-base
 
 paragraph.timeline:
-  version: 1.1.1
+  version: 1.1.2
   css:
     component:
       css/5.components/components.paragraph.timeline.css: {}
@@ -300,19 +300,19 @@ paragraph.timeline:
     - core/jquery
 
 paragraph.views:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.views.css: {}
   dependencies:
     - c2d_theme/paragraphs-base
 implementation.views:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.implementation-page.css: {}
 paragraph.views.documents:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.views.documents.css: {}
@@ -320,13 +320,13 @@ paragraph.views.documents:
     - c2d_theme/paragraphs-base
 
 paragraph.views.events:
-  version: 1.1.0
+  version: 1.1.1
   dependencies:
     - c2d_theme/paragraphs-base
     - c2d_theme/views.events
 
 paragraph.views.news:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.paragraph.views.news.css: {}
@@ -336,19 +336,19 @@ paragraph.views.news:
 
 # Views
 views.events:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.events.css: {}
 
 views.news:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.news.css: {}
 
 views.resources.page:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.resources.page.css: {}
@@ -356,7 +356,7 @@ views.resources.page:
     - c2d_theme/form
 
 views.search.page:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.search.page.css: {}
@@ -364,7 +364,7 @@ views.search.page:
     - c2d_theme/form
 
 views.selector-cards:
-  version: 1.1.0
+  version: 1.1.1
   css:
     component:
       css/5.components/components.views.selector-cards.css: {}

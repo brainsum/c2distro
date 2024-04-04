@@ -1,11 +1,1 @@
-@charset "UTF-8";
-.clearfix:before, .clearfix:after{
-  content:" ";
-  display:table;
-}
-.clearfix:after{
-  clear:both;
-}
-.node--unpublished{
-  background-color:transparent;
-}
+.node--unpublished{background-color:rgba(0,0,0,0)}

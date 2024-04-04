@@ -14,14 +14,14 @@
   background-color: $background-lightest;
 }
 .region.region-content {
-  max-width: 139rem;
+  max-inline-size: 139rem;
   margin: 2rem auto;
-  background-color: $background-lightest;
   padding: 0 2rem;
+  background-color: $background-lightest;
 }
 
 .block-page-title-block {
-  max-width: 139rem !important;
+  max-inline-size: 139rem !important;
   padding-block-start: 4.4rem !important;
 
   .block-inner {
@@ -30,12 +30,12 @@
     }
 
     h1.page-title {
-      font-size: 2.2rem;
-      color: $body-font-color;
-      text-decoration: none solid $body-font-color;
-      line-height: 1.25;
-      max-width: 110rem;
+      max-inline-size: 110rem;
       text-align: start;
+      text-decoration: none solid $body-font-color;
+      color: $body-font-color;
+      font-size: 2.2rem;
+      line-height: 1.25;
 
       @include breakpoint(medium) {
         font-size: 4rem;
@@ -45,15 +45,15 @@
 }
 
 article .media__content {
-  max-width: 139rem;
+  max-inline-size: 139rem;
   margin: 0 auto;
 
   .content-header {
+    display: flex;
+    align-items: center;
     padding-block-start: 1.8rem;
     padding-block-end: 2rem;
     padding-inline: 0;
-    display: flex;
-    align-items: center;
 
     @include breakpoint(medium) {
       margin-inline-start: 8.4rem;
@@ -64,20 +64,20 @@ article .media__content {
     }
     .content-header-text {
       display: flex;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
 
       .created-time {
+        inline-size: 100%;
+        text-decoration: none solid $body-font-color;
         color: $body-font-color;
+        font-family: $font-primary;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: $font-primary;
-        text-decoration: none solid $body-font-color;
         line-height: 3rem;
-        width: 100%;
 
         @include breakpoint(medium) {
-          width: auto;
+          inline-size: auto;
         }
       }
 
@@ -92,12 +92,12 @@ article .media__content {
       }
       .category-link {
         a {
+          text-decoration: none;
+          color: $color-secondary;
           font-family: $font-primary;
           font-size: 1.8rem;
-          color: $color-secondary;
-          text-decoration: none;
-          line-height: 3rem;
           font-weight: 700;
+          line-height: 3rem;
         }
       }
     }
@@ -112,28 +112,28 @@ article .media__content {
       margin-inline-start: 9.2rem;
     }
     .content-body-img {
-      width: 100%;
+      inline-size: 100%;
 
       @include breakpoint(medium) {
-        width: auto;
+        inline-size: auto;
       }
 
       img {
-        width: 100%;
+        inline-size: 100%;
         margin-block-end: 4.4rem;
 
         @include breakpoint(medium) {
-          width: auto;
+          inline-size: auto;
         }
       }
     }
     .content-body-text {
-      max-width: 81.4rem;
-      padding-inline-start: 0;
+      max-inline-size: 81.4rem;
       padding-block-end: 8rem;
+      padding-inline-start: 0;
+      color: #000;
       font-family: $font-primary;
       font-size: 1.8rem;
-      color: #000;
 
       @include breakpoint(medium) {
         margin-inline-start: 3.3rem;
@@ -166,9 +166,9 @@ article .media__content {
     }
 
     .content-body-text--field-media-file {
-      width: 18.7rem;
+      inline-size: 18.7rem;
+      block-size: 4.7rem;
       font-family: $font-primary;
-      height: 4.7rem;
 
       a {
         font-size: 1.6rem !important;
@@ -180,17 +180,17 @@ article .media__content {
     }
 
     .field--name-field-custom-text {
-      font-size: 1.6rem;
-      color: $body-font-color;
-      line-height: 3rem;
       padding: 3.4rem 0;
-      font-family: $font-primary;
       text-decoration: none solid $body-font-color;
+      color: $body-font-color;
+      font-family: $font-primary;
+      font-size: 1.6rem;
+      line-height: 3rem;
 
       strong {
-        font-weight: 700;
         font-family: $font-primary;
         font-size: 1.6rem;
+        font-weight: 700;
       }
 
       p {
@@ -199,10 +199,10 @@ article .media__content {
         font-size: 1.6rem;
       }
       a {
+        text-decoration: underline solid $body-font-color;
+        color: $body-font-color;
         font-family: $font-primary;
         font-size: 1.6rem;
-        color: $body-font-color;
-        text-decoration: underline solid $body-font-color;
         line-height: 3rem;
       }
     }

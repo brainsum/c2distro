@@ -15,27 +15,27 @@
 @import "../index";
 
 .share-button--links li {
-  list-style: none;
   margin: 1.5rem auto !important;
+  list-style: none;
 }
 
 .share-button {
-  width: 5rem;
-  padding: 0.5rem 0;
-  text-align: center;
   position: relative;
   display: inline-block;
+  inline-size: 5rem;
+  padding: 0.5rem 0;
+  text-align: center;
   background: none;
 }
 
 .share-button--links {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.2s;
-  background-color: $color-shade2;
-  width: 100%;
   position: absolute;
   z-index: 1;
+  overflow: hidden;
+  inline-size: 100%;
+  max-block-size: 0;
+  transition: 0.2s;
+  background-color: $color-shade2;
 
   ul {
     margin: auto;
@@ -44,15 +44,15 @@
 
 img.share-button--icon {
   display: block;
-  width: 3.2rem;
+  inline-size: 3.2rem;
   margin: auto;
 }
 
 .share-button--button {
-  border: none;
-  width: 5rem;
-  height: 5rem;
+  inline-size: 5rem;
+  block-size: 5rem;
   cursor: pointer;
+  border: 0;
   background: none;
 
   &:hover img {
@@ -61,5 +61,5 @@ img.share-button--icon {
 }
 
 .share-links-open {
-  max-height: max-content;
+  max-block-size: max-content;
 }

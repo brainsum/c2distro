@@ -12,19 +12,19 @@
 
 .view-header {
   margin-block-end: 6rem;
+  color: $body-font-color;
   font-family: $font-primary;
   font-size: 1.8rem;
-  color: $body-font-color;
 }
 
 .media-wrapper {
-  clear: both;
-  width: 100%;
-  background-color: $background-lightest;
-  padding: 4rem 2rem;
-  margin-block-end: 3rem;
   display: flex;
+  clear: both;
   flex-wrap: wrap;
+  inline-size: 100%;
+  margin-block-end: 3rem;
+  padding: 4rem 2rem;
+  background-color: $background-lightest;
 
   @include breakpoint(medium) {
     flex-wrap: nowrap;
@@ -37,30 +37,30 @@
 
   .left {
     flex: 1 0 100%;
-    max-width: 100%;
+    max-inline-size: 100%;
     margin-block-end: 3rem;
 
     @include breakpoint(medium) {
-      flex: 1 0 25%;
-      max-width: 25%;
       display: inline-grid;
-      margin-inline-end: 4.7rem;
+      flex: 1 0 25%;
+      max-inline-size: 25%;
       margin-block-end: 0;
+      margin-inline-end: 4.7rem;
     }
 
     @include breakpoint(tablet) {
       flex: 1 0 20.6rem;
-      max-width: 20.6rem;
+      max-inline-size: 20.6rem;
     }
 
     .field--name-thumbnail {
-      max-width: 20.6rem;
-      max-height: 45rem;
+      max-inline-size: 20.6rem;
+      max-block-size: 45rem;
       margin: 0 auto;
 
       img {
-        width: 100%;
-        height: auto;
+        inline-size: 100%;
+        block-size: auto;
       }
     }
   }
@@ -69,9 +69,9 @@
     display: inline-grid;
 
     .title {
+      color: #000;
       font-family: $font-secondary;
       font-size: 2.2rem;
-      color: #000;
       font-weight: 700;
       line-height: 1.16;
 
@@ -81,48 +81,46 @@
     }
 
     .subtitle {
-      font-weight: 700;
       margin-block: 2rem;
+      font-weight: 700;
 
       .created {
+        display: inline-block;
+        text-decoration: none solid rgb(117 117 117);
+        color: #757575;
+        font-family: $font-primary;
+        font-size: 1.8rem;
         .field--type-created {
           float: inline-start;
         }
-
-        display: inline-block;
-        font-family: $font-primary;
-        font-size: 1.8rem;
-        color: #757575;
-        text-decoration: none solid rgb(117, 117, 117);
-
       }
       .category {
         display: inline-block;
 
         a {
-          font-family: $font-primary;
-          color: $color-secondary;
-          font-size: 1.8rem;
           text-decoration: none solid $color-secondary;
+          color: $color-secondary;
+          font-family: $font-primary;
+          font-size: 1.8rem;
         }
       }
     }
 
     .field--name-field-lead {
+      margin-block-end: 1rem;
+      color: $body-font-color;
       font-family: $font-primary;
       font-size: 1.8rem;
-      color: $body-font-color;
-      margin-block-end: 1rem;
     }
 
     .field--name-field-tags {
       margin-block-start: 2rem;
 
       .field__label {
+        text-decoration: none solid $body-font-color;
+        color: $body-font-color;
         font-family: $font-primary;
         font-size: 1.8rem;
-        color: $body-font-color;
-        text-decoration: none solid $body-font-color;
       }
 
       .field__items {
@@ -131,31 +129,31 @@
 
       .field__item {
         display: inline-block;
+        text-decoration: underline solid $body-font-color;
+        color: $body-font-color;
         font-family: $font-primary;
         font-size: 1.8rem;
-        color: $body-font-color;
-        text-decoration: underline solid $body-font-color;
       }
     }
 
     .read-more {
+      margin-block-start: 2.6rem;
+      text-decoration: none solid $color-secondary;
+      color: $color-secondary;
       font-family: $font-primary;
       font-size: 1.8rem;
-      color: $color-secondary;
-      text-decoration: none solid $color-secondary;
-      font-style: italic;
       font-weight: 700;
-      margin-block-start: 2.6rem;
+      font-style: italic;
     }
   }
 }
 
 .pager {
-  font-family: $font-primary;
-  font-size: 1.8rem;
-  color: #0f1d40;
   text-decoration: none;
   letter-spacing: 1rem;
+  color: #0f1d40;
+  font-family: $font-primary;
+  font-size: 1.8rem;
 
   .pager__item--next,
   .pager__item--previous,
@@ -166,9 +164,9 @@
 }
 
 .view-empty {
-  font-size: 1.8rem;
   padding-block-start: 1.5rem;
   padding-block-end: 4.9rem;
   padding-inline: 0;
   font-family: $font-primary;
+  font-size: 1.8rem;
 }

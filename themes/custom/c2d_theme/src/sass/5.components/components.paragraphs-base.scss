@@ -34,8 +34,8 @@
   .field--name-field-title {
     margin-block-end: 2rem;
     font-size: 3rem;
-    line-height: 1.25;
     font-weight: 700;
+    line-height: 1.25;
   }
 
   .block-holder {
@@ -43,10 +43,10 @@
       position: relative;
 
       .title-holder {
-        z-index: 10;
         position: absolute;
-        inset-inline: 0;
+        z-index: 10;
         inset-block-start: -2.5rem;
+        inset-inline: 0;
         margin: 0;
 
         span {

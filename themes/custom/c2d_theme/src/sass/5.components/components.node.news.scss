@@ -13,18 +13,18 @@
 @import "../index";
 
 .region.region-content {
-  background-color: $background-lightest;
   margin-block-start: 2rem;
   padding: 0 2rem;
+  background-color: $background-lightest;
 }
 
 .block-page-title-block {
-  max-width: 139rem !important;
+  max-inline-size: 139rem !important;
 
   .block-inner {
     @include breakpoint(medium) {
-      max-width: 77.4rem;
-      margin-inline-start: calc(1/8 * 100%);
+      max-inline-size: 77.4rem;
+      margin-inline-start: calc(1 / 8 * 100%);
     }
 
     h1.page-title {
@@ -35,20 +35,20 @@
 }
 
 article {
-  max-width: 139rem;
+  max-inline-size: 139rem;
   margin: 0 auto;
 
   .node__content {
     @include breakpoint(medium) {
-      margin-inline-start: calc(1/8 * 100%);
+      margin-inline-start: calc(1 / 8 * 100%);
     }
 
     .content-header {
+      display: flex;
+      align-items: center;
       padding-block-start: 1.8rem;
       padding-block-end: 2.9rem;
       padding-inline: 0;
-      display: flex;
-      align-items: center;
 
       .share-button {
         margin-inline-end: 3.7rem;
@@ -62,20 +62,20 @@ article {
 
       .content-header-text {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
       }
 
       .created-time {
+        text-decoration: none;
         color: $body-font-color;
+        font-family: $font-primary;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: $font-primary;
-        text-decoration: none;
         line-height: 3rem;
 
         .content-type {
-            color: $color-secondary;
+          color: $color-secondary;
         }
       }
 
@@ -87,31 +87,31 @@ article {
 
       .field--name-field-location {
         display: flex;
+        text-decoration: none;
         color: $body-font-color;
+        font-family: $font-primary;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: $font-primary;
-        text-decoration: none;
         line-height: 3rem;
 
         img {
-          margin-inline-end: 0.4rem;
           align-self: center;
+          margin-inline-end: 0.4rem;
         }
       }
     }
 
     .field.field--name-field-lead.field--type-string-long {
+      max-inline-size: 68.4rem;
       margin-block-start: 4.4rem;
       margin-block-end: 0;
       margin-inline: 0;
       padding: 0;
-      font-weight: 700;
-      line-height: 3rem;
+      color: #000;
       font-family: $font-primary;
       font-size: 2.2rem;
-      max-width: 68.4rem;
-      color: #000;
+      font-weight: 700;
+      line-height: 3rem;
 
       @include breakpoint(medium) {
         margin-block-start: 4.4rem;
@@ -121,12 +121,12 @@ article {
     }
 
     .field.field--name-body {
-      max-width: 68.4rem;
-      font-size: 1.8rem;
-      line-height: 3rem;
+      max-inline-size: 68.4rem;
+      margin-block-start: 3rem;
       padding: 0 0 4rem;
       font-family: $font-primary;
-      margin-block-start: 3rem;
+      font-size: 1.8rem;
+      line-height: 3rem;
 
       @include breakpoint(medium) {
         margin-block-start: 2.8rem;
@@ -137,11 +137,11 @@ article {
     }
 
     .field.field--name-field-tags {
+      display: flex;
+      flex-wrap: wrap;
       padding-block-start: 0;
       padding-block-end: 4rem;
       padding-inline: 0;
-      display: flex;
-      flex-wrap: wrap;
 
       @include breakpoint(medium) {
         padding-block-start: 2.3rem;

@@ -9,4 +9,3 @@
     }
   };
 })(jQuery);
-//# sourceMappingURL=components.submit.loader.js.map

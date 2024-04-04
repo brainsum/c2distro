@@ -15,7 +15,7 @@
 ## About
 
 The C2 Distro Theme based on core's Classy base theme. Build process powered
-by [Gulp.js 4](https://gulpjs.com/docs/en/getting-started/quick-start) and asset
+by [Gulp.js 5](https://gulpjs.com/docs/en/getting-started/quick-start) and asset
 files (sass, css, js) structured, linted and compiled according to Drupal Coding
 Standards. You can equally run build processes by gulp commands or npm scripts.
 

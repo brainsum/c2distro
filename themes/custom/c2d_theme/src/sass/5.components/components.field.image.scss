@@ -12,17 +12,17 @@
 
 @mixin image-placeholder {
   &:before {
-    content: "";
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, .8);
-    background-image: url("../images/dist/icons/no-img.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25%;
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
+    content: "";
     opacity: 0.2;
+    background-image: url("../images/dist/icons/no-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    box-shadow: inset 0 0 3rem rgb(0 0 0 / 0.8);
   }
 }
 

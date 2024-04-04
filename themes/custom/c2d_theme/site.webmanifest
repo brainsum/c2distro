@@ -1,6 +1,6 @@
 {
-    "name": "IFRC DISLAW",
-    "short_name": "IFRC DISLAW",
+    "name": "IFRC C2Distro",
+    "short_name": "IFRC C2Distro",
     "icons": [
         {
             "src": "/themes/custom/c2d_theme/images/dist/favicon/android-chrome-192x192.png?v=eEYabv4re7",

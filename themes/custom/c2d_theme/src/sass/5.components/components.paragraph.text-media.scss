@@ -12,16 +12,17 @@
 
 .paragraph--type--text-media {
   .paragraph--inner {
-    @include flex;
-    @include flex-direction(column);
-    @include justify-content(center);
     @include width-1105;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include breakpoint(medium) {
       @include flex-direction(row);
       .left,
       .right {
-        width: 50%;
+        inline-size: 50%;
       }
     }
   }
@@ -38,8 +39,8 @@
 
   .right {
     .text-formatted p a {
-      color: $color-secondary;
       text-decoration: underline;
+      color: $color-secondary;
 
       &:hover {
         text-decoration: none;
@@ -49,10 +50,10 @@
 
   &.paragraph--view-mode--invers {
     .right {
-      @include flex-order(-1);
+      order: -1;
 
       @include breakpoint(medium) {
-        @include flex-order(2);
+        order: 2;
       }
     }
 
@@ -72,8 +73,8 @@
   }
 
   iframe {
-    width: 100%;
-    min-height: 30rem;
+    inline-size: 100%;
+    min-block-size: 30rem;
   }
 
   .field--name-field-media {
@@ -84,7 +85,7 @@
     }
 
     img {
-      width: 100%;
+      inline-size: 100%;
     }
   }
 
@@ -99,11 +100,11 @@
       text-decoration: underline;
 
       &::before {
-        content: url("../../images/dist/icons/arrow-right.svg");
         position: absolute;
         inset-block-start: 0.2rem;
         inset-inline-start: 0;
         padding-inline-end: 1.5rem;
+        content: url("../../images/dist/icons/arrow-right.svg");
       }
 
       &:hover {

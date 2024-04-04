@@ -13,10 +13,9 @@
 .paragraph--type--link-boxes {
   > .paragraph--inner {
     > .field__items {
-      @include flex;
-      @include justify-content(center);
-      @include flex-wrap(wrap);
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-block-end: -5%;
 
       @include breakpoint(medium) {
@@ -24,7 +23,7 @@
       }
 
       > .field__item {
-        width: 100%;
+        inline-size: 100%;
         margin-block-start: 0;
         margin-block-end: 5%;
         margin-inline: 0;
@@ -32,7 +31,7 @@
         font-size: 1.4rem;
 
         @include breakpoint(medium) {
-          width: 40%;
+          inline-size: 40%;
           margin: 2.5%;
         }
       }
@@ -61,8 +60,8 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-end: 0;
-        width: 4rem;
-        height: 4rem;
+        inline-size: 4rem;
+        block-size: 4rem;
 
         img {
           display: block;

@@ -1,40 +1,46 @@
-
-@mixin basePadding {
+@mixin base-padding {
   margin-inline: auto;
-  padding: 0 1.5rem;
+  padding-inline: 1.5rem;
 }
 
 @mixin width-1390 {
-  max-width: 139rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 139rem;
 }
 
 @mixin width-1200 {
-  max-width: 120rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 120rem;
 }
 
 @mixin width-1105 {
-  max-width: 122.2rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 122.2rem;
 }
 
 @mixin width-655 {
-  max-width: 68.5rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 68.5rem;
 }
 
 @mixin width-690 {
-  max-width: 72rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 72rem;
 }
 
 @mixin width-855 {
-  max-width: 88.5rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 88.5rem;
 }
 
 @mixin width-960 {
-  max-width: 99rem;
-  @include basePadding;
+  @include base-padding;
+
+  max-inline-size: 99rem;
 }
