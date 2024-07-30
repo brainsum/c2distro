@@ -70,7 +70,6 @@
         "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.9",
-        "drupal/transliterate_filenames": "^2.0",
         "drupal/warmer": "^2.0",
         "drupal/warmer_entity": "^2.0",
         "drupal/facets": "^2.0",
