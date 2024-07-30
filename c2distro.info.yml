@@ -49,7 +49,6 @@ install:
   - easy_breadcrumb
   - pathauto
   - token
-  - transliterate_filenames
   - metatag
   - metatag_open_graph
   - redirect

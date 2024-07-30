@@ -1,0 +1,425 @@
+diff --git a/config/install/smtp.settings.yml b/config/install/smtp.settings.yml
+index bb99963..d344767 100644
+--- a/config/install/smtp.settings.yml
++++ b/config/install/smtp.settings.yml
+@@ -18,3 +18,5 @@ smtp_debugging: false
+ smtp_debug_level: 1
+ prev_mail_system: 'php_mail'
+ smtp_keepalive: false
++maillog_log: false
++maillog_verbose: false
+diff --git a/config/schema/smtp.schema.yml b/config/schema/smtp.schema.yml
+index df29464..b2cff03 100644
+--- a/config/schema/smtp.schema.yml
++++ b/config/schema/smtp.schema.yml
+@@ -62,3 +62,9 @@ smtp.settings:
+     smtp_keepalive:
+       type: boolean
+       label: 'Enable the connection keep alive function'
++    maillog_log:
++      type: boolean
++      label: 'Create table entries in maillog table for each e-mail'
++    maillog_verbose:
++      type: boolean
++      label: 'Display the e-mails on page'
+diff --git a/src/Form/SMTPConfigForm.php b/src/Form/SMTPConfigForm.php
+index 476f65d..2cf4b99 100644
+--- a/src/Form/SMTPConfigForm.php
++++ b/src/Form/SMTPConfigForm.php
+@@ -2,6 +2,7 @@
+ 
+ namespace Drupal\smtp\Form;
+ 
++use Drupal\Core\Extension\ModuleHandlerInterface;
+ use Drupal\Core\Form\ConfigFormBase;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Url;
+@@ -85,7 +86,10 @@ class SMTPConfigForm extends ConfigFormBase {
+       }
+     }
+     elseif ($mailsystem_enabled) {
+-      $this->messenger->addMessage($this->t('SMTP module is managed by <a href=":mailsystem">the mail system module</a>', [':mailsystem' => Url::fromRoute('mailsystem.settings')->toString()]));
++      $this->messenger->addMessage($this->t('SMTP module is managed by <a href=":mailsystem">the mail system module</a>', [
++      ':mailsystem' => Url::fromRoute('mailsystem.settings')
++        ->toString()
++      ]));
+     }
+     else {
+       $this->messenger->addMessage($this->t('SMTP module is INACTIVE.'));
+@@ -103,7 +107,7 @@ class SMTPConfigForm extends ConfigFormBase {
+     }
+     else {
+       $form['onoff'] = [
+-        '#type'  => 'details',
++        '#type' => 'details',
+         '#title' => $this->t('Install options'),
+         '#open' => TRUE,
+       ];
+@@ -125,7 +129,7 @@ class SMTPConfigForm extends ConfigFormBase {
+     }
+ 
+     $form['server'] = [
+-      '#type'  => 'details',
++      '#type' => 'details',
+       '#title' => $this->t('SMTP server settings'),
+       '#open' => TRUE,
+     ];
+@@ -221,7 +225,7 @@ class SMTPConfigForm extends ConfigFormBase {
+     ];
+ 
+     $form['email_options'] = [
+-      '#type'  => 'details',
++      '#type' => 'details',
+       '#title' => $this->t('E-mail options'),
+       '#open' => TRUE,
+     ];
+@@ -237,7 +241,7 @@ class SMTPConfigForm extends ConfigFormBase {
+       '#title' => $this->t('E-mail from name'),
+       '#default_value' => $config->get('smtp_fromname'),
+       '#description' => $this->t('The name that all e-mails will be from. If left blank will use a default of: @name . Some providers (such as Office365) may ignore this field. For more information, please check SMTP module documentation and your email provider documentation.',
+-          ['@name' => $this->configFactory->get('system.site')->get('name')]),
++        ['@name' => $this->configFactory->get('system.site')->get('name')]),
+       '#disabled' => $this->isOverridden('smtp_fromname'),
+     ];
+     $form['email_options']['smtp_allowhtml'] = [
+@@ -249,7 +253,7 @@ class SMTPConfigForm extends ConfigFormBase {
+     ];
+ 
+     $form['client'] = [
+-      '#type'  => 'details',
++      '#type' => 'details',
+       '#title' => $this->t('SMTP client settings'),
+       '#open' => TRUE,
+     ];
+@@ -320,6 +324,33 @@ class SMTPConfigForm extends ConfigFormBase {
+       '#description' => $this->t('Enabling this option will keep the SMTP connection open instead of it being openned and then closed for each mail'),
+     ];
+ 
++    $form['maillog'] = [
++      '#type' => 'details',
++      '#title' => $this->t('Maillog integration'),
++      '#open' => TRUE,
++    ];
++    if (!$this->moduleHandler->moduleExists('maillog')) {
++      $form['maillog']['#description'] = $this->t('Installing the <a href="@url">Maillog module</a> also allows keeping copies of all emails sent through the site.', ['@url' => 'https://www.drupal.org/project/maillog']);
++    }
++    else {
++      $form['maillog']['#description'] = $this->t('The @url is installed, it can also be used to keep copies of all emails sent through the site.', ['@url' => \Drupal::service('link_generator')->generate('Maillog module', Url::fromRoute('maillog.settings'))]);
++
++      $form['maillog']['maillog_log'] = [
++        '#type' => 'checkbox',
++        '#title' => $this->t('Create table entries in maillog table for each e-mail.'),
++        '#default_value' => $config->get('maillog_log'),
++        '#disabled' => $this->isOverridden('maillog_log'),
++      ];
++
++      $form['maillog']['maillog_verbose'] = [
++        '#type' => 'checkbox',
++        '#title' => $this->t('Display the e-mails on page.'),
++        '#default_value' => $config->get('maillog_verbose'),
++        '#disabled' => $this->isOverridden('maillog_verbose'),
++        '#description' => $this->t('If enabled, anonymous users with permissions will see any verbose output mail.'),
++      ];
++    }
++
+     return parent::buildForm($form, $form_state);
+   }
+ 
+@@ -419,7 +450,10 @@ class SMTPConfigForm extends ConfigFormBase {
+       'smtp_debugging',
+       'smtp_debug_level',
+       'smtp_keepalive',
++      'maillog_log',
++      'maillog_verbose',
+     ];
++
+     foreach ($config_keys as $name) {
+       if (!$this->isOverridden($name)) {
+         $config->set($name, $values[$name])->save();
+@@ -428,7 +462,7 @@ class SMTPConfigForm extends ConfigFormBase {
+ 
+     // Set as default mail system if module is enabled.
+     if ($config->get('smtp_on') ||
+-        ($this->isOverridden('smtp_on') && $values['smtp_on'] == 'on')) {
++      ($this->isOverridden('smtp_on') && $values['smtp_on'] == 'on')) {
+       if ($mail_system != 'SMTPMailSystem') {
+         $config->set('prev_mail_system', $mail_system);
+       }
+diff --git a/src/Plugin/Mail/SMTPMailSystem.php b/src/Plugin/Mail/SMTPMailSystem.php
+index 268ef3e..40ced02 100644
+--- a/src/Plugin/Mail/SMTPMailSystem.php
++++ b/src/Plugin/Mail/SMTPMailSystem.php
+@@ -2,8 +2,11 @@
+ 
+ namespace Drupal\smtp\Plugin\Mail;
+ 
++use Drupal\Component\Datetime\TimeInterface;
+ use Drupal\Component\Utility\EmailValidatorInterface;
+ use Drupal\Core\Config\ConfigFactoryInterface;
++use Drupal\Core\Database\Connection;
++use Drupal\Core\Extension\ModuleHandlerInterface;
+ use Drupal\Core\File\FileSystemInterface;
+ use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+ use Drupal\Core\Mail\MailFormatHelper;
+@@ -13,6 +16,8 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+ use Drupal\Core\Render\RendererInterface;
+ use Drupal\Core\Session\AccountProxyInterface;
+ use Drupal\Core\StringTranslation\StringTranslationTrait;
++use Drupal\Core\Url;
++use Drupal\Core\Utility\LinkGeneratorInterface;
+ use PHPMailer\PHPMailer\PHPMailer;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ use Symfony\Component\HttpFoundation\Session\SessionInterface;
+@@ -119,6 +124,34 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+    */
+   protected $session;
+ 
++   /**
++   * Module handler.
++   *
++   * @var \Drupal\Core\Extension\ModuleHandlerInterface
++   */
++  protected $moduleHandler;
++
++  /**
++   * Database connection.
++   *
++   * @var \Drupal\Core\Database\Connection
++   */
++  protected $database;
++
++  /**
++   * The time service.
++   *
++   * @var \Drupal\Component\Datetime\TimeInterface
++   */
++  protected $time;
++
++  /**
++   * The link generator service.
++   *
++   * @var \Drupal\Core\Utility\LinkGeneratorInterface
++   */
++  protected $linkGenerator;
++
+   /**
+    * Constructs a SMPTMailSystem object.
+    *
+@@ -146,8 +179,33 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+    *   The renderer.
+    * @param \Symfony\Component\HttpFoundation\Session\SessionInterface $session
+    *   The session.
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler
++   *   The module handler.
++   * @param \Drupal\Core\Database\Connection $database
++   *   The database.
++   * @param \Drupal\Component\Datetime\TimeInterface $time
++   *   Time service.
++   * @param \Drupal\Core\Utility\LinkGeneratorInterface $linkGenerator
++   *   Link generator service.
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, LoggerChannelFactoryInterface $logger, MessengerInterface $messenger, EmailValidatorInterface $emailValidator, ConfigFactoryInterface $config_factory, AccountProxyInterface $account, FileSystemInterface $file_system, MimeTypeGuesserInterface $mime_type_guesser, RendererInterface $renderer, SessionInterface $session) {
++  public function __construct(
++    array $configuration,
++    $plugin_id,
++    $plugin_definition,
++    LoggerChannelFactoryInterface $logger,
++    MessengerInterface $messenger,
++    EmailValidatorInterface $emailValidator,
++    ConfigFactoryInterface $config_factory,
++    AccountProxyInterface $account,
++    FileSystemInterface $file_system,
++    MimeTypeGuesserInterface $mime_type_guesser,
++    RendererInterface $renderer,
++    SessionInterface $session,
++    ModuleHandlerInterface $moduleHandler,
++    Connection $database,
++    TimeInterface $time,
++    LinkGeneratorInterface $linkGenerator
++  ) {
+     $this->smtpConfig = $config_factory->get('smtp.settings');
+     $this->logger = $logger;
+     $this->messenger = $messenger;
+@@ -158,6 +216,10 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+     $this->mimeTypeGuesser = $mime_type_guesser;
+     $this->renderer = $renderer;
+     $this->session = $session;
++    $this->moduleHandler = $moduleHandler;
++    $this->database = $database;
++    $this->time = $time;
++    $this->linkGenerator = $linkGenerator;
+   }
+ 
+   /**
+@@ -188,7 +250,11 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+       $container->get('file_system'),
+       $container->get('file.mime_type.guesser'),
+       $container->get('renderer'),
+-      $container->get('session')
++      $container->get('session'),
++      $container->get('module_handler'),
++      $container->get('database'),
++      $container->get('datetime.time'),
++      $container->get('link_generator')
+     );
+   }
+ 
+@@ -615,10 +681,10 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+           }
+           // Add the attachment.
+           elseif (strpos($body_part, 'Content-Disposition: attachment;') && !isset($message['params']['attachments'])) {
+-            $file_path     = $this->getSubstring($body_part, 'filename=', '"', '"');
+-            $file_name     = $this->getSubstring($body_part, ' name=', '"', '"');
++            $file_path = $this->getSubstring($body_part, 'filename=', '"', '"');
++            $file_name = $this->getSubstring($body_part, ' name=', '"', '"');
+             $file_encoding = $this->getSubstring($body_part, 'Content-Transfer-Encoding', ' ', "\n");
+-            $file_type     = $this->getSubstring($body_part, 'Content-Type', ' ', ';');
++            $file_type = $this->getSubstring($body_part, 'Content-Type', ' ', ';');
+ 
+             if (file_exists($file_path)) {
+               if (!$mailer->addStringAttachment(file_get_contents($file_path), $file_name, $file_encoding, $file_type)) {
+@@ -706,6 +772,107 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+     $mailer->Port = $this->smtpConfig->get('smtp_port');
+     $mailer->Mailer = 'smtp';
+ 
++    // Integration with the Maillog module.
++    if ($this->moduleHandler->moduleExists('maillog')) {
++      if ($this->smtpConfig->get('maillog_log')) {
++        $record = new \stdClass();
++
++        // In case the subject/from/to is already encoded, decode with iconv_mime_decode.
++        $record->header_message_id = isset($mailer->MessageID) ? $mailer->MessageID : NULL;
++        $record->subject = \mb_substr(iconv_mime_decode($mailer->Subject), 0, 255);
++        $record->header_from = $from;
++        $record->header_to = $to;
++        $record->header_reply_to = isset($headers['Reply-To']) ? $headers['Reply-To'] : '';
++        $record->header_all = \serialize($headers);
++        $record->sent_date = $this->time->getRequestTime();
++
++        // Used to separate different portions of the body string.
++        $divider = \str_repeat('-', 60) . "\n";
++
++        // Load the attachments.
++        $attachments = $mailer->GetAttachments();
++
++        $record->body = '';
++
++        // If there's more than one item to display, add a divider.
++        if (!empty($mailer->AltBody) || !empty($attachments)) {
++          $record->body .= $this->t('Body') . ":\n";
++          $record->body .= $divider;
++        }
++
++        // Add the body field.
++        if (isset($mailer->Body)) {
++          $record->body .= $mailer->Body;
++        }
++        else {
++          $record->body .= $this->t('*No message body*') . ":\n";
++        }
++
++        // The AltBody value is optional.
++        if (!empty($mailer->AltBody)) {
++          $record->body .= "\n";
++          $record->body .= $divider;
++          $record->body .= $this->t('Alternative body') . ":\n";
++          $record->body .= $divider;
++          $record->body .= $mailer->AltBody;
++        }
++
++        // List the attachments.
++        if (!empty($attachments)) {
++          $record->body .= "\n";
++          $record->body .= $divider;
++          $record->body .= $this->t('Attachments') . ":\n";
++          $record->body .= $divider;
++          foreach ($attachments as $file) {
++            $record->body .= $this->t('Filename') . ':' . $file[1] . "\n";
++            $record->body .= $this->t('Name') . ':' . $file[2] . "\n";
++            $record->body .= $this->t('Encoding') . ':' . $file[3] . "\n";
++            $record->body .= $this->t('Type') . ':' . $file[4] . "\n";
++            $record->body .= "\n";
++          }
++        }
++
++        $this->database->insert('maillog')
++          ->fields((array) $record)
++          ->execute();
++      }
++
++      // Display the e-mail using Devel module.
++      if (
++        $this->smtpConfig->get('maillog_verbose')
++        && $this->currentUser->hasPermission('view maillog')
++      ) {
++
++        // Print the message.
++        $header_output = print_r($headers, TRUE);
++        $output = $this->t('A mail has been sent: <br/> [Subject] => @subject <br/> [From] => @from <br/> [To] => @to <br/> [Reply-To] => @reply <br/> <pre>  [Header] => @header <br/> [Body] => @body </pre>', [
++          '@subject' => $mailer->Subject,
++          '@from' => $from,
++          '@to' => $to,
++          '@reply' => isset($headers['Reply-To']) ? $headers['Reply-To'] : NULL,
++          '@header' => $header_output,
++          '@body' => $mailer->Body,
++        ]);
++        $this->messenger->addStatus($output, TRUE);
++      }
++
++      if (!($this->configFactory->get('maillog.settings')->get('send'))) {
++        if ($this->currentUser->hasPermission('administer maillog')) {
++          $message = $this->t('Sending of e-mail messages is disabled by Maillog module. Go @here to enable.', [
++            '@here' => $this->linkGenerator->generate('here', Url::fromRoute('maillog.settings')),
++          ]);
++
++          $this->messenger->addWarning($message, TRUE);
++        }
++        else {
++          $this->logger->get('maillog')
++            ->notice('Attempted to send an email, but sending emails is disabled.');
++        }
++
++        return TRUE;
++      }
++    }
++
+     $mailerArr = [
+       'mailer' => $mailer,
+       'to' => $to,
+@@ -738,9 +905,9 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+    *   An array containing the resulting mime parts
+    */
+   protected function boundarySplit($input, $boundary) {
+-    $parts       = [];
++    $parts = [];
+     $bs_possible = substr($boundary, 2, -2);
+-    $bs_check    = '\"' . $bs_possible . '\"';
++    $bs_check = '\"' . $bs_possible . '\"';
+ 
+     if ($boundary == $bs_check) {
+       $boundary = $bs_possible;
+@@ -748,7 +915,7 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+ 
+     $tmp = explode('--' . $boundary, $input);
+ 
+-    for ($i = 1; $i < count($tmp); $i++) {
++    for ($i = 1, $tmpCount = count($tmp); $i < $tmpCount; $i++) {
+       if (trim($tmp[$i])) {
+         $parts[] = $tmp[$i];
+       }
+@@ -825,11 +992,11 @@ class SMTPMailSystem implements MailInterface, ContainerFactoryPluginInterface {
+    *   $ending_character.
+    */
+   protected function getSubstring($source, $target, $beginning_character, $ending_character) {
+-    $search_start     = strpos($source, $target) + 1;
+-    $first_character  = strpos($source, $beginning_character, $search_start) + 1;
++    $search_start = strpos($source, $target) + 1;
++    $first_character = strpos($source, $beginning_character, $search_start) + 1;
+     $second_character = strpos($source, $ending_character, $first_character) + 1;
+-    $substring        = substr($source, $first_character, $second_character - $first_character);
+-    $string_length    = strlen($substring) - 1;
++    $substring = substr($source, $first_character, $second_character - $first_character);
++    $string_length = strlen($substring) - 1;
+ 
+     if ($substring[$string_length] == $ending_character) {
+       $substring = substr($substring, 0, $string_length);
