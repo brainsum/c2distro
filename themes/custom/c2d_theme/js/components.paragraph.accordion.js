@@ -1,4 +1,4 @@
-(function accordion($) {
+(function accordion(Drupal, $) {
   Drupal.behaviors.accordion = {
     attach: function attach(context) {
       var $accordionParagraph = $('.paragraph--type--accordion', context);
@@ -14,4 +14,4 @@
       });
     }
   };
-})(jQuery);
+})(Drupal, jQuery);
