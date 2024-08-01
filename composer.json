@@ -63,7 +63,7 @@
         "drupal/pathauto": "^1.13",
         "drupal/recaptcha": "^3.3",
         "drupal/recaptcha_v3": "^2.0",
-        "drupal/redirect": "^1.6",
+        "drupal/redirect": "^1.9",
         "drupal/role_delegation": "^1.1",
         "drupal/search_api": "^1.19.0",
         "drupal/smtp": "^1.2",
