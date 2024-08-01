@@ -51,7 +51,7 @@
         "drupal/field_group": "^3.4",
         "drupal/image_widget_crop": "^2.4",
         "drupal/lightgallery": "^1.4",
-        "drupal/maillog": "^1.0.0",
+        "drupal/maillog": "^1.1",
         "drupal/mailsystem": "^4.3",
         "drupal/markup": "^2.0@beta",
         "drupal/media_thumbnails_pdf": "^2.0@beta",
