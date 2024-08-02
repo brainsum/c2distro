@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - system.menu.admin
-  enforced:
-    module:
-      - maillog
   module:
     - maillog
     - user
+  enforced:
+    module:
+      - maillog
 id: maillog_overview
 label: 'Maillog overview'
 module: views
@@ -68,6 +68,7 @@ display:
             first: '« first'
             last: 'last »'
           quantity: 9
+          pagination_heading_level: h4
       style:
         type: table
         options:

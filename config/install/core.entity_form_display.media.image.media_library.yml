@@ -7,7 +7,6 @@ dependencies:
     - image.style.large
     - media.type.image
   module:
-    - content_moderation
     - image_widget_crop
 id: media.image.media_library
 targetEntityType: media

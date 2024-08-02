@@ -21,8 +21,6 @@ display:
             first: '« primero'
             last: 'último »'
       fields:
-        id:
-          label: Nº
         sent_date:
           label: Fecha
         subject:

@@ -4,14 +4,14 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - image.style.media_library
-  enforced:
-    module:
-      - media_library
   module:
     - media
     - media_library
     - svg_image
     - user
+  enforced:
+    module:
+      - media_library
 id: media_library
 label: 'Media library'
 module: views
@@ -69,6 +69,7 @@ display:
           tags:
             previous: ‹‹
             next: ››
+          pagination_heading_level: h4
       style:
         type: default
         options:
@@ -1073,7 +1074,6 @@ display:
           default_argument_type: fixed
           default_argument_options:
             argument: ''
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1226,6 +1226,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
       access:
         type: perm
         options:
@@ -1375,7 +1384,6 @@ display:
           default_argument_type: fixed
           default_argument_options:
             argument: ''
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true

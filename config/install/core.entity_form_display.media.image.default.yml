@@ -6,7 +6,6 @@ dependencies:
     - image.style.large
     - media.type.image
   module:
-    - content_moderation
     - image_widget_crop
     - path
 id: media.image.default

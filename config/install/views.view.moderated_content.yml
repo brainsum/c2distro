@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - content_moderation
   module:
     - node
     - user
+  enforced:
+    module:
+      - content_moderation
 id: moderated_content
 label: 'Moderated content'
 module: views
@@ -67,6 +67,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       style:
         type: table
         options:
@@ -437,6 +438,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true

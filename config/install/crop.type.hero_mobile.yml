@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-label: 'Hero mobile'
 id: hero_mobile
+label: 'Hero mobile'
 description: ''
 aspect_ratio: '375:667'
 soft_limit_width: null

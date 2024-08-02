@@ -1,3 +1,5 @@
+cancel_confirm:
+  subject: 'Solicitud de cancelación de cuenta para [user:display-name] en [site:name]'
 password_reset:
   subject: 'Reemplazo de información de inicio de sesión para [user:display-name] en [site:name]'
 register_admin_created:

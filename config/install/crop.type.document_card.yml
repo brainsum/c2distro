@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-label: 'Document card'
 id: document_card
+label: 'Document card'
 description: ''
 aspect_ratio: '262:304'
 soft_limit_width: null

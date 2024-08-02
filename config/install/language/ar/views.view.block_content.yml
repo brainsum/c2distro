@@ -22,6 +22,7 @@ display:
           label: 'وصف الصندوق'
           separator: ', '
         type:
+          label: 'نوع الصندوق'
           separator: ', '
         changed:
           label: التحديث
@@ -31,5 +32,8 @@ display:
         info:
           expose:
             label: 'وصف الصندوق'
+        type:
+          expose:
+            label: 'نوع الصندوق'
   page_1:
     display_title: الصفحة

@@ -26,7 +26,7 @@ display:
         user_bulk_form:
           label: 'Mise à jour en masse'
         name:
-          label: 'Nom d''utilisateur'
+          label: "Nom d'utilisateur"
         status:
           label: État
           settings:
@@ -36,8 +36,14 @@ display:
           label: Rôles
         created:
           label: 'Membre depuis'
+          settings:
+            future_format: '@interval'
+            past_format: '@interval'
         access:
           label: 'Dernier accès'
+          settings:
+            future_format: 'Dans @interval'
+            past_format: 'Il y a @interval'
         operations:
           label: Actions
         mail:
@@ -63,7 +69,7 @@ display:
       title: Personnes
       empty:
         area_text_custom:
-          content: 'Personne n''est disponible.'
+          content: "Personne n'est disponible."
       use_more_text: plus
   page_1:
     display_title: Page

@@ -2,24 +2,6 @@ display:
   default:
     display_title: 'Por defecto'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Aplicar
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Anterior'
-            next: 'Siguiente >'
-            first: '« Primero'
-            last: 'Último »'
-          expose:
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options_all_label: '- Todo -'
-            offset_label: Desplazamiento
       fields:
         nid:
           separator: ', '
@@ -33,6 +15,24 @@ display:
           separator: ', '
         field_lead:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Siguiente >'
+            previous: '‹ Anterior'
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       use_more_text: más
   lister_block:
     display_title: Bloque
