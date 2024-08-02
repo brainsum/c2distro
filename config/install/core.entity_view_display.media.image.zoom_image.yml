@@ -16,6 +16,8 @@ content:
     type: lightgallery
     label: visually_hidden
     settings:
+      lightgallery_core:
+        thumb_image_style: large
         lightgallery_image_style: ''
         title_source: alt
         closable: 1
