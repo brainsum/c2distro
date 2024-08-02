@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-label: 'Hero tablet'
 id: hero_tablet
+label: 'Hero tablet'
 description: ''
 aspect_ratio: '1024:303'
 soft_limit_width: null

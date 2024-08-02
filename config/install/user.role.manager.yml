@@ -1,6 +1,22 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.simple
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.location
+    - taxonomy.vocabulary.organization
+    - taxonomy.vocabulary.tags
+  module:
+    - block_content_permissions
+    - c2distro_core
+    - contact
+    - filter
+    - node
+    - system
+    - taxonomy
+    - toolbar
 id: manager
 label: Manager
 weight: -8

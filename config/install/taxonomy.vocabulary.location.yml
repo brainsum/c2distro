@@ -5,3 +5,4 @@ name: Location
 vid: location
 description: 'Event locations.'
 weight: 0
+new_revision: false

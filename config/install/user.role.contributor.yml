@@ -1,6 +1,23 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.simple
+    - media.type.document
+    - media.type.icon
+    - media.type.image
+    - media.type.remote_video
+    - node.type.event
+    - node.type.news
+    - node.type.page
+  module:
+    - c2distro_core
+    - content_translation
+    - filter
+    - media
+    - node
+    - system
+    - toolbar
 id: contributor
 label: Contributor
 weight: -6

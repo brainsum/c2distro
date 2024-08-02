@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-label: 'News header image'
 id: news_header_image
+label: 'News header image'
 description: ''
 aspect_ratio: '823:464'
 soft_limit_width: null

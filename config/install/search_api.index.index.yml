@@ -1,11 +1,6 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - media
-    - taxonomy
-    - node
-    - search_api
   config:
     - field.storage.media.field_category
     - field.storage.media.field_media_file
@@ -17,6 +12,11 @@ dependencies:
     - field.storage.node.field_lead
     - field.storage.node.field_tags
     - search_api.server.database_server
+  module:
+    - media
+    - taxonomy
+    - node
+    - search_api
 id: index
 name: 'General search'
 description: ''

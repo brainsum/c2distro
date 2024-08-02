@@ -1,5 +1,4 @@
 label: 'Librería de bloques personalizada'
-description: 'Buscar y gestionar bloques personalizados.'
 display:
   default:
     display_title: 'Por defecto'
@@ -39,9 +38,6 @@ display:
           expose:
             label: 'Tipo de bloque'
       title: 'Librería de bloques personalizada'
-      empty:
-        area_text_custom:
-          content: 'No hay bloques personalizados disponibles.'
   page_1:
     display_title: Página
     display_options:

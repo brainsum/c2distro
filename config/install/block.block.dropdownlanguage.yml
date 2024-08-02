@@ -14,7 +14,7 @@ plugin: 'dropdown_language:language_interface'
 settings:
   id: 'dropdown_language:language_interface'
   label: 'Dropdown Language'
-  provider: dropdown_language
   label_display: '0'
+  provider: dropdown_language
   labels: null
 visibility: {  }

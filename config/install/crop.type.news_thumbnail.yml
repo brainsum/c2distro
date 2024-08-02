@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-label: 'News thumbnail'
 id: news_thumbnail
+label: 'News thumbnail'
 description: ''
 aspect_ratio: '262:192'
 soft_limit_width: null

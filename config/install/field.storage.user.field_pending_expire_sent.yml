@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   enforced:
     module:
       - password_policy
-  module:
-    - user
 id: user.field_pending_expire_sent
 field_name: field_pending_expire_sent
 entity_type: user

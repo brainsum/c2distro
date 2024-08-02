@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Maître
+    display_title: Principal
     display_options:
       exposed_form:
         options:
@@ -21,8 +21,6 @@ display:
             first: "«\_premier"
             last: "dernier\_»"
       fields:
-        id:
-          label: '#'
         sent_date:
           label: Date
         subject:
