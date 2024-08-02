@@ -46,7 +46,7 @@
         "drupal/classy_paragraphs": "^1.0@RC",
         "drupal/ctools": "^4.1",
         "drupal/default_content": "^2.0@alpha",
-        "drupal/dropdown_language": "^3.0 || ^4.0",
+        "drupal/dropdown_language": "^4.1",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/field_group": "^3.4",
         "drupal/image_widget_crop": "^2.4",
