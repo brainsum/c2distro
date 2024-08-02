@@ -73,7 +73,7 @@
         "drupal/warmer": "^2.0",
         "drupal/warmer_entity": "^2.0",
         "drupal/facets": "^2.0",
-        "drupal/core_views_facets": "^2.0",
+        "drupal/core_views_facets": "^2.1",
         "sachinchoolur/lightgallery": "1.10.0"
     },
     "extra": {
