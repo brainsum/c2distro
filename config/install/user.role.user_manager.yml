@@ -3,6 +3,10 @@ status: true
 dependencies:
   config:
     - filter.format.simple
+    - user.role.editor
+    - user.role.manager
+    - user.role.user_manager
+    - user.role.contributor
   module:
     - filter
     - openid_connect
