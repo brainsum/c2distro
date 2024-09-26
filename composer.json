@@ -55,7 +55,7 @@
         "drupal/mailsystem": "^4.4",
         "drupal/markup": "^2.0",
         "drupal/media_thumbnails_pdf": "^2.0@beta",
-        "drupal/media_thumbnails": "^1.0@beta",
+        "drupal/media_thumbnails": "^2.0",
         "drupal/metatag": "^1.26",
         "drupal/openid_connect_windows_aad": "^2.0@beta",
         "drupal/paragraphs": "^1.17",
@@ -87,7 +87,6 @@
                 "Keep manually inserted alt": "web/profiles/contrib/c2distro/patches/media-keep-manually-inserted-alt.patch"
             },
             "drupal/media_thumbnails": {
-                "Ability to edit thumbnail manually or programmatically": "https://www.drupal.org/files/issues/2020-08-06/media_thumbnails-3149842-4.patch",
                 "Keep manually inserted thumbnails": "web/profiles/contrib/c2distro/patches/media_thumbnails-keep-manually-inserted-thumbnails.patch"
             },
             "drupal/classy_paragraphs": {
