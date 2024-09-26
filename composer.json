@@ -43,7 +43,7 @@
         "drupal/block_content_permissions": "^1.11",
         "drupal/fullcalendar_view": "^5.1",
         "drupal/chosen": "^3.0",
-        "drupal/classy_paragraphs": "^1.0@RC",
+        "drupal/classy_paragraphs": "^2.0",
         "drupal/ctools": "^4.1",
         "drupal/default_content": "^2.0@alpha",
         "drupal/dropdown_language": "^4.0",
