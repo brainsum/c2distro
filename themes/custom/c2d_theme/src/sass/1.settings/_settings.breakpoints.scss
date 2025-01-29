@@ -14,6 +14,7 @@
  */
 /* stylelint-disable unit-allowed-list */
 $breakpoint--small: 0 !default;
+$breakpoint--smallmobile: 321px !default;
 $breakpoint--mobile: 376px !default; // 23.438em
 $breakpoint--mobile-large: 560px !default; // 35.000em
 $breakpoint--medium: 768px !default; // 48.000em
@@ -25,6 +26,7 @@ $breakpoint--xxlarge: 1920px !default; // 120.000em
 
 $breakpoints: (
   small: $breakpoint--small,
+  small-large: $breakpoint--smallmobile,
   mobile: $breakpoint--mobile,
   mobile-large: $breakpoint--mobile-large,
   medium: $breakpoint--medium,
@@ -36,4 +38,4 @@ $breakpoints: (
 $print-breakpoint: desktop !default;
 
 // for css class names
-$breakpoint-classes: (small mobile tablet desktop xxlarge) !default;
+$breakpoint-classes: (small small-large mobile tablet desktop xxlarge) !default;

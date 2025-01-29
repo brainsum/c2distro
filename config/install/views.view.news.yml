@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.storage.node.field_date
     - field.storage.node.field_image
     - field.storage.node.field_lead
@@ -13,6 +14,8 @@ dependencies:
     - media
     - node
     - user
+_core:
+  default_config_hash: 7ljGZQIotLoMoLQNNJ1Xp8pGKu68LtY6Bn1X8R-v1Wo
 id: news
 label: News
 module: views
@@ -484,6 +487,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 12
           total_pages: null
           id: 0
@@ -501,7 +505,6 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -894,7 +897,18 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 3
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: 'box click-{{ nid }}'
+          default_row_class: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
       defaults:
         title: false
         css_class: false
@@ -902,6 +916,8 @@ display:
         use_more: false
         use_more_always: false
         use_more_text: false
+        style: false
+        row: false
         fields: false
       css_class: lister-page
       use_more: true
@@ -1375,7 +1391,8 @@ display:
         type: normal
         title: News
         description: ''
-        weight: 30
+        weight: -41
+        enabled: false
         expanded: false
         menu_name: main
         parent: ''
