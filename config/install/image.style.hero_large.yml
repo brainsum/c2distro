@@ -6,15 +6,15 @@ dependencies:
   module:
     - crop
 name: hero_large
-label: 'Hero large (1594*472)'
+label: 'Hero large (1920*1080)'
 effects:
   cf0a95fa-04a3-47c4-923b-9600cf8717c3:
     uuid: cf0a95fa-04a3-47c4-923b-9600cf8717c3
     id: image_scale_and_crop
     weight: -9
     data:
-      width: 1594
-      height: 472
+      width: 1920
+      height: 1080
       anchor: center-center
   f87a6491-cd89-414d-ae7c-66656a1c5908:
     uuid: f87a6491-cd89-414d-ae7c-66656a1c5908

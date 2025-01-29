@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies: {  }
+name: text_and_media
+label: 'Text and media (710*640)'
+effects:
+  d062e04b-ed31-4830-92f8-67255574e97f:
+    uuid: d062e04b-ed31-4830-92f8-67255574e97f
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 710
+      height: 640
+      anchor: center-center
+  729ab36e-be21-47a7-a9b6-e7932c23ead1:
+    uuid: 729ab36e-be21-47a7-a9b6-e7932c23ead1
+    id: image_convert
+    weight: -10
+    data:
+      extension: webp

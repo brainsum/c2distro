@@ -9,8 +9,8 @@ dependencies:
     - c2d_theme
 id: mainnavigation
 theme: c2d_theme
-region: navigation
-weight: 0
+region: header
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

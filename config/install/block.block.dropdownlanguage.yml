@@ -8,7 +8,7 @@ dependencies:
 id: dropdownlanguage
 theme: c2d_theme
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: 'dropdown_language:language_interface'
 settings:
