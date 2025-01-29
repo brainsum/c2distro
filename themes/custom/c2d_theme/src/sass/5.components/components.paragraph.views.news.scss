@@ -11,26 +11,42 @@
 @import "../index";
 
 .field--name-field-paragraphs .field__item .paragraph--type--view {
+  padding-block-start: 3.4rem;
+  @include breakpoint(small-large) {
+    padding-block-start: 7.6rem;
+  }
   .paragraph--inner {
-    @include width-1105;
+    @include width-1440;
+    .path-frontpage & {
+      padding: 0;
+      @include breakpoint(small-large) {
+        padding: 0 1.5rem;
+      }
+    }
 
     .block-views .block-inner {
       max-inline-size: unset;
       padding: 0;
 
       .title-holder {
-        max-inline-size: 115.7rem;
+        position: relative;
+        inset-block-start: unset;
+        inset-inline: 0;
+        max-inline-size: unset;
+        margin: 0 auto;
+        text-align: center;
 
         span {
-          @include block-title;
-
+          margin-block-start: 0;
+          margin-inline-start: 0;
+          padding: 0;
           text-decoration: none;
+          letter-spacing: -0.03rem;
           color: $color-lightest;
-          box-shadow:
-            2.2rem 0 0 $body-font-color,
-            -1.9rem 0 0 $body-font-color;
-          font-family: $font-secondary;
-          font-size: 3.6rem;
+          background-color: transparent;
+          box-shadow: none;
+          font-size: 2.8rem;
+          font-weight: 400;
         }
       }
 
@@ -38,9 +54,26 @@
         padding: 0;
 
         .view-content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
           max-inline-size: none;
           padding: 0;
-          padding-block-start: 11rem;
+          padding-block-start: 3.3rem;
+          column-gap: 8.1rem;
+          row-gap: 7.5rem;
+
+          @include breakpoint(small-large) {
+            padding-inline: 1.5rem;
+          }
+
+          @include breakpoint(mobile-large) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          @include breakpoint(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            padding-block-start: 3.4rem;
+          }
         }
 
         .more-link {
@@ -67,6 +100,121 @@
               background-color: $color-secondary;
             }
           }
+        }
+      }
+    }
+  }
+  .node--type-news.node--view-mode-card {
+    line-height: 0.85;
+    @include breakpoint(small-large) {
+      block-size: 100%;
+      padding-inline-end: 2.3rem;
+      line-height: 0.9;
+    }
+    .field--name-field-image {
+      overflow: hidden;
+      max-block-size: 18rem;
+      @include breakpoint(small-large) {
+        max-block-size: none;
+      }
+    }
+    .node__content {
+      position: relative;
+      block-size: calc(100% - 18rem);
+      .text-wrapper {
+        position: relative;
+        display: flex;
+        block-size: 100%;
+        padding: 3.1rem 3.8rem 3.5rem 0;
+
+        //border-block-end: 0.1rem dashed #09bfd7;
+        background-color: #fbffff;
+        @include breakpoint(small-large) {
+          margin-block-start: -5.2rem;
+          margin-inline: 3.5em -5.5rem;
+          padding: 3.3rem 5.5rem 5.4rem 0;
+        }
+
+        &::before {
+          position: absolute;
+          inset-block-start: -2.5rem;
+          inset-inline-end: 0;
+          inline-size: 0;
+          block-size: 0;
+          content: "";
+          border-block-end: 2.5rem solid #c600d0;
+          border-inline-start: 2.5rem solid transparent;
+          border-inline-end: 0 solid transparent;
+          @include breakpoint(small-large) {
+            inset-block-start: 2.7rem;
+            inset-inline-start: -2.5rem;
+            inset-inline-end: unset;
+          }
+        }
+        &::after {
+          position: absolute;
+          inset-block-end: 0;
+          inline-size: 100%;
+          block-size: 0.1rem;
+          content: "";
+          background-image: repeating-linear-gradient(
+            90deg,
+            #09bfd7,
+            #09bfd7 0.2rem,
+            transparent 0.2rem,
+            transparent 0.4rem
+          );
+          background-repeat: repeat-x;
+          background-position: left bottom;
+          background-size: 100% 0.1rem;
+        }
+        .content--date-wrapper {
+          flex-shrink: 0;
+          min-inline-size: 7.2rem;
+          padding-block-start: 0.5rem;
+          text-align: end;
+          @include breakpoint(small-large) {
+            padding-block-start: 0.6rem;
+          }
+        }
+        .content--title-wrapper {
+          padding-inline-start: 2.4rem;
+        }
+      }
+      .field--name-title {
+        color: #152c53;
+        font-size: 1.6rem;
+        font-weight: 400;
+        @include breakpoint(small-large) {
+          font-size: 2rem;
+        }
+      }
+      .field--name-field-date,
+      .read-more {
+        flex-shrink: 0;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+      }
+      .field--name-field-date {
+        color: #000;
+      }
+
+      .read-more {
+        position: relative;
+        display: inline-block;
+        margin-block-start: 1.8rem;
+        border-block-end: 0.1rem solid #152c53;
+        &::after {
+          position: absolute;
+          inset-block-start: 0.4rem;
+          inset-inline-end: -1.3rem;
+          display: inline-block;
+          inline-size: 0.9rem;
+          block-size: 0.9rem;
+          content: "";
+          background: url('data:image/svg+xml,<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.625 1L8 4.5M8 4.5L4.625 8M8 4.5H1" stroke="%23C600D0" stroke-linecap="round"/></svg>')
+            no-repeat;
         }
       }
     }
