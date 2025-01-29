@@ -4,7 +4,7 @@ dependencies: {  }
 id: hero_mobile
 label: 'Hero mobile'
 description: ''
-aspect_ratio: '375:667'
+aspect_ratio: '800:650'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null
