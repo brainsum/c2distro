@@ -27,13 +27,18 @@
 
     <div class="social-block">
       <a href="{{ url('view.search.page') }}" target="_blank" rel="nofollow" class="search-icon">
-        <img src="/{{ c2d_theme_path }}/images/dist/svg/search-solid.svg" alt="{{ 'magnifier icon'|t }}">
+        <img src="/{{ c2d_theme_path }}/images/dist/icons/IFRC_icn_search.svg" alt="{{ 'magnifier icon'|t }}">
       </a>
     </div>
     <div class="mobile-icons">
       <div class="hamburger">
-        <img src="/{{ c2d_theme_path }}/images/dist/icons/hamburger.svg" alt="{{ 'menu icon (three stripes)'|t }}">
+        <img src="/{{ c2d_theme_path }}/images/dist/icons/IFRC_icn_hamburger.svg" alt="{{ 'menu icon (three stripes)'|t }}">
       </div>
     </div>
+    <a class="button-link-container" href="/donate" aria-label="Donate">
+      <span id="" class="button donate-button">
+        {{ "Donate"|t }}
+      </span>
+    </a>
   </div>
 {% endif %}

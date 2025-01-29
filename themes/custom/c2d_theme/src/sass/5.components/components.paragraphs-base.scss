@@ -13,7 +13,7 @@
 @import "../index";
 
 .paragraph {
-  font-family: $font-primary;
+  // font-family: $font-primary;
 
   // style options
   &.background-color {
@@ -32,10 +32,12 @@
 
   // general styles
   .field--name-field-title {
-    margin-block-end: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.25;
+    margin-block-end: 2.2rem;
+    color: $color-paragraph-text;
+    font-family: $font-secondary;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.46;
   }
 
   .block-holder {
@@ -59,15 +61,21 @@
   > .paragraph--inner {
     .field--name-field-text,
     .field--name-field-plaintext {
-      @include font-open-18;
+      @include font-open-16;
+
+      color: $color-paragraph-text;
     }
+  }
+}
+.paragraph--type--text-media {
+  .field--name-field-title {
+    text-transform: uppercase;
   }
 }
 
 .paragraph--type--text,
 .paragraph--type--cta,
 .paragraph--type--accordion,
-.paragraph--type--text-media,
 .paragraph--type--link-boxes,
 .paragraph--type--popup-wrapper,
 .paragraph--type--timeline-wrapper,

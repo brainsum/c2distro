@@ -3,6 +3,18 @@
   padding-inline: 1.5rem;
 }
 
+@mixin width-1920 {
+  @include base-padding;
+
+  max-inline-size: 192rem;
+}
+
+@mixin width-1440 {
+  @include base-padding;
+
+  max-inline-size: 144rem;
+}
+
 @mixin width-1390 {
   @include base-padding;
 

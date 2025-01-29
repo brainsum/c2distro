@@ -45,9 +45,7 @@
           <p class="hero-text-container-description">{{ content.field_description.0['#context']['value'] }}</p>
         {% endif %}
         {% if content.field_link.0['#url'] is not empty %}
-        <div class="flex-centered">
-          <a href="{{ content.field_link.0['#url'] }}" class="bordered-button-blue">{{ content.field_link.0['#title'] }}</a>
-        </div>
+          <a href="{{ content.field_link.0['#url'] }}" class="button-white">{{ content.field_link.0['#title'] }}</a>
         {% endif %}
       </div>
     </div>

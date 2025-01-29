@@ -16,6 +16,7 @@
 
 .social-block {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   margin-inline-start: auto;
 
@@ -26,11 +27,11 @@
   }
 
   img {
-    inline-size: 2.4rem;
-    block-size: 2.4rem;
+    inline-size: 2rem;
+    block-size: 2.2rem;
 
     @include breakpoint(medium down) {
-      margin-inline-end: 1.5rem;
+      margin-inline-end: 2.5rem;
     }
   }
 
@@ -39,13 +40,47 @@
   }
 }
 
+.donate-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-block-size: 3.5rem;
+  padding: 0 1.3rem;
+  transition: all, 0.2s;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: $color-lightest;
+  background-color: $color-red-secondary;
+  font-family: $font-secondary !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  @include breakpoint(medium) {
+    min-block-size: 5rem;
+    margin-inline-start: 3.4rem;
+    padding: 0 2.9rem;
+  }
+}
+
 .mobile-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
+  inline-size: 2.6rem;
+  block-size: 1.9rem;
+  margin-inline-end: 2rem;
 
   @include breakpoint(tablet) {
     display: none;
+  }
+
+  .hamburger {
+    inline-size: 2.6rem;
+    block-size: 1.9rem;
+  }
+
+  img {
+    inline-size: 2.3rem;
   }
 }
 
@@ -59,10 +94,13 @@
       overflow: scroll;
       align-items: center;
       block-size: 100vh;
+      padding-inline-start: 9rem;
     }
 
     @include breakpoint(tablet) {
       @include flex-direction(row);
+
+      margin-block-start: 0.1rem;
     }
 
     > a {
@@ -76,8 +114,10 @@
 
       @include breakpoint(medium down) {
         inline-size: 100%;
-        margin-block-end: 2rem;
-        text-align: center;
+
+        // margin-block-end: 2rem;
+        padding-block: 0.5rem;
+        border-block-end: 0.1rem solid rgba($color-red-secondary, 0.3);
       }
 
       @include breakpoint(tablet) {
@@ -97,9 +137,9 @@
           &,
           span,
           a {
-            transition: 0.2s;
+/*             transition: 0.2s;
             color: $background-lightest;
-            background-color: $body-font-color;
+            background-color: $body-font-color; */
           }
         }
       }
@@ -111,31 +151,44 @@
         &:hover {
           @include breakpoint(medium) {
             transition: 0.2s;
-            color: $background-lightest;
-            background-color: $body-font-color;
+            color: $color-red-secondary;
+
           }
         }
       }
 
       > span,
       > a {
+        position: relative;
         display: block;
+        display: flex;
+        flex-direction: column;
         padding: 1.5rem 0;
         cursor: pointer;
         transition: all 0.5s;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 1.4rem;
         font-weight: 700;
         line-height: 2rem;
 
         @include breakpoint(medium down) {
           display: inline-block;
-          text-align: center;
-          font-size: 1.8rem;
         }
 
-        @include breakpoint(medium) {
+        @include breakpoint(tablet) {
           padding: 0;
           color: $body-font-color;
           background-color: $background-lightest;
+
+          &::after {
+            position: absolute;
+            inset-block-end: 1.3rem;
+            inline-size: 5.8rem;
+            block-size: 0.2rem;
+            content: "";
+            background-color: transparent
+          }
         }
 
         @include breakpoint(tablet) {
@@ -144,20 +197,30 @@
           justify-content: center;
           inline-size: 100%;
           block-size: 100%;
-          padding: 2.2rem 3rem;
-          text-transform: uppercase;
+          padding: 2.2rem 1.7rem;
           background-color: $background-lightest;
+        }
+
+        &.is-active {
+          @include breakpoint(medium) {
+            &::after {
+              background-color: $color-red-secondary;
+            }
+          }
         }
       }
 
       &.menu-item--active-trail {
-        color: $color-lightest;
-        background-color: $body-font-color;
+/*         color: $color-lightest;
+        background-color: $body-font-color; */
 
         > span,
         > a {
-          color: $background-lightest;
-          background-color: $body-font-color;
+          /* color: $background-lightest;
+          background-color: $body-font-color; */
+          &::after {
+            background-color: $color-red-secondary;
+          }
         }
       }
     }
@@ -183,7 +246,7 @@
       }
 
       &.opened {
-        background-color: $body-font-color;
+        // background-color: $body-font-color;
 
         .menu-link {
           @include breakpoint(medium down) {
@@ -207,17 +270,28 @@
         padding-inline: 1.5rem;
         transition: 0.2s;
         color: $background-lightest;
-        background-color: $body-font-color;
+
 
         @include breakpoint(tablet) {
           position: absolute;
-          inset-block-start: 5.65rem;
-          padding: 1.5rem;
+          z-index: 10;
+          inset-block-start: 5rem;
+          inset-inline-start: -2rem;
+          min-inline-size: 26rem;
+          padding-block: 2.3rem;
+          padding-inline-start: 3.1rem;
+          padding-inline-end: 0;
+          border-block-start: 0.2rem solid $color-red-secondary;
+          background: linear-gradient(45deg,  rgba(238,36,53,0.3) 0%,rgba(1,30,65,0.3) 99%);
+          background-color: $color-blue-darkest;
         }
 
         .menu-item {
           @include breakpoint(medium down) {
-            text-align: center;
+            // text-align: center;
+          }
+          @include breakpoint(tablet) {
+            border-block-end: 0.1rem solid rgba($color-red-secondary, 0.3);
           }
 
           &--active-trail {
@@ -236,8 +310,14 @@
             }
           }
 
-          &:last-child a {
-            padding: 0;
+          &:last-child {
+            @include breakpoint(tablet) {
+              border-block-end: 0;
+            }
+            a {
+              // padding-block-end: 0;
+              // padding-inline-end: 3.5rem;
+            }
           }
 
           a {
@@ -248,9 +328,12 @@
             text-align: center;
             white-space: pre-wrap;
             color: $background-lightest;
+            font-size: 1.4rem;
             line-height: 2rem;
 
             @include breakpoint(medium) {
+              padding-block: 1rem;
+              padding-inline-end: 3.5rem;
               text-align: start;
             }
           }
@@ -350,11 +433,13 @@
 li.menu-item.menu-item--expanded.opened span {
   transition: 0s;
   color: $background-lightest;
-  background-color: $body-font-color;
+
+  // background-color: $body-font-color;
 
   @include breakpoint(medium) {
     color: $body-font-color;
-    background-color: $background-lightest;
+
+    //background-color: $background-lightest;
   }
 }
 
@@ -442,6 +527,10 @@ li.menu-item.menu-item--expanded.opened span {
 .close-menu {
   padding: 2rem;
   text-align: end;
+  img {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
 }
 
 nav.navigation.menu--main {
@@ -452,11 +541,22 @@ nav.navigation.menu--main {
   display: block !important;
   overflow: hidden;
   transition: 0.5s;
-  background-color: $color-white;
+  background-color: $color-blue-darkest;
 
   @include breakpoint(tablet) {
     overflow: unset;
     background-color: transparent;
+
+  }
+
+  .menu-item {
+    a,
+    span {
+      color: $color-white;
+      @include breakpoint(tablet) {
+        color: $color-blue-darkest;
+      }
+    }
   }
 }
 
