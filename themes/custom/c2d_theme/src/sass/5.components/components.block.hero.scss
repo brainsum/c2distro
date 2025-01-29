@@ -51,7 +51,7 @@
           max-inline-size: 59.6rem;
           margin-block-start: 2rem;
           padding-block: 7.7rem 8rem;
-          padding-inline: 7rem 9rem;
+          padding-inline: 7rem 10rem;
           background-color: rgba($color-blue-darkest, 0.8)
         }
       }
@@ -76,15 +76,18 @@
           display: block;
           inline-size: 5.8rem;
           block-size: 0.2rem;
-          margin-block-start: 2.7rem;
+          margin-block-start: 2.6rem;
           content: "";
           background-color: $color-red-secondary;
+          @include breakpoint(desktop) {
+            margin-block-start: 2.7rem;
+          }
         }
       }
 
       .hero-text-container-description {
         max-inline-size: 83rem;
-        margin-block: 3rem 3.5rem;
+        margin-block: 2.9rem 3.5rem;
 
         // margin-inline: auto;
 
@@ -94,11 +97,13 @@
         font-family: $font-primary;
         font-size: 1.6rem;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.7;
 
         @include breakpoint(desktop) {
           margin-block: 1rem 3.7rem;
+          letter-spacing: 0.12rem;
           font-size: 2.4rem;
+          line-height: 1.5;
         }
       }
 

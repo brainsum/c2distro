@@ -39,7 +39,11 @@
   }
 
   .right {
-    padding-block: 11rem 12rem;
+    padding-block: 6rem 10rem;
+    padding-inline: 5rem;
+    @include breakpoint(medium) {
+      padding-block: 11rem 12rem;
+    }
     .field {
       max-inline-size: 43rem;
     }
