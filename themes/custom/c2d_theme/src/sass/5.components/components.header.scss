@@ -79,12 +79,13 @@ header {
 
   // inline-size: calc(100% - 5rem);
   block-size: 100%;
+  margin-inline-start: 0.6rem;
   padding-inline-start: 0;
   line-height: 1;
 
   @include breakpoint(medium) {
     // inline-size: 30rem;
-    margin-inline: 1.5rem 5.9rem;
+    margin-inline: 1.5rem 4.9rem;
   }
 
   .block-inner {
@@ -103,17 +104,19 @@ a.site-logo img {
   border-block-end: 0;
 
   @include breakpoint(medium) {
-    inline-size: 13rem;
-    margin-block-end: 0.5rem;
+    inline-size: 14rem;
+
+    // margin-block-end: 0.5rem;
     padding-block-start: 0.8rem;
     padding-block-end: 1rem;
-    border-block-end: solid 0.2rem lightgray;
+
+    // border-block-end: solid 0.2rem lightgray;
   }
 }
 
 .site-name {
+  display: none;
   margin-block-start: 0.5em;
-
   a {
     text-decoration: none solid #000;
     color: #000;
