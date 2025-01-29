@@ -17,7 +17,7 @@ content:
     label: visually_hidden
     settings:
       lightgallery_core:
-        thumb_image_style: large
+        thumb_image_style: text_and_media
         lightgallery_image_style: ''
         title_source: alt
         closable: 1
