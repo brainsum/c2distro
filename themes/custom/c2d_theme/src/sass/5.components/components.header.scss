@@ -32,7 +32,7 @@ header {
 
 .region-header,
 .region-navigation {
-  @include width-1390;
+  @include width-1920;
 
   position: relative;
 }
@@ -48,7 +48,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  block-size: 5.6rem;
+  block-size: 6rem;
   margin: 0 auto;
   background-color: $color-lightest;
 
@@ -57,13 +57,13 @@ header {
   }
 
   @include breakpoint(medium) {
-    block-size: 8.7rem;
-    padding-inline: 2.5rem;
+    block-size: 10rem;
+    padding-inline: 1.6rem;
   }
 
   @include breakpoint(tablet) {
-    margin-block-start: 3rem;
-    margin-block-end: 2rem;
+/*     margin-block-start: 3rem;
+    margin-block-end: 2rem; */
     margin-inline: auto;
   }
 
@@ -76,13 +76,15 @@ header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  inline-size: calc(100% - 5rem);
+
+  // inline-size: calc(100% - 5rem);
   block-size: 100%;
   padding-inline-start: 0;
   line-height: 1;
 
   @include breakpoint(medium) {
-    inline-size: 30rem;
+    // inline-size: 30rem;
+    margin-inline: 1.5rem 5.9rem;
   }
 
   .block-inner {

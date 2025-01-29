@@ -12,11 +12,12 @@
 
 .paragraph--type--text-media {
   .paragraph--inner {
-    @include width-1105;
+    @include width-1440;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding:0;
 
     @include breakpoint(medium) {
       @include flex-direction(row);
@@ -38,6 +39,10 @@
   }
 
   .right {
+    padding-block: 11rem 12rem;
+    .field {
+      max-inline-size: 43rem;
+    }
     .text-formatted p a {
       text-decoration: underline;
       color: $color-secondary;
@@ -67,7 +72,7 @@
   &.paragraph--view-mode--default {
     .right {
       @include breakpoint(medium) {
-        padding-inline-start: 12.5%;
+        padding-inline-start: 13.4rem;
       }
     }
   }
@@ -90,10 +95,13 @@
   }
 
   .field--name-field-link {
-    margin-block-start: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-block-start: 3.7rem;
 
     a {
-      @include font-open-18;
+      @include button-blue;
+/*       @include font-open-18;
 
       position: relative;
       padding-inline-start: 3rem;
@@ -109,7 +117,7 @@
 
       &:hover {
         text-decoration: none;
-      }
+      } */
     }
   }
 }

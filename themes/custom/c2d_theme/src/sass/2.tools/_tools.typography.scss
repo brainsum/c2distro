@@ -71,6 +71,73 @@
   }
 }
 
+@mixin button-white {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-block-size: 5rem;
+  padding: 0 3rem;
+  transition: all, 0.2s;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: $color-blue-darkest;
+  background-color: $color-white;
+  font-family: $font-secondary !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  @include breakpoint(medium) {
+    padding: 0 2.9rem;
+  }
+
+  &::after {
+    inline-size: 1.4rem;
+    block-size: 1.4rem;
+    content: "";
+    background: url('data:image/svg+xml,<svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" preserveAspectRatio="none" viewBox="0 0 24 24" width="24" height="24"><g><path xmlns:default="http://www.w3.org/2000/svg" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" style="fill: %23d24744;" vector-effect="non-scaling-stroke"/></g></svg>') no-repeat;
+    background-size: 1.6rem;
+  }
+
+  &:hover {
+/*     color: $color-lightest;
+    background-color: $color-secondary; */
+  }
+}
+
+@mixin button-blue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-block-size: 5rem;
+  padding: 0 3rem;
+  transition: all, 0.2s;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-blue-darkest;
+  font-family: $font-secondary !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  @include breakpoint(medium) {
+    padding-inline: 2.9rem 2.6rem;
+  }
+
+  &::after {
+    inline-size: 1.16rem;
+    block-size: 1rem;
+    margin-inline-start: 8.3rem;
+    content: "";
+    background: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.66 9.93"><defs><style> .cls-1 { fill: none; stroke: %23fff; stroke-miterlimit: 10; stroke-width: 2px; } </style></defs><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" y1="4.97" x2="10.24" y2="4.97"/><polyline class="cls-1" points="5.98 .71 10.24 4.97 5.98 9.23"/></g></svg>') no-repeat;
+    background-size: 1.16rem;
+  }
+
+  &:hover {
+/*     color: $color-lightest;
+    background-color: $color-secondary; */
+  }
+}
+
 @mixin bordered-button-small {
   padding: 0.8rem 2rem;
   text-decoration: none !important;
@@ -110,4 +177,12 @@
   font-family: $font-primary;
   font-size: 1.8rem;
   line-height: 1.66;
+}
+
+@mixin font-open-16 {
+  letter-spacing: -0.09rem;
+  font-family: $font-primary;
+  font-size: 1.74rem;
+  font-weight: 300;
+  line-height: 1.6;
 }

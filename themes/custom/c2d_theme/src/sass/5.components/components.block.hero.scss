@@ -11,9 +11,9 @@
 @import "../index";
 
 .region.region-top {
-  @include breakpoint(desktop) {
-    margin-block-start: -12rem;
-  }
+  @include width-1920;
+
+  padding: 0;
 
   .hero-block-type {
     @include breakpoint(desktop) {
@@ -24,9 +24,9 @@
     }
 
     .hero-text {
-      @include base-padding;
+      // @include base-padding;
 
-      margin-block-start: 4.5rem;
+      // margin-block-start: 4.5rem;
 
       @include breakpoint(desktop) {
         position: absolute;
@@ -34,49 +34,76 @@
         inset-inline: 0;
         display: flex;
         align-items: center;
-        justify-content: center;
-        max-inline-size: 127rem;
-        margin-block-start: 12rem;
-        margin-block-end: 0;
-        margin-inline: auto;
-        text-align: center;
+        justify-content: flex-start;
         color: $color-lightest;
         background-color: transparent;
       }
 
+      .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-block: 5rem 7rem;
+        padding-inline: 4rem;
+        background-color: $color-blue-darkest;
+        @include breakpoint(desktop) {
+          max-inline-size: 59.6rem;
+          margin-block-start: 2rem;
+          padding-block: 7.7rem 8rem;
+          padding-inline: 7rem 9rem;
+          background-color: rgba($color-blue-darkest, 0.8)
+        }
+      }
+
       .hero-text-container-title {
-        margin-block-end: 1rem;
-        text-align: center;
+        // text-align: center;
         text-decoration: none;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.03rem;
         text-transform: uppercase;
+        color: $color-lightest;
         font-family: $font-secondary;
         font-size: 3.6rem;
-        font-weight: 600;
-        line-height: 1.11;
+        font-weight: 400;
+        line-height: 1.33;
 
         @include breakpoint(desktop) {
-          color: $color-lightest;
-          font-size: 4rem;
+          margin-block-end: 2rem;
+          font-size: 4.8rem;
+          line-height: 1.3;
+        }
+        &::after {
+          display: block;
+          inline-size: 5.8rem;
+          block-size: 0.2rem;
+          margin-block-start: 2.7rem;
+          content: "";
+          background-color: $color-red-secondary;
         }
       }
 
       .hero-text-container-description {
         max-inline-size: 83rem;
-        margin-inline: auto;
-        text-align: center;
+        margin-block: 3rem 3.5rem;
+
+        // margin-inline: auto;
+
+        // text-align: center;
         text-decoration: none;
+        color: $color-lightest;
         font-family: $font-primary;
-        font-size: 1.8rem;
-        line-height: 1.66;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
 
         @include breakpoint(desktop) {
-          color: $color-lightest;
+          margin-block: 1rem 3.7rem;
+          font-size: 2.4rem;
         }
       }
 
-      .flex-centered {
-        margin-block-start: 3rem;
+      .button-white {
+        min-inline-size: 24rem;
       }
 
       .bordered-button-blue {
