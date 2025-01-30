@@ -95,6 +95,39 @@
   }
 }
 
+.paragraph {
+  &.width--narrow {
+    padding-block: 4.5rem;
+    > .paragraph--inner {
+      @include width-690;
+
+      @include breakpoint(medium) {
+        @include width-655;
+      }
+    }
+  }
+
+  &.width--wide {
+    padding-block: 4.5rem;
+    > .paragraph--inner {
+      @include width-1105;
+    }
+  }
+
+  &.width--huge {
+    padding-block: 4.5rem;
+    > .paragraph--inner {
+      @include width-1440;
+    }
+  }
+  &.width--full {
+    padding-block: 4.5rem;
+    > .paragraph--inner {
+      @include width-1920;
+    }
+  }
+}
+
 .paragraph--type--text,
 .paragraph--type--cta,
 .paragraph--type--accordion,
