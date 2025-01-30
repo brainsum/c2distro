@@ -27,8 +27,8 @@
   .paragraph--inner {
     @include width-1440;
     .path-frontpage & {
-      padding: 0;
-      @include breakpoint(small-large) {
+      padding: 0 4rem;
+      @include breakpoint($breakpoint--tablet) {
         padding: 0 8rem;
       }
     }
@@ -90,7 +90,7 @@
             padding-inline: 1.5rem;
           }
 
-          @include breakpoint(mobile-large) {
+          @include breakpoint(medium) {
             grid-template-columns: repeat(2, 1fr);
           }
 
