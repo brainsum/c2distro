@@ -11,16 +11,25 @@
 @import "../index";
 
 .field--name-field-paragraphs .field__item .paragraph--type--view {
+  position: relative;
   padding-block-start: 3.4rem;
   @include breakpoint(small-large) {
-    padding-block-start: 7.6rem;
+    padding-block-start: 5rem;
+  }
+  &::before {
+    position: absolute;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 28rem;
+    content: "";
+    background-color: $color-blue-darkest;
   }
   .paragraph--inner {
     @include width-1440;
     .path-frontpage & {
       padding: 0;
       @include breakpoint(small-large) {
-        padding: 0 1.5rem;
+        padding: 0 8rem;
       }
     }
 
@@ -37,16 +46,31 @@
         text-align: center;
 
         span {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           margin-block-start: 0;
           margin-inline-start: 0;
           padding: 0;
           text-decoration: none;
-          letter-spacing: -0.03rem;
+          letter-spacing: 0;
+          text-transform: uppercase;
           color: $color-lightest;
           background-color: transparent;
           box-shadow: none;
-          font-size: 2.8rem;
-          font-weight: 400;
+          font-size: 3.2rem;
+          font-weight: 700;
+          &::after {
+            display: inline-block;
+            inline-size: 5.8rem;
+            block-size: 0.2rem;
+            /* position: absolute;
+          inset-block-end: 1.3rem; */
+            margin-block-start: 0.2rem;
+            content: "";
+            background-color: $color-red-secondary;
+          }
         }
       }
 
@@ -59,8 +83,8 @@
           max-inline-size: none;
           padding: 0;
           padding-block-start: 3.3rem;
-          column-gap: 8.1rem;
-          row-gap: 7.5rem;
+          column-gap: 4rem;
+          row-gap: 5.5rem;
 
           @include breakpoint(small-large) {
             padding-inline: 1.5rem;
@@ -72,7 +96,8 @@
 
           @include breakpoint(tablet) {
             grid-template-columns: repeat(3, 1fr);
-            padding-block-start: 3.4rem;
+            padding-block-start: 5.5rem;
+            padding-inline: 0;
           }
         }
 
@@ -107,8 +132,9 @@
   .node--type-news.node--view-mode-card {
     line-height: 0.85;
     @include breakpoint(small-large) {
-      block-size: 100%;
-      padding-inline-end: 2.3rem;
+      // block-size: 100%;
+
+      // padding-inline-end: 2.3rem;
       line-height: 0.9;
     }
     .field--name-field-image {
@@ -120,22 +146,20 @@
     }
     .node__content {
       position: relative;
-      block-size: calc(100% - 18rem);
+
+      // block-size: calc(100% - 18rem);
       .text-wrapper {
         position: relative;
-        display: flex;
         block-size: 100%;
         padding: 3.1rem 3.8rem 3.5rem 0;
-
-        //border-block-end: 0.1rem dashed #09bfd7;
-        background-color: #fbffff;
+        background-color: $color-white;
         @include breakpoint(small-large) {
-          margin-block-start: -5.2rem;
-          margin-inline: 3.5em -5.5rem;
-          padding: 3.3rem 5.5rem 5.4rem 0;
+          margin-block-start: -4rem;
+          margin-inline: 5rem 0;
+          padding: 2.9rem 0.5rem 0 0;
         }
 
-        &::before {
+        /* &::before {
           position: absolute;
           inset-block-start: -2.5rem;
           inset-inline-end: 0;
@@ -150,8 +174,8 @@
             inset-inline-start: -2.5rem;
             inset-inline-end: unset;
           }
-        }
-        &::after {
+        } */
+        /* &::after {
           position: absolute;
           inset-block-end: 0;
           inline-size: 100%;
@@ -167,53 +191,81 @@
           background-repeat: repeat-x;
           background-position: left bottom;
           background-size: 100% 0.1rem;
-        }
-        .content--date-wrapper {
+        } */
+        .content--category-wrapper {
+          position: relative;
           flex-shrink: 0;
-          min-inline-size: 7.2rem;
-          padding-block-start: 0.5rem;
-          text-align: end;
-          @include breakpoint(small-large) {
-            padding-block-start: 0.6rem;
+          inline-size: 5rem;
+          margin-inline-start: -5rem;
+          .rotated-content {
+            position: absolute;
+            inset-block-end: 0;
+            inset-inline: 0;
+            display: block;
+            margin: 0 auto;
+            transform: rotate(270deg);
+            transform-origin: center bottom;
+            white-space: nowrap;
           }
         }
         .content--title-wrapper {
-          padding-inline-start: 2.4rem;
+          display: flex;
+          flex-direction: column;
+          padding-inline-start: 3.9rem;
         }
       }
       .field--name-title {
-        color: #152c53;
+        color: $color-paragraph-text;
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: 500;
         @include breakpoint(small-large) {
-          font-size: 2rem;
+          font-size: 2.4rem;
+          line-height: 1.33;
         }
       }
+      .rotated-content,
       .field--name-field-date,
       .read-more {
         flex-shrink: 0;
+        text-transform: uppercase;
+        color: $color-paragraph-text;
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1.6rem;
       }
+
       .field--name-field-date {
-        color: #000;
+        display: flex;
+        align-items: center;
+        margin-block-end: 2.2rem;
+        &::before {
+          display: inline-block;
+          inline-size: 5.8rem;
+          block-size: 0.2rem;
+          /* position: absolute;
+          inset-block-end: 1.3rem; */
+          margin-inline-end: 2rem;
+          content: "";
+          background-color: $color-red-secondary;
+        }
       }
 
       .read-more {
         position: relative;
         display: inline-block;
-        margin-block-start: 1.8rem;
-        border-block-end: 0.1rem solid #152c53;
+        align-self: flex-end;
+        margin-block-start: 2.4rem;
+        margin-inline-end: 1.5rem;
+        color: #152c53;
         &::after {
           position: absolute;
-          inset-block-start: 0.4rem;
-          inset-inline-end: -1.3rem;
+          inset-block-start: 0.3rem;
+          inset-inline-end: -2.5rem;
           display: inline-block;
-          inline-size: 0.9rem;
-          block-size: 0.9rem;
+          inline-size: 1.7rem;
+          block-size: 1.1rem;
           content: "";
-          background: url('data:image/svg+xml,<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.625 1L8 4.5M8 4.5L4.625 8M8 4.5H1" stroke="%23C600D0" stroke-linecap="round"/></svg>')
+          background: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.66 9.93"><defs><style> .cls-1 { fill: none; stroke: %23ee2435; stroke-miterlimit: 10; stroke-width: 2px; } </style></defs><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" y1="4.97" x2="10.24" y2="4.97"/><polyline class="cls-1" points="5.98 .71 10.24 4.97 5.98 9.23"/></g></svg>')
             no-repeat;
         }
       }
