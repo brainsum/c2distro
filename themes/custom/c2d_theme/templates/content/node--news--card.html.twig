@@ -88,10 +88,13 @@
    {{content.field_image}}
   <div{{ content_attributes.addClass('node__content') }}>
   <div class="text-wrapper">
-    <div class="content--date-wrapper">
-      {{content.field_date}}
-    </div>
+    <!-- <div class="content--category-wrapper">
+    <span class="rotated-content">
+      {{"Some text"}}
+    </span>
+    </div> -->
     <div class="content--title-wrapper">
+      {{content.field_date}}
       {{ title_prefix }}
       <h2{{ title_attributes }}>
         {{ label }}

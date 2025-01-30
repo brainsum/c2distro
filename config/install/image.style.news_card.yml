@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies: {}
+name: news_card
+label: 'News card'
+effects:
+  da804b6d-bf65-4311-955b-759e4ceac82f:
+    uuid: da804b6d-bf65-4311-955b-759e4ceac82f
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp
+  9fd0e14b-b658-411d-9655-807381e4eedb:
+    uuid: 9fd0e14b-b658-411d-9655-807381e4eedb
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 400
+      height: 354
+      anchor: center-center
