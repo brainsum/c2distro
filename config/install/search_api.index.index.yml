@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_category
-    - field.storage.media.field_media_file
     - field.storage.media.field_highlighted
     - field.storage.media.field_lead
+    - field.storage.media.field_media_file
     - field.storage.media.field_tags
     - field.storage.node.body
     - field.storage.node.field_highlighted
@@ -14,9 +14,8 @@ dependencies:
     - search_api.server.database_server
   module:
     - media
-    - taxonomy
     - node
-    - search_api
+    - taxonomy
 id: index
 name: 'General search'
 description: ''
@@ -208,4 +207,5 @@ options:
   index_directly: true
   cron_limit: 50
   track_changes_in_references: true
+  delete_on_fail: true
 server: database_server

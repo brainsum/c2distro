@@ -1,6 +1,6 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies: {  }
 name: news_card
 label: 'News card'
 effects:

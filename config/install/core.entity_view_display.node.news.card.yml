@@ -15,8 +15,6 @@ dependencies:
     - datetime
     - media
     - user
-_core:
-  default_config_hash: sGwwjrkUP9Db4YvgASp8p76BGDGkKZhWLFHwIB80u2Y
 id: node.news.card
 targetEntityType: node
 bundle: news
@@ -28,7 +26,7 @@ content:
     settings:
       timezone_override: ''
       format_type: document
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 1
     region: content
   field_image:
@@ -39,17 +37,17 @@ content:
       image_style: news_card
       image_loading:
         attribute: lazy
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 0
     region: content
   links:
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
   rrssb:
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
