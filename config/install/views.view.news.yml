@@ -14,8 +14,6 @@ dependencies:
     - media
     - node
     - user
-_core:
-  default_config_hash: 7ljGZQIotLoMoLQNNJ1Xp8pGKu68LtY6Bn1X8R-v1Wo
 id: news
 label: News
 module: views
