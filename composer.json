@@ -50,7 +50,7 @@
         "drupal/dropdown_language": "^4.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/field_group": "^4.0",
-        "drupal/image_widget_crop": "^2.4",
+        "drupal/image_widget_crop": "^3.0",
         "drupal/lightgallery": "^1.4",
         "drupal/maillog": "^1.1",
         "drupal/mailsystem": "^4.4",
