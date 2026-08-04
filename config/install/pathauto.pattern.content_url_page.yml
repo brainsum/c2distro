@@ -1,12 +1,14 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.page
   module:
     - node
 id: content_url_page
 label: 'content URL - Page'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   110e270b-343b-47a9-bc16-4a477c3189af:
     id: 'entity_bundle:node'

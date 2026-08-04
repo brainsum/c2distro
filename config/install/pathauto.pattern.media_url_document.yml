@@ -1,12 +1,14 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.document
   module:
     - media
 id: media_url_document
 label: 'media URL - Document'
 type: 'canonical_entities:media'
-pattern: 'resources/[media:name]'
+pattern: '/resources/[media:name]'
 selection_criteria:
   817cd894-50f3-41ec-985e-9a13bf6ddf88:
     id: 'entity_bundle:media'

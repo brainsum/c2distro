@@ -1,12 +1,16 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.icon
+    - media.type.image
+    - media.type.remote_video
   module:
     - media
 id: media_url
 label: 'media URL'
 type: 'canonical_entities:media'
-pattern: '[media:bundle]/[media:name]'
+pattern: '/[media:bundle]/[media:name]'
 selection_criteria:
   d7b6b66f-83b2-489f-9954-110dad697113:
     id: 'entity_bundle:media'
