@@ -2,4 +2,4 @@ name: C2Distro Map
 description: 'C2Distro Map features.'
 type: module
 package: C2distro
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11

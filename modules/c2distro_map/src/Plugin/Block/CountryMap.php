@@ -26,7 +26,7 @@ class CountryMap extends BlockBase {
       '#type' => 'container',
       '#theme' => 'country_map',
       '#attached' => [
-        'library' => 'c2distro_map/gmap',
+        'library' => ['c2distro_map/gmap'],
         'drupalSettings' => [
           'geodata' => $geodataJson,
           'map_popup' => TRUE,

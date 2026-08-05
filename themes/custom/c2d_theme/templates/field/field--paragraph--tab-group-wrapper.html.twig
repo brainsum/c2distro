@@ -40,7 +40,7 @@
 <ul class="tab-group--tabs">
   {% for item in items %}
   <li class="menu-item {{ loop.first ? 'is-active' }}" data-content-id="{{ item.content['#paragraph'].id.value }}" style="width:calc(100% / {{ loop.length }})">
-    {{ drupal_entity('media', item.content['#paragraph'].field_icon.value[0].target_id) }}
+    {{ item.icon }}
     <div class="menu-item--title">
       {{ item.content['#paragraph'].field_title.value }}
     </div>
