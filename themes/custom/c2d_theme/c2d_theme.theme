@@ -77,6 +77,29 @@ function c2d_theme_preprocess_paragraph__cta(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_HOOK() for field--paragraph--tab-group-wrapper.
+ *
+ * Builds the render array for each tab's icon media entity, so the
+ * template does not need to rely on the twig_tweak "drupal_entity()"
+ * function.
+ */
+function c2d_theme_preprocess_field__paragraph__tab_group_wrapper(array &$variables) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('media');
+  foreach ($variables['items'] as &$item) {
+    $paragraph = $item['content']['#paragraph'] ?? NULL;
+    $item['icon'] = [];
+    if ($paragraph instanceof \Drupal\paragraphs\ParagraphInterface
+      && $paragraph->hasField('field_icon')
+      && !$paragraph->get('field_icon')->isEmpty()) {
+      $media = $paragraph->get('field_icon')->entity;
+      if ($media instanceof \Drupal\media\MediaInterface) {
+        $item['icon'] = $view_builder->view($media);
+      }
+    }
+  }
+}
+
+/**
  * Implements hook_theme_suggestions_HOOK_alter().
  *
  * Add custom suggestion based on block_content type.

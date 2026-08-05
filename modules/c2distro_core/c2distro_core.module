@@ -229,7 +229,7 @@ function c2distro_core_mail_alter(&$message) {
       $body = '';
       foreach ($data['fields'] as $fields) {
         $field = $fields['field']->view();
-        $rendered = \Drupal::service('renderer')->renderPlain($field);
+        $rendered = \Drupal::service('renderer')->renderInIsolation($field);
         $rendered = MailFormatHelper::htmlToText($rendered);
         $rendered = MailFormatHelper::wrapMail($rendered);
         $rendered = strip_tags($rendered);
